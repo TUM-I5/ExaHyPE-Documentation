@@ -1,0 +1,28 @@
+var dg_two_grid_8py =
+[
+    [ "approximate_system_matrix_scaling", "df/d7e/dg-two-grid_8py.html#a6ec5e89a739527db622fafad5756673a", null ],
+    [ "args", "df/d7e/dg-two-grid_8py.html#a065e14f4dfdcff32035721fe88846833", null ],
+    [ "assembly_matrix", "df/d7e/dg-two-grid_8py.html#af6e39113d46c2975f4c4e065670b2317", null ],
+    [ "assembly_matrix_scaling", "df/d7e/dg-two-grid_8py.html#ad46b27e6c8d7bce4e06342c1679d43ad", null ],
+    [ "auxiliary", "df/d7e/dg-two-grid_8py.html#a625d429e4683eaed3c830716613dcff0", null ],
+    [ "cell_from_face_projection_scaling", "df/d7e/dg-two-grid_8py.html#adb2aa025b55a2aa92503a7b0c4af36d3", null ],
+    [ "correction_equation_matrices", "df/d7e/dg-two-grid_8py.html#af0c4566a74158c0f188fe70a05144d4c", null ],
+    [ "correction_equation_solver", "df/d7e/dg-two-grid_8py.html#aad7791b5a43a1b9f0cfe8344b73c4927", null ],
+    [ "executable", "df/d7e/dg-two-grid_8py.html#abea208fcef7a6e48314931fabc3a324d", null ],
+    [ "face_from_cell_projection_scaling", "df/d7e/dg-two-grid_8py.html#ad980be96772b59d70cc982fac3f9a8a2", null ],
+    [ "injection_matrix", "df/d7e/dg-two-grid_8py.html#a34e416733573854166c572c2ba561b57", null ],
+    [ "injection_matrix_scaling", "df/d7e/dg-two-grid_8py.html#afb837d860e268c695a1909cdd7cc805e", null ],
+    [ "intergrid_operators", "df/d7e/dg-two-grid_8py.html#a93c2b99e1bd3d439ac70839e4c077116", null ],
+    [ "mass_matrix", "df/d7e/dg-two-grid_8py.html#a9a067abf48ae07d18fc94575dd92f8c1", null ],
+    [ "mass_matrix_scaling", "df/d7e/dg-two-grid_8py.html#afca4dff8fa6a3953d557592d5ba6f75e", null ],
+    [ "matrices", "df/d7e/dg-two-grid_8py.html#a1e09401fe6a296d17a33347098e5a06e", null ],
+    [ "preprocessing_action_set", "df/d7e/dg-two-grid_8py.html#a366d89e7d2c4c63483d64bb79ea3e6a6", null ],
+    [ "project", "df/d7e/dg-two-grid_8py.html#a38349eb783340a8aaa4d748b1d2a1286", null ],
+    [ "prolongation_matrix", "df/d7e/dg-two-grid_8py.html#aa7f69191b0beeb08520b1ed50500fb66", null ],
+    [ "prolongation_matrix_scaling", "df/d7e/dg-two-grid_8py.html#a0fb0744176ceee2dc17adb7711045d3a", null ],
+    [ "restriction_matrix", "df/d7e/dg-two-grid_8py.html#aaaf35504f023cbab8017418735ddbfa3", null ],
+    [ "restriction_matrix_scaling", "df/d7e/dg-two-grid_8py.html#a7db6c5a640edc5d18285acfeb823e4c9", null ],
+    [ "solver", "df/d7e/dg-two-grid_8py.html#a928e30299f6c3b60da1e29574a9279de", null ],
+    [ "system_matrix", "df/d7e/dg-two-grid_8py.html#a6eb45f90c4073dad99bde21451e86d7d", null ],
+    [ "system_matrix_scaling", "df/d7e/dg-two-grid_8py.html#ab387d0d5842c4d42a95242e73929c76f", null ]
+];

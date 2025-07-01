@@ -1,0 +1,4 @@
+var CollocatedMGSingleThreaded_2UpdateSolution_8py =
+[
+    [ "solvers.api.actionsets.CollocatedMGSingleThreaded.UpdateSolution.UpdateSolution", "d3/d0f/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSingleThreaded_1_1UpdateSolution_1_1UpdateSolution.html", "d3/d0f/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSingleThreaded_1_1UpdateSolution_1_1UpdateSolution" ]
+];

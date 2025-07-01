@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/d11/namespaceCCZ4Solver.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">CCZ4Solver Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d75/classCCZ4Solver_1_1AbstractCCZ4Solver.html">AbstractCCZ4Solver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for any CCZ4 solver.  <a href="../../dd/d75/classCCZ4Solver_1_1AbstractCCZ4Solver.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html">CCZ4Solver_FD4_GlobalAdaptiveTimeStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using fourth-order finite differences and global adaptive time stepping without enclave tasking.  <a href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html">CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using fourth-order finite differences and global adaptive time stepping incl enclave tasking.  <a href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d05/classCCZ4Solver_1_1CCZ4Solver__FD4__SecondOrderFormulation__GlobalAdaptiveTimeStepWithEnclaveTasking.html">CCZ4Solver_FD4_SecondOrderFormulation_GlobalAdaptiveTimeStepWithEnclaveTasking</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variation of classic FD4 which relies on second order <a class="el" href="../../da/db8/namespacePDE.html">PDE</a> formulation.  <a href="../../d2/d05/classCCZ4Solver_1_1CCZ4Solver__FD4__SecondOrderFormulation__GlobalAdaptiveTimeStepWithEnclaveTasking.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html">CCZ4Solver_FV_GlobalAdaptiveTimeStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using finite volumes and global adaptive time stepping incl enclave tasking.  <a href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html">CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using finite volumes and global adaptive time stepping incl enclave tasking.  <a href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html">CCZ4Solver_RKDG_GlobalAdaptiveTimeStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using Runge-Kutta Discontinuous Galerkin and global adaptive time stepping incl enclave tasking.  <a href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html">CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCZ4 solver using Runge-Kutta Discontinuous Galerkin and global adaptive time stepping incl enclave tasking.  <a href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0a2fe469a3d7d73b85c6c6950f84828e" id="r_a0a2fe469a3d7d73b85c6c6950f84828e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2fe469a3d7d73b85c6c6950f84828e">construct_FD4_ncp</a> ()</td></tr>
+<tr class="separator:a0a2fe469a3d7d73b85c6c6950f84828e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210fbf34644af57a581a92149d245bf6" id="r_a210fbf34644af57a581a92149d245bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a210fbf34644af57a581a92149d245bf6">construct_FV_ncp</a> ()</td></tr>
+<tr class="separator:a210fbf34644af57a581a92149d245bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b468546bb0e9b92b1cd3773d0849eb" id="r_aa2b468546bb0e9b92b1cd3773d0849eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2b468546bb0e9b92b1cd3773d0849eb">construct_FD4_source_term</a> ()</td></tr>
+<tr class="separator:aa2b468546bb0e9b92b1cd3773d0849eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421c1faf56ca97172348fb236c90096a" id="r_a421c1faf56ca97172348fb236c90096a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a421c1faf56ca97172348fb236c90096a">construct_FV_source_term</a> ()</td></tr>
+<tr class="separator:a421c1faf56ca97172348fb236c90096a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a1af3684c3285cc8a4f35ecdac50f4" id="r_ae6a1af3684c3285cc8a4f35ecdac50f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6a1af3684c3285cc8a4f35ecdac50f4">construct_FD4_eigenvalues</a> ()</td></tr>
+<tr class="separator:ae6a1af3684c3285cc8a4f35ecdac50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d448f5abf108a85c8f0ec0a5b60d39" id="r_a50d448f5abf108a85c8f0ec0a5b60d39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50d448f5abf108a85c8f0ec0a5b60d39">construct_FV_eigenvalues</a> ()</td></tr>
+<tr class="separator:a50d448f5abf108a85c8f0ec0a5b60d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64218419a4bc97b2e51c4fb3050e269a" id="r_a64218419a4bc97b2e51c4fb3050e269a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64218419a4bc97b2e51c4fb3050e269a">construct_FD4_postprocessing_kernel</a> ()</td></tr>
+<tr class="separator:a64218419a4bc97b2e51c4fb3050e269a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59b5c3e20a5f0dd5f4b61c06144bdf9" id="r_ab59b5c3e20a5f0dd5f4b61c06144bdf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59b5c3e20a5f0dd5f4b61c06144bdf9">construct_FV_postprocessing_kernel</a> ()</td></tr>
+<tr class="separator:ab59b5c3e20a5f0dd5f4b61c06144bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102d3b956f466250415ffdebab9313b0" id="r_a102d3b956f466250415ffdebab9313b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a102d3b956f466250415ffdebab9313b0">add_tracer_to_FV_solver</a> (name, coordinates, project, solver, number_of_entries_between_two_db_flushes, data_delta_between_two_snapsots, time_delta_between_two_snapsots, clear_database_after_flush, tracer_unknowns)</td></tr>
+<tr class="memdesc:a102d3b956f466250415ffdebab9313b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tracer to project.  <br /></td></tr>
+<tr class="separator:a102d3b956f466250415ffdebab9313b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5995cb67f28274d79339a177bae6fb88" id="r_a5995cb67f28274d79339a177bae6fb88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5995cb67f28274d79339a177bae6fb88">add_tracer_to_FD4_solver</a> (name, coordinates, project, solver, number_of_entries_between_two_db_flushes, data_delta_between_two_snapsots, time_delta_between_two_snapsots, clear_database_after_flush, tracer_unknowns)</td></tr>
+<tr class="memdesc:a5995cb67f28274d79339a177bae6fb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">I realise this as a separate routine, as we need it for all FD4 flavours.  <br /></td></tr>
+<tr class="separator:a5995cb67f28274d79339a177bae6fb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d5e0d90dfeaabbdc14b9121ee7a7aa" id="r_a24d5e0d90dfeaabbdc14b9121ee7a7aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d5e0d90dfeaabbdc14b9121ee7a7aa">construct_DG_ncp</a> ()</td></tr>
+<tr class="separator:a24d5e0d90dfeaabbdc14b9121ee7a7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad4b352264c0103615ff4a259e4f91e" id="r_afad4b352264c0103615ff4a259e4f91e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad4b352264c0103615ff4a259e4f91e">construct_DG_source_term</a> ()</td></tr>
+<tr class="separator:afad4b352264c0103615ff4a259e4f91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6138370e011b43f8d6fff3f12e881ab" id="r_aa6138370e011b43f8d6fff3f12e881ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6138370e011b43f8d6fff3f12e881ab">construct_DG_eigenvalues</a> ()</td></tr>
+<tr class="separator:aa6138370e011b43f8d6fff3f12e881ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af102dd375e487b1fd297910fc97e3d75" id="r_af102dd375e487b1fd297910fc97e3d75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af102dd375e487b1fd297910fc97e3d75">construct_DG_postprocessing_kernel</a> ()</td></tr>
+<tr class="separator:af102dd375e487b1fd297910fc97e3d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50524ae57851b62cbb3b5a9a0d1940bb" id="r_a50524ae57851b62cbb3b5a9a0d1940bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50524ae57851b62cbb3b5a9a0d1940bb">add_tracer_to_DG_solver</a> (name, coordinates, project, self, number_of_entries_between_two_db_flushes, data_delta_between_two_snapsots, time_delta_between_two_snapsots, clear_database_after_flush, tracer_unknowns)</td></tr>
+<tr class="separator:a50524ae57851b62cbb3b5a9a0d1940bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a628b2b1f0d989ef89d6bf6f66793f46f" id="r_a628b2b1f0d989ef89d6bf6f66793f46f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a628b2b1f0d989ef89d6bf6f66793f46f">auxiliary_variables</a></td></tr>
+<tr class="separator:a628b2b1f0d989ef89d6bf6f66793f46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a50524ae57851b62cbb3b5a9a0d1940bb" name="a50524ae57851b62cbb3b5a9a0d1940bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50524ae57851b62cbb3b5a9a0d1940bb">&#9670;&#160;</a></span>add_tracer_to_DG_solver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.add_tracer_to_DG_solver </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>coordinates</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>project</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>number_of_entries_between_two_db_flushes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>time_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>clear_database_after_flush</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tracer_unknowns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01292">1292</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01429">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking.add_tracer()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01538">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStep.add_tracer()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a50524ae57851b62cbb3b5a9a0d1940bb_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a50524ae57851b62cbb3b5a9a0d1940bb_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a50524ae57851b62cbb3b5a9a0d1940bb_icgraph" id="adc/d11/namespaceCCZ4Solver_a50524ae57851b62cbb3b5a9a0d1940bb_icgraph">
+<area shape="rect" title=" " alt="" coords="317,53,488,93"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a6c1c0e5bb6a314341fe2179e7694b02f" title="Add tracer to project." alt="" coords="19,5,255,60"/>
+<area shape="poly" title=" " alt="" coords="303,60,255,53,256,48,304,55"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#add64ec2db023b953cee0fb9ae12991ca" title="Add tracer to project." alt="" coords="5,84,269,139"/>
+<area shape="poly" title=" " alt="" coords="304,90,270,95,269,89,303,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5995cb67f28274d79339a177bae6fb88" name="a5995cb67f28274d79339a177bae6fb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5995cb67f28274d79339a177bae6fb88">&#9670;&#160;</a></span>add_tracer_to_FD4_solver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.add_tracer_to_FD4_solver </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>coordinates</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>project</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>solver</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>number_of_entries_between_two_db_flushes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>time_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>clear_database_after_flush</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tracer_unknowns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I realise this as a separate routine, as we need it for all FD4 flavours. </p>
+<p>This is a wrapper around all the tracer handling. It adds the tracer to the <a class="el" href="../../d8/df9/namespaceexahype2_1_1Project.html">exahype2.Project</a>, but it also instantiates the solution to tracer mapping as well as the database bookkeeping.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tracer_unknowns</td><td>Integer You can set this variable to None. In this case, all variables are dumped. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00630">630</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00835">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking.add_tracer()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00969">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStep.add_tracer()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a5995cb67f28274d79339a177bae6fb88_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a5995cb67f28274d79339a177bae6fb88_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a5995cb67f28274d79339a177bae6fb88_icgraph" id="adc/d11/namespaceCCZ4Solver_a5995cb67f28274d79339a177bae6fb88_icgraph">
+<area shape="rect" title="I realise this as a separate routine, as we need it for all FD4 flavours." alt="" coords="305,53,476,93"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#aa5813fbf2e2bb87ba8f27b4eafb37d60" title="Add tracer to project." alt="" coords="19,5,244,60"/>
+<area shape="poly" title=" " alt="" coords="291,60,244,53,245,47,292,55"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a1b7d3a85a0b6e6fa5689897ccde29f64" title="Add tracer to project." alt="" coords="5,84,257,139"/>
+<area shape="poly" title=" " alt="" coords="292,90,258,95,257,90,291,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a102d3b956f466250415ffdebab9313b0" name="a102d3b956f466250415ffdebab9313b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102d3b956f466250415ffdebab9313b0">&#9670;&#160;</a></span>add_tracer_to_FV_solver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.add_tracer_to_FV_solver </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>coordinates</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>project</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>solver</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>number_of_entries_between_two_db_flushes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>time_delta_between_two_snapsots</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>clear_database_after_flush</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tracer_unknowns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add tracer to project. </p>
+<p>Consult <a class="el" href="../../d1/dca/namespaceexahype2_1_1tracer_1_1DumpTracerIntoDatabase.html">exahype2.tracer.DumpTracerIntoDatabase</a> for an explanation of some of the arguments. Most of them are simply piped through to this class.</p>
+<p>I realise this as a separate routine, as we need it for all FV flavours </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00546">546</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00339">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStep.add_tracer()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00438">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking.add_tracer()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a102d3b956f466250415ffdebab9313b0_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a102d3b956f466250415ffdebab9313b0_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a102d3b956f466250415ffdebab9313b0_icgraph" id="adc/d11/namespaceCCZ4Solver_a102d3b956f466250415ffdebab9313b0_icgraph">
+<area shape="rect" title="Add tracer to project." alt="" coords="299,53,469,93"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#ac3c3b66b8d8181ad207fdcf4e20ddbec" title="Add tracer to project." alt="" coords="7,5,249,60"/>
+<area shape="poly" title=" " alt="" coords="285,60,249,54,250,49,286,55"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a2888362f1396f2d20c3c9490b7b3b411" title="Add tracer to project." alt="" coords="5,84,251,139"/>
+<area shape="poly" title=" " alt="" coords="286,90,251,95,251,90,285,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa6138370e011b43f8d6fff3f12e881ab" name="aa6138370e011b43f8d6fff3f12e881ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6138370e011b43f8d6fff3f12e881ab">&#9670;&#160;</a></span>construct_DG_eigenvalues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_DG_eigenvalues </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01272">1272</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01384">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01493">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_aa6138370e011b43f8d6fff3f12e881ab_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_aa6138370e011b43f8d6fff3f12e881ab_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_aa6138370e011b43f8d6fff3f12e881ab_icgraph" id="adc/d11/namespaceCCZ4Solver_aa6138370e011b43f8d6fff3f12e881ab_icgraph">
+<area shape="rect" title=" " alt="" coords="293,53,455,93"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a212b8e90728d84b7d0c272d038d2032f" title="Construct solver with enclave tasking." alt="" coords="7,5,243,60"/>
+<area shape="poly" title=" " alt="" coords="279,60,243,54,244,49,280,55"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#a52dc350912ef996c777eb632f7854120" title="Construct solver with enclave tasking." alt="" coords="5,84,245,139"/>
+<area shape="poly" title=" " alt="" coords="280,90,246,95,245,90,279,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24d5e0d90dfeaabbdc14b9121ee7a7aa" name="a24d5e0d90dfeaabbdc14b9121ee7a7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d5e0d90dfeaabbdc14b9121ee7a7aa">&#9670;&#160;</a></span>construct_DG_ncp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_DG_ncp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01251">1251</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01384">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01493">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a24d5e0d90dfeaabbdc14b9121ee7a7aa_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a24d5e0d90dfeaabbdc14b9121ee7a7aa_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a24d5e0d90dfeaabbdc14b9121ee7a7aa_icgraph" id="adc/d11/namespaceCCZ4Solver_a24d5e0d90dfeaabbdc14b9121ee7a7aa_icgraph">
+<area shape="rect" title=" " alt="" coords="293,53,455,93"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a212b8e90728d84b7d0c272d038d2032f" title="Construct solver with enclave tasking." alt="" coords="7,5,243,60"/>
+<area shape="poly" title=" " alt="" coords="279,60,243,54,244,49,280,55"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#a52dc350912ef996c777eb632f7854120" title="Construct solver with enclave tasking." alt="" coords="5,84,245,139"/>
+<area shape="poly" title=" " alt="" coords="280,90,246,95,245,90,279,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af102dd375e487b1fd297910fc97e3d75" name="af102dd375e487b1fd297910fc97e3d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af102dd375e487b1fd297910fc97e3d75">&#9670;&#160;</a></span>construct_DG_postprocessing_kernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_DG_postprocessing_kernel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01278">1278</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01384">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01493">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_af102dd375e487b1fd297910fc97e3d75_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_af102dd375e487b1fd297910fc97e3d75_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_af102dd375e487b1fd297910fc97e3d75_icgraph" id="adc/d11/namespaceCCZ4Solver_af102dd375e487b1fd297910fc97e3d75_icgraph">
+<area shape="rect" title=" " alt="" coords="293,53,495,93"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a212b8e90728d84b7d0c272d038d2032f" title="Construct solver with enclave tasking." alt="" coords="7,5,243,60"/>
+<area shape="poly" title=" " alt="" coords="279,58,243,53,244,48,280,53"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#a52dc350912ef996c777eb632f7854120" title="Construct solver with enclave tasking." alt="" coords="5,84,245,139"/>
+<area shape="poly" title=" " alt="" coords="280,92,246,97,245,91,280,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afad4b352264c0103615ff4a259e4f91e" name="afad4b352264c0103615ff4a259e4f91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad4b352264c0103615ff4a259e4f91e">&#9670;&#160;</a></span>construct_DG_source_term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_DG_source_term </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01265">1265</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01384">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01493">CCZ4Solver.CCZ4Solver_RKDG_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_afad4b352264c0103615ff4a259e4f91e_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_afad4b352264c0103615ff4a259e4f91e_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_afad4b352264c0103615ff4a259e4f91e_icgraph" id="adc/d11/namespaceCCZ4Solver_afad4b352264c0103615ff4a259e4f91e_icgraph">
+<area shape="rect" title=" " alt="" coords="293,53,455,93"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a212b8e90728d84b7d0c272d038d2032f" title="Construct solver with enclave tasking." alt="" coords="7,5,243,60"/>
+<area shape="poly" title=" " alt="" coords="279,60,243,54,244,49,280,55"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#a52dc350912ef996c777eb632f7854120" title="Construct solver with enclave tasking." alt="" coords="5,84,245,139"/>
+<area shape="poly" title=" " alt="" coords="280,90,246,95,245,90,279,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6a1af3684c3285cc8a4f35ecdac50f4" name="ae6a1af3684c3285cc8a4f35ecdac50f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a1af3684c3285cc8a4f35ecdac50f4">&#9670;&#160;</a></span>construct_FD4_eigenvalues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FD4_eigenvalues </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00506">506</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00751">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00886">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_ae6a1af3684c3285cc8a4f35ecdac50f4_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_ae6a1af3684c3285cc8a4f35ecdac50f4_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_ae6a1af3684c3285cc8a4f35ecdac50f4_icgraph" id="adc/d11/namespaceCCZ4Solver_ae6a1af3684c3285cc8a4f35ecdac50f4_icgraph">
+<area shape="rect" title=" " alt="" coords="281,53,443,93"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#adfc428645c7771b8980116a82e9b03dc" title="Constructor." alt="" coords="7,5,231,60"/>
+<area shape="poly" title=" " alt="" coords="267,60,231,54,232,48,268,55"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a25fc857d7d9d89a98ff3ba5856ec93f3" title="Constructor." alt="" coords="5,84,233,139"/>
+<area shape="poly" title=" " alt="" coords="268,90,234,96,233,91,267,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a2fe469a3d7d73b85c6c6950f84828e" name="a0a2fe469a3d7d73b85c6c6950f84828e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2fe469a3d7d73b85c6c6950f84828e">&#9670;&#160;</a></span>construct_FD4_ncp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FD4_ncp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00464">464</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00751">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00886">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a0a2fe469a3d7d73b85c6c6950f84828e_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a0a2fe469a3d7d73b85c6c6950f84828e_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a0a2fe469a3d7d73b85c6c6950f84828e_icgraph" id="adc/d11/namespaceCCZ4Solver_a0a2fe469a3d7d73b85c6c6950f84828e_icgraph">
+<area shape="rect" title=" " alt="" coords="281,53,443,93"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#adfc428645c7771b8980116a82e9b03dc" title="Constructor." alt="" coords="7,5,231,60"/>
+<area shape="poly" title=" " alt="" coords="267,60,231,54,232,48,268,55"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a25fc857d7d9d89a98ff3ba5856ec93f3" title="Constructor." alt="" coords="5,84,233,139"/>
+<area shape="poly" title=" " alt="" coords="268,90,234,96,233,91,267,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a64218419a4bc97b2e51c4fb3050e269a" name="a64218419a4bc97b2e51c4fb3050e269a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64218419a4bc97b2e51c4fb3050e269a">&#9670;&#160;</a></span>construct_FD4_postprocessing_kernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FD4_postprocessing_kernel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00518">518</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00751">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00886">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a64218419a4bc97b2e51c4fb3050e269a_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a64218419a4bc97b2e51c4fb3050e269a_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a64218419a4bc97b2e51c4fb3050e269a_icgraph" id="adc/d11/namespaceCCZ4Solver_a64218419a4bc97b2e51c4fb3050e269a_icgraph">
+<area shape="rect" title=" " alt="" coords="281,53,488,93"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#adfc428645c7771b8980116a82e9b03dc" title="Constructor." alt="" coords="7,5,231,60"/>
+<area shape="poly" title=" " alt="" coords="267,58,231,52,232,47,268,52"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a25fc857d7d9d89a98ff3ba5856ec93f3" title="Constructor." alt="" coords="5,84,233,139"/>
+<area shape="poly" title=" " alt="" coords="268,92,234,97,233,92,267,87"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2b468546bb0e9b92b1cd3773d0849eb" name="aa2b468546bb0e9b92b1cd3773d0849eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b468546bb0e9b92b1cd3773d0849eb">&#9670;&#160;</a></span>construct_FD4_source_term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FD4_source_term </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00492">492</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00751">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00886">CCZ4Solver.CCZ4Solver_FD4_GlobalAdaptiveTimeStep.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_aa2b468546bb0e9b92b1cd3773d0849eb_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_aa2b468546bb0e9b92b1cd3773d0849eb_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_aa2b468546bb0e9b92b1cd3773d0849eb_icgraph" id="adc/d11/namespaceCCZ4Solver_aa2b468546bb0e9b92b1cd3773d0849eb_icgraph">
+<area shape="rect" title=" " alt="" coords="281,53,443,93"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#adfc428645c7771b8980116a82e9b03dc" title="Constructor." alt="" coords="7,5,231,60"/>
+<area shape="poly" title=" " alt="" coords="267,60,231,54,232,48,268,55"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a25fc857d7d9d89a98ff3ba5856ec93f3" title="Constructor." alt="" coords="5,84,233,139"/>
+<area shape="poly" title=" " alt="" coords="268,90,234,96,233,91,267,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a50d448f5abf108a85c8f0ec0a5b60d39" name="a50d448f5abf108a85c8f0ec0a5b60d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d448f5abf108a85c8f0ec0a5b60d39">&#9670;&#160;</a></span>construct_FV_eigenvalues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FV_eigenvalues </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00512">512</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00304">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStep.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00397">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a50d448f5abf108a85c8f0ec0a5b60d39_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a50d448f5abf108a85c8f0ec0a5b60d39_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a50d448f5abf108a85c8f0ec0a5b60d39_icgraph" id="adc/d11/namespaceCCZ4Solver_a50d448f5abf108a85c8f0ec0a5b60d39_icgraph">
+<area shape="rect" title=" " alt="" coords="299,53,460,93"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#aca56bc3b5e5e913434288fab74537d16" title="Constructor." alt="" coords="19,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="285,60,237,53,238,47,286,55"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a60655ea819d4f0dab0cda8584ece8328" title="Construct solver with enclave tasking and adaptive time stepping." alt="" coords="5,84,251,139"/>
+<area shape="poly" title=" " alt="" coords="286,90,251,95,251,90,285,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a210fbf34644af57a581a92149d245bf6" name="a210fbf34644af57a581a92149d245bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210fbf34644af57a581a92149d245bf6">&#9670;&#160;</a></span>construct_FV_ncp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FV_ncp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00478">478</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00304">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStep.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00397">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a210fbf34644af57a581a92149d245bf6_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a210fbf34644af57a581a92149d245bf6_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a210fbf34644af57a581a92149d245bf6_icgraph" id="adc/d11/namespaceCCZ4Solver_a210fbf34644af57a581a92149d245bf6_icgraph">
+<area shape="rect" title=" " alt="" coords="299,53,460,93"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#aca56bc3b5e5e913434288fab74537d16" title="Constructor." alt="" coords="19,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="285,60,237,53,238,47,286,55"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a60655ea819d4f0dab0cda8584ece8328" title="Construct solver with enclave tasking and adaptive time stepping." alt="" coords="5,84,251,139"/>
+<area shape="poly" title=" " alt="" coords="286,90,251,95,251,90,285,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab59b5c3e20a5f0dd5f4b61c06144bdf9" name="ab59b5c3e20a5f0dd5f4b61c06144bdf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59b5c3e20a5f0dd5f4b61c06144bdf9">&#9670;&#160;</a></span>construct_FV_postprocessing_kernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FV_postprocessing_kernel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00532">532</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00304">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStep.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00397">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_ab59b5c3e20a5f0dd5f4b61c06144bdf9_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_ab59b5c3e20a5f0dd5f4b61c06144bdf9_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_ab59b5c3e20a5f0dd5f4b61c06144bdf9_icgraph" id="adc/d11/namespaceCCZ4Solver_ab59b5c3e20a5f0dd5f4b61c06144bdf9_icgraph">
+<area shape="rect" title=" " alt="" coords="299,53,497,93"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#aca56bc3b5e5e913434288fab74537d16" title="Constructor." alt="" coords="19,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="285,59,237,52,238,46,285,53"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a60655ea819d4f0dab0cda8584ece8328" title="Construct solver with enclave tasking and adaptive time stepping." alt="" coords="5,84,251,139"/>
+<area shape="poly" title=" " alt="" coords="286,91,251,96,251,91,285,86"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a421c1faf56ca97172348fb236c90096a" name="a421c1faf56ca97172348fb236c90096a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421c1faf56ca97172348fb236c90096a">&#9670;&#160;</a></span>construct_FV_source_term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.construct_FV_source_term </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00499">499</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00304">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStep.__init__()</a>, and <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l00397">CCZ4Solver.CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking.__init__()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d11/namespaceCCZ4Solver_a421c1faf56ca97172348fb236c90096a_icgraph.png" border="0" usemap="#adc/d11/namespaceCCZ4Solver_a421c1faf56ca97172348fb236c90096a_icgraph" alt=""/></div>
+<map name="adc/d11/namespaceCCZ4Solver_a421c1faf56ca97172348fb236c90096a_icgraph" id="adc/d11/namespaceCCZ4Solver_a421c1faf56ca97172348fb236c90096a_icgraph">
+<area shape="rect" title=" " alt="" coords="299,53,460,93"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#aca56bc3b5e5e913434288fab74537d16" title="Constructor." alt="" coords="19,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="285,60,237,53,238,47,286,55"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a60655ea819d4f0dab0cda8584ece8328" title="Construct solver with enclave tasking and adaptive time stepping." alt="" coords="5,84,251,139"/>
+<area shape="poly" title=" " alt="" coords="286,90,251,95,251,90,285,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a628b2b1f0d989ef89d6bf6f66793f46f" name="a628b2b1f0d989ef89d6bf6f66793f46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628b2b1f0d989ef89d6bf6f66793f46f">&#9670;&#160;</a></span>auxiliary_variables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCZ4Solver.auxiliary_variables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html#l01304">1304</a> of file <a class="el" href="../../d4/d27/CCZ4Solver_8py_source.html">CCZ4Solver.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/d11/namespaceCCZ4Solver.html">CCZ4Solver</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:21 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

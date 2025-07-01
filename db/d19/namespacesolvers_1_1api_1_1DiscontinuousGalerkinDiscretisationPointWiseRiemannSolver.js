@@ -1,0 +1,4 @@
+var namespacesolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver =
+[
+    [ "DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver", "d5/d78/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_1_1Discontinuou7caba829862ffd08361f2e57820cadcb.html", "d5/d78/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_1_1Discontinuou7caba829862ffd08361f2e57820cadcb" ]
+];

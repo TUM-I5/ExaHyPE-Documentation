@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/df6/classContextCurvilinear.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d88/classContextCurvilinear__coll__graph.png" border="0" usemap="#aContextCurvilinear_3_01Shortcuts_00_01basisSize_00_01numberOfData_00_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aContextCurvilinear_3_01Shortcuts_00_01basisSize_00_01numberOfData_00_01T_01_4_coll__map" id="aContextCurvilinear_3_01Shortcuts_00_01basisSize_00_01numberOfData_00_01T_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,269,176,324"/>
+<area shape="rect" href="../../d9/d0d/classCurvi_1_1Interface.html" title=" " alt="" coords="29,181,152,207"/>
+<area shape="poly" title=" " alt="" coords="93,221,93,269,88,269,88,221"/>
+<area shape="rect" href="../../d8/d73/classRoot.html" title=" " alt="" coords="65,93,117,119"/>
+<area shape="poly" title=" " alt="" coords="93,133,93,181,88,181,88,133"/>
+<area shape="rect" href="../../df/dd0/classNode.html" title=" " alt="" coords="63,5,119,31"/>
+<area shape="poly" title=" " alt="" coords="93,45,93,93,88,93,88,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8c88dc6a4f9c12b756350660b0567790" id="r_a8c88dc6a4f9c12b756350660b0567790"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c88dc6a4f9c12b756350660b0567790">ContextCurvilinear</a> (std::string &amp;topography_string, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> coarsestMeshLevel, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> coarsestMeshSize, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> maxAdaptiveDepth, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; _domainOffset, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; _domainSize, T *_nodes, T *_dudx)</td></tr>
+<tr class="separator:a8c88dc6a4f9c12b756350660b0567790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a77215f0dafd6cba7df39315ef2881" id="r_a84a77215f0dafd6cba7df39315ef2881"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d73/classRoot.html">Root</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a77215f0dafd6cba7df39315ef2881">getRoot</a> ()</td></tr>
+<tr class="separator:a84a77215f0dafd6cba7df39315ef2881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884604b5b28255e80c80c133cbd44d73" id="r_a884604b5b28255e80c80c133cbd44d73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a884604b5b28255e80c80c133cbd44d73">~ContextCurvilinear</a> ()</td></tr>
+<tr class="separator:a884604b5b28255e80c80c133cbd44d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85285fc11900c5dcdece0af52725eef1" id="r_a85285fc11900c5dcdece0af52725eef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85285fc11900c5dcdece0af52725eef1">initUnknownsPatch</a> (T *luh, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;center, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a0ea11b0fe311ad3618f780bfa70db465">dx</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>(<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;center, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, T *Q)&gt; initUnknownsPointwise)</td></tr>
+<tr class="separator:a85285fc11900c5dcdece0af52725eef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5892879f220b5903fc68b44769bba1e" id="r_ad5892879f220b5903fc68b44769bba1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5892879f220b5903fc68b44769bba1e">correctPointSourceLocation</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> pointSourceLocation[][3])</td></tr>
+<tr class="separator:ad5892879f220b5903fc68b44769bba1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034232795b1863b7c4c6f547457ade34" id="r_a034232795b1863b7c4c6f547457ade34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a034232795b1863b7c4c6f547457ade34">getElementSize</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> luh, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a0ea11b0fe311ad3618f780bfa70db465">dx</a>)</td></tr>
+<tr class="separator:a034232795b1863b7c4c6f547457ade34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cb72f04fe9e4a215a6805bd214c20a" id="r_ab8cb72f04fe9e4a215a6805bd214c20a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8cb72f04fe9e4a215a6805bd214c20a">getElementCenter</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> luh, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;center)</td></tr>
+<tr class="separator:ab8cb72f04fe9e4a215a6805bd214c20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a226711083b5022446c722b23e12070c5" id="r_a226711083b5022446c722b23e12070c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226711083b5022446c722b23e12070c5">max_dx</a></td></tr>
+<tr class="separator:a226711083b5022446c722b23e12070c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae345fa307da3d287d159e8589987482b" id="r_ae345fa307da3d287d159e8589987482b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d0d/classCurvi_1_1Interface.html">Curvi::Interface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae345fa307da3d287d159e8589987482b">interface</a></td></tr>
+<tr class="separator:ae345fa307da3d287d159e8589987482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d76a1fbbbf2a60dd974ab81b21d450" id="r_a92d76a1fbbbf2a60dd974ab81b21d450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92d76a1fbbbf2a60dd974ab81b21d450">nodes</a> [basisSize]</td></tr>
+<tr class="separator:a92d76a1fbbbf2a60dd974ab81b21d450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51594666a33c5138832179fee1b7b7b" id="r_ae51594666a33c5138832179fee1b7b7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51594666a33c5138832179fee1b7b7b">dudx</a> [basisSize][basisSize]</td></tr>
+<tr class="separator:ae51594666a33c5138832179fee1b7b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6956209c8e8726bc076182fa59404b28" id="r_a6956209c8e8726bc076182fa59404b28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6956209c8e8726bc076182fa59404b28">domainOffset</a> [3]</td></tr>
+<tr class="separator:a6956209c8e8726bc076182fa59404b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc09e0f863a13a800bff9d954ce9753" id="r_adbc09e0f863a13a800bff9d954ce9753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbc09e0f863a13a800bff9d954ce9753">meshLevel</a></td></tr>
+<tr class="separator:adbc09e0f863a13a800bff9d954ce9753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Shortcuts, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T&gt;<br />
+class ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00012">12</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8c88dc6a4f9c12b756350660b0567790" name="a8c88dc6a4f9c12b756350660b0567790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c88dc6a4f9c12b756350660b0567790">&#9670;&#160;</a></span>ContextCurvilinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;<a class="el" href="../../d3/df6/classContextCurvilinear.html">::ContextCurvilinear</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>topography_string</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>coarsestMeshLevel</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>coarsestMeshSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>maxAdaptiveDepth</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>_domainOffset</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>_domainSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>_nodes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>_dudx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">15</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00252">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::domainOffset</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00250">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::dudx</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00247">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::interface</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00244">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::max_dx</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00249">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::nodes</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">X</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Y</a>, and <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Z</a>.</p>
+
+</div>
+</div>
+<a id="a884604b5b28255e80c80c133cbd44d73" name="a884604b5b28255e80c80c133cbd44d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a884604b5b28255e80c80c133cbd44d73">&#9670;&#160;</a></span>~ContextCurvilinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::~<a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00062">62</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00247">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::interface</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5892879f220b5903fc68b44769bba1e" name="ad5892879f220b5903fc68b44769bba1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5892879f220b5903fc68b44769bba1e">&#9670;&#160;</a></span>correctPointSourceLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::correctPointSourceLocation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>pointSourceLocation</em>[][3]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00187">187</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00247">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::interface</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00060">Curvi::Interface::invertProjection()</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">X</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Y</a>, and <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Z</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/df6/classContextCurvilinear_ad5892879f220b5903fc68b44769bba1e_cgraph.png" border="0" usemap="#ad3/df6/classContextCurvilinear_ad5892879f220b5903fc68b44769bba1e_cgraph" alt=""/></div>
+<map name="ad3/df6/classContextCurvilinear_ad5892879f220b5903fc68b44769bba1e_cgraph" id="ad3/df6/classContextCurvilinear_ad5892879f220b5903fc68b44769bba1e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,212,87"/>
+<area shape="rect" href="../../d9/d0d/classCurvi_1_1Interface.html#a1cf708b8280d87c7d83ca85731e83ff9" title=" " alt="" coords="260,47,428,87"/>
+<area shape="poly" title=" " alt="" coords="212,65,246,65,246,70,212,70"/>
+<area shape="rect" href="../../d3/db7/classFace.html#aaf7d6f9ae18cc8d9793cbdb0edde4ac0" title=" " alt="" coords="487,5,644,31"/>
+<area shape="poly" title=" " alt="" coords="427,46,494,31,495,36,429,51"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a5e29afb847687b9aa32590073c6312bb" title=" " alt="" coords="526,55,605,80"/>
+<area shape="poly" title=" " alt="" coords="428,65,512,65,512,70,428,70"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a03116826c7b2b60e7e10d4ec0abccb32" title=" " alt="" coords="476,104,655,129"/>
+<area shape="poly" title=" " alt="" coords="429,83,495,98,494,104,427,89"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8ecb6410d15676d6f916b5f3269a445d" title=" " alt="" coords="735,79,853,104"/>
+<area shape="poly" title=" " alt="" coords="654,104,721,97,721,102,655,109"/>
+<area shape="rect" href="../../df/dd0/classNode.html#a69beec945a012df8e2fbbf6274a35f9a" title=" " alt="" coords="703,128,885,153"/>
+<area shape="poly" title=" " alt="" coords="655,123,689,127,689,132,654,129"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8cb72f04fe9e4a215a6805bd214c20a" name="ab8cb72f04fe9e4a215a6805bd214c20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cb72f04fe9e4a215a6805bd214c20a">&#9670;&#160;</a></span>getElementCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::getElementCenter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td>          <td class="paramname"><span class="paramname"><em>luh</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>center</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00225">225</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp_source.html#l00021">int</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/df6/classContextCurvilinear_ab8cb72f04fe9e4a215a6805bd214c20a_icgraph.png" border="0" usemap="#ad3/df6/classContextCurvilinear_ab8cb72f04fe9e4a215a6805bd214c20a_icgraph" alt=""/></div>
+<map name="ad3/df6/classContextCurvilinear_ab8cb72f04fe9e4a215a6805bd214c20a_icgraph" id="ad3/df6/classContextCurvilinear_ab8cb72f04fe9e4a215a6805bd214c20a_icgraph">
+<area shape="rect" title=" " alt="" coords="208,5,356,45"/>
+<area shape="rect" href="../../d3/df6/classContextCurvilinear.html#a85285fc11900c5dcdece0af52725eef1" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a034232795b1863b7c4c6f547457ade34" name="a034232795b1863b7c4c6f547457ade34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034232795b1863b7c4c6f547457ade34">&#9670;&#160;</a></span>getElementSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::getElementSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td>          <td class="paramname"><span class="paramname"><em>luh</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>dx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00201">201</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00054">dx</a>.</p>
+
+</div>
+</div>
+<a id="a84a77215f0dafd6cba7df39315ef2881" name="a84a77215f0dafd6cba7df39315ef2881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a77215f0dafd6cba7df39315ef2881">&#9670;&#160;</a></span>getRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d73/classRoot.html">Root</a> * <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::getRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00060">60</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+</div>
+</div>
+<a id="a85285fc11900c5dcdece0af52725eef1" name="a85285fc11900c5dcdece0af52725eef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85285fc11900c5dcdece0af52725eef1">&#9670;&#160;</a></span>initUnknownsPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>luh</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>center</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>dx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>(<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;center, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, T *Q)&gt;</td>          <td class="paramname"><span class="paramname"><em>initUnknownsPointwise</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">66</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01022">assertion5</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00252">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::domainOffset</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00250">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::dudx</a>, <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00054">dx</a>, <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">Curvi::Interface::getElement()</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00225">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::getElementCenter()</a>, <a class="el" href="../../d9/d4d/block_8cpp_source.html#l00086">Block::getIndexOffset()</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00247">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::interface</a>, <a class="el" href="../../db/dba/hydro_8h_source.html#l00257">m</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00253">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::meshLevel</a>, <a class="el" href="../../dd/d75/CurvilinearDerivatives_8h_source.html#l00009">ExaSeis::Derivatives&lt; Shortcuts, T, num_nodes, numberOfData &gt;::metricDerivatives()</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00249">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::nodes</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">X</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Y</a>, and <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Z</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/df6/classContextCurvilinear_a85285fc11900c5dcdece0af52725eef1_cgraph.png" border="0" usemap="#ad3/df6/classContextCurvilinear_a85285fc11900c5dcdece0af52725eef1_cgraph" alt=""/></div>
+<map name="ad3/df6/classContextCurvilinear_a85285fc11900c5dcdece0af52725eef1_cgraph" id="ad3/df6/classContextCurvilinear_a85285fc11900c5dcdece0af52725eef1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,170,160,210"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="247,71,374,96"/>
+<area shape="poly" title=" " alt="" coords="107,168,152,135,207,105,233,95,235,100,209,110,155,140,110,172"/>
+<area shape="rect" href="../../d9/d0d/classCurvi_1_1Interface.html#aeebae4f6cf3755448c796c2346499b93" title=" " alt="" coords="208,120,413,145"/>
+<area shape="poly" title=" " alt="" coords="159,168,207,155,244,146,246,151,209,161,161,173"/>
+<area shape="rect" href="../../d3/df6/classContextCurvilinear.html#ab8cb72f04fe9e4a215a6805bd214c20a" title=" " alt="" coords="237,170,385,210"/>
+<area shape="poly" title=" " alt="" coords="160,187,223,187,223,193,160,193"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#a1ed7e12d24cb67f7c9a22eadd7b59218" title=" " alt="" coords="229,235,392,260"/>
+<area shape="poly" title=" " alt="" coords="161,207,209,219,246,229,244,234,207,225,159,212"/>
+<area shape="rect" href="../../d8/dd2/classExaSeis_1_1Derivatives.html#ae587f6f2b72ab87e53f4492d54cb3ffd" title=" " alt="" coords="233,285,389,325"/>
+<area shape="poly" title=" " alt="" coords="111,208,156,239,209,270,225,277,223,282,207,275,153,244,108,212"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#ada7afe538f2a9cee3106405a47803600" title=" " alt="" coords="481,5,645,31"/>
+<area shape="poly" title=" " alt="" coords="386,118,412,105,427,90,435,74,443,57,460,41,473,34,476,38,463,45,448,60,440,77,431,93,415,110,389,122"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a9f0f9771490207093d7ac010690331a2" title=" " alt="" coords="476,55,649,95"/>
+<area shape="poly" title=" " alt="" coords="367,117,462,95,463,101,368,123"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#a9b9896cace824fbbadff64d78cf7762d" title=" " alt="" coords="499,120,626,145"/>
+<area shape="poly" title=" " alt="" coords="413,130,485,130,485,135,413,135"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a921095050dd5786143d3cb94ff63c2db" title=" " alt="" coords="505,169,620,195"/>
+<area shape="poly" title=" " alt="" coords="377,143,492,166,491,171,376,148"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a3cda569f7cfff5362ca803e64336e2f1" title=" " alt="" coords="712,55,927,95"/>
+<area shape="poly" title=" " alt="" coords="650,73,698,73,698,78,650,78"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a5a2dc4c62470e528be11a0bb0b127e02" title=" " alt="" coords="975,27,1171,67"/>
+<area shape="poly" title=" " alt="" coords="927,61,961,57,961,62,927,66"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a938e0cb2a6f0bd85c1405d4a38d5a850" title=" " alt="" coords="1219,57,1392,97"/>
+<area shape="poly" title=" " alt="" coords="927,76,975,77,1171,77,1205,76,1205,82,1171,82,975,82,927,81"/>
+<area shape="poly" title=" " alt="" coords="1171,57,1206,61,1205,67,1171,62"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#a258e8e600bb9d9159933c18121f6a4b4" title=" " alt="" coords="757,120,882,145"/>
+<area shape="poly" title=" " alt="" coords="626,130,743,130,743,135,626,135"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8ecb6410d15676d6f916b5f3269a445d" title=" " alt="" coords="760,169,879,195"/>
+<area shape="poly" title=" " alt="" coords="620,179,746,179,746,185,620,185"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626" title=" " alt="" coords="760,219,879,244"/>
+<area shape="poly" title=" " alt="" coords="621,190,747,215,746,220,620,196"/>
+<area shape="rect" href="../../d8/dd2/classExaSeis_1_1Derivatives.html#aa85a92d7b2684132626f999d275c0100" title=" " alt="" coords="461,221,664,261"/>
+<area shape="poly" title=" " alt="" coords="388,282,469,262,470,267,390,288"/>
+<area shape="rect" href="../../d8/dd2/classExaSeis_1_1Derivatives.html#a2135f387bbcfda0d93c1bab816aecd1f" title=" " alt="" coords="461,285,664,325"/>
+<area shape="poly" title=" " alt="" coords="389,302,448,302,448,307,389,307"/>
+<area shape="rect" href="../../d8/dd2/classExaSeis_1_1Derivatives.html#a2ec840c42d8d9c2b2ba75a896746e8f2" title=" " alt="" coords="462,349,663,389"/>
+<area shape="poly" title=" " alt="" coords="390,322,470,343,469,348,388,327"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a6956209c8e8726bc076182fa59404b28" name="a6956209c8e8726bc076182fa59404b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6956209c8e8726bc076182fa59404b28">&#9670;&#160;</a></span>domainOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::domainOffset[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00252">252</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::ContextCurvilinear()</a>, and <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+
+</div>
+</div>
+<a id="ae51594666a33c5138832179fee1b7b7b" name="ae51594666a33c5138832179fee1b7b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51594666a33c5138832179fee1b7b7b">&#9670;&#160;</a></span>dudx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::dudx[basisSize][basisSize]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00250">250</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::ContextCurvilinear()</a>, and <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+
+</div>
+</div>
+<a id="ae345fa307da3d287d159e8589987482b" name="ae345fa307da3d287d159e8589987482b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae345fa307da3d287d159e8589987482b">&#9670;&#160;</a></span>interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d0d/classCurvi_1_1Interface.html">Curvi::Interface</a>* <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::interface</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00247">247</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::ContextCurvilinear()</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00187">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::correctPointSourceLocation()</a>, <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>, and <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00062">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::~ContextCurvilinear()</a>.</p>
+
+</div>
+</div>
+<a id="a226711083b5022446c722b23e12070c5" name="a226711083b5022446c722b23e12070c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226711083b5022446c722b23e12070c5">&#9670;&#160;</a></span>max_dx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::max_dx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00244">244</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::ContextCurvilinear()</a>.</p>
+
+</div>
+</div>
+<a id="adbc09e0f863a13a800bff9d954ce9753" name="adbc09e0f863a13a800bff9d954ce9753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc09e0f863a13a800bff9d954ce9753">&#9670;&#160;</a></span>meshLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::meshLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00253">253</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+
+</div>
+</div>
+<a id="a92d76a1fbbbf2a60dd974ab81b21d450" name="a92d76a1fbbbf2a60dd974ab81b21d450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d76a1fbbbf2a60dd974ab81b21d450">&#9670;&#160;</a></span>nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Shortcuts , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> basisSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfData, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a>&lt; Shortcuts, basisSize, numberOfData, T &gt;::nodes[basisSize]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00249">249</a> of file <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00015">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::ContextCurvilinear()</a>, and <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>applications/exahype2/exaseis/ExaSeis_core/Curvilinear/<a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html">ContextCurvilinear.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/df6/classContextCurvilinear.html">ContextCurvilinear</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:08 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

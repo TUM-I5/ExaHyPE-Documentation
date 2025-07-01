@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d3a/namespaceplots-time-integration-test.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">plots-time-integration-test Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adda51680b10b953140850634672e1c78" id="r_adda51680b10b953140850634672e1c78"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adda51680b10b953140850634672e1c78">font</a> = {'size':12}</td></tr>
+<tr class="separator:adda51680b10b953140850634672e1c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069b9a105aba48f598337b20cf1ec04c" id="r_a069b9a105aba48f598337b20cf1ec04c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a069b9a105aba48f598337b20cf1ec04c">family</a></td></tr>
+<tr class="separator:a069b9a105aba48f598337b20cf1ec04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5286093fef8d8a9cfdb9643285de1d" id="r_a6e5286093fef8d8a9cfdb9643285de1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5286093fef8d8a9cfdb9643285de1d">usetex</a></td></tr>
+<tr class="separator:a6e5286093fef8d8a9cfdb9643285de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5087da4085b8596c31eef5fbab0c38b4" id="r_a5087da4085b8596c31eef5fbab0c38b4"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5087da4085b8596c31eef5fbab0c38b4">snapshot_dir</a> = ''</td></tr>
+<tr class="separator:a5087da4085b8596c31eef5fbab0c38b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadde78e7e85cfd8d0d8fcc4c62942b5d" id="r_aadde78e7e85cfd8d0d8fcc4c62942b5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">files</a> = glob.glob(<a class="el" href="#a5087da4085b8596c31eef5fbab0c38b4">snapshot_dir</a> + &quot;particles-*.vtu&quot;)</td></tr>
+<tr class="separator:aadde78e7e85cfd8d0d8fcc4c62942b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ada4fb7efa197b00d95d6a6f3b2800" id="r_a23ada4fb7efa197b00d95d6a6f3b2800"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23ada4fb7efa197b00d95d6a6f3b2800">E_ini</a> = 1.11362</td></tr>
+<tr class="separator:a23ada4fb7efa197b00d95d6a6f3b2800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63039c406f25abbd37ce6ab4b08540a" id="r_ac63039c406f25abbd37ce6ab4b08540a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63039c406f25abbd37ce6ab4b08540a">time_step_sim</a> = 1e-3</td></tr>
+<tr class="separator:ac63039c406f25abbd37ce6ab4b08540a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd92f3f5fa1ae16dac54acbb046b7bee" id="r_abd92f3f5fa1ae16dac54acbb046b7bee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd92f3f5fa1ae16dac54acbb046b7bee">snapshot_rate</a> = 10</td></tr>
+<tr class="separator:abd92f3f5fa1ae16dac54acbb046b7bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfac4ed7f57afce7e66185665739f96f" id="r_abfac4ed7f57afce7e66185665739f96f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfac4ed7f57afce7e66185665739f96f">SUN_X</a> = 0.5</td></tr>
+<tr class="separator:abfac4ed7f57afce7e66185665739f96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327bdc927a59df680f4d588f32ba08c0" id="r_a327bdc927a59df680f4d588f32ba08c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a327bdc927a59df680f4d588f32ba08c0">SUN_Y</a> = 0.55</td></tr>
+<tr class="separator:a327bdc927a59df680f4d588f32ba08c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e14dabbe3b6a273c27718bd0e110a86" id="r_a9e14dabbe3b6a273c27718bd0e110a86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e14dabbe3b6a273c27718bd0e110a86">E_dif_all</a> = np.zeros( len(<a class="el" href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">files</a>) )</td></tr>
+<tr class="separator:a9e14dabbe3b6a273c27718bd0e110a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382641e365b38aa7d6b1aafddc6339ad" id="r_a382641e365b38aa7d6b1aafddc6339ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a382641e365b38aa7d6b1aafddc6339ad">t_all</a> = np.zeros( len(<a class="el" href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">files</a>) )</td></tr>
+<tr class="separator:a382641e365b38aa7d6b1aafddc6339ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca8626df2ece690d44cf6a11027c35b" id="r_aeca8626df2ece690d44cf6a11027c35b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca8626df2ece690d44cf6a11027c35b">start</a></td></tr>
+<tr class="separator:aeca8626df2ece690d44cf6a11027c35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867506342c4437dbd66aaa5e029deed4" id="r_a867506342c4437dbd66aaa5e029deed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a> = N_snapshot * <a class="el" href="#abd92f3f5fa1ae16dac54acbb046b7bee">snapshot_rate</a> * <a class="el" href="#ac63039c406f25abbd37ce6ab4b08540a">time_step_sim</a></td></tr>
+<tr class="separator:a867506342c4437dbd66aaa5e029deed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581a7877a30e9a6d2f144efcfe9579df" id="r_a581a7877a30e9a6d2f144efcfe9579df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581a7877a30e9a6d2f144efcfe9579df">reader</a> = <a class="el" href="../../d9/d29/classpeano4_1_1toolbox_1_1particles_1_1postprocessing_1_1ParticleVTUReader_1_1ParticleVTUReader.html">ParticleVTUReader</a>(vtufile=file)</td></tr>
+<tr class="separator:a581a7877a30e9a6d2f144efcfe9579df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67b6f0a54174001ef8fa5b014fcb036" id="r_ad67b6f0a54174001ef8fa5b014fcb036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67b6f0a54174001ef8fa5b014fcb036">partData</a> = reader.load()</td></tr>
+<tr class="separator:ad67b6f0a54174001ef8fa5b014fcb036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b148240a36f7f2882fd7ae3426960ee" id="r_a9b148240a36f7f2882fd7ae3426960ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b148240a36f7f2882fd7ae3426960ee">pos</a> = partData.x</td></tr>
+<tr class="separator:a9b148240a36f7f2882fd7ae3426960ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb757efb0094de708c8e97f256b3ba7" id="r_aadb757efb0094de708c8e97f256b3ba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadb757efb0094de708c8e97f256b3ba7">x</a> = <a class="el" href="#a9b148240a36f7f2882fd7ae3426960ee">pos</a>[:,0]</td></tr>
+<tr class="separator:aadb757efb0094de708c8e97f256b3ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e87b5eb4f5cec0cdea0c421cb105dd2" id="r_a7e87b5eb4f5cec0cdea0c421cb105dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e87b5eb4f5cec0cdea0c421cb105dd2">y</a> = <a class="el" href="#a9b148240a36f7f2882fd7ae3426960ee">pos</a>[:,1]</td></tr>
+<tr class="separator:a7e87b5eb4f5cec0cdea0c421cb105dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181a2c6d89ebbf10cc9a89d765207322" id="r_a181a2c6d89ebbf10cc9a89d765207322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a181a2c6d89ebbf10cc9a89d765207322">E_tot</a> = partData.energyTot</td></tr>
+<tr class="separator:a181a2c6d89ebbf10cc9a89d765207322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5798a5127e797cc8f06abd7c4666602" id="r_ae5798a5127e797cc8f06abd7c4666602"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5798a5127e797cc8f06abd7c4666602">E_dif</a> = (<a class="el" href="#a181a2c6d89ebbf10cc9a89d765207322">E_tot</a> - <a class="el" href="#a23ada4fb7efa197b00d95d6a6f3b2800">E_ini</a>) / <a class="el" href="#a23ada4fb7efa197b00d95d6a6f3b2800">E_ini</a></td></tr>
+<tr class="separator:ae5798a5127e797cc8f06abd7c4666602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa3e888a51d064cd65eaf131627fc5c" id="r_a2fa3e888a51d064cd65eaf131627fc5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa3e888a51d064cd65eaf131627fc5c">fig</a> = plt.figure( figsize=(6, 4) )</td></tr>
+<tr class="separator:a2fa3e888a51d064cd65eaf131627fc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a447d091d6e4a9a68992e7d5ebbc153" id="r_a8a447d091d6e4a9a68992e7d5ebbc153"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a447d091d6e4a9a68992e7d5ebbc153">c</a></td></tr>
+<tr class="separator:a8a447d091d6e4a9a68992e7d5ebbc153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee62ee787b52ae18d0818f452fbf0667" id="r_aee62ee787b52ae18d0818f452fbf0667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee62ee787b52ae18d0818f452fbf0667">lw</a></td></tr>
+<tr class="separator:aee62ee787b52ae18d0818f452fbf0667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874e0fabf2705f4edaebacd7a4af90d3" id="r_a874e0fabf2705f4edaebacd7a4af90d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a874e0fabf2705f4edaebacd7a4af90d3">zorder</a></td></tr>
+<tr class="separator:a874e0fabf2705f4edaebacd7a4af90d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81e076d8ebb4120e507c797f8a90542" id="r_af81e076d8ebb4120e507c797f8a90542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81e076d8ebb4120e507c797f8a90542">direction</a></td></tr>
+<tr class="separator:af81e076d8ebb4120e507c797f8a90542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538d9fb37e854d731ef628c5a7139792" id="r_a538d9fb37e854d731ef628c5a7139792"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a538d9fb37e854d731ef628c5a7139792">top</a></td></tr>
+<tr class="separator:a538d9fb37e854d731ef628c5a7139792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a6d114a5de89aea0ed2a73b850f075" id="r_a03a6d114a5de89aea0ed2a73b850f075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a6d114a5de89aea0ed2a73b850f075">True</a></td></tr>
+<tr class="separator:a03a6d114a5de89aea0ed2a73b850f075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1772e118145b5ce9e7528ac22c7ebbc0" id="r_a1772e118145b5ce9e7528ac22c7ebbc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1772e118145b5ce9e7528ac22c7ebbc0">right</a></td></tr>
+<tr class="separator:a1772e118145b5ce9e7528ac22c7ebbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb6f66f58919883578712b6cfef092c" id="r_accb6f66f58919883578712b6cfef092c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb6f66f58919883578712b6cfef092c">left</a></td></tr>
+<tr class="separator:accb6f66f58919883578712b6cfef092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec877f47423dfbc4beeb9a7c0f42704d" id="r_aec877f47423dfbc4beeb9a7c0f42704d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec877f47423dfbc4beeb9a7c0f42704d">bottom</a></td></tr>
+<tr class="separator:aec877f47423dfbc4beeb9a7c0f42704d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a4a000ebe7362affae634f50868321" id="r_a00a4a000ebe7362affae634f50868321"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00a4a000ebe7362affae634f50868321">ls</a></td></tr>
+<tr class="separator:a00a4a000ebe7362affae634f50868321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc5a360d0f2038f3c0d06ed235caad7" id="r_addc5a360d0f2038f3c0d06ed235caad7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc5a360d0f2038f3c0d06ed235caad7">E_tolerance</a> = 0.05</td></tr>
+<tr class="separator:addc5a360d0f2038f3c0d06ed235caad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcc8b8bc5393f1126a72dd51477fc66" id="r_a5dcc8b8bc5393f1126a72dd51477fc66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dcc8b8bc5393f1126a72dd51477fc66">E_min</a> = E_dif_all.min()</td></tr>
+<tr class="separator:a5dcc8b8bc5393f1126a72dd51477fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b98ca710111378a88f7c118c8511eb4" id="r_a0b98ca710111378a88f7c118c8511eb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b98ca710111378a88f7c118c8511eb4">E_max</a> = E_dif_all.max()</td></tr>
+<tr class="separator:a0b98ca710111378a88f7c118c8511eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e2d081e574dd91cd23d0a035bc49ec" id="r_a78e2d081e574dd91cd23d0a035bc49ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78e2d081e574dd91cd23d0a035bc49ec">E_mean</a> = np.mean(<a class="el" href="#a9e14dabbe3b6a273c27718bd0e110a86">E_dif_all</a>)</td></tr>
+<tr class="separator:a78e2d081e574dd91cd23d0a035bc49ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aec877f47423dfbc4beeb9a7c0f42704d" name="aec877f47423dfbc4beeb9a7c0f42704d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec877f47423dfbc4beeb9a7c0f42704d">&#9670;&#160;</a></span>bottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.bottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a8a447d091d6e4a9a68992e7d5ebbc153" name="a8a447d091d6e4a9a68992e7d5ebbc153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a447d091d6e4a9a68992e7d5ebbc153">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00078">78</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="af81e076d8ebb4120e507c797f8a90542" name="af81e076d8ebb4120e507c797f8a90542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81e076d8ebb4120e507c797f8a90542">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.direction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="ae5798a5127e797cc8f06abd7c4666602" name="ae5798a5127e797cc8f06abd7c4666602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5798a5127e797cc8f06abd7c4666602">&#9670;&#160;</a></span>E_dif</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_dif = (<a class="el" href="#a181a2c6d89ebbf10cc9a89d765207322">E_tot</a> - <a class="el" href="#a23ada4fb7efa197b00d95d6a6f3b2800">E_ini</a>) / <a class="el" href="#a23ada4fb7efa197b00d95d6a6f3b2800">E_ini</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00064">64</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a9e14dabbe3b6a273c27718bd0e110a86" name="a9e14dabbe3b6a273c27718bd0e110a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e14dabbe3b6a273c27718bd0e110a86">&#9670;&#160;</a></span>E_dif_all</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_dif_all = np.zeros( len(<a class="el" href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">files</a>) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00036">36</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a23ada4fb7efa197b00d95d6a6f3b2800" name="a23ada4fb7efa197b00d95d6a6f3b2800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ada4fb7efa197b00d95d6a6f3b2800">&#9670;&#160;</a></span>E_ini</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_ini = 1.11362</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00029">29</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a0b98ca710111378a88f7c118c8511eb4" name="a0b98ca710111378a88f7c118c8511eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b98ca710111378a88f7c118c8511eb4">&#9670;&#160;</a></span>E_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_max = E_dif_all.max()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00099">99</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a78e2d081e574dd91cd23d0a035bc49ec" name="a78e2d081e574dd91cd23d0a035bc49ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e2d081e574dd91cd23d0a035bc49ec">&#9670;&#160;</a></span>E_mean</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_mean = np.mean(<a class="el" href="#a9e14dabbe3b6a273c27718bd0e110a86">E_dif_all</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00100">100</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a5dcc8b8bc5393f1126a72dd51477fc66" name="a5dcc8b8bc5393f1126a72dd51477fc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcc8b8bc5393f1126a72dd51477fc66">&#9670;&#160;</a></span>E_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_min = E_dif_all.min()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00098">98</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="addc5a360d0f2038f3c0d06ed235caad7" name="addc5a360d0f2038f3c0d06ed235caad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc5a360d0f2038f3c0d06ed235caad7">&#9670;&#160;</a></span>E_tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_tolerance = 0.05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00096">96</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a181a2c6d89ebbf10cc9a89d765207322" name="a181a2c6d89ebbf10cc9a89d765207322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181a2c6d89ebbf10cc9a89d765207322">&#9670;&#160;</a></span>E_tot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.E_tot = partData.energyTot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00062">62</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a069b9a105aba48f598337b20cf1ec04c" name="a069b9a105aba48f598337b20cf1ec04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069b9a105aba48f598337b20cf1ec04c">&#9670;&#160;</a></span>family</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.family</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00017">17</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a2fa3e888a51d064cd65eaf131627fc5c" name="a2fa3e888a51d064cd65eaf131627fc5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa3e888a51d064cd65eaf131627fc5c">&#9670;&#160;</a></span>fig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.fig = plt.figure( figsize=(6, 4) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00076">76</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="aadde78e7e85cfd8d0d8fcc4c62942b5d" name="aadde78e7e85cfd8d0d8fcc4c62942b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">&#9670;&#160;</a></span>files</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.files = glob.glob(<a class="el" href="#a5087da4085b8596c31eef5fbab0c38b4">snapshot_dir</a> + &quot;particles-*.vtu&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00024">24</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="adda51680b10b953140850634672e1c78" name="adda51680b10b953140850634672e1c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda51680b10b953140850634672e1c78">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.font = {'size':12}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00015">15</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="accb6f66f58919883578712b6cfef092c" name="accb6f66f58919883578712b6cfef092c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb6f66f58919883578712b6cfef092c">&#9670;&#160;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.left</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a00a4a000ebe7362affae634f50868321" name="a00a4a000ebe7362affae634f50868321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a4a000ebe7362affae634f50868321">&#9670;&#160;</a></span>ls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.ls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00083">83</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="aee62ee787b52ae18d0818f452fbf0667" name="aee62ee787b52ae18d0818f452fbf0667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee62ee787b52ae18d0818f452fbf0667">&#9670;&#160;</a></span>lw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.lw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00078">78</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="ad67b6f0a54174001ef8fa5b014fcb036" name="ad67b6f0a54174001ef8fa5b014fcb036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67b6f0a54174001ef8fa5b014fcb036">&#9670;&#160;</a></span>partData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.partData = reader.load()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00051">51</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a9b148240a36f7f2882fd7ae3426960ee" name="a9b148240a36f7f2882fd7ae3426960ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b148240a36f7f2882fd7ae3426960ee">&#9670;&#160;</a></span>pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.pos = partData.x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00057">57</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a581a7877a30e9a6d2f144efcfe9579df" name="a581a7877a30e9a6d2f144efcfe9579df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581a7877a30e9a6d2f144efcfe9579df">&#9670;&#160;</a></span>reader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.reader = <a class="el" href="../../d9/d29/classpeano4_1_1toolbox_1_1particles_1_1postprocessing_1_1ParticleVTUReader_1_1ParticleVTUReader.html">ParticleVTUReader</a>(vtufile=file)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00050">50</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a1772e118145b5ce9e7528ac22c7ebbc0" name="a1772e118145b5ce9e7528ac22c7ebbc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1772e118145b5ce9e7528ac22c7ebbc0">&#9670;&#160;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.right</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a5087da4085b8596c31eef5fbab0c38b4" name="a5087da4085b8596c31eef5fbab0c38b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5087da4085b8596c31eef5fbab0c38b4">&#9670;&#160;</a></span>snapshot_dir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.snapshot_dir = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00023">23</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="abd92f3f5fa1ae16dac54acbb046b7bee" name="abd92f3f5fa1ae16dac54acbb046b7bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd92f3f5fa1ae16dac54acbb046b7bee">&#9670;&#160;</a></span>snapshot_rate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.snapshot_rate = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00031">31</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="aeca8626df2ece690d44cf6a11027c35b" name="aeca8626df2ece690d44cf6a11027c35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca8626df2ece690d44cf6a11027c35b">&#9670;&#160;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00040">40</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="abfac4ed7f57afce7e66185665739f96f" name="abfac4ed7f57afce7e66185665739f96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfac4ed7f57afce7e66185665739f96f">&#9670;&#160;</a></span>SUN_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.SUN_X = 0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00032">32</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a327bdc927a59df680f4d588f32ba08c0" name="a327bdc927a59df680f4d588f32ba08c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327bdc927a59df680f4d588f32ba08c0">&#9670;&#160;</a></span>SUN_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.SUN_Y = 0.55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00033">33</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a382641e365b38aa7d6b1aafddc6339ad" name="a382641e365b38aa7d6b1aafddc6339ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382641e365b38aa7d6b1aafddc6339ad">&#9670;&#160;</a></span>t_all</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.t_all = np.zeros( len(<a class="el" href="#aadde78e7e85cfd8d0d8fcc4c62942b5d">files</a>) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00037">37</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a867506342c4437dbd66aaa5e029deed4" name="a867506342c4437dbd66aaa5e029deed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867506342c4437dbd66aaa5e029deed4">&#9670;&#160;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> plots-time-integration-test.time = N_snapshot * <a class="el" href="#abd92f3f5fa1ae16dac54acbb046b7bee">snapshot_rate</a> * <a class="el" href="#ac63039c406f25abbd37ce6ab4b08540a">time_step_sim</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00043">43</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="ac63039c406f25abbd37ce6ab4b08540a" name="ac63039c406f25abbd37ce6ab4b08540a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63039c406f25abbd37ce6ab4b08540a">&#9670;&#160;</a></span>time_step_sim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.time_step_sim = 1e-3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00030">30</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a538d9fb37e854d731ef628c5a7139792" name="a538d9fb37e854d731ef628c5a7139792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538d9fb37e854d731ef628c5a7139792">&#9670;&#160;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.top</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a03a6d114a5de89aea0ed2a73b850f075" name="a03a6d114a5de89aea0ed2a73b850f075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a6d114a5de89aea0ed2a73b850f075">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00082">82</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a6e5286093fef8d8a9cfdb9643285de1d" name="a6e5286093fef8d8a9cfdb9643285de1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5286093fef8d8a9cfdb9643285de1d">&#9670;&#160;</a></span>usetex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.usetex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00018">18</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="aadb757efb0094de708c8e97f256b3ba7" name="aadb757efb0094de708c8e97f256b3ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb757efb0094de708c8e97f256b3ba7">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.x = <a class="el" href="#a9b148240a36f7f2882fd7ae3426960ee">pos</a>[:,0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00058">58</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e87b5eb4f5cec0cdea0c421cb105dd2" name="a7e87b5eb4f5cec0cdea0c421cb105dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e87b5eb4f5cec0cdea0c421cb105dd2">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.y = <a class="el" href="#a9b148240a36f7f2882fd7ae3426960ee">pos</a>[:,1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00059">59</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+<a id="a874e0fabf2705f4edaebacd7a4af90d3" name="a874e0fabf2705f4edaebacd7a4af90d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874e0fabf2705f4edaebacd7a4af90d3">&#9670;&#160;</a></span>zorder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plots-<a class="el" href="#a867506342c4437dbd66aaa5e029deed4">time</a>-integration-test.zorder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html#l00078">78</a> of file <a class="el" href="../../db/d61/plots-time-integration-test_8py_source.html">plots-time-integration-test.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d3a/namespaceplots-time-integration-test.html">plots-time-integration-test</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:29 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('df/d71/namespacegauge-wave-fv.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">gauge-wave-fv Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5e/classgauge-wave-fv_1_1CCZ4Solver.html">CCZ4Solver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6e9e09a82ac6368ea73ecba72b384ceb" id="r_a6e9e09a82ac6368ea73ecba72b384ceb"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9e09a82ac6368ea73ecba72b384ceb">size</a> = [1.0, 1.0, 1.0]</td></tr>
+<tr class="separator:a6e9e09a82ac6368ea73ecba72b384ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3df272b4d969915b6112694be6681b" id="r_a9f3df272b4d969915b6112694be6681b"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f3df272b4d969915b6112694be6681b">offset</a> = [-0.5, -0.5, -0.5]</td></tr>
+<tr class="separator:a9f3df272b4d969915b6112694be6681b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef62d5af220d6c7eb0a8387db9dbd8ab" id="r_aef62d5af220d6c7eb0a8387db9dbd8ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef62d5af220d6c7eb0a8387db9dbd8ab">end_time</a> = 1.0</td></tr>
+<tr class="separator:aef62d5af220d6c7eb0a8387db9dbd8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab212b47eeccee18f49f900d785a3b90b" id="r_ab212b47eeccee18f49f900d785a3b90b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab212b47eeccee18f49f900d785a3b90b">plot_interval</a> = 0.0</td></tr>
+<tr class="separator:ab212b47eeccee18f49f900d785a3b90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40711fbd4c9e8ccc91681ea6b25cceb3" id="r_a40711fbd4c9e8ccc91681ea6b25cceb3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40711fbd4c9e8ccc91681ea6b25cceb3">periodic_BC</a> = [False, False, False]</td></tr>
+<tr class="separator:a40711fbd4c9e8ccc91681ea6b25cceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff488c17ffe77abc6b796c75a2d188f" id="r_a8ff488c17ffe77abc6b796c75a2d188f"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff488c17ffe77abc6b796c75a2d188f">floatparams</a></td></tr>
+<tr class="separator:a8ff488c17ffe77abc6b796c75a2d188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5007a355d10b87899fd0fc34cb7be96" id="r_af5007a355d10b87899fd0fc34cb7be96"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5007a355d10b87899fd0fc34cb7be96">intparams</a></td></tr>
+<tr class="separator:af5007a355d10b87899fd0fc34cb7be96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd074b0dd0248f20b1afa1fe19bdb87" id="r_a6fd074b0dd0248f20b1afa1fe19bdb87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fd074b0dd0248f20b1afa1fe19bdb87">parser</a></td></tr>
+<tr class="separator:a6fd074b0dd0248f20b1afa1fe19bdb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bf696bfea7047039849e2922cbe80d" id="r_ab1bf696bfea7047039849e2922cbe80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1bf696bfea7047039849e2922cbe80d">type</a></td></tr>
+<tr class="separator:ab1bf696bfea7047039849e2922cbe80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad357316b21edabb0ad4bc8ca74690a69" id="r_ad357316b21edabb0ad4bc8ca74690a69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad357316b21edabb0ad4bc8ca74690a69">default</a></td></tr>
+<tr class="separator:ad357316b21edabb0ad4bc8ca74690a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cde286999dc321b709f641174ed4ff3" id="r_a4cde286999dc321b709f641174ed4ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cde286999dc321b709f641174ed4ff3">help</a></td></tr>
+<tr class="separator:a4cde286999dc321b709f641174ed4ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbeea0cda8d81fff4cf34f7a9181cb2d" id="r_afbeea0cda8d81fff4cf34f7a9181cb2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbeea0cda8d81fff4cf34f7a9181cb2d">dest</a></td></tr>
+<tr class="separator:afbeea0cda8d81fff4cf34f7a9181cb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4901cc04f3462ae5f260ee60800470" id="r_aaa4901cc04f3462ae5f260ee60800470"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa4901cc04f3462ae5f260ee60800470">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:aaa4901cc04f3462ae5f260ee60800470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12371de3d0c93df11eb46505217b4c96" id="r_a12371de3d0c93df11eb46505217b4c96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12371de3d0c93df11eb46505217b4c96">project</a></td></tr>
+<tr class="separator:a12371de3d0c93df11eb46505217b4c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4c218d55a8a784ac752ed469b8edc2" id="r_a7f4c218d55a8a784ac752ed469b8edc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4c218d55a8a784ac752ed469b8edc2">namespace</a></td></tr>
+<tr class="separator:a7f4c218d55a8a784ac752ed469b8edc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7325eb27ffe340671be66c0fc8df3ca" id="r_aa7325eb27ffe340671be66c0fc8df3ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7325eb27ffe340671be66c0fc8df3ca">project_name</a></td></tr>
+<tr class="separator:aa7325eb27ffe340671be66c0fc8df3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dc2cfa986f23d3f2b53a65d4b8fc8c" id="r_a56dc2cfa986f23d3f2b53a65d4b8fc8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56dc2cfa986f23d3f2b53a65d4b8fc8c">directory</a></td></tr>
+<tr class="separator:a56dc2cfa986f23d3f2b53a65d4b8fc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6443e5e384a62904fb17df701ec30084" id="r_a6443e5e384a62904fb17df701ec30084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6443e5e384a62904fb17df701ec30084">executable</a></td></tr>
+<tr class="separator:a6443e5e384a62904fb17df701ec30084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526307b9447060663d97388b68b3900b" id="r_a526307b9447060663d97388b68b3900b"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a526307b9447060663d97388b68b3900b">max_h</a> = (1.1 * min(<a class="el" href="#a6e9e09a82ac6368ea73ecba72b384ceb">size</a>) / (3.0**args.min_depth))</td></tr>
+<tr class="separator:a526307b9447060663d97388b68b3900b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b98b79f1433d78e7d34acebc8dd6bb" id="r_ab7b98b79f1433d78e7d34acebc8dd6bb"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7b98b79f1433d78e7d34acebc8dd6bb">min_h</a> = <a class="el" href="#a526307b9447060663d97388b68b3900b">max_h</a> * 3.0 ** (-args.amr_levels)</td></tr>
+<tr class="separator:ab7b98b79f1433d78e7d34acebc8dd6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d4a2e68b66f4fb98bca45dd6d5b668" id="r_af5d4a2e68b66f4fb98bca45dd6d5b668"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5d4a2e68b66f4fb98bca45dd6d5b668">my_solver</a></td></tr>
+<tr class="separator:af5d4a2e68b66f4fb98bca45dd6d5b668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d2a0af48f220d8f6cc0cb98c085932" id="r_a89d2a0af48f220d8f6cc0cb98c085932"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89d2a0af48f220d8f6cc0cb98c085932">solverconstants</a> = &quot;&quot;</td></tr>
+<tr class="separator:a89d2a0af48f220d8f6cc0cb98c085932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7bff8a316e2dafc4828538a5085ac7" id="r_a6f7bff8a316e2dafc4828538a5085ac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f7bff8a316e2dafc4828538a5085ac7">dimensions</a></td></tr>
+<tr class="separator:a6f7bff8a316e2dafc4828538a5085ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d2cd711c93bd4422c4afb200bdd209" id="r_a23d2cd711c93bd4422c4afb200bdd209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d2cd711c93bd4422c4afb200bdd209">min_end_time</a></td></tr>
+<tr class="separator:a23d2cd711c93bd4422c4afb200bdd209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca7eb748957a5852f5569f3d160ed47" id="r_a0ca7eb748957a5852f5569f3d160ed47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ca7eb748957a5852f5569f3d160ed47">max_end_time</a></td></tr>
+<tr class="separator:a0ca7eb748957a5852f5569f3d160ed47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8606e42b4cc2c8712ef06adde63bda9d" id="r_a8606e42b4cc2c8712ef06adde63bda9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8606e42b4cc2c8712ef06adde63bda9d">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a8606e42b4cc2c8712ef06adde63bda9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d9c6d747e618012d8b8c2f83040dee" id="r_a34d9c6d747e618012d8b8c2f83040dee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d9c6d747e618012d8b8c2f83040dee">time_in_between_plots</a></td></tr>
+<tr class="separator:a34d9c6d747e618012d8b8c2f83040dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1353ed4b8331719f40575ad121686677" id="r_a1353ed4b8331719f40575ad121686677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1353ed4b8331719f40575ad121686677">plotter_precision</a></td></tr>
+<tr class="separator:a1353ed4b8331719f40575ad121686677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252d6abefd30324f516278ad62984a7e" id="r_a252d6abefd30324f516278ad62984a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a252d6abefd30324f516278ad62984a7e">peano4_project</a> = project.generate_Peano4_project(verbose=False)</td></tr>
+<tr class="separator:a252d6abefd30324f516278ad62984a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30df853e60d954938293509c36525fcd" id="r_a30df853e60d954938293509c36525fcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30df853e60d954938293509c36525fcd">throw_away_data_after_generation</a></td></tr>
+<tr class="separator:a30df853e60d954938293509c36525fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c4527b7f5b7aa6aa5ff642512705fb" id="r_ae5c4527b7f5b7aa6aa5ff642512705fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c4527b7f5b7aa6aa5ff642512705fb">make_clean_first</a></td></tr>
+<tr class="separator:ae5c4527b7f5b7aa6aa5ff642512705fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aaa4901cc04f3462ae5f260ee60800470" name="aaa4901cc04f3462ae5f260ee60800470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4901cc04f3462ae5f260ee60800470">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00093">93</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="ad357316b21edabb0ad4bc8ca74690a69" name="ad357316b21edabb0ad4bc8ca74690a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad357316b21edabb0ad4bc8ca74690a69">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00058">58</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="afbeea0cda8d81fff4cf34f7a9181cb2d" name="afbeea0cda8d81fff4cf34f7a9181cb2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbeea0cda8d81fff4cf34f7a9181cb2d">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00079">79</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a6f7bff8a316e2dafc4828538a5085ac7" name="a6f7bff8a316e2dafc4828538a5085ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7bff8a316e2dafc4828538a5085ac7">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00258">258</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a56dc2cfa986f23d3f2b53a65d4b8fc8c" name="a56dc2cfa986f23d3f2b53a65d4b8fc8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56dc2cfa986f23d3f2b53a65d4b8fc8c">&#9670;&#160;</a></span>directory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.directory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00218">218</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="aef62d5af220d6c7eb0a8387db9dbd8ab" name="aef62d5af220d6c7eb0a8387db9dbd8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef62d5af220d6c7eb0a8387db9dbd8ab">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauge-wave-fv.end_time = 1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00010">10</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a6443e5e384a62904fb17df701ec30084" name="a6443e5e384a62904fb17df701ec30084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6443e5e384a62904fb17df701ec30084">&#9670;&#160;</a></span>executable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.executable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00219">219</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a8606e42b4cc2c8712ef06adde63bda9d" name="a8606e42b4cc2c8712ef06adde63bda9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8606e42b4cc2c8712ef06adde63bda9d">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00263">263</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a8ff488c17ffe77abc6b796c75a2d188f" name="a8ff488c17ffe77abc6b796c75a2d188f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff488c17ffe77abc6b796c75a2d188f">&#9670;&#160;</a></span>floatparams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict gauge-wave-fv.floatparams</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;GLMc0&quot;</span>: 1.5,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;GLMc&quot;</span>: 1.2,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;GLMd&quot;</span>: 2.0,</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;GLMepsA&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">    6</span>    <span class="stringliteral">&quot;GLMepsP&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">    7</span>    <span class="stringliteral">&quot;GLMepsD&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">    8</span>    <span class="stringliteral">&quot;itau&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">    9</span>    <span class="stringliteral">&quot;k1&quot;</span>: 0.1,</div>
+<div class="line"><span class="lineno">   10</span>    <span class="stringliteral">&quot;k2&quot;</span>: 0.0,</div>
+<div class="line"><span class="lineno">   11</span>    <span class="stringliteral">&quot;k3&quot;</span>: 0.5,</div>
+<div class="line"><span class="lineno">   12</span>    <span class="stringliteral">&quot;eta&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">   13</span>    <span class="stringliteral">&quot;f&quot;</span>: 0.75,</div>
+<div class="line"><span class="lineno">   14</span>    <span class="stringliteral">&quot;g&quot;</span>: 0.0,</div>
+<div class="line"><span class="lineno">   15</span>    <span class="stringliteral">&quot;xi&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">   16</span>    <span class="stringliteral">&quot;e&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">   17</span>    <span class="stringliteral">&quot;c&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">   18</span>    <span class="stringliteral">&quot;mu&quot;</span>: 0.2,</div>
+<div class="line"><span class="lineno">   19</span>    <span class="stringliteral">&quot;ds&quot;</span>: 1.0,</div>
+<div class="line"><span class="lineno">   20</span>    <span class="stringliteral">&quot;sk&quot;</span>: 0.0,</div>
+<div class="line"><span class="lineno">   21</span>    <span class="stringliteral">&quot;bs&quot;</span>: 0.0,</div>
+<div class="line"><span class="lineno">   22</span>    <span class="stringliteral">&quot;domain_r&quot;</span>: 0.5,</div>
+<div class="line"><span class="lineno">   23</span>    <span class="stringliteral">&quot;smoothing&quot;</span>: 0.0,</div>
+<div class="line"><span class="lineno">   24</span>    <span class="stringliteral">&quot;KOSigma&quot;</span>: 8.0,</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00015">15</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a4cde286999dc321b709f641174ed4ff3" name="a4cde286999dc321b709f641174ed4ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cde286999dc321b709f641174ed4ff3">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00059">59</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="af5007a355d10b87899fd0fc34cb7be96" name="af5007a355d10b87899fd0fc34cb7be96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5007a355d10b87899fd0fc34cb7be96">&#9670;&#160;</a></span>intparams</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict gauge-wave-fv.intparams</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;BBHType&quot;</span>: 2,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;LapseType&quot;</span>: 0,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;tp_grid_setup&quot;</span>: 0,</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;swi&quot;</span>: 99,</div>
+<div class="line"><span class="lineno">    6</span>    <span class="stringliteral">&quot;ReSwi&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    7</span>    <span class="stringliteral">&quot;SO&quot;</span>: 0,</div>
+<div class="line"><span class="lineno">    8</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00041">41</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="ae5c4527b7f5b7aa6aa5ff642512705fb" name="ae5c4527b7f5b7aa6aa5ff642512705fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c4527b7f5b7aa6aa5ff642512705fb">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00286">286</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a0ca7eb748957a5852f5569f3d160ed47" name="a0ca7eb748957a5852f5569f3d160ed47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca7eb748957a5852f5569f3d160ed47">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00262">262</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a526307b9447060663d97388b68b3900b" name="a526307b9447060663d97388b68b3900b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526307b9447060663d97388b68b3900b">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple gauge-wave-fv.max_h = (1.1 * min(<a class="el" href="#a6e9e09a82ac6368ea73ecba72b384ceb">size</a>) / (3.0**args.min_depth))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00222">222</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a23d2cd711c93bd4422c4afb200bdd209" name="a23d2cd711c93bd4422c4afb200bdd209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d2cd711c93bd4422c4afb200bdd209">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00261">261</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="ab7b98b79f1433d78e7d34acebc8dd6bb" name="ab7b98b79f1433d78e7d34acebc8dd6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b98b79f1433d78e7d34acebc8dd6bb">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple gauge-wave-fv.min_h = <a class="el" href="#a526307b9447060663d97388b68b3900b">max_h</a> * 3.0 ** (-args.amr_levels)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00223">223</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="af5d4a2e68b66f4fb98bca45dd6d5b668" name="af5d4a2e68b66f4fb98bca45dd6d5b668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d4a2e68b66f4fb98bca45dd6d5b668">&#9670;&#160;</a></span>my_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.my_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_namespace" href="../../dc/d11/namespaceCCZ4Solver.html">CCZ4Solver</a>(</div>
+<div class="line"><span class="lineno">    2</span>        <span class="stringliteral">&quot;CCZ4&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>        args.patch_size,</div>
+<div class="line"><span class="lineno">    4</span>        min_h,</div>
+<div class="line"><span class="lineno">    5</span>        max_h,</div>
+<div class="line"><span class="lineno">    6</span>        0.1,</div>
+<div class="line"><span class="lineno">    7</span>        args.CCZ4domain_r,</div>
+<div class="line"><span class="lineno">    8</span>        args.CCZ4KOSigma,</div>
+<div class="line"><span class="lineno">    9</span>    )</div>
+<div class="ttc" id="anamespaceCCZ4Solver_html"><div class="ttname"><a href="../../dc/d11/namespaceCCZ4Solver.html">CCZ4Solver</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d27/CCZ4Solver_8py_source.html#l00001">CCZ4Solver.py:1</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00224">224</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a7f4c218d55a8a784ac752ed469b8edc2" name="a7f4c218d55a8a784ac752ed469b8edc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4c218d55a8a784ac752ed469b8edc2">&#9670;&#160;</a></span>namespace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.namespace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00216">216</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a9f3df272b4d969915b6112694be6681b" name="a9f3df272b4d969915b6112694be6681b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3df272b4d969915b6112694be6681b">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.offset = [-0.5, -0.5, -0.5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00009">9</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a6fd074b0dd0248f20b1afa1fe19bdb87" name="a6fd074b0dd0248f20b1afa1fe19bdb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd074b0dd0248f20b1afa1fe19bdb87">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>        description=<span class="stringliteral">&quot;ExaHyPE 2 - CCZ4 Finite Volume Benchmarking Script&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00051">51</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a252d6abefd30324f516278ad62984a7e" name="a252d6abefd30324f516278ad62984a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252d6abefd30324f516278ad62984a7e">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.peano4_project = project.generate_Peano4_project(verbose=False)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00273">273</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a40711fbd4c9e8ccc91681ea6b25cceb3" name="a40711fbd4c9e8ccc91681ea6b25cceb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40711fbd4c9e8ccc91681ea6b25cceb3">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.periodic_BC = [False, False, False]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00013">13</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="ab212b47eeccee18f49f900d785a3b90b" name="ab212b47eeccee18f49f900d785a3b90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab212b47eeccee18f49f900d785a3b90b">&#9670;&#160;</a></span>plot_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gauge-wave-fv.plot_interval = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00011">11</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a1353ed4b8331719f40575ad121686677" name="a1353ed4b8331719f40575ad121686677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1353ed4b8331719f40575ad121686677">&#9670;&#160;</a></span>plotter_precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.plotter_precision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00266">266</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a12371de3d0c93df11eb46505217b4c96" name="a12371de3d0c93df11eb46505217b4c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12371de3d0c93df11eb46505217b4c96">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00215">215</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="aa7325eb27ffe340671be66c0fc8df3ca" name="aa7325eb27ffe340671be66c0fc8df3ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7325eb27ffe340671be66c0fc8df3ca">&#9670;&#160;</a></span>project_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.project_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00217">217</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a6e9e09a82ac6368ea73ecba72b384ceb" name="a6e9e09a82ac6368ea73ecba72b384ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9e09a82ac6368ea73ecba72b384ceb">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.size = [1.0, 1.0, 1.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00008">8</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a89d2a0af48f220d8f6cc0cb98c085932" name="a89d2a0af48f220d8f6cc0cb98c085932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d2a0af48f220d8f6cc0cb98c085932">&#9670;&#160;</a></span>solverconstants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str gauge-wave-fv.solverconstants = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00239">239</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a30df853e60d954938293509c36525fcd" name="a30df853e60d954938293509c36525fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30df853e60d954938293509c36525fcd">&#9670;&#160;</a></span>throw_away_data_after_generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.throw_away_data_after_generation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00285">285</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="a34d9c6d747e618012d8b8c2f83040dee" name="a34d9c6d747e618012d8b8c2f83040dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d9c6d747e618012d8b8c2f83040dee">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00264">264</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+<a id="ab1bf696bfea7047039849e2922cbe80d" name="ab1bf696bfea7047039849e2922cbe80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bf696bfea7047039849e2922cbe80d">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gauge-wave-fv.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00057">57</a> of file <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html">gauge-wave-fv.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d71/namespacegauge-wave-fv.html">gauge-wave-fv</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:59 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

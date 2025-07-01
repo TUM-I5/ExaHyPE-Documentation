@@ -1,0 +1,27 @@
+var point_explosion_8py =
+[
+    [ "args", "db/d34/point-explosion_8py.html#a345712daac82e592ec28b68072c18de3", null ],
+    [ "boundary_conditions", "db/d34/point-explosion_8py.html#af2f2b485a0710c03df88737f8cd5e8f2", null ],
+    [ "dimensions", "db/d34/point-explosion_8py.html#a7a47f9b234284054760f63fd8a5be9f2", null ],
+    [ "first_plot_time_stamp", "db/d34/point-explosion_8py.html#a66822fb3687af95f099f665d8bac1c40", null ],
+    [ "flux", "db/d34/point-explosion_8py.html#a0ad443f86088b27ba1a23b18434ea09c", null ],
+    [ "initial_conditions", "db/d34/point-explosion_8py.html#ac9cc6e9e8fd4b9fea3d608577cd3cf94", null ],
+    [ "make", "db/d34/point-explosion_8py.html#aad1c5ff9c4399f02ffed04f73a224686", null ],
+    [ "make_clean_first", "db/d34/point-explosion_8py.html#a7754d81ac6cc6e74ad2560c13998083c", null ],
+    [ "max_eigenvalue", "db/d34/point-explosion_8py.html#a9b3bf734173c05116b780527932fb834", null ],
+    [ "max_end_time", "db/d34/point-explosion_8py.html#a13efda2c931060196561768982b705c4", null ],
+    [ "max_h", "db/d34/point-explosion_8py.html#a883c303f8f95c65fc279bed58860acd3", null ],
+    [ "min_end_time", "db/d34/point-explosion_8py.html#a7852ee46e2ccd0d317ee66f48db28942", null ],
+    [ "min_h", "db/d34/point-explosion_8py.html#a7279bcadf99e34cd9c3cac517551e416", null ],
+    [ "mode", "db/d34/point-explosion_8py.html#a7379ec9eb43072d476f03f23c4c46df7", null ],
+    [ "offset", "db/d34/point-explosion_8py.html#a81ba87f53133fcde9d824a39313ae74e", null ],
+    [ "parser", "db/d34/point-explosion_8py.html#ae77860776b15794846c6dad6a2e99c75", null ],
+    [ "periodic_BC", "db/d34/point-explosion_8py.html#a36fc5919200a320c2c56adae3f463cd9", null ],
+    [ "project", "db/d34/point-explosion_8py.html#a6d88f0df3a8efb16d0b0bd1421f8267c", null ],
+    [ "refinement_criterion", "db/d34/point-explosion_8py.html#a73acdc759511a728fa9bfea94f6772b3", null ],
+    [ "riemann_solver", "db/d34/point-explosion_8py.html#afc15dc5caeb476c0544916f1f01e8fe7", null ],
+    [ "size", "db/d34/point-explosion_8py.html#aeb6ab8c63e7b224171b1301117ee20ba", null ],
+    [ "throw_away_data_after_build", "db/d34/point-explosion_8py.html#a8de8dd68d9908020ca9e405cb9f66d53", null ],
+    [ "time_in_between_plots", "db/d34/point-explosion_8py.html#ace73a7b916f9ed0eceda659ea2dddb27", null ],
+    [ "True", "db/d34/point-explosion_8py.html#a0963b319f1ee3183aa3bdb3c442b6760", null ]
+];

@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1AdaptivityCriterion =
+[
+    [ "AdaptivityCriterion", "d5/d15/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1AdaptivityCriterion_1_1AdaptivityCriterion.html", "d5/d15/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1AdaptivityCriterion_1_1AdaptivityCriterion" ]
+];

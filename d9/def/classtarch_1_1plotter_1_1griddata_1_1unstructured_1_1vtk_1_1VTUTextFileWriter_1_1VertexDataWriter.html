@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/def/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d7d/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter__inherit__graph.png" border="0" usemap="#atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_inherit__map" alt="Inheritance graph"/></div>
+<map name="atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_inherit__map" id="atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_inherit__map">
+<area shape="rect" title=" " alt="" coords="7,108,234,163"/>
+<area shape="rect" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html" title="A writer for scalar data on points (vertices)." alt="" coords="5,5,236,60"/>
+<area shape="poly" title=" " alt="" coords="123,74,123,108,118,108,118,74"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d34/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter__coll__graph.png" border="0" usemap="#atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_coll__map" id="atarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter_coll__map">
+<area shape="rect" title=" " alt="" coords="1360,269,1587,324"/>
+<area shape="rect" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html" title="A writer for scalar data on points (vertices)." alt="" coords="1008,157,1239,212"/>
+<area shape="poly" title=" " alt="" coords="1223,214,1388,267,1386,272,1222,219"/>
+<area shape="rect" title=" " alt="" coords="411,175,497,200"/>
+<area shape="poly" title=" " alt="" coords="484,206,560,257,608,281,659,299,753,319,849,332,946,338,1041,339,1217,329,1360,313,1360,318,1218,335,1041,344,945,343,848,337,752,324,658,305,606,286,557,261,481,211"/>
+<area shape="rect" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html" title="VTU Writer." alt="" coords="1010,236,1237,291"/>
+<area shape="poly" title=" " alt="" coords="511,188,681,200,890,221,1010,239,1009,245,889,226,680,205,511,193"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="703,5,845,31"/>
+<area shape="poly" title=" " alt="" coords="479,164,556,107,606,75,658,48,712,28,714,33,660,52,608,80,559,111,483,168"/>
+<area shape="rect" title=" " alt="" coords="177,167,316,207"/>
+<area shape="poly" title=" " alt="" coords="330,185,410,185,410,190,330,190"/>
+<area shape="poly" title=" " alt="" coords="1251,273,1360,283,1359,289,1250,278"/>
+<area shape="rect" href="../../df/d9a/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter.html" title=" " alt="" coords="659,236,889,291"/>
+<area shape="poly" title=" " alt="" coords="903,261,1009,261,1009,266,903,266"/>
+<area shape="poly" title=" " alt="" coords="860,32,891,48,925,74,947,100,986,167,993,183,996,197,1000,209,1010,221,1026,234,1023,238,1006,225,996,212,991,198,988,185,982,170,942,103,921,78,888,52,857,37"/>
+<area shape="rect" title=" " alt="" coords="1053,368,1194,393"/>
+<area shape="poly" title=" " alt="" coords="1208,378,1271,372,1335,359,1382,342,1425,322,1427,326,1384,347,1337,365,1272,377,1208,383"/>
+<area shape="rect" title=" " alt="" coords="683,366,865,406"/>
+<area shape="poly" title=" " alt="" coords="879,382,1052,379,1053,384,879,387"/>
+<area shape="rect" title=" " alt="" coords="381,366,527,406"/>
+<area shape="poly" title=" " alt="" coords="541,383,683,383,683,389,541,389"/>
+<area shape="rect" title=" " alt="" coords="161,373,332,399"/>
+<area shape="poly" title=" " alt="" coords="346,383,381,383,381,389,346,389"/>
+<area shape="rect" title=" " alt="" coords="5,373,112,399"/>
+<area shape="poly" title=" " alt="" coords="126,383,161,383,161,389,126,389"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abff360d828e1880041c24219b470cfb3" id="r_abff360d828e1880041c24219b470cfb3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abff360d828e1880041c24219b470cfb3">~VertexDataWriter</a> ()</td></tr>
+<tr class="separator:abff360d828e1880041c24219b470cfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8373399cf8bf70cdbe0c5fdbcf346ac0" id="r_a8373399cf8bf70cdbe0c5fdbcf346ac0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8373399cf8bf70cdbe0c5fdbcf346ac0">close</a> () override</td></tr>
+<tr class="separator:a8373399cf8bf70cdbe0c5fdbcf346ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3291741cc1229d659d2799df2cceda" id="r_a8f3291741cc1229d659d2799df2cceda"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3291741cc1229d659d2799df2cceda">plotVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> value) override</td></tr>
+<tr class="memdesc:a8f3291741cc1229d659d2799df2cceda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data for one cell.  <br /></td></tr>
+<tr class="separator:a8f3291741cc1229d659d2799df2cceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d4f6ae44f96bfa0b27c33be3ecdb5a" id="r_a04d4f6ae44f96bfa0b27c33be3ecdb5a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04d4f6ae44f96bfa0b27c33be3ecdb5a">plotVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 2, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;value) override</td></tr>
+<tr class="separator:a04d4f6ae44f96bfa0b27c33be3ecdb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdeff5284ef502f5e909f5b9e61b6172" id="r_abdeff5284ef502f5e909f5b9e61b6172"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdeff5284ef502f5e909f5b9e61b6172">plotVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 3, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;value) override</td></tr>
+<tr class="separator:abdeff5284ef502f5e909f5b9e61b6172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0d08c18abbe328355e7cfba06a017a" id="r_a9a0d08c18abbe328355e7cfba06a017a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a0d08c18abbe328355e7cfba06a017a">plotVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *values, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfValues) override</td></tr>
+<tr class="separator:a9a0d08c18abbe328355e7cfba06a017a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9b801bb2d5c1f04e1da241ea1f276a" id="r_a6a9b801bb2d5c1f04e1da241ea1f276a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a9b801bb2d5c1f04e1da241ea1f276a">getMinValue</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a6a9b801bb2d5c1f04e1da241ea1f276a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4b23fc94721e85a979483a5a8c1343" id="r_aea4b23fc94721e85a979483a5a8c1343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea4b23fc94721e85a979483a5a8c1343">getMaxValue</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aea4b23fc94721e85a979483a5a8c1343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77148da999b376c7d423a842c335079" id="r_ad77148da999b376c7d423a842c335079"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77148da999b376c7d423a842c335079">assignRemainingVerticesDefaultValues</a> () override</td></tr>
+<tr class="separator:ad77148da999b376c7d423a842c335079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7fd4a8ffbbc73ba14027df77aa4c86ad" id="r_a7fd4a8ffbbc73ba14027df77aa4c86ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fd4a8ffbbc73ba14027df77aa4c86ad">VertexDataWriter</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;dataIdentifier, <a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a> &amp;writer, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> recordsPerVertex, std::string dataType)</td></tr>
+<tr class="separator:a7fd4a8ffbbc73ba14027df77aa4c86ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ad67422442ed6cd5c3ec663207f034" id="r_a67ad67422442ed6cd5c3ec663207f034"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67ad67422442ed6cd5c3ec663207f034">VertexDataWriter</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d9/def/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter.html">VertexDataWriter</a> &amp;copy)</td></tr>
+<tr class="separator:a67ad67422442ed6cd5c3ec663207f034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad5a31b75ad94a61873c3594d9b6f891c" id="r_ad5a31b75ad94a61873c3594d9b6f891c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5a31b75ad94a61873c3594d9b6f891c">_dataType</a></td></tr>
+<tr class="separator:ad5a31b75ad94a61873c3594d9b6f891c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64ebe4ac18eecee75f81b8532f6a2bc" id="r_ac64ebe4ac18eecee75f81b8532f6a2bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac64ebe4ac18eecee75f81b8532f6a2bc">_lastWriteCommandVertexNumber</a></td></tr>
+<tr class="separator:ac64ebe4ac18eecee75f81b8532f6a2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c41c67df9e9e785efe75d84b055d83e" id="r_a6c41c67df9e9e785efe75d84b055d83e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c41c67df9e9e785efe75d84b055d83e">_myWriter</a></td></tr>
+<tr class="memdesc:a6c41c67df9e9e785efe75d84b055d83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying VTU writer.  <br /></td></tr>
+<tr class="separator:a6c41c67df9e9e785efe75d84b055d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bab514653193f48a6c9682c1948b795" id="r_a8bab514653193f48a6c9682c1948b795"><td class="memItemLeft" align="right" valign="top">std::ostringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bab514653193f48a6c9682c1948b795">_out</a></td></tr>
+<tr class="memdesc:a8bab514653193f48a6c9682c1948b795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output stream.  <br /></td></tr>
+<tr class="separator:a8bab514653193f48a6c9682c1948b795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e44ee522fc466c544c9519115ac78ed" id="r_a3e44ee522fc466c544c9519115ac78ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e44ee522fc466c544c9519115ac78ed">_recordsPerVertex</a></td></tr>
+<tr class="separator:a3e44ee522fc466c544c9519115ac78ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7d7fc434339b9d7be3595012e50b49" id="r_aca7d7fc434339b9d7be3595012e50b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7d7fc434339b9d7be3595012e50b49">_minValue</a></td></tr>
+<tr class="separator:aca7d7fc434339b9d7be3595012e50b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2776b3dd083a4ae4f092df51c95f4c1" id="r_af2776b3dd083a4ae4f092df51c95f4c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2776b3dd083a4ae4f092df51c95f4c1">_maxValue</a></td></tr>
+<tr class="separator:af2776b3dd083a4ae4f092df51c95f4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e3ef2b85a8ba5fead3e79fcf86a999" id="r_a77e3ef2b85a8ba5fead3e79fcf86a999"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77e3ef2b85a8ba5fead3e79fcf86a999">_identifier</a></td></tr>
+<tr class="separator:a77e3ef2b85a8ba5fead3e79fcf86a999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2282b2c0a922488fe396cc87a91843d3" id="r_a2282b2c0a922488fe396cc87a91843d3"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2282b2c0a922488fe396cc87a91843d3">VTUTextFileWriter</a></td></tr>
+<tr class="memdesc:a2282b2c0a922488fe396cc87a91843d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The father class is a friend.  <br /></td></tr>
+<tr class="separator:a2282b2c0a922488fe396cc87a91843d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00297">297</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7fd4a8ffbbc73ba14027df77aa4c86ad" name="a7fd4a8ffbbc73ba14027df77aa4c86ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd4a8ffbbc73ba14027df77aa4c86ad">&#9670;&#160;</a></span>VertexDataWriter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::VertexDataWriter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>dataIdentifier</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>writer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>recordsPerVertex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>dataType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00305">_dataType</a>, <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00327">_identifier</a>, <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00315">_myWriter</a>, <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00320">_out</a>, <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00080">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::_parallelVertexDataDescription</a>, <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00322">_recordsPerVertex</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<a id="a67ad67422442ed6cd5c3ec663207f034" name="a67ad67422442ed6cd5c3ec663207f034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ad67422442ed6cd5c3ec663207f034">&#9670;&#160;</a></span>VertexDataWriter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::VertexDataWriter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d9/def/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter.html">VertexDataWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>copy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00331">331</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<a id="abff360d828e1880041c24219b470cfb3" name="abff360d828e1880041c24219b470cfb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff360d828e1880041c24219b470cfb3">&#9670;&#160;</a></span>~VertexDataWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::~VertexDataWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a2a293594b97899a8b3f225c72893e612">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad77148da999b376c7d423a842c335079" name="ad77148da999b376c7d423a842c335079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77148da999b376c7d423a842c335079">&#9670;&#160;</a></span>assignRemainingVerticesDefaultValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::assignRemainingVerticesDefaultValues </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a8373399cf8bf70cdbe0c5fdbcf346ac0">close()</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a07380bf470c6742cbc46ac3cb20e83ac">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>.</p>
+
+</div>
+</div>
+<a id="a8373399cf8bf70cdbe0c5fdbcf346ac0" name="a8373399cf8bf70cdbe0c5fdbcf346ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8373399cf8bf70cdbe0c5fdbcf346ac0">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#adff041a413b5528cceb8800b4c0bcde0">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01076">assertionMsg</a>.</p>
+
+</div>
+</div>
+<a id="aea4b23fc94721e85a979483a5a8c1343" name="aea4b23fc94721e85a979483a5a8c1343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4b23fc94721e85a979483a5a8c1343">&#9670;&#160;</a></span>getMaxValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::getMaxValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a9b801bb2d5c1f04e1da241ea1f276a" name="a6a9b801bb2d5c1f04e1da241ea1f276a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9b801bb2d5c1f04e1da241ea1f276a">&#9670;&#160;</a></span>getMinValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::getMinValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04d4f6ae44f96bfa0b27c33be3ecdb5a" name="a04d4f6ae44f96bfa0b27c33be3ecdb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d4f6ae44f96bfa0b27c33be3ecdb5a">&#9670;&#160;</a></span>plotVertex() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::plotVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 2, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a851890f56e63d6e45b645902ef02e1a3">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>.</p>
+
+</div>
+</div>
+<a id="abdeff5284ef502f5e909f5b9e61b6172" name="abdeff5284ef502f5e909f5b9e61b6172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdeff5284ef502f5e909f5b9e61b6172">&#9670;&#160;</a></span>plotVertex() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::plotVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 3, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a50ff6167a58373947d67c9a53e73204d">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>.</p>
+
+</div>
+</div>
+<a id="a9a0d08c18abbe328355e7cfba06a017a" name="a9a0d08c18abbe328355e7cfba06a017a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0d08c18abbe328355e7cfba06a017a">&#9670;&#160;</a></span>plotVertex() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::plotVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *</td>          <td class="paramname"><span class="paramname"><em>values</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfValues</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a3b14cae5c2f0586687276a3559b099d9">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>.</p>
+
+</div>
+</div>
+<a id="a8f3291741cc1229d659d2799df2cceda" name="a8f3291741cc1229d659d2799df2cceda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3291741cc1229d659d2799df2cceda">&#9670;&#160;</a></span>plotVertex() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::plotVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write data for one cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td><a class="el" href="../../d9/d55/classIndex.html">Index</a> of the vertex. This index has to equal the index used for the cell within the VTKWriter class interface. </td></tr>
+    <tr><td class="paramname">value</td><td>Value for the cell. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../da/dfd/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexDataWriter.html#a488a5bb68e5642f79b6a9e19ea920710">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a2282b2c0a922488fe396cc87a91843d3" name="a2282b2c0a922488fe396cc87a91843d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2282b2c0a922488fe396cc87a91843d3">&#9670;&#160;</a></span>VTUTextFileWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The father class is a friend. </p>
+<p>There are no other friends. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00303">303</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad5a31b75ad94a61873c3594d9b6f891c" name="ad5a31b75ad94a61873c3594d9b6f891c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a31b75ad94a61873c3594d9b6f891c">&#9670;&#160;</a></span>_dataType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_dataType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00305">305</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">VertexDataWriter()</a>.</p>
+
+</div>
+</div>
+<a id="a77e3ef2b85a8ba5fead3e79fcf86a999" name="a77e3ef2b85a8ba5fead3e79fcf86a999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e3ef2b85a8ba5fead3e79fcf86a999">&#9670;&#160;</a></span>_identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_identifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00327">327</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">VertexDataWriter()</a>.</p>
+
+</div>
+</div>
+<a id="ac64ebe4ac18eecee75f81b8532f6a2bc" name="ac64ebe4ac18eecee75f81b8532f6a2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64ebe4ac18eecee75f81b8532f6a2bc">&#9670;&#160;</a></span>_lastWriteCommandVertexNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_lastWriteCommandVertexNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00310">310</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+</div>
+</div>
+<a id="af2776b3dd083a4ae4f092df51c95f4c1" name="af2776b3dd083a4ae4f092df51c95f4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2776b3dd083a4ae4f092df51c95f4c1">&#9670;&#160;</a></span>_maxValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_maxValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00325">325</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+</div>
+</div>
+<a id="aca7d7fc434339b9d7be3595012e50b49" name="aca7d7fc434339b9d7be3595012e50b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7d7fc434339b9d7be3595012e50b49">&#9670;&#160;</a></span>_minValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_minValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00324">324</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c41c67df9e9e785efe75d84b055d83e" name="a6c41c67df9e9e785efe75d84b055d83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c41c67df9e9e785efe75d84b055d83e">&#9670;&#160;</a></span>_myWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a>&amp; tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_myWriter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Underlying VTU writer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00315">315</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">VertexDataWriter()</a>.</p>
+
+</div>
+</div>
+<a id="a8bab514653193f48a6c9682c1948b795" name="a8bab514653193f48a6c9682c1948b795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bab514653193f48a6c9682c1948b795">&#9670;&#160;</a></span>_out</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostringstream tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_out</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output stream. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00320">320</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">VertexDataWriter()</a>.</p>
+
+</div>
+</div>
+<a id="a3e44ee522fc466c544c9519115ac78ed" name="a3e44ee522fc466c544c9519115ac78ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e44ee522fc466c544c9519115ac78ed">&#9670;&#160;</a></span>_recordsPerVertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter::VertexDataWriter::_recordsPerVertex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html#l00322">322</a> of file <a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html#l00006">VertexDataWriter()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/plotter/griddata/unstructured/vtk/<a class="el" href="../../db/d3f/VTUTextFileWriter_8h_source.html">VTUTextFileWriter.h</a></li>
+<li>src/tarch/plotter/griddata/unstructured/vtk/<a class="el" href="../../d0/d76/VTUTextFileWriter__VertexDataWriter_8cpp_source.html">VTUTextFileWriter_VertexDataWriter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../da/d2f/namespacetarch_1_1plotter.html">plotter</a></li><li class="navelem"><a class="el" href="../../d6/ddb/namespacetarch_1_1plotter_1_1griddata.html">griddata</a></li><li class="navelem"><a class="el" href="../../d4/d7c/namespacetarch_1_1plotter_1_1griddata_1_1unstructured.html">unstructured</a></li><li class="navelem"><a class="el" href="../../d3/d6e/namespacetarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk.html">vtk</a></li><li class="navelem"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">VTUTextFileWriter</a></li><li class="navelem"><a class="el" href="../../d9/def/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter_1_1VertexDataWriter.html">VertexDataWriter</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:58 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

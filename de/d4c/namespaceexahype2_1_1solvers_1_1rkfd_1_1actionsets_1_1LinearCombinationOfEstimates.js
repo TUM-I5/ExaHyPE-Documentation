@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1LinearCombinationOfEstimates =
+[
+    [ "LinearCombinationOfEstimates", "d6/d00/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1LinearCombinationOfEstimates_1_1LinearCombinationOfEstimates.html", "d6/d00/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1LinearCombinationOfEstimates_1_1LinearCombinationOfEstimates" ]
+];

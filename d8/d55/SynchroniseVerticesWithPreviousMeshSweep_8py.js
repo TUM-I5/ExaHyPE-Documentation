@@ -1,0 +1,4 @@
+var SynchroniseVerticesWithPreviousMeshSweep_8py =
+[
+    [ "swift2.api.actionsets.SynchroniseVerticesWithPreviousMeshSweep.SynchroniseVerticesWithPreviousMeshSweep", "db/d98/classswift2_1_1api_1_1actionsets_1_1SynchroniseVerticesWithPreviousMeshSweep_1_1SynchroniseVerticesWithPreviousMeshSweep.html", "db/d98/classswift2_1_1api_1_1actionsets_1_1SynchroniseVerticesWithPreviousMeshSweep_1_1SynchroniseVerticesWithPreviousMeshSweep" ]
+];

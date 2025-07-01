@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">benchmarks::exahype2::ccz4::CCZ4 Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for benchmarks::exahype2::ccz4::CCZ4:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d6c/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4__inherit__graph.png" border="0" usemap="#abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_inherit__map" alt="Inheritance graph"/></div>
+<map name="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_inherit__map" id="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,180,119"/>
+<area shape="rect" title=" " alt="" coords="37,5,148,31"/>
+<area shape="poly" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for benchmarks::exahype2::ccz4::CCZ4:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d69/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4__coll__graph.png" border="0" usemap="#abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_coll__map" alt="Collaboration graph"/></div>
+<map name="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_coll__map" id="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_coll__map">
+<area shape="rect" title=" " alt="" coords="21,271,196,311"/>
+<area shape="rect" title=" " alt="" coords="5,183,116,208"/>
+<area shape="poly" title=" " alt="" coords="75,219,101,269,97,272,71,222"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="140,183,283,208"/>
+<area shape="poly" title=" " alt="" coords="191,219,131,272,128,269,187,215"/>
+<area shape="rect" title=" " alt="" coords="168,95,255,120"/>
+<area shape="poly" title=" " alt="" coords="214,134,214,182,209,182,209,134"/>
+<area shape="rect" title=" " alt="" coords="142,5,281,45"/>
+<area shape="poly" title=" " alt="" coords="214,59,214,94,209,94,209,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a29e38db87b6e1f0ccafa586b6111f95a" id="r_a29e38db87b6e1f0ccafa586b6111f95a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29e38db87b6e1f0ccafa586b6111f95a">CCZ4</a> ()</td></tr>
+<tr class="separator:a29e38db87b6e1f0ccafa586b6111f95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49859e5e689121522f1cd29cbfd5192d" id="r_a49859e5e689121522f1cd29cbfd5192d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d6c/namespaceexahype2.html#afe1fdc194836a25ea6e3954a6cb8f998">::exahype2::RefinementCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49859e5e689121522f1cd29cbfd5192d">refinementCriterion</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t) override</td></tr>
+<tr class="memdesc:a49859e5e689121522f1cd29cbfd5192d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refinement criterion.  <br /></td></tr>
+<tr class="separator:a49859e5e689121522f1cd29cbfd5192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c2bd8e42c5418f53ef69ff543eaaae" id="r_a53c2bd8e42c5418f53ef69ff543eaaae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53c2bd8e42c5418f53ef69ff543eaaae">initialCondition</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> gridIsConstructed) override</td></tr>
+<tr class="separator:a53c2bd8e42c5418f53ef69ff543eaaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc59cff29eb81fcc98b2796c603a43d9" id="r_acc59cff29eb81fcc98b2796c603a43d9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc59cff29eb81fcc98b2796c603a43d9">boundaryConditions</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Qinside, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Qoutside, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> normal) override</td></tr>
+<tr class="separator:acc59cff29eb81fcc98b2796c603a43d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5960841ca390aacf97789292635b42" id="r_aaa5960841ca390aacf97789292635b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa5960841ca390aacf97789292635b42">sourceTerm</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ S) override</td></tr>
+<tr class="separator:aaa5960841ca390aacf97789292635b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4394fdb6af719c26408a41c44fbbad8d" id="r_a4394fdb6af719c26408a41c44fbbad8d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4394fdb6af719c26408a41c44fbbad8d">maxEigenvalue</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> normal) override</td></tr>
+<tr class="memdesc:a4394fdb6af719c26408a41c44fbbad8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine max eigenvalue over Jacobian in a given point with solution values (states) Q.  <br /></td></tr>
+<tr class="separator:a4394fdb6af719c26408a41c44fbbad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad329eb7b8299c32ca60b2c2dd61eb4f6" id="r_ad329eb7b8299c32ca60b2c2dd61eb4f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad329eb7b8299c32ca60b2c2dd61eb4f6">nonconservativeProduct</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ deltaQ, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> normal, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ BgradQ) override</td></tr>
+<tr class="separator:ad329eb7b8299c32ca60b2c2dd61eb4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a77f8572bf7a93c64888752fdf4b6493e" id="r_a77f8572bf7a93c64888752fdf4b6493e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77f8572bf7a93c64888752fdf4b6493e">sourceTerm</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ S, <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a>)</td></tr>
+<tr class="memdesc:a77f8572bf7a93c64888752fdf4b6493e"><td class="mdescLeft">&#160;</td><td class="mdescRight">To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header.  <br /></td></tr>
+<tr class="separator:a77f8572bf7a93c64888752fdf4b6493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942bb294265b6ed23a7304a6832aa1be" id="r_a942bb294265b6ed23a7304a6832aa1be"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a942bb294265b6ed23a7304a6832aa1be">maxEigenvalue</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> normal, <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a>)</td></tr>
+<tr class="memdesc:a942bb294265b6ed23a7304a6832aa1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header.  <br /></td></tr>
+<tr class="separator:a942bb294265b6ed23a7304a6832aa1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba62c38b1dee69b0ca373273b2ec1b7" id="r_a7ba62c38b1dee69b0ca373273b2ec1b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ba62c38b1dee69b0ca373273b2ec1b7">nonconservativeProduct</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ deltaQ, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> normal, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ BgradQ, <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a>)</td></tr>
+<tr class="memdesc:a7ba62c38b1dee69b0ca373273b2ec1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header.  <br /></td></tr>
+<tr class="separator:a7ba62c38b1dee69b0ca373273b2ec1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ac937c2bbcb5fddd36e415ebcf450570d" id="r_ac937c2bbcb5fddd36e415ebcf450570d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac937c2bbcb5fddd36e415ebcf450570d">_log</a></td></tr>
+<tr class="separator:ac937c2bbcb5fddd36e415ebcf450570d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html#l00030">30</a> of file <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a29e38db87b6e1f0ccafa586b6111f95a" name="a29e38db87b6e1f0ccafa586b6111f95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e38db87b6e1f0ccafa586b6111f95a">&#9670;&#160;</a></span>CCZ4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">benchmarks::exahype2::ccz4::CCZ4::CCZ4 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/dcb/benchmarks_8py_source.html#l00057">benchmarks::name</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc59cff29eb81fcc98b2796c603a43d9" name="acc59cff29eb81fcc98b2796c603a43d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc59cff29eb81fcc98b2796c603a43d9">&#9670;&#160;</a></span>boundaryConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::boundaryConditions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Qinside</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Qoutside</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>.</p>
+
+</div>
+</div>
+<a id="a53c2bd8e42c5418f53ef69ff543eaaae" name="a53c2bd8e42c5418f53ef69ff543eaaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c2bd8e42c5418f53ef69ff543eaaae">&#9670;&#160;</a></span>initialCondition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::initialCondition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>gridIsConstructed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; Amplitude of the wave</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>.</p>
+
+</div>
+</div>
+<a id="a4394fdb6af719c26408a41c44fbbad8d" name="a4394fdb6af719c26408a41c44fbbad8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4394fdb6af719c26408a41c44fbbad8d">&#9670;&#160;</a></span>maxEigenvalue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> benchmarks::exahype2::ccz4::CCZ4::maxEigenvalue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine max eigenvalue over Jacobian in a given point with solution values (states) Q. </p>
+<p>All parameters are in.</p>
+<dl class="section return"><dt>Returns</dt><dd>Max eigenvalue. Result has to be positive, so we are actually speaking about the maximum absolute eigenvalue. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h_source.html#l00067">maxEigenvalue</a>.</p>
+
+</div>
+</div>
+<a id="a942bb294265b6ed23a7304a6832aa1be" name="a942bb294265b6ed23a7304a6832aa1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942bb294265b6ed23a7304a6832aa1be">&#9670;&#160;</a></span>maxEigenvalue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> benchmarks::exahype2::ccz4::CCZ4::maxEigenvalue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a></td>          <td class="paramname"><span class="paramname"></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header. </p>
+<p>So it would read</p>
+<p>static inline double <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h.html#afc5396d2f2be5abdf232294422c19c62">maxEigenvalue( ... )</a> { code here }</p>
+<p>The GPU offloading requires static functions. As we cannot overload the original (virtual) function with a static alternative, we do the TBB trick and overload by adding an additional enum. It has no semantics but helps the compiler to distinguish the different function variants. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html#l00206">206</a> of file <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a942bb294265b6ed23a7304a6832aa1be_cgraph.png" border="0" usemap="#add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a942bb294265b6ed23a7304a6832aa1be_cgraph" alt=""/></div>
+<map name="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a942bb294265b6ed23a7304a6832aa1be_cgraph" id="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a942bb294265b6ed23a7304a6832aa1be_cgraph">
+<area shape="rect" title="To obtain the best performance, I recommend to man inline command to this signature and to copy the i..." alt="" coords="5,5,216,45"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="264,13,337,38"/>
+<area shape="poly" title=" " alt="" coords="216,23,250,23,250,28,216,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad329eb7b8299c32ca60b2c2dd61eb4f6" name="ad329eb7b8299c32ca60b2c2dd61eb4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad329eb7b8299c32ca60b2c2dd61eb4f6">&#9670;&#160;</a></span>nonconservativeProduct() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::nonconservativeProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>deltaQ</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>BgradQ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00373">logTraceInWith4Arguments</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, <a class="el" href="../../db/dc1/GenericRusanov_8template_8h.html#af5fe9b6928b6b29068ffa31ca11a6291">nonconservativeProduct()</a>, and <a class="el" href="../../df/d2c/NonCriticalAssertions_8h_source.html#l00340">nonCriticalAssertion4</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_ad329eb7b8299c32ca60b2c2dd61eb4f6_cgraph.png" border="0" usemap="#add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_ad329eb7b8299c32ca60b2c2dd61eb4f6_cgraph" alt=""/></div>
+<map name="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_ad329eb7b8299c32ca60b2c2dd61eb4f6_cgraph" id="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_ad329eb7b8299c32ca60b2c2dd61eb4f6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,224,60"/>
+<area shape="rect" href="../../db/dc1/GenericRusanov_8template_8h.html#af5fe9b6928b6b29068ffa31ca11a6291" title=" " alt="" coords="272,20,451,45"/>
+<area shape="poly" title=" " alt="" coords="224,30,258,30,258,35,224,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ba62c38b1dee69b0ca373273b2ec1b7" name="a7ba62c38b1dee69b0ca373273b2ec1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba62c38b1dee69b0ca373273b2ec1b7">&#9670;&#160;</a></span>nonconservativeProduct() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::nonconservativeProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>deltaQ</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>BgradQ</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a></td>          <td class="paramname"><span class="paramname"></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header. </p>
+<p>So it would read</p>
+<p>static inline void nonconservativeProduct( ... ) { code here }</p>
+<p>The GPU offloading requires static functions. As we cannot overload the original (virtual) function with a static alternative, we do the TBB trick and overload by adding an additional enum. It has no semantics but helps the compiler to distinguish the different function variants. </p>
+
+</div>
+</div>
+<a id="a49859e5e689121522f1cd29cbfd5192d" name="a49859e5e689121522f1cd29cbfd5192d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49859e5e689121522f1cd29cbfd5192d">&#9670;&#160;</a></span>refinementCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6c/namespaceexahype2.html#afe1fdc194836a25ea6e3954a6cb8f998">exahype2::RefinementCommand</a> benchmarks::exahype2::ccz4::CCZ4::refinementCriterion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refinement criterion. </p>
+<h2><a class="anchor" id="autotoc_md676"></a>
+Single black hole, low refinement (CCZ4ReSwi==2)</h2>
+<h2><a class="anchor" id="autotoc_md677"></a>
+Single black hole (CCZ4ReSwi==6)</h2>
+<p>Single black hole setup with two refinement levels such that the finest volume is the same size as it is in the regular grid tests. We use two level of refinement which arrange around the area of interest. Within the innermost radius of 3.5, we enforce a mesh size of 0.04, while we have a compute cell size of at least 0.15 within the radius of 5. For everything futher away than 5 from the centre, we stick to the maximum mesh size.</p>
+<p>We use the setup with </p><pre class="fragment">    python3 ccz4.py -impl fd4-rk1-adaptive -s two-punctures -maxh 0.4 -minh 0.04 -ps 6 -plt 0.5 -et 0.5 -exn test --domain_r 9.0 --ReSwi 7 -cfl 0.1 -outdir ./ --KOSigma 8.0
+</pre><p> in standard benchmarks.</p>
+<p>Alternative settings would have been </p><pre class="fragment">   double Radius[NumberOfRefinementLayers] = {5.0, 3.0};
+   double MaxH[NumberOfRefinementLayers]   = {0.3, 0.15};
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Q</td><td>This is the (current) solution. The data is not set to a valid value throughout grid construction. That is: If t equals 0.0, you cannot assume that Q is properly initialised. Therefore, Q usually is only evaluated by dynamic AMR codes which make the solution follow </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa5960841ca390aacf97789292635b42" name="aaa5960841ca390aacf97789292635b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5960841ca390aacf97789292635b42">&#9670;&#160;</a></span>sourceTerm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::sourceTerm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>S</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00180">180</a> of file <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html">CCZ4.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00373">logTraceInWith4Arguments</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, <a class="el" href="../../df/d2c/NonCriticalAssertions_8h_source.html#l00339">nonCriticalAssertion3</a>, and <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00180">sourceTerm()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html#l00180">sourceTerm()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_cgraph.png" border="0" usemap="#add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_cgraph" alt=""/></div>
+<map name="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_cgraph" id="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,191,69"/>
+<area shape="poly" title=" " alt="" coords="63,30,61,20,67,11,79,5,98,3,120,6,132,13,129,17,118,11,98,8,81,10,70,15,66,21,68,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_icgraph.png" border="0" usemap="#add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_icgraph" alt=""/></div>
+<map name="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_icgraph" id="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_aaa5960841ca390aacf97789292635b42_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,191,69"/>
+<area shape="poly" title=" " alt="" coords="129,17,118,11,98,8,81,10,70,15,66,21,68,28,63,30,61,20,67,11,79,5,98,3,120,6,132,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77f8572bf7a93c64888752fdf4b6493e" name="a77f8572bf7a93c64888752fdf4b6493e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f8572bf7a93c64888752fdf4b6493e">&#9670;&#160;</a></span>sourceTerm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4::sourceTerm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>S</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/db1/classexahype2_1_1Solver.html#a9a25ad159f5ad14f07bb7597773c1d06">::exahype2::Solver::Offloadable</a></td>          <td class="paramname"><span class="paramname"></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>To obtain the best performance, I recommend to man inline command to this signature and to copy the implementation into the header. </p>
+<p>So it would read</p>
+<p>static inline void sourceTerm( ... ) { code here }</p>
+<p>The GPU offloading requires static functions. As we cannot overload the original (virtual) function with a static alternative, we do the TBB trick and overload by adding an additional enum. It has no semantics but helps the compiler to distinguish the different function variants. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html#l00170">170</a> of file <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/dbd/namespaceapplications_1_1exahype2_1_1ccz4.html#a347d1eb86d746d4dae4e64b1c694ff9d">applications::exahype2::ccz4::source()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a77f8572bf7a93c64888752fdf4b6493e_cgraph.png" border="0" usemap="#add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a77f8572bf7a93c64888752fdf4b6493e_cgraph" alt=""/></div>
+<map name="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a77f8572bf7a93c64888752fdf4b6493e_cgraph" id="add/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4_a77f8572bf7a93c64888752fdf4b6493e_cgraph">
+<area shape="rect" title="To obtain the best performance, I recommend to man inline command to this signature and to copy the i..." alt="" coords="5,5,191,45"/>
+<area shape="rect" href="../../db/dbd/namespaceapplications_1_1exahype2_1_1ccz4.html#a347d1eb86d746d4dae4e64b1c694ff9d" title="The source term is one out of two terms that we use in our CCZ4 formulation." alt="" coords="239,5,412,45"/>
+<area shape="poly" title=" " alt="" coords="191,23,225,23,225,28,191,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ac937c2bbcb5fddd36e415ebcf450570d" name="ac937c2bbcb5fddd36e415ebcf450570d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac937c2bbcb5fddd36e415ebcf450570d">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> benchmarks::exahype2::ccz4::CCZ4::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html#l00032">32</a> of file <a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>benchmarks/exahype2/ccz4/performance-testbed/<a class="el" href="../../d1/d0f/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8h_source.html">CCZ4.h</a></li>
+<li>benchmarks/exahype2/ccz4/gauge-wave-fv/<a class="el" href="../../d3/dc8/benchmarks_2exahype2_2ccz4_2gauge-wave-fv_2CCZ4_8cpp_source.html">CCZ4.cpp</a></li>
+<li>benchmarks/exahype2/ccz4/performance-testbed/<a class="el" href="../../d5/d06/benchmarks_2exahype2_2ccz4_2performance-testbed_2CCZ4_8cpp_source.html">CCZ4.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d22/namespacebenchmarks.html">benchmarks</a></li><li class="navelem"><a class="el" href="../../d5/d86/namespacebenchmarks_1_1exahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../d2/d5a/namespacebenchmarks_1_1exahype2_1_1ccz4.html">ccz4</a></li><li class="navelem"><a class="el" href="../../dd/d86/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4.html">CCZ4</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:20 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

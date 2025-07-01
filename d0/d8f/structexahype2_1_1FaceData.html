@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d8f/structexahype2_1_1FaceData.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">exahype2::FaceData&lt; inType, outType &gt; Struct Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain the values, QOut would contain the fluxes QIn[faceId][0][...] will contain the values of the left side relative to the face QIn[faceId][1][...] will contain the values of the right side relative to the face.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for exahype2::FaceData&lt; inType, outType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d30/structexahype2_1_1FaceData__coll__graph.png" border="0" usemap="#aexahype2_1_1FaceData_3_01inType_00_01outType_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aexahype2_1_1FaceData_3_01inType_00_01outType_01_4_coll__map" id="aexahype2_1_1FaceData_3_01inType_00_01outType_01_4_coll__map">
+<area shape="rect" title="Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain t..." alt="" coords="13,123,168,163"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="5,5,176,45"/>
+<area shape="poly" title=" " alt="" coords="93,59,93,122,88,122,88,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab52b0a33bb9fadfd2722e029e86c33da" id="r_ab52b0a33bb9fadfd2722e029e86c33da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab52b0a33bb9fadfd2722e029e86c33da">FaceData</a> (inType *QIn_[2], <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre_, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceSize_, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t_, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt_, outType *QOut_[2], <a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a> memoryLocation_=<a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465ba556e9a86db9c921373c6b5097817214a">tarch::MemoryLocation::Heap</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> targetDevice_=<a class="el" href="../../dd/d49/classtarch_1_1accelerator_1_1Device.html#a5c8ba28e0f40d3f119defe828ac8f92e">tarch::accelerator::Device::DefaultDevice</a>)</td></tr>
+<tr class="memdesc:ab52b0a33bb9fadfd2722e029e86c33da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct patch data object for one single cell.  <br /></td></tr>
+<tr class="separator:ab52b0a33bb9fadfd2722e029e86c33da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf455dbaee9bbb940b12f1dfb2ca7e12" id="r_acf455dbaee9bbb940b12f1dfb2ca7e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf455dbaee9bbb940b12f1dfb2ca7e12">FaceData</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfFaces_, <a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a> memoryLocation_=<a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465ba556e9a86db9c921373c6b5097817214a">tarch::MemoryLocation::Heap</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> targetDevice_=<a class="el" href="../../dd/d49/classtarch_1_1accelerator_1_1Device.html#a5c8ba28e0f40d3f119defe828ac8f92e">tarch::accelerator::Device::DefaultDevice</a>)</td></tr>
+<tr class="separator:acf455dbaee9bbb940b12f1dfb2ca7e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838f24ca64869a7d6d1928aa091d6a09" id="r_a838f24ca64869a7d6d1928aa091d6a09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a838f24ca64869a7d6d1928aa091d6a09">FaceData</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a> &amp;copy)=delete</td></tr>
+<tr class="separator:a838f24ca64869a7d6d1928aa091d6a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744945487a0a6226b69305587d4fcaa2" id="r_a744945487a0a6226b69305587d4fcaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a744945487a0a6226b69305587d4fcaa2">operator=</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a> &amp;)=delete</td></tr>
+<tr class="separator:a744945487a0a6226b69305587d4fcaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5559dc6a0876b6031fb4066d7c9ccc8" id="r_aa5559dc6a0876b6031fb4066d7c9ccc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5559dc6a0876b6031fb4066d7c9ccc8">~FaceData</a> ()</td></tr>
+<tr class="separator:aa5559dc6a0876b6031fb4066d7c9ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8054f2136e93c4ac6c63b13c23ebd11" id="r_aa8054f2136e93c4ac6c63b13c23ebd11"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8054f2136e93c4ac6c63b13c23ebd11">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa8054f2136e93c4ac6c63b13c23ebd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a50200e0d3e6e6d55999a615af4fde39f" id="r_a50200e0d3e6e6d55999a615af4fde39f"><td class="memItemLeft" align="right" valign="top">inType *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50200e0d3e6e6d55999a615af4fde39f">QIn</a> )[2]</td></tr>
+<tr class="memdesc:a50200e0d3e6e6d55999a615af4fde39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">QIn may not be const, as some kernels delete it straightaway once the input data has been handled.  <br /></td></tr>
+<tr class="separator:a50200e0d3e6e6d55999a615af4fde39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43adb458633060cf14b371a702da2f90" id="r_a43adb458633060cf14b371a702da2f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43adb458633060cf14b371a702da2f90">faceCentre</a></td></tr>
+<tr class="separator:a43adb458633060cf14b371a702da2f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b667a764200d01c00a4c65dde90506e" id="r_a2b667a764200d01c00a4c65dde90506e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b667a764200d01c00a4c65dde90506e">faceSize</a></td></tr>
+<tr class="separator:a2b667a764200d01c00a4c65dde90506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac206eb2e297ce691053a8c42340ed23d" id="r_ac206eb2e297ce691053a8c42340ed23d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac206eb2e297ce691053a8c42340ed23d">t</a></td></tr>
+<tr class="separator:ac206eb2e297ce691053a8c42340ed23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f29a86e023a72a6fc705e9b9797cb09" id="r_a9f29a86e023a72a6fc705e9b9797cb09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f29a86e023a72a6fc705e9b9797cb09">dt</a></td></tr>
+<tr class="separator:a9f29a86e023a72a6fc705e9b9797cb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67977ac437b82a2c5630a76f45d2745b" id="r_a67977ac437b82a2c5630a76f45d2745b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67977ac437b82a2c5630a76f45d2745b">id</a></td></tr>
+<tr class="memdesc:a67977ac437b82a2c5630a76f45d2745b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of underlying task.  <br /></td></tr>
+<tr class="separator:a67977ac437b82a2c5630a76f45d2745b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddbd3d77fd04118b524880f28cc6b23" id="r_afddbd3d77fd04118b524880f28cc6b23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afddbd3d77fd04118b524880f28cc6b23">numberOfFaces</a></td></tr>
+<tr class="memdesc:afddbd3d77fd04118b524880f28cc6b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">As we store data as SoA, we have to know how big the actual arrays are.  <br /></td></tr>
+<tr class="separator:afddbd3d77fd04118b524880f28cc6b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6017ce93dfd4122d12a44da4b46c8d36" id="r_a6017ce93dfd4122d12a44da4b46c8d36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6017ce93dfd4122d12a44da4b46c8d36">memoryLocation</a></td></tr>
+<tr class="memdesc:a6017ce93dfd4122d12a44da4b46c8d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">We might want to allocate data on the heap or an accelerator, therefore we save the target device id.  <br /></td></tr>
+<tr class="separator:a6017ce93dfd4122d12a44da4b46c8d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a1f1a64efdb34727b5c68961cf582d" id="r_a32a1f1a64efdb34727b5c68961cf582d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32a1f1a64efdb34727b5c68961cf582d">targetDevice</a></td></tr>
+<tr class="memdesc:a32a1f1a64efdb34727b5c68961cf582d"><td class="mdescLeft">&#160;</td><td class="mdescRight">We might want to allocate data on an accelerator, therefore we save the target device id.  <br /></td></tr>
+<tr class="separator:a32a1f1a64efdb34727b5c68961cf582d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1544a69766a2bd708ee21934bd8ba5" id="r_ace1544a69766a2bd708ee21934bd8ba5"><td class="memItemLeft" align="right" valign="top">outType *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace1544a69766a2bd708ee21934bd8ba5">QOut</a> )[2]</td></tr>
+<tr class="memdesc:ace1544a69766a2bd708ee21934bd8ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out values.  <br /></td></tr>
+<tr class="separator:ace1544a69766a2bd708ee21934bd8ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename inType = double, typename outType = double&gt;<br />
+struct exahype2::FaceData&lt; inType, outType &gt;</div><p>Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain the values, QOut would contain the fluxes QIn[faceId][0][...] will contain the values of the left side relative to the face QIn[faceId][1][...] will contain the values of the right side relative to the face. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00021">21</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab52b0a33bb9fadfd2722e029e86c33da" name="ab52b0a33bb9fadfd2722e029e86c33da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52b0a33bb9fadfd2722e029e86c33da">&#9670;&#160;</a></span>FaceData() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType , typename outType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::FaceData </td>
+          <td>(</td>
+          <td class="paramtype">inType *</td>          <td class="paramname"><span class="paramname"><em>QIn_</em>[2], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceSize_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">outType *</td>          <td class="paramname"><span class="paramname"><em>QOut_</em>[2], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a></td>          <td class="paramname"><span class="paramname"><em>memoryLocation_</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465ba556e9a86db9c921373c6b5097817214a">tarch::MemoryLocation::Heap</a></span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>targetDevice_</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../dd/d49/classtarch_1_1accelerator_1_1Device.html#a5c8ba28e0f40d3f119defe828ac8f92e">tarch::accelerator::Device::DefaultDevice</a></span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct patch data object for one single cell. </p>
+<p>Usually, I do so only to be able to use the same kernels everywhere: Kernels accept <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html" title="Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain t...">FaceData</a>, i.e. multiple patches. Even if we have only one cell, we thus wrap this cell's data into an instance of <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html" title="Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain t...">FaceData</a> and pass it in. The id can be set to any dummy in this case, as we know which task has wrapped this single cell, i.e. we usually do not read it later. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">101</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00031">exahype2::FaceData&lt; inType, outType &gt;::dt</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00027">exahype2::FaceData&lt; inType, outType &gt;::faceCentre</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00028">exahype2::FaceData&lt; inType, outType &gt;::faceSize</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00026">exahype2::FaceData&lt; inType, outType &gt;::QIn</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00061">exahype2::FaceData&lt; inType, outType &gt;::QOut</a>, and <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00030">exahype2::FaceData&lt; inType, outType &gt;::t</a>.</p>
+
+</div>
+</div>
+<a id="acf455dbaee9bbb940b12f1dfb2ca7e12" name="acf455dbaee9bbb940b12f1dfb2ca7e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf455dbaee9bbb940b12f1dfb2ca7e12">&#9670;&#160;</a></span>FaceData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType , typename outType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::FaceData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfFaces_</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a></td>          <td class="paramname"><span class="paramname"><em>memoryLocation_</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465ba556e9a86db9c921373c6b5097817214a">tarch::MemoryLocation::Heap</a></span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>targetDevice_</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../dd/d49/classtarch_1_1accelerator_1_1Device.html#a5c8ba28e0f40d3f119defe828ac8f92e">tarch::accelerator::Device::DefaultDevice</a></span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00122">122</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/dbc/MemoryManager_8cpp_source.html#l00019">tarch::accelerator::MemoryManager::allocate()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00031">exahype2::FaceData&lt; inType, outType &gt;::dt</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00027">exahype2::FaceData&lt; inType, outType &gt;::faceCentre</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00028">exahype2::FaceData&lt; inType, outType &gt;::faceSize</a>, <a class="el" href="../../dd/dbc/MemoryManager_8cpp_source.html#l00014">tarch::accelerator::MemoryManager::getInstance()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00026">exahype2::FaceData&lt; inType, outType &gt;::QIn</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00061">exahype2::FaceData&lt; inType, outType &gt;::QOut</a>, and <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00030">exahype2::FaceData&lt; inType, outType &gt;::t</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d8f/structexahype2_1_1FaceData_acf455dbaee9bbb940b12f1dfb2ca7e12_cgraph.png" border="0" usemap="#ad0/d8f/structexahype2_1_1FaceData_acf455dbaee9bbb940b12f1dfb2ca7e12_cgraph" alt=""/></div>
+<map name="ad0/d8f/structexahype2_1_1FaceData_acf455dbaee9bbb940b12f1dfb2ca7e12_cgraph" id="ad0/d8f/structexahype2_1_1FaceData_acf455dbaee9bbb940b12f1dfb2ca7e12_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,160,95"/>
+<area shape="rect" href="../../d9/d22/classtarch_1_1accelerator_1_1MemoryManager.html#a6868e39570b0658150ab39f0084d59fd" title="Return a pointer to a new memory block of size bytes on device." alt="" coords="220,23,421,63"/>
+<area shape="poly" title=" " alt="" coords="160,62,206,56,207,61,161,68"/>
+<area shape="rect" href="../../d9/d22/classtarch_1_1accelerator_1_1MemoryManager.html#a77bcfea91d4796aef642f4032d09eddb" title=" " alt="" coords="208,87,433,127"/>
+<area shape="poly" title=" " alt="" coords="161,83,195,88,194,93,160,88"/>
+<area shape="rect" href="../../d4/d6f/namespacetarch_1_1accelerator.html#a63b3293bf2cadbcdf8c52eb64e95bf36" title=" " alt="" coords="481,23,623,63"/>
+<area shape="poly" title=" " alt="" coords="422,41,468,41,468,46,422,46"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a451a011ba6a1b4175b7de3b95f36bbcd" title=" " alt="" coords="671,5,865,31"/>
+<area shape="poly" title=" " alt="" coords="623,32,657,28,657,34,624,38"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="731,55,805,80"/>
+<area shape="poly" title=" " alt="" coords="623,49,718,59,717,64,623,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a838f24ca64869a7d6d1928aa091d6a09" name="a838f24ca64869a7d6d1928aa091d6a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838f24ca64869a7d6d1928aa091d6a09">&#9670;&#160;</a></span>FaceData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::FaceData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a>&lt; inType, outType &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>copy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5559dc6a0876b6031fb4066d7c9ccc8" name="aa5559dc6a0876b6031fb4066d7c9ccc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5559dc6a0876b6031fb4066d7c9ccc8">&#9670;&#160;</a></span>~FaceData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType , typename outType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::~<a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00157">157</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/dbc/MemoryManager_8cpp_source.html#l00058">tarch::accelerator::MemoryManager::free()</a>, <a class="el" href="../../dd/dbc/MemoryManager_8cpp_source.html#l00014">tarch::accelerator::MemoryManager::getInstance()</a>, and <a class="el" href="../../df/d1e/exahype2_2solvers_2fv_2godunov_2kernels_2cuda_2Loop_8template_8h_source.html#l00176">targetDevice</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d8f/structexahype2_1_1FaceData_aa5559dc6a0876b6031fb4066d7c9ccc8_cgraph.png" border="0" usemap="#ad0/d8f/structexahype2_1_1FaceData_aa5559dc6a0876b6031fb4066d7c9ccc8_cgraph" alt=""/></div>
+<map name="ad0/d8f/structexahype2_1_1FaceData_aa5559dc6a0876b6031fb4066d7c9ccc8_cgraph" id="ad0/d8f/structexahype2_1_1FaceData_aa5559dc6a0876b6031fb4066d7c9ccc8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,160,77"/>
+<area shape="rect" href="../../d9/d22/classtarch_1_1accelerator_1_1MemoryManager.html#a468bac891c27a30cc54ad64e89559af3" title="Free does not actually free data, but instead hands the memory block back to the singleton,..." alt="" coords="233,5,408,45"/>
+<area shape="poly" title=" " alt="" coords="160,44,219,36,220,42,161,50"/>
+<area shape="rect" href="../../d9/d22/classtarch_1_1accelerator_1_1MemoryManager.html#a77bcfea91d4796aef642f4032d09eddb" title=" " alt="" coords="208,69,433,109"/>
+<area shape="poly" title=" " alt="" coords="161,65,195,70,194,75,160,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a744945487a0a6226b69305587d4fcaa2" name="a744945487a0a6226b69305587d4fcaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744945487a0a6226b69305587d4fcaa2">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a> &amp; <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a>&lt; inType, outType &gt; &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8054f2136e93c4ac6c63b13c23ebd11" name="aa8054f2136e93c4ac6c63b13c23ebd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8054f2136e93c4ac6c63b13c23ebd11">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType , typename outType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00175">175</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a9f29a86e023a72a6fc705e9b9797cb09" name="a9f29a86e023a72a6fc705e9b9797cb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f29a86e023a72a6fc705e9b9797cb09">&#9670;&#160;</a></span>dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::dt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00031">31</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, and <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>.</p>
+
+</div>
+</div>
+<a id="a43adb458633060cf14b371a702da2f90" name="a43adb458633060cf14b371a702da2f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43adb458633060cf14b371a702da2f90">&#9670;&#160;</a></span>faceCentre</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt;* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::faceCentre</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00027">27</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, and <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>.</p>
+
+</div>
+</div>
+<a id="a2b667a764200d01c00a4c65dde90506e" name="a2b667a764200d01c00a4c65dde90506e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b667a764200d01c00a4c65dde90506e">&#9670;&#160;</a></span>faceSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt;* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::faceSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00028">28</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, and <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>.</p>
+
+</div>
+</div>
+<a id="a67977ac437b82a2c5630a76f45d2745b" name="a67977ac437b82a2c5630a76f45d2745b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67977ac437b82a2c5630a76f45d2745b">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Id of underlying task. </p>
+<p>Required when we fuse many enclave tasks and load them off to the GPU, as we have to know afterwards which outcome corresponds to which task. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00038">38</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+</div>
+</div>
+<a id="a6017ce93dfd4122d12a44da4b46c8d36" name="a6017ce93dfd4122d12a44da4b46c8d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6017ce93dfd4122d12a44da4b46c8d36">&#9670;&#160;</a></span>memoryLocation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../da/d6a/namespacetarch.html#aa2a64ae235b4315edd36c1aebc6d465b">tarch::MemoryLocation</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::memoryLocation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We might want to allocate data on the heap or an accelerator, therefore we save the target device id. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00050">50</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+</div>
+</div>
+<a id="afddbd3d77fd04118b524880f28cc6b23" name="afddbd3d77fd04118b524880f28cc6b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddbd3d77fd04118b524880f28cc6b23">&#9670;&#160;</a></span>numberOfFaces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::numberOfFaces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>As we store data as SoA, we have to know how big the actual arrays are. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00044">44</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+</div>
+</div>
+<a id="a50200e0d3e6e6d55999a615af4fde39f" name="a50200e0d3e6e6d55999a615af4fde39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50200e0d3e6e6d55999a615af4fde39f">&#9670;&#160;</a></span>QIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">inType*(* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::QIn)[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>QIn may not be const, as some kernels delete it straightaway once the input data has been handled. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00026">26</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00042">initialTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>, and <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00132">secondTask()</a>.</p>
+
+</div>
+</div>
+<a id="ace1544a69766a2bd708ee21934bd8ba5" name="ace1544a69766a2bd708ee21934bd8ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1544a69766a2bd708ee21934bd8ba5">&#9670;&#160;</a></span>QOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">outType*(* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::QOut)[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Out values. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00061">61</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00042">initialTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>, and <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00132">secondTask()</a>.</p>
+
+</div>
+</div>
+<a id="ac206eb2e297ce691053a8c42340ed23d" name="ac206eb2e297ce691053a8c42340ed23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac206eb2e297ce691053a8c42340ed23d">&#9670;&#160;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>* <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00030">30</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00123">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00101">exahype2::FaceData&lt; inType, outType &gt;::FaceData()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, and <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>.</p>
+
+</div>
+</div>
+<a id="a32a1f1a64efdb34727b5c68961cf582d" name="a32a1f1a64efdb34727b5c68961cf582d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a1f1a64efdb34727b5c68961cf582d">&#9670;&#160;</a></span>targetDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inType  = double, typename outType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">exahype2::FaceData</a>&lt; inType, outType &gt;::targetDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We might want to allocate data on an accelerator, therefore we save the target device id. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d6d/LRFaceData_8h_source.html#l00056">56</a> of file <a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>benchmarks/exahype2/kernel-benchmarks/aderdg-fused/<a class="el" href="../../da/d6d/LRFaceData_8h_source.html">LRFaceData.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:27 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

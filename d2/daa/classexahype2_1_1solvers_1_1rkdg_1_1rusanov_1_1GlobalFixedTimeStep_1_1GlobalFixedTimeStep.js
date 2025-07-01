@@ -1,0 +1,28 @@
+var classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep =
+[
+    [ "__init__", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a146f4fca98109931a71b32076276f632", null ],
+    [ "set_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a81c3df67dc87f408a3e2ea59e0502d51", null ],
+    [ "user_action_set_includes", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#af2500a953d7c3ceb3e7181188a192a0a", null ],
+    [ "_abstract_solver_user_declarations", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#abbd68f9c7870171fddbc25c825736fa6", null ],
+    [ "_abstract_solver_user_definitions", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#aba363878784bceb96f6c6fc87c5c57cf", null ],
+    [ "_add_solver_contributions_call", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#ae4f14e3d925535c1ae71bdb26ae9b92d", null ],
+    [ "_compute_new_time_step_size", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a45aa557d0e98754299a7fefdf2cfe001", null ],
+    [ "_compute_time_step_size", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#af0c81bee8b6c713f518b2491523c07d6", null ],
+    [ "_constructor_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a7ee0aca8994b7f4fbe0358f12803c00a", null ],
+    [ "_eigenvalues_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#af9edcdfc1a0cb7e5e99d9827d4fff1db", null ],
+    [ "_finish_time_step_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a500c2bd4652273b9cebabbba2c50248c", null ],
+    [ "_flux_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#af19a1458d5a4e72bf59e8631eb759e87", null ],
+    [ "_kernel_namespace", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#aa6c2fe106d36b902850fa6b79d5bef4c", null ],
+    [ "_multiply_with_inverted_mass_matrix_call", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a659d939b13bf74a8d150f0aaff4ceaa2", null ],
+    [ "_ncp_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#aa62178f95d4b97da34685672cd0734bb", null ],
+    [ "_normalised_time_step_size", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a4687d385d8701ffdc33f82ac9451443f", null ],
+    [ "_pde_terms_without_state", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a54d9e757bb6982abdb0a2ed9aaae088e", null ],
+    [ "_point_sources_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a6b600754d9612798e0a63dfccd737adc", null ],
+    [ "_Riemann_compute_kernel_call", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a608ed857ed8137b1c5a9e24f5572ca0d", null ],
+    [ "_solver_user_declarations", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a0b81e3937ffb9d5d43bd7ba19ea2d92f", null ],
+    [ "_solver_user_definitions", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a382a5ebff526a7c21587a06e439c69b8", null ],
+    [ "_source_term_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a80f76423bd695bc29cc6cbc2c7d7dd8a", null ],
+    [ "_start_time_step_implementation", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#ab050c00c6c19d324149fab553a65b58f", null ],
+    [ "_volumetric_compute_kernel_call", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#a1c0f8008a8b08748c119b6a4e5cb7533", null ],
+    [ "_volumetric_compute_kernel_call_stateless", "d2/daa/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalFixedTimeStep_1_1GlobalFixedTimeStep.html#afdb848aed8abf7eb0b18db5669a8305a", null ]
+];

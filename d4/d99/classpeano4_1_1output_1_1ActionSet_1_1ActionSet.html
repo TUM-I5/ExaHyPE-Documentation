@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">peano4.output.ActionSet.ActionSet Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for peano4.output.ActionSet.ActionSet:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dac/classpeano4_1_1output_1_1ActionSet_1_1ActionSet__inherit__graph.png" border="0" usemap="#apeano4_8output_8ActionSet_8ActionSet_inherit__map" alt="Inheritance graph"/></div>
+<map name="apeano4_8output_8ActionSet_8ActionSet_inherit__map" id="apeano4_8output_8ActionSet_8ActionSet_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,192,119"/>
+<area shape="rect" title=" " alt="" coords="67,5,130,31"/>
+<area shape="poly" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for peano4.output.ActionSet.ActionSet:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d2f/classpeano4_1_1output_1_1ActionSet_1_1ActionSet__coll__graph.png" border="0" usemap="#apeano4_8output_8ActionSet_8ActionSet_coll__map" alt="Collaboration graph"/></div>
+<map name="apeano4_8output_8ActionSet_8ActionSet_coll__map" id="apeano4_8output_8ActionSet_8ActionSet_coll__map">
+<area shape="rect" title=" " alt="" coords="5,79,192,119"/>
+<area shape="rect" title=" " alt="" coords="67,5,130,31"/>
+<area shape="poly" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af8a32dac6b436146d7b9b0fa6aed8a8f" id="r_af8a32dac6b436146d7b9b0fa6aed8a8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8a32dac6b436146d7b9b0fa6aed8a8f">__init__</a> (self, <a class="el" href="#adf1f307b402c5730bcd9ee68cb26ef62">classname</a>, <a class="el" href="#ac49e17cfbb1303c32f2fe8716d077b12">namespace</a>, <a class="el" href="#aae51caf4c7e15ae36f21c64ff7d8a60c">subdirectory</a>, <a class="el" href="#a11457d6c672ce01b0f025176dcd5fe60">implementation</a>=None)</td></tr>
+<tr class="memdesc:af8a32dac6b436146d7b9b0fa6aed8a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of an Action Set.  <br /></td></tr>
+<tr class="separator:af8a32dac6b436146d7b9b0fa6aed8a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7efd501fbb34270e2a049c3023c972" id="r_acc7efd501fbb34270e2a049c3023c972"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc7efd501fbb34270e2a049c3023c972">add_operation</a> (self, name, signature)</td></tr>
+<tr class="memdesc:acc7efd501fbb34270e2a049c3023c972"><td class="mdescLeft">&#160;</td><td class="mdescRight">signature is a long tuple.  <br /></td></tr>
+<tr class="separator:acc7efd501fbb34270e2a049c3023c972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbbac55a90481497e560e95aed6c3bf" id="r_a6fbbac55a90481497e560e95aed6c3bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fbbac55a90481497e560e95aed6c3bf">get_cpp_file_name</a> (self)</td></tr>
+<tr class="separator:a6fbbac55a90481497e560e95aed6c3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f12155ae90910ec53725a344766b42" id="r_ac2f12155ae90910ec53725a344766b42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f12155ae90910ec53725a344766b42">generate</a> (self, overwrite, directory)</td></tr>
+<tr class="separator:ac2f12155ae90910ec53725a344766b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:adf1f307b402c5730bcd9ee68cb26ef62" id="r_adf1f307b402c5730bcd9ee68cb26ef62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf1f307b402c5730bcd9ee68cb26ef62">classname</a></td></tr>
+<tr class="separator:adf1f307b402c5730bcd9ee68cb26ef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49e17cfbb1303c32f2fe8716d077b12" id="r_ac49e17cfbb1303c32f2fe8716d077b12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac49e17cfbb1303c32f2fe8716d077b12">namespace</a></td></tr>
+<tr class="separator:ac49e17cfbb1303c32f2fe8716d077b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae51caf4c7e15ae36f21c64ff7d8a60c" id="r_aae51caf4c7e15ae36f21c64ff7d8a60c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae51caf4c7e15ae36f21c64ff7d8a60c">subdirectory</a></td></tr>
+<tr class="separator:aae51caf4c7e15ae36f21c64ff7d8a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4996a0cd2038bec444d90024fcf803dc" id="r_a4996a0cd2038bec444d90024fcf803dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4996a0cd2038bec444d90024fcf803dc">operations</a></td></tr>
+<tr class="separator:a4996a0cd2038bec444d90024fcf803dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44052294da86146bae41e9e656d08dec" id="r_a44052294da86146bae41e9e656d08dec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44052294da86146bae41e9e656d08dec">include_files</a></td></tr>
+<tr class="separator:a44052294da86146bae41e9e656d08dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af842a1494c2e41b10284f7a1ec32a5f9" id="r_af842a1494c2e41b10284f7a1ec32a5f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af842a1494c2e41b10284f7a1ec32a5f9">typedefs</a></td></tr>
+<tr class="separator:af842a1494c2e41b10284f7a1ec32a5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11457d6c672ce01b0f025176dcd5fe60" id="r_a11457d6c672ce01b0f025176dcd5fe60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11457d6c672ce01b0f025176dcd5fe60">implementation</a></td></tr>
+<tr class="separator:a11457d6c672ce01b0f025176dcd5fe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a89c6870b57b18faff61d19f375b7aae9" id="r_a89c6870b57b18faff61d19f375b7aae9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89c6870b57b18faff61d19f375b7aae9">__generate_includes</a> (self, outputfile)</td></tr>
+<tr class="separator:a89c6870b57b18faff61d19f375b7aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b6b0bb418f2bd3e6f91bf9fb89b64c" id="r_ae9b6b0bb418f2bd3e6f91bf9fb89b64c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b6b0bb418f2bd3e6f91bf9fb89b64c">__get_operation_arguments</a> (self, operation)</td></tr>
+<tr class="separator:ae9b6b0bb418f2bd3e6f91bf9fb89b64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ad6cd6b220210e80f497cf7885cb37" id="r_aa1ad6cd6b220210e80f497cf7885cb37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ad6cd6b220210e80f497cf7885cb37">__generate_operation</a> (self, outputfile, operation)</td></tr>
+<tr class="memdesc:aa1ad6cd6b220210e80f497cf7885cb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">outputfile points to file, operation to an operation object as added by the solver step  <br /></td></tr>
+<tr class="separator:aa1ad6cd6b220210e80f497cf7885cb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddba4c594c68f622d728afe3466fe1a" id="r_adddba4c594c68f622d728afe3466fe1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adddba4c594c68f622d728afe3466fe1a">__get_full_qualified_class_name</a> (self)</td></tr>
+<tr class="separator:adddba4c594c68f622d728afe3466fe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11ad3bd9ebc16cbba1ae8dd06a6baaf" id="r_ae11ad3bd9ebc16cbba1ae8dd06a6baaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11ad3bd9ebc16cbba1ae8dd06a6baaf">__generate_header</a> (self, overwrite, directory)</td></tr>
+<tr class="separator:ae11ad3bd9ebc16cbba1ae8dd06a6baaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5536b851e417b30701e780f5cd896691" id="r_a5536b851e417b30701e780f5cd896691"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5536b851e417b30701e780f5cd896691">__generate_implementation</a> (self, overwrite, directory)</td></tr>
+<tr class="separator:a5536b851e417b30701e780f5cd896691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a702e911f831ed2c9c2bd3b36a2d540c0" id="r_a702e911f831ed2c9c2bd3b36a2d540c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702e911f831ed2c9c2bd3b36a2d540c0">__class__</a></td></tr>
+<tr class="separator:a702e911f831ed2c9c2bd3b36a2d540c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00012">12</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af8a32dac6b436146d7b9b0fa6aed8a8f" name="af8a32dac6b436146d7b9b0fa6aed8a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a32dac6b436146d7b9b0fa6aed8a8f">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>classname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>namespace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>subdirectory</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>implementation</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementation of an Action Set. </p>
+<p>Please consult <a class="el" href="../../d8/d95/namespacepeano4_1_1solversteps_1_1ActionSet.html">peano4.solversteps.ActionSet</a> for a description.</p>
+<p>implementation Should be of type peano4.solversteps.Mapping or None. If it is None, then the generated stuff will be a sole interface. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00013">13</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae11ad3bd9ebc16cbba1ae8dd06a6baaf" name="ae11ad3bd9ebc16cbba1ae8dd06a6baaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11ad3bd9ebc16cbba1ae8dd06a6baaf">&#9670;&#160;</a></span>__generate_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__generate_header </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>overwrite</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>directory</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00085">85</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00025">peano4.output.ActionSet.ActionSet.classname</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00024">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.classname</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00041">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00020">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.classname</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00023">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00023">peano4.solversteps.Observer.Observer.classname</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00034">peano4.output.ActionSet.ActionSet.implementation</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00842">exahype2.Project.Project.subdirectory()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00106">peano4.datamodel.DoF.DoF.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00020">peano4.datamodel.Model.Model.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00079">peano4.datamodel.Model.Model.subdirectory()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00027">peano4.output.ActionSet.ActionSet.subdirectory</a>, <a class="el" href="../../de/dbb/InvokeExternalTool_8py_source.html#l00014">peano4.output.InvokeExternalTool.InvokeExternalTool.subdirectory</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00026">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00043">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00022">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00025">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00055">peano4.Project.Project.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00478">peano4.Project.Project.subdirectory()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00025">peano4.solversteps.Observer.Observer.subdirectory</a>, <a class="el" href="../../d4/d32/Step_8py_source.html#l00124">peano4.solversteps.Step.Step.subdirectory</a>, and <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00350">api.Project.Project.subdirectory()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00211">peano4.output.ActionSet.ActionSet.generate()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_cgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_cgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_cgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,73,217,113"/>
+<area shape="rect" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html#ac01d2f2f0e27739f97a6ec04beabd7fe" title=" " alt="" coords="289,5,559,31"/>
+<area shape="poly" title=" " alt="" coords="165,70,265,39,308,30,309,36,266,45,167,75"/>
+<area shape="rect" href="../../d8/d91/classpeano4_1_1datamodel_1_1Model_1_1Model.html#a791db7f0ee31bf96136034089b8e4a31" title=" " alt="" coords="265,55,583,80"/>
+<area shape="poly" title=" " alt="" coords="217,81,254,78,254,84,218,87"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a05fcdca516ae8b8add0d7dbfa43ff937" title=" " alt="" coords="297,104,551,129"/>
+<area shape="poly" title=" " alt="" coords="218,98,283,103,283,109,217,103"/>
+<area shape="rect" href="../../dc/d61/classapi_1_1Project_1_1Project.html#a40e24585e6b3f9d0b333552342b1bc37" title=" " alt="" coords="311,153,537,179"/>
+<area shape="poly" title=" " alt="" coords="170,110,266,138,316,148,315,154,265,143,169,115"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae11ad3bd9ebc16cbba1ae8dd06a6baaf_icgraph">
+<area shape="rect" title=" " alt="" coords="733,5,945,45"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ac2f12155ae90910ec53725a344766b42" title=" " alt="" coords="499,5,685,45"/>
+<area shape="poly" title=" " alt="" coords="720,28,686,28,686,23,720,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="485,28,451,28,451,23,485,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,13,199,38"/>
+<area shape="poly" title=" " alt="" coords="233,28,199,28,199,23,233,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5536b851e417b30701e780f5cd896691" name="a5536b851e417b30701e780f5cd896691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5536b851e417b30701e780f5cd896691">&#9670;&#160;</a></span>__generate_implementation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__generate_implementation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>overwrite</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>directory</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">162</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00093">peano4.output.ActionSet.ActionSet.__class__</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00058">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.__class__</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00044">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.__class__</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00047">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.__class__</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00077">peano4.output.ActionSet.ActionSet.__get_full_qualified_class_name()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00047">peano4.output.ActionSet.ActionSet.__get_operation_arguments()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00025">peano4.output.ActionSet.ActionSet.classname</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00024">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.classname</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00041">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00020">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.classname</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00023">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00023">peano4.solversteps.Observer.Observer.classname</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00159">peano4.output.ActionSet.ActionSet.get_cpp_file_name()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00034">peano4.output.ActionSet.ActionSet.implementation</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00028">peano4.output.ActionSet.ActionSet.operations</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00211">peano4.output.ActionSet.ActionSet.generate()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_cgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_cgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_cgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_cgraph">
+<area shape="rect" title=" " alt="" coords="5,91,276,131"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#adddba4c594c68f622d728afe3466fe1a" title=" " alt="" coords="324,5,539,60"/>
+<area shape="poly" title=" " alt="" coords="215,89,316,61,317,66,216,94"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ae9b6b0bb418f2bd3e6f91bf9fb89b64c" title=" " alt="" coords="335,84,527,139"/>
+<area shape="poly" title=" " alt="" coords="276,109,322,109,322,114,276,114"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a6fbbac55a90481497e560e95aed6c3bf" title=" " alt="" coords="326,163,537,203"/>
+<area shape="poly" title=" " alt="" coords="223,129,337,157,336,163,222,134"/>
+<area shape="rect" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html#ac01d2f2f0e27739f97a6ec04beabd7fe" title=" " alt="" coords="611,96,880,121"/>
+<area shape="poly" title=" " alt="" coords="497,161,538,147,586,130,627,121,629,126,587,135,540,153,499,166"/>
+<area shape="rect" href="../../d8/d91/classpeano4_1_1datamodel_1_1Model_1_1Model.html#a791db7f0ee31bf96136034089b8e4a31" title=" " alt="" coords="587,145,904,171"/>
+<area shape="poly" title=" " alt="" coords="537,172,574,169,575,174,537,178"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a05fcdca516ae8b8add0d7dbfa43ff937" title=" " alt="" coords="619,195,872,220"/>
+<area shape="poly" title=" " alt="" coords="537,189,605,194,605,199,537,194"/>
+<area shape="rect" href="../../dc/d61/classapi_1_1Project_1_1Project.html#a40e24585e6b3f9d0b333552342b1bc37" title=" " alt="" coords="633,244,858,269"/>
+<area shape="poly" title=" " alt="" coords="491,201,587,229,638,239,637,244,586,234,490,206"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a5536b851e417b30701e780f5cd896691_icgraph">
+<area shape="rect" title=" " alt="" coords="733,5,1004,45"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ac2f12155ae90910ec53725a344766b42" title=" " alt="" coords="499,5,685,45"/>
+<area shape="poly" title=" " alt="" coords="720,28,685,28,685,23,720,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="485,28,451,28,451,23,485,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,13,199,38"/>
+<area shape="poly" title=" " alt="" coords="233,28,199,28,199,23,233,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89c6870b57b18faff61d19f375b7aae9" name="a89c6870b57b18faff61d19f375b7aae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c6870b57b18faff61d19f375b7aae9">&#9670;&#160;</a></span>__generate_includes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__generate_includes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>outputfile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00044">44</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00032">peano4.output.ActionSet.ActionSet.include_files</a>.</p>
+
+</div>
+</div>
+<a id="aa1ad6cd6b220210e80f497cf7885cb37" name="aa1ad6cd6b220210e80f497cf7885cb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ad6cd6b220210e80f497cf7885cb37">&#9670;&#160;</a></span>__generate_operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__generate_operation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>outputfile</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>operation</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>outputfile points to file, operation to an operation object as added by the solver step </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00061">61</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00047">peano4.output.ActionSet.ActionSet.__get_operation_arguments()</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00034">peano4.output.ActionSet.ActionSet.implementation</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_aa1ad6cd6b220210e80f497cf7885cb37_cgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_aa1ad6cd6b220210e80f497cf7885cb37_cgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_aa1ad6cd6b220210e80f497cf7885cb37_cgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_aa1ad6cd6b220210e80f497cf7885cb37_cgraph">
+<area shape="rect" title="outputfile points to file, operation to an operation object as added by the solver step" alt="" coords="5,13,235,53"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ae9b6b0bb418f2bd3e6f91bf9fb89b64c" title=" " alt="" coords="283,5,475,60"/>
+<area shape="poly" title=" " alt="" coords="235,30,269,30,269,35,235,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adddba4c594c68f622d728afe3466fe1a" name="adddba4c594c68f622d728afe3466fe1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddba4c594c68f622d728afe3466fe1a">&#9670;&#160;</a></span>__get_full_qualified_class_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__get_full_qualified_class_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00077">77</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00025">peano4.output.ActionSet.ActionSet.classname</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00024">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.classname</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00041">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00020">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.classname</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00023">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00023">peano4.solversteps.Observer.Observer.classname</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00095">peano4.datamodel.DoF.DoF.namespace</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00015">peano4.datamodel.Model.Model.namespace</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00026">peano4.output.ActionSet.ActionSet.namespace</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00025">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.namespace</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00042">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.namespace</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00021">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.namespace</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00024">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.namespace</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00043">peano4.Project.Project.namespace</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00024">peano4.solversteps.Observer.Observer.namespace</a>, and <a class="el" href="../../d4/d32/Step_8py_source.html#l00123">peano4.solversteps.Step.Step.namespace</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_adddba4c594c68f622d728afe3466fe1a_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_adddba4c594c68f622d728afe3466fe1a_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_adddba4c594c68f622d728afe3466fe1a_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_adddba4c594c68f622d728afe3466fe1a_icgraph">
+<area shape="rect" title=" " alt="" coords="1052,5,1267,60"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a5536b851e417b30701e780f5cd896691" title=" " alt="" coords="733,13,1004,53"/>
+<area shape="poly" title=" " alt="" coords="1038,35,1004,35,1004,30,1038,30"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ac2f12155ae90910ec53725a344766b42" title=" " alt="" coords="499,13,685,53"/>
+<area shape="poly" title=" " alt="" coords="720,35,685,35,685,30,720,30"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,20,451,45"/>
+<area shape="poly" title=" " alt="" coords="485,35,451,35,451,30,485,30"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,20,199,45"/>
+<area shape="poly" title=" " alt="" coords="233,35,199,35,199,30,233,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9b6b0bb418f2bd3e6f91bf9fb89b64c" name="ae9b6b0bb418f2bd3e6f91bf9fb89b64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b6b0bb418f2bd3e6f91bf9fb89b64c">&#9670;&#160;</a></span>__get_operation_arguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__get_operation_arguments </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>operation</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00047">47</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00061">peano4.output.ActionSet.ActionSet.__generate_operation()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae9b6b0bb418f2bd3e6f91bf9fb89b64c_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae9b6b0bb418f2bd3e6f91bf9fb89b64c_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae9b6b0bb418f2bd3e6f91bf9fb89b64c_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ae9b6b0bb418f2bd3e6f91bf9fb89b64c_icgraph">
+<area shape="rect" title=" " alt="" coords="1052,30,1244,85"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a5536b851e417b30701e780f5cd896691" title=" " alt="" coords="733,5,1004,45"/>
+<area shape="poly" title=" " alt="" coords="1038,47,1004,44,1005,38,1039,42"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#aa1ad6cd6b220210e80f497cf7885cb37" title="outputfile points to file, operation to an operation object as added by the solver step" alt="" coords="754,69,983,109"/>
+<area shape="poly" title=" " alt="" coords="1039,73,984,79,984,74,1038,67"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ac2f12155ae90910ec53725a344766b42" title=" " alt="" coords="499,5,685,45"/>
+<area shape="poly" title=" " alt="" coords="720,28,685,28,685,23,720,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="485,28,451,28,451,23,485,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,13,199,38"/>
+<area shape="poly" title=" " alt="" coords="233,28,199,28,199,23,233,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc7efd501fbb34270e2a049c3023c972" name="acc7efd501fbb34270e2a049c3023c972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7efd501fbb34270e2a049c3023c972">&#9670;&#160;</a></span>add_operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.add_operation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>signature</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>signature is a long tuple. </p>
+<p>The first entry is the name of the routine, the second entry is the result type. From thereon, one entry gives the name of an attribute, the second one the type. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00036">36</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00028">peano4.output.ActionSet.ActionSet.operations</a>.</p>
+
+</div>
+</div>
+<a id="ac2f12155ae90910ec53725a344766b42" name="ac2f12155ae90910ec53725a344766b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f12155ae90910ec53725a344766b42">&#9670;&#160;</a></span>generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.generate </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>overwrite</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>directory</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00211">211</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00085">peano4.output.ActionSet.ActionSet.__generate_header()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00842">exahype2.Project.Project.subdirectory()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00106">peano4.datamodel.DoF.DoF.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00020">peano4.datamodel.Model.Model.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00079">peano4.datamodel.Model.Model.subdirectory()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00027">peano4.output.ActionSet.ActionSet.subdirectory</a>, <a class="el" href="../../de/dbb/InvokeExternalTool_8py_source.html#l00014">peano4.output.InvokeExternalTool.InvokeExternalTool.subdirectory</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00026">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00043">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00022">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00025">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00055">peano4.Project.Project.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00478">peano4.Project.Project.subdirectory()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00025">peano4.solversteps.Observer.Observer.subdirectory</a>, <a class="el" href="../../d4/d32/Step_8py_source.html#l00124">peano4.solversteps.Step.Step.subdirectory</a>, and <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00350">api.Project.Project.subdirectory()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00165">peano4.Project.Project.build()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_cgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_cgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_cgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_cgraph">
+<area shape="rect" title=" " alt="" coords="5,245,192,285"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ae11ad3bd9ebc16cbba1ae8dd06a6baaf" title=" " alt="" coords="560,288,772,328"/>
+<area shape="poly" title=" " alt="" coords="193,269,546,296,545,301,192,275"/>
+<area shape="rect" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html#ac01d2f2f0e27739f97a6ec04beabd7fe" title=" " alt="" coords="845,127,1115,152"/>
+<area shape="poly" title=" " alt="" coords="109,244,129,211,158,170,195,129,239,95,282,70,321,52,356,41,391,33,465,26,558,17,667,4,715,5,774,17,827,37,877,63,954,116,951,121,874,68,825,42,773,22,714,10,667,9,559,22,465,31,392,39,358,46,323,57,284,75,241,99,199,133,162,174,133,214,113,246"/>
+<area shape="rect" href="../../d8/d91/classpeano4_1_1datamodel_1_1Model_1_1Model.html#a791db7f0ee31bf96136034089b8e4a31" title=" " alt="" coords="821,176,1139,202"/>
+<area shape="poly" title=" " alt="" coords="123,243,175,205,239,165,324,122,393,91,464,69,558,49,620,35,671,23,695,22,720,25,746,34,775,50,789,62,796,76,801,106,805,136,811,149,823,162,831,168,828,172,820,166,807,152,800,137,796,107,791,78,785,65,772,54,744,38,719,30,695,27,672,29,621,40,559,54,466,74,395,96,327,126,241,170,178,209,126,247"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a05fcdca516ae8b8add0d7dbfa43ff937" title=" " alt="" coords="853,272,1107,298"/>
+<area shape="poly" title=" " alt="" coords="156,283,270,317,344,334,425,348,511,358,599,361,687,354,773,337,786,331,796,324,806,316,820,308,852,298,853,303,822,313,809,320,799,328,789,336,774,342,688,360,599,366,510,363,424,353,343,339,269,322,155,288"/>
+<area shape="rect" href="../../dc/d61/classapi_1_1Project_1_1Project.html#a40e24585e6b3f9d0b333552342b1bc37" title=" " alt="" coords="867,322,1093,347"/>
+<area shape="poly" title=" " alt="" coords="122,283,173,326,206,346,241,361,334,384,430,396,527,400,622,396,711,386,792,374,918,348,919,353,793,379,712,392,622,401,527,405,430,402,333,390,239,366,203,351,170,330,118,287"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a5536b851e417b30701e780f5cd896691" title=" " alt="" coords="240,180,511,220"/>
+<area shape="poly" title=" " alt="" coords="183,242,276,220,277,226,185,248"/>
+<area shape="poly" title=" " alt="" coords="755,286,772,274,783,261,789,247,794,218,799,189,806,175,820,162,832,154,835,158,823,166,811,178,804,191,799,219,794,248,787,263,775,278,758,290"/>
+<area shape="poly" title=" " alt="" coords="737,285,772,273,862,238,938,205,940,210,864,243,774,278,739,290"/>
+<area shape="poly" title=" " alt="" coords="772,297,839,293,839,298,772,303"/>
+<area shape="poly" title=" " alt="" coords="773,314,854,321,853,326,772,319"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#adddba4c594c68f622d728afe3466fe1a" title=" " alt="" coords="559,208,773,263"/>
+<area shape="poly" title=" " alt="" coords="511,214,545,218,545,223,511,219"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ae9b6b0bb418f2bd3e6f91bf9fb89b64c" title=" " alt="" coords="570,64,762,119"/>
+<area shape="poly" title=" " alt="" coords="429,177,578,122,580,127,431,182"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a6fbbac55a90481497e560e95aed6c3bf" title=" " alt="" coords="561,144,771,184"/>
+<area shape="poly" title=" " alt="" coords="511,180,547,176,547,181,511,186"/>
+<area shape="poly" title=" " alt="" coords="771,153,832,148,832,154,772,158"/>
+<area shape="poly" title=" " alt="" coords="772,170,809,173,809,178,771,175"/>
+<area shape="poly" title=" " alt="" coords="739,181,774,193,864,230,941,264,938,269,862,235,772,198,737,186"/>
+<area shape="poly" title=" " alt="" coords="758,182,775,194,788,209,795,224,799,254,804,283,811,296,823,308,855,326,853,330,820,313,806,299,799,284,794,255,789,225,783,211,772,198,755,186"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_ac2f12155ae90910ec53725a344766b42_icgraph">
+<area shape="rect" title=" " alt="" coords="499,5,685,45"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="485,28,451,28,451,23,485,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,13,199,38"/>
+<area shape="poly" title=" " alt="" coords="233,28,199,28,199,23,233,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fbbac55a90481497e560e95aed6c3bf" name="a6fbbac55a90481497e560e95aed6c3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbbac55a90481497e560e95aed6c3bf">&#9670;&#160;</a></span>get_cpp_file_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.get_cpp_file_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00159">159</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00025">peano4.output.ActionSet.ActionSet.classname</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00024">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.classname</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00041">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00020">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.classname</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00023">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.classname</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00023">peano4.solversteps.Observer.Observer.classname</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00842">exahype2.Project.Project.subdirectory()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00106">peano4.datamodel.DoF.DoF.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00020">peano4.datamodel.Model.Model.subdirectory</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00079">peano4.datamodel.Model.Model.subdirectory()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00027">peano4.output.ActionSet.ActionSet.subdirectory</a>, <a class="el" href="../../de/dbb/InvokeExternalTool_8py_source.html#l00014">peano4.output.InvokeExternalTool.InvokeExternalTool.subdirectory</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00026">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00043">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00022">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.subdirectory</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00025">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00055">peano4.Project.Project.subdirectory</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00478">peano4.Project.Project.subdirectory()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00025">peano4.solversteps.Observer.Observer.subdirectory</a>, <a class="el" href="../../d4/d32/Step_8py_source.html#l00124">peano4.solversteps.Step.Step.subdirectory</a>, and <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00350">api.Project.Project.subdirectory()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_cgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_cgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_cgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,73,216,113"/>
+<area shape="rect" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html#ac01d2f2f0e27739f97a6ec04beabd7fe" title=" " alt="" coords="288,5,557,31"/>
+<area shape="poly" title=" " alt="" coords="164,70,263,39,307,30,308,36,265,45,166,75"/>
+<area shape="rect" href="../../d8/d91/classpeano4_1_1datamodel_1_1Model_1_1Model.html#a791db7f0ee31bf96136034089b8e4a31" title=" " alt="" coords="264,55,581,80"/>
+<area shape="poly" title=" " alt="" coords="216,81,253,78,253,84,217,87"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a05fcdca516ae8b8add0d7dbfa43ff937" title=" " alt="" coords="296,104,549,129"/>
+<area shape="poly" title=" " alt="" coords="217,98,282,103,282,109,216,103"/>
+<area shape="rect" href="../../dc/d61/classapi_1_1Project_1_1Project.html#a40e24585e6b3f9d0b333552342b1bc37" title=" " alt="" coords="310,153,535,179"/>
+<area shape="poly" title=" " alt="" coords="169,110,265,138,315,148,314,154,263,143,168,115"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_icgraph.png" border="0" usemap="#ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_icgraph" alt=""/></div>
+<map name="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_icgraph" id="ad4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet_a6fbbac55a90481497e560e95aed6c3bf_icgraph">
+<area shape="rect" title=" " alt="" coords="1052,5,1263,45"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#a5536b851e417b30701e780f5cd896691" title=" " alt="" coords="733,5,1004,45"/>
+<area shape="poly" title=" " alt="" coords="1038,28,1004,28,1004,23,1038,23"/>
+<area shape="rect" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html#ac2f12155ae90910ec53725a344766b42" title=" " alt="" coords="499,5,685,45"/>
+<area shape="poly" title=" " alt="" coords="720,28,685,28,685,23,720,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a951544a76ed44ed8ef7ea27f02373bca" title="Invokes the underlying make build mechanism on the project." alt="" coords="247,13,451,38"/>
+<area shape="poly" title=" " alt="" coords="485,28,451,28,451,23,485,23"/>
+<area shape="rect" href="../../dd/de1/classpeano4_1_1Project_1_1Project.html#a11cb332549f4bd3554cdb9c75c6bcfc8" title="Runs the code." alt="" coords="5,13,199,38"/>
+<area shape="poly" title=" " alt="" coords="233,28,199,28,199,23,233,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a702e911f831ed2c9c2bd3b36a2d540c0" name="a702e911f831ed2c9c2bd3b36a2d540c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702e911f831ed2c9c2bd3b36a2d540c0">&#9670;&#160;</a></span>__class__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.__class__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00093">93</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d9/d8c/aderdg_2LagrangeBasis_8py_source.html#l00053">exahype2.solvers.aderdg.LagrangeBasis.LagrangeBasis.__str__()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00144">exahype2.solvers.elliptic.AMRMarker.AMRMarker.__str__()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00132">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../df/d9c/LagrangeBasisWithDiagonalMassMatrix_8py_source.html#l00074">exahype2.solvers.LagrangeBasisWithDiagonalMassMatrix.LagrangeBasisWithDiagonalMassMatrix.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00245">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.__str__()</a>, <a class="el" href="../../da/d2b/visualisation_2filters_2Filter_8py_source.html#l00025">peano4.visualisation.filters.Filter.Filter.__str__()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00903">exahype2.solvers.aderdg.ADERDG.ADERDG.add_implementation_files_to_project()</a>, <a class="el" href="../../d4/dc5/CollocatedMG_8py_source.html#l00215">solvers.api.CollocatedMG.CollocatedMG.add_implementation_files_to_project()</a>, <a class="el" href="../../db/dfd/CollocatedDLinearDiscretisationWithPointJacobi_8py_source.html#l00222">solvers.api.CollocatedDLinearDiscretisationWithPointJacobi.CollocatedDLinearDiscretisationWithPointJacobi.add_implementation_files_to_project()</a>, <a class="el" href="../../d4/d47/ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi_8py_source.html#l00201">solvers.api.ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi.ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi.add_implementation_files_to_project()</a>, and <a class="el" href="../../d6/d25/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8py_source.html#l00542">solvers.api.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.add_implementation_files_to_project()</a>.</p>
+
+</div>
+</div>
+<a id="adf1f307b402c5730bcd9ee68cb26ef62" name="adf1f307b402c5730bcd9ee68cb26ef62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1f307b402c5730bcd9ee68cb26ef62">&#9670;&#160;</a></span>classname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.classname</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00025">25</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00085">peano4.output.ActionSet.ActionSet.__generate_header()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00077">peano4.output.ActionSet.ActionSet.__get_full_qualified_class_name()</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00060">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.generate()</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00075">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.generate()</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00050">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.generate()</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00053">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.generate()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00119">peano4.solversteps.Observer.Observer.generate()</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00159">peano4.output.ActionSet.ActionSet.get_cpp_file_name()</a>.</p>
+
+</div>
+</div>
+<a id="a11457d6c672ce01b0f025176dcd5fe60" name="a11457d6c672ce01b0f025176dcd5fe60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11457d6c672ce01b0f025176dcd5fe60">&#9670;&#160;</a></span>implementation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.implementation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00034">34</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00085">peano4.output.ActionSet.ActionSet.__generate_header()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00061">peano4.output.ActionSet.ActionSet.__generate_operation()</a>.</p>
+
+</div>
+</div>
+<a id="a44052294da86146bae41e9e656d08dec" name="a44052294da86146bae41e9e656d08dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44052294da86146bae41e9e656d08dec">&#9670;&#160;</a></span>include_files</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.include_files</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00032">32</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00044">peano4.output.ActionSet.ActionSet.__generate_includes()</a>.</p>
+
+</div>
+</div>
+<a id="ac49e17cfbb1303c32f2fe8716d077b12" name="ac49e17cfbb1303c32f2fe8716d077b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49e17cfbb1303c32f2fe8716d077b12">&#9670;&#160;</a></span>namespace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.namespace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00026">26</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00077">peano4.output.ActionSet.ActionSet.__get_full_qualified_class_name()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00036">peano4.datamodel.Model.Model.add_cell()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00040">peano4.datamodel.Model.Model.add_face()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00048">peano4.datamodel.Model.Model.add_global_object()</a>, <a class="el" href="../../d2/d62/python_2peano4_2Project_8py_source.html#l00284">peano4.Project.Project.add_subproject()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00044">peano4.datamodel.Model.Model.add_vertex()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00099">peano4.datamodel.DoF.DoF.configure()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00119">peano4.solversteps.Observer.Observer.generate()</a>, and <a class="el" href="../../d6/da4/DoF_8py_source.html#l00109">peano4.datamodel.DoF.DoF.get_full_qualified_type()</a>.</p>
+
+</div>
+</div>
+<a id="a4996a0cd2038bec444d90024fcf803dc" name="a4996a0cd2038bec444d90024fcf803dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4996a0cd2038bec444d90024fcf803dc">&#9670;&#160;</a></span>operations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.operations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00028">28</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00162">peano4.output.ActionSet.ActionSet.__generate_implementation()</a>, and <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00036">peano4.output.ActionSet.ActionSet.add_operation()</a>.</p>
+
+</div>
+</div>
+<a id="aae51caf4c7e15ae36f21c64ff7d8a60c" name="aae51caf4c7e15ae36f21c64ff7d8a60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae51caf4c7e15ae36f21c64ff7d8a60c">&#9670;&#160;</a></span>subdirectory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.subdirectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00027">27</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00085">peano4.output.ActionSet.ActionSet.__generate_header()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00036">peano4.datamodel.Model.Model.add_cell()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00040">peano4.datamodel.Model.Model.add_face()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00048">peano4.datamodel.Model.Model.add_global_object()</a>, <a class="el" href="../../d4/db6/Model_8py_source.html#l00044">peano4.datamodel.Model.Model.add_vertex()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00211">peano4.output.ActionSet.ActionSet.generate()</a>, <a class="el" href="../../de/dbb/InvokeExternalTool_8py_source.html#l00016">peano4.output.InvokeExternalTool.InvokeExternalTool.generate()</a>, <a class="el" href="../../d3/d96/Jinja2TemplatedHeaderFile_8py_source.html#l00060">peano4.output.Jinja2TemplatedHeaderFile.Jinja2TemplatedHeaderFile.generate()</a>, <a class="el" href="../../db/dd2/Jinja2TemplatedHeaderImplementationFilePair_8py_source.html#l00075">peano4.output.Jinja2TemplatedHeaderImplementationFilePair.Jinja2TemplatedHeaderImplementationFilePair.generate()</a>, <a class="el" href="../../dd/d42/TemplatedHeaderFile_8py_source.html#l00050">peano4.output.TemplatedHeaderFile.TemplatedHeaderFile.generate()</a>, <a class="el" href="../../d0/d30/TemplatedHeaderImplementationFilePair_8py_source.html#l00053">peano4.output.TemplatedHeaderImplementationFilePair.TemplatedHeaderImplementationFilePair.generate()</a>, <a class="el" href="../../db/db1/Observer_8py_source.html#l00119">peano4.solversteps.Observer.Observer.generate()</a>, <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00159">peano4.output.ActionSet.ActionSet.get_cpp_file_name()</a>, and <a class="el" href="../../d6/da4/DoF_8py_source.html#l00182">peano4.datamodel.DoF.DoF.subnamespace()</a>.</p>
+
+</div>
+</div>
+<a id="af842a1494c2e41b10284f7a1ec32a5f9" name="af842a1494c2e41b10284f7a1ec32a5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af842a1494c2e41b10284f7a1ec32a5f9">&#9670;&#160;</a></span>typedefs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.output.ActionSet.ActionSet.typedefs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html#l00033">33</a> of file <a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>python/peano4/output/<a class="el" href="../../d0/dff/output_2ActionSet_8py_source.html">ActionSet.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../df/da1/namespacepeano4_1_1output.html">output</a></li><li class="navelem"><a class="el" href="../../d3/de1/namespacepeano4_1_1output_1_1ActionSet.html">ActionSet</a></li><li class="navelem"><a class="el" href="../../d4/d99/classpeano4_1_1output_1_1ActionSet_1_1ActionSet.html">ActionSet</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:13 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+var LagrangeBasisWithDiagonalMassMatrix_8py =
+[
+    [ "exahype2.solvers.LagrangeBasisWithDiagonalMassMatrix.LagrangeBasisWithDiagonalMassMatrix", "da/d10/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1LagrangeBasisWithDiagonalMassMatrix.html", "da/d10/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1LagrangeBasisWithDiagonalMassMatrix" ],
+    [ "exahype2.solvers.LagrangeBasisWithDiagonalMassMatrix.GaussLegendreBasis", "d7/daf/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLegendreBasis.html", "d7/daf/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLegendreBasis" ],
+    [ "exahype2.solvers.LagrangeBasisWithDiagonalMassMatrix.GaussLobattoBasisWithLumpedDiagonalBasis", "dc/d9f/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLobattoBasisWithLumpedDiagonalBasis.html", "dc/d9f/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLobattoBasisWithLumpedDiagonalBasis" ]
+];

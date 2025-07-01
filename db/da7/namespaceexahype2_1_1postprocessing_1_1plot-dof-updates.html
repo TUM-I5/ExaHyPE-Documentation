@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('db/da7/namespaceexahype2_1_1postprocessing_1_1plot-dof-updates.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">exahype2.postprocessing.plot-dof-updates Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7caa2d198ecfc01b495e42980cedd139" id="r_a7caa2d198ecfc01b495e42980cedd139"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7caa2d198ecfc01b495e42980cedd139">preamble</a> = r&quot;\usepackage{amsmath,amssymb}&quot;</td></tr>
+<tr class="separator:a7caa2d198ecfc01b495e42980cedd139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8025eaf55e3b6b56cada4b82f061c2c3" id="r_a8025eaf55e3b6b56cada4b82f061c2c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8025eaf55e3b6b56cada4b82f061c2c3">parser</a></td></tr>
+<tr class="separator:a8025eaf55e3b6b56cada4b82f061c2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48782dd24291c2809b993fc1ddf32bbe" id="r_a48782dd24291c2809b993fc1ddf32bbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48782dd24291c2809b993fc1ddf32bbe">nargs</a></td></tr>
+<tr class="separator:a48782dd24291c2809b993fc1ddf32bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123148b261feb7cab034df5da8299c05" id="r_a123148b261feb7cab034df5da8299c05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a123148b261feb7cab034df5da8299c05">help</a></td></tr>
+<tr class="separator:a123148b261feb7cab034df5da8299c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bbafa9072176037b64e58e6a062c97d" id="r_a8bbafa9072176037b64e58e6a062c97d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bbafa9072176037b64e58e6a062c97d">action</a></td></tr>
+<tr class="separator:a8bbafa9072176037b64e58e6a062c97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00831f37402971e7497e6c00a7c814d" id="r_af00831f37402971e7497e6c00a7c814d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af00831f37402971e7497e6c00a7c814d">default</a></td></tr>
+<tr class="separator:af00831f37402971e7497e6c00a7c814d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27ae78b8e37482130ecb318571eee62" id="r_af27ae78b8e37482130ecb318571eee62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27ae78b8e37482130ecb318571eee62">type</a></td></tr>
+<tr class="separator:af27ae78b8e37482130ecb318571eee62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1c58de61d6a89450cddaf096d42191" id="r_afc1c58de61d6a89450cddaf096d42191"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1c58de61d6a89450cddaf096d42191">required</a></td></tr>
+<tr class="separator:afc1c58de61d6a89450cddaf096d42191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b91d68648562e49057453f1d8af8e08" id="r_a2b91d68648562e49057453f1d8af8e08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b91d68648562e49057453f1d8af8e08">int</a></td></tr>
+<tr class="separator:a2b91d68648562e49057453f1d8af8e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f4b4ff9d3daa780e3645956038483b" id="r_a42f4b4ff9d3daa780e3645956038483b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42f4b4ff9d3daa780e3645956038483b">choices</a></td></tr>
+<tr class="separator:a42f4b4ff9d3daa780e3645956038483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa6fbb83df09274d7372711aa17649e" id="r_a3fa6fbb83df09274d7372711aa17649e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fa6fbb83df09274d7372711aa17649e">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a3fa6fbb83df09274d7372711aa17649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26792a68904a67de1ffdc61e5ca88db0" id="r_a26792a68904a67de1ffdc61e5ca88db0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26792a68904a67de1ffdc61e5ca88db0">label</a></td></tr>
+<tr class="separator:a26792a68904a67de1ffdc61e5ca88db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a8165e61c0c73c5694d521ebd825b1" id="r_a45a8165e61c0c73c5694d521ebd825b1"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45a8165e61c0c73c5694d521ebd825b1">labels</a> = []</td></tr>
+<tr class="separator:a45a8165e61c0c73c5694d521ebd825b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e4d2392de3fbb346c341dc11602c9a" id="r_a07e4d2392de3fbb346c341dc11602c9a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07e4d2392de3fbb346c341dc11602c9a">dof_updates_per_second</a> = []</td></tr>
+<tr class="separator:a07e4d2392de3fbb346c341dc11602c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18279542dc2222cf0b73a4cfb24c276" id="r_ab18279542dc2222cf0b73a4cfb24c276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18279542dc2222cf0b73a4cfb24c276">performance_data</a></td></tr>
+<tr class="separator:ab18279542dc2222cf0b73a4cfb24c276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f296d79adaa547fce26c3370ad9eb59" id="r_a5f296d79adaa547fce26c3370ad9eb59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f296d79adaa547fce26c3370ad9eb59">time_per_time_step_in_seconds</a> = performance_data.time_per_time_step()</td></tr>
+<tr class="separator:a5f296d79adaa547fce26c3370ad9eb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1223281c476379bb1b98e12cb9bdc6bc" id="r_a1223281c476379bb1b98e12cb9bdc6bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1223281c476379bb1b98e12cb9bdc6bc">fig</a> = plt.gcf()</td></tr>
+<tr class="separator:a1223281c476379bb1b98e12cb9bdc6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe0632d72489b88e45a23da5c8cc872" id="r_a8fe0632d72489b88e45a23da5c8cc872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fe0632d72489b88e45a23da5c8cc872">ax</a></td></tr>
+<tr class="separator:a8fe0632d72489b88e45a23da5c8cc872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99dee35cf3d9214d7837ed5dedf4218c" id="r_a99dee35cf3d9214d7837ed5dedf4218c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99dee35cf3d9214d7837ed5dedf4218c">figsize</a></td></tr>
+<tr class="separator:a99dee35cf3d9214d7837ed5dedf4218c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd17af7ca7d8bccb4231b2fefde6e22" id="r_abcd17af7ca7d8bccb4231b2fefde6e22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcd17af7ca7d8bccb4231b2fefde6e22">colors</a> = plt.cm.viridis(np.linspace(0, 1, len(<a class="el" href="#a45a8165e61c0c73c5694d521ebd825b1">labels</a>)))</td></tr>
+<tr class="separator:abcd17af7ca7d8bccb4231b2fefde6e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823d5c51d1ce751343abd96993330384" id="r_a823d5c51d1ce751343abd96993330384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a823d5c51d1ce751343abd96993330384">bars</a></td></tr>
+<tr class="separator:a823d5c51d1ce751343abd96993330384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7835f4dceaf59873598f59e37d0915c4" id="r_a7835f4dceaf59873598f59e37d0915c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7835f4dceaf59873598f59e37d0915c4">axis</a></td></tr>
+<tr class="separator:a7835f4dceaf59873598f59e37d0915c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deb500bee386628128853ac1bee9cb5" id="r_a6deb500bee386628128853ac1bee9cb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6deb500bee386628128853ac1bee9cb5">linestyle</a></td></tr>
+<tr class="separator:a6deb500bee386628128853ac1bee9cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d94d14a58416aaf53f424592710651" id="r_ab9d94d14a58416aaf53f424592710651"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9d94d14a58416aaf53f424592710651">alpha</a></td></tr>
+<tr class="separator:ab9d94d14a58416aaf53f424592710651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad92a085cb158c3c26d6ff0aa1e5f4c4" id="r_aad92a085cb158c3c26d6ff0aa1e5f4c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad92a085cb158c3c26d6ff0aa1e5f4c4">linewidth</a></td></tr>
+<tr class="separator:aad92a085cb158c3c26d6ff0aa1e5f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfad86e07dc6f65c189f94da7070e33c" id="r_acfad86e07dc6f65c189f94da7070e33c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfad86e07dc6f65c189f94da7070e33c">zorder</a></td></tr>
+<tr class="separator:acfad86e07dc6f65c189f94da7070e33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93386ed1d9e1be495cabfa2df28bea93" id="r_a93386ed1d9e1be495cabfa2df28bea93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93386ed1d9e1be495cabfa2df28bea93">fontsize</a></td></tr>
+<tr class="separator:a93386ed1d9e1be495cabfa2df28bea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a8aa8f1fe58ce96970cd022eb78a11" id="r_ac5a8aa8f1fe58ce96970cd022eb78a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a8aa8f1fe58ce96970cd022eb78a11">style</a></td></tr>
+<tr class="separator:ac5a8aa8f1fe58ce96970cd022eb78a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa39c80240fde8161f5661b20c6750d0" id="r_aaa39c80240fde8161f5661b20c6750d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa39c80240fde8161f5661b20c6750d0">scilimits</a></td></tr>
+<tr class="separator:aaa39c80240fde8161f5661b20c6750d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada70d7ecce3929e0b4885e5e1398ef14" id="r_ada70d7ecce3929e0b4885e5e1398ef14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada70d7ecce3929e0b4885e5e1398ef14">bbox_inches</a></td></tr>
+<tr class="separator:ada70d7ecce3929e0b4885e5e1398ef14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1e60d0d62008c06230d56e9b6d7386" id="r_a4a1e60d0d62008c06230d56e9b6d7386"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a1e60d0d62008c06230d56e9b6d7386">transparent</a></td></tr>
+<tr class="separator:a4a1e60d0d62008c06230d56e9b6d7386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4673c57353fedd4d0fb6bea73f2f7669" id="r_a4673c57353fedd4d0fb6bea73f2f7669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4673c57353fedd4d0fb6bea73f2f7669">canvas</a> = FigureCanvasPgf(<a class="el" href="#a1223281c476379bb1b98e12cb9bdc6bc">fig</a>)</td></tr>
+<tr class="separator:a4673c57353fedd4d0fb6bea73f2f7669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a8bbafa9072176037b64e58e6a062c97d" name="a8bbafa9072176037b64e58e6a062c97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bbafa9072176037b64e58e6a062c97d">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00038">38</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="ab9d94d14a58416aaf53f424592710651" name="ab9d94d14a58416aaf53f424592710651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d94d14a58416aaf53f424592710651">&#9670;&#160;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.alpha</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00113">113</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a3fa6fbb83df09274d7372711aa17649e" name="a3fa6fbb83df09274d7372711aa17649e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa6fbb83df09274d7372711aa17649e">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00074">74</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a8fe0632d72489b88e45a23da5c8cc872" name="a8fe0632d72489b88e45a23da5c8cc872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe0632d72489b88e45a23da5c8cc872">&#9670;&#160;</a></span>ax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.ax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00097">97</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a7835f4dceaf59873598f59e37d0915c4" name="a7835f4dceaf59873598f59e37d0915c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7835f4dceaf59873598f59e37d0915c4">&#9670;&#160;</a></span>axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00113">113</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a823d5c51d1ce751343abd96993330384" name="a823d5c51d1ce751343abd96993330384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823d5c51d1ce751343abd96993330384">&#9670;&#160;</a></span>bars</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.bars</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  plt.bar(</div>
+<div class="line"><span class="lineno">    2</span>        labels,</div>
+<div class="line"><span class="lineno">    3</span>        dof_updates_per_second,</div>
+<div class="line"><span class="lineno">    4</span>        color=colors,</div>
+<div class="line"><span class="lineno">    5</span>        width=0.35,</div>
+<div class="line"><span class="lineno">    6</span>        edgecolor=<span class="stringliteral">&quot;black&quot;</span>,</div>
+<div class="line"><span class="lineno">    7</span>        zorder=2,</div>
+<div class="line"><span class="lineno">    8</span>    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00102">102</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="ada70d7ecce3929e0b4885e5e1398ef14" name="ada70d7ecce3929e0b4885e5e1398ef14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada70d7ecce3929e0b4885e5e1398ef14">&#9670;&#160;</a></span>bbox_inches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.bbox_inches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00135">135</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a4673c57353fedd4d0fb6bea73f2f7669" name="a4673c57353fedd4d0fb6bea73f2f7669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4673c57353fedd4d0fb6bea73f2f7669">&#9670;&#160;</a></span>canvas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.canvas = FigureCanvasPgf(<a class="el" href="#a1223281c476379bb1b98e12cb9bdc6bc">fig</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00141">141</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a42f4b4ff9d3daa780e3645956038483b" name="a42f4b4ff9d3daa780e3645956038483b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f4b4ff9d3daa780e3645956038483b">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00071">71</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="abcd17af7ca7d8bccb4231b2fefde6e22" name="abcd17af7ca7d8bccb4231b2fefde6e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd17af7ca7d8bccb4231b2fefde6e22">&#9670;&#160;</a></span>colors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.colors = plt.cm.viridis(np.linspace(0, 1, len(<a class="el" href="#a45a8165e61c0c73c5694d521ebd825b1">labels</a>)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00099">99</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="af00831f37402971e7497e6c00a7c814d" name="af00831f37402971e7497e6c00a7c814d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00831f37402971e7497e6c00a7c814d">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00039">39</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a07e4d2392de3fbb346c341dc11602c9a" name="a07e4d2392de3fbb346c341dc11602c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e4d2392de3fbb346c341dc11602c9a">&#9670;&#160;</a></span>dof_updates_per_second</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-dof-updates.dof_updates_per_second = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00081">81</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a1223281c476379bb1b98e12cb9bdc6bc" name="a1223281c476379bb1b98e12cb9bdc6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1223281c476379bb1b98e12cb9bdc6bc">&#9670;&#160;</a></span>fig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.fig = plt.gcf()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00097">97</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a99dee35cf3d9214d7837ed5dedf4218c" name="a99dee35cf3d9214d7837ed5dedf4218c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99dee35cf3d9214d7837ed5dedf4218c">&#9670;&#160;</a></span>figsize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.figsize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00097">97</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a93386ed1d9e1be495cabfa2df28bea93" name="a93386ed1d9e1be495cabfa2df28bea93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93386ed1d9e1be495cabfa2df28bea93">&#9670;&#160;</a></span>fontsize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.fontsize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00116">116</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a123148b261feb7cab034df5da8299c05" name="a123148b261feb7cab034df5da8299c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123148b261feb7cab034df5da8299c05">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00032">32</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a2b91d68648562e49057453f1d8af8e08" name="a2b91d68648562e49057453f1d8af8e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b91d68648562e49057453f1d8af8e08">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00062">62</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a26792a68904a67de1ffdc61e5ca88db0" name="a26792a68904a67de1ffdc61e5ca88db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26792a68904a67de1ffdc61e5ca88db0">&#9670;&#160;</a></span>label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00078">78</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a45a8165e61c0c73c5694d521ebd825b1" name="a45a8165e61c0c73c5694d521ebd825b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a8165e61c0c73c5694d521ebd825b1">&#9670;&#160;</a></span>labels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-dof-updates.labels = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00080">80</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a6deb500bee386628128853ac1bee9cb5" name="a6deb500bee386628128853ac1bee9cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6deb500bee386628128853ac1bee9cb5">&#9670;&#160;</a></span>linestyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.linestyle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00113">113</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="aad92a085cb158c3c26d6ff0aa1e5f4c4" name="aad92a085cb158c3c26d6ff0aa1e5f4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad92a085cb158c3c26d6ff0aa1e5f4c4">&#9670;&#160;</a></span>linewidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.linewidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00113">113</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a48782dd24291c2809b993fc1ddf32bbe" name="a48782dd24291c2809b993fc1ddf32bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48782dd24291c2809b993fc1ddf32bbe">&#9670;&#160;</a></span>nargs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.nargs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00031">31</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a8025eaf55e3b6b56cada4b82f061c2c3" name="a8025eaf55e3b6b56cada4b82f061c2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8025eaf55e3b6b56cada4b82f061c2c3">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>        description=<span class="stringliteral">&quot;ExaHyPE 2 Degrees-of-Freedom-Updates Plotter&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00026">26</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="ab18279542dc2222cf0b73a4cfb24c276" name="ab18279542dc2222cf0b73a4cfb24c276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18279542dc2222cf0b73a4cfb24c276">&#9670;&#160;</a></span>performance_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.performance_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d9/dea/classexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData.html">exahype2.postprocessing.PerformanceData</a>(</div>
+<div class="line"><span class="lineno">    2</span>            file_name=file, verbose=args.verbose</div>
+<div class="line"><span class="lineno">    3</span>        )</div>
+<div class="ttc" id="aclassexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData_html"><div class="ttname"><a href="../../d9/dea/classexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData.html">exahype2.postprocessing.PerformanceData.PerformanceData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/PerformanceData_8py_source.html#l00012">PerformanceData.py:12</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00084">84</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a7caa2d198ecfc01b495e42980cedd139" name="a7caa2d198ecfc01b495e42980cedd139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caa2d198ecfc01b495e42980cedd139">&#9670;&#160;</a></span>preamble</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str exahype2.postprocessing.plot-dof-updates.preamble = r&quot;\usepackage{amsmath,amssymb}&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00014">14</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="afc1c58de61d6a89450cddaf096d42191" name="afc1c58de61d6a89450cddaf096d42191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1c58de61d6a89450cddaf096d42191">&#9670;&#160;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00059">59</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="aaa39c80240fde8161f5661b20c6750d0" name="aaa39c80240fde8161f5661b20c6750d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa39c80240fde8161f5661b20c6750d0">&#9670;&#160;</a></span>scilimits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.scilimits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00122">122</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="ac5a8aa8f1fe58ce96970cd022eb78a11" name="ac5a8aa8f1fe58ce96970cd022eb78a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a8aa8f1fe58ce96970cd022eb78a11">&#9670;&#160;</a></span>style</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.style</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00122">122</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a5f296d79adaa547fce26c3370ad9eb59" name="a5f296d79adaa547fce26c3370ad9eb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f296d79adaa547fce26c3370ad9eb59">&#9670;&#160;</a></span>time_per_time_step_in_seconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.time_per_time_step_in_seconds = performance_data.time_per_time_step()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00087">87</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="a4a1e60d0d62008c06230d56e9b6d7386" name="a4a1e60d0d62008c06230d56e9b6d7386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1e60d0d62008c06230d56e9b6d7386">&#9670;&#160;</a></span>transparent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.transparent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00135">135</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="af27ae78b8e37482130ecb318571eee62" name="af27ae78b8e37482130ecb318571eee62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27ae78b8e37482130ecb318571eee62">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00057">57</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+<a id="acfad86e07dc6f65c189f94da7070e33c" name="acfad86e07dc6f65c189f94da7070e33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfad86e07dc6f65c189f94da7070e33c">&#9670;&#160;</a></span>zorder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-dof-updates.zorder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html#l00113">113</a> of file <a class="el" href="../../da/d67/plot-dof-updates_8py_source.html">plot-dof-updates.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../df/d71/namespaceexahype2_1_1postprocessing.html">postprocessing</a></li><li class="navelem"><a class="el" href="../../db/da7/namespaceexahype2_1_1postprocessing_1_1plot-dof-updates.html">plot-dof-updates</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:32 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

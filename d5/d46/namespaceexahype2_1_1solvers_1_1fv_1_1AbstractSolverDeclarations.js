@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1fv_1_1AbstractSolverDeclarations =
+[
+    [ "AbstractSolverDeclarations", "dd/d5b/classexahype2_1_1solvers_1_1fv_1_1AbstractSolverDeclarations_1_1AbstractSolverDeclarations.html", "dd/d5b/classexahype2_1_1solvers_1_1fv_1_1AbstractSolverDeclarations_1_1AbstractSolverDeclarations" ]
+];

@@ -1,0 +1,4 @@
+var exahype2_2solvers_2fv_2actionsets_2ProjectPatchOntoFaces_8py =
+[
+    [ "exahype2.solvers.fv.actionsets.ProjectPatchOntoFaces.ProjectPatchOntoFaces", "d1/de8/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html", "d1/de8/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces" ]
+];

@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/da6/classInnerNode.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">InnerNode Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for InnerNode:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d83/classInnerNode__inherit__graph.png" border="0" usemap="#aInnerNode_inherit__map" alt="Inheritance graph"/></div>
+<map name="aInnerNode_inherit__map" id="aInnerNode_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,95,104"/>
+<area shape="rect" href="../../df/dd0/classNode.html" title=" " alt="" coords="22,5,78,31"/>
+<area shape="poly" title=" " alt="" coords="53,44,53,79,47,79,47,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for InnerNode:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2a/classInnerNode__coll__graph.png" border="0" usemap="#aInnerNode_coll__map" alt="Collaboration graph"/></div>
+<map name="aInnerNode_coll__map" id="aInnerNode_coll__map">
+<area shape="rect" title=" " alt="" coords="5,108,95,133"/>
+<area shape="rect" href="../../df/dd0/classNode.html" title=" " alt="" coords="22,5,78,31"/>
+<area shape="poly" title=" " alt="" coords="51,45,50,55,50,84,52,107,46,108,45,84,45,55,45,44"/>
+<area shape="poly" title=" " alt="" coords="53,45,53,108,47,108,47,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8" id="r_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8">InnerNode</a> (YAML::Node <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> &amp;node)</td></tr>
+<tr class="separator:a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba32e71a343df8041ab0779cb9cc2b9" id="r_a2ba32e71a343df8041ab0779cb9cc2b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ba32e71a343df8041ab0779cb9cc2b9">~InnerNode</a> ()</td></tr>
+<tr class="separator:a2ba32e71a343df8041ab0779cb9cc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c51e52ad9c4e67057bcad0a7be856df" id="r_a7c51e52ad9c4e67057bcad0a7be856df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c51e52ad9c4e67057bcad0a7be856df">toString</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> depth=0)</td></tr>
+<tr class="separator:a7c51e52ad9c4e67057bcad0a7be856df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4166f8e75253119acdf7f2631a1e95" id="r_a8a4166f8e75253119acdf7f2631a1e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4166f8e75253119acdf7f2631a1e95">init</a> (<a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a> &amp;boundary, uint modes[3])</td></tr>
+<tr class="separator:a8a4166f8e75253119acdf7f2631a1e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3b0f6cf51be1eb40fdf4d96666bbee" id="r_adf3b0f6cf51be1eb40fdf4d96666bbee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3b0f6cf51be1eb40fdf4d96666bbee">traverse</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> a_index[3])</td></tr>
+<tr class="separator:adf3b0f6cf51be1eb40fdf4d96666bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cb77f29cfb9852e394b8fa684f6678" id="r_a40cb77f29cfb9852e394b8fa684f6678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40cb77f29cfb9852e394b8fa684f6678">traverseProjection</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> coordinate[3])</td></tr>
+<tr class="separator:a40cb77f29cfb9852e394b8fa684f6678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826ee70f0e687491aecaf361b580fd9d" id="r_a826ee70f0e687491aecaf361b580fd9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d58/classBlock.html">Block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a826ee70f0e687491aecaf361b580fd9d">traverse</a> ()</td></tr>
+<tr class="separator:a826ee70f0e687491aecaf361b580fd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9b6cc4a357c2ee506777fd7f721bd2" id="r_a3e9b6cc4a357c2ee506777fd7f721bd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e9b6cc4a357c2ee506777fd7f721bd2">setPosition</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> a_position)</td></tr>
+<tr class="separator:a3e9b6cc4a357c2ee506777fd7f721bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95bfb6bbbdee5b99588357981349ca72" id="r_a95bfb6bbbdee5b99588357981349ca72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95bfb6bbbdee5b99588357981349ca72">getPosition</a> ()</td></tr>
+<tr class="separator:a95bfb6bbbdee5b99588357981349ca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e3c8460c470475d430d218bbe09fa4" id="r_a10e3c8460c470475d430d218bbe09fa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e3c8460c470475d430d218bbe09fa4">getCoordinates</a> (<a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a> a_coords[2])</td></tr>
+<tr class="separator:a10e3c8460c470475d430d218bbe09fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45df17b961fb927cc0e8d94a463f4c3d" id="r_a45df17b961fb927cc0e8d94a463f4c3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45df17b961fb927cc0e8d94a463f4c3d">getFaceNormal</a> ()</td></tr>
+<tr class="separator:a45df17b961fb927cc0e8d94a463f4c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0963dc17765a995540ee1e47fedb566" id="r_ad0963dc17765a995540ee1e47fedb566"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0963dc17765a995540ee1e47fedb566">evalPerturbation</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> y, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> x)</td></tr>
+<tr class="separator:ad0963dc17765a995540ee1e47fedb566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15de206eafe9db829c13672d94283f7" id="r_aa15de206eafe9db829c13672d94283f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa15de206eafe9db829c13672d94283f7">checkInit</a> ()</td></tr>
+<tr class="separator:aa15de206eafe9db829c13672d94283f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2d58b14b0eb3584d7afa4ef34ff0e0" id="r_a5d2d58b14b0eb3584d7afa4ef34ff0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d2d58b14b0eb3584d7afa4ef34ff0e0">isLeaf</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a5d2d58b14b0eb3584d7afa4ef34ff0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a545338b64ec8ac570f3161d8cbe0d9f8" id="r_a545338b64ec8ac570f3161d8cbe0d9f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a545338b64ec8ac570f3161d8cbe0d9f8">isInit</a></td></tr>
+<tr class="separator:a545338b64ec8ac570f3161d8cbe0d9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09c6e35ad54503a2dc3b0f6443e8cd9" id="r_ab09c6e35ad54503a2dc3b0f6443e8cd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab09c6e35ad54503a2dc3b0f6443e8cd9">coords</a> [2]</td></tr>
+<tr class="separator:ab09c6e35ad54503a2dc3b0f6443e8cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ba88ccd0fdaa58ad13d02d3ca8b9d9" id="r_aa4ba88ccd0fdaa58ad13d02d3ca8b9d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4ba88ccd0fdaa58ad13d02d3ca8b9d9">position</a></td></tr>
+<tr class="separator:aa4ba88ccd0fdaa58ad13d02d3ca8b9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add98cd8f40fc5eda36eb265257f07ecd" id="r_add98cd8f40fc5eda36eb265257f07ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add98cd8f40fc5eda36eb265257f07ecd">index</a></td></tr>
+<tr class="separator:add98cd8f40fc5eda36eb265257f07ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2527c4f614531dc3570c2d8716ba1e6" id="r_af2527c4f614531dc3570c2d8716ba1e6"><td class="memItemLeft" align="right" valign="top">easi::Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2527c4f614531dc3570c2d8716ba1e6">model</a></td></tr>
+<tr class="separator:af2527c4f614531dc3570c2d8716ba1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6c0586558d2a3a4439237300cc1150" id="r_ace6c0586558d2a3a4439237300cc1150"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>(<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6c0586558d2a3a4439237300cc1150">perturbation</a></td></tr>
+<tr class="separator:ace6c0586558d2a3a4439237300cc1150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2e53c54200f1ff0da16541d7850036" id="r_a6b2e53c54200f1ff0da16541d7850036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd0/classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b2e53c54200f1ff0da16541d7850036">left</a></td></tr>
+<tr class="separator:a6b2e53c54200f1ff0da16541d7850036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8141c75823a1ebca62a68a2104ff8283" id="r_a8141c75823a1ebca62a68a2104ff8283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd0/classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8141c75823a1ebca62a68a2104ff8283">right</a></td></tr>
+<tr class="separator:a8141c75823a1ebca62a68a2104ff8283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00007">7</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8" name="a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8">&#9670;&#160;</a></span>InnerNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InnerNode::InnerNode </td>
+          <td>(</td>
+          <td class="paramtype">YAML::Node <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">9</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00017">coordToLowercaseString()</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00041">getNormal()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00197">index</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00193">isInit</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00198">model</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00199">perturbation</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>, and <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00029">stringToCoord()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_cgraph" id="ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,169,80"/>
+<area shape="poly" title=" " alt="" coords="52,56,44,46,48,36,63,30,87,28,118,32,130,41,127,45,116,37,87,33,64,35,52,40,49,46,56,53"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#aa4673669745946cb97f81165ab6a70b9" title=" " alt="" coords="217,5,396,31"/>
+<area shape="poly" title=" " alt="" coords="144,52,236,31,237,36,145,57"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="261,55,352,80"/>
+<area shape="poly" title=" " alt="" coords="169,65,247,65,247,70,169,70"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a29f1b513bf719437772981056cd052b9" title=" " alt="" coords="251,104,362,129"/>
+<area shape="poly" title=" " alt="" coords="145,77,238,99,237,104,144,83"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#ab538b6220120bec6145b48320ef02adb" title=" " alt="" coords="444,104,555,129"/>
+<area shape="poly" title=" " alt="" coords="362,114,430,114,430,119,362,119"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_icgraph" id="ad3/da6/classInnerNode_a2a7f9d9dc19b5cd9bfdd4c7c22aa13b8_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,169,55"/>
+<area shape="poly" title=" " alt="" coords="116,19,107,11,87,8,70,10,61,15,60,20,65,28,60,31,54,21,57,11,69,5,87,3,110,6,119,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ba32e71a343df8041ab0779cb9cc2b9" name="a2ba32e71a343df8041ab0779cb9cc2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba32e71a343df8041ab0779cb9cc2b9">&#9670;&#160;</a></span>~InnerNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InnerNode::~InnerNode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00082">82</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00198">model</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa15de206eafe9db829c13672d94283f7" name="aa15de206eafe9db829c13672d94283f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15de206eafe9db829c13672d94283f7">&#9670;&#160;</a></span>checkInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> InnerNode::checkInit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00181">181</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00193">isInit</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00154">traverse()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">traverse()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">traverseProjection()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_aa15de206eafe9db829c13672d94283f7_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_aa15de206eafe9db829c13672d94283f7_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_aa15de206eafe9db829c13672d94283f7_icgraph" id="ad3/da6/classInnerNode_aa15de206eafe9db829c13672d94283f7_icgraph">
+<area shape="rect" title=" " alt="" coords="269,55,425,80"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#a826ee70f0e687491aecaf361b580fd9d" title=" " alt="" coords="38,5,189,31"/>
+<area shape="poly" title=" " alt="" coords="273,54,174,33,175,28,274,49"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#adf3b0f6cf51be1eb40fdf4d96666bbee" title=" " alt="" coords="38,55,189,80"/>
+<area shape="poly" title=" " alt="" coords="255,70,189,70,189,65,255,65"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#a40cb77f29cfb9852e394b8fa684f6678" title=" " alt="" coords="5,104,221,129"/>
+<area shape="poly" title=" " alt="" coords="274,85,175,107,174,101,273,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0963dc17765a995540ee1e47fedb566" name="ad0963dc17765a995540ee1e47fedb566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0963dc17765a995540ee1e47fedb566">&#9670;&#160;</a></span>evalPerturbation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> InnerNode::evalPerturbation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00177">177</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00199">perturbation</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d65/riemannsolverDynamicRupture_8h_source.html#l00008">ContextDynamicRupture&lt; Shortcuts, basisSize, numberOfVariables, numberOfParameters, T &gt;::riemannSolver()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_ad0963dc17765a995540ee1e47fedb566_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_ad0963dc17765a995540ee1e47fedb566_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_ad0963dc17765a995540ee1e47fedb566_icgraph" id="ad3/da6/classInnerNode_ad0963dc17765a995540ee1e47fedb566_icgraph">
+<area shape="rect" title=" " alt="" coords="236,13,441,38"/>
+<area shape="rect" href="../../d2/d77/classContextDynamicRupture.html#a0e7db3caef2811672f45b64db6e73e0a" title=" " alt="" coords="5,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="222,28,188,28,188,23,222,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10e3c8460c470475d430d218bbe09fa4" name="a10e3c8460c470475d430d218bbe09fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e3c8460c470475d430d218bbe09fa4">&#9670;&#160;</a></span>getCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> InnerNode::getCoordinates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a></td>          <td class="paramname"><span class="paramname"><em>a_coords</em>[2]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00168">168</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d65/riemannsolverDynamicRupture_8h_source.html#l00008">ContextDynamicRupture&lt; Shortcuts, basisSize, numberOfVariables, numberOfParameters, T &gt;::riemannSolver()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a10e3c8460c470475d430d218bbe09fa4_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a10e3c8460c470475d430d218bbe09fa4_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a10e3c8460c470475d430d218bbe09fa4_icgraph" id="ad3/da6/classInnerNode_a10e3c8460c470475d430d218bbe09fa4_icgraph">
+<area shape="rect" title=" " alt="" coords="236,13,432,38"/>
+<area shape="rect" href="../../d2/d77/classContextDynamicRupture.html#a0e7db3caef2811672f45b64db6e73e0a" title=" " alt="" coords="5,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="222,28,188,28,188,23,222,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45df17b961fb927cc0e8d94a463f4c3d" name="a45df17b961fb927cc0e8d94a463f4c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45df17b961fb927cc0e8d94a463f4c3d">&#9670;&#160;</a></span>getFaceNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a> InnerNode::getFaceNormal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00173">173</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, and <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00041">getNormal()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d65/riemannsolverDynamicRupture_8h_source.html#l00008">ContextDynamicRupture&lt; Shortcuts, basisSize, numberOfVariables, numberOfParameters, T &gt;::riemannSolver()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_cgraph" id="ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,200,31"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="248,5,339,31"/>
+<area shape="poly" title=" " alt="" coords="200,15,234,15,234,21,200,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_icgraph" id="ad3/da6/classInnerNode_a45df17b961fb927cc0e8d94a463f4c3d_icgraph">
+<area shape="rect" title=" " alt="" coords="236,13,431,38"/>
+<area shape="rect" href="../../d2/d77/classContextDynamicRupture.html#a0e7db3caef2811672f45b64db6e73e0a" title=" " alt="" coords="5,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="222,28,188,28,188,23,222,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a95bfb6bbbdee5b99588357981349ca72" name="a95bfb6bbbdee5b99588357981349ca72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95bfb6bbbdee5b99588357981349ca72">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> InnerNode::getPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00164">164</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d65/riemannsolverDynamicRupture_8h_source.html#l00008">ContextDynamicRupture&lt; Shortcuts, basisSize, numberOfVariables, numberOfParameters, T &gt;::riemannSolver()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a95bfb6bbbdee5b99588357981349ca72_icgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a95bfb6bbbdee5b99588357981349ca72_icgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a95bfb6bbbdee5b99588357981349ca72_icgraph" id="ad3/da6/classInnerNode_a95bfb6bbbdee5b99588357981349ca72_icgraph">
+<area shape="rect" title=" " alt="" coords="236,13,407,38"/>
+<area shape="rect" href="../../d2/d77/classContextDynamicRupture.html#a0e7db3caef2811672f45b64db6e73e0a" title=" " alt="" coords="5,5,188,45"/>
+<area shape="poly" title=" " alt="" coords="222,28,188,28,188,23,222,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a4166f8e75253119acdf7f2631a1e95" name="a8a4166f8e75253119acdf7f2631a1e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4166f8e75253119acdf7f2631a1e95">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> InnerNode::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>boundary</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>modes</em>[3]</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/dd0/classNode.html#a2a94bc70b9dd7634929645f72007aa04">Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">99</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00041">getNormal()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00197">index</a>, <a class="el" href="../../df/dd0/classNode.html#a2a94bc70b9dd7634929645f72007aa04">Node::init()</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp_source.html#l00021">int</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00193">isInit</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00199">perturbation</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a8a4166f8e75253119acdf7f2631a1e95_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a8a4166f8e75253119acdf7f2631a1e95_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a8a4166f8e75253119acdf7f2631a1e95_cgraph" id="ad3/da6/classInnerNode_a8a4166f8e75253119acdf7f2631a1e95_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,124,56"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="172,5,263,31"/>
+<area shape="poly" title=" " alt="" coords="124,31,158,25,159,30,125,36"/>
+<area shape="rect" href="../../df/dd0/classNode.html#a2a94bc70b9dd7634929645f72007aa04" title=" " alt="" coords="175,55,260,80"/>
+<area shape="poly" title=" " alt="" coords="125,50,161,56,160,61,124,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d2d58b14b0eb3584d7afa4ef34ff0e0" name="a5d2d58b14b0eb3584d7afa4ef34ff0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2d58b14b0eb3584d7afa4ef34ff0e0">&#9670;&#160;</a></span>isLeaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> InnerNode::isLeaf </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00187">187</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e9b6cc4a357c2ee506777fd7f721bd2" name="a3e9b6cc4a357c2ee506777fd7f721bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9b6cc4a357c2ee506777fd7f721bd2">&#9670;&#160;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> InnerNode::setPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>a_position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00160">160</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>.</p>
+
+</div>
+</div>
+<a id="a7c51e52ad9c4e67057bcad0a7be856df" name="a7c51e52ad9c4e67057bcad0a7be856df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c51e52ad9c4e67057bcad0a7be856df">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InnerNode::toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>depth</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/dd0/classNode.html#ae5ee75dd14a48840217d9fc3a6616402">Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">88</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00005">coordToString()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00197">index</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>, and <a class="el" href="../../df/dd0/classNode.html#ae5ee75dd14a48840217d9fc3a6616402">Node::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a7c51e52ad9c4e67057bcad0a7be856df_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a7c51e52ad9c4e67057bcad0a7be856df_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a7c51e52ad9c4e67057bcad0a7be856df_cgraph" id="ad3/da6/classInnerNode_a7c51e52ad9c4e67057bcad0a7be856df_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,153,56"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#ab538b6220120bec6145b48320ef02adb" title=" " alt="" coords="203,5,314,31"/>
+<area shape="poly" title=" " alt="" coords="153,30,189,25,190,30,154,36"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ae5ee75dd14a48840217d9fc3a6616402" title=" " alt="" coords="201,55,316,80"/>
+<area shape="poly" title=" " alt="" coords="154,51,188,55,187,60,153,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a826ee70f0e687491aecaf361b580fd9d" name="a826ee70f0e687491aecaf361b580fd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826ee70f0e687491aecaf361b580fd9d">&#9670;&#160;</a></span>traverse() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d58/classBlock.html">Block</a> InnerNode::traverse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/dd0/classNode.html#ab67595ae75d670e2f009a5668080b55a">Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00154">154</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00181">checkInit()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>, and <a class="el" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626">Node::traverse()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a826ee70f0e687491aecaf361b580fd9d_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a826ee70f0e687491aecaf361b580fd9d_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a826ee70f0e687491aecaf361b580fd9d_cgraph" id="ad3/da6/classInnerNode_a826ee70f0e687491aecaf361b580fd9d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,156,56"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#aa15de206eafe9db829c13672d94283f7" title=" " alt="" coords="204,5,360,31"/>
+<area shape="poly" title=" " alt="" coords="156,31,190,27,190,32,157,36"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626" title=" " alt="" coords="223,55,341,80"/>
+<area shape="poly" title=" " alt="" coords="157,50,209,56,209,61,156,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf3b0f6cf51be1eb40fdf4d96666bbee" name="adf3b0f6cf51be1eb40fdf4d96666bbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3b0f6cf51be1eb40fdf4d96666bbee">&#9670;&#160;</a></span>traverse() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a> InnerNode::traverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>a_index</em>[3]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626">Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">130</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00181">checkInit()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00041">getNormal()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00197">index</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>, and <a class="el" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626">Node::traverse()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_adf3b0f6cf51be1eb40fdf4d96666bbee_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_adf3b0f6cf51be1eb40fdf4d96666bbee_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_adf3b0f6cf51be1eb40fdf4d96666bbee_cgraph" id="ad3/da6/classInnerNode_adf3b0f6cf51be1eb40fdf4d96666bbee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,156,80"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#aa15de206eafe9db829c13672d94283f7" title=" " alt="" coords="204,5,360,31"/>
+<area shape="poly" title=" " alt="" coords="133,52,215,31,217,37,134,57"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="237,55,327,80"/>
+<area shape="poly" title=" " alt="" coords="157,65,223,65,223,70,157,70"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626" title=" " alt="" coords="223,104,341,129"/>
+<area shape="poly" title=" " alt="" coords="134,77,217,98,215,103,133,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40cb77f29cfb9852e394b8fa684f6678" name="a40cb77f29cfb9852e394b8fa684f6678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cb77f29cfb9852e394b8fa684f6678">&#9670;&#160;</a></span>traverseProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da6/classBlockBoundary.html">BlockBoundary</a> InnerNode::traverseProjection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>coordinate</em>[3]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../df/dd0/classNode.html#a69beec945a012df8e2fbbf6274a35f9a">Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">142</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00181">checkInit()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">coords</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00041">getNormal()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">left</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">position</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">right</a>, and <a class="el" href="../../df/dd0/classNode.html#a69beec945a012df8e2fbbf6274a35f9a">Node::traverseProjection()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/da6/classInnerNode_a40cb77f29cfb9852e394b8fa684f6678_cgraph.png" border="0" usemap="#ad3/da6/classInnerNode_a40cb77f29cfb9852e394b8fa684f6678_cgraph" alt=""/></div>
+<map name="ad3/da6/classInnerNode_a40cb77f29cfb9852e394b8fa684f6678_cgraph" id="ad3/da6/classInnerNode_a40cb77f29cfb9852e394b8fa684f6678_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,221,80"/>
+<area shape="rect" href="../../d3/da6/classInnerNode.html#aa15de206eafe9db829c13672d94283f7" title=" " alt="" coords="283,5,439,31"/>
+<area shape="poly" title=" " alt="" coords="177,52,282,31,283,36,178,57"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="315,55,406,80"/>
+<area shape="poly" title=" " alt="" coords="222,65,302,65,302,70,222,70"/>
+<area shape="rect" href="../../df/dd0/classNode.html#a69beec945a012df8e2fbbf6274a35f9a" title=" " alt="" coords="269,104,452,129"/>
+<area shape="poly" title=" " alt="" coords="178,77,283,99,282,104,177,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab09c6e35ad54503a2dc3b0f6443e8cd9" name="ab09c6e35ad54503a2dc3b0f6443e8cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09c6e35ad54503a2dc3b0f6443e8cd9">&#9670;&#160;</a></span>coords</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a> InnerNode::coords[2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00195">195</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00168">getCoordinates()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00173">getFaceNormal()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">toString()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">traverse()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">traverseProjection()</a>.</p>
+
+</div>
+</div>
+<a id="add98cd8f40fc5eda36eb265257f07ecd" name="add98cd8f40fc5eda36eb265257f07ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add98cd8f40fc5eda36eb265257f07ecd">&#9670;&#160;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> InnerNode::index</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00197">197</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">toString()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">traverse()</a>.</p>
+
+</div>
+</div>
+<a id="a545338b64ec8ac570f3161d8cbe0d9f8" name="a545338b64ec8ac570f3161d8cbe0d9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545338b64ec8ac570f3161d8cbe0d9f8">&#9670;&#160;</a></span>isInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> InnerNode::isInit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00193">193</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00181">checkInit()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>.</p>
+
+</div>
+</div>
+<a id="a6b2e53c54200f1ff0da16541d7850036" name="a6b2e53c54200f1ff0da16541d7850036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2e53c54200f1ff0da16541d7850036">&#9670;&#160;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd0/classNode.html">Node</a>* InnerNode::left</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00202">202</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">toString()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00154">traverse()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">traverse()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">traverseProjection()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00082">~InnerNode()</a>.</p>
+
+</div>
+</div>
+<a id="af2527c4f614531dc3570c2d8716ba1e6" name="af2527c4f614531dc3570c2d8716ba1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2527c4f614531dc3570c2d8716ba1e6">&#9670;&#160;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">easi::Component* InnerNode::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00198">198</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d4f/ModelToDataRepository_8py_source.html#l00070">peano4.datamodel.ModelToDataRepository.ModelToDataRepository::__get_full_namespace()</a>, <a class="el" href="../../d5/d4f/ModelToDataRepository_8py_source.html#l00042">peano4.datamodel.ModelToDataRepository.ModelToDataRepository::__parse_data_declarations_in_model()</a>, <a class="el" href="../../d5/d4f/ModelToDataRepository_8py_source.html#l00077">peano4.datamodel.ModelToDataRepository.ModelToDataRepository::construct_output()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00082">~InnerNode()</a>.</p>
+
+</div>
+</div>
+<a id="ace6c0586558d2a3a4439237300cc1150" name="ace6c0586558d2a3a4439237300cc1150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6c0586558d2a3a4439237300cc1150">&#9670;&#160;</a></span>perturbation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>(<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>,<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>)&gt; InnerNode::perturbation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00199">199</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00177">evalPerturbation()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>.</p>
+
+</div>
+</div>
+<a id="aa4ba88ccd0fdaa58ad13d02d3ca8b9d9" name="aa4ba88ccd0fdaa58ad13d02d3ca8b9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ba88ccd0fdaa58ad13d02d3ca8b9d9">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> InnerNode::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00196">196</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00164">getPosition()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00160">setPosition()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">toString()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">traverseProjection()</a>.</p>
+
+</div>
+</div>
+<a id="a8141c75823a1ebca62a68a2104ff8283" name="a8141c75823a1ebca62a68a2104ff8283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8141c75823a1ebca62a68a2104ff8283">&#9670;&#160;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd0/classNode.html">Node</a>* InnerNode::right</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00203">203</a> of file <a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00099">init()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00009">InnerNode()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00088">toString()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00154">traverse()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00130">traverse()</a>, <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00142">traverseProjection()</a>, and <a class="el" href="../../d0/dcf/innerNode_8h_source.html#l00082">~InnerNode()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/toolbox/curvi/kdTree/<a class="el" href="../../d0/dcf/innerNode_8h_source.html">innerNode.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/da6/classInnerNode.html">InnerNode</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:11 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

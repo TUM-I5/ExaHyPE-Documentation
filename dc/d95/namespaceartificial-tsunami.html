@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/d95/namespaceartificial-tsunami.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">artificial-tsunami Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a488e8249513636bfec5f2fb9ed76181e" id="r_a488e8249513636bfec5f2fb9ed76181e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488e8249513636bfec5f2fb9ed76181e">end_time</a> = 10.0</td></tr>
+<tr class="separator:a488e8249513636bfec5f2fb9ed76181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770b0b26f65039c73f7f8d05cb2c0bf0" id="r_a770b0b26f65039c73f7f8d05cb2c0bf0"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770b0b26f65039c73f7f8d05cb2c0bf0">size</a> = [10000, 10000]</td></tr>
+<tr class="separator:a770b0b26f65039c73f7f8d05cb2c0bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6ccd38ef1cd37f7c601d18477e569a" id="r_a2b6ccd38ef1cd37f7c601d18477e569a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b6ccd38ef1cd37f7c601d18477e569a">offset</a> = [-5000, -5000]</td></tr>
+<tr class="separator:a2b6ccd38ef1cd37f7c601d18477e569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e6db54a69f2ad18404ec86d9b5bbef" id="r_a11e6db54a69f2ad18404ec86d9b5bbef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11e6db54a69f2ad18404ec86d9b5bbef">min_depth</a> = 4</td></tr>
+<tr class="separator:a11e6db54a69f2ad18404ec86d9b5bbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71aa9c7eaf79cc3894d8055a1eca96e8" id="r_a71aa9c7eaf79cc3894d8055a1eca96e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71aa9c7eaf79cc3894d8055a1eca96e8">amr_levels</a> = 0</td></tr>
+<tr class="separator:a71aa9c7eaf79cc3894d8055a1eca96e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70cc57a5e3836992bbf5a30d44bdb8f" id="r_af70cc57a5e3836992bbf5a30d44bdb8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70cc57a5e3836992bbf5a30d44bdb8f">dg_order</a> = 5</td></tr>
+<tr class="separator:af70cc57a5e3836992bbf5a30d44bdb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057d060f4164738b5ead0dfd8dfbd7cc" id="r_a057d060f4164738b5ead0dfd8dfbd7cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a057d060f4164738b5ead0dfd8dfbd7cc">number_of_snapshots</a> = 0</td></tr>
+<tr class="separator:a057d060f4164738b5ead0dfd8dfbd7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4512c7432ee7ca968171c705ccccdc" id="r_afe4512c7432ee7ca968171c705ccccdc"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe4512c7432ee7ca968171c705ccccdc">build_mode</a> = &quot;Release&quot;</td></tr>
+<tr class="separator:afe4512c7432ee7ca968171c705ccccdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c5986eff513b6e58d4373fb4c17afa" id="r_a48c5986eff513b6e58d4373fb4c17afa"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48c5986eff513b6e58d4373fb4c17afa">output</a> = &quot;solutions&quot;</td></tr>
+<tr class="separator:a48c5986eff513b6e58d4373fb4c17afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce60baea3191bb8f9dfa8be7f3124fe" id="r_a9ce60baea3191bb8f9dfa8be7f3124fe"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce60baea3191bb8f9dfa8be7f3124fe">initial_conditions</a></td></tr>
+<tr class="separator:a9ce60baea3191bb8f9dfa8be7f3124fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77c633f57d7806d374bbaf0cfb5132e" id="r_ae77c633f57d7806d374bbaf0cfb5132e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae77c633f57d7806d374bbaf0cfb5132e">boundary_conditions</a></td></tr>
+<tr class="separator:ae77c633f57d7806d374bbaf0cfb5132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad137f4f8db364b463283559b6045afa" id="r_aad137f4f8db364b463283559b6045afa"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad137f4f8db364b463283559b6045afa">refinement_criterion</a></td></tr>
+<tr class="separator:aad137f4f8db364b463283559b6045afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4673547dc2b241ac69ee62dfbb48bd" id="r_acd4673547dc2b241ac69ee62dfbb48bd"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4673547dc2b241ac69ee62dfbb48bd">constants</a></td></tr>
+<tr class="separator:acd4673547dc2b241ac69ee62dfbb48bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1afc95ce4a2479550be8baec9e15f34" id="r_af1afc95ce4a2479550be8baec9e15f34"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1afc95ce4a2479550be8baec9e15f34">max_h</a> = 1.1 * min(<a class="el" href="#a770b0b26f65039c73f7f8d05cb2c0bf0">size</a>) / (3.0**<a class="el" href="#a11e6db54a69f2ad18404ec86d9b5bbef">min_depth</a>)</td></tr>
+<tr class="separator:af1afc95ce4a2479550be8baec9e15f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43b71c2702280d025bd55ecd7434100" id="r_ab43b71c2702280d025bd55ecd7434100"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43b71c2702280d025bd55ecd7434100">min_h</a> = <a class="el" href="#af1afc95ce4a2479550be8baec9e15f34">max_h</a> * 3.0 ** (-<a class="el" href="#a71aa9c7eaf79cc3894d8055a1eca96e8">amr_levels</a>)</td></tr>
+<tr class="separator:ab43b71c2702280d025bd55ecd7434100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235acb125243f72607b2917e12d1cb6d" id="r_a235acb125243f72607b2917e12d1cb6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235acb125243f72607b2917e12d1cb6d">aderdg_solver</a></td></tr>
+<tr class="separator:a235acb125243f72607b2917e12d1cb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc8c3ccd6e6b1632edbb3f5f510f881" id="r_aebc8c3ccd6e6b1632edbb3f5f510f881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebc8c3ccd6e6b1632edbb3f5f510f881">flux</a></td></tr>
+<tr class="separator:aebc8c3ccd6e6b1632edbb3f5f510f881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef9f2cd362656ab29b30af9dbe413a9" id="r_a4ef9f2cd362656ab29b30af9dbe413a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef9f2cd362656ab29b30af9dbe413a9">ncp</a></td></tr>
+<tr class="separator:a4ef9f2cd362656ab29b30af9dbe413a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e3b8cd99e88b38fae201758162a1c3" id="r_a35e3b8cd99e88b38fae201758162a1c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35e3b8cd99e88b38fae201758162a1c3">max_eigenvalue</a></td></tr>
+<tr class="separator:a35e3b8cd99e88b38fae201758162a1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589932e74a4f2baa568a8403dbdfbd86" id="r_a589932e74a4f2baa568a8403dbdfbd86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a589932e74a4f2baa568a8403dbdfbd86">is_linear</a></td></tr>
+<tr class="separator:a589932e74a4f2baa568a8403dbdfbd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b171fa85acf223d977ebaf88df7a8df" id="r_a9b171fa85acf223d977ebaf88df7a8df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b171fa85acf223d977ebaf88df7a8df">False</a></td></tr>
+<tr class="separator:a9b171fa85acf223d977ebaf88df7a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59dee42190942fbc1e4afd63ac95487" id="r_ad59dee42190942fbc1e4afd63ac95487"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59dee42190942fbc1e4afd63ac95487">polynomials</a></td></tr>
+<tr class="separator:ad59dee42190942fbc1e4afd63ac95487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dae6de0658bf8afc91d7380ff7b1646" id="r_a7dae6de0658bf8afc91d7380ff7b1646"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dae6de0658bf8afc91d7380ff7b1646">project</a></td></tr>
+<tr class="separator:a7dae6de0658bf8afc91d7380ff7b1646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbc69f47d15a85bd9753a17d4a4b4c3" id="r_a2fbc69f47d15a85bd9753a17d4a4b4c3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbc69f47d15a85bd9753a17d4a4b4c3">time_in_between_plots</a> = 0.0</td></tr>
+<tr class="separator:a2fbc69f47d15a85bd9753a17d4a4b4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f00ba2ff3daa6e9f02eb0d22cf1a718" id="r_a6f00ba2ff3daa6e9f02eb0d22cf1a718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f00ba2ff3daa6e9f02eb0d22cf1a718">dimensions</a></td></tr>
+<tr class="separator:a6f00ba2ff3daa6e9f02eb0d22cf1a718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8174cab17533934154555ab2eafb7a4f" id="r_a8174cab17533934154555ab2eafb7a4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8174cab17533934154555ab2eafb7a4f">min_end_time</a></td></tr>
+<tr class="separator:a8174cab17533934154555ab2eafb7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6296b9bebc5edc8a86bda2064425f1af" id="r_a6296b9bebc5edc8a86bda2064425f1af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6296b9bebc5edc8a86bda2064425f1af">max_end_time</a></td></tr>
+<tr class="separator:a6296b9bebc5edc8a86bda2064425f1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bb9856a58e9dfea051fa08ea9a723c" id="r_ae0bb9856a58e9dfea051fa08ea9a723c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0bb9856a58e9dfea051fa08ea9a723c">first_plot_time_stamp</a></td></tr>
+<tr class="separator:ae0bb9856a58e9dfea051fa08ea9a723c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f0cc9b7597725ea1cf534d03e88d7d" id="r_a07f0cc9b7597725ea1cf534d03e88d7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07f0cc9b7597725ea1cf534d03e88d7d">periodic_BC</a></td></tr>
+<tr class="separator:a07f0cc9b7597725ea1cf534d03e88d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66fe374bf94d308fbee0cb5643306f3" id="r_af66fe374bf94d308fbee0cb5643306f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af66fe374bf94d308fbee0cb5643306f3">mode</a></td></tr>
+<tr class="separator:af66fe374bf94d308fbee0cb5643306f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc362cd8e965f23fcfe3ab9d231830d8" id="r_afc362cd8e965f23fcfe3ab9d231830d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc362cd8e965f23fcfe3ab9d231830d8">const_val</a></td></tr>
+<tr class="separator:afc362cd8e965f23fcfe3ab9d231830d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd54491f1239bd4c821c64a645f75917" id="r_acd54491f1239bd4c821c64a645f75917"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd54491f1239bd4c821c64a645f75917">const_type</a></td></tr>
+<tr class="separator:acd54491f1239bd4c821c64a645f75917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ee239d7a440ada42654c975155f459" id="r_ad0ee239d7a440ada42654c975155f459"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0ee239d7a440ada42654c975155f459">make</a></td></tr>
+<tr class="separator:ad0ee239d7a440ada42654c975155f459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d75a665a1de25cb71bf22d2860f16" id="r_a671d75a665a1de25cb71bf22d2860f16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671d75a665a1de25cb71bf22d2860f16">True</a></td></tr>
+<tr class="separator:a671d75a665a1de25cb71bf22d2860f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56265d4dbc5a7e953028d629287cfe46" id="r_a56265d4dbc5a7e953028d629287cfe46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56265d4dbc5a7e953028d629287cfe46">make_clean_first</a></td></tr>
+<tr class="separator:a56265d4dbc5a7e953028d629287cfe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fea97c7cf0cdabd3227c2249ede31f" id="r_a09fea97c7cf0cdabd3227c2249ede31f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fea97c7cf0cdabd3227c2249ede31f">throw_away_data_after_build</a></td></tr>
+<tr class="separator:a09fea97c7cf0cdabd3227c2249ede31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe55255dc063d5a275e775b04ffeb0e" id="r_a7fe55255dc063d5a275e775b04ffeb0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fe55255dc063d5a275e775b04ffeb0e">parser</a> = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td></tr>
+<tr class="separator:a7fe55255dc063d5a275e775b04ffeb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bad743948a4a9626c0366d7a055475d" id="r_a3bad743948a4a9626c0366d7a055475d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bad743948a4a9626c0366d7a055475d">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a3bad743948a4a9626c0366d7a055475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a235acb125243f72607b2917e12d1cb6d" name="a235acb125243f72607b2917e12d1cb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235acb125243f72607b2917e12d1cb6d">&#9670;&#160;</a></span>aderdg_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.aderdg_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ADERDGSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=dg_order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1, <span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=0,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.5,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00068">68</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a71aa9c7eaf79cc3894d8055a1eca96e8" name="a71aa9c7eaf79cc3894d8055a1eca96e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71aa9c7eaf79cc3894d8055a1eca96e8">&#9670;&#160;</a></span>amr_levels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> artificial-tsunami.amr_levels = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00016">16</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a3bad743948a4a9626c0366d7a055475d" name="a3bad743948a4a9626c0366d7a055475d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bad743948a4a9626c0366d7a055475d">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dda/applications_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00052">52</a> of file <a class="el" href="../../d4/dda/applications_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="ae77c633f57d7806d374bbaf0cfb5132e" name="ae77c633f57d7806d374bbaf0cfb5132e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77c633f57d7806d374bbaf0cfb5132e">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str artificial-tsunami.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  Qoutside[s::h]  = Qinside[s::h];</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  Qoutside[s::hu] = -Qinside[s::hu];</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  Qoutside[s::hv] = -Qinside[s::hv];</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  Qoutside[s::z]  = Qinside[s::z];</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00045">45</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="afe4512c7432ee7ca968171c705ccccdc" name="afe4512c7432ee7ca968171c705ccccdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4512c7432ee7ca968171c705ccccdc">&#9670;&#160;</a></span>build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str artificial-tsunami.build_mode = &quot;Release&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00019">19</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="acd54491f1239bd4c821c64a645f75917" name="acd54491f1239bd4c821c64a645f75917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd54491f1239bd4c821c64a645f75917">&#9670;&#160;</a></span>const_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.const_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00120">120</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="afc362cd8e965f23fcfe3ab9d231830d8" name="afc362cd8e965f23fcfe3ab9d231830d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc362cd8e965f23fcfe3ab9d231830d8">&#9670;&#160;</a></span>const_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.const_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00120">120</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="acd4673547dc2b241ac69ee62dfbb48bd" name="acd4673547dc2b241ac69ee62dfbb48bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4673547dc2b241ac69ee62dfbb48bd">&#9670;&#160;</a></span>constants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict artificial-tsunami.constants</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;g&quot;</span>: [9.81, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;hThreshold&quot;</span>: [1e-5, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    4</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00060">60</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="af70cc57a5e3836992bbf5a30d44bdb8f" name="af70cc57a5e3836992bbf5a30d44bdb8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70cc57a5e3836992bbf5a30d44bdb8f">&#9670;&#160;</a></span>dg_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> artificial-tsunami.dg_order = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00017">17</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a6f00ba2ff3daa6e9f02eb0d22cf1a718" name="a6f00ba2ff3daa6e9f02eb0d22cf1a718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f00ba2ff3daa6e9f02eb0d22cf1a718">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00106">106</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a488e8249513636bfec5f2fb9ed76181e" name="a488e8249513636bfec5f2fb9ed76181e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488e8249513636bfec5f2fb9ed76181e">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.end_time = 10.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00012">12</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a9b171fa85acf223d977ebaf88df7a8df" name="a9b171fa85acf223d977ebaf88df7a8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b171fa85acf223d977ebaf88df7a8df">&#9670;&#160;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00089">89</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="ae0bb9856a58e9dfea051fa08ea9a723c" name="ae0bb9856a58e9dfea051fa08ea9a723c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0bb9856a58e9dfea051fa08ea9a723c">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00111">111</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="aebc8c3ccd6e6b1632edbb3f5f510f881" name="aebc8c3ccd6e6b1632edbb3f5f510f881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc8c3ccd6e6b1632edbb3f5f510f881">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00082">82</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a9ce60baea3191bb8f9dfa8be7f3124fe" name="a9ce60baea3191bb8f9dfa8be7f3124fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce60baea3191bb8f9dfa8be7f3124fe">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str artificial-tsunami.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  for (int i = 0; i &lt; NumberOfUnknowns + NumberOfAuxiliaryVariables; i++) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[i] = 0.0;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  constexpr double INITIAL_WATER_HEIGHT = 100.0;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  constexpr double INITIAL_BATHYMETRY_BEFORE_EARTHQUAKE = -100.0;</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">  Q[s::h] = INITIAL_WATER_HEIGHT;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">  auto displacementX = [](double x) { return std::sin((x / 500.0 + 1.0) * tarch::la::PI); };</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  auto displacementY = [](double y) { return -std::pow(y / 500.0, 2) + 1.0; };</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  auto displacement = [&amp;](double x, double y) { return 5.0 * displacementX(x) * displacementY(y); };</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">  const double bathymetryAfterEarthquake = INITIAL_BATHYMETRY_BEFORE_EARTHQUAKE + displacement(x(0), x(1));</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">  if (std::abs(x(0)) &lt;= 500 and std::abs(x(1)) &lt;= 500) { // Center of domain is [0, 0]</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">    Q[s::z] = bathymetryAfterEarthquake;</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">  } else {</span></div>
+<div class="line"><span class="lineno">   20</span><span class="stringliteral">    Q[s::z] = INITIAL_BATHYMETRY_BEFORE_EARTHQUAKE;</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00022">22</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a589932e74a4f2baa568a8403dbdfbd86" name="a589932e74a4f2baa568a8403dbdfbd86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589932e74a4f2baa568a8403dbdfbd86">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00089">89</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="ad0ee239d7a440ada42654c975155f459" name="ad0ee239d7a440ada42654c975155f459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ee239d7a440ada42654c975155f459">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00125">125</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a56265d4dbc5a7e953028d629287cfe46" name="a56265d4dbc5a7e953028d629287cfe46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56265d4dbc5a7e953028d629287cfe46">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00125">125</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a35e3b8cd99e88b38fae201758162a1c3" name="a35e3b8cd99e88b38fae201758162a1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e3b8cd99e88b38fae201758162a1c3">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00084">84</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a6296b9bebc5edc8a86bda2064425f1af" name="a6296b9bebc5edc8a86bda2064425f1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6296b9bebc5edc8a86bda2064425f1af">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00110">110</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="af1afc95ce4a2479550be8baec9e15f34" name="af1afc95ce4a2479550be8baec9e15f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1afc95ce4a2479550be8baec9e15f34">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple artificial-tsunami.max_h = 1.1 * min(<a class="el" href="#a770b0b26f65039c73f7f8d05cb2c0bf0">size</a>) / (3.0**<a class="el" href="#a11e6db54a69f2ad18404ec86d9b5bbef">min_depth</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00065">65</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a11e6db54a69f2ad18404ec86d9b5bbef" name="a11e6db54a69f2ad18404ec86d9b5bbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e6db54a69f2ad18404ec86d9b5bbef">&#9670;&#160;</a></span>min_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.min_depth = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00015">15</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a8174cab17533934154555ab2eafb7a4f" name="a8174cab17533934154555ab2eafb7a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8174cab17533934154555ab2eafb7a4f">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00109">109</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="ab43b71c2702280d025bd55ecd7434100" name="ab43b71c2702280d025bd55ecd7434100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43b71c2702280d025bd55ecd7434100">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple artificial-tsunami.min_h = <a class="el" href="#af1afc95ce4a2479550be8baec9e15f34">max_h</a> * 3.0 ** (-<a class="el" href="#a71aa9c7eaf79cc3894d8055a1eca96e8">amr_levels</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00066">66</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="af66fe374bf94d308fbee0cb5643306f3" name="af66fe374bf94d308fbee0cb5643306f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66fe374bf94d308fbee0cb5643306f3">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00117">117</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a4ef9f2cd362656ab29b30af9dbe413a9" name="a4ef9f2cd362656ab29b30af9dbe413a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef9f2cd362656ab29b30af9dbe413a9">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00083">83</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a057d060f4164738b5ead0dfd8dfbd7cc" name="a057d060f4164738b5ead0dfd8dfbd7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057d060f4164738b5ead0dfd8dfbd7cc">&#9670;&#160;</a></span>number_of_snapshots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> artificial-tsunami.number_of_snapshots = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00018">18</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a2b6ccd38ef1cd37f7c601d18477e569a" name="a2b6ccd38ef1cd37f7c601d18477e569a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6ccd38ef1cd37f7c601d18477e569a">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.offset = [-5000, -5000]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00014">14</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a48c5986eff513b6e58d4373fb4c17afa" name="a48c5986eff513b6e58d4373fb4c17afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c5986eff513b6e58d4373fb4c17afa">&#9670;&#160;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str artificial-tsunami.output = &quot;solutions&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00020">20</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a7fe55255dc063d5a275e775b04ffeb0e" name="a7fe55255dc063d5a275e775b04ffeb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe55255dc063d5a275e775b04ffeb0e">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.parser = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dda/applications_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00047">47</a> of file <a class="el" href="../../d4/dda/applications_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a07f0cc9b7597725ea1cf534d03e88d7d" name="a07f0cc9b7597725ea1cf534d03e88d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f0cc9b7597725ea1cf534d03e88d7d">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00113">113</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="ad59dee42190942fbc1e4afd63ac95487" name="ad59dee42190942fbc1e4afd63ac95487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59dee42190942fbc1e4afd63ac95487">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00089">89</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a7dae6de0658bf8afc91d7380ff7b1646" name="a7dae6de0658bf8afc91d7380ff7b1646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dae6de0658bf8afc91d7380ff7b1646">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;benchmarks&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;swe&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;ArtificialTsunami&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;ArtificialTsunami&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00091">91</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="aad137f4f8db364b463283559b6045afa" name="aad137f4f8db364b463283559b6045afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad137f4f8db364b463283559b6045afa">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str artificial-tsunami.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  auto result = ::exahype2::RefinementCommand::Keep;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  if (std::abs(x(0)) &lt;= 500 and std::abs(x(1)) &lt;= 500) { // Center of domain is [0, 0]</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    result = ::exahype2::RefinementCommand::Refine;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  return result;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00052">52</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a770b0b26f65039c73f7f8d05cb2c0bf0" name="a770b0b26f65039c73f7f8d05cb2c0bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770b0b26f65039c73f7f8d05cb2c0bf0">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list artificial-tsunami.size = [10000, 10000]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00013">13</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a09fea97c7cf0cdabd3227c2249ede31f" name="a09fea97c7cf0cdabd3227c2249ede31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fea97c7cf0cdabd3227c2249ede31f">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00125">125</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a2fbc69f47d15a85bd9753a17d4a4b4c3" name="a2fbc69f47d15a85bd9753a17d4a4b4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbc69f47d15a85bd9753a17d4a4b4c3">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float artificial-tsunami.time_in_between_plots = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00100">100</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+<a id="a671d75a665a1de25cb71bf22d2860f16" name="a671d75a665a1de25cb71bf22d2860f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671d75a665a1de25cb71bf22d2860f16">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">artificial-tsunami.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html#l00125">125</a> of file <a class="el" href="../../d1/dee/benchmarks_2exahype2_2shallow-water_2artificial-tsunami_2artificial-tsunami_8py_source.html">artificial-tsunami.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/d95/namespaceartificial-tsunami.html">artificial-tsunami</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:19 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['rank_0',['Rank',['../d3/dfe/classtarch_1_1mpi_1_1Rank.html',1,'tarch::mpi']]],
+  ['reader_1',['Reader',['../dc/dc6/classSPMCChannel_1_1Reader.html',1,'SPMCChannel']]],
+  ['reconstructpatch_2',['ReconstructPatch',['../dc/dc3/classpeano4_1_1toolbox_1_1blockstructured_1_1ReconstructPatch_1_1ReconstructPatch.html',1,'peano4::toolbox::blockstructured::ReconstructPatch']]],
+  ['recursivelock_3',['RecursiveLock',['../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html',1,'tarch::multicore']]],
+  ['recursivesemaphore_4',['RecursiveSemaphore',['../d7/d99/classtarch_1_1multicore_1_1RecursiveSemaphore.html',1,'tarch::multicore']]],
+  ['refinementcontrol_5',['RefinementControl',['../d7/d48/classexahype2_1_1RefinementControl.html',1,'exahype2']]],
+  ['refinementcontrolservice_6',['RefinementControlService',['../d4/df3/classexahype2_1_1RefinementControlService.html',1,'exahype2']]],
+  ['region_7',['Region',['../d2/ddf/structRegion.html',1,'']]],
+  ['resetandupdateresidual_8',['ResetAndUpdateResidual',['../d1/dfd/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual.html',1,'solvers.api.actionsets.CollocatedMGSolver.ResetAndUpdateResidual.ResetAndUpdateResidual'],['../d0/d6b/classsolvers_1_1api_1_1actionsets_1_1CollocatedSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual.html',1,'solvers.api.actionsets.CollocatedSolver.ResetAndUpdateResidual.ResetAndUpdateResidual']]],
+  ['restriction_9',['Restriction',['../d2/d83/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSolver_1_1Restriction_1_1Restriction.html',1,'solvers::api::actionsets::CollocatedMGSolver::Restriction']]],
+  ['riemannkernelvariant_10',['RiemannKernelVariant',['../da/d22/classexahype2_1_1solvers_1_1fv_1_1musclhancock_1_1kernels_1_1RiemannKernelVariant.html',1,'exahype2::solvers::fv::musclhancock::kernels']]],
+  ['riemannsolver_11',['RiemannSolver',['../d0/db6/classswift2_1_1sphtools_1_1riemann_1_1RiemannSolver.html',1,'swift2::sphtools::riemann']]],
+  ['riemanntest_12',['RiemannTest',['../df/d17/classexahype2_1_1dg_1_1rusanov_1_1tests_1_1RiemannTest.html',1,'exahype2::dg::rusanov::tests::RiemannTest'],['../d8/da2/classexahype2_1_1dg_1_1tests_1_1RiemannTest.html',1,'exahype2::dg::tests::RiemannTest']]],
+  ['rolloverupdatedface_13',['RollOverUpdatedFace',['../d9/dfb/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1RollOverUpdatedFace_1_1RollOverUpdatedFace.html',1,'exahype2.solvers.fv.actionsets.RollOverUpdatedFace.RollOverUpdatedFace'],['../d7/db4/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1RollOverUpdatedFace_1_1RollOverUpdatedFace.html',1,'exahype2.solvers.rkfd.actionsets.RollOverUpdatedFace.RollOverUpdatedFace']]],
+  ['root_14',['Root',['../d8/d73/classRoot.html',1,'']]],
+  ['rungekuttadg_15',['RungeKuttaDG',['../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html',1,'exahype2::solvers::rkdg::RungeKuttaDG']]]
+];

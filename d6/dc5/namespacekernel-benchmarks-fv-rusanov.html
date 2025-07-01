@@ -1,0 +1,757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/dc5/namespacekernel-benchmarks-fv-rusanov.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">kernel-benchmarks-fv-rusanov Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a60833d3f36498cc097d58b42e7213db6" id="r_a60833d3f36498cc097d58b42e7213db6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60833d3f36498cc097d58b42e7213db6">parser</a></td></tr>
+<tr class="separator:a60833d3f36498cc097d58b42e7213db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f069452b52f0c64c9c543b128807e2" id="r_af6f069452b52f0c64c9c543b128807e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6f069452b52f0c64c9c543b128807e2">choices</a></td></tr>
+<tr class="separator:af6f069452b52f0c64c9c543b128807e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26c4a0d571f537d1efacfb20d6f8bf1" id="r_ae26c4a0d571f537d1efacfb20d6f8bf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26c4a0d571f537d1efacfb20d6f8bf1">default</a></td></tr>
+<tr class="separator:ae26c4a0d571f537d1efacfb20d6f8bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af068cbc030390dc5d87769320e7540f6" id="r_af068cbc030390dc5d87769320e7540f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af068cbc030390dc5d87769320e7540f6">help</a></td></tr>
+<tr class="separator:af068cbc030390dc5d87769320e7540f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edbbec29f64537302149eb0c3280d9d" id="r_a0edbbec29f64537302149eb0c3280d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0edbbec29f64537302149eb0c3280d9d">type</a></td></tr>
+<tr class="separator:a0edbbec29f64537302149eb0c3280d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad272f95e3e356c3a5d1cd10eb4d3fe52" id="r_ad272f95e3e356c3a5d1cd10eb4d3fe52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad272f95e3e356c3a5d1cd10eb4d3fe52">nargs</a></td></tr>
+<tr class="separator:ad272f95e3e356c3a5d1cd10eb4d3fe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15fb1c0e0388b35e798ed9de8312c4d" id="r_ae15fb1c0e0388b35e798ed9de8312c4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae15fb1c0e0388b35e798ed9de8312c4d">action</a></td></tr>
+<tr class="separator:ae15fb1c0e0388b35e798ed9de8312c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe11bcf15530540b6386d8f711da462" id="r_a8fe11bcf15530540b6386d8f711da462"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fe11bcf15530540b6386d8f711da462">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a8fe11bcf15530540b6386d8f711da462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e756cc458f41806fb5630e42f82c3d6" id="r_a3e756cc458f41806fb5630e42f82c3d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e756cc458f41806fb5630e42f82c3d6">fv_rusanov_solver</a></td></tr>
+<tr class="separator:a3e756cc458f41806fb5630e42f82c3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb52420f866fdd6cc938e030701dd7aa" id="r_abb52420f866fdd6cc938e030701dd7aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb52420f866fdd6cc938e030701dd7aa">initial_conditions</a></td></tr>
+<tr class="separator:abb52420f866fdd6cc938e030701dd7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed83cfb65d1efb0ca8d4a85d307899a" id="r_a4ed83cfb65d1efb0ca8d4a85d307899a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed83cfb65d1efb0ca8d4a85d307899a">boundary_conditions</a></td></tr>
+<tr class="separator:a4ed83cfb65d1efb0ca8d4a85d307899a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3d9d1221bc51c56840e9174a1f66ac" id="r_aaa3d9d1221bc51c56840e9174a1f66ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3d9d1221bc51c56840e9174a1f66ac">refinement_criterion</a></td></tr>
+<tr class="separator:aaa3d9d1221bc51c56840e9174a1f66ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4274a76eb19c30467fd4cf0b016e2b59" id="r_a4274a76eb19c30467fd4cf0b016e2b59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4274a76eb19c30467fd4cf0b016e2b59">flux</a></td></tr>
+<tr class="separator:a4274a76eb19c30467fd4cf0b016e2b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f8d691984358777e0df050b5c7f083" id="r_a09f8d691984358777e0df050b5c7f083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09f8d691984358777e0df050b5c7f083">ncp</a></td></tr>
+<tr class="separator:a09f8d691984358777e0df050b5c7f083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1388c1e3a7856c8d854bc3f105ef8708" id="r_a1388c1e3a7856c8d854bc3f105ef8708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1388c1e3a7856c8d854bc3f105ef8708">eigenvalues</a></td></tr>
+<tr class="separator:a1388c1e3a7856c8d854bc3f105ef8708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00aa06c706d2bb0da328319afe4bdf44" id="r_a00aa06c706d2bb0da328319afe4bdf44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00aa06c706d2bb0da328319afe4bdf44">source_term</a></td></tr>
+<tr class="separator:a00aa06c706d2bb0da328319afe4bdf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe223f7c1adc032f8761ccf48bded80" id="r_a3fe223f7c1adc032f8761ccf48bded80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fe223f7c1adc032f8761ccf48bded80">project</a></td></tr>
+<tr class="separator:a3fe223f7c1adc032f8761ccf48bded80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82effa69984643ba669a3c1f6bcbe703" id="r_a82effa69984643ba669a3c1f6bcbe703"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82effa69984643ba669a3c1f6bcbe703">dimensions</a></td></tr>
+<tr class="separator:a82effa69984643ba669a3c1f6bcbe703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ff33fca63d6e2e1ed21a5a0676d352" id="r_a64ff33fca63d6e2e1ed21a5a0676d352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64ff33fca63d6e2e1ed21a5a0676d352">size</a></td></tr>
+<tr class="separator:a64ff33fca63d6e2e1ed21a5a0676d352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301ee80cc4f74b8a5cfd72084db92213" id="r_a301ee80cc4f74b8a5cfd72084db92213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301ee80cc4f74b8a5cfd72084db92213">offset</a></td></tr>
+<tr class="separator:a301ee80cc4f74b8a5cfd72084db92213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352cbb65b2c4ea45803a98d149a1607b" id="r_a352cbb65b2c4ea45803a98d149a1607b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a352cbb65b2c4ea45803a98d149a1607b">min_end_time</a></td></tr>
+<tr class="separator:a352cbb65b2c4ea45803a98d149a1607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ecba4bc40575d5f72bc7fd5d0bae12" id="r_a87ecba4bc40575d5f72bc7fd5d0bae12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87ecba4bc40575d5f72bc7fd5d0bae12">max_end_time</a></td></tr>
+<tr class="separator:a87ecba4bc40575d5f72bc7fd5d0bae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e31ed394cdabedc6c1ac8f894eb169" id="r_af5e31ed394cdabedc6c1ac8f894eb169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5e31ed394cdabedc6c1ac8f894eb169">first_plot_time_stamp</a></td></tr>
+<tr class="separator:af5e31ed394cdabedc6c1ac8f894eb169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477960e246e5af6ec1ac6c8d596b0b28" id="r_a477960e246e5af6ec1ac6c8d596b0b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a477960e246e5af6ec1ac6c8d596b0b28">time_in_between_plots</a></td></tr>
+<tr class="separator:a477960e246e5af6ec1ac6c8d596b0b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc1986cba5f243a9bf3cf146fb65728" id="r_a9dc1986cba5f243a9bf3cf146fb65728"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc1986cba5f243a9bf3cf146fb65728">periodic_BC</a></td></tr>
+<tr class="separator:a9dc1986cba5f243a9bf3cf146fb65728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63826c3169bfbe5061f6e21372afe047" id="r_a63826c3169bfbe5061f6e21372afe047"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63826c3169bfbe5061f6e21372afe047">mode</a></td></tr>
+<tr class="separator:a63826c3169bfbe5061f6e21372afe047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e205c08a298e57ca4f2ac3580ff80a" id="r_a81e205c08a298e57ca4f2ac3580ff80a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81e205c08a298e57ca4f2ac3580ff80a">accuracy</a> = args.accuracy</td></tr>
+<tr class="separator:a81e205c08a298e57ca4f2ac3580ff80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f02cac2b3ddd18b1e7e8645307ac8f" id="r_ad9f02cac2b3ddd18b1e7e8645307ac8f"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9f02cac2b3ddd18b1e7e8645307ac8f">formatted_num_patches</a> = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_patches))</td></tr>
+<tr class="separator:ad9f02cac2b3ddd18b1e7e8645307ac8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348d72b7646d8276f964222763e2e6b1" id="r_a348d72b7646d8276f964222763e2e6b1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a348d72b7646d8276f964222763e2e6b1">benchmark_main_file</a> = &quot;../../kernel-benchmarks/KernelBenchmarksFVRusanov-main.cpp&quot;</td></tr>
+<tr class="separator:a348d72b7646d8276f964222763e2e6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a39054e678680de96e9ca5b5f83143" id="r_a34a39054e678680de96e9ca5b5f83143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34a39054e678680de96e9ca5b5f83143">make</a></td></tr>
+<tr class="separator:a34a39054e678680de96e9ca5b5f83143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af900925751d2abbb8b7968d448b0427f" id="r_af900925751d2abbb8b7968d448b0427f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af900925751d2abbb8b7968d448b0427f">True</a></td></tr>
+<tr class="separator:af900925751d2abbb8b7968d448b0427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9a1ff2b777d31c356408d54d25ba62" id="r_a4b9a1ff2b777d31c356408d54d25ba62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b9a1ff2b777d31c356408d54d25ba62">make_clean_first</a></td></tr>
+<tr class="separator:a4b9a1ff2b777d31c356408d54d25ba62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8753527f9dbaf5851becedb6f99cf9c9" id="r_a8753527f9dbaf5851becedb6f99cf9c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8753527f9dbaf5851becedb6f99cf9c9">throw_away_data_after_build</a></td></tr>
+<tr class="separator:a8753527f9dbaf5851becedb6f99cf9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a81e205c08a298e57ca4f2ac3580ff80a" name="a81e205c08a298e57ca4f2ac3580ff80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e205c08a298e57ca4f2ac3580ff80a">&#9670;&#160;</a></span>accuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.accuracy = args.accuracy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00130">130</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="ae15fb1c0e0388b35e798ed9de8312c4d" name="ae15fb1c0e0388b35e798ed9de8312c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15fb1c0e0388b35e798ed9de8312c4d">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00058">58</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a8fe11bcf15530540b6386d8f711da462" name="a8fe11bcf15530540b6386d8f711da462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe11bcf15530540b6386d8f711da462">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00080">80</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a348d72b7646d8276f964222763e2e6b1" name="a348d72b7646d8276f964222763e2e6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348d72b7646d8276f964222763e2e6b1">&#9670;&#160;</a></span>benchmark_main_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str kernel-benchmarks-fv-rusanov.benchmark_main_file = &quot;../../kernel-benchmarks/KernelBenchmarksFVRusanov-main.cpp&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00160">160</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a4ed83cfb65d1efb0ca8d4a85d307899a" name="a4ed83cfb65d1efb0ca8d4a85d307899a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed83cfb65d1efb0ca8d4a85d307899a">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00095">95</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="af6f069452b52f0c64c9c543b128807e2" name="af6f069452b52f0c64c9c543b128807e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f069452b52f0c64c9c543b128807e2">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00015">15</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="ae26c4a0d571f537d1efacfb20d6f8bf1" name="ae26c4a0d571f537d1efacfb20d6f8bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26c4a0d571f537d1efacfb20d6f8bf1">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00016">16</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a82effa69984643ba669a3c1f6bcbe703" name="a82effa69984643ba669a3c1f6bcbe703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82effa69984643ba669a3c1f6bcbe703">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00117">117</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a1388c1e3a7856c8d854bc3f105ef8708" name="a1388c1e3a7856c8d854bc3f105ef8708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1388c1e3a7856c8d854bc3f105ef8708">&#9670;&#160;</a></span>eigenvalues</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.eigenvalues</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00099">99</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="af5e31ed394cdabedc6c1ac8f894eb169" name="af5e31ed394cdabedc6c1ac8f894eb169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e31ed394cdabedc6c1ac8f894eb169">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00122">122</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a4274a76eb19c30467fd4cf0b016e2b59" name="a4274a76eb19c30467fd4cf0b016e2b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4274a76eb19c30467fd4cf0b016e2b59">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00097">97</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="ad9f02cac2b3ddd18b1e7e8645307ac8f" name="ad9f02cac2b3ddd18b1e7e8645307ac8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f02cac2b3ddd18b1e7e8645307ac8f">&#9670;&#160;</a></span>formatted_num_patches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str kernel-benchmarks-fv-rusanov.formatted_num_patches = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_patches))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00138">138</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a3e756cc458f41806fb5630e42f82c3d6" name="a3e756cc458f41806fb5630e42f82c3d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e756cc458f41806fb5630e42f82c3d6">&#9670;&#160;</a></span>fv_rusanov_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.fv_rusanov_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  exahype2.solvers.fv.rusanov.GlobalAdaptiveTimeStepWithEnclaveTasking(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;FVRusanov&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    patch_size=args.patch_size,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1,  <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables={<span class="stringliteral">&quot;b&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    6</span>    min_volume_h=0.001,  <span class="comment"># max_cell_size -&gt; arbitrary value</span></div>
+<div class="line"><span class="lineno">    7</span>    max_volume_h=0.001,  <span class="comment"># min_cell_size -&gt; arbitrary value</span></div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.5,</div>
+<div class="line"><span class="lineno">    9</span>    pde_terms_without_state=<span class="keyword">True</span>,</div>
+<div class="line"><span class="lineno">   10</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00082">82</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="af068cbc030390dc5d87769320e7540f6" name="af068cbc030390dc5d87769320e7540f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af068cbc030390dc5d87769320e7540f6">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00017">17</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="abb52420f866fdd6cc938e030701dd7aa" name="abb52420f866fdd6cc938e030701dd7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb52420f866fdd6cc938e030701dd7aa">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00094">94</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a34a39054e678680de96e9ca5b5f83143" name="a34a39054e678680de96e9ca5b5f83143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a39054e678680de96e9ca5b5f83143">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00164">164</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a4b9a1ff2b777d31c356408d54d25ba62" name="a4b9a1ff2b777d31c356408d54d25ba62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9a1ff2b777d31c356408d54d25ba62">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00164">164</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a87ecba4bc40575d5f72bc7fd5d0bae12" name="a87ecba4bc40575d5f72bc7fd5d0bae12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ecba4bc40575d5f72bc7fd5d0bae12">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00121">121</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a352cbb65b2c4ea45803a98d149a1607b" name="a352cbb65b2c4ea45803a98d149a1607b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352cbb65b2c4ea45803a98d149a1607b">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00120">120</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a63826c3169bfbe5061f6e21372afe047" name="a63826c3169bfbe5061f6e21372afe047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63826c3169bfbe5061f6e21372afe047">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00127">127</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="ad272f95e3e356c3a5d1cd10eb4d3fe52" name="ad272f95e3e356c3a5d1cd10eb4d3fe52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad272f95e3e356c3a5d1cd10eb4d3fe52">&#9670;&#160;</a></span>nargs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.nargs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00036">36</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a09f8d691984358777e0df050b5c7f083" name="a09f8d691984358777e0df050b5c7f083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f8d691984358777e0df050b5c7f083">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00098">98</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a301ee80cc4f74b8a5cfd72084db92213" name="a301ee80cc4f74b8a5cfd72084db92213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301ee80cc4f74b8a5cfd72084db92213">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00119">119</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a60833d3f36498cc097d58b42e7213db6" name="a60833d3f36498cc097d58b42e7213db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60833d3f36498cc097d58b42e7213db6">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>    description=<span class="stringliteral">&quot;ExaHyPE 2 - Shallow Water Finite Volume Rusanov Kernel Benchmarking Script&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00009">9</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a9dc1986cba5f243a9bf3cf146fb65728" name="a9dc1986cba5f243a9bf3cf146fb65728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc1986cba5f243a9bf3cf146fb65728">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00124">124</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a3fe223f7c1adc032f8761ccf48bded80" name="a3fe223f7c1adc032f8761ccf48bded80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe223f7c1adc032f8761ccf48bded80">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;benchmarks&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;kernelbenchmarks&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;KernelBenchmarksFVRusanov&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;KernelBenchmarksFVRusanov.{args.build_mode}&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00108">108</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="aaa3d9d1221bc51c56840e9174a1f66ac" name="aaa3d9d1221bc51c56840e9174a1f66ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3d9d1221bc51c56840e9174a1f66ac">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00096">96</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a64ff33fca63d6e2e1ed21a5a0676d352" name="a64ff33fca63d6e2e1ed21a5a0676d352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ff33fca63d6e2e1ed21a5a0676d352">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00118">118</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a00aa06c706d2bb0da328319afe4bdf44" name="a00aa06c706d2bb0da328319afe4bdf44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00aa06c706d2bb0da328319afe4bdf44">&#9670;&#160;</a></span>source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00100">100</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a8753527f9dbaf5851becedb6f99cf9c9" name="a8753527f9dbaf5851becedb6f99cf9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8753527f9dbaf5851becedb6f99cf9c9">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00164">164</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a477960e246e5af6ec1ac6c8d596b0b28" name="a477960e246e5af6ec1ac6c8d596b0b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477960e246e5af6ec1ac6c8d596b0b28">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00123">123</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="af900925751d2abbb8b7968d448b0427f" name="af900925751d2abbb8b7968d448b0427f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af900925751d2abbb8b7968d448b0427f">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00164">164</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+<a id="a0edbbec29f64537302149eb0c3280d9d" name="a0edbbec29f64537302149eb0c3280d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edbbec29f64537302149eb0c3280d9d">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kernel-benchmarks-fv-rusanov.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html#l00023">23</a> of file <a class="el" href="../../da/d12/kernel-benchmarks-fv-rusanov_8py_source.html">kernel-benchmarks-fv-rusanov.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/dc5/namespacekernel-benchmarks-fv-rusanov.html">kernel-benchmarks-fv-rusanov</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:00 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

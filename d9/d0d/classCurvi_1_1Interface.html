@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/d0d/classCurvi_1_1Interface.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">Curvi::Interface Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Curvi::Interface:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/da9/classCurvi_1_1Interface__coll__graph.png" border="0" usemap="#aCurvi_1_1Interface_coll__map" alt="Collaboration graph"/></div>
+<map name="aCurvi_1_1Interface_coll__map" id="aCurvi_1_1Interface_coll__map">
+<area shape="rect" title=" " alt="" coords="5,181,128,207"/>
+<area shape="rect" href="../../d8/d73/classRoot.html" title=" " alt="" coords="41,93,93,119"/>
+<area shape="poly" title=" " alt="" coords="69,133,69,181,64,181,64,133"/>
+<area shape="rect" href="../../df/dd0/classNode.html" title=" " alt="" coords="39,5,95,31"/>
+<area shape="poly" title=" " alt="" coords="69,45,69,93,64,93,64,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a83bea11d3a7c776299e851b704f630a1" id="r_a83bea11d3a7c776299e851b704f630a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83bea11d3a7c776299e851b704f630a1">Interface</a> (std::string file, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> a_offset[3], <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> a_size[3], uint a_elements[3], <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> a_order)</td></tr>
+<tr class="separator:a83bea11d3a7c776299e851b704f630a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfaca483c42a0d3505872488c0727a5" id="r_a3bfaca483c42a0d3505872488c0727a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bfaca483c42a0d3505872488c0727a5">~Interface</a> ()</td></tr>
+<tr class="separator:a3bfaca483c42a0d3505872488c0727a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229591d6f010b143fdaa0340b1be8b5f" id="r_a229591d6f010b143fdaa0340b1be8b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a229591d6f010b143fdaa0340b1be8b5f">initTree</a> ()</td></tr>
+<tr class="separator:a229591d6f010b143fdaa0340b1be8b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361a8e298d1fb53d42f3f3ba87d4b14d" id="r_a361a8e298d1fb53d42f3f3ba87d4b14d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d73/classRoot.html">Root</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a361a8e298d1fb53d42f3f3ba87d4b14d">getRoot</a> ()</td></tr>
+<tr class="separator:a361a8e298d1fb53d42f3f3ba87d4b14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf708b8280d87c7d83ca85731e83ff9" id="r_a1cf708b8280d87c7d83ca85731e83ff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cf708b8280d87c7d83ca85731e83ff9">invertProjection</a> (<a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a> coord, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> coords[3])</td></tr>
+<tr class="separator:a1cf708b8280d87c7d83ca85731e83ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebae4f6cf3755448c796c2346499b93" id="r_aeebae4f6cf3755448c796c2346499b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d58/classBlock.html">Block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeebae4f6cf3755448c796c2346499b93">getElement</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *nodes, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ez, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ey, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ex)</td></tr>
+<tr class="separator:aeebae4f6cf3755448c796c2346499b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5c8818b790b3216e6552135409b54916" id="r_a5c8818b790b3216e6552135409b54916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c8818b790b3216e6552135409b54916">order</a></td></tr>
+<tr class="separator:a5c8818b790b3216e6552135409b54916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7207008c8f86869292c52552276f5b60" id="r_a7207008c8f86869292c52552276f5b60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d73/classRoot.html">Root</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7207008c8f86869292c52552276f5b60">root</a></td></tr>
+<tr class="separator:a7207008c8f86869292c52552276f5b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310e4c9e836a4ad10e66bda86b08b58d" id="r_a310e4c9e836a4ad10e66bda86b08b58d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a310e4c9e836a4ad10e66bda86b08b58d">offset</a> [3]</td></tr>
+<tr class="separator:a310e4c9e836a4ad10e66bda86b08b58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3328d8188be4ba971f9f5737d00700e" id="r_ac3328d8188be4ba971f9f5737d00700e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3328d8188be4ba971f9f5737d00700e">size</a> [3]</td></tr>
+<tr class="separator:ac3328d8188be4ba971f9f5737d00700e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873c5f0ca45ef4f74e59131f27f15c54" id="r_a873c5f0ca45ef4f74e59131f27f15c54"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a873c5f0ca45ef4f74e59131f27f15c54">elements</a> [3]</td></tr>
+<tr class="separator:a873c5f0ca45ef4f74e59131f27f15c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bcf431a2499318eafc68f31e5e696a" id="r_a96bcf431a2499318eafc68f31e5e696a"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96bcf431a2499318eafc68f31e5e696a">modes</a> [3]</td></tr>
+<tr class="separator:a96bcf431a2499318eafc68f31e5e696a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547521bcde04238ff6bda98e25ea15ba" id="r_a547521bcde04238ff6bda98e25ea15ba"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a547521bcde04238ff6bda98e25ea15ba">grid</a> [3]</td></tr>
+<tr class="separator:a547521bcde04238ff6bda98e25ea15ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00010">10</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a83bea11d3a7c776299e851b704f630a1" name="a83bea11d3a7c776299e851b704f630a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bea11d3a7c776299e851b704f630a1">&#9670;&#160;</a></span>Interface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Curvi::Interface::Interface </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>file</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>a_offset</em>[3], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>a_size</em>[3], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>a_elements</em>[3], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>a_order</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">12</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/da9/interface_8h_source.html#l00198">elements</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00199">modes</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00196">offset</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00192">order</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00197">size</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">X</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Y</a>, and <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Z</a>.</p>
+
+</div>
+</div>
+<a id="a3bfaca483c42a0d3505872488c0727a5" name="a3bfaca483c42a0d3505872488c0727a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bfaca483c42a0d3505872488c0727a5">&#9670;&#160;</a></span>~Interface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Curvi::Interface::~Interface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00046">46</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeebae4f6cf3755448c796c2346499b93" name="aeebae4f6cf3755448c796c2346499b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebae4f6cf3755448c796c2346499b93">&#9670;&#160;</a></span>getElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d58/classBlock.html">Block</a> Curvi::Interface::getElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *</td>          <td class="paramname"><span class="paramname"><em>nodes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>ez</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>ey</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>ex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">111</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/da9/interface_8h_source.html#l00198">elements</a>, <a class="el" href="../../d9/d4d/block_8cpp_source.html#l00203">Block::getIndexRange()</a>, <a class="el" href="../../d8/db4/lagrangeInterpolation_8h_source.html#l00011">Interpolation::Lagrange::interpolate3D()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00199">modes</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00009">NCOORDS</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00192">order</a>, <a class="el" href="../../d9/d4d/block_8cpp_source.html#l00101">Block::resample()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>, <a class="el" href="../../de/d99/root_8h_source.html#l00111">Root::traverse()</a>, <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp_source.html#l00009">void</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">X</a>, <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Y</a>, and <a class="el" href="../../dc/dd0/coordinate_8h_source.html#l00007">Z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00066">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::initUnknownsPatch()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_cgraph.png" border="0" usemap="#ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_cgraph" alt=""/></div>
+<map name="ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_cgraph" id="ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_cgraph">
+<area shape="rect" title=" " alt="" coords="5,92,211,117"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#ada7afe538f2a9cee3106405a47803600" title=" " alt="" coords="263,5,427,31"/>
+<area shape="poly" title=" " alt="" coords="137,89,258,41,284,32,286,37,260,46,139,94"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a9f0f9771490207093d7ac010690331a2" title=" " alt="" coords="259,55,432,95"/>
+<area shape="poly" title=" " alt="" coords="211,89,245,85,245,90,211,95"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#a9b9896cace824fbbadff64d78cf7762d" title=" " alt="" coords="282,120,409,145"/>
+<area shape="poly" title=" " alt="" coords="211,114,269,121,268,126,211,119"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a921095050dd5786143d3cb94ff63c2db" title=" " alt="" coords="288,169,403,195"/>
+<area shape="poly" title=" " alt="" coords="146,115,259,154,287,163,285,168,258,159,144,120"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a3cda569f7cfff5362ca803e64336e2f1" title=" " alt="" coords="480,55,695,95"/>
+<area shape="poly" title=" " alt="" coords="432,73,466,73,466,78,432,78"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a5a2dc4c62470e528be11a0bb0b127e02" title=" " alt="" coords="743,27,939,67"/>
+<area shape="poly" title=" " alt="" coords="695,61,729,57,729,62,695,66"/>
+<area shape="rect" href="../../dd/d93/classInterpolation_1_1Lagrange.html#a938e0cb2a6f0bd85c1405d4a38d5a850" title=" " alt="" coords="987,57,1160,97"/>
+<area shape="poly" title=" " alt="" coords="695,76,743,77,939,77,973,76,973,82,939,82,743,82,695,81"/>
+<area shape="poly" title=" " alt="" coords="939,57,974,61,973,67,939,62"/>
+<area shape="rect" href="../../d7/d58/classBlock.html#a258e8e600bb9d9159933c18121f6a4b4" title=" " alt="" coords="525,120,650,145"/>
+<area shape="poly" title=" " alt="" coords="409,130,511,130,511,135,409,135"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8ecb6410d15676d6f916b5f3269a445d" title=" " alt="" coords="528,169,647,195"/>
+<area shape="poly" title=" " alt="" coords="403,179,514,179,514,185,403,185"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ad5670021669229c9c47ab2d55818f626" title=" " alt="" coords="528,219,647,244"/>
+<area shape="poly" title=" " alt="" coords="403,191,515,214,514,219,402,196"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_icgraph.png" border="0" usemap="#ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_icgraph" alt=""/></div>
+<map name="ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_icgraph" id="ad9/d0d/classCurvi_1_1Interface_aeebae4f6cf3755448c796c2346499b93_icgraph">
+<area shape="rect" title=" " alt="" coords="208,13,413,38"/>
+<area shape="rect" href="../../d3/df6/classContextCurvilinear.html#a85285fc11900c5dcdece0af52725eef1" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a361a8e298d1fb53d42f3f3ba87d4b14d" name="a361a8e298d1fb53d42f3f3ba87d4b14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361a8e298d1fb53d42f3f3ba87d4b14d">&#9670;&#160;</a></span>getRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d73/classRoot.html">Root</a> * Curvi::Interface::getRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>.</p>
+
+</div>
+</div>
+<a id="a229591d6f010b143fdaa0340b1be8b5f" name="a229591d6f010b143fdaa0340b1be8b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229591d6f010b143fdaa0340b1be8b5f">&#9670;&#160;</a></span>initTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> Curvi::Interface::initTree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00050">50</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../de/d99/root_8h_source.html#l00090">Root::init()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00199">modes</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>, and <a class="el" href="../../de/d99/root_8h_source.html#l00140">Root::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d0d/classCurvi_1_1Interface_a229591d6f010b143fdaa0340b1be8b5f_cgraph.png" border="0" usemap="#ad9/d0d/classCurvi_1_1Interface_a229591d6f010b143fdaa0340b1be8b5f_cgraph" alt=""/></div>
+<map name="ad9/d0d/classCurvi_1_1Interface_a229591d6f010b143fdaa0340b1be8b5f_cgraph" id="ad9/d0d/classCurvi_1_1Interface_a229591d6f010b143fdaa0340b1be8b5f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,184,129"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8e07ce3ac884f046af91c1abeda14556" title=" " alt="" coords="247,55,328,80"/>
+<area shape="poly" title=" " alt="" coords="144,101,232,78,234,84,146,107"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a290130e1366a0cf7e11d91726e2cb91d" title=" " alt="" coords="232,128,343,153"/>
+<area shape="poly" title=" " alt="" coords="185,125,218,129,218,135,184,130"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a9f7e8d5ca20f56c841873c0082031634" title=" " alt="" coords="405,5,495,31"/>
+<area shape="poly" title=" " alt="" coords="327,53,393,32,395,37,329,58"/>
+<area shape="rect" href="../../df/dd0/classNode.html#a2a94bc70b9dd7634929645f72007aa04" title=" " alt="" coords="407,55,493,80"/>
+<area shape="poly" title=" " alt="" coords="328,65,393,65,393,70,328,70"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8ecb6410d15676d6f916b5f3269a445d" title=" " alt="" coords="391,104,509,129"/>
+<area shape="poly" title=" " alt="" coords="342,130,376,125,377,130,343,135"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#ab538b6220120bec6145b48320ef02adb" title=" " alt="" coords="395,153,505,179"/>
+<area shape="poly" title=" " alt="" coords="343,147,382,153,381,158,342,152"/>
+<area shape="rect" href="../../df/dd0/classNode.html#ae5ee75dd14a48840217d9fc3a6616402" title=" " alt="" coords="393,203,507,228"/>
+<area shape="poly" title=" " alt="" coords="316,151,392,188,408,195,406,200,390,192,313,156"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1cf708b8280d87c7d83ca85731e83ff9" name="a1cf708b8280d87c7d83ca85731e83ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf708b8280d87c7d83ca85731e83ff9">&#9670;&#160;</a></span>invertProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> Curvi::Interface::invertProjection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/dd0/coordinate_8h.html#af8f339ad433d08316f2b66477f69083f">Coordinate</a></td>          <td class="paramname"><span class="paramname"><em>coord</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>coords</em>[3]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00060">60</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/d72/face_8cpp_source.html#l00170">Face::getIndexRange()</a>, <a class="el" href="../../db/dbc/coordinate_8cpp_source.html#l00045">getPlane()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00196">offset</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">root</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00197">size</a>, and <a class="el" href="../../de/d99/root_8h_source.html#l00118">Root::traverseProjection()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d4f/ContextCurvilinear_8h_source.html#l00187">ContextCurvilinear&lt; Shortcuts, basisSize, numberOfData, T &gt;::correctPointSourceLocation()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_cgraph.png" border="0" usemap="#ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_cgraph" alt=""/></div>
+<map name="ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_cgraph" id="ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,173,87"/>
+<area shape="rect" href="../../d3/db7/classFace.html#aaf7d6f9ae18cc8d9793cbdb0edde4ac0" title=" " alt="" coords="232,5,389,31"/>
+<area shape="poly" title=" " alt="" coords="173,46,239,31,240,36,174,51"/>
+<area shape="rect" href="../../db/dbc/coordinate_8cpp.html#a5e29afb847687b9aa32590073c6312bb" title=" " alt="" coords="271,55,350,80"/>
+<area shape="poly" title=" " alt="" coords="173,65,258,65,258,70,173,70"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a03116826c7b2b60e7e10d4ec0abccb32" title=" " alt="" coords="221,104,400,129"/>
+<area shape="poly" title=" " alt="" coords="174,83,240,98,239,104,173,89"/>
+<area shape="rect" href="../../d8/d73/classRoot.html#a8ecb6410d15676d6f916b5f3269a445d" title=" " alt="" coords="480,79,599,104"/>
+<area shape="poly" title=" " alt="" coords="400,104,466,97,467,102,400,109"/>
+<area shape="rect" href="../../df/dd0/classNode.html#a69beec945a012df8e2fbbf6274a35f9a" title=" " alt="" coords="448,128,631,153"/>
+<area shape="poly" title=" " alt="" coords="400,123,435,127,434,132,400,129"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_icgraph.png" border="0" usemap="#ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_icgraph" alt=""/></div>
+<map name="ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_icgraph" id="ad9/d0d/classCurvi_1_1Interface_a1cf708b8280d87c7d83ca85731e83ff9_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,428,45"/>
+<area shape="rect" href="../../d3/df6/classContextCurvilinear.html#ad5892879f220b5903fc68b44769bba1e" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" title=" " alt="" coords="246,28,212,28,212,23,246,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a873c5f0ca45ef4f74e59131f27f15c54" name="a873c5f0ca45ef4f74e59131f27f15c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873c5f0ca45ef4f74e59131f27f15c54">&#9670;&#160;</a></span>elements</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Curvi::Interface::elements[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00198">198</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">getElement()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>.</p>
+
+</div>
+</div>
+<a id="a547521bcde04238ff6bda98e25ea15ba" name="a547521bcde04238ff6bda98e25ea15ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547521bcde04238ff6bda98e25ea15ba">&#9670;&#160;</a></span>grid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Curvi::Interface::grid[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00200">200</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+</div>
+</div>
+<a id="a96bcf431a2499318eafc68f31e5e696a" name="a96bcf431a2499318eafc68f31e5e696a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bcf431a2499318eafc68f31e5e696a">&#9670;&#160;</a></span>modes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Curvi::Interface::modes[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00199">199</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">getElement()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00050">initTree()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>.</p>
+
+</div>
+</div>
+<a id="a310e4c9e836a4ad10e66bda86b08b58d" name="a310e4c9e836a4ad10e66bda86b08b58d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310e4c9e836a4ad10e66bda86b08b58d">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> Curvi::Interface::offset[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00196">196</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dec/visualisation_2input_2Patch_8py_source.html#l00038">peano4.visualisation.input.Patch.Patch::__repr__()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00060">invertProjection()</a>.</p>
+
+</div>
+</div>
+<a id="a5c8818b790b3216e6552135409b54916" name="a5c8818b790b3216e6552135409b54916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8818b790b3216e6552135409b54916">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Curvi::Interface::order</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00192">192</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">getElement()</a>, <a class="el" href="../../df/d9c/LagrangeBasisWithDiagonalMassMatrix_8py_source.html#l00443">exahype2.solvers.LagrangeBasisWithDiagonalMassMatrix.LagrangeBasisWithDiagonalMassMatrix::init_dictionary_with_default_parameters()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>.</p>
+
+</div>
+</div>
+<a id="a7207008c8f86869292c52552276f5b60" name="a7207008c8f86869292c52552276f5b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7207008c8f86869292c52552276f5b60">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d73/classRoot.html">Root</a>* Curvi::Interface::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00194">194</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/interface_8h_source.html#l00111">getElement()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00055">getRoot()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00050">initTree()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00060">invertProjection()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00046">~Interface()</a>.</p>
+
+</div>
+</div>
+<a id="ac3328d8188be4ba971f9f5737d00700e" name="ac3328d8188be4ba971f9f5737d00700e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3328d8188be4ba971f9f5737d00700e">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> Curvi::Interface::size[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/interface_8h_source.html#l00197">197</a> of file <a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dec/visualisation_2input_2Patch_8py_source.html#l00038">peano4.visualisation.input.Patch.Patch::__repr__()</a>, <a class="el" href="../../d4/da9/interface_8h_source.html#l00012">Interface()</a>, and <a class="el" href="../../d4/da9/interface_8h_source.html#l00060">invertProjection()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/toolbox/curvi/interface/<a class="el" href="../../d4/da9/interface_8h_source.html">interface.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/dc1/namespaceCurvi.html">Curvi</a></li><li class="navelem"><a class="el" href="../../d9/d0d/classCurvi_1_1Interface.html">Interface</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:23 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/dfe/namespacetafjord-landslide.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">tafjord-landslide Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac21413a1af58a3ddde769f05b6f3fd25" id="r_ac21413a1af58a3ddde769f05b6f3fd25"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac21413a1af58a3ddde769f05b6f3fd25">initial_conditions</a></td></tr>
+<tr class="separator:ac21413a1af58a3ddde769f05b6f3fd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa153f36a7c32a4e0645a5536d91e9ce" id="r_afa153f36a7c32a4e0645a5536d91e9ce"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa153f36a7c32a4e0645a5536d91e9ce">boundary_conditions</a></td></tr>
+<tr class="separator:afa153f36a7c32a4e0645a5536d91e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcc6531cc882c9630aadba9be40603c" id="r_a7bcc6531cc882c9630aadba9be40603c"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bcc6531cc882c9630aadba9be40603c">refinement_criterion</a></td></tr>
+<tr class="separator:a7bcc6531cc882c9630aadba9be40603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e52c788cd1508ea2bde83f88da67a1" id="r_ae4e52c788cd1508ea2bde83f88da67a1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e52c788cd1508ea2bde83f88da67a1">limiting_criterion</a></td></tr>
+<tr class="separator:ae4e52c788cd1508ea2bde83f88da67a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65a1a54a970481973be9a29a4ea1063" id="r_aa65a1a54a970481973be9a29a4ea1063"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa65a1a54a970481973be9a29a4ea1063">adjust_solution</a></td></tr>
+<tr class="separator:aa65a1a54a970481973be9a29a4ea1063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47a5c48e4e1242d40968e83645a3f33" id="r_ac47a5c48e4e1242d40968e83645a3f33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac47a5c48e4e1242d40968e83645a3f33">parser</a> = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td></tr>
+<tr class="separator:ac47a5c48e4e1242d40968e83645a3f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755d7b20c6e29a25911b5fa63ff51c64" id="r_a755d7b20c6e29a25911b5fa63ff51c64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a755d7b20c6e29a25911b5fa63ff51c64">min_depth</a></td></tr>
+<tr class="separator:a755d7b20c6e29a25911b5fa63ff51c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0117d28caec82a3b5855453e2ad309a1" id="r_a0117d28caec82a3b5855453e2ad309a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0117d28caec82a3b5855453e2ad309a1">end_time</a></td></tr>
+<tr class="separator:a0117d28caec82a3b5855453e2ad309a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f53793690b57e9888dd127b600e4fac" id="r_a1f53793690b57e9888dd127b600e4fac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f53793690b57e9888dd127b600e4fac">time_step_relaxation</a></td></tr>
+<tr class="separator:a1f53793690b57e9888dd127b600e4fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0bcb5af4ab792fb5755992cb082bea" id="r_aef0bcb5af4ab792fb5755992cb082bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef0bcb5af4ab792fb5755992cb082bea">degrees_of_freedom</a></td></tr>
+<tr class="separator:aef0bcb5af4ab792fb5755992cb082bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1de0a683834972dc1bd0767e59c049" id="r_a2a1de0a683834972dc1bd0767e59c049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a1de0a683834972dc1bd0767e59c049">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a2a1de0a683834972dc1bd0767e59c049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f851092ea337295fc5547b303a9b6" id="r_a825f851092ea337295fc5547b303a9b6"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825f851092ea337295fc5547b303a9b6">constants</a></td></tr>
+<tr class="separator:a825f851092ea337295fc5547b303a9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c6661753a4d997196504d1f7bea2ec" id="r_a54c6661753a4d997196504d1f7bea2ec"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54c6661753a4d997196504d1f7bea2ec">size</a> = [1900, 1950]</td></tr>
+<tr class="separator:a54c6661753a4d997196504d1f7bea2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24faa24d2e75a9ee34d3fe5349f3d1b1" id="r_a24faa24d2e75a9ee34d3fe5349f3d1b1"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24faa24d2e75a9ee34d3fe5349f3d1b1">max_h</a> = (1.1 * min(<a class="el" href="#a54c6661753a4d997196504d1f7bea2ec">size</a>) / (3.0**args.min_depth))</td></tr>
+<tr class="separator:a24faa24d2e75a9ee34d3fe5349f3d1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c72934c9be415d28f836e0ea161222" id="r_a99c72934c9be415d28f836e0ea161222"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c72934c9be415d28f836e0ea161222">min_h</a> = <a class="el" href="#a24faa24d2e75a9ee34d3fe5349f3d1b1">max_h</a> * 3.0 ** (-args.amr_levels)</td></tr>
+<tr class="separator:a99c72934c9be415d28f836e0ea161222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c7a63fc31d0de26a04e51d2285aa68" id="r_a58c7a63fc31d0de26a04e51d2285aa68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58c7a63fc31d0de26a04e51d2285aa68">dg_order</a> = args.degrees_of_freedom - 1</td></tr>
+<tr class="separator:a58c7a63fc31d0de26a04e51d2285aa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2150305dd9f064bbaa72fd86f48ecf" id="r_afd2150305dd9f064bbaa72fd86f48ecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd2150305dd9f064bbaa72fd86f48ecf">regular_solver</a></td></tr>
+<tr class="separator:afd2150305dd9f064bbaa72fd86f48ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01135da8f6b30ba1ba7a565ba50f7193" id="r_a01135da8f6b30ba1ba7a565ba50f7193"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01135da8f6b30ba1ba7a565ba50f7193">flux</a></td></tr>
+<tr class="separator:a01135da8f6b30ba1ba7a565ba50f7193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764c1fd356a76c8be14f9cb37e367ef8" id="r_a764c1fd356a76c8be14f9cb37e367ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a764c1fd356a76c8be14f9cb37e367ef8">ncp</a></td></tr>
+<tr class="separator:a764c1fd356a76c8be14f9cb37e367ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e59ec8b8c312b67da1e67216eb1d68c" id="r_a7e59ec8b8c312b67da1e67216eb1d68c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e59ec8b8c312b67da1e67216eb1d68c">max_eigenvalue</a></td></tr>
+<tr class="separator:a7e59ec8b8c312b67da1e67216eb1d68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8071ebd9b32c9c92c2f36804dd9a42" id="r_a2f8071ebd9b32c9c92c2f36804dd9a42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f8071ebd9b32c9c92c2f36804dd9a42">diffusive_source_term</a></td></tr>
+<tr class="separator:a2f8071ebd9b32c9c92c2f36804dd9a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff132ca4aa9f9539d4147cc56e1ce6c" id="r_adff132ca4aa9f9539d4147cc56e1ce6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adff132ca4aa9f9539d4147cc56e1ce6c">riemann_solver</a></td></tr>
+<tr class="separator:adff132ca4aa9f9539d4147cc56e1ce6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03020fb688ef79307adbad10479902d1" id="r_a03020fb688ef79307adbad10479902d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03020fb688ef79307adbad10479902d1">is_linear</a></td></tr>
+<tr class="separator:a03020fb688ef79307adbad10479902d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fba85807a31e6631292e2dda388a7ab" id="r_a1fba85807a31e6631292e2dda388a7ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fba85807a31e6631292e2dda388a7ab">polynomials</a></td></tr>
+<tr class="separator:a1fba85807a31e6631292e2dda388a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61b6b5c76657040c781679bb5dedc42" id="r_ad61b6b5c76657040c781679bb5dedc42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad61b6b5c76657040c781679bb5dedc42">limiting_solver</a></td></tr>
+<tr class="separator:ad61b6b5c76657040c781679bb5dedc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71627c7940097eeff0537293b2adde97" id="r_a71627c7940097eeff0537293b2adde97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71627c7940097eeff0537293b2adde97">limiter_solver</a></td></tr>
+<tr class="separator:a71627c7940097eeff0537293b2adde97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827709f33b78972327cae8880ab65465" id="r_a827709f33b78972327cae8880ab65465"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a827709f33b78972327cae8880ab65465">project</a></td></tr>
+<tr class="separator:a827709f33b78972327cae8880ab65465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd7a032a926c616b48b67426ebed76c" id="r_acbd7a032a926c616b48b67426ebed76c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd7a032a926c616b48b67426ebed76c">time_in_between_plots</a> = 0.0</td></tr>
+<tr class="separator:acbd7a032a926c616b48b67426ebed76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e861c0a80845af9e8360817f8a7041d" id="r_a5e861c0a80845af9e8360817f8a7041d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e861c0a80845af9e8360817f8a7041d">dimensions</a></td></tr>
+<tr class="separator:a5e861c0a80845af9e8360817f8a7041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a25353b548f8d3c91ffe96688fb2ed" id="r_ae6a25353b548f8d3c91ffe96688fb2ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6a25353b548f8d3c91ffe96688fb2ed">offset</a></td></tr>
+<tr class="separator:ae6a25353b548f8d3c91ffe96688fb2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7607d01f2978fb2ee3a1113c4c68c11b" id="r_a7607d01f2978fb2ee3a1113c4c68c11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7607d01f2978fb2ee3a1113c4c68c11b">min_end_time</a></td></tr>
+<tr class="separator:a7607d01f2978fb2ee3a1113c4c68c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe6311b994e0a29d51366c3a5c87612" id="r_a9fe6311b994e0a29d51366c3a5c87612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fe6311b994e0a29d51366c3a5c87612">max_end_time</a></td></tr>
+<tr class="separator:a9fe6311b994e0a29d51366c3a5c87612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cffcb5713965002142298fb2b5d62bd" id="r_a8cffcb5713965002142298fb2b5d62bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cffcb5713965002142298fb2b5d62bd">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a8cffcb5713965002142298fb2b5d62bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdc9c0b2e035e3a7c5e5a4613703c97" id="r_a3cdc9c0b2e035e3a7c5e5a4613703c97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cdc9c0b2e035e3a7c5e5a4613703c97">periodic_BC</a></td></tr>
+<tr class="separator:a3cdc9c0b2e035e3a7c5e5a4613703c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2fff4ec547900ac3de3e81d0cb48888" id="r_ac2fff4ec547900ac3de3e81d0cb48888"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2fff4ec547900ac3de3e81d0cb48888">mode</a></td></tr>
+<tr class="separator:ac2fff4ec547900ac3de3e81d0cb48888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516429919a8aac9263cb391535e07de3" id="r_a516429919a8aac9263cb391535e07de3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a516429919a8aac9263cb391535e07de3">const_val</a></td></tr>
+<tr class="separator:a516429919a8aac9263cb391535e07de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a318911444cf9ae64749ba59af23659" id="r_a7a318911444cf9ae64749ba59af23659"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a318911444cf9ae64749ba59af23659">const_type</a></td></tr>
+<tr class="separator:a7a318911444cf9ae64749ba59af23659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e5d31fe6de339f69f4009b6c2727ca" id="r_aa5e5d31fe6de339f69f4009b6c2727ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e5d31fe6de339f69f4009b6c2727ca">make</a></td></tr>
+<tr class="separator:aa5e5d31fe6de339f69f4009b6c2727ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a6ac769ecb63e89213d15d74cb63a9" id="r_ae4a6ac769ecb63e89213d15d74cb63a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4a6ac769ecb63e89213d15d74cb63a9">True</a></td></tr>
+<tr class="separator:ae4a6ac769ecb63e89213d15d74cb63a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03259179537f0742cf221f1eb5246692" id="r_a03259179537f0742cf221f1eb5246692"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03259179537f0742cf221f1eb5246692">make_clean_first</a></td></tr>
+<tr class="separator:a03259179537f0742cf221f1eb5246692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7275529787e405b7d0f061b756dbd084" id="r_a7275529787e405b7d0f061b756dbd084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7275529787e405b7d0f061b756dbd084">throw_away_data_after_build</a></td></tr>
+<tr class="separator:a7275529787e405b7d0f061b756dbd084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa65a1a54a970481973be9a29a4ea1063" name="aa65a1a54a970481973be9a29a4ea1063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65a1a54a970481973be9a29a4ea1063">&#9670;&#160;</a></span>adjust_solution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.adjust_solution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">r&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  if (Q[s::h] &lt; hThreshold) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[s::h]  = std::fmax(0.0, Q[s::h]);</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    Q[s::hu] = 0.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">    Q[s::hv] = 0.0;</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00079">79</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a2a1de0a683834972dc1bd0767e59c049" name="a2a1de0a683834972dc1bd0767e59c049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1de0a683834972dc1bd0767e59c049">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00094">94</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="afa153f36a7c32a4e0645a5536d91e9ce" name="afa153f36a7c32a4e0645a5536d91e9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa153f36a7c32a4e0645a5536d91e9ce">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  Qoutside[s::h]  = Qinside[s::h];</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  Qoutside[s::hu] = -Qinside[s::hu];</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  Qoutside[s::hv] = -Qinside[s::hv];</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  Qoutside[s::z]  = Qinside[s::z];</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00038">38</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7a318911444cf9ae64749ba59af23659" name="a7a318911444cf9ae64749ba59af23659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a318911444cf9ae64749ba59af23659">&#9670;&#160;</a></span>const_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.const_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00222">222</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a516429919a8aac9263cb391535e07de3" name="a516429919a8aac9263cb391535e07de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516429919a8aac9263cb391535e07de3">&#9670;&#160;</a></span>const_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.const_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00222">222</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a825f851092ea337295fc5547b303a9b6" name="a825f851092ea337295fc5547b303a9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f851092ea337295fc5547b303a9b6">&#9670;&#160;</a></span>constants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict tafjord-landslide.constants</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;g&quot;</span>: [9.81, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;phi&quot;</span>: [25.0, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;invXi&quot;</span>: [1.0 / 200.0, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;hThreshold&quot;</span>: [1e-1, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00096">96</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="aef0bcb5af4ab792fb5755992cb082bea" name="aef0bcb5af4ab792fb5755992cb082bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0bcb5af4ab792fb5755992cb082bea">&#9670;&#160;</a></span>degrees_of_freedom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.degrees_of_freedom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00092">92</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a58c7a63fc31d0de26a04e51d2285aa68" name="a58c7a63fc31d0de26a04e51d2285aa68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c7a63fc31d0de26a04e51d2285aa68">&#9670;&#160;</a></span>dg_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tafjord-landslide.dg_order = args.degrees_of_freedom - 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00110">110</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a2f8071ebd9b32c9c92c2f36804dd9a42" name="a2f8071ebd9b32c9c92c2f36804dd9a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8071ebd9b32c9c92c2f36804dd9a42">&#9670;&#160;</a></span>diffusive_source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.diffusive_source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00131">131</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a5e861c0a80845af9e8360817f8a7041d" name="a5e861c0a80845af9e8360817f8a7041d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e861c0a80845af9e8360817f8a7041d">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00205">205</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a0117d28caec82a3b5855453e2ad309a1" name="a0117d28caec82a3b5855453e2ad309a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0117d28caec82a3b5855453e2ad309a1">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00090">90</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a8cffcb5713965002142298fb2b5d62bd" name="a8cffcb5713965002142298fb2b5d62bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cffcb5713965002142298fb2b5d62bd">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00210">210</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a01135da8f6b30ba1ba7a565ba50f7193" name="a01135da8f6b30ba1ba7a565ba50f7193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01135da8f6b30ba1ba7a565ba50f7193">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00126">126</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ac21413a1af58a3ddde769f05b6f3fd25" name="ac21413a1af58a3ddde769f05b6f3fd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21413a1af58a3ddde769f05b6f3fd25">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  for (int i = 0; i &lt; NumberOfUnknowns + NumberOfAuxiliaryVariables; i++) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[i] = 0.0;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  static tarch::reader::TopologyParser topologyParser(</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">    \&quot;Tafjord_5m_EPSG25832.nc\&quot;,</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">    \&quot;ini_3.0Mm3_5m_EPSG25832.nc\&quot;,</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    DomainSize(0),</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">    DomainSize(1),</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">    DomainOffset(0),</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">    DomainOffset(1),</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">    &quot;Band1&quot;,</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">    &quot;x&quot;,</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">    &quot;y&quot;,</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral">    &quot;Band1&quot;,</span></div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">    &quot;x&quot;,</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">    &quot;y&quot;</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">  );</span></div>
+<div class="line"><span class="lineno">   20</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">  Q[s::h] = topologyParser.sampleDisplacement(x(0), x(1));</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">  Q[s::z] = topologyParser.sampleTopology(x(0), x(1));</span></div>
+<div class="line"><span class="lineno">   23</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00014">14</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a03020fb688ef79307adbad10479902d1" name="a03020fb688ef79307adbad10479902d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03020fb688ef79307adbad10479902d1">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00142">142</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a71627c7940097eeff0537293b2adde97" name="a71627c7940097eeff0537293b2adde97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71627c7940097eeff0537293b2adde97">&#9670;&#160;</a></span>limiter_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.limiter_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;LimiterSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    regular_solver=regular_solver,</div>
+<div class="line"><span class="lineno">    4</span>    limiting_solver=limiting_solver,</div>
+<div class="line"><span class="lineno">    5</span>    number_of_dmp_observables=3,</div>
+<div class="line"><span class="lineno">    6</span>    dmp_relaxation_parameter=1.0,  <span class="comment"># MD 3: BOTH FRICTIONS: 1.0, ONLY ONE FRICTION TERM OR ZERO: 0.5,</span></div>
+<div class="line"><span class="lineno">    7</span>    dmp_differences_scaling=0.01,  <span class="comment"># MD 3: BOTH FRICTIONS: 0.01, ONLY ONE FRICTION TERM OR ZERO: 0.005,</span></div>
+<div class="line"><span class="lineno">    8</span>    physical_admissibility_criterion=limiting_criterion,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting_html"><div class="ttname"><a href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d03/PosterioriLimiting_8py_source.html#l00021">PosterioriLimiting.py:21</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00177">177</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ae4e52c788cd1508ea2bde83f88da67a1" name="ae4e52c788cd1508ea2bde83f88da67a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e52c788cd1508ea2bde83f88da67a1">&#9670;&#160;</a></span>limiting_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tafjord-landslide.limiting_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  const auto Qh{Q[0]};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  if (!std::isfinite(Qh)) {</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  // Try not to limit untouched cells initialised with 0.0</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  if ((Qh &lt; hThreshold) and (Qh &gt; -hThreshold)) {</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    return true;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  // Low values of h are resolved on FV layer</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  if (Qh &lt;= -hThreshold) {</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">  // Limit close to boundaries</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">  // x - 0</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">  if (std::abs(x[0] - DomainOffset[0]) &lt; h[0] or std::abs(x[0] - DomainOffset[0] - DomainSize[0]) &lt; h[0]) {</span></div>
+<div class="line"><span class="lineno">   20</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">  // y - 1</span></div>
+<div class="line"><span class="lineno">   23</span><span class="stringliteral">  if (std::abs(x[1] - DomainOffset[1]) &lt; h[1] or std::abs(x[1] - DomainOffset[1] - DomainSize[1]) &lt; h[1]) {</span></div>
+<div class="line"><span class="lineno">   24</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   25</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   26</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   27</span><span class="stringliteral">  return true;</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00050">50</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ad61b6b5c76657040c781679bb5dedc42" name="ad61b6b5c76657040c781679bb5dedc42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61b6b5c76657040c781679bb5dedc42">&#9670;&#160;</a></span>limiting_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.limiting_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;FVSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    patch_size=dg_order * 2 + 1,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables={<span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    6</span>    min_volume_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_volume_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=args.time_step_relaxation,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/de2/fv_2godunov_2GlobalAdaptiveTimeStep_8py_source.html#l00011">GlobalAdaptiveTimeStep.py:11</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00146">146</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="aa5e5d31fe6de339f69f4009b6c2727ca" name="aa5e5d31fe6de339f69f4009b6c2727ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e5d31fe6de339f69f4009b6c2727ca">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00228">228</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a03259179537f0742cf221f1eb5246692" name="a03259179537f0742cf221f1eb5246692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03259179537f0742cf221f1eb5246692">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00228">228</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e59ec8b8c312b67da1e67216eb1d68c" name="a7e59ec8b8c312b67da1e67216eb1d68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e59ec8b8c312b67da1e67216eb1d68c">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00128">128</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a9fe6311b994e0a29d51366c3a5c87612" name="a9fe6311b994e0a29d51366c3a5c87612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe6311b994e0a29d51366c3a5c87612">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00209">209</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a24faa24d2e75a9ee34d3fe5349f3d1b1" name="a24faa24d2e75a9ee34d3fe5349f3d1b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24faa24d2e75a9ee34d3fe5349f3d1b1">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple tafjord-landslide.max_h = (1.1 * min(<a class="el" href="#a54c6661753a4d997196504d1f7bea2ec">size</a>) / (3.0**args.min_depth))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00108">108</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a755d7b20c6e29a25911b5fa63ff51c64" name="a755d7b20c6e29a25911b5fa63ff51c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755d7b20c6e29a25911b5fa63ff51c64">&#9670;&#160;</a></span>min_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.min_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00089">89</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7607d01f2978fb2ee3a1113c4c68c11b" name="a7607d01f2978fb2ee3a1113c4c68c11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7607d01f2978fb2ee3a1113c4c68c11b">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00208">208</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a99c72934c9be415d28f836e0ea161222" name="a99c72934c9be415d28f836e0ea161222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c72934c9be415d28f836e0ea161222">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple tafjord-landslide.min_h = <a class="el" href="#a24faa24d2e75a9ee34d3fe5349f3d1b1">max_h</a> * 3.0 ** (-args.amr_levels)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00109">109</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ac2fff4ec547900ac3de3e81d0cb48888" name="ac2fff4ec547900ac3de3e81d0cb48888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2fff4ec547900ac3de3e81d0cb48888">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00219">219</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a764c1fd356a76c8be14f9cb37e367ef8" name="a764c1fd356a76c8be14f9cb37e367ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764c1fd356a76c8be14f9cb37e367ef8">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00127">127</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ae6a25353b548f8d3c91ffe96688fb2ed" name="ae6a25353b548f8d3c91ffe96688fb2ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a25353b548f8d3c91ffe96688fb2ed">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00207">207</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ac47a5c48e4e1242d40968e83645a3f33" name="ac47a5c48e4e1242d40968e83645a3f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47a5c48e4e1242d40968e83645a3f33">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.parser = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00087">87</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a3cdc9c0b2e035e3a7c5e5a4613703c97" name="a3cdc9c0b2e035e3a7c5e5a4613703c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cdc9c0b2e035e3a7c5e5a4613703c97">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00212">212</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a1fba85807a31e6631292e2dda388a7ab" name="a1fba85807a31e6631292e2dda388a7ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fba85807a31e6631292e2dda388a7ab">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00143">143</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a827709f33b78972327cae8880ab65465" name="a827709f33b78972327cae8880ab65465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827709f33b78972327cae8880ab65465">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;applications&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;swe&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;TafjordLandslide&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;TafjordLandslide.{args.build_mode}&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00187">187</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7bcc6531cc882c9630aadba9be40603c" name="a7bcc6531cc882c9630aadba9be40603c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcc6531cc882c9630aadba9be40603c">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  auto result = ::exahype2::RefinementCommand::Keep;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  return result;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00045">45</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="afd2150305dd9f064bbaa72fd86f48ecf" name="afd2150305dd9f064bbaa72fd86f48ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2150305dd9f064bbaa72fd86f48ecf">&#9670;&#160;</a></span>regular_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.regular_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ADERDGSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=dg_order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1, <span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=0,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=args.time_step_relaxation,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00112">112</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="adff132ca4aa9f9539d4147cc56e1ce6c" name="adff132ca4aa9f9539d4147cc56e1ce6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff132ca4aa9f9539d4147cc56e1ce6c">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00132">132</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a54c6661753a4d997196504d1f7bea2ec" name="a54c6661753a4d997196504d1f7bea2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c6661753a4d997196504d1f7bea2ec">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.size = [1900, 1950]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00107">107</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7275529787e405b7d0f061b756dbd084" name="a7275529787e405b7d0f061b756dbd084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7275529787e405b7d0f061b756dbd084">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00228">228</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="acbd7a032a926c616b48b67426ebed76c" name="acbd7a032a926c616b48b67426ebed76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd7a032a926c616b48b67426ebed76c">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.time_in_between_plots = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00199">199</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a1f53793690b57e9888dd127b600e4fac" name="a1f53793690b57e9888dd127b600e4fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f53793690b57e9888dd127b600e4fac">&#9670;&#160;</a></span>time_step_relaxation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.time_step_relaxation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00091">91</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ae4a6ac769ecb63e89213d15d74cb63a9" name="ae4a6ac769ecb63e89213d15d74cb63a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a6ac769ecb63e89213d15d74cb63a9">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tafjord-landslide.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html#l00228">228</a> of file <a class="el" href="../../d3/d27/tafjord-landslide_8py_source.html">tafjord-landslide.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/dfe/namespacetafjord-landslide.html">tafjord-landslide</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:47 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

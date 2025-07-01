@@ -1,0 +1,879 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d5e/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter__inherit__graph.png" border="0" usemap="#atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_inherit__map" alt="Inheritance graph"/></div>
+<map name="atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_inherit__map" id="atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,108,247,163"/>
+<area shape="rect" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html" title="A writer for scalar data on elements." alt="" coords="19,5,233,60"/>
+<area shape="poly" title=" " alt="" coords="129,74,129,108,123,108,123,74"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dff/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter__coll__graph.png" border="0" usemap="#atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_coll__map" id="atarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_coll__map">
+<area shape="rect" title=" " alt="" coords="1800,108,2041,163"/>
+<area shape="rect" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html" title="A writer for scalar data on elements." alt="" coords="1475,5,1689,60"/>
+<area shape="poly" title=" " alt="" coords="1703,56,1777,77,1856,105,1854,110,1775,82,1702,61"/>
+<area shape="rect" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html" title="Plot Peano&#39;s mesh data in Peano&#39;s text file format." alt="" coords="1461,215,1703,269"/>
+<area shape="poly" title=" " alt="" coords="1682,208,1832,160,1834,165,1684,213"/>
+<area shape="rect" href="../../de/ddb/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter.html" title="Abstract base class for a patch plotter." alt="" coords="1081,227,1296,267"/>
+<area shape="poly" title=" " alt="" coords="1310,243,1461,241,1461,246,1310,248"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="1117,292,1260,317"/>
+<area shape="poly" title=" " alt="" coords="1274,289,1437,263,1461,260,1461,265,1438,269,1275,294"/>
+<area shape="rect" title=" " alt="" coords="819,167,905,192"/>
+<area shape="poly" title=" " alt="" coords="919,167,995,155,1081,146,1278,135,1475,129,1800,130,1800,135,1475,135,1279,140,1082,151,996,161,919,172"/>
+<area shape="poly" title=" " alt="" coords="919,181,1438,225,1461,227,1461,232,1437,230,919,186"/>
+<area shape="poly" title=" " alt="" coords="900,196,982,236,1082,277,1126,289,1124,295,1080,282,980,241,898,201"/>
+<area shape="rect" title=" " alt="" coords="581,159,720,199"/>
+<area shape="poly" title=" " alt="" coords="734,177,818,177,818,182,734,182"/>
+<area shape="rect" title=" " alt="" coords="1122,345,1255,371"/>
+<area shape="poly" title=" " alt="" coords="1269,359,1360,358,1470,349,1588,329,1646,313,1702,293,1757,264,1809,229,1890,161,1893,165,1812,233,1760,269,1704,298,1648,318,1589,334,1471,355,1361,363,1269,364"/>
+<area shape="poly" title=" " alt="" coords="1268,343,1350,326,1436,302,1524,267,1526,272,1438,307,1351,331,1269,348"/>
+<area shape="rect" title=" " alt="" coords="775,338,949,378"/>
+<area shape="poly" title=" " alt="" coords="963,355,1122,355,1122,361,963,361"/>
+<area shape="rect" title=" " alt="" coords="576,338,725,378"/>
+<area shape="poly" title=" " alt="" coords="739,355,775,355,775,361,739,361"/>
+<area shape="rect" title=" " alt="" coords="383,305,525,345"/>
+<area shape="poly" title=" " alt="" coords="539,336,576,343,575,348,538,342"/>
+<area shape="rect" title=" " alt="" coords="161,345,332,371"/>
+<area shape="poly" title=" " alt="" coords="339,340,383,333,383,339,340,346"/>
+<area shape="rect" title=" " alt="" coords="381,369,527,409"/>
+<area shape="poly" title=" " alt="" coords="346,370,381,375,380,381,345,375"/>
+<area shape="rect" title=" " alt="" coords="5,345,112,371"/>
+<area shape="poly" title=" " alt="" coords="126,355,161,355,161,361,126,361"/>
+<area shape="poly" title=" " alt="" coords="540,373,576,367,576,372,541,378"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a69dfa6379cddc042c93977aef741b34c" id="r_a69dfa6379cddc042c93977aef741b34c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69dfa6379cddc042c93977aef741b34c">CellDataWriter</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;identifier, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknownsPerAxis, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfUnknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;description, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;metaData, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *mapping, <a class="el" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter</a> &amp;writer)</td></tr>
+<tr class="separator:a69dfa6379cddc042c93977aef741b34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291d63b32c870d9183626ee64cf3e513" id="r_a291d63b32c870d9183626ee64cf3e513"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a291d63b32c870d9183626ee64cf3e513">~CellDataWriter</a> ()</td></tr>
+<tr class="separator:a291d63b32c870d9183626ee64cf3e513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447f7db1ea72fb70c0e458b78eddfa76" id="r_a447f7db1ea72fb70c0e458b78eddfa76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a447f7db1ea72fb70c0e458b78eddfa76">setPrecision</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> precision)</td></tr>
+<tr class="separator:a447f7db1ea72fb70c0e458b78eddfa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1576fa41513e95f36cacc7aa30183909" id="r_a1576fa41513e95f36cacc7aa30183909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1576fa41513e95f36cacc7aa30183909">getCellsPerPatch</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a1576fa41513e95f36cacc7aa30183909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678170bbaa042e48fb97f412b425f4d6" id="r_a678170bbaa042e48fb97f412b425f4d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a678170bbaa042e48fb97f412b425f4d6">plotCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> value)</td></tr>
+<tr class="memdesc:a678170bbaa042e48fb97f412b425f4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data for one cell.  <br /></td></tr>
+<tr class="separator:a678170bbaa042e48fb97f412b425f4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc70d558a6e908da490ab5ca05300bd6" id="r_afc70d558a6e908da490ab5ca05300bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc70d558a6e908da490ab5ca05300bd6">plotCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *values)</td></tr>
+<tr class="separator:afc70d558a6e908da490ab5ca05300bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f30b72bc06ce8d0fb00e3f80e48c357" id="r_a4f30b72bc06ce8d0fb00e3f80e48c357"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4f30b72bc06ce8d0fb00e3f80e48c357"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4f30b72bc06ce8d0fb00e3f80e48c357">plotCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, T value)</td></tr>
+<tr class="separator:a4f30b72bc06ce8d0fb00e3f80e48c357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0312c444d3aae92da2488212e8f9dc9e" id="r_a0312c444d3aae92da2488212e8f9dc9e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0312c444d3aae92da2488212e8f9dc9e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0312c444d3aae92da2488212e8f9dc9e">plotCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index, T *values)</td></tr>
+<tr class="separator:a0312c444d3aae92da2488212e8f9dc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95b8ae496a34df8d80db79930ab036a" id="r_aa95b8ae496a34df8d80db79930ab036a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa95b8ae496a34df8d80db79930ab036a">close</a> () override</td></tr>
+<tr class="memdesc:aa95b8ae496a34df8d80db79930ab036a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you close your writer, each cell/vertex has to be assigned a value, i.e.  <br /></td></tr>
+<tr class="separator:aa95b8ae496a34df8d80db79930ab036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1df31cffcc4b186da758d8ef7aec08" id="r_a2f1df31cffcc4b186da758d8ef7aec08"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1df31cffcc4b186da758d8ef7aec08">assignRemainingCellsDefaultValues</a> () override</td></tr>
+<tr class="separator:a2f1df31cffcc4b186da758d8ef7aec08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8f4db14dd3ee5e9ecf2cb93387a8c2" id="r_a5b8f4db14dd3ee5e9ecf2cb93387a8c2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b8f4db14dd3ee5e9ecf2cb93387a8c2">getFirstCellWithinPatch</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> index) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> override</td></tr>
+<tr class="separator:a5b8f4db14dd3ee5e9ecf2cb93387a8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae9a3cc5ff35ab5443cb726701a16eca7" id="r_ae9a3cc5ff35ab5443cb726701a16eca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a3cc5ff35ab5443cb726701a16eca7">flushIfPatchIsComplete</a> ()</td></tr>
+<tr class="separator:ae9a3cc5ff35ab5443cb726701a16eca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1f6e36038e281ff7089d55494332987d" id="r_a1f6e36038e281ff7089d55494332987d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f6e36038e281ff7089d55494332987d">_writer</a></td></tr>
+<tr class="separator:a1f6e36038e281ff7089d55494332987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eec4d8025942e0a564e10bb1afd1cd8" id="r_a0eec4d8025942e0a564e10bb1afd1cd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eec4d8025942e0a564e10bb1afd1cd8">_identifier</a></td></tr>
+<tr class="separator:a0eec4d8025942e0a564e10bb1afd1cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1ef534879c345808dd6d3193f1a9e8" id="r_ada1ef534879c345808dd6d3193f1a9e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada1ef534879c345808dd6d3193f1a9e8">_numberOfCellsPerAxis</a></td></tr>
+<tr class="separator:ada1ef534879c345808dd6d3193f1a9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd52baf3a50b1aff3ad2f0a4f1f862a" id="r_aefd52baf3a50b1aff3ad2f0a4f1f862a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd52baf3a50b1aff3ad2f0a4f1f862a">_numberOfUnknowns</a></td></tr>
+<tr class="separator:aefd52baf3a50b1aff3ad2f0a4f1f862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad274ccd3ea378c5641153b81604f1763" id="r_ad274ccd3ea378c5641153b81604f1763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad274ccd3ea378c5641153b81604f1763">_entryCounter</a></td></tr>
+<tr class="separator:ad274ccd3ea378c5641153b81604f1763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb949ac9296006be63fb8e6ae864446" id="r_a3bb949ac9296006be63fb8e6ae864446"><td class="memItemLeft" align="right" valign="top">std::stringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bb949ac9296006be63fb8e6ae864446">_out</a></td></tr>
+<tr class="separator:a3bb949ac9296006be63fb8e6ae864446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00113">113</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a69dfa6379cddc042c93977aef741b34c" name="a69dfa6379cddc042c93977aef741b34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69dfa6379cddc042c93977aef741b34c">&#9670;&#160;</a></span>CellDataWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::CellDataWriter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>identifier</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknownsPerAxis</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfUnknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>description</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>metaData</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *</td>          <td class="paramname"><span class="paramname"><em>mapping</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>writer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00118">_numberOfCellsPerAxis</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00119">_numberOfUnknowns</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00121">_out</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00087">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::_snapshotFileOut</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00115">_writer</a>, <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00036">getCellsPerPatch()</a>, <a class="el" href="../../df/d37/PeanoTextPatchFileWriter_8cpp_source.html#l00305">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::writeMapping()</a>, and <a class="el" href="../../df/d37/PeanoTextPatchFileWriter_8cpp_source.html#l00317">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::writeMetaData()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a69dfa6379cddc042c93977aef741b34c_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a69dfa6379cddc042c93977aef741b34c_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a69dfa6379cddc042c93977aef741b34c_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a69dfa6379cddc042c93977aef741b34c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,84,299,139"/>
+<area shape="rect" href="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html#a1576fa41513e95f36cacc7aa30183909" title=" " alt="" coords="347,5,653,60"/>
+<area shape="poly" title=" " alt="" coords="273,81,364,61,366,66,274,87"/>
+<area shape="rect" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html#a39830643c9bb20d0e0131b28f0f71723" title=" " alt="" coords="379,84,621,139"/>
+<area shape="poly" title=" " alt="" coords="299,109,366,109,366,114,299,114"/>
+<area shape="rect" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html#aab0f25cddee664baeff2bdecb4521011" title=" " alt="" coords="379,163,621,217"/>
+<area shape="poly" title=" " alt="" coords="274,136,366,157,365,162,273,141"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#aa720f9cfb5b8cec88b7494ae40ce2fba" title="Computes the i&#45;th power of a in integer arithmetic." alt="" coords="701,20,824,45"/>
+<area shape="poly" title=" " alt="" coords="654,30,687,30,687,35,654,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a291d63b32c870d9183626ee64cf3e513" name="a291d63b32c870d9183626ee64cf3e513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a291d63b32c870d9183626ee64cf3e513">&#9670;&#160;</a></span>~CellDataWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::~CellDataWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#afa7394cab8353c0b67545bbe6b431aaf">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2f1df31cffcc4b186da758d8ef7aec08" name="a2f1df31cffcc4b186da758d8ef7aec08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1df31cffcc4b186da758d8ef7aec08">&#9670;&#160;</a></span>assignRemainingCellsDefaultValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::assignRemainingCellsDefaultValues </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa95b8ae496a34df8d80db79930ab036a" title="If you close your writer, each cell/vertex has to be assigned a value, i.e.">close()</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#abce5c9c6883893b0f96cb641b596989f">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01076">assertionMsg</a>.</p>
+
+</div>
+</div>
+<a id="aa95b8ae496a34df8d80db79930ab036a" name="aa95b8ae496a34df8d80db79930ab036a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95b8ae496a34df8d80db79930ab036a">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If you close your writer, each cell/vertex has to be assigned a value, i.e. </p>
+<p>you may not add less data than you have cells. See </p>
+
+<p>Implements <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#abd0fa8af895ee35467c3c944ccafa4d7">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae9a3cc5ff35ab5443cb726701a16eca7" name="ae9a3cc5ff35ab5443cb726701a16eca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a3cc5ff35ab5443cb726701a16eca7">&#9670;&#160;</a></span>flushIfPatchIsComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::flushIfPatchIsComplete </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00002">plotCell()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_ae9a3cc5ff35ab5443cb726701a16eca7_icgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_ae9a3cc5ff35ab5443cb726701a16eca7_icgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_ae9a3cc5ff35ab5443cb726701a16eca7_icgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_ae9a3cc5ff35ab5443cb726701a16eca7_icgraph">
+<area shape="rect" title=" " alt="" coords="300,5,572,75"/>
+<area shape="rect" href="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html#a4f30b72bc06ce8d0fb00e3f80e48c357" title=" " alt="" coords="5,13,252,67"/>
+<area shape="poly" title=" " alt="" coords="286,43,252,43,252,37,286,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1576fa41513e95f36cacc7aa30183909" name="a1576fa41513e95f36cacc7aa30183909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1576fa41513e95f36cacc7aa30183909">&#9670;&#160;</a></span>getCellsPerPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::getCellsPerPatch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00020">tarch::la::aPowI()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">CellDataWriter()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,312,60"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#aa720f9cfb5b8cec88b7494ae40ce2fba" title="Computes the i&#45;th power of a in integer arithmetic." alt="" coords="360,20,483,45"/>
+<area shape="poly" title=" " alt="" coords="312,30,346,30,346,35,312,35"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_icgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_icgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_icgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a1576fa41513e95f36cacc7aa30183909_icgraph">
+<area shape="rect" title=" " alt="" coords="347,5,653,60"/>
+<area shape="rect" href="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html#a69dfa6379cddc042c93977aef741b34c" title=" " alt="" coords="5,5,299,60"/>
+<area shape="poly" title=" " alt="" coords="333,35,299,35,299,30,333,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b8f4db14dd3ee5e9ecf2cb93387a8c2" name="a5b8f4db14dd3ee5e9ecf2cb93387a8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8f4db14dd3ee5e9ecf2cb93387a8c2">&#9670;&#160;</a></span>getFirstCellWithinPatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::getFirstCellWithinPatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a678170bbaa042e48fb97f412b425f4d6" title="Write data for one cell.">plotCell()</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#a90d169133ccd55c081f0b0e3126dd339">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc70d558a6e908da490ab5ca05300bd6" name="afc70d558a6e908da490ab5ca05300bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc70d558a6e908da490ab5ca05300bd6">&#9670;&#160;</a></span>plotCell() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::plotCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *</td>          <td class="paramname"><span class="paramname"><em>values</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#a8c23b3b266589e4042ae822a43a3166c">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, and <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_afc70d558a6e908da490ab5ca05300bd6_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_afc70d558a6e908da490ab5ca05300bd6_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_afc70d558a6e908da490ab5ca05300bd6_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_afc70d558a6e908da490ab5ca05300bd6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,16,252,71"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="327,5,400,31"/>
+<area shape="poly" title=" " alt="" coords="252,27,313,21,313,26,252,33"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="300,55,427,80"/>
+<area shape="poly" title=" " alt="" coords="252,53,286,57,286,62,252,59"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a678170bbaa042e48fb97f412b425f4d6" name="a678170bbaa042e48fb97f412b425f4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678170bbaa042e48fb97f412b425f4d6">&#9670;&#160;</a></span>plotCell() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::plotCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write data for one cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td><a class="el" href="../../d9/d55/classIndex.html">Index</a> of the cell. This index has to equal the index used for the cell within the VTKWriter class interface. </td></tr>
+    <tr><td class="paramname">value</td><td>Value for the cell. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d3/d3d/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PatchWriter_1_1CellDataWriter.html#a22edbd06ae534fada4de834b818b1c5d">tarch::plotter::griddata::blockstructured::PatchWriter::CellDataWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, and <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a678170bbaa042e48fb97f412b425f4d6_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a678170bbaa042e48fb97f412b425f4d6_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a678170bbaa042e48fb97f412b425f4d6_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a678170bbaa042e48fb97f412b425f4d6_cgraph">
+<area shape="rect" title="Write data for one cell." alt="" coords="5,16,252,71"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="327,5,400,31"/>
+<area shape="poly" title=" " alt="" coords="252,27,313,21,313,26,252,33"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="300,55,427,80"/>
+<area shape="poly" title=" " alt="" coords="252,53,286,57,286,62,252,59"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0312c444d3aae92da2488212e8f9dc9e" name="a0312c444d3aae92da2488212e8f9dc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0312c444d3aae92da2488212e8f9dc9e">&#9670;&#160;</a></span>plotCell() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::plotCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>values</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00021">21</a> of file <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, and <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a0312c444d3aae92da2488212e8f9dc9e_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a0312c444d3aae92da2488212e8f9dc9e_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a0312c444d3aae92da2488212e8f9dc9e_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a0312c444d3aae92da2488212e8f9dc9e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,16,252,71"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="327,5,400,31"/>
+<area shape="poly" title=" " alt="" coords="252,27,313,21,313,26,252,33"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="300,55,427,80"/>
+<area shape="poly" title=" " alt="" coords="252,53,286,57,286,62,252,59"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4f30b72bc06ce8d0fb00e3f80e48c357" name="a4f30b72bc06ce8d0fb00e3f80e48c357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f30b72bc06ce8d0fb00e3f80e48c357">&#9670;&#160;</a></span>plotCell() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::plotCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00002">2</a> of file <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00120">_entryCounter</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00119">_numberOfUnknowns</a>, <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00121">_out</a>, <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>, and <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00087">flushIfPatchIsComplete()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a4f30b72bc06ce8d0fb00e3f80e48c357_cgraph.png" border="0" usemap="#ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a4f30b72bc06ce8d0fb00e3f80e48c357_cgraph" alt=""/></div>
+<map name="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a4f30b72bc06ce8d0fb00e3f80e48c357_cgraph" id="ad3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter_a4f30b72bc06ce8d0fb00e3f80e48c357_cgraph">
+<area shape="rect" title=" " alt="" coords="5,40,252,95"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="399,5,473,31"/>
+<area shape="poly" title=" " alt="" coords="252,45,385,23,386,29,253,50"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="373,55,499,80"/>
+<area shape="poly" title=" " alt="" coords="252,65,359,65,359,70,252,70"/>
+<area shape="rect" href="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html#ae9a3cc5ff35ab5443cb726701a16eca7" title=" " alt="" coords="300,105,572,174"/>
+<area shape="poly" title=" " alt="" coords="247,92,287,102,286,107,245,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a447f7db1ea72fb70c0e458b78eddfa76" name="a447f7db1ea72fb70c0e458b78eddfa76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447f7db1ea72fb70c0e458b78eddfa76">&#9670;&#160;</a></span>setPrecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::setPrecision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>precision</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.cplusplus.com/reference/iomanip/setprecision/">https://www.cplusplus.com/reference/iomanip/setprecision/</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad274ccd3ea378c5641153b81604f1763" name="ad274ccd3ea378c5641153b81604f1763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad274ccd3ea378c5641153b81604f1763">&#9670;&#160;</a></span>_entryCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_entryCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00120">120</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00002">plotCell()</a>.</p>
+
+</div>
+</div>
+<a id="a0eec4d8025942e0a564e10bb1afd1cd8" name="a0eec4d8025942e0a564e10bb1afd1cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eec4d8025942e0a564e10bb1afd1cd8">&#9670;&#160;</a></span>_identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_identifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00117">117</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+</div>
+</div>
+<a id="ada1ef534879c345808dd6d3193f1a9e8" name="ada1ef534879c345808dd6d3193f1a9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1ef534879c345808dd6d3193f1a9e8">&#9670;&#160;</a></span>_numberOfCellsPerAxis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_numberOfCellsPerAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00118">118</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">CellDataWriter()</a>.</p>
+
+</div>
+</div>
+<a id="aefd52baf3a50b1aff3ad2f0a4f1f862a" name="aefd52baf3a50b1aff3ad2f0a4f1f862a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd52baf3a50b1aff3ad2f0a4f1f862a">&#9670;&#160;</a></span>_numberOfUnknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_numberOfUnknowns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00119">119</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">CellDataWriter()</a>, and <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00002">plotCell()</a>.</p>
+
+</div>
+</div>
+<a id="a3bb949ac9296006be63fb8e6ae864446" name="a3bb949ac9296006be63fb8e6ae864446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb949ac9296006be63fb8e6ae864446">&#9670;&#160;</a></span>_out</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stringstream tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_out</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00121">121</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">CellDataWriter()</a>, and <a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html#l00002">plotCell()</a>.</p>
+
+</div>
+</div>
+<a id="a1f6e36038e281ff7089d55494332987d" name="a1f6e36038e281ff7089d55494332987d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6e36038e281ff7089d55494332987d">&#9670;&#160;</a></span>_writer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html">tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter</a>&amp; tarch::plotter::griddata::blockstructured::PeanoTextPatchFileWriter::CellDataWriter::_writer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html#l00115">115</a> of file <a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html#l00007">CellDataWriter()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/plotter/griddata/blockstructured/<a class="el" href="../../db/d51/PeanoTextPatchFileWriter_8h_source.html">PeanoTextPatchFileWriter.h</a></li>
+<li>src/tarch/plotter/griddata/blockstructured/<a class="el" href="../../d4/da9/PeanoTextPatchFileWriter__CellDataWriter_8cpp_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpp</a></li>
+<li>src/tarch/plotter/griddata/blockstructured/<a class="el" href="../../d6/d82/PeanoTextPatchFileWriter__CellDataWriter_8cpph_source.html">PeanoTextPatchFileWriter_CellDataWriter.cpph</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../da/d2f/namespacetarch_1_1plotter.html">plotter</a></li><li class="navelem"><a class="el" href="../../d6/ddb/namespacetarch_1_1plotter_1_1griddata.html">griddata</a></li><li class="navelem"><a class="el" href="../../d7/d25/namespacetarch_1_1plotter_1_1griddata_1_1blockstructured.html">blockstructured</a></li><li class="navelem"><a class="el" href="../../d5/df4/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter.html">PeanoTextPatchFileWriter</a></li><li class="navelem"><a class="el" href="../../d3/d0f/classtarch_1_1plotter_1_1griddata_1_1blockstructured_1_1PeanoTextPatchFileWriter_1_1CellDataWriter.html">CellDataWriter</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:56 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

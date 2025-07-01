@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d7a/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition__inherit__graph.png" border="0" usemap="#aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_inherit__map" alt="Inheritance graph"/></div>
+<map name="aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_inherit__map" id="aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_inherit__map">
+<area shape="rect" title=" " alt="" coords="37,255,265,295"/>
+<area shape="rect" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html" title=" " alt="" coords="5,167,296,207"/>
+<area shape="poly" title=" " alt="" coords="153,221,153,254,148,254,148,221"/>
+<area shape="rect" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html" title="Action set (reactions to events)" alt="" coords="53,79,248,119"/>
+<area shape="poly" title=" " alt="" coords="153,133,153,166,148,166,148,133"/>
+<area shape="rect" title=" " alt="" coords="119,5,182,31"/>
+<area shape="poly" title=" " alt="" coords="153,44,153,79,148,79,148,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d1f/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition__coll__graph.png" border="0" usemap="#aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_coll__map" alt="Collaboration graph"/></div>
+<map name="aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_coll__map" id="aexahype2_8solvers_8fv_8actionsets_8InitialCondition_8InitialCondition_coll__map">
+<area shape="rect" title=" " alt="" coords="37,255,265,295"/>
+<area shape="rect" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html" title=" " alt="" coords="5,167,296,207"/>
+<area shape="poly" title=" " alt="" coords="153,221,153,254,148,254,148,221"/>
+<area shape="rect" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html" title="Action set (reactions to events)" alt="" coords="53,79,248,119"/>
+<area shape="poly" title=" " alt="" coords="153,133,153,166,148,166,148,133"/>
+<area shape="rect" title=" " alt="" coords="119,5,182,31"/>
+<area shape="poly" title=" " alt="" coords="153,44,153,79,148,79,148,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abc07894cb2225221cea6a9f042aebe07" id="r_abc07894cb2225221cea6a9f042aebe07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc07894cb2225221cea6a9f042aebe07">__init__</a> (self, solver, <a class="el" href="#a23ac4a7c59865827d6fcfeaf6901b6c6">guard</a>, <a class="el" href="#a1fed2cc49f41cabfe6a5851356751b3a">grid_is_constructed</a>, restart_from_checkpoint=False, loading_scheme=&quot;local-loading&quot;)</td></tr>
+<tr class="memdesc:abc07894cb2225221cea6a9f042aebe07"><td class="mdescLeft">&#160;</td><td class="mdescRight">solver: FV Reference to creating class  <br /></td></tr>
+<tr class="separator:abc07894cb2225221cea6a9f042aebe07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f23976bb5f8344ad75c53429bc3a7e" id="r_ac1f23976bb5f8344ad75c53429bc3a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1f23976bb5f8344ad75c53429bc3a7e">get_body_of_operation</a> (self, operation_name)</td></tr>
+<tr class="memdesc:ac1f23976bb5f8344ad75c53429bc3a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return actual C++ code snippets to be inserted into C++ code.  <br /></td></tr>
+<tr class="separator:ac1f23976bb5f8344ad75c53429bc3a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fca7d13bd2f0480e4c436a97a0905a" id="r_a09fca7d13bd2f0480e4c436a97a0905a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fca7d13bd2f0480e4c436a97a0905a">get_body_of_prepareTraversal</a> (self)</td></tr>
+<tr class="separator:a09fca7d13bd2f0480e4c436a97a0905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d9f2d809ee1006ab076964ee74bc16" id="r_a90d9f2d809ee1006ab076964ee74bc16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d9f2d809ee1006ab076964ee74bc16">get_action_set_name</a> (self)</td></tr>
+<tr class="memdesc:a90d9f2d809ee1006ab076964ee74bc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">You should replicate this function in each subclass, so you get meaningful action set names (otherwise, it will be AbstractFVActionSet0,1,2,...).  <br /></td></tr>
+<tr class="separator:a90d9f2d809ee1006ab076964ee74bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfb9735773cf1f3479cf5d8ba9fc121" id="r_accfb9735773cf1f3479cf5d8ba9fc121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accfb9735773cf1f3479cf5d8ba9fc121">get_includes</a> (self)</td></tr>
+<tr class="memdesc:accfb9735773cf1f3479cf5d8ba9fc121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return include statements that you need.  <br /></td></tr>
+<tr class="separator:accfb9735773cf1f3479cf5d8ba9fc121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a05ec4c8e13629f0a4dd96e359d4c9" id="r_af1a05ec4c8e13629f0a4dd96e359d4c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a05ec4c8e13629f0a4dd96e359d4c9">get_static_initialisations</a> (self, full_qualified_classname)</td></tr>
+<tr class="separator:af1a05ec4c8e13629f0a4dd96e359d4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6bff104fbdc106261c4b51e802fabb" id="r_a1d6bff104fbdc106261c4b51e802fabb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6bff104fbdc106261c4b51e802fabb">get_attributes</a> (self)</td></tr>
+<tr class="memdesc:a1d6bff104fbdc106261c4b51e802fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attributes as copied and pasted into the generated class.  <br /></td></tr>
+<tr class="separator:a1d6bff104fbdc106261c4b51e802fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11deeff5f448b0a1a6e1ced12d091a30" id="r_a11deeff5f448b0a1a6e1ced12d091a30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11deeff5f448b0a1a6e1ced12d091a30">get_template_for_restarting</a> (self)</td></tr>
+<tr class="separator:a11deeff5f448b0a1a6e1ced12d091a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5efd58532d682215d65d2d8f0d66fe" id="r_aae5efd58532d682215d65d2d8f0d66fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae5efd58532d682215d65d2d8f0d66fe">get_template_for_restart_preprocessing</a> (self)</td></tr>
+<tr class="separator:aae5efd58532d682215d65d2d8f0d66fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d9f2d809ee1006ab076964ee74bc16" id="r_a90d9f2d809ee1006ab076964ee74bc16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d9f2d809ee1006ab076964ee74bc16">get_action_set_name</a> (self)</td></tr>
+<tr class="memdesc:a90d9f2d809ee1006ab076964ee74bc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">You should replicate this function in each subclass, so you get meaningful action set names (otherwise, it will be AbstractFVActionSet0,1,2,...).  <br /></td></tr>
+<tr class="separator:a90d9f2d809ee1006ab076964ee74bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfb9735773cf1f3479cf5d8ba9fc121" id="r_accfb9735773cf1f3479cf5d8ba9fc121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accfb9735773cf1f3479cf5d8ba9fc121">get_includes</a> (self)</td></tr>
+<tr class="memdesc:accfb9735773cf1f3479cf5d8ba9fc121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return include statements that you need.  <br /></td></tr>
+<tr class="separator:accfb9735773cf1f3479cf5d8ba9fc121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a></td></tr>
+<tr class="memitem:a9423c1aabc0c80436881fed837ed3ad0 inherit pub_methods_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet" id="r_a9423c1aabc0c80436881fed837ed3ad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#a9423c1aabc0c80436881fed837ed3ad0">user_should_modify_template</a> (self)</td></tr>
+<tr class="memdesc:a9423c1aabc0c80436881fed837ed3ad0 inherit pub_methods_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the user allowed to modify the output.  <br /></td></tr>
+<tr class="separator:a9423c1aabc0c80436881fed837ed3ad0 inherit pub_methods_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html">peano4.solversteps.ActionSet.ActionSet</a></td></tr>
+<tr class="memitem:a42ef63272b2b1be65f3424e7e41f4563 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a42ef63272b2b1be65f3424e7e41f4563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a42ef63272b2b1be65f3424e7e41f4563">get_constructor_body</a> (self)</td></tr>
+<tr class="memdesc:a42ef63272b2b1be65f3424e7e41f4563 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a tailored constructor body.  <br /></td></tr>
+<tr class="separator:a42ef63272b2b1be65f3424e7e41f4563 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2009e9a9f132808ab926c5c992b2c1 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_adb2009e9a9f132808ab926c5c992b2c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#adb2009e9a9f132808ab926c5c992b2c1">get_destructor_body</a> (self)</td></tr>
+<tr class="separator:adb2009e9a9f132808ab926c5c992b2c1 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1466c1a85c79f5a5a8a1e9ff51d9825 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_aa1466c1a85c79f5a5a8a1e9ff51d9825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#aa1466c1a85c79f5a5a8a1e9ff51d9825">get_body_of_getGridControlEvents</a> (self)</td></tr>
+<tr class="separator:aa1466c1a85c79f5a5a8a1e9ff51d9825 inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d7902f2995f9a621c45b4a31a564a inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a622d7902f2995f9a621c45b4a31a564a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a622d7902f2995f9a621c45b4a31a564a">get_body_of_unprepareTraversal</a> (self)</td></tr>
+<tr class="separator:a622d7902f2995f9a621c45b4a31a564a inherit pub_methods_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a23ac4a7c59865827d6fcfeaf6901b6c6" id="r_a23ac4a7c59865827d6fcfeaf6901b6c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23ac4a7c59865827d6fcfeaf6901b6c6">guard</a></td></tr>
+<tr class="separator:a23ac4a7c59865827d6fcfeaf6901b6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fed2cc49f41cabfe6a5851356751b3a" id="r_a1fed2cc49f41cabfe6a5851356751b3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fed2cc49f41cabfe6a5851356751b3a">grid_is_constructed</a></td></tr>
+<tr class="separator:a1fed2cc49f41cabfe6a5851356751b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet')"><img src="../../closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html">peano4.solversteps.ActionSet.ActionSet</a></td></tr>
+<tr class="memitem:a9a22b5b6b8d07fdd45c4b6db4a4258b5 inherit pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a9a22b5b6b8d07fdd45c4b6db4a4258b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a9a22b5b6b8d07fdd45c4b6db4a4258b5">descend_invocation_order</a></td></tr>
+<tr class="separator:a9a22b5b6b8d07fdd45c4b6db4a4258b5 inherit pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5edb7cd8b8094390f0fe9baf0c11cb inherit pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a5e5edb7cd8b8094390f0fe9baf0c11cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a5e5edb7cd8b8094390f0fe9baf0c11cb">parallel</a></td></tr>
+<tr class="separator:a5e5edb7cd8b8094390f0fe9baf0c11cb inherit pub_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a65bd55a66293c36b17433e8f0991d5de" id="r_a65bd55a66293c36b17433e8f0991d5de"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65bd55a66293c36b17433e8f0991d5de">TemplateInitialCondition</a></td></tr>
+<tr class="separator:a65bd55a66293c36b17433e8f0991d5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html">peano4.solversteps.ActionSet.ActionSet</a></td></tr>
+<tr class="memitem:ac3437982fd8038593e6242f8dca480d5 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_ac3437982fd8038593e6242f8dca480d5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ac3437982fd8038593e6242f8dca480d5">OPERATION_BEGIN_TRAVERSAL</a> = &quot;beginTraversal&quot;</td></tr>
+<tr class="separator:ac3437982fd8038593e6242f8dca480d5 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4cfb898b54649528b71cf462249d17f inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_ab4cfb898b54649528b71cf462249d17f"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ab4cfb898b54649528b71cf462249d17f">OPERATION_END_TRAVERSAL</a> = &quot;endTraversal&quot;</td></tr>
+<tr class="separator:ab4cfb898b54649528b71cf462249d17f inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ece5c556c4de9c3c03a6e5640cd33bd inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a6ece5c556c4de9c3c03a6e5640cd33bd"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a6ece5c556c4de9c3c03a6e5640cd33bd">OPERATION_CREATE_PERSISTENT_VERTEX</a> = &quot;createPersistentVertex&quot;</td></tr>
+<tr class="separator:a6ece5c556c4de9c3c03a6e5640cd33bd inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29765ec2e66953ce63cfb530f9169114 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a29765ec2e66953ce63cfb530f9169114"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a29765ec2e66953ce63cfb530f9169114">OPERATION_DESTROY_PERSISTENT_VERTEX</a> = &quot;destroyPersistentVertex&quot;</td></tr>
+<tr class="separator:a29765ec2e66953ce63cfb530f9169114 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113e3e2fa760e6b7f4d81dbe7d8eaaa3 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a113e3e2fa760e6b7f4d81dbe7d8eaaa3"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a113e3e2fa760e6b7f4d81dbe7d8eaaa3">OPERATION_CREATE_HANGING_VERTEX</a> = &quot;createHangingVertex&quot;</td></tr>
+<tr class="separator:a113e3e2fa760e6b7f4d81dbe7d8eaaa3 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623192a2c22e95c35be3ae303e189450 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a623192a2c22e95c35be3ae303e189450"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a623192a2c22e95c35be3ae303e189450">OPERATION_DESTROY_HANGING_VERTEX</a> = &quot;destroyHangingVertex&quot;</td></tr>
+<tr class="separator:a623192a2c22e95c35be3ae303e189450 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955dad53f29ce5caddc388cc2f411edc inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a955dad53f29ce5caddc388cc2f411edc"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a955dad53f29ce5caddc388cc2f411edc">OPERATION_CREATE_PERSISTENT_FACE</a> = &quot;createPersistentFace&quot;</td></tr>
+<tr class="separator:a955dad53f29ce5caddc388cc2f411edc inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72b7356a89e20a498ee1909c14e6793 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_ab72b7356a89e20a498ee1909c14e6793"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ab72b7356a89e20a498ee1909c14e6793">OPERATION_DESTROY_PERSISTENT_FACE</a> = &quot;destroyPersistentFace&quot;</td></tr>
+<tr class="separator:ab72b7356a89e20a498ee1909c14e6793 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698743d63de6644548a9c54f5e442f7 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a4698743d63de6644548a9c54f5e442f7"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a4698743d63de6644548a9c54f5e442f7">OPERATION_CREATE_HANGING_FACE</a> = &quot;createHangingFace&quot;</td></tr>
+<tr class="separator:a4698743d63de6644548a9c54f5e442f7 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4dfdb72406c0c55e005282306babd7c inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_af4dfdb72406c0c55e005282306babd7c"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#af4dfdb72406c0c55e005282306babd7c">OPERATION_DESTROY_HANGING_FACE</a> = &quot;destroyHangingFace&quot;</td></tr>
+<tr class="separator:af4dfdb72406c0c55e005282306babd7c inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365ee0aade077be9eed6f422f5772cd1 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a365ee0aade077be9eed6f422f5772cd1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a365ee0aade077be9eed6f422f5772cd1">OPERATION_CREATE_CELL</a> = &quot;createCell&quot;</td></tr>
+<tr class="separator:a365ee0aade077be9eed6f422f5772cd1 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d1047d904c83ff4bd710336e6dbe5f inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a54d1047d904c83ff4bd710336e6dbe5f"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a54d1047d904c83ff4bd710336e6dbe5f">OPERATION_DESTROY_CELL</a> = &quot;destroyCell&quot;</td></tr>
+<tr class="separator:a54d1047d904c83ff4bd710336e6dbe5f inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cfa7116663e733cd8bcaf21033659a inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a22cfa7116663e733cd8bcaf21033659a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a22cfa7116663e733cd8bcaf21033659a">OPERATION_TOUCH_VERTEX_FIRST_TIME</a> = &quot;touchVertexFirstTime&quot;</td></tr>
+<tr class="separator:a22cfa7116663e733cd8bcaf21033659a inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab754891294fca9e6d2f25ecd7ded0edf inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_ab754891294fca9e6d2f25ecd7ded0edf"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ab754891294fca9e6d2f25ecd7ded0edf">OPERATION_TOUCH_VERTEX_LAST_TIME</a> = &quot;touchVertexLastTime&quot;</td></tr>
+<tr class="separator:ab754891294fca9e6d2f25ecd7ded0edf inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4da1c7391de12bb81e7ee8336426fca inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_af4da1c7391de12bb81e7ee8336426fca"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#af4da1c7391de12bb81e7ee8336426fca">OPERATION_TOUCH_FACE_FIRST_TIME</a> = &quot;touchFaceFirstTime&quot;</td></tr>
+<tr class="separator:af4da1c7391de12bb81e7ee8336426fca inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a8e98a735aabd95fc0de735376efe1 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a59a8e98a735aabd95fc0de735376efe1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a59a8e98a735aabd95fc0de735376efe1">OPERATION_TOUCH_FACE_LAST_TIME</a> = &quot;touchFaceLastTime&quot;</td></tr>
+<tr class="separator:a59a8e98a735aabd95fc0de735376efe1 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c1afeb88cbc8184c0a8517dad5d2e4 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_ae2c1afeb88cbc8184c0a8517dad5d2e4"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ae2c1afeb88cbc8184c0a8517dad5d2e4">OPERATION_TOUCH_CELL_FIRST_TIME</a> = &quot;touchCellFirstTime&quot;</td></tr>
+<tr class="separator:ae2c1afeb88cbc8184c0a8517dad5d2e4 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f86305874671e85d8452403e4136c2 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet" id="r_a79f86305874671e85d8452403e4136c2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a79f86305874671e85d8452403e4136c2">OPERATION_TOUCH_CELL_LAST_TIME</a> = &quot;touchCellLastTime&quot;</td></tr>
+<tr class="separator:a79f86305874671e85d8452403e4136c2 inherit pub_static_attribs_classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8348f771562aa7bf7eca18b73fbd106c" id="r_a8348f771562aa7bf7eca18b73fbd106c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8348f771562aa7bf7eca18b73fbd106c">_restart_from_checkpoint</a></td></tr>
+<tr class="separator:a8348f771562aa7bf7eca18b73fbd106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71720927d3d5965c5427423b09f08e40" id="r_a71720927d3d5965c5427423b09f08e40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71720927d3d5965c5427423b09f08e40">_loading_scheme</a></td></tr>
+<tr class="separator:a71720927d3d5965c5427423b09f08e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a></td></tr>
+<tr class="memitem:a6e906b2e6617fd0ca3a5ce620a81fc31 inherit pro_attribs_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet" id="r_a6e906b2e6617fd0ca3a5ce620a81fc31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#a6e906b2e6617fd0ca3a5ce620a81fc31">_solver</a></td></tr>
+<tr class="separator:a6e906b2e6617fd0ca3a5ce620a81fc31 inherit pro_attribs_classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00009">9</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abc07894cb2225221cea6a9f042aebe07" name="abc07894cb2225221cea6a9f042aebe07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc07894cb2225221cea6a9f042aebe07">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>solver</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>guard</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>grid_is_constructed</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>restart_from_checkpoint</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>loading_scheme</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;local-loading&quot;</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>solver: FV Reference to creating class </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#a0fddbd00f111c11b019f8a2ece0c4f85">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00010">10</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90d9f2d809ee1006ab076964ee74bc16" name="a90d9f2d809ee1006ab076964ee74bc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d9f2d809ee1006ab076964ee74bc16">&#9670;&#160;</a></span>get_action_set_name() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_action_set_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>You should replicate this function in each subclass, so you get meaningful action set names (otherwise, it will be AbstractFVActionSet0,1,2,...). </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#aecdc357d8d0985442b28a0a07bd78430">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00049">49</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+</div>
+</div>
+<a id="a90d9f2d809ee1006ab076964ee74bc16" name="a90d9f2d809ee1006ab076964ee74bc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d9f2d809ee1006ab076964ee74bc16">&#9670;&#160;</a></span>get_action_set_name() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_action_set_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>You should replicate this function in each subclass, so you get meaningful action set names (otherwise, it will be AbstractFVActionSet0,1,2,...). </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#aecdc357d8d0985442b28a0a07bd78430">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00230">230</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+</div>
+</div>
+<a id="a1d6bff104fbdc106261c4b51e802fabb" name="a1d6bff104fbdc106261c4b51e802fabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6bff104fbdc106261c4b51e802fabb">&#9670;&#160;</a></span>get_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_attributes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return attributes as copied and pasted into the generated class. </p>
+<p>Please note that action sets are not persistent, i.e. there is one object creation per grid sweep per tree. </p>
+
+<p>Reimplemented from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#aa76ac1ddc7bc67ec681b7ca13f058106">peano4.solversteps.ActionSet.ActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00076">76</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00064">exahype2.Project.Project._restart_from_checkpoint</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>.</p>
+
+</div>
+</div>
+<a id="ac1f23976bb5f8344ad75c53429bc3a7e" name="ac1f23976bb5f8344ad75c53429bc3a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f23976bb5f8344ad75c53429bc3a7e">&#9670;&#160;</a></span>get_body_of_operation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>operation_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return actual C++ code snippets to be inserted into C++ code. </p>
+<p>See class' string constants starting with OPERATION_ for possible values of operation_name. </p>
+
+<p>Reimplemented from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#a0547c81924a7a882b0c3ecb1613c92de">peano4.solversteps.ActionSet.ActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">18</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00064">exahype2.Project.Project._restart_from_checkpoint</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, <a class="el" href="../../d8/db5/ComputeFirstDerivatives_8py_source.html#l00109">ComputeFirstDerivatives.ComputeFirstDerivativesFD4RK._solver</a>, <a class="el" href="../../d3/d34/AbstractADERDGActionSet_8py_source.html#l00011">exahype2.solvers.aderdg.actionsets.AbstractADERDGActionSet.AbstractADERDGActionSet._solver</a>, <a class="el" href="../../d7/dfc/AbstractFVActionSet_8py_source.html#l00012">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet._solver</a>, <a class="el" href="../../d8/d95/AbstractLimiterActionSet_8py_source.html#l00008">exahype2.solvers.limiting.actionsets.AbstractLimiterActionSet.AbstractLimiterActionSet._solver</a>, <a class="el" href="../../d2/d8b/AbstractRungeKuttaDGActionSet_8py_source.html#l00017">exahype2.solvers.rkdg.actionsets.AbstractRungeKuttaDGActionSet.AbstractRungeKuttaDGActionSet._solver</a>, <a class="el" href="../../df/d4e/AbstractRKFDActionSet_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.AbstractRKFDActionSet.AbstractRKFDActionSet._solver</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00139">exahype2.solvers.rkfd.actionsets.PreprocessSolution.PreprocessReconstructedSolutionWithHalo._solver</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00148">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.UpdateCell._solver</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00146">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.UpdateCell._solver</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00119">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restarting()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00119">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_template_for_restarting()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00013">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00038">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00013">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../db/d09/Correction_8py_source.html#l00086">exahype2.solvers.aderdg.actionsets.Correction.Correction.guard</a>, <a class="el" href="../../df/d84/Prediction_8py_source.html#l00118">exahype2.solvers.aderdg.actionsets.Prediction.Prediction.guard</a>, <a class="el" href="../../dc/d02/PredictionOnHangingCells_8py_source.html#l00128">exahype2.solvers.aderdg.actionsets.PredictionOnHangingCells.PredictionOnHangingCells.guard</a>, <a class="el" href="../../d3/dbd/fv_2actionsets_2AdaptivityCriterion_8py_source.html#l00162">exahype2.solvers.fv.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../d9/d6f/EnclaveTasking_8py_source.html#l00050">exahype2.solvers.fv.actionsets.EnclaveTasking.EnclaveTasking.guard</a>, <a class="el" href="../../dc/d24/fv_2actionsets_2HandleBoundary_8py_source.html#l00105">exahype2.solvers.fv.actionsets.HandleBoundary.HandleBoundary.guard</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00012">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../dc/d93/fv_2actionsets_2PostprocessSolution_8py_source.html#l00022">exahype2.solvers.fv.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../dc/d93/fv_2actionsets_2PostprocessSolution_8py_source.html#l00060">exahype2.solvers.fv.actionsets.PostprocessSolution.VolumeWisePostprocessSolution.guard</a>, <a class="el" href="../../d3/df1/fv_2actionsets_2PreprocessSolution_8py_source.html#l00020">exahype2.solvers.fv.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d3/df1/fv_2actionsets_2PreprocessSolution_8py_source.html#l00056">exahype2.solvers.fv.actionsets.PreprocessSolution.VolumeWisePreprocessSolution.guard</a>, <a class="el" href="../../de/d75/UpdatePatch_8py_source.html#l00074">exahype2.solvers.fv.actionsets.UpdatePatch.UpdatePatch.guard</a>, <a class="el" href="../../d7/d83/SaveNewCellData_8py_source.html#l00051">exahype2.solvers.limiting.actionsets.SaveNewCellData.SaveNewCellData.guard</a>, <a class="el" href="../../df/d95/SpreadLimiterStatus_8py_source.html#l00033">exahype2.solvers.limiting.actionsets.SpreadLimiterStatus.SpreadLimiterStatus.guard</a>, <a class="el" href="../../d8/d5f/VerifyTroubledness_8py_source.html#l00065">exahype2.solvers.limiting.actionsets.VerifyTroubledness.VerifyTroubledness.guard</a>, <a class="el" href="../../d3/db7/rkdg_2actionsets_2AdaptivityCriterion_8py_source.html#l00145">exahype2.solvers.rkdg.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../d2/d8c/rkdg_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00177">exahype2.solvers.rkdg.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.guard</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00037">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00023">exahype2.solvers.rkdg.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00054">exahype2.solvers.rkdg.actionsets.PostprocessSolution.DoFWisePostprocessSolution.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00143">exahype2.solvers.rkdg.actionsets.PostprocessSolution.CellWisePostprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00022">exahype2.solvers.rkdg.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00058">exahype2.solvers.rkdg.actionsets.PreprocessSolution.DoFWisePreprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00141">exahype2.solvers.rkdg.actionsets.PreprocessSolution.CellWisePreprocessSolution.guard</a>, <a class="el" href="../../d7/d09/rkfd_2actionsets_2AdaptivityCriterion_8py_source.html#l00152">exahype2.solvers.rkfd.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../da/d3c/rkfd_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00132">exahype2.solvers.rkfd.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.guard</a>, <a class="el" href="../../df/dbf/rkfd_2actionsets_2HandleBoundary_8py_source.html#l00107">exahype2.solvers.rkfd.actionsets.HandleBoundary.HandleBoundary.guard</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00012">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../de/d21/rkfd_2actionsets_2PostprocessSolution_8py_source.html#l00020">exahype2.solvers.rkfd.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../de/d21/rkfd_2actionsets_2PostprocessSolution_8py_source.html#l00081">exahype2.solvers.rkfd.actionsets.PostprocessSolution.CellWisePostprocessSolution.guard</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00024">exahype2.solvers.rkfd.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00177">exahype2.solvers.rkfd.actionsets.PreprocessSolution.CellWisePreprocessSolution.guard</a>, <a class="el" href="../../d5/d91/rkfd_2actionsets_2RollOverUpdatedFace_8py_source.html#l00109">exahype2.solvers.rkfd.actionsets.RollOverUpdatedFace.RollOverUpdatedFace.guard</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00184">exahype2.solvers.rkfd.SeparateSweeps.UpdateCell.guard</a>, <a class="el" href="../../d4/d08/peano4_2toolbox_2blockstructured_2ProjectPatchOntoFaces_8py_source.html#l00066">peano4.toolbox.blockstructured.ProjectPatchOntoFaces.ProjectPatchOntoFaces.guard()</a>, <a class="el" href="../../d4/d08/peano4_2toolbox_2blockstructured_2ProjectPatchOntoFaces_8py_source.html#l00070">peano4.toolbox.blockstructured.ProjectPatchOntoFaces.ProjectPatchOntoFaces.guard()</a>, <a class="el" href="../../d5/d09/ReconstructPatch_8py_source.html#l00053">peano4.toolbox.blockstructured.ReconstructPatch.ReconstructPatch.guard</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00093">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.TemplateInitialCondition</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00010">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.TemplateInitialCondition</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00098">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.TemplateInitialCondition</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_ac1f23976bb5f8344ad75c53429bc3a7e_cgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_ac1f23976bb5f8344ad75c53429bc3a7e_cgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_ac1f23976bb5f8344ad75c53429bc3a7e_cgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_ac1f23976bb5f8344ad75c53429bc3a7e_cgraph">
+<area shape="rect" title="Return actual C++ code snippets to be inserted into C++ code." alt="" coords="5,124,255,179"/>
+<area shape="rect" href="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#a11deeff5f448b0a1a6e1ced12d091a30" title=" " alt="" coords="305,5,554,60"/>
+<area shape="poly" title=" " alt="" coords="184,122,302,69,320,62,322,67,304,74,186,126"/>
+<area shape="rect" href="../../d4/dd1/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#a97c5d345c75d9c523a9eff8dee9d566c" title=" " alt="" coords="305,84,554,139"/>
+<area shape="poly" title=" " alt="" coords="255,132,291,127,291,132,255,137"/>
+<area shape="rect" href="../../d5/d55/classpeano4_1_1toolbox_1_1blockstructured_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html#ad0a8faf92aaa8f4b00bc00c84c314044" title=" " alt="" coords="303,163,556,217"/>
+<area shape="poly" title=" " alt="" coords="255,165,290,169,289,175,255,170"/>
+<area shape="rect" href="../../d5/d55/classpeano4_1_1toolbox_1_1blockstructured_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html#aeea3b28bff3084cd7e976a789027cfb4" title=" " alt="" coords="303,241,556,296"/>
+<area shape="poly" title=" " alt="" coords="189,176,304,226,326,234,324,239,302,231,187,181"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09fca7d13bd2f0480e4c436a97a0905a" name="a09fca7d13bd2f0480e4c436a97a0905a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fca7d13bd2f0480e4c436a97a0905a">&#9670;&#160;</a></span>get_body_of_prepareTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#af87a020ec3ac213cd9ceb413c818cf83">peano4.solversteps.ActionSet.ActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00035">35</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00064">exahype2.Project.Project._restart_from_checkpoint</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, <a class="el" href="../../d8/db5/ComputeFirstDerivatives_8py_source.html#l00109">ComputeFirstDerivatives.ComputeFirstDerivativesFD4RK._solver</a>, <a class="el" href="../../d3/d34/AbstractADERDGActionSet_8py_source.html#l00011">exahype2.solvers.aderdg.actionsets.AbstractADERDGActionSet.AbstractADERDGActionSet._solver</a>, <a class="el" href="../../d7/dfc/AbstractFVActionSet_8py_source.html#l00012">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet._solver</a>, <a class="el" href="../../d8/d95/AbstractLimiterActionSet_8py_source.html#l00008">exahype2.solvers.limiting.actionsets.AbstractLimiterActionSet.AbstractLimiterActionSet._solver</a>, <a class="el" href="../../d2/d8b/AbstractRungeKuttaDGActionSet_8py_source.html#l00017">exahype2.solvers.rkdg.actionsets.AbstractRungeKuttaDGActionSet.AbstractRungeKuttaDGActionSet._solver</a>, <a class="el" href="../../df/d4e/AbstractRKFDActionSet_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.AbstractRKFDActionSet.AbstractRKFDActionSet._solver</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00139">exahype2.solvers.rkfd.actionsets.PreprocessSolution.PreprocessReconstructedSolutionWithHalo._solver</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00148">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.UpdateCell._solver</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00146">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.UpdateCell._solver</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00214">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restart_preprocessing()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00217">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_template_for_restart_preprocessing()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00013">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00038">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00013">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.grid_is_constructed</a>, <a class="el" href="../../db/d09/Correction_8py_source.html#l00086">exahype2.solvers.aderdg.actionsets.Correction.Correction.guard</a>, <a class="el" href="../../df/d84/Prediction_8py_source.html#l00118">exahype2.solvers.aderdg.actionsets.Prediction.Prediction.guard</a>, <a class="el" href="../../dc/d02/PredictionOnHangingCells_8py_source.html#l00128">exahype2.solvers.aderdg.actionsets.PredictionOnHangingCells.PredictionOnHangingCells.guard</a>, <a class="el" href="../../d3/dbd/fv_2actionsets_2AdaptivityCriterion_8py_source.html#l00162">exahype2.solvers.fv.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../d9/d6f/EnclaveTasking_8py_source.html#l00050">exahype2.solvers.fv.actionsets.EnclaveTasking.EnclaveTasking.guard</a>, <a class="el" href="../../dc/d24/fv_2actionsets_2HandleBoundary_8py_source.html#l00105">exahype2.solvers.fv.actionsets.HandleBoundary.HandleBoundary.guard</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00012">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../dc/d93/fv_2actionsets_2PostprocessSolution_8py_source.html#l00022">exahype2.solvers.fv.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../dc/d93/fv_2actionsets_2PostprocessSolution_8py_source.html#l00060">exahype2.solvers.fv.actionsets.PostprocessSolution.VolumeWisePostprocessSolution.guard</a>, <a class="el" href="../../d3/df1/fv_2actionsets_2PreprocessSolution_8py_source.html#l00020">exahype2.solvers.fv.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d3/df1/fv_2actionsets_2PreprocessSolution_8py_source.html#l00056">exahype2.solvers.fv.actionsets.PreprocessSolution.VolumeWisePreprocessSolution.guard</a>, <a class="el" href="../../de/d75/UpdatePatch_8py_source.html#l00074">exahype2.solvers.fv.actionsets.UpdatePatch.UpdatePatch.guard</a>, <a class="el" href="../../d7/d83/SaveNewCellData_8py_source.html#l00051">exahype2.solvers.limiting.actionsets.SaveNewCellData.SaveNewCellData.guard</a>, <a class="el" href="../../df/d95/SpreadLimiterStatus_8py_source.html#l00033">exahype2.solvers.limiting.actionsets.SpreadLimiterStatus.SpreadLimiterStatus.guard</a>, <a class="el" href="../../d8/d5f/VerifyTroubledness_8py_source.html#l00065">exahype2.solvers.limiting.actionsets.VerifyTroubledness.VerifyTroubledness.guard</a>, <a class="el" href="../../d3/db7/rkdg_2actionsets_2AdaptivityCriterion_8py_source.html#l00145">exahype2.solvers.rkdg.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../d2/d8c/rkdg_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00177">exahype2.solvers.rkdg.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.guard</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00037">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00023">exahype2.solvers.rkdg.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00054">exahype2.solvers.rkdg.actionsets.PostprocessSolution.DoFWisePostprocessSolution.guard</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00143">exahype2.solvers.rkdg.actionsets.PostprocessSolution.CellWisePostprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00022">exahype2.solvers.rkdg.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00058">exahype2.solvers.rkdg.actionsets.PreprocessSolution.DoFWisePreprocessSolution.guard</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00141">exahype2.solvers.rkdg.actionsets.PreprocessSolution.CellWisePreprocessSolution.guard</a>, <a class="el" href="../../d7/d09/rkfd_2actionsets_2AdaptivityCriterion_8py_source.html#l00152">exahype2.solvers.rkfd.actionsets.AdaptivityCriterion.AdaptivityCriterion.guard</a>, <a class="el" href="../../da/d3c/rkfd_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00132">exahype2.solvers.rkfd.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.guard</a>, <a class="el" href="../../df/dbf/rkfd_2actionsets_2HandleBoundary_8py_source.html#l00107">exahype2.solvers.rkfd.actionsets.HandleBoundary.HandleBoundary.guard</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00012">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.guard</a>, <a class="el" href="../../de/d21/rkfd_2actionsets_2PostprocessSolution_8py_source.html#l00020">exahype2.solvers.rkfd.actionsets.PostprocessSolution.EmptyPostprocessSolution.guard</a>, <a class="el" href="../../de/d21/rkfd_2actionsets_2PostprocessSolution_8py_source.html#l00081">exahype2.solvers.rkfd.actionsets.PostprocessSolution.CellWisePostprocessSolution.guard</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00024">exahype2.solvers.rkfd.actionsets.PreprocessSolution.EmptyPreprocessSolution.guard</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00177">exahype2.solvers.rkfd.actionsets.PreprocessSolution.CellWisePreprocessSolution.guard</a>, <a class="el" href="../../d5/d91/rkfd_2actionsets_2RollOverUpdatedFace_8py_source.html#l00109">exahype2.solvers.rkfd.actionsets.RollOverUpdatedFace.RollOverUpdatedFace.guard</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00184">exahype2.solvers.rkfd.SeparateSweeps.UpdateCell.guard</a>, <a class="el" href="../../d4/d08/peano4_2toolbox_2blockstructured_2ProjectPatchOntoFaces_8py_source.html#l00066">peano4.toolbox.blockstructured.ProjectPatchOntoFaces.ProjectPatchOntoFaces.guard()</a>, <a class="el" href="../../d4/d08/peano4_2toolbox_2blockstructured_2ProjectPatchOntoFaces_8py_source.html#l00070">peano4.toolbox.blockstructured.ProjectPatchOntoFaces.ProjectPatchOntoFaces.guard()</a>, and <a class="el" href="../../d5/d09/ReconstructPatch_8py_source.html#l00053">peano4.toolbox.blockstructured.ReconstructPatch.ReconstructPatch.guard</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a09fca7d13bd2f0480e4c436a97a0905a_cgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a09fca7d13bd2f0480e4c436a97a0905a_cgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a09fca7d13bd2f0480e4c436a97a0905a_cgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a09fca7d13bd2f0480e4c436a97a0905a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,124,255,179"/>
+<area shape="rect" href="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#aae5efd58532d682215d65d2d8f0d66fe" title=" " alt="" coords="303,5,564,60"/>
+<area shape="poly" title=" " alt="" coords="184,121,302,69,321,62,323,67,304,74,186,126"/>
+<area shape="rect" href="../../d4/dd1/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#a6343a7e2f3f880c25ab7ae71bf104cde" title=" " alt="" coords="303,84,564,139"/>
+<area shape="poly" title=" " alt="" coords="255,132,289,128,290,133,255,138"/>
+<area shape="rect" href="../../d5/d55/classpeano4_1_1toolbox_1_1blockstructured_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html#ad0a8faf92aaa8f4b00bc00c84c314044" title=" " alt="" coords="307,163,560,217"/>
+<area shape="poly" title=" " alt="" coords="255,165,294,170,293,175,255,170"/>
+<area shape="rect" href="../../d5/d55/classpeano4_1_1toolbox_1_1blockstructured_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html#aeea3b28bff3084cd7e976a789027cfb4" title=" " alt="" coords="307,241,560,296"/>
+<area shape="poly" title=" " alt="" coords="188,176,304,226,326,234,325,239,302,231,186,181"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="accfb9735773cf1f3479cf5d8ba9fc121" name="accfb9735773cf1f3479cf5d8ba9fc121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfb9735773cf1f3479cf5d8ba9fc121">&#9670;&#160;</a></span>get_includes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_includes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return include statements that you need. </p>
+<p>All of these includes will eventually end up in the header of the generated C++ code. </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#a52ff57b2d7a2679326b91270d645039b">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00052">52</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/db5/ComputeFirstDerivatives_8py_source.html#l00109">ComputeFirstDerivatives.ComputeFirstDerivativesFD4RK._solver</a>, <a class="el" href="../../d3/d34/AbstractADERDGActionSet_8py_source.html#l00011">exahype2.solvers.aderdg.actionsets.AbstractADERDGActionSet.AbstractADERDGActionSet._solver</a>, <a class="el" href="../../d7/dfc/AbstractFVActionSet_8py_source.html#l00012">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet._solver</a>, <a class="el" href="../../d8/d95/AbstractLimiterActionSet_8py_source.html#l00008">exahype2.solvers.limiting.actionsets.AbstractLimiterActionSet.AbstractLimiterActionSet._solver</a>, <a class="el" href="../../d2/d8b/AbstractRungeKuttaDGActionSet_8py_source.html#l00017">exahype2.solvers.rkdg.actionsets.AbstractRungeKuttaDGActionSet.AbstractRungeKuttaDGActionSet._solver</a>, <a class="el" href="../../df/d4e/AbstractRKFDActionSet_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.AbstractRKFDActionSet.AbstractRKFDActionSet._solver</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00139">exahype2.solvers.rkfd.actionsets.PreprocessSolution.PreprocessReconstructedSolutionWithHalo._solver</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00148">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.UpdateCell._solver</a>, and <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00146">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.UpdateCell._solver</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00233">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_includes()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_icgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_icgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_icgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_icgraph">
+<area shape="rect" title="Return include statements that you need." alt="" coords="5,29,255,84"/>
+<area shape="poly" title=" " alt="" coords="171,18,156,11,130,8,108,10,93,15,87,21,87,29,82,29,82,19,91,10,107,5,130,3,158,6,174,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="accfb9735773cf1f3479cf5d8ba9fc121" name="accfb9735773cf1f3479cf5d8ba9fc121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfb9735773cf1f3479cf5d8ba9fc121">&#9670;&#160;</a></span>get_includes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_includes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return include statements that you need. </p>
+<p>All of these includes will eventually end up in the header of the generated C++ code. </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d35/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1AbstractFVActionSet_1_1AbstractFVActionSet.html#a52ff57b2d7a2679326b91270d645039b">exahype2.solvers.fv.actionsets.AbstractFVActionSet.AbstractFVActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00233">233</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00052">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_includes()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_cgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_cgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_cgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_accfb9735773cf1f3479cf5d8ba9fc121_cgraph">
+<area shape="rect" title="Return include statements that you need." alt="" coords="5,29,255,84"/>
+<area shape="poly" title=" " alt="" coords="82,29,82,19,91,10,107,5,130,3,158,6,174,14,171,18,156,11,130,8,108,10,93,15,87,21,87,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1a05ec4c8e13629f0a4dd96e359d4c9" name="af1a05ec4c8e13629f0a4dd96e359d4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a05ec4c8e13629f0a4dd96e359d4c9">&#9670;&#160;</a></span>get_static_initialisations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_static_initialisations </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>full_qualified_classname</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/db4/classpeano4_1_1solversteps_1_1ActionSet_1_1ActionSet.html#ad5a2db30738192036a445d0d5a3b99f3">peano4.solversteps.ActionSet.ActionSet</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00062">62</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00064">exahype2.Project.Project._restart_from_checkpoint</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00014">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</a>.</p>
+
+</div>
+</div>
+<a id="aae5efd58532d682215d65d2d8f0d66fe" name="aae5efd58532d682215d65d2d8f0d66fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5efd58532d682215d65d2d8f0d66fe">&#9670;&#160;</a></span>get_template_for_restart_preprocessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restart_preprocessing </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00214">214</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._loading_scheme</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_aae5efd58532d682215d65d2d8f0d66fe_icgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_aae5efd58532d682215d65d2d8f0d66fe_icgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_aae5efd58532d682215d65d2d8f0d66fe_icgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_aae5efd58532d682215d65d2d8f0d66fe_icgraph">
+<area shape="rect" title=" " alt="" coords="303,45,564,100"/>
+<area shape="rect" href="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#a09fca7d13bd2f0480e4c436a97a0905a" title=" " alt="" coords="5,5,255,60"/>
+<area shape="poly" title=" " alt="" coords="289,56,255,52,255,46,289,51"/>
+<area shape="rect" href="../../d4/dd1/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#a15518cf5fd4c4d32ceaa703b46ef781c" title=" " alt="" coords="5,84,255,139"/>
+<area shape="poly" title=" " alt="" coords="289,94,255,98,255,93,289,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a11deeff5f448b0a1a6e1ced12d091a30" name="a11deeff5f448b0a1a6e1ced12d091a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11deeff5f448b0a1a6e1ced12d091a30">&#9670;&#160;</a></span>get_template_for_restarting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restarting </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00119">119</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._loading_scheme</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00015">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition._loading_scheme</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a11deeff5f448b0a1a6e1ced12d091a30_icgraph.png" border="0" usemap="#ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a11deeff5f448b0a1a6e1ced12d091a30_icgraph" alt=""/></div>
+<map name="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a11deeff5f448b0a1a6e1ced12d091a30_icgraph" id="ad0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition_a11deeff5f448b0a1a6e1ced12d091a30_icgraph">
+<area shape="rect" title=" " alt="" coords="303,45,552,100"/>
+<area shape="rect" href="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#ac1f23976bb5f8344ad75c53429bc3a7e" title="Return actual C++ code snippets to be inserted into C++ code." alt="" coords="5,5,255,60"/>
+<area shape="poly" title=" " alt="" coords="289,57,254,52,255,47,289,51"/>
+<area shape="rect" href="../../d4/dd1/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html#ab163758f0b2a2826802bd6e1e444c3bb" title="Return actual C++ code snippets to be inserted into C++ code." alt="" coords="5,84,255,139"/>
+<area shape="poly" title=" " alt="" coords="289,93,255,98,254,93,289,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a71720927d3d5965c5427423b09f08e40" name="a71720927d3d5965c5427423b09f08e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71720927d3d5965c5427423b09f08e40">&#9670;&#160;</a></span>_loading_scheme</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._loading_scheme</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00015">15</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00076">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_attributes()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00082">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_attributes()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00062">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_static_initialisations()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00066">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_static_initialisations()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00214">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restart_preprocessing()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00217">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_template_for_restart_preprocessing()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00119">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_template_for_restarting()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00119">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_template_for_restarting()</a>.</p>
+
+</div>
+</div>
+<a id="a8348f771562aa7bf7eca18b73fbd106c" name="a8348f771562aa7bf7eca18b73fbd106c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8348f771562aa7bf7eca18b73fbd106c">&#9670;&#160;</a></span>_restart_from_checkpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition._restart_from_checkpoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00014">14</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00154">exahype2.Project.Project.__export_constants()</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00739">exahype2.Project.Project.generate_Peano4_project()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00076">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_attributes()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00082">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_attributes()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00062">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_static_initialisations()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00066">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_static_initialisations()</a>, and <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00358">exahype2.Project.Project.set_restart_from_checkpoint()</a>.</p>
+
+</div>
+</div>
+<a id="a1fed2cc49f41cabfe6a5851356751b3a" name="a1fed2cc49f41cabfe6a5851356751b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fed2cc49f41cabfe6a5851356751b3a">&#9670;&#160;</a></span>grid_is_constructed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.grid_is_constructed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00013">13</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00041">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>.</p>
+
+</div>
+</div>
+<a id="a23ac4a7c59865827d6fcfeaf6901b6c6" name="a23ac4a7c59865827d6fcfeaf6901b6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ac4a7c59865827d6fcfeaf6901b6c6">&#9670;&#160;</a></span>guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.guard</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00012">12</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d09/Correction_8py_source.html#l00089">exahype2.solvers.aderdg.actionsets.Correction.Correction._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../df/d84/Prediction_8py_source.html#l00121">exahype2.solvers.aderdg.actionsets.Prediction.Prediction._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../dc/d02/PredictionOnHangingCells_8py_source.html#l00131">exahype2.solvers.aderdg.actionsets.PredictionOnHangingCells.PredictionOnHangingCells._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../d9/d6f/EnclaveTasking_8py_source.html#l00055">exahype2.solvers.fv.actionsets.EnclaveTasking.EnclaveTasking._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../de/d75/UpdatePatch_8py_source.html#l00078">exahype2.solvers.fv.actionsets.UpdatePatch.UpdatePatch._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00189">exahype2.solvers.rkfd.SeparateSweeps.UpdateCell._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../d5/d09/ReconstructPatch_8py_source.html#l00064">peano4.toolbox.blockstructured.ReconstructPatch.ReconstructPatch._add_action_set_entries_to_dictionary()</a>, <a class="el" href="../../d3/dbd/fv_2actionsets_2AdaptivityCriterion_8py_source.html#l00180">exahype2.solvers.fv.actionsets.AdaptivityCriterion.AdaptivityCriterion.get_body_of_operation()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../dc/d93/fv_2actionsets_2PostprocessSolution_8py_source.html#l00104">exahype2.solvers.fv.actionsets.PostprocessSolution.VolumeWisePostprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d3/df1/fv_2actionsets_2PreprocessSolution_8py_source.html#l00097">exahype2.solvers.fv.actionsets.PreprocessSolution.VolumeWisePreprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d7/d83/SaveNewCellData_8py_source.html#l00056">exahype2.solvers.limiting.actionsets.SaveNewCellData.SaveNewCellData.get_body_of_operation()</a>, <a class="el" href="../../df/d95/SpreadLimiterStatus_8py_source.html#l00035">exahype2.solvers.limiting.actionsets.SpreadLimiterStatus.SpreadLimiterStatus.get_body_of_operation()</a>, <a class="el" href="../../d8/d5f/VerifyTroubledness_8py_source.html#l00069">exahype2.solvers.limiting.actionsets.VerifyTroubledness.VerifyTroubledness.get_body_of_operation()</a>, <a class="el" href="../../d3/db7/rkdg_2actionsets_2AdaptivityCriterion_8py_source.html#l00163">exahype2.solvers.rkdg.actionsets.AdaptivityCriterion.AdaptivityCriterion.get_body_of_operation()</a>, <a class="el" href="../../d2/d8c/rkdg_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00182">exahype2.solvers.rkdg.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.get_body_of_operation()</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00041">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00108">exahype2.solvers.rkdg.actionsets.PostprocessSolution.DoFWisePostprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../da/d8d/rkdg_2actionsets_2PostprocessSolution_8py_source.html#l00184">exahype2.solvers.rkdg.actionsets.PostprocessSolution.CellWisePostprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00111">exahype2.solvers.rkdg.actionsets.PreprocessSolution.DoFWisePreprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d3/dfb/rkdg_2actionsets_2PreprocessSolution_8py_source.html#l00181">exahype2.solvers.rkdg.actionsets.PreprocessSolution.CellWisePreprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d7/d09/rkfd_2actionsets_2AdaptivityCriterion_8py_source.html#l00170">exahype2.solvers.rkfd.actionsets.AdaptivityCriterion.AdaptivityCriterion.get_body_of_operation()</a>, <a class="el" href="../../da/d3c/rkfd_2actionsets_2ComputeFinalLinearCombination_8py_source.html#l00136">exahype2.solvers.rkfd.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination.get_body_of_operation()</a>, <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../de/d21/rkfd_2actionsets_2PostprocessSolution_8py_source.html#l00124">exahype2.solvers.rkfd.actionsets.PostprocessSolution.CellWisePostprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d8/d36/rkfd_2actionsets_2PreprocessSolution_8py_source.html#l00219">exahype2.solvers.rkfd.actionsets.PreprocessSolution.CellWisePreprocessSolution.get_body_of_operation()</a>, <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00035">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_prepareTraversal()</a>.</p>
+
+</div>
+</div>
+<a id="a65bd55a66293c36b17433e8f0991d5de" name="a65bd55a66293c36b17433e8f0991d5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bd55a66293c36b17433e8f0991d5de">&#9670;&#160;</a></span>TemplateInitialCondition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.TemplateInitialCondition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">if ({{PREDICATE}}) {</span></div>
+<div class="line"><span class="stringliteral">  dfor(volume, {{NUMBER_OF_VOLUMES_PER_AXIS}}) {</span></div>
+<div class="line"><span class="stringliteral">    int index = peano4::utils::dLinearised(volume,{{NUMBER_OF_VOLUMES_PER_AXIS}}) * ({{NUMBER_OF_UNKNOWNS}} + {{NUMBER_OF_AUXILIARY_VARIABLES}});</span></div>
+<div class="line"><span class="stringliteral">    {% if STATELESS_INITIAL_CONDITIONS==True %}</span></div>
+<div class="line"><span class="stringliteral">    {{FULL_QUALIFIED_SOLVER_NAME}}::initialCondition(</span></div>
+<div class="line"><span class="stringliteral">      fineGridCell{{UNKNOWN_IDENTIFIER}}.value + index,</span></div>
+<div class="line"><span class="stringliteral">      ::exahype2::fv::getVolumeCentre(marker.x(), marker.h(), {{NUMBER_OF_VOLUMES_PER_AXIS}}, volume),</span></div>
+<div class="line"><span class="stringliteral">      ::exahype2::fv::getVolumeSize(marker.h(), {{NUMBER_OF_VOLUMES_PER_AXIS}}),</span></div>
+<div class="line"><span class="stringliteral">      {{GRID_IS_CONSTRUCTED}}</span></div>
+<div class="line"><span class="stringliteral">    );</span></div>
+<div class="line"><span class="stringliteral">    {% else %}</span></div>
+<div class="line"><span class="stringliteral">    repositories::{{SOLVER_INSTANCE}}.initialCondition(</span></div>
+<div class="line"><span class="stringliteral">      fineGridCell{{UNKNOWN_IDENTIFIER}}.value + index,</span></div>
+<div class="line"><span class="stringliteral">      ::exahype2::fv::getVolumeCentre(marker.x(), marker.h(), {{NUMBER_OF_VOLUMES_PER_AXIS}}, volume),</span></div>
+<div class="line"><span class="stringliteral">      ::exahype2::fv::getVolumeSize(marker.h(), {{NUMBER_OF_VOLUMES_PER_AXIS}}),</span></div>
+<div class="line"><span class="stringliteral">      {{GRID_IS_CONSTRUCTED}}</span></div>
+<div class="line"><span class="stringliteral">    );</span></div>
+<div class="line"><span class="stringliteral">    {% endif %}</span></div>
+<div class="line"><span class="stringliteral">  }</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">  // Relevant for tracing et al which kicks in if and only if cell has been updated</span></div>
+<div class="line"><span class="stringliteral">  fineGridCell{{SOLVER_NAME}}CellLabel.setHasUpdated(true);</span></div>
+<div class="line"><span class="stringliteral">}</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00093">93</a> of file <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.fv.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, <a class="el" href="../../d8/daa/rkdg_2actionsets_2InitialCondition_8py_source.html#l00041">exahype2.solvers.rkdg.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>, and <a class="el" href="../../d5/da2/rkfd_2actionsets_2InitialCondition_8py_source.html#l00018">exahype2.solvers.rkfd.actionsets.InitialCondition.InitialCondition.get_body_of_operation()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>python/exahype2/solvers/fv/actionsets/<a class="el" href="../../d9/df2/fv_2actionsets_2InitialCondition_8py_source.html">InitialCondition.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../d0/d4e/namespaceexahype2_1_1solvers.html">solvers</a></li><li class="navelem"><a class="el" href="../../de/d1e/namespaceexahype2_1_1solvers_1_1fv.html">fv</a></li><li class="navelem"><a class="el" href="../../d2/d03/namespaceexahype2_1_1solvers_1_1fv_1_1actionsets.html">actionsets</a></li><li class="navelem"><a class="el" href="../../d4/d0f/namespaceexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition.html">InitialCondition</a></li><li class="navelem"><a class="el" href="../../d0/d15/classexahype2_1_1solvers_1_1fv_1_1actionsets_1_1InitialCondition_1_1InitialCondition.html">InitialCondition</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:40 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

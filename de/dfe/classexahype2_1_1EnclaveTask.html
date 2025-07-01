@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/dfe/classexahype2_1_1EnclaveTask.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for all enclave tasks.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d69/classexahype2_1_1EnclaveTask__inherit__graph.png" border="0" usemap="#aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_inherit__map" id="aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_inherit__map">
+<area shape="rect" title="Base class for all enclave tasks." alt="" coords="5,79,180,119"/>
+<area shape="rect" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html" title="Abstract super class for a job." alt="" coords="11,5,174,31"/>
+<area shape="poly" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/def/classexahype2_1_1EnclaveTask__coll__graph.png" border="0" usemap="#aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_coll__map" id="aexahype2_1_1EnclaveTask_3_01T_00_01NumFaceTypes_01_4_coll__map">
+<area shape="rect" title="Base class for all enclave tasks." alt="" coords="21,225,195,265"/>
+<area shape="rect" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html" title="Abstract super class for a job." alt="" coords="5,130,168,155"/>
+<area shape="poly" title=" " alt="" coords="95,168,107,225,101,226,89,169"/>
+<area shape="rect" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html" title="Cell marker." alt="" coords="192,123,387,163"/>
+<area shape="poly" title=" " alt="" coords="245,172,143,228,141,223,242,167"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="113,5,284,45"/>
+<area shape="poly" title=" " alt="" coords="224,55,276,121,272,124,220,58"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="309,5,451,45"/>
+<area shape="poly" title=" " alt="" coords="359,58,306,124,302,121,354,55"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a546e22bac4e4ed02564fdab0eb0a4f61" id="r_a546e22bac4e4ed02564fdab0eb0a4f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a546e22bac4e4ed02564fdab0eb0a4f61">EnclaveTask</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> enclaveTaskTypeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;marker, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QIn, T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> faces[NumFaceTypes][<a class="el" href="../../d9/df1/Globals_8h.html#a344498efd6cab55ca761964e0a637e06">TwoTimesD</a>], T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOut, <a class="el" href="#aad9e19108a883475695eee2ddad23e37">Functor</a> functor)</td></tr>
+<tr class="memdesc:a546e22bac4e4ed02564fdab0eb0a4f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create plain enclave task.  <br /></td></tr>
+<tr class="separator:a546e22bac4e4ed02564fdab0eb0a4f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0432bdfa48813c0a1c90baa4c7942fce" id="r_a0432bdfa48813c0a1c90baa4c7942fce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0432bdfa48813c0a1c90baa4c7942fce">EnclaveTask</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;)=delete</td></tr>
+<tr class="separator:a0432bdfa48813c0a1c90baa4c7942fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ca83611de7cff2da295f5afcd8cf83" id="r_a68ca83611de7cff2da295f5afcd8cf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68ca83611de7cff2da295f5afcd8cf83">operator=</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;)=delete</td></tr>
+<tr class="separator:a68ca83611de7cff2da295f5afcd8cf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e1278d31e8bd6371317cc602f53b13" id="r_aa7e1278d31e8bd6371317cc602f53b13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7e1278d31e8bd6371317cc602f53b13">EnclaveTask</a> (<a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aa7e1278d31e8bd6371317cc602f53b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6855b9913b48fc1a52862c7013d2a18e" id="r_a6855b9913b48fc1a52862c7013d2a18e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6855b9913b48fc1a52862c7013d2a18e">operator=</a> (<a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a6855b9913b48fc1a52862c7013d2a18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4f189e91b398ad24b18b8fb28c79d9" id="r_acb4f189e91b398ad24b18b8fb28c79d9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4f189e91b398ad24b18b8fb28c79d9">~EnclaveTask</a> () override=default</td></tr>
+<tr class="separator:acb4f189e91b398ad24b18b8fb28c79d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a48f027e6f614de6e788c937dcbbe9" id="r_a13a48f027e6f614de6e788c937dcbbe9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13a48f027e6f614de6e788c937dcbbe9">run</a> () override</td></tr>
+<tr class="separator:a13a48f027e6f614de6e788c937dcbbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classtarch_1_1multicore_1_1Task"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtarch_1_1multicore_1_1Task')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html">tarch::multicore::Task</a></td></tr>
+<tr class="memitem:a5ea81d9b50a2b50d163d803e66c54d09 inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_a5ea81d9b50a2b50d163d803e66c54d09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a5ea81d9b50a2b50d163d803e66c54d09">Task</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> taskType, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> priority)</td></tr>
+<tr class="memdesc:a5ea81d9b50a2b50d163d803e66c54d09 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct task.  <br /></td></tr>
+<tr class="separator:a5ea81d9b50a2b50d163d803e66c54d09 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7861c6c81be0ed163697b2e26fb5c4 inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_aab7861c6c81be0ed163697b2e26fb5c4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#aab7861c6c81be0ed163697b2e26fb5c4">~Task</a> ()</td></tr>
+<tr class="separator:aab7861c6c81be0ed163697b2e26fb5c4 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972d6c57ee76e24b6f37b26ca5d9a07a inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_a972d6c57ee76e24b6f37b26ca5d9a07a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a972d6c57ee76e24b6f37b26ca5d9a07a">getTaskType</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a972d6c57ee76e24b6f37b26ca5d9a07a inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8cf1ccf17b7fbea268b25a0cd5e107 inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_a2b8cf1ccf17b7fbea268b25a0cd5e107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a2b8cf1ccf17b7fbea268b25a0cd5e107">getPriority</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a2b8cf1ccf17b7fbea268b25a0cd5e107 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7559b94dc1d55ab3529836183aba097 inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_ad7559b94dc1d55ab3529836183aba097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#ad7559b94dc1d55ab3529836183aba097">setPriority</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> priority)</td></tr>
+<tr class="memdesc:ad7559b94dc1d55ab3529836183aba097 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set priority.  <br /></td></tr>
+<tr class="separator:ad7559b94dc1d55ab3529836183aba097 inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962b36260b3f1900d8a117fa1457d91b inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_a962b36260b3f1900d8a117fa1457d91b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a962b36260b3f1900d8a117fa1457d91b">fuse</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::list&lt; <a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html">Task</a> * &gt; &amp;otherTasks)</td></tr>
+<tr class="memdesc:a962b36260b3f1900d8a117fa1457d91b inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fuse multiple tasks.  <br /></td></tr>
+<tr class="separator:a962b36260b3f1900d8a117fa1457d91b inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167607c95c2ac854894ce2ca126203b inherit pub_methods_classtarch_1_1multicore_1_1Task" id="r_a0167607c95c2ac854894ce2ca126203b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a0167607c95c2ac854894ce2ca126203b">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a0167607c95c2ac854894ce2ca126203b inherit pub_methods_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:aad9e19108a883475695eee2ddad23e37" id="r_aad9e19108a883475695eee2ddad23e37"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad9e19108a883475695eee2ddad23e37">Functor</a></td></tr>
+<tr class="separator:aad9e19108a883475695eee2ddad23e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab8e2cfd1fc7b78b5085bec7d6d7c4752" id="r_ab8e2cfd1fc7b78b5085bec7d6d7c4752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8e2cfd1fc7b78b5085bec7d6d7c4752">_marker</a></td></tr>
+<tr class="separator:ab8e2cfd1fc7b78b5085bec7d6d7c4752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5420bf1b7fa8583af3b2d40459682c" id="r_a1f5420bf1b7fa8583af3b2d40459682c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f5420bf1b7fa8583af3b2d40459682c">_t</a></td></tr>
+<tr class="separator:a1f5420bf1b7fa8583af3b2d40459682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1203feeeed4fdd8000618eb32edf82" id="r_aae1203feeeed4fdd8000618eb32edf82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1203feeeed4fdd8000618eb32edf82">_dt</a></td></tr>
+<tr class="separator:aae1203feeeed4fdd8000618eb32edf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93187335ec8fe0254cc1474e164e5cd" id="r_ad93187335ec8fe0254cc1474e164e5cd"><td class="memItemLeft" align="right" valign="top">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad93187335ec8fe0254cc1474e164e5cd">_QIn</a></td></tr>
+<tr class="separator:ad93187335ec8fe0254cc1474e164e5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8398bd20d89b1541d66780eb700cd4a1" id="r_a8398bd20d89b1541d66780eb700cd4a1"><td class="memItemLeft" align="right" valign="top">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8398bd20d89b1541d66780eb700cd4a1">_faces</a> [NumFaceTypes][<a class="el" href="../../d9/df1/Globals_8h.html#a344498efd6cab55ca761964e0a637e06">TwoTimesD</a>]</td></tr>
+<tr class="separator:a8398bd20d89b1541d66780eb700cd4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7a80a49143f83c2086e8289a6d69e5" id="r_aab7a80a49143f83c2086e8289a6d69e5"><td class="memItemLeft" align="right" valign="top">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab7a80a49143f83c2086e8289a6d69e5">_QOut</a></td></tr>
+<tr class="separator:aab7a80a49143f83c2086e8289a6d69e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3feb8358b3fb9ee30fbd222aeed3df32" id="r_a3feb8358b3fb9ee30fbd222aeed3df32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aad9e19108a883475695eee2ddad23e37">Functor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3feb8358b3fb9ee30fbd222aeed3df32">_functor</a></td></tr>
+<tr class="separator:a3feb8358b3fb9ee30fbd222aeed3df32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classtarch_1_1multicore_1_1Task"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtarch_1_1multicore_1_1Task')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html">tarch::multicore::Task</a></td></tr>
+<tr class="memitem:a29d49d021ab93e4fd7e682ffe9987ab4 inherit pro_attribs_classtarch_1_1multicore_1_1Task" id="r_a29d49d021ab93e4fd7e682ffe9987ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a29d49d021ab93e4fd7e682ffe9987ab4">_taskType</a></td></tr>
+<tr class="separator:a29d49d021ab93e4fd7e682ffe9987ab4 inherit pro_attribs_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94790877408bcc3af9c4bf50c0744838 inherit pro_attribs_classtarch_1_1multicore_1_1Task" id="r_a94790877408bcc3af9c4bf50c0744838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a94790877408bcc3af9c4bf50c0744838">_priority</a></td></tr>
+<tr class="separator:a94790877408bcc3af9c4bf50c0744838 inherit pro_attribs_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classtarch_1_1multicore_1_1Task"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classtarch_1_1multicore_1_1Task')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html">tarch::multicore::Task</a></td></tr>
+<tr class="memitem:a2f8e5b0c072489212773cf0c6a8b651f inherit pub_static_attribs_classtarch_1_1multicore_1_1Task" id="r_a2f8e5b0c072489212773cf0c6a8b651f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a2f8e5b0c072489212773cf0c6a8b651f">NoTaskType</a> = -1</td></tr>
+<tr class="separator:a2f8e5b0c072489212773cf0c6a8b651f inherit pub_static_attribs_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7cecfe13e6ab3c405666a74f3a03c8 inherit pub_static_attribs_classtarch_1_1multicore_1_1Task" id="r_a8f7cecfe13e6ab3c405666a74f3a03c8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a8f7cecfe13e6ab3c405666a74f3a03c8">DefaultPriority</a> = 1024</td></tr>
+<tr class="separator:a8f7cecfe13e6ab3c405666a74f3a03c8 inherit pub_static_attribs_classtarch_1_1multicore_1_1Task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt;<br />
+class exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;</div><p>Base class for all enclave tasks. </p>
+<p>Enclave tasks per se are application-generic. They are given an array of values, they are told how big the output data has to be, and they are also given a functor which tells them what to run on the outcome. They don't know anything about the functor's semantics.</p>
+<h2><a class="anchor" id="autotoc_md35"></a>
+Usage:</h2>
+<p>Every ExaHyPE solver category defines its own enclave tasks being subclasses of the present, generic type. Enclave tasks may be spawned with data, so we can efficiently wait for them.</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> newEnclaveTask = <span class="keyword">new</span> tasks::{{SOLVER_NAME}}<a class="code hl_function" href="#a546e22bac4e4ed02564fdab0eb0a4f61">EnclaveTask</a>(</div>
+<div class="line">  ...</div>
+<div class="line">);</div>
+<div class="line"> </div>
+<div class="line">...</div>
+<div class="line"> </div>
+<div class="line">tarch::multicore::spawnTask(newEnclaveTask);</div>
+<div class="ttc" id="aclassexahype2_1_1EnclaveTask_html_a546e22bac4e4ed02564fdab0eb0a4f61"><div class="ttname"><a href="#a546e22bac4e4ed02564fdab0eb0a4f61">exahype2::EnclaveTask::EnclaveTask</a></div><div class="ttdeci">EnclaveTask(int enclaveTaskTypeId, const peano4::datamanagement::CellMarker &amp;marker, double t, double dt, T *NOALIAS const QIn, T *NOALIAS const faces[NumFaceTypes][TwoTimesD], T *NOALIAS const QOut, Functor functor)</div><div class="ttdoc">Create plain enclave task.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00005">EnclaveTask.cpph:5</a></div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md36"></a>
+Data ownership</h2>
+<p>The enclave task does not allocate or free any own data. It purely works on the given input and output data pointers. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00048">48</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aad9e19108a883475695eee2ddad23e37" name="aad9e19108a883475695eee2ddad23e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9e19108a883475695eee2ddad23e37">&#9670;&#160;</a></span>Functor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;<a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::Functor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00050">50</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a546e22bac4e4ed02564fdab0eb0a4f61" name="a546e22bac4e4ed02564fdab0eb0a4f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546e22bac4e4ed02564fdab0eb0a4f61">&#9670;&#160;</a></span>EnclaveTask() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::EnclaveTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>enclaveTaskTypeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td>          <td class="paramname"><span class="paramname"><em>QIn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td>          <td class="paramname"><span class="paramname"><em>faces</em>[NumFaceTypes][TwoTimesD], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aad9e19108a883475695eee2ddad23e37">Functor</a></td>          <td class="paramname"><span class="paramname"><em>functor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create plain enclave task. </p>
+<h2><a class="anchor" id="autotoc_md37"></a>
+Create an unique id for the task type</h2>
+<p>It is best to use the parallel factory mechanism within parallel:</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> enclaveTaskTypeId = <a class="code hl_function" href="../../d1/d32/namespacepeano4_1_1parallel.html#ac9c27ea33fcd43d7558e27a754e929f0">peano4::parallel::getTaskType</a>(<span class="stringliteral">&quot;{{SOLVER_INSTANCE}}&quot;</span>);</div>
+<div class="ttc" id="anamespacepeano4_1_1parallel_html_ac9c27ea33fcd43d7558e27a754e929f0"><div class="ttname"><a href="../../d1/d32/namespacepeano4_1_1parallel.html#ac9c27ea33fcd43d7558e27a754e929f0">peano4::parallel::getTaskType</a></div><div class="ttdeci">int getTaskType(const std::string &amp;className)</div><div class="ttdoc">Get unique number (id) for task.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d63/parallel_8cpp_source.html#l00008">parallel.cpp:8</a></div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enclaveTaskTypeId</td><td>Unique id for this type. If you use task fusion, only tasks of the same type will be fused. </td></tr>
+    <tr><td class="paramname">QIn</td><td>Has to be created on heap before passing to the task </td></tr>
+    <tr><td class="paramname">QOut</td><td>Has to be created on heap before passing to the task </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00005">5</a> of file <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html">EnclaveTask.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00056">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::_faces</a>, <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00055">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::_QIn</a>, <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00057">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::_QOut</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../d9/df1/Globals_8h_source.html#l00018">TwoTimesD</a>.</p>
+
+</div>
+</div>
+<a id="a0432bdfa48813c0a1c90baa4c7942fce" name="a0432bdfa48813c0a1c90baa4c7942fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0432bdfa48813c0a1c90baa4c7942fce">&#9670;&#160;</a></span>EnclaveTask() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::EnclaveTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a>&lt; T, NumFaceTypes &gt; &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7e1278d31e8bd6371317cc602f53b13" name="aa7e1278d31e8bd6371317cc602f53b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e1278d31e8bd6371317cc602f53b13">&#9670;&#160;</a></span>EnclaveTask() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::EnclaveTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a>&lt; T, NumFaceTypes &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb4f189e91b398ad24b18b8fb28c79d9" name="acb4f189e91b398ad24b18b8fb28c79d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4f189e91b398ad24b18b8fb28c79d9">&#9670;&#160;</a></span>~EnclaveTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::~<a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a68ca83611de7cff2da295f5afcd8cf83" name="a68ca83611de7cff2da295f5afcd8cf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ca83611de7cff2da295f5afcd8cf83">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp; <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a>&lt; T, NumFaceTypes &gt; &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6855b9913b48fc1a52862c7013d2a18e" name="a6855b9913b48fc1a52862c7013d2a18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6855b9913b48fc1a52862c7013d2a18e">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a> &amp; <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a>&lt; T, NumFaceTypes &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13a48f027e6f614de6e788c937dcbbe9" name="a13a48f027e6f614de6e788c937dcbbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a48f027e6f614de6e788c937dcbbe9">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>This task has to be executed again. In most cases, you should return false, to indicate that this task has finished. </dd></dl>
+
+<p>Implements <a class="el" href="../../dd/dd7/classtarch_1_1multicore_1_1Task.html#a3fed74b1833312692b2c38e950087efd">tarch::multicore::Task</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00034">34</a> of file <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html">EnclaveTask.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aae1203feeeed4fdd8000618eb32edf82" name="aae1203feeeed4fdd8000618eb32edf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1203feeeed4fdd8000618eb32edf82">&#9670;&#160;</a></span>_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_dt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00054">54</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+</div>
+</div>
+<a id="a8398bd20d89b1541d66780eb700cd4a1" name="a8398bd20d89b1541d66780eb700cd4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8398bd20d89b1541d66780eb700cd4a1">&#9670;&#160;</a></span>_faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_faces[NumFaceTypes][<a class="el" href="../../d9/df1/Globals_8h.html#a344498efd6cab55ca761964e0a637e06">TwoTimesD</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00056">56</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00005">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::EnclaveTask()</a>.</p>
+
+</div>
+</div>
+<a id="a3feb8358b3fb9ee30fbd222aeed3df32" name="a3feb8358b3fb9ee30fbd222aeed3df32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3feb8358b3fb9ee30fbd222aeed3df32">&#9670;&#160;</a></span>_functor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aad9e19108a883475695eee2ddad23e37">Functor</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_functor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00058">58</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d54/Calculator_8py_source.html#l00038">peano4.visualisation.filters.Calculator.Calculator::render()</a>.</p>
+
+</div>
+</div>
+<a id="ab8e2cfd1fc7b78b5085bec7d6d7c4752" name="ab8e2cfd1fc7b78b5085bec7d6d7c4752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e2cfd1fc7b78b5085bec7d6d7c4752">&#9670;&#160;</a></span>_marker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_marker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00052">52</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+</div>
+</div>
+<a id="ad93187335ec8fe0254cc1474e164e5cd" name="ad93187335ec8fe0254cc1474e164e5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93187335ec8fe0254cc1474e164e5cd">&#9670;&#160;</a></span>_QIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_QIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00055">55</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00005">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::EnclaveTask()</a>.</p>
+
+</div>
+</div>
+<a id="aab7a80a49143f83c2086e8289a6d69e5" name="aab7a80a49143f83c2086e8289a6d69e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7a80a49143f83c2086e8289a6d69e5">&#9670;&#160;</a></span>_QOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html#aa8a0498c61178c1ad0d57c74ec280b24">NOALIAS</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_QOut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00057">57</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html#l00005">exahype2::EnclaveTask&lt; T, NumFaceTypes &gt;::EnclaveTask()</a>.</p>
+
+</div>
+</div>
+<a id="a1f5420bf1b7fa8583af3b2d40459682c" name="a1f5420bf1b7fa8583af3b2d40459682c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5420bf1b7fa8583af3b2d40459682c">&#9670;&#160;</a></span>_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> NumFaceTypes = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">exahype2::EnclaveTask</a>&lt; T, NumFaceTypes &gt;::_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d98/EnclaveTask_8h_source.html#l00053">53</a> of file <a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/exahype2/<a class="el" href="../../da/d98/EnclaveTask_8h_source.html">EnclaveTask.h</a></li>
+<li>src/exahype2/<a class="el" href="../../d5/d1e/EnclaveTask_8cpph_source.html">EnclaveTask.cpph</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:27 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

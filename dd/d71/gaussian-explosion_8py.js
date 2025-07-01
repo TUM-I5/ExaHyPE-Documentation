@@ -1,0 +1,27 @@
+var gaussian_explosion_8py =
+[
+    [ "args", "dd/d71/gaussian-explosion_8py.html#a5418b4e2671e5779c398fd3d7c070e92", null ],
+    [ "boundary_conditions", "dd/d71/gaussian-explosion_8py.html#a150954fd64ee4ce76612ff0c99abb8ab", null ],
+    [ "dimensions", "dd/d71/gaussian-explosion_8py.html#adddaed479da935928a833337c6045fd7", null ],
+    [ "first_plot_time_stamp", "dd/d71/gaussian-explosion_8py.html#ac23851e11a6954c87c382de768561c5f", null ],
+    [ "flux", "dd/d71/gaussian-explosion_8py.html#ac32490e6e7b7b6f8841e0bb7bed1b210", null ],
+    [ "initial_conditions", "dd/d71/gaussian-explosion_8py.html#a6c727a752c57a6c2993ef170c8929d3d", null ],
+    [ "make", "dd/d71/gaussian-explosion_8py.html#a674667b1b633f2d27959984096f3134e", null ],
+    [ "make_clean_first", "dd/d71/gaussian-explosion_8py.html#a5ed9c707578d2acf71ce16b3d0c0f384", null ],
+    [ "max_eigenvalue", "dd/d71/gaussian-explosion_8py.html#a0e62cfe5f48f667c23c024a8b175a9a3", null ],
+    [ "max_end_time", "dd/d71/gaussian-explosion_8py.html#a95f8eecec01ccac2a54652484a2c1791", null ],
+    [ "max_h", "dd/d71/gaussian-explosion_8py.html#a618f54cbd68e41a3604a7ac0caf62525", null ],
+    [ "min_end_time", "dd/d71/gaussian-explosion_8py.html#a31b9f50d475dadd6b1976945aef0fea2", null ],
+    [ "min_h", "dd/d71/gaussian-explosion_8py.html#a2100e185cce3ba2acaa58e20f3e48401", null ],
+    [ "mode", "dd/d71/gaussian-explosion_8py.html#aa28c8472e6eef75cc695e6192ef9a94b", null ],
+    [ "offset", "dd/d71/gaussian-explosion_8py.html#a9b2f54c3f434a12a8c7bc24f12d7f136", null ],
+    [ "parser", "dd/d71/gaussian-explosion_8py.html#afa08f6822d2178f26c7e96fe725e3568", null ],
+    [ "periodic_BC", "dd/d71/gaussian-explosion_8py.html#a1d129f3ffba7b99817d0e55483691af1", null ],
+    [ "project", "dd/d71/gaussian-explosion_8py.html#a031521bbaf264b11aecb3e3c4971e4b8", null ],
+    [ "refinement_criterion", "dd/d71/gaussian-explosion_8py.html#a6441c88e47a044a3b903d8b62d746d4e", null ],
+    [ "riemann_solver", "dd/d71/gaussian-explosion_8py.html#ad290cadb723292fdfc77dbcbfc084fd7", null ],
+    [ "size", "dd/d71/gaussian-explosion_8py.html#adc46e86d02d4d61805f48d843b7c932b", null ],
+    [ "throw_away_data_after_build", "dd/d71/gaussian-explosion_8py.html#aede42b333515a8aa3d12913f18518fa6", null ],
+    [ "time_in_between_plots", "dd/d71/gaussian-explosion_8py.html#a15d31d41f12671717044b3456ece0a17", null ],
+    [ "True", "dd/d71/gaussian-explosion_8py.html#ad261a236ba9e144a53b194e22f004c2b", null ]
+];

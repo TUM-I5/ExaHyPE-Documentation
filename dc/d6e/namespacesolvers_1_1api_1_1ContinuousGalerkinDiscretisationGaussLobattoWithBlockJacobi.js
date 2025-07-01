@@ -1,0 +1,4 @@
+var namespacesolvers_1_1api_1_1ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi =
+[
+    [ "ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi", "d2/df3/classsolvers_1_1api_1_1ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi_1_1Continuous791b99c68cabd165d1b776b4230a8001.html", "d2/df3/classsolvers_1_1api_1_1ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi_1_1Continuous791b99c68cabd165d1b776b4230a8001" ]
+];

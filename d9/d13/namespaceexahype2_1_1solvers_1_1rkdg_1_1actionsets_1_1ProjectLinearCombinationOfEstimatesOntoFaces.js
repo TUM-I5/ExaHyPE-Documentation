@@ -1,0 +1,6 @@
+var namespaceexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces =
+[
+    [ "FaceProjections", "d5/d88/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces_1_1FaceProjections.html", "d5/d88/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces_1_1FaceProjections" ],
+    [ "ProjectLinearCombinationOfEstimatesOntoFaces", "d5/de5/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces_190444580c43540afc821600e17176f9c.html", "d5/de5/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces_190444580c43540afc821600e17176f9c" ],
+    [ "compute_number_of_face_projection_quantities", "d9/d13/namespaceexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ProjectLinearCombinationOfEstimatesOntoFaces.html#a9fd2d26ebc19ebd68c2d65876983ca92", null ]
+];

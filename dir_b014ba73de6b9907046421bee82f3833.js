@@ -1,0 +1,25 @@
+var dir_b014ba73de6b9907046421bee82f3833 =
+[
+    [ "boundaryconditions", "dir_626858e88d985c0109bb9cf0dd9857e8.html", "dir_626858e88d985c0109bb9cf0dd9857e8" ],
+    [ "dependencychecks", "dir_002ae9c7ee8ab02f1767fdce5d834919.html", "dir_002ae9c7ee8ab02f1767fdce5d834919" ],
+    [ "kernels", "dir_68b73f05112337d8a74e7165755d0cf0.html", "dir_68b73f05112337d8a74e7165755d0cf0" ],
+    [ "statistics", "dir_a9f065bd17edc5f2693ab260bb9581b6.html", "dir_a9f065bd17edc5f2693ab260bb9581b6" ],
+    [ "timestepping", "dir_ae5dd57ba65fb885dfdf0a7914a514dd.html", "dir_ae5dd57ba65fb885dfdf0a7914a514dd" ],
+    [ "CellMetaData.cpp", "de/da8/CellMetaData_8cpp.html", null ],
+    [ "CellMetaData.h", "de/d6c/CellMetaData_8h.html", "de/d6c/CellMetaData_8h" ],
+    [ "GridControlEvents.cpp", "db/d77/GridControlEvents_8cpp.html", null ],
+    [ "GridControlEvents.h", "d2/d7f/GridControlEvents_8h.html", "d2/d7f/GridControlEvents_8h" ],
+    [ "ParticleSpecies.cpp", "d0/da8/ParticleSpecies_8cpp.html", null ],
+    [ "ParticleSpecies.h", "dd/d10/ParticleSpecies_8h.html", "dd/d10/ParticleSpecies_8h" ],
+    [ "swift2.cpp", "d4/d8a/swift2_8cpp.html", null ],
+    [ "swift2.h", "d2/d47/swift2_8h.html", "d2/d47/swift2_8h" ],
+    [ "TaskEnumerator.cpp", "d6/d37/TaskEnumerator_8cpp.html", null ],
+    [ "TaskEnumerator.h", "d0/db9/TaskEnumerator_8h.html", "d0/db9/TaskEnumerator_8h" ],
+    [ "TaskNumber.cpp", "d4/d92/TaskNumber_8cpp.html", "d4/d92/TaskNumber_8cpp" ],
+    [ "TaskNumber.cpph", "db/d1b/TaskNumber_8cpph.html", null ],
+    [ "TaskNumber.h", "d4/d5e/TaskNumber_8h.html", "d4/d5e/TaskNumber_8h" ],
+    [ "UnitTests.cpp", "de/df3/swift2_2UnitTests_8cpp.html", null ],
+    [ "UnitTests.h", "db/de8/swift2_2UnitTests_8h.html", "db/de8/swift2_2UnitTests_8h" ],
+    [ "UserInterface.cpp", "d7/d73/swift2_2UserInterface_8cpp.html", null ],
+    [ "UserInterface.h", "d8/dc6/swift2_2UserInterface_8h.html", "d8/dc6/swift2_2UserInterface_8h" ]
+];

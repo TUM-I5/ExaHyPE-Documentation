@@ -1,0 +1,4 @@
+var FusedSpaceTimePredictorVolumeIntegral_8py =
+[
+    [ "exahype2.solvers.aderdg.kernels.FusedSpaceTimePredictorVolumeIntegral.FusedSpaceTimePredictorVolumeIntegral", "d7/def/classexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1FusedSpaceTimePredictorVolumeIntegral_1_1FusedSpaceTimePredictorVolumeIntegral.html", "d7/def/classexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1FusedSpaceTimePredictorVolumeIntegral_1_1FusedSpaceTimePredictorVolumeIntegral" ]
+];

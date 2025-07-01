@@ -1,0 +1,4 @@
+var DGPoisson2dBlockMatrix_8py =
+[
+    [ "mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix" ]
+];

@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for generating matrices that we pipe into the C++ code.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d04/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator__inherit__graph.png" border="0" usemap="#amghype_8api_8matrixgenerators_8MatrixGenerator_8MatrixGenerator_inherit__map" alt="Inheritance graph"/></div>
+<map name="amghype_8api_8matrixgenerators_8MatrixGenerator_8MatrixGenerator_inherit__map" id="amghype_8api_8matrixgenerators_8MatrixGenerator_8MatrixGenerator_inherit__map">
+<area shape="rect" title="Base class for generating matrices that we pipe into the C++ code." alt="" coords="5,77,244,117"/>
+<area shape="rect" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html" title="Simple matrix generator for continuous d&#45;linear finite elements." alt="" coords="303,5,523,45"/>
+<area shape="poly" title=" " alt="" coords="218,71,332,43,333,48,220,77"/>
+<area shape="rect" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html" title="Using normalised identity matrix instead of the mass matrix." alt="" coords="292,70,535,125"/>
+<area shape="poly" title=" " alt="" coords="258,95,292,95,292,100,258,100"/>
+<area shape="rect" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html" title="Simple matrix generator assuming that we use a Gauss Lobatto unknown layout." alt="" coords="303,149,523,189"/>
+<area shape="poly" title=" " alt="" coords="220,118,333,147,332,152,218,123"/>
+<area shape="rect" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html" title=" " alt="" coords="583,149,857,189"/>
+<area shape="poly" title=" " alt="" coords="537,167,582,167,582,172,537,172"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2226d9bdd6b34b8ebeff8e00fa1c69b1" id="r_a2226d9bdd6b34b8ebeff8e00fa1c69b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2226d9bdd6b34b8ebeff8e00fa1c69b1">__init__</a> (self, <a class="el" href="#a3281b79e000ad9b3dc5895eedcec4457">dimensions</a>, <a class="el" href="#a8e1849dc9381de8b19ac1e7644ab12d4">poly_degree</a>, <a class="el" href="#ace31af38d954ebd225f2a3af18021908">unknowns_per_node</a>=1)</td></tr>
+<tr class="separator:a2226d9bdd6b34b8ebeff8e00fa1c69b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2419a8b5f493ca79524cac7c5851dc" id="r_a2f2419a8b5f493ca79524cac7c5851dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f2419a8b5f493ca79524cac7c5851dc">get_polynomial1d</a> (self)</td></tr>
+<tr class="memdesc:a2f2419a8b5f493ca79524cac7c5851dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to create a list of 1D polynomials.  <br /></td></tr>
+<tr class="separator:a2f2419a8b5f493ca79524cac7c5851dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48374e6be64d1cf982c28f19f79cc3d7" id="r_a48374e6be64d1cf982c28f19f79cc3d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48374e6be64d1cf982c28f19f79cc3d7">get_points1d</a> (self)</td></tr>
+<tr class="memdesc:a48374e6be64d1cf982c28f19f79cc3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the quadrature points, used for integration.  <br /></td></tr>
+<tr class="separator:a48374e6be64d1cf982c28f19f79cc3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264a80059e11322e2c61ed258d0bff7b" id="r_a264a80059e11322e2c61ed258d0bff7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a264a80059e11322e2c61ed258d0bff7b">get_integration_points_over_unit_interval</a> (self)</td></tr>
+<tr class="memdesc:a264a80059e11322e2c61ed258d0bff7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Most schemes define the integration point over the interval [-1,1] whereas MGHyPE often needs it on the unit interval.  <br /></td></tr>
+<tr class="separator:a264a80059e11322e2c61ed258d0bff7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4e9b1399b3adfc13ce7b83fc13693c" id="r_a5c4e9b1399b3adfc13ce7b83fc13693c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c4e9b1399b3adfc13ce7b83fc13693c">get_weights1d</a> (self)</td></tr>
+<tr class="memdesc:a5c4e9b1399b3adfc13ce7b83fc13693c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set the quadrature weights, used for integration.  <br /></td></tr>
+<tr class="separator:a5c4e9b1399b3adfc13ce7b83fc13693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945f6da6cef1fe8fb5df2920e2662a0b" id="r_a945f6da6cef1fe8fb5df2920e2662a0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945f6da6cef1fe8fb5df2920e2662a0b">get_points_for_dimension</a> (self, dim=-1)</td></tr>
+<tr class="memdesc:a945f6da6cef1fe8fb5df2920e2662a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">We promote the 1D quadrature points in into the dimensions of our problem by taking cartesian product.  <br /></td></tr>
+<tr class="separator:a945f6da6cef1fe8fb5df2920e2662a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29069bf379bd308b066b8f0e48e4a78d" id="r_a29069bf379bd308b066b8f0e48e4a78d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29069bf379bd308b066b8f0e48e4a78d">get_weights_for_dimension</a> (self, dim=-1)</td></tr>
+<tr class="memdesc:a29069bf379bd308b066b8f0e48e4a78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">We promote the 1D quadrature weights in into the dimensions of our problem by taking cartesian product.  <br /></td></tr>
+<tr class="separator:a29069bf379bd308b066b8f0e48e4a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4fa73d3bd9802a1ba1531757ed6357" id="r_a9e4fa73d3bd9802a1ba1531757ed6357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e4fa73d3bd9802a1ba1531757ed6357">convert_index_to_dim</a> (self, index, dim=-1)</td></tr>
+<tr class="memdesc:a9e4fa73d3bd9802a1ba1531757ed6357"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method helps with indexing.  <br /></td></tr>
+<tr class="separator:a9e4fa73d3bd9802a1ba1531757ed6357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1ba74e37f254db9458fae26e1c7e92" id="r_afd1ba74e37f254db9458fae26e1c7e92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd1ba74e37f254db9458fae26e1c7e92">get_polynomial</a> (self, index, dim=-1)</td></tr>
+<tr class="memdesc:afd1ba74e37f254db9458fae26e1c7e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promote 1d polynomials to many dimensions by taking products.  <br /></td></tr>
+<tr class="separator:afd1ba74e37f254db9458fae26e1c7e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0c21a1e3ebe71badf9ae871ff72f25" id="r_acf0c21a1e3ebe71badf9ae871ff72f25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0c21a1e3ebe71badf9ae871ff72f25">get_deriv</a> (self, index, dimForDeriv, dim=-1)</td></tr>
+<tr class="memdesc:acf0c21a1e3ebe71badf9ae871ff72f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">dimForDeriv is the singular dimension that we wanna take a polyderiv in  <br /></td></tr>
+<tr class="separator:acf0c21a1e3ebe71badf9ae871ff72f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904f577674ce2a2d6d6744c3487c4681" id="r_a904f577674ce2a2d6d6744c3487c4681"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a904f577674ce2a2d6d6744c3487c4681">eval_integral</a> (self, functions, dim=-1, factor=1)</td></tr>
+<tr class="separator:a904f577674ce2a2d6d6744c3487c4681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ca374dca153bf8586f2aa22210b9e8" id="r_a09ca374dca153bf8586f2aa22210b9e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ca374dca153bf8586f2aa22210b9e8">get_cell_system_matrix_for_laplacian</a> (self)</td></tr>
+<tr class="memdesc:a09ca374dca153bf8586f2aa22210b9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the Laplacian.  <br /></td></tr>
+<tr class="separator:a09ca374dca153bf8586f2aa22210b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac130cf07ecde69bff00e86bad1c80176" id="r_ac130cf07ecde69bff00e86bad1c80176"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac130cf07ecde69bff00e86bad1c80176">get_cell_mass_matrix</a> (self)</td></tr>
+<tr class="memdesc:ac130cf07ecde69bff00e86bad1c80176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory for cell mass matrix.  <br /></td></tr>
+<tr class="separator:ac130cf07ecde69bff00e86bad1c80176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47760160a9ead25e4a817799eb8c05c7" id="r_a47760160a9ead25e4a817799eb8c05c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47760160a9ead25e4a817799eb8c05c7">get_cell_identity_matrix</a> (self)</td></tr>
+<tr class="memdesc:a47760160a9ead25e4a817799eb8c05c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct identity for this particular equation system.  <br /></td></tr>
+<tr class="separator:a47760160a9ead25e4a817799eb8c05c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a3281b79e000ad9b3dc5895eedcec4457" id="r_a3281b79e000ad9b3dc5895eedcec4457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3281b79e000ad9b3dc5895eedcec4457">dimensions</a></td></tr>
+<tr class="separator:a3281b79e000ad9b3dc5895eedcec4457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1849dc9381de8b19ac1e7644ab12d4" id="r_a8e1849dc9381de8b19ac1e7644ab12d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1849dc9381de8b19ac1e7644ab12d4">poly_degree</a></td></tr>
+<tr class="separator:a8e1849dc9381de8b19ac1e7644ab12d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace31af38d954ebd225f2a3af18021908" id="r_ace31af38d954ebd225f2a3af18021908"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace31af38d954ebd225f2a3af18021908">unknowns_per_node</a></td></tr>
+<tr class="separator:ace31af38d954ebd225f2a3af18021908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aecb2f6850fce34cbec43c88f024b71" id="r_a5aecb2f6850fce34cbec43c88f024b71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aecb2f6850fce34cbec43c88f024b71">polynomials1d</a></td></tr>
+<tr class="separator:a5aecb2f6850fce34cbec43c88f024b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f9ddb4820b4d72deb23d53268db733" id="r_aa2f9ddb4820b4d72deb23d53268db733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2f9ddb4820b4d72deb23d53268db733">derivatives1d</a></td></tr>
+<tr class="separator:aa2f9ddb4820b4d72deb23d53268db733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f95a97e667d553260da68db544d266" id="r_ac3f95a97e667d553260da68db544d266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3f95a97e667d553260da68db544d266">points1d</a></td></tr>
+<tr class="separator:ac3f95a97e667d553260da68db544d266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0efc38c55ed9c2b2c7d681c8f2b9ee" id="r_aba0efc38c55ed9c2b2c7d681c8f2b9ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba0efc38c55ed9c2b2c7d681c8f2b9ee">weights1d</a></td></tr>
+<tr class="separator:aba0efc38c55ed9c2b2c7d681c8f2b9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for generating matrices that we pipe into the C++ code. </p>
+<p>Every method marked abstract is intended to be overwritten in child classes, but some will come with default behaviour. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00012">12</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2226d9bdd6b34b8ebeff8e00fa1c69b1" name="a2226d9bdd6b34b8ebeff8e00fa1c69b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2226d9bdd6b34b8ebeff8e00fa1c69b1">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dimensions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>poly_degree</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>unknowns_per_node</em><span class="paramdefsep"> = </span><span class="paramdefval">1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html#a168c6ba4e3f91f3e12d927400df8a6a5">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree</a>, <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a539bb6b476f862737d51d68120024d99">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>, <a class="el" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a3e4a6fc6339d13271fa02cbe3497cf9b">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a>, and <a class="el" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a89b60280a12fe82e5ef97385ffc12319">mghype.api.matrixgenerators.DLinear.DLinear</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00021">21</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9e4fa73d3bd9802a1ba1531757ed6357" name="a9e4fa73d3bd9802a1ba1531757ed6357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4fa73d3bd9802a1ba1531757ed6357">&#9670;&#160;</a></span>convert_index_to_dim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.convert_index_to_dim </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method helps with indexing. </p>
+<p>Typically, for polynomial degree p, we have (p+1) nodal points per coordinate axis, for a total of \( p^d \). This method converts an index in the range \( (0, ..., p^d) \) into a tuple of (x,y,z) coordinates. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00175">175</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00057">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.poly_degree</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00027">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.poly_degree</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00238">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_deriv()</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00195">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a9e4fa73d3bd9802a1ba1531757ed6357_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a9e4fa73d3bd9802a1ba1531757ed6357_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a9e4fa73d3bd9802a1ba1531757ed6357_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a9e4fa73d3bd9802a1ba1531757ed6357_icgraph">
+<area shape="rect" title="This method helps with indexing." alt="" coords="356,34,647,89"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#acf0c21a1e3ebe71badf9ae871ff72f25" title="dimForDeriv is the singular dimension that we wanna take a polyderiv in" alt="" coords="5,5,308,45"/>
+<area shape="poly" title=" " alt="" coords="342,47,308,44,309,39,343,42"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#afd1ba74e37f254db9458fae26e1c7e92" title="Promote 1d polynomials to many dimensions by taking products." alt="" coords="25,70,288,125"/>
+<area shape="poly" title=" " alt="" coords="342,81,289,86,288,81,342,75"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a904f577674ce2a2d6d6744c3487c4681" name="a904f577674ce2a2d6d6744c3487c4681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904f577674ce2a2d6d6744c3487c4681">&#9670;&#160;</a></span>eval_integral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.eval_integral </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>functions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>factor</em><span class="paramdefsep"> = </span><span class="paramdefval">1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a3ac4994634564fdc370b720ae71ecf5b">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00273">273</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00110">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points_for_dimension()</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00143">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights_for_dimension()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a904f577674ce2a2d6d6744c3487c4681_cgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a904f577674ce2a2d6d6744c3487c4681_cgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a904f577674ce2a2d6d6744c3487c4681_cgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a904f577674ce2a2d6d6744c3487c4681_cgraph">
+<area shape="rect" title=" " alt="" coords="5,45,276,100"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a945f6da6cef1fe8fb5df2920e2662a0b" title="We promote the 1D quadrature points in into the dimensions of our problem by taking cartesian product..." alt="" coords="324,5,587,60"/>
+<area shape="poly" title=" " alt="" coords="276,53,310,48,311,54,276,58"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a29069bf379bd308b066b8f0e48e4a78d" title="We promote the 1D quadrature weights in into the dimensions of our problem by taking cartesian produc..." alt="" coords="324,84,587,139"/>
+<area shape="poly" title=" " alt="" coords="276,87,311,91,310,96,276,92"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47760160a9ead25e4a817799eb8c05c7" name="a47760160a9ead25e4a817799eb8c05c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47760160a9ead25e4a817799eb8c05c7">&#9670;&#160;</a></span>get_cell_identity_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_cell_identity_matrix </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct identity for this particular equation system. </p>
+<p>Not that this is identity construction has to take the number of unknowns into account as well as the number of degrees of freedom hosted within a cell. </p>
+
+<p>Reimplemented in <a class="el" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a6ae672303dd27f02bc664f4a1208eef5">mghype.api.matrixgenerators.DLinear.DLinear</a>, <a class="el" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a4fa4b962cfc5597509b0dc609560d3a7">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a>, <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a43bd05ba5303fc2e4fd32d9adcab6dbb">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>, and <a class="el" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html#aa3c49883060d0cc10731b6ecee66cca7">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00337">337</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00082">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.get_cell_mass_matrix()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a47760160a9ead25e4a817799eb8c05c7_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a47760160a9ead25e4a817799eb8c05c7_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a47760160a9ead25e4a817799eb8c05c7_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a47760160a9ead25e4a817799eb8c05c7_icgraph">
+<area shape="rect" title="Construct identity for this particular equation system." alt="" coords="587,45,849,100"/>
+<area shape="rect" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a2998472e434f39081ae587e3582249f5" title="Here we use a normalised identity matrix instead of the mass matrix." alt="" coords="296,45,539,100"/>
+<area shape="poly" title=" " alt="" coords="573,75,539,75,539,70,573,70"/>
+<area shape="rect" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a68574e382a973a31894476164e7a0a9d" title="Get this working for 2d." alt="" coords="17,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="282,57,236,50,237,45,283,51"/>
+<area shape="rect" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a6b3d4e926151088216e3a47b9bec6e67" title="Get this working for 2d." alt="" coords="5,84,248,139"/>
+<area shape="poly" title=" " alt="" coords="283,93,249,98,248,93,282,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac130cf07ecde69bff00e86bad1c80176" name="ac130cf07ecde69bff00e86bad1c80176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac130cf07ecde69bff00e86bad1c80176">&#9670;&#160;</a></span>get_cell_mass_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_cell_mass_matrix </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory for cell mass matrix. </p>
+<p>Consult get_cell_system_matrix_for_laplacian() for an overview of the result types. As the mass matrix is typically fairly simple (it does not host any derivative), and as we work within a finite element mindset, this routine returns a list with one matrix as first argument, and then a list with the integer self.dimensions. </p>
+
+<p>Reimplemented in <a class="el" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a47a69875f6ce3331a453b2072cab2735">mghype.api.matrixgenerators.DLinear.DLinear</a>, <a class="el" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a2998472e434f39081ae587e3582249f5">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a>, <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a8996cc6e820bd1efe7d12a39c14a31ae">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>, and <a class="el" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html#ae18fd2d66ea9d314e8e816347209b64a">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00322">322</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00058">mghype.api.matrixgenerators.DLinear.DLinear.get_lumped_mass_matrix()</a>, and <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00064">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.get_lumped_mass_matrix()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_ac130cf07ecde69bff00e86bad1c80176_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_ac130cf07ecde69bff00e86bad1c80176_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_ac130cf07ecde69bff00e86bad1c80176_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_ac130cf07ecde69bff00e86bad1c80176_icgraph">
+<area shape="rect" title="Factory for cell mass matrix." alt="" coords="296,45,559,100"/>
+<area shape="rect" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a68574e382a973a31894476164e7a0a9d" title="Get this working for 2d." alt="" coords="17,5,237,60"/>
+<area shape="poly" title=" " alt="" coords="282,56,237,50,237,45,283,51"/>
+<area shape="rect" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#a6b3d4e926151088216e3a47b9bec6e67" title="Get this working for 2d." alt="" coords="5,84,248,139"/>
+<area shape="poly" title=" " alt="" coords="283,94,248,98,248,93,282,89"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09ca374dca153bf8586f2aa22210b9e8" name="a09ca374dca153bf8586f2aa22210b9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ca374dca153bf8586f2aa22210b9e8">&#9670;&#160;</a></span>get_cell_system_matrix_for_laplacian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_cell_system_matrix_for_laplacian </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the Laplacian. </p>
+<p>Create the Laplacian. This routine represents the fact that the Laplacian is kind of the evergreen of many PDEs, and we therefore provide a factory method for this one always.</p>
+<p>These factory methods all return two lists. The first one is a list of matrices \( A_1, A_2, ... \) defined relative to the unit cube or square, respectively. The second list has the same length as the first list, and stores integer indices \( k_1, k_2, k_3, ... \). Throughout the assemly, you should then apply the local matrix \( A = h^{k_1} A_1 + h^{k_2} A_2 + ... \). The mass matrix typically is only one matrix scaled with d, i.e. we return a list hosting only one matrix as first argument and the second list only hosts the integer self.dimensions.</p>
+<p>Implement this in child class.</p>
+<dl class="section return"><dt>Returns</dt><dd>[Matrix] x [Int] The two lists have to have the same number of entries. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html#a3e4edf4e9e7d5e63f7f4814b2d4ab0fa">mghype.api.matrixgenerators.DLinear.DLinear</a>, <a class="el" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html#af48b62e1d7a9df2708306968716b6a37">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a>, <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a351b8363aa3316ab470d033b4b44a526">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>, and <a class="el" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html#a180a0b0175039be81a538303a83e624a">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00292">292</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00318">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_A_tilde()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a09ca374dca153bf8586f2aa22210b9e8_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a09ca374dca153bf8586f2aa22210b9e8_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a09ca374dca153bf8586f2aa22210b9e8_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a09ca374dca153bf8586f2aa22210b9e8_icgraph">
+<area shape="rect" title="Construct the Laplacian." alt="" coords="300,5,563,60"/>
+<area shape="rect" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html#ad2d9f49a82163e59f05a5ff06605b28a" title="Compute block&#45;diagonal of the Schur&#45;complement matrix." alt="" coords="5,5,252,60"/>
+<area shape="poly" title=" " alt="" coords="286,35,252,35,252,30,286,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf0c21a1e3ebe71badf9ae871ff72f25" name="acf0c21a1e3ebe71badf9ae871ff72f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0c21a1e3ebe71badf9ae871ff72f25">&#9670;&#160;</a></span>get_deriv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_deriv </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dimForDeriv</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dimForDeriv is the singular dimension that we wanna take a polyderiv in </p>
+<p>Behaves the same as get_polynomial, except in that in the specified dimension, we take a derivative rather than the poly itself </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00238">238</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00175">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.convert_index_to_dim()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00031">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.derivatives1d</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00030">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.polynomials1d</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_acf0c21a1e3ebe71badf9ae871ff72f25_cgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_acf0c21a1e3ebe71badf9ae871ff72f25_cgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_acf0c21a1e3ebe71badf9ae871ff72f25_cgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_acf0c21a1e3ebe71badf9ae871ff72f25_cgraph">
+<area shape="rect" title="dimForDeriv is the singular dimension that we wanna take a polyderiv in" alt="" coords="5,13,308,53"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a9e4fa73d3bd9802a1ba1531757ed6357" title="This method helps with indexing." alt="" coords="356,5,647,60"/>
+<area shape="poly" title=" " alt="" coords="308,30,342,30,342,35,308,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a264a80059e11322e2c61ed258d0bff7b" name="a264a80059e11322e2c61ed258d0bff7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264a80059e11322e2c61ed258d0bff7b">&#9670;&#160;</a></span>get_integration_points_over_unit_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_integration_points_over_unit_interval </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Most schemes define the integration point over the interval [-1,1] whereas MGHyPE often needs it on the unit interval. </p>
+<p>Therefore, I offer this genereric recalibration routine. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00080">80</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00059">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.get_points1d()</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00063">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points1d()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a264a80059e11322e2c61ed258d0bff7b_cgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a264a80059e11322e2c61ed258d0bff7b_cgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a264a80059e11322e2c61ed258d0bff7b_cgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a264a80059e11322e2c61ed258d0bff7b_cgraph">
+<area shape="rect" title="Most schemes define the integration point over the interval [&#45;1,1] whereas MGHyPE often needs it on t..." alt="" coords="5,45,277,100"/>
+<area shape="rect" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a0e548ae35d3088a8a2e6a71861b9b994" title="Get spacing of integration points over unit interval." alt="" coords="342,5,571,60"/>
+<area shape="poly" title=" " alt="" coords="277,53,328,46,329,52,278,58"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a48374e6be64d1cf982c28f19f79cc3d7" title="Method to set the quadrature points, used for integration." alt="" coords="325,84,588,139"/>
+<area shape="poly" title=" " alt="" coords="278,87,312,91,311,96,277,92"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48374e6be64d1cf982c28f19f79cc3d7" name="a48374e6be64d1cf982c28f19f79cc3d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48374e6be64d1cf982c28f19f79cc3d7">&#9670;&#160;</a></span>get_points1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points1d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to set the quadrature points, used for integration. </p>
+<p>Provide a method here to produce Gauss-Legendre points, but this can be overwritten in child class.</p>
+<p>Slightly redundant use of the leggauss function here, but I thought it better to separate the calculation of points and weights for ease of implementing in child class. </p>
+
+<p>Reimplemented in <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a0e548ae35d3088a8a2e6a71861b9b994">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00063">63</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00057">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.poly_degree</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00027">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.poly_degree</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00080">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_integration_points_over_unit_interval()</a>, and <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00094">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.get_weights1d()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a48374e6be64d1cf982c28f19f79cc3d7_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a48374e6be64d1cf982c28f19f79cc3d7_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a48374e6be64d1cf982c28f19f79cc3d7_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a48374e6be64d1cf982c28f19f79cc3d7_icgraph">
+<area shape="rect" title="Method to set the quadrature points, used for integration." alt="" coords="603,45,865,100"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a264a80059e11322e2c61ed258d0bff7b" title="Most schemes define the integration point over the interval [&#45;1,1] whereas MGHyPE often needs it on t..." alt="" coords="283,5,555,60"/>
+<area shape="poly" title=" " alt="" coords="588,57,555,53,555,47,589,52"/>
+<area shape="rect" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a205ede3b49bfc8212ca000a652aa5b4f" title="Overwrites the method in the base class." alt="" coords="304,84,533,139"/>
+<area shape="poly" title=" " alt="" coords="589,93,534,100,533,95,589,88"/>
+<area shape="rect" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a895b9208f7b82c1dfd74d077e92ac8a1" title=" " alt="" coords="5,84,235,139"/>
+<area shape="poly" title=" " alt="" coords="290,114,235,114,235,109,290,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a945f6da6cef1fe8fb5df2920e2662a0b" name="a945f6da6cef1fe8fb5df2920e2662a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945f6da6cef1fe8fb5df2920e2662a0b">&#9670;&#160;</a></span>get_points_for_dimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points_for_dimension </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We promote the 1D quadrature points in into the dimensions of our problem by taking cartesian product. </p>
+<p>This works for any dimension and does not need to be implemented in the child class.</p>
+<p>We may need to produce arrays of points for number of dimensions which is less </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00110">110</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00046">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.points1d</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00032">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.points1d</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00273">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.eval_integral()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a945f6da6cef1fe8fb5df2920e2662a0b_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a945f6da6cef1fe8fb5df2920e2662a0b_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a945f6da6cef1fe8fb5df2920e2662a0b_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a945f6da6cef1fe8fb5df2920e2662a0b_icgraph">
+<area shape="rect" title="We promote the 1D quadrature points in into the dimensions of our problem by taking cartesian product..." alt="" coords="324,5,587,60"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a904f577674ce2a2d6d6744c3487c4681" title=" " alt="" coords="5,5,276,60"/>
+<area shape="poly" title=" " alt="" coords="310,35,276,35,276,30,310,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd1ba74e37f254db9458fae26e1c7e92" name="afd1ba74e37f254db9458fae26e1c7e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1ba74e37f254db9458fae26e1c7e92">&#9670;&#160;</a></span>get_polynomial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Promote 1d polynomials to many dimensions by taking products. </p>
+<p>We pass in an index and a dimension, which will, by default be set to the number of dimensions of the problem.</p>
+<p>The index should be betweeen 0 and (self.poly_degree)^self.dimensions</p>
+<p>We convert the index into a tuple (x,y,z) of indices, pull out appropriate polynomials and return a function object. This function object will expect dim arguments. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00195">195</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00175">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.convert_index_to_dim()</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00030">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.polynomials1d</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_afd1ba74e37f254db9458fae26e1c7e92_cgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_afd1ba74e37f254db9458fae26e1c7e92_cgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_afd1ba74e37f254db9458fae26e1c7e92_cgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_afd1ba74e37f254db9458fae26e1c7e92_cgraph">
+<area shape="rect" title="Promote 1d polynomials to many dimensions by taking products." alt="" coords="5,5,268,60"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a9e4fa73d3bd9802a1ba1531757ed6357" title="This method helps with indexing." alt="" coords="316,5,607,60"/>
+<area shape="poly" title=" " alt="" coords="268,30,302,30,302,35,268,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f2419a8b5f493ca79524cac7c5851dc" name="a2f2419a8b5f493ca79524cac7c5851dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2419a8b5f493ca79524cac7c5851dc">&#9670;&#160;</a></span>get_polynomial1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial1d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to create a list of 1D polynomials. </p>
+<p>We promote these to higher dimensions by taking tensor products.</p>
+<p>By default, we will return Lagrange polynomials, but we can overwrite this in child class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00036">36</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00057">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.poly_degree</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00027">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.poly_degree</a>.</p>
+
+</div>
+</div>
+<a id="a5c4e9b1399b3adfc13ce7b83fc13693c" name="a5c4e9b1399b3adfc13ce7b83fc13693c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4e9b1399b3adfc13ce7b83fc13693c">&#9670;&#160;</a></span>get_weights1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights1d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to set the quadrature weights, used for integration. </p>
+<p>Provide a method here to produce Gauss-Legendre weights, but this can be overwritten in child class.</p>
+<p>Slightly redundant use of the leggauss function here, but I thought it better to separate the calculation of points and weights for ease of implementing in child class. </p>
+
+<p>Reimplemented in <a class="el" href="../../dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a205ede3b49bfc8212ca000a652aa5b4f">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00093">93</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00057">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.poly_degree</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00027">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.poly_degree</a>.</p>
+
+</div>
+</div>
+<a id="a29069bf379bd308b066b8f0e48e4a78d" name="a29069bf379bd308b066b8f0e48e4a78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29069bf379bd308b066b8f0e48e4a78d">&#9670;&#160;</a></span>get_weights_for_dimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights_for_dimension </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We promote the 1D quadrature weights in into the dimensions of our problem by taking cartesian product. </p>
+<p>This works for any dimension and does not need to be implemented in the child class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00143">143</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00098">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.dimensions</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00011">exahype2.symhype.PDE.PDE.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00078">peano4.visualisation.input.PatchFileParser.UnknownAttributes.dimensions</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00166">peano4.visualisation.input.PatchFileParser.PatchFileParser.dimensions</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00042">mghype.api.matrixgenerators.DLinear.DLinear.dimensions</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00048">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00286">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.dimensions</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00368">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.dimensions</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</a>, <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00008">equations.acoustic.Acoustic.dimensions</a>, <a class="el" href="../../d4/d18/tests_2exahype2_2aderdg_2equations_2advection_8py_source.html#l00008">equations.advection.Advection.dimensions</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00008">equations.elastic.Elastic.dimensions</a>, <a class="el" href="../../d6/d90/equation_8py_source.html#l00007">equations.equation.Equation.dimensions</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00008">equations.euler.Euler.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00010">equations.swe.SWE_W_Bathymetry.dimensions</a>, <a class="el" href="../../db/da6/tests_2exahype2_2aderdg_2equations_2swe_8py_source.html#l00056">equations.swe.SWE_WO_Bathymetry.dimensions</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00033">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.weights1d</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00273">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.eval_integral()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a29069bf379bd308b066b8f0e48e4a78d_icgraph.png" border="0" usemap="#ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a29069bf379bd308b066b8f0e48e4a78d_icgraph" alt=""/></div>
+<map name="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a29069bf379bd308b066b8f0e48e4a78d_icgraph" id="ad2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator_a29069bf379bd308b066b8f0e48e4a78d_icgraph">
+<area shape="rect" title="We promote the 1D quadrature weights in into the dimensions of our problem by taking cartesian produc..." alt="" coords="324,5,587,60"/>
+<area shape="rect" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html#a904f577674ce2a2d6d6744c3487c4681" title=" " alt="" coords="5,5,276,60"/>
+<area shape="poly" title=" " alt="" coords="310,35,276,35,276,30,310,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aa2f9ddb4820b4d72deb23d53268db733" name="aa2f9ddb4820b4d72deb23d53268db733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f9ddb4820b4d72deb23d53268db733">&#9670;&#160;</a></span>derivatives1d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.derivatives1d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00031">31</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00238">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_deriv()</a>.</p>
+
+</div>
+</div>
+<a id="a3281b79e000ad9b3dc5895eedcec4457" name="a3281b79e000ad9b3dc5895eedcec4457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3281b79e000ad9b3dc5895eedcec4457">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00026">26</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00183">peano4.visualisation.input.PatchFileParser.PatchFileParser.__parse_meta_data_region()</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00238">peano4.visualisation.input.PatchFileParser.PatchFileParser.__parse_patch_region()</a>, <a class="el" href="../../dd/d1a/python_2exahype2_2symhype_2PDE_8py_source.html#l00034">exahype2.symhype.PDE.PDE._implementation_of_mapping_onto_named_quantities()</a>, <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00099">peano4.visualisation.input.PatchFileParser.UnknownAttributes._initialise_default_mapping_if_no_mapping_specified()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00175">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.convert_index_to_dim()</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00013">equations.euler.Euler.eigenvalues()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00273">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.eval_integral()</a>, <a class="el" href="../../d4/d48/tests_2exahype2_2aderdg_2equations_2elastic_8py_source.html#l00025">equations.elastic.Elastic.flux()</a>, <a class="el" href="../../df/dda/tests_2exahype2_2aderdg_2equations_2euler_8py_source.html#l00042">equations.euler.Euler.flux()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00631">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_boundary_matrix()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00337">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_cell_from_face_matrix()</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00045">mghype.api.matrixgenerators.DLinear.DLinear.get_cell_identity_matrix()</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00051">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.get_cell_identity_matrix()</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00076">mghype.api.matrixgenerators.DLinear.DLinear.get_cell_mass_matrix()</a>, <a class="el" href="../../d6/d28/DLinear_8py_source.html#l00091">mghype.api.matrixgenerators.DLinear.DLinear.get_cell_system_matrix_for_laplacian()</a>, <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00106">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.get_cell_system_matrix_for_laplacian()</a>, <a class="el" href="../../d0/dad/DiscontinuousGalerkinDiscretisation_8py_source.html#l00273">api.solvers.DiscontinuousGalerkinDiscretisation.AssemblePetscMatrix.get_constructor_body()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00238">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_deriv()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00110">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points_for_dimension()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00195">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00399">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_projection_matrices()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00143">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights_for_dimension()</a>, <a class="el" href="../../d2/d97/matrices_8py_source.html#l00056">matrices.DgGenerator.getCellToFaceMatrix()</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00168">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.implementation_of_eigenvalues()</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00108">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.implementation_of_flux()</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00208">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.implementation_of_max_eigenvalue()</a>, <a class="el" href="../../db/d05/FirstOrderConservativePDEFormulation_8py_source.html#l00138">exahype2.symhype.FirstOrderConservativePDEFormulation.FirstOrderConservativePDEFormulation.implementation_of_ncp()</a>, and <a class="el" href="../../d8/d75/PatchFileParser_8py_source.html#l00304">peano4.visualisation.input.PatchFileParser.PatchFileParser.parse_file()</a>.</p>
+
+</div>
+</div>
+<a id="ac3f95a97e667d553260da68db544d266" name="ac3f95a97e667d553260da68db544d266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f95a97e667d553260da68db544d266">&#9670;&#160;</a></span>points1d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.points1d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00032">32</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00110">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points_for_dimension()</a>, and <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00123">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.get_points_unit_interval()</a>.</p>
+
+</div>
+</div>
+<a id="a8e1849dc9381de8b19ac1e7644ab12d4" name="a8e1849dc9381de8b19ac1e7644ab12d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1849dc9381de8b19ac1e7644ab12d4">&#9670;&#160;</a></span>poly_degree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.poly_degree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00027">27</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00175">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.convert_index_to_dim()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00631">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_boundary_matrix()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00337">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_cell_from_face_matrix()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00059">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.get_points1d()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00063">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_points1d()</a>, <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00036">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial1d()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00399">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree.get_projection_matrices()</a>, <a class="el" href="../../db/d02/GaussLobatto_8py_source.html#l00094">mghype.api.matrixgenerators.GaussLobatto.GaussLobatto.get_weights1d()</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00093">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights1d()</a>.</p>
+
+</div>
+</div>
+<a id="a5aecb2f6850fce34cbec43c88f024b71" name="a5aecb2f6850fce34cbec43c88f024b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aecb2f6850fce34cbec43c88f024b71">&#9670;&#160;</a></span>polynomials1d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.polynomials1d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00030">30</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00238">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_deriv()</a>, and <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00195">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_polynomial()</a>.</p>
+
+</div>
+</div>
+<a id="ace31af38d954ebd225f2a3af18021908" name="ace31af38d954ebd225f2a3af18021908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace31af38d954ebd225f2a3af18021908">&#9670;&#160;</a></span>unknowns_per_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.unknowns_per_node</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00028">28</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00051">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity.get_cell_identity_matrix()</a>.</p>
+
+</div>
+</div>
+<a id="aba0efc38c55ed9c2b2c7d681c8f2b9ee" name="aba0efc38c55ed9c2b2c7d681c8f2b9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0efc38c55ed9c2b2c7d681c8f2b9ee">&#9670;&#160;</a></span>weights1d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.weights1d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00033">33</a> of file <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html#l00143">mghype.api.matrixgenerators.MatrixGenerator.MatrixGenerator.get_weights_for_dimension()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/mghype/api/matrixgenerators/<a class="el" href="../../d7/d4f/MatrixGenerator_8py_source.html">MatrixGenerator.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/df6/namespacemghype.html">mghype</a></li><li class="navelem"><a class="el" href="../../da/d45/namespacemghype_1_1api.html">api</a></li><li class="navelem"><a class="el" href="../../d7/df9/namespacemghype_1_1api_1_1matrixgenerators.html">matrixgenerators</a></li><li class="navelem"><a class="el" href="../../d9/d60/namespacemghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator.html">MatrixGenerator</a></li><li class="navelem"><a class="el" href="../../d2/dca/classmghype_1_1api_1_1matrixgenerators_1_1MatrixGenerator_1_1MatrixGenerator.html">MatrixGenerator</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:03 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">examples::regulargridupscaling::MyObserver Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for examples::regulargridupscaling::MyObserver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/de5/classexamples_1_1regulargridupscaling_1_1MyObserver__inherit__graph.png" border="0" usemap="#aexamples_1_1regulargridupscaling_1_1MyObserver_inherit__map" alt="Inheritance graph"/></div>
+<map name="aexamples_1_1regulargridupscaling_1_1MyObserver_inherit__map" id="aexamples_1_1regulargridupscaling_1_1MyObserver_inherit__map">
+<area shape="rect" title=" " alt="" coords="7,79,233,119"/>
+<area shape="rect" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html" title=" " alt="" coords="5,5,235,31"/>
+<area shape="poly" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for examples::regulargridupscaling::MyObserver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d6f/classexamples_1_1regulargridupscaling_1_1MyObserver__coll__graph.png" border="0" usemap="#aexamples_1_1regulargridupscaling_1_1MyObserver_coll__map" alt="Collaboration graph"/></div>
+<map name="aexamples_1_1regulargridupscaling_1_1MyObserver_coll__map" id="aexamples_1_1regulargridupscaling_1_1MyObserver_coll__map">
+<area shape="rect" title=" " alt="" coords="28,271,255,311"/>
+<area shape="rect" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html" title=" " alt="" coords="5,183,235,208"/>
+<area shape="poly" title=" " alt="" coords="128,221,140,270,134,271,123,222"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="259,183,402,208"/>
+<area shape="poly" title=" " alt="" coords="296,216,181,273,178,268,294,212"/>
+<area shape="rect" title=" " alt="" coords="287,95,374,120"/>
+<area shape="poly" title=" " alt="" coords="333,134,333,182,328,182,328,134"/>
+<area shape="rect" title=" " alt="" coords="261,5,400,45"/>
+<area shape="poly" title=" " alt="" coords="333,59,333,94,328,94,328,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a666490bcb81a159dc046d60ddb7576cd" id="r_a666490bcb81a159dc046d60ddb7576cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a666490bcb81a159dc046d60ddb7576cd">MyObserver</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetreeId, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> h, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> flopsPerCell)</td></tr>
+<tr class="separator:a666490bcb81a159dc046d60ddb7576cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4b88bf99c66016719f634aa0d60009" id="r_afa4b88bf99c66016719f634aa0d60009"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa4b88bf99c66016719f634aa0d60009">~MyObserver</a> ()</td></tr>
+<tr class="separator:afa4b88bf99c66016719f634aa0d60009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c4f8dd6336d158aa76b203722dbbcd" id="r_ae6c4f8dd6336d158aa76b203722dbbcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c4f8dd6336d158aa76b203722dbbcd">beginTraversal</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;h) override</td></tr>
+<tr class="memdesc:ae6c4f8dd6336d158aa76b203722dbbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin the traversal.  <br /></td></tr>
+<tr class="separator:ae6c4f8dd6336d158aa76b203722dbbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6241df94029a34be68f31af78c175305" id="r_a6241df94029a34be68f31af78c175305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6241df94029a34be68f31af78c175305">endTraversal</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;h) override</td></tr>
+<tr class="separator:a6241df94029a34be68f31af78c175305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1175c2a7c0e757eb344bbd14967d7494" id="r_a1175c2a7c0e757eb344bbd14967d7494"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1175c2a7c0e757eb344bbd14967d7494">enterCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">peano4::grid::GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="memdesc:a1175c2a7c0e757eb344bbd14967d7494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event is invoked per cell.  <br /></td></tr>
+<tr class="separator:a1175c2a7c0e757eb344bbd14967d7494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e654472a5d48d0bea9805de306680c0" id="r_a3e654472a5d48d0bea9805de306680c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e654472a5d48d0bea9805de306680c0">leaveCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">peano4::grid::GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="separator:a3e654472a5d48d0bea9805de306680c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce72981aa55e35b6365e55592b91944" id="r_acce72981aa55e35b6365e55592b91944"><td class="memItemLeft" align="right" valign="top">TraversalObserver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acce72981aa55e35b6365e55592b91944">clone</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetreeId) override</td></tr>
+<tr class="memdesc:acce72981aa55e35b6365e55592b91944"><td class="mdescLeft">&#160;</td><td class="mdescRight">I use the clone to create one observer object per traversal thread.  <br /></td></tr>
+<tr class="separator:acce72981aa55e35b6365e55592b91944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a2634b510807999307dfda8592befb" id="r_a22a2634b510807999307dfda8592befb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html">peano4::grid::GridControlEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22a2634b510807999307dfda8592befb">getGridControlEvents</a> () override</td></tr>
+<tr class="separator:a22a2634b510807999307dfda8592befb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:afdccd50631958ebe24563258452347bd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_afdccd50631958ebe24563258452347bd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#afdccd50631958ebe24563258452347bd">~TraversalObserver</a> ()=default</td></tr>
+<tr class="separator:afdccd50631958ebe24563258452347bd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4beead04cb5f57db46231b1a920aee inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a7f4beead04cb5f57db46231b1a920aee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a7f4beead04cb5f57db46231b1a920aee">loadCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event)=0</td></tr>
+<tr class="separator:a7f4beead04cb5f57db46231b1a920aee inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4d78821027b19dad6331da8e666940 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a9e4d78821027b19dad6331da8e666940"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a9e4d78821027b19dad6331da8e666940">storeCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event)=0</td></tr>
+<tr class="separator:a9e4d78821027b19dad6331da8e666940 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b0152e0b128548250d87f67c1f98f inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ae19b0152e0b128548250d87f67c1f98f"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html">GridControlEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ae19b0152e0b128548250d87f67c1f98f">getGridControlEvents</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> =0</td></tr>
+<tr class="separator:ae19b0152e0b128548250d87f67c1f98f inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_af1ed539a30fea0f0e043e6324baac25e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#af1ed539a30fea0f0e043e6324baac25e">exchangeAllVerticalDataExchangeStacks</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="memdesc:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send local data from top level of local mesh to master and receive its top-down information in return.  <br /></td></tr>
+<tr class="separator:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a92cf83b39162a521dc7a31bf0d716c3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a92cf83b39162a521dc7a31bf0d716c3e">exchangeAllHorizontalDataExchangeStacks</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>)</td></tr>
+<tr class="memdesc:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange all the data along the domain boundaries.  <br /></td></tr>
+<tr class="separator:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad776826dc1d420d6098df3c0218878c3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad776826dc1d420d6098df3c0218878c3">exchangeAllPeriodicBoundaryDataStacks</a> ()</td></tr>
+<tr class="memdesc:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange all periodic boundary data.  <br /></td></tr>
+<tr class="separator:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a390c773eac91fdfa5e584cfc3d616e88"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a390c773eac91fdfa5e584cfc3d616e88">streamDataFromSplittingTreeToNewTree</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="memdesc:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream data from current tree on which this routine is called to the new worker.  <br /></td></tr>
+<tr class="separator:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a9acbcb70210f41f52bcfe6abfcd97 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad0a9acbcb70210f41f52bcfe6abfcd97"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad0a9acbcb70210f41f52bcfe6abfcd97">streamDataFromJoiningTreeToMasterTree</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="separator:ad0a9acbcb70210f41f52bcfe6abfcd97 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a18d8710891a9c77042af806152a8030c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a18d8710891a9c77042af806152a8030c">finishAllOutstandingSendsAndReceives</a> ()</td></tr>
+<tr class="memdesc:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap up all sends and receives, i.e.  <br /></td></tr>
+<tr class="separator:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba3f60a7bd8761621cd8d1eb1df4e87 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_aeba3f60a7bd8761621cd8d1eb1df4e87"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aeba3f60a7bd8761621cd8d1eb1df4e87">sendVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:aeba3f60a7bd8761621cd8d1eb1df4e87 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34ead8d3d87bc2b9e66af14ca81731e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ac34ead8d3d87bc2b9e66af14ca81731e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ac34ead8d3d87bc2b9e66af14ca81731e">sendFace</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:ac34ead8d3d87bc2b9e66af14ca81731e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7c1de69db470195a9e3d5919f81d1 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_acdb7c1de69db470195a9e3d5919f81d1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#acdb7c1de69db470195a9e3d5919f81d1">sendCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:acdb7c1de69db470195a9e3d5919f81d1 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068ebd88939f01da8eeeb1342f7d4bde inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a068ebd88939f01da8eeeb1342f7d4bde"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a068ebd88939f01da8eeeb1342f7d4bde">receiveAndMergeVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:a068ebd88939f01da8eeeb1342f7d4bde inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc434376120f85a8d193a654f798d32a inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_afc434376120f85a8d193a654f798d32a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#afc434376120f85a8d193a654f798d32a">receiveAndMergeFace</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:afc434376120f85a8d193a654f798d32a inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccee27b616739c84e8c642f8fc0d853 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a2ccee27b616739c84e8c642f8fc0d853"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a2ccee27b616739c84e8c642f8fc0d853">receiveAndMergeCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:a2ccee27b616739c84e8c642f8fc0d853 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058c703908dcd8e077d363719b554acd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a058c703908dcd8e077d363719b554acd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a058c703908dcd8e077d363719b554acd">deleteAllStacks</a> ()</td></tr>
+<tr class="separator:a058c703908dcd8e077d363719b554acd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af9c2d1a0217e356c6536fadba060e2f8" id="r_af9c2d1a0217e356c6536fadba060e2f8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9c2d1a0217e356c6536fadba060e2f8">RanksObserverTemplate</a> = 1</td></tr>
+<tr class="separator:af9c2d1a0217e356c6536fadba060e2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d7a469b9aa400c32b5eb6394ccfe1c" id="r_a12d7a469b9aa400c32b5eb6394ccfe1c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d7a469b9aa400c32b5eb6394ccfe1c">FractionOfCellsYieldingIntegrationTask</a></td></tr>
+<tr class="separator:a12d7a469b9aa400c32b5eb6394ccfe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664e616ecfb084690fb7c500e461a04c" id="r_a664e616ecfb084690fb7c500e461a04c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a664e616ecfb084690fb7c500e461a04c">IntegrationAccuracy</a></td></tr>
+<tr class="separator:a664e616ecfb084690fb7c500e461a04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:ad55dc7a05075a65bd3434358887b09a8 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad55dc7a05075a65bd3434358887b09a8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad55dc7a05075a65bd3434358887b09a8">NoRebalancing</a> = -1</td></tr>
+<tr class="separator:ad55dc7a05075a65bd3434358887b09a8 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_abbe411399480e4585f40a167e7af23f9"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#abbe411399480e4585f40a167e7af23f9">NoData</a> = -1</td></tr>
+<tr class="memdesc:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can this grid entity hold data.  <br /></td></tr>
+<tr class="separator:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_a75878b2597bf510936775f7b948992e1"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a75878b2597bf510936775f7b948992e1">CreateOrDestroyPersistentGridEntity</a> = -2</td></tr>
+<tr class="memdesc:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implies that the data will then be local or had been local.  <br /></td></tr>
+<tr class="separator:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_a622c4b63aca2883db584c4e641dd06db"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a622c4b63aca2883db584c4e641dd06db">CreateOrDestroyHangingGridEntity</a> = -3</td></tr>
+<tr class="memdesc:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implies that the data will then be local or had been local.  <br /></td></tr>
+<tr class="separator:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad438483f9973772ce04f4d2f00f6afa1" id="r_ad438483f9973772ce04f4d2f00f6afa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad438483f9973772ce04f4d2f00f6afa1">_spacetreeId</a></td></tr>
+<tr class="separator:ad438483f9973772ce04f4d2f00f6afa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9de2ed27c32d35f272a2850d644322" id="r_a5b9de2ed27c32d35f272a2850d644322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b9de2ed27c32d35f272a2850d644322">_h</a></td></tr>
+<tr class="separator:a5b9de2ed27c32d35f272a2850d644322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da8c162b63e3f24000d1e70cb10e804" id="r_a1da8c162b63e3f24000d1e70cb10e804"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da8c162b63e3f24000d1e70cb10e804">_flopsPerCell</a></td></tr>
+<tr class="separator:a1da8c162b63e3f24000d1e70cb10e804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b23c0a424de1b360779ebe821b94a34" id="r_a1b23c0a424de1b360779ebe821b94a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b23c0a424de1b360779ebe821b94a34">_accumulator</a></td></tr>
+<tr class="memdesc:a1b23c0a424de1b360779ebe821b94a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">I use an accumulator just to ensure that the flop calculations are not removed.  <br /></td></tr>
+<tr class="separator:a1b23c0a424de1b360779ebe821b94a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e39ab4f800295f62a414a2282ab982" id="r_a02e39ab4f800295f62a414a2282ab982"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e39ab4f800295f62a414a2282ab982">_taskAccumulator</a></td></tr>
+<tr class="separator:a02e39ab4f800295f62a414a2282ab982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a0a4f08020ef6fb60bf1217dcbd6963bd" id="r_a0a4f08020ef6fb60bf1217dcbd6963bd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a4f08020ef6fb60bf1217dcbd6963bd">_log</a></td></tr>
+<tr class="separator:a0a4f08020ef6fb60bf1217dcbd6963bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:a3504d372e0af2124da7c2309c63fab96 inherit pub_types_classpeano4_1_1grid_1_1TraversalObserver" id="r_a3504d372e0af2124da7c2309c63fab96"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a> { <br />
+&#160;&#160;<a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96aead618ceb8f010c2bd28be9447cc9173">BoundaryExchange</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96abc650b4cdb2246879c50526333303e24">MultiscaleExchange</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96abe4c9bf8c911fc19b6217e7f681b2a7f">ForkDomain</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96a3ddd71ec8308bf153c78216d833fc02d">JoinDomain</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96afe417302dbcb1217571bd36fb4724c8e">PeriodicBoundaryDataSwap</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a3504d372e0af2124da7c2309c63fab96"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are three different scenarios when we merge data:  <a href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">More...</a><br /></td></tr>
+<tr class="separator:a3504d372e0af2124da7c2309c63fab96 inherit pub_types_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00018">18</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a666490bcb81a159dc046d60ddb7576cd" name="a666490bcb81a159dc046d60ddb7576cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666490bcb81a159dc046d60ddb7576cd">&#9670;&#160;</a></span>MyObserver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">examples::regulargridupscaling::MyObserver::MyObserver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetreeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>flopsPerCell</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afa4b88bf99c66016719f634aa0d60009" name="afa4b88bf99c66016719f634aa0d60009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4b88bf99c66016719f634aa0d60009">&#9670;&#160;</a></span>~MyObserver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">examples::regulargridupscaling::MyObserver::~MyObserver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae6c4f8dd6336d158aa76b203722dbbcd" name="ae6c4f8dd6336d158aa76b203722dbbcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c4f8dd6336d158aa76b203722dbbcd">&#9670;&#160;</a></span>beginTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> examples::regulargridupscaling::MyObserver::beginTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Begin the traversal. </p>
+<p>This routine is called per spacetree instance, i.e. per subtree (thread) per rank. Within the usual implementation, everything will reside on the call stack anyway. If the routine is called on tree no 0, this operation has to establish the master data of the global root tree, i.e. ensure that the data of level -1 is technically there for the subsequent enterCell event, though this data is ill-defined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td><a class="el" href="../../d8/d73/classRoot.html">Root</a> cell coordinates </td></tr>
+    <tr><td class="paramname">h</td><td><a class="el" href="../../d8/d73/classRoot.html">Root</a> cell size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a9fcef74ba5e3d47f26bd9c3999118334">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acce72981aa55e35b6365e55592b91944" name="acce72981aa55e35b6365e55592b91944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce72981aa55e35b6365e55592b91944">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a> * examples::regulargridupscaling::MyObserver::clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetreeId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>I use the clone to create one observer object per traversal thread. </p>
+<p>So between different spacetrees of one spacetree set, there can be no race condition. Yet, the <a class="el" href="#acce72981aa55e35b6365e55592b91944" title="I use the clone to create one observer object per traversal thread.">clone()</a> itself could be called in parallel. </p>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a856511702ac2d89d35efb761b1c3a7f6">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6241df94029a34be68f31af78c175305" name="a6241df94029a34be68f31af78c175305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6241df94029a34be68f31af78c175305">&#9670;&#160;</a></span>endTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> examples::regulargridupscaling::MyObserver::endTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ae6c4f8dd6336d158aa76b203722dbbcd" title="Begin the traversal.">beginTraversal()</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aba891cd6821aa9bf44f1e57368b4c937">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>.</p>
+
+</div>
+</div>
+<a id="a1175c2a7c0e757eb344bbd14967d7494" name="a1175c2a7c0e757eb344bbd14967d7494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1175c2a7c0e757eb344bbd14967d7494">&#9670;&#160;</a></span>enterCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> examples::regulargridupscaling::MyObserver::enterCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">peano4::grid::GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event is invoked per cell. </p>
+<p>It is however not called for the root cell, i.e. for the cell with level 0 that does not have a parent. </p>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aef95cd14ab811b37c9e55a5242c9c767">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../dd/d5b/GridTraversalEvent_8h_source.html#l00178">peano4::grid::GridTraversalEvent::getCellData()</a>, <a class="el" href="../../dd/d5b/GridTraversalEvent_8h_source.html#l00060">peano4::grid::GridTraversalEvent::getH()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00848">toolbox::finiteelements::getPoissonMatrixWithJumpingCoefficient()</a>, <a class="el" href="../../dd/d5b/GridTraversalEvent_8h_source.html#l00055">peano4::grid::GridTraversalEvent::getX()</a>, and <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a1175c2a7c0e757eb344bbd14967d7494_cgraph.png" border="0" usemap="#ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a1175c2a7c0e757eb344bbd14967d7494_cgraph" alt=""/></div>
+<map name="ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a1175c2a7c0e757eb344bbd14967d7494_cgraph" id="ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a1175c2a7c0e757eb344bbd14967d7494_cgraph">
+<area shape="rect" title="Event is invoked per cell." alt="" coords="5,215,232,255"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="357,5,430,31"/>
+<area shape="poly" title=" " alt="" coords="129,213,151,176,185,129,228,81,279,41,310,27,342,20,343,25,312,32,281,46,231,85,189,132,156,179,133,216"/>
+<area shape="rect" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html#a632ce2bf8c8633ca6e083f674f5842ed" title=" " alt="" coords="295,55,492,95"/>
+<area shape="poly" title=" " alt="" coords="138,213,198,159,237,130,279,105,294,98,297,103,281,110,240,135,201,164,142,217"/>
+<area shape="rect" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html#a7b09d4035c01b7b2253f41f0377b21b0" title=" " alt="" coords="295,119,492,159"/>
+<area shape="poly" title=" " alt="" coords="165,213,279,169,304,161,305,166,281,174,167,218"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="312,183,475,223"/>
+<area shape="poly" title=" " alt="" coords="232,219,298,212,298,217,233,225"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="308,247,479,287"/>
+<area shape="poly" title=" " alt="" coords="233,246,295,253,294,258,232,251"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#a10b8dafd3c32e7a9a54416b0d058c93c" title="Integrate over element with a subvoxel scheme (cmp." alt="" coords="280,312,507,367"/>
+<area shape="poly" title=" " alt="" coords="170,253,281,297,302,305,300,310,279,302,168,258"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="620,408,732,433"/>
+<area shape="poly" title=" " alt="" coords="138,254,196,317,236,349,281,376,322,391,365,403,453,418,536,423,606,423,606,428,536,429,452,423,364,408,320,396,279,380,233,354,192,320,134,258"/>
+<area shape="rect" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html#ada98a086744acb90ec6ea84aa13c351a" title=" " alt="" coords="295,442,492,482"/>
+<area shape="poly" title=" " alt="" coords="134,254,158,290,191,334,233,381,282,421,305,434,302,439,278,426,230,385,187,338,153,293,130,257"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#ac293b45f1a8ed3f3de7f4630b6e3bd20" title="Derive element&#45;wise matrix from stencil." alt="" coords="555,153,797,193"/>
+<area shape="poly" title=" " alt="" coords="485,310,505,297,520,281,529,265,537,248,553,231,579,212,608,196,610,201,582,216,556,235,542,251,534,268,525,285,508,301,488,314"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#a577723941846a70aa2aaa357429e84c4" title="Computes the Laplacian." alt="" coords="589,245,763,285"/>
+<area shape="poly" title=" " alt="" coords="497,309,586,286,587,291,498,315"/>
+<area shape="poly" title=" " alt="" coords="465,364,555,394,607,406,606,411,554,399,463,369"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18" title=" " alt="" coords="567,309,785,335"/>
+<area shape="poly" title=" " alt="" coords="507,330,553,327,553,332,507,335"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a0652bd2078150d09c0cb5eed30291804" title="Computes the volume of the tetrahedron spanned by the Cartesian unit vectors scaled by the correspond..." alt="" coords="610,359,742,384"/>
+<area shape="poly" title=" " alt="" coords="507,350,597,360,596,365,507,355"/>
+<area shape="rect" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095" title="Map d&#45;dimensional vector onto integer index." alt="" coords="845,145,1035,171"/>
+<area shape="poly" title=" " alt="" coords="798,163,831,161,832,167,798,169"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#ab43c8d413b6fe9c2c132282e326b0f11" title="Stencil is not scaled at all with any mesh width." alt="" coords="853,195,1027,235"/>
+<area shape="poly" title=" " alt="" coords="762,246,839,231,840,237,763,251"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#ac06b95f8e442df150b3a1ad96dc5784a" title=" " alt="" coords="853,259,1027,299"/>
+<area shape="poly" title=" " alt="" coords="763,267,840,271,839,276,763,272"/>
+<area shape="rect" href="../../d0/dac/namespacetoolbox_1_1finiteelements.html#a9b958c8ca9d34b3400a3a0e6c2447e99" title=" " alt="" coords="853,323,1027,363"/>
+<area shape="poly" title=" " alt="" coords="756,282,798,294,868,316,867,322,797,299,755,287"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22a2634b510807999307dfda8592befb" name="a22a2634b510807999307dfda8592befb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a2634b510807999307dfda8592befb">&#9670;&#160;</a></span>getGridControlEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html">peano4::grid::GridControlEvent</a> &gt; examples::regulargridupscaling::MyObserver::getGridControlEvents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html#a794903045a986f95769e8b5ffda790f5a9f79b65055f2201292e5f79666bf2579">peano4::grid::GridControlEvent::Refine</a>, <a class="el" href="../../dc/d58/GridControlEvent_8h_source.html#l00052">peano4::grid::GridControlEvent::setH()</a>, <a class="el" href="../../dc/d58/GridControlEvent_8h_source.html#l00042">peano4::grid::GridControlEvent::setOffset()</a>, <a class="el" href="../../dc/d58/GridControlEvent_8h_source.html#l00039">peano4::grid::GridControlEvent::setRefinementControl()</a>, and <a class="el" href="../../dc/d58/GridControlEvent_8h_source.html#l00047">peano4::grid::GridControlEvent::setWidth()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a22a2634b510807999307dfda8592befb_cgraph.png" border="0" usemap="#ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a22a2634b510807999307dfda8592befb_cgraph" alt=""/></div>
+<map name="ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a22a2634b510807999307dfda8592befb_cgraph" id="ad9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver_a22a2634b510807999307dfda8592befb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,101,261,141"/>
+<area shape="rect" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html#a6ff6a0f880c22f537477a6ba71eb4aad" title=" " alt="" coords="321,5,507,45"/>
+<area shape="poly" title=" " alt="" coords="186,99,308,55,332,47,333,52,310,60,188,104"/>
+<area shape="rect" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html#a5a89a287c40974e9fc99cb65524bb2b8" title=" " alt="" coords="321,69,507,109"/>
+<area shape="poly" title=" " alt="" coords="261,104,307,99,308,104,262,109"/>
+<area shape="rect" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html#ad2cd598185401d96aaff804a4f2f4893" title=" " alt="" coords="309,133,519,173"/>
+<area shape="poly" title=" " alt="" coords="262,133,296,137,295,142,261,139"/>
+<area shape="rect" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html#af0e1c312a8946c702824dab13f8e1150" title=" " alt="" coords="321,197,507,237"/>
+<area shape="poly" title=" " alt="" coords="188,139,310,183,333,190,332,196,308,188,186,144"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e654472a5d48d0bea9805de306680c0" name="a3e654472a5d48d0bea9805de306680c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e654472a5d48d0bea9805de306680c0">&#9670;&#160;</a></span>leaveCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> examples::regulargridupscaling::MyObserver::leaveCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">peano4::grid::GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aee995e0120deb92bfc37ae236090f0b8">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a1b23c0a424de1b360779ebe821b94a34" name="a1b23c0a424de1b360779ebe821b94a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b23c0a424de1b360779ebe821b94a34">&#9670;&#160;</a></span>_accumulator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> examples::regulargridupscaling::MyObserver::_accumulator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>I use an accumulator just to ensure that the flop calculations are not removed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00029">29</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="a1da8c162b63e3f24000d1e70cb10e804" name="a1da8c162b63e3f24000d1e70cb10e804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da8c162b63e3f24000d1e70cb10e804">&#9670;&#160;</a></span>_flopsPerCell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> examples::regulargridupscaling::MyObserver::_flopsPerCell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00024">24</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b9de2ed27c32d35f272a2850d644322" name="a5b9de2ed27c32d35f272a2850d644322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9de2ed27c32d35f272a2850d644322">&#9670;&#160;</a></span>_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> examples::regulargridupscaling::MyObserver::_h</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00023">23</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a4f08020ef6fb60bf1217dcbd6963bd" name="a0a4f08020ef6fb60bf1217dcbd6963bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4f08020ef6fb60bf1217dcbd6963bd">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> examples::regulargridupscaling::MyObserver::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00020">20</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="ad438483f9973772ce04f4d2f00f6afa1" name="ad438483f9973772ce04f4d2f00f6afa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad438483f9973772ce04f4d2f00f6afa1">&#9670;&#160;</a></span>_spacetreeId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> examples::regulargridupscaling::MyObserver::_spacetreeId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00022">22</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="a02e39ab4f800295f62a414a2282ab982" name="a02e39ab4f800295f62a414a2282ab982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e39ab4f800295f62a414a2282ab982">&#9670;&#160;</a></span>_taskAccumulator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> examples::regulargridupscaling::MyObserver::_taskAccumulator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00031">31</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+</div>
+</div>
+<a id="a12d7a469b9aa400c32b5eb6394ccfe1c" name="a12d7a469b9aa400c32b5eb6394ccfe1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d7a469b9aa400c32b5eb6394ccfe1c">&#9670;&#160;</a></span>FractionOfCellsYieldingIntegrationTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> examples::regulargridupscaling::MyObserver::FractionOfCellsYieldingIntegrationTask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00036">36</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp_source.html#l00167">main()</a>.</p>
+
+</div>
+</div>
+<a id="a664e616ecfb084690fb7c500e461a04c" name="a664e616ecfb084690fb7c500e461a04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664e616ecfb084690fb7c500e461a04c">&#9670;&#160;</a></span>IntegrationAccuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> examples::regulargridupscaling::MyObserver::IntegrationAccuracy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00037">37</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp_source.html#l00167">main()</a>.</p>
+
+</div>
+</div>
+<a id="af9c2d1a0217e356c6536fadba060e2f8" name="af9c2d1a0217e356c6536fadba060e2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c2d1a0217e356c6536fadba060e2f8">&#9670;&#160;</a></span>RanksObserverTemplate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> examples::regulargridupscaling::MyObserver::RanksObserverTemplate = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html#l00034">34</a> of file <a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp_source.html#l00047">runParallel()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>benchmarks/peano4/regulargridupscaling/<a class="el" href="../../d4/dd4/regulargridupscaling_2MyObserver_8h_source.html">MyObserver.h</a></li>
+<li>benchmarks/peano4/regulargridupscaling/<a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html">MyObserver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/de9/namespaceexamples.html">examples</a></li><li class="navelem"><a class="el" href="../../d5/dd3/namespaceexamples_1_1regulargridupscaling.html">regulargridupscaling</a></li><li class="navelem"><a class="el" href="../../d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver.html">MyObserver</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:58 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

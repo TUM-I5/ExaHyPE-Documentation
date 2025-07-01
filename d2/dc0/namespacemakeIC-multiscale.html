@@ -1,0 +1,871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/dc0/namespacemakeIC-multiscale.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">makeIC-multiscale Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2aa8880b7fea04ebed1a3d8d13ded2f7" id="r_a2aa8880b7fea04ebed1a3d8d13ded2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2aa8880b7fea04ebed1a3d8d13ded2f7">get_coords</a> (box_min, box_max, <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>)</td></tr>
+<tr class="memdesc:a2aa8880b7fea04ebed1a3d8d13ded2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate coordinates for particles between box_min and box_max.  <br /></td></tr>
+<tr class="separator:a2aa8880b7fea04ebed1a3d8d13ded2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7c7b1f9af54a7d7708c968b6f48d4c" id="r_ace7c7b1f9af54a7d7708c968b6f48d4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace7c7b1f9af54a7d7708c968b6f48d4c">get_coords</a> (box_xmin, box_xmax, box_ymin, box_ymax, <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>)</td></tr>
+<tr class="memdesc:ace7c7b1f9af54a7d7708c968b6f48d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate coordinates for particles between box_min and box_max npart: number of particles in each dimension.  <br /></td></tr>
+<tr class="separator:ace7c7b1f9af54a7d7708c968b6f48d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c029295db89912ea8b944b1d48f21e" id="r_aa1c029295db89912ea8b944b1d48f21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c029295db89912ea8b944b1d48f21e">get_coords</a> (box_xmin, box_xmax, box_ymin, box_ymax, box_zmin, box_zmax, <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>)</td></tr>
+<tr class="memdesc:aa1c029295db89912ea8b944b1d48f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate coordinates for particles between box_min and box_max npart: number of particles in each dimension.  <br /></td></tr>
+<tr class="separator:aa1c029295db89912ea8b944b1d48f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a367fa1f2ffe0e663123a54183f02c780" id="r_a367fa1f2ffe0e663123a54183f02c780"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a367fa1f2ffe0e663123a54183f02c780">fileName</a> = &quot;test_sml_multiscale_1D.hdf5&quot;</td></tr>
+<tr class="separator:a367fa1f2ffe0e663123a54183f02c780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6e4408d3453e3dc319c47747304a2a" id="r_aeb6e4408d3453e3dc319c47747304a2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a> = 1.0</td></tr>
+<tr class="separator:aeb6e4408d3453e3dc319c47747304a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8521edbccfe0121d2d35d36deb7369c0" id="r_a8521edbccfe0121d2d35d36deb7369c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8521edbccfe0121d2d35d36deb7369c0">parser</a> = argparse.ArgumentParser(description=&quot;SPH benchmarking script&quot;)</td></tr>
+<tr class="separator:a8521edbccfe0121d2d35d36deb7369c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcefe810bc5d67fe7fa821adac74283" id="r_a2fcefe810bc5d67fe7fa821adac74283"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fcefe810bc5d67fe7fa821adac74283">dest</a></td></tr>
+<tr class="separator:a2fcefe810bc5d67fe7fa821adac74283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29edf032c14407d6623c6fb9d55bcb2b" id="r_a29edf032c14407d6623c6fb9d55bcb2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29edf032c14407d6623c6fb9d55bcb2b">required</a></td></tr>
+<tr class="separator:a29edf032c14407d6623c6fb9d55bcb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a26f0ff52d47bf45d11762764e5f725" id="r_a1a26f0ff52d47bf45d11762764e5f725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a26f0ff52d47bf45d11762764e5f725">type</a></td></tr>
+<tr class="separator:a1a26f0ff52d47bf45d11762764e5f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24831216c5290591a42835540b8fe47c" id="r_a24831216c5290591a42835540b8fe47c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24831216c5290591a42835540b8fe47c">help</a></td></tr>
+<tr class="separator:a24831216c5290591a42835540b8fe47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de6568b5b25f2a78cf63f2a68352da0" id="r_a3de6568b5b25f2a78cf63f2a68352da0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3de6568b5b25f2a78cf63f2a68352da0">action</a></td></tr>
+<tr class="separator:a3de6568b5b25f2a78cf63f2a68352da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54d51975499463c92dcca5bcdb0b74c" id="r_af54d51975499463c92dcca5bcdb0b74c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af54d51975499463c92dcca5bcdb0b74c">default</a></td></tr>
+<tr class="separator:af54d51975499463c92dcca5bcdb0b74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de540f73c463eabff278490f0701d05" id="r_a8de540f73c463eabff278490f0701d05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8de540f73c463eabff278490f0701d05">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a8de540f73c463eabff278490f0701d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d72badae20f7f04b4f073cd4ce2fdd5" id="r_a0d72badae20f7f04b4f073cd4ce2fdd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a> = args.particle_number</td></tr>
+<tr class="separator:a0d72badae20f7f04b4f073cd4ce2fdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bd2d3c2edc55b63299c82ac400df39" id="r_a40bd2d3c2edc55b63299c82ac400df39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40bd2d3c2edc55b63299c82ac400df39">seed</a> = args.random_seed</td></tr>
+<tr class="separator:a40bd2d3c2edc55b63299c82ac400df39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6fed18c4c487fd53d9551da4793317" id="r_a6b6fed18c4c487fd53d9551da4793317"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b6fed18c4c487fd53d9551da4793317">max_displacement</a> = args.max_displacement</td></tr>
+<tr class="separator:a6b6fed18c4c487fd53d9551da4793317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af962eb4d5ad15e469b8821edc2f34474" id="r_af962eb4d5ad15e469b8821edc2f34474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a> = 4 * <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a></td></tr>
+<tr class="separator:af962eb4d5ad15e469b8821edc2f34474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56746b4643929fe3a7d7b0eec7aee0c4" id="r_a56746b4643929fe3a7d7b0eec7aee0c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56746b4643929fe3a7d7b0eec7aee0c4">coords</a> = np.zeros((<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, 3))</td></tr>
+<tr class="separator:a56746b4643929fe3a7d7b0eec7aee0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9674adf7d7b229dca1ab76524725c01b" id="r_a9674adf7d7b229dca1ab76524725c01b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9674adf7d7b229dca1ab76524725c01b">v</a> = np.zeros((<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, 3))</td></tr>
+<tr class="separator:a9674adf7d7b229dca1ab76524725c01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89874245db374d58f4ba179d2c7657c" id="r_ad89874245db374d58f4ba179d2c7657c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad89874245db374d58f4ba179d2c7657c">ids</a> = np.linspace(1, <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td></tr>
+<tr class="separator:ad89874245db374d58f4ba179d2c7657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5164d058952824967105c7c81ce688a6" id="r_a5164d058952824967105c7c81ce688a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5164d058952824967105c7c81ce688a6">m</a> = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td></tr>
+<tr class="separator:a5164d058952824967105c7c81ce688a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa630c3ad396c1bd2814ffa06c2b415a8" id="r_aa630c3ad396c1bd2814ffa06c2b415a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa630c3ad396c1bd2814ffa06c2b415a8">h</a> = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>) * 4.0 * <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a> / <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a></td></tr>
+<tr class="separator:aa630c3ad396c1bd2814ffa06c2b415a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade539a439d2592d46e11f7a348863393" id="r_ade539a439d2592d46e11f7a348863393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade539a439d2592d46e11f7a348863393">u</a> = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td></tr>
+<tr class="separator:ade539a439d2592d46e11f7a348863393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c9916c31e91c3d9ce3736b4f0dfeac" id="r_af2c9916c31e91c3d9ce3736b4f0dfeac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2c9916c31e91c3d9ce3736b4f0dfeac">rng</a> = np.random.RandomState(<a class="el" href="#a40bd2d3c2edc55b63299c82ac400df39">seed</a>=<a class="el" href="#a40bd2d3c2edc55b63299c82ac400df39">seed</a>)</td></tr>
+<tr class="separator:af2c9916c31e91c3d9ce3736b4f0dfeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912fa05b6e2d5c2a4d0920f55805c514" id="r_a912fa05b6e2d5c2a4d0920f55805c514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a912fa05b6e2d5c2a4d0920f55805c514">new_coords</a> = <a class="el" href="#a2aa8880b7fea04ebed1a3d8d13ded2f7">get_coords</a>(0.0, <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a>, <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>)</td></tr>
+<tr class="separator:a912fa05b6e2d5c2a4d0920f55805c514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac7997df7672a772ce8b47edf32921b" id="r_a5ac7997df7672a772ce8b47edf32921b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ac7997df7672a772ce8b47edf32921b">marker</a></td></tr>
+<tr class="separator:a5ac7997df7672a772ce8b47edf32921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5224a2807278bc010c863386300964" id="r_add5224a2807278bc010c863386300964"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add5224a2807278bc010c863386300964">bins</a></td></tr>
+<tr class="separator:add5224a2807278bc010c863386300964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535187b690ff08005f8bd0cff9f98060" id="r_a535187b690ff08005f8bd0cff9f98060"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a535187b690ff08005f8bd0cff9f98060">file</a> = h5py.File(<a class="el" href="#a367fa1f2ffe0e663123a54183f02c780">fileName</a>, &quot;w&quot;)</td></tr>
+<tr class="separator:a535187b690ff08005f8bd0cff9f98060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda1970ce80f9ae6300419c5c251c37b" id="r_afda1970ce80f9ae6300419c5c251c37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afda1970ce80f9ae6300419c5c251c37b">grp</a> = file.create_group(&quot;/Header&quot;)</td></tr>
+<tr class="separator:afda1970ce80f9ae6300419c5c251c37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb8ede822775cca2c2ed494aa94ca49" id="r_a0cb8ede822775cca2c2ed494aa94ca49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cb8ede822775cca2c2ed494aa94ca49">data</a></td></tr>
+<tr class="separator:a0cb8ede822775cca2c2ed494aa94ca49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa64801b0146d3fd489a8edf3cbc3a8" id="r_a4aa64801b0146d3fd489a8edf3cbc3a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aa64801b0146d3fd489a8edf3cbc3a8">dtype</a></td></tr>
+<tr class="separator:a4aa64801b0146d3fd489a8edf3cbc3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac274ab2e93cbccbd8ca1abd82bb1dc44" id="r_ac274ab2e93cbccbd8ca1abd82bb1dc44"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac274ab2e93cbccbd8ca1abd82bb1dc44">dx</a> = <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a> / <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a></td></tr>
+<tr class="separator:ac274ab2e93cbccbd8ca1abd82bb1dc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9801bffc4dee5ff915badb8a623dee8" id="r_ab9801bffc4dee5ff915badb8a623dee8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9801bffc4dee5ff915badb8a623dee8">npart2</a> = <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>**2</td></tr>
+<tr class="separator:ab9801bffc4dee5ff915badb8a623dee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a6878b2584f011850f626cb774c827" id="r_a81a6878b2584f011850f626cb774c827"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81a6878b2584f011850f626cb774c827">scale</a> = 0.8</td></tr>
+<tr class="separator:a81a6878b2584f011850f626cb774c827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7524c026ae95f62847ca8aefb0f57a" id="r_a5d7524c026ae95f62847ca8aefb0f57a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d7524c026ae95f62847ca8aefb0f57a">s</a></td></tr>
+<tr class="separator:a5d7524c026ae95f62847ca8aefb0f57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c821a8e38f34e7270c707a51b51b121" id="r_a7c821a8e38f34e7270c707a51b51b121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c821a8e38f34e7270c707a51b51b121">npart3</a> = <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>**3</td></tr>
+<tr class="separator:a7c821a8e38f34e7270c707a51b51b121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2aa8880b7fea04ebed1a3d8d13ded2f7" name="a2aa8880b7fea04ebed1a3d8d13ded2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa8880b7fea04ebed1a3d8d13ded2f7">&#9670;&#160;</a></span>get_coords() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.get_coords </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_max</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>npart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate coordinates for particles between box_min and box_max. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00070">70</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="aa1c029295db89912ea8b944b1d48f21e" name="aa1c029295db89912ea8b944b1d48f21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c029295db89912ea8b944b1d48f21e">&#9670;&#160;</a></span>get_coords() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.get_coords </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_xmin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_xmax</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_ymin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_ymax</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_zmin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_zmax</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>npart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate coordinates for particles between box_min and box_max npart: number of particles in each dimension. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d6e/test-smoothing-length-computation-3D_2makeIC-multiscale_8py_source.html#l00074">74</a> of file <a class="el" href="../../d8/d6e/test-smoothing-length-computation-3D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="ace7c7b1f9af54a7d7708c968b6f48d4c" name="ace7c7b1f9af54a7d7708c968b6f48d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7c7b1f9af54a7d7708c968b6f48d4c">&#9670;&#160;</a></span>get_coords() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.get_coords </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_xmin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_xmax</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_ymin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>box_ymax</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>npart</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate coordinates for particles between box_min and box_max npart: number of particles in each dimension. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html#l00074">74</a> of file <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3de6568b5b25f2a78cf63f2a68352da0" name="a3de6568b5b25f2a78cf63f2a68352da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de6568b5b25f2a78cf63f2a68352da0">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00035">35</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a8de540f73c463eabff278490f0701d05" name="a8de540f73c463eabff278490f0701d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de540f73c463eabff278490f0701d05">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00050">50</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="add5224a2807278bc010c863386300964" name="add5224a2807278bc010c863386300964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5224a2807278bc010c863386300964">&#9670;&#160;</a></span>bins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.bins</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00115">115</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="aeb6e4408d3453e3dc319c47747304a2a" name="aeb6e4408d3453e3dc319c47747304a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6e4408d3453e3dc319c47747304a2a">&#9670;&#160;</a></span>boxSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float makeIC-multiscale.boxSize = 1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00012">12</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a56746b4643929fe3a7d7b0eec7aee0c4" name="a56746b4643929fe3a7d7b0eec7aee0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56746b4643929fe3a7d7b0eec7aee0c4">&#9670;&#160;</a></span>coords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.coords = np.zeros((<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, 3))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00060">60</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a0cb8ede822775cca2c2ed494aa94ca49" name="a0cb8ede822775cca2c2ed494aa94ca49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb8ede822775cca2c2ed494aa94ca49">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00151">151</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="af54d51975499463c92dcca5bcdb0b74c" name="af54d51975499463c92dcca5bcdb0b74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54d51975499463c92dcca5bcdb0b74c">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a2fcefe810bc5d67fe7fa821adac74283" name="a2fcefe810bc5d67fe7fa821adac74283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcefe810bc5d67fe7fa821adac74283">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00018">18</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a4aa64801b0146d3fd489a8edf3cbc3a8" name="a4aa64801b0146d3fd489a8edf3cbc3a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa64801b0146d3fd489a8edf3cbc3a8">&#9670;&#160;</a></span>dtype</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.dtype</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00151">151</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="ac274ab2e93cbccbd8ca1abd82bb1dc44" name="ac274ab2e93cbccbd8ca1abd82bb1dc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac274ab2e93cbccbd8ca1abd82bb1dc44">&#9670;&#160;</a></span>dx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float makeIC-multiscale.dx = <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a> / <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html#l00066">66</a> of file <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a535187b690ff08005f8bd0cff9f98060" name="a535187b690ff08005f8bd0cff9f98060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535187b690ff08005f8bd0cff9f98060">&#9670;&#160;</a></span>file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.file = h5py.File(<a class="el" href="#a367fa1f2ffe0e663123a54183f02c780">fileName</a>, &quot;w&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00120">120</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a367fa1f2ffe0e663123a54183f02c780" name="a367fa1f2ffe0e663123a54183f02c780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367fa1f2ffe0e663123a54183f02c780">&#9670;&#160;</a></span>fileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str makeIC-multiscale.fileName = &quot;test_sml_multiscale_1D.hdf5&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00011">11</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="afda1970ce80f9ae6300419c5c251c37b" name="afda1970ce80f9ae6300419c5c251c37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda1970ce80f9ae6300419c5c251c37b">&#9670;&#160;</a></span>grp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.grp = file.create_group(&quot;/Header&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00123">123</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="aa630c3ad396c1bd2814ffa06c2b415a8" name="aa630c3ad396c1bd2814ffa06c2b415a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa630c3ad396c1bd2814ffa06c2b415a8">&#9670;&#160;</a></span>h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float makeIC-multiscale.h = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>) * 4.0 * <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a> / <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00064">64</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a24831216c5290591a42835540b8fe47c" name="a24831216c5290591a42835540b8fe47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24831216c5290591a42835540b8fe47c">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00021">21</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="ad89874245db374d58f4ba179d2c7657c" name="ad89874245db374d58f4ba179d2c7657c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89874245db374d58f4ba179d2c7657c">&#9670;&#160;</a></span>ids</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.ids = np.linspace(1, <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, <a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00062">62</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a5164d058952824967105c7c81ce688a6" name="a5164d058952824967105c7c81ce688a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5164d058952824967105c7c81ce688a6">&#9670;&#160;</a></span>m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.m = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00063">63</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a5ac7997df7672a772ce8b47edf32921b" name="a5ac7997df7672a772ce8b47edf32921b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac7997df7672a772ce8b47edf32921b">&#9670;&#160;</a></span>marker</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.marker</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00113">113</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a6b6fed18c4c487fd53d9551da4793317" name="a6b6fed18c4c487fd53d9551da4793317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6fed18c4c487fd53d9551da4793317">&#9670;&#160;</a></span>max_displacement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.max_displacement = args.max_displacement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00053">53</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a912fa05b6e2d5c2a4d0920f55805c514" name="a912fa05b6e2d5c2a4d0920f55805c514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912fa05b6e2d5c2a4d0920f55805c514">&#9670;&#160;</a></span>new_coords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.new_coords = <a class="el" href="#a2aa8880b7fea04ebed1a3d8d13ded2f7">get_coords</a>(0.0, <a class="el" href="#aeb6e4408d3453e3dc319c47747304a2a">boxSize</a>, <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00098">98</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a0d72badae20f7f04b4f073cd4ce2fdd5" name="a0d72badae20f7f04b4f073cd4ce2fdd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d72badae20f7f04b4f073cd4ce2fdd5">&#9670;&#160;</a></span>npart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.npart = args.particle_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00051">51</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="ab9801bffc4dee5ff915badb8a623dee8" name="ab9801bffc4dee5ff915badb8a623dee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9801bffc4dee5ff915badb8a623dee8">&#9670;&#160;</a></span>npart2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> makeIC-multiscale.npart2 = <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>**2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html#l00114">114</a> of file <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a7c821a8e38f34e7270c707a51b51b121" name="a7c821a8e38f34e7270c707a51b51b121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c821a8e38f34e7270c707a51b51b121">&#9670;&#160;</a></span>npart3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> makeIC-multiscale.npart3 = <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a>**3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d6e/test-smoothing-length-computation-3D_2makeIC-multiscale_8py_source.html#l00120">120</a> of file <a class="el" href="../../d8/d6e/test-smoothing-length-computation-3D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="af962eb4d5ad15e469b8821edc2f34474" name="af962eb4d5ad15e469b8821edc2f34474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af962eb4d5ad15e469b8821edc2f34474">&#9670;&#160;</a></span>npart_tot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> makeIC-multiscale.npart_tot = 4 * <a class="el" href="#a0d72badae20f7f04b4f073cd4ce2fdd5">npart</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00059">59</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a8521edbccfe0121d2d35d36deb7369c0" name="a8521edbccfe0121d2d35d36deb7369c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8521edbccfe0121d2d35d36deb7369c0">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.parser = argparse.ArgumentParser(description=&quot;SPH benchmarking script&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00014">14</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a29edf032c14407d6623c6fb9d55bcb2b" name="a29edf032c14407d6623c6fb9d55bcb2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29edf032c14407d6623c6fb9d55bcb2b">&#9670;&#160;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00019">19</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="af2c9916c31e91c3d9ce3736b4f0dfeac" name="af2c9916c31e91c3d9ce3736b4f0dfeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c9916c31e91c3d9ce3736b4f0dfeac">&#9670;&#160;</a></span>rng</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.rng = np.random.RandomState(<a class="el" href="#a40bd2d3c2edc55b63299c82ac400df39">seed</a>=<a class="el" href="#a40bd2d3c2edc55b63299c82ac400df39">seed</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00067">67</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a5d7524c026ae95f62847ca8aefb0f57a" name="a5d7524c026ae95f62847ca8aefb0f57a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7524c026ae95f62847ca8aefb0f57a">&#9670;&#160;</a></span>s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html#l00143">143</a> of file <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a81a6878b2584f011850f626cb774c827" name="a81a6878b2584f011850f626cb774c827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a6878b2584f011850f626cb774c827">&#9670;&#160;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float makeIC-multiscale.scale = 0.8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html#l00133">133</a> of file <a class="el" href="../../dc/d06/test-smoothing-length-computation-2D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a40bd2d3c2edc55b63299c82ac400df39" name="a40bd2d3c2edc55b63299c82ac400df39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bd2d3c2edc55b63299c82ac400df39">&#9670;&#160;</a></span>seed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.seed = args.random_seed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00052">52</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a1a26f0ff52d47bf45d11762764e5f725" name="a1a26f0ff52d47bf45d11762764e5f725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a26f0ff52d47bf45d11762764e5f725">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00020">20</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="ade539a439d2592d46e11f7a348863393" name="ade539a439d2592d46e11f7a348863393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade539a439d2592d46e11f7a348863393">&#9670;&#160;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.u = np.ones(<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00065">65</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+<a id="a9674adf7d7b229dca1ab76524725c01b" name="a9674adf7d7b229dca1ab76524725c01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9674adf7d7b229dca1ab76524725c01b">&#9670;&#160;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeIC-multiscale.v = np.zeros((<a class="el" href="#af962eb4d5ad15e469b8821edc2f34474">npart_tot</a>, 3))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html#l00061">61</a> of file <a class="el" href="../../df/d74/test-smoothing-length-computation-1D_2makeIC-multiscale_8py_source.html">makeIC-multiscale.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc0/namespacemakeIC-multiscale.html">makeIC-multiscale</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:01 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+var structpeano4_1_1parallel_1_1TreeManagementMessage =
+[
+    [ "Action", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421", [
+      [ "RequestNewRemoteTree", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421a5d2933f9a52961da81a30c9080e93263", null ],
+      [ "CreateNewRemoteTree", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421ab103b93d58b7913ca05b54c2335bdbbd", null ],
+      [ "RemoveChildTreeFromBooksAsChildBecameEmpty", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421af210621f58faf7bf43b0c5a4690fb458", null ],
+      [ "JoinWithWorker", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421ab5acbaf6328a214f18919ab3f79e3ddf", null ],
+      [ "Acknowledgement", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421a527b5dd477abf95e8fe19aac201df396", null ]
+    ] ],
+    [ "ObjectConstruction", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a13c048a10fb398da17b2a30a85d60c05", [
+      [ "NoData", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a13c048a10fb398da17b2a30a85d60c05ae0279d4292f7ff2c7250cd943cfaeeb1", null ]
+    ] ],
+    [ "TreeManagementMessage", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a018bff09d1b3362b6b82687c1a528a0c", null ],
+    [ "TreeManagementMessage", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aae2d55ce3ee22b3f0f731babac30356b", null ],
+    [ "TreeManagementMessage", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a65307500f84288eb56116ffcfccda4ca", null ],
+    [ "TreeManagementMessage", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa7fd0a50413442283d93aaa11386f112", null ],
+    [ "freeBoundaryExchangeDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a5982141bdfc8a1fd5c4645455cb0feae", null ],
+    [ "freeForkDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aeb07b547d9e94987a6cddef879978001", null ],
+    [ "freeGlobalCommunciationDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a0c8b8ce3e24210473caf4a98d10bb205", null ],
+    [ "freeJoinDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a90e0c0a9cca9aa4bdbb07d3ecbc488f7", null ],
+    [ "freeMultiscaleDataExchangeDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a3f45c59ff201fbaca54c88dd9a83b2b2", null ],
+    [ "getAction", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3", null ],
+    [ "getBoundaryExchangeDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#afb6688a9022a38dd0ed568d4b03e515a", null ],
+    [ "getForkDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#ac2d50125a6fef4301559ad2b76ae94ed", null ],
+    [ "getGlobalCommunciationDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#ac60016e8e644c405147c338f3b981e92", null ],
+    [ "getJoinDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a0b4eafc4b27a8aeeb3e9f1f993db1ce4", null ],
+    [ "getMasterSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa4558200825e9fa1e5f950f35bd0468d", null ],
+    [ "getMultiscaleDataExchangeDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a1dd8cb186465f0a9e54940a6b69cbf42", null ],
+    [ "getSenderRank", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aaa1b9958580129df18ac3c6ae183dfec", null ],
+    [ "getWorkerSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a458b1e97bbb08a62840c1f494633aa9e", null ],
+    [ "initDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#af2cdc7e96acc6352da2730207db22afe", null ],
+    [ "receive", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3", null ],
+    [ "receive", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a3511697f73f2cc55400e8a49e289e00d", null ],
+    [ "receiveAndPollDanglingMessages", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa491a74d2227e95a538b3d5f4076390c", null ],
+    [ "send", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71", null ],
+    [ "send", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a9636adabeb33777615219c98ba368850", null ],
+    [ "sendAndPollDanglingMessages", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a7cfae5baa7c161d85705f2f8cf1e0703", null ],
+    [ "setAction", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545", null ],
+    [ "setMasterSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a39dcc85e917582e601772f414d892432", null ],
+    [ "setWorkerSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a751e49c699fded29e8ea2bbb27ec085c", null ],
+    [ "shutdownDatatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a3516b370734d67e034d38080f62dc5ea", null ],
+    [ "toString", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a6de11550a424b8f79da95ecf81596246", null ],
+    [ "_action", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a7683ce11c413d7139f5299c3a3a4090c", null ],
+    [ "_masterSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a255378add54e8a67cdd6d56fdfeceaec", null ],
+    [ "_senderDestinationRank", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8bd646157667806ca44a1d19b0d2e2a1", null ],
+    [ "_workerSpacetreeId", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a9e6587f7f737e4d70ce858d8cc009edb", null ],
+    [ "Datatype", "d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a5f958352d2f6c272454f8aedaafd02a8", null ]
+];

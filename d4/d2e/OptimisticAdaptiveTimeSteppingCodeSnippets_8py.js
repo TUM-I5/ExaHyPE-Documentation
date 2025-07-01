@@ -1,0 +1,4 @@
+var OptimisticAdaptiveTimeSteppingCodeSnippets_8py =
+[
+    [ "exahype2.solvers.rkdg.OptimisticAdaptiveTimeSteppingCodeSnippets.OptimisticAdaptiveTimeSteppingCodeSnippets", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets.html", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets" ]
+];

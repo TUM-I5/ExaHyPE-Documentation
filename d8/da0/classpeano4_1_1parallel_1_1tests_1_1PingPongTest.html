@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">peano4::parallel::tests::PingPongTest Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is a ping pong test for our application-specific data types.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/df8/PingPongTest_8h_source.html">PingPongTest.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for peano4::parallel::tests::PingPongTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dbd/classpeano4_1_1parallel_1_1tests_1_1PingPongTest__inherit__graph.png" border="0" usemap="#apeano4_1_1parallel_1_1tests_1_1PingPongTest_inherit__map" alt="Inheritance graph"/></div>
+<map name="apeano4_1_1parallel_1_1tests_1_1PingPongTest_inherit__map" id="apeano4_1_1parallel_1_1tests_1_1PingPongTest_inherit__map">
+<area shape="rect" title="This is a ping pong test for our application&#45;specific data types." alt="" coords="5,79,172,119"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html" title="Represents one test case." alt="" coords="8,5,169,31"/>
+<area shape="poly" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for peano4::parallel::tests::PingPongTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d7d/classpeano4_1_1parallel_1_1tests_1_1PingPongTest__coll__graph.png" border="0" usemap="#apeano4_1_1parallel_1_1tests_1_1PingPongTest_coll__map" alt="Collaboration graph"/></div>
+<map name="apeano4_1_1parallel_1_1tests_1_1PingPongTest_coll__map" id="apeano4_1_1parallel_1_1tests_1_1PingPongTest_coll__map">
+<area shape="rect" title="This is a ping pong test for our application&#45;specific data types." alt="" coords="89,271,256,311"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html" title="Represents one test case." alt="" coords="5,183,167,208"/>
+<area shape="poly" title=" " alt="" coords="108,216,157,269,153,272,104,220"/>
+<area shape="rect" title=" " alt="" coords="131,95,217,120"/>
+<area shape="poly" title=" " alt="" coords="139,129,117,146,103,165,93,184,88,181,98,162,113,142,136,125"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="191,183,333,208"/>
+<area shape="poly" title=" " alt="" coords="205,126,225,142,257,181,252,184,221,146,202,130"/>
+<area shape="rect" title=" " alt="" coords="105,5,243,45"/>
+<area shape="poly" title=" " alt="" coords="177,59,177,94,171,94,171,59"/>
+<area shape="poly" title=" " alt="" coords="243,220,193,272,189,269,240,216"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7c5a30ea682fc1b5552b653b9529e83b" id="r_a7c5a30ea682fc1b5552b653b9529e83b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c5a30ea682fc1b5552b653b9529e83b">PingPongTest</a> ()</td></tr>
+<tr class="separator:a7c5a30ea682fc1b5552b653b9529e83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e0e1c12c2fc09b01c3b836c4869243" id="r_a28e0e1c12c2fc09b01c3b836c4869243"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28e0e1c12c2fc09b01c3b836c4869243">run</a> () override</td></tr>
+<tr class="memdesc:a28e0e1c12c2fc09b01c3b836c4869243"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine is triggered by the TestCaseCollection.  <br /></td></tr>
+<tr class="separator:a28e0e1c12c2fc09b01c3b836c4869243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a0f4b1de752852aac3eb0e8c7f1cc04d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a0f4b1de752852aac3eb0e8c7f1cc04d5">TestCase</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseName)</td></tr>
+<tr class="memdesc:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a0491a7ab979e452aacaa8abd9ce55466"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a0491a7ab979e452aacaa8abd9ce55466">~TestCase</a> ()</td></tr>
+<tr class="memdesc:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032d565b3670f9855380438add55dbfd inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a032d565b3670f9855380438add55dbfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a032d565b3670f9855380438add55dbfd">getNumberOfErrors</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a032d565b3670f9855380438add55dbfd inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac816e9f7b8406f3e24ca61eb64d16d8c inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_ac816e9f7b8406f3e24ca61eb64d16d8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#ac816e9f7b8406f3e24ca61eb64d16d8c">getTestCaseName</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ac816e9f7b8406f3e24ca61eb64d16d8c inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4438439896daaa5d3d8c56fb5090b7eb" id="r_a4438439896daaa5d3d8c56fb5090b7eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4438439896daaa5d3d8c56fb5090b7eb">testBuiltInType</a> ()</td></tr>
+<tr class="separator:a4438439896daaa5d3d8c56fb5090b7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55661b40d68dbb5ccab645c2f2416283" id="r_a55661b40d68dbb5ccab645c2f2416283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55661b40d68dbb5ccab645c2f2416283">testDaStGenTypeIntegerMessage</a> ()</td></tr>
+<tr class="memdesc:a55661b40d68dbb5ccab645c2f2416283"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is really important that we test - for the DaStGen-generated data types - both the built-in operation and the usage with MPI_Send and MPI_Recv.  <br /></td></tr>
+<tr class="separator:a55661b40d68dbb5ccab645c2f2416283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd5f683306d695fa5288fd6a087e11b" id="r_a6fd5f683306d695fa5288fd6a087e11b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fd5f683306d695fa5288fd6a087e11b">testDaStGenTypeStartTraversalMessage</a> ()</td></tr>
+<tr class="separator:a6fd5f683306d695fa5288fd6a087e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac764153c49922a4d55cda67187d2df19" id="r_ac764153c49922a4d55cda67187d2df19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac764153c49922a4d55cda67187d2df19">testDaStGenArray</a> ()</td></tr>
+<tr class="separator:ac764153c49922a4d55cda67187d2df19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d71239eafc5bf73b2cbb5a98e07bd8" id="r_a73d71239eafc5bf73b2cbb5a98e07bd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73d71239eafc5bf73b2cbb5a98e07bd8">testDaStGenArrayTreeManagementMessage</a> ()</td></tr>
+<tr class="separator:a73d71239eafc5bf73b2cbb5a98e07bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09846df14938f90f8bc166a76c11a7e9" id="r_a09846df14938f90f8bc166a76c11a7e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09846df14938f90f8bc166a76c11a7e9">testMultithreadedPingPongWithBlockingReceives</a> ()</td></tr>
+<tr class="separator:a09846df14938f90f8bc166a76c11a7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca988437bc69060f4654b54dd65679fc" id="r_aca988437bc69060f4654b54dd65679fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca988437bc69060f4654b54dd65679fc">testMultithreadedPingPongWithBlockingSends</a> ()</td></tr>
+<tr class="separator:aca988437bc69060f4654b54dd65679fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeebca6944632aa016092b19098ba236" id="r_abeebca6944632aa016092b19098ba236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeebca6944632aa016092b19098ba236">testMultithreadedPingPongWithBlockingSendsAndReceives</a> ()</td></tr>
+<tr class="separator:abeebca6944632aa016092b19098ba236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5951267eec15e0cbaf0769bf7ec820b" id="r_ad5951267eec15e0cbaf0769bf7ec820b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5951267eec15e0cbaf0769bf7ec820b">testMultithreadedPingPongWithNonblockingReceives</a> ()</td></tr>
+<tr class="separator:ad5951267eec15e0cbaf0769bf7ec820b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcdd8fe96ef2977a8efac1ddea738a9" id="r_a0bcdd8fe96ef2977a8efac1ddea738a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bcdd8fe96ef2977a8efac1ddea738a9">testMultithreadedPingPongWithNonblockingSends</a> ()</td></tr>
+<tr class="separator:a0bcdd8fe96ef2977a8efac1ddea738a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9d5eca35f9f169ef4319cbb32ef0d0" id="r_aea9d5eca35f9f169ef4319cbb32ef0d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9d5eca35f9f169ef4319cbb32ef0d0">testMultithreadedPingPongWithNonblockingSendsAndReceives</a> ()</td></tr>
+<tr class="separator:aea9d5eca35f9f169ef4319cbb32ef0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af7330b8ae808e680585c0277ba3f76fb" id="r_af7330b8ae808e680585c0277ba3f76fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7330b8ae808e680585c0277ba3f76fb">_log</a></td></tr>
+<tr class="memdesc:af7330b8ae808e680585c0277ba3f76fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging device.  <br /></td></tr>
+<tr class="separator:af7330b8ae808e680585c0277ba3f76fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:a74a50f48c8d902e063c94647d5a057d9 inherit pro_methods_classtarch_1_1tests_1_1TestCase" id="r_a74a50f48c8d902e063c94647d5a057d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a74a50f48c8d902e063c94647d5a057d9">TestCase</a> ()=delete</td></tr>
+<tr class="separator:a74a50f48c8d902e063c94647d5a057d9 inherit pro_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_ae1114b8279a89e3c231ac2251dde25c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#ae1114b8279a89e3c231ac2251dde25c8">_testCaseName</a></td></tr>
+<tr class="memdesc:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the test case.  <br /></td></tr>
+<tr class="separator:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_a8ba818a0bc030040a5e62326fb6583cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a8ba818a0bc030040a5e62326fb6583cc">_errors</a></td></tr>
+<tr class="memdesc:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error counter.  <br /></td></tr>
+<tr class="separator:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_a44ec779329ab2d39cdbdb04f2e634eb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a44ec779329ab2d39cdbdb04f2e634eb4">_error</a></td></tr>
+<tr class="memdesc:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate within macro if one specific validation failed.  <br /></td></tr>
+<tr class="separator:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a ping pong test for our application-specific data types. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df8/PingPongTest_8h_source.html#l00021">21</a> of file <a class="el" href="../../da/df8/PingPongTest_8h_source.html">PingPongTest.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7c5a30ea682fc1b5552b653b9529e83b" name="a7c5a30ea682fc1b5552b653b9529e83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5a30ea682fc1b5552b653b9529e83b">&#9670;&#160;</a></span>PingPongTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4::parallel::tests::PingPongTest::PingPongTest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a28e0e1c12c2fc09b01c3b836c4869243" name="a28e0e1c12c2fc09b01c3b836c4869243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e0e1c12c2fc09b01c3b836c4869243">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This routine is triggered by the TestCaseCollection. </p>
+
+<p>Implements <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a89a48cb757104625eb04adce6a782158">tarch::tests::TestCase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00366">366</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00369">logTraceIn</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00024">testMethod</a>.</p>
+
+</div>
+</div>
+<a id="a4438439896daaa5d3d8c56fb5090b7eb" name="a4438439896daaa5d3d8c56fb5090b7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4438439896daaa5d3d8c56fb5090b7eb">&#9670;&#160;</a></span>testBuiltInType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testBuiltInType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00299">validateEquals</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a4438439896daaa5d3d8c56fb5090b7eb_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a4438439896daaa5d3d8c56fb5090b7eb_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a4438439896daaa5d3d8c56fb5090b7eb_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a4438439896daaa5d3d8c56fb5090b7eb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="275,13,488,38"/>
+<area shape="poly" title=" " alt="" coords="227,23,261,23,261,28,227,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac764153c49922a4d55cda67187d2df19" name="ac764153c49922a4d55cda67187d2df19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac764153c49922a4d55cda67187d2df19">&#9670;&#160;</a></span>testDaStGenArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testDaStGenArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00056">peano4::parallel::StartTraversalMessage::getGlobalCommunciationDatatype()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00033">peano4::parallel::StartTraversalMessage::setStepIdentifier()</a>, <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00392">validateEqualsWithParams8</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ac764153c49922a4d55cda67187d2df19_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ac764153c49922a4d55cda67187d2df19_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ac764153c49922a4d55cda67187d2df19_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ac764153c49922a4d55cda67187d2df19_cgraph">
+<area shape="rect" title=" " alt="" coords="5,92,247,132"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#aef4e8b19632a2e3b822b07feb31ebdc5" title=" " alt="" coords="295,5,609,45"/>
+<area shape="poly" title=" " alt="" coords="183,89,294,55,331,46,332,51,295,60,184,94"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="345,70,559,95"/>
+<area shape="poly" title=" " alt="" coords="247,99,331,91,332,96,247,104"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#af196d6137996282f4c840dff2ddc59ae" title=" " alt="" coords="339,120,565,160"/>
+<area shape="poly" title=" " alt="" coords="247,120,326,127,326,132,247,125"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="415,185,489,210"/>
+<area shape="poly" title=" " alt="" coords="177,130,233,150,295,169,402,189,401,194,294,175,232,156,175,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73d71239eafc5bf73b2cbb5a98e07bd8" name="a73d71239eafc5bf73b2cbb5a98e07bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d71239eafc5bf73b2cbb5a98e07bd8">&#9670;&#160;</a></span>testDaStGenArrayTreeManagementMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testDaStGenArrayTreeManagementMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa3d7e177ce6bc07bd01a8b308891e421a527b5dd477abf95e8fe19aac201df396">peano4::parallel::TreeManagementMessage::Acknowledgement</a>, <a class="el" href="../../de/d65/TreeManagementMessage_8cpp_source.html#l00054">peano4::parallel::TreeManagementMessage::getAction()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../de/d65/TreeManagementMessage_8cpp_source.html#l00240">peano4::parallel::TreeManagementMessage::receive()</a>, <a class="el" href="../../de/d65/TreeManagementMessage_8cpp_source.html#l00235">peano4::parallel::TreeManagementMessage::send()</a>, <a class="el" href="../../de/d65/TreeManagementMessage_8cpp_source.html#l00059">peano4::parallel::TreeManagementMessage::setAction()</a>, <a class="el" href="../../de/d65/TreeManagementMessage_8cpp_source.html#l00018">peano4::parallel::TreeManagementMessage::toString()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00059">validateWithParams1</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a73d71239eafc5bf73b2cbb5a98e07bd8_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a73d71239eafc5bf73b2cbb5a98e07bd8_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a73d71239eafc5bf73b2cbb5a98e07bd8_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a73d71239eafc5bf73b2cbb5a98e07bd8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,145,247,199"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3" title=" " alt="" coords="295,5,543,45"/>
+<area shape="poly" title=" " alt="" coords="158,142,219,98,293,55,312,47,314,52,296,60,222,102,161,147"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="312,70,525,95"/>
+<area shape="poly" title=" " alt="" coords="191,142,294,105,332,96,334,101,295,111,193,147"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3" title=" " alt="" coords="295,120,543,160"/>
+<area shape="poly" title=" " alt="" coords="247,156,281,152,281,158,247,161"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="295,184,543,224"/>
+<area shape="poly" title=" " alt="" coords="247,183,281,186,281,192,247,188"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545" title=" " alt="" coords="295,248,543,288"/>
+<area shape="poly" title=" " alt="" coords="195,197,296,233,322,242,321,247,294,239,193,202"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a6de11550a424b8f79da95ecf81596246" title=" " alt="" coords="295,312,543,352"/>
+<area shape="poly" title=" " alt="" coords="157,197,218,249,256,275,296,298,312,305,310,310,293,302,253,280,215,253,154,202"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55661b40d68dbb5ccab645c2f2416283" name="a55661b40d68dbb5ccab645c2f2416283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55661b40d68dbb5ccab645c2f2416283">&#9670;&#160;</a></span>testDaStGenTypeIntegerMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testDaStGenTypeIntegerMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>It is really important that we test - for the DaStGen-generated data types - both the built-in operation and the usage with MPI_Send and MPI_Recv. </p>
+<p>I had the case that the generated datatypes had a vtable, i.e. an addition four bytes. These bytes are then added to the object (at the front), but I had situations where they seem not to be incorporated into the this pointer. In any case, programmmers should not try to exchange data types with vtables, but if they do then we'll see bugs when we try to exchange the generated MPI_Send with a send() call on the DaStGen object. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00272">272</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00056">tarch::mpi::IntegerMessage::getGlobalCommunciationDatatype()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00028">tarch::mpi::IntegerMessage::getValue()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00202">tarch::mpi::IntegerMessage::receive()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00197">tarch::mpi::IntegerMessage::send()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00033">tarch::mpi::IntegerMessage::setValue()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00016">tarch::mpi::IntegerMessage::toString()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00328">validateEqualsWithParams2</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a55661b40d68dbb5ccab645c2f2416283_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a55661b40d68dbb5ccab645c2f2416283_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a55661b40d68dbb5ccab645c2f2416283_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a55661b40d68dbb5ccab645c2f2416283_cgraph">
+<area shape="rect" title="It is really important that we test &#45; for the DaStGen&#45;generated data types &#45; both the built&#45;in operat..." alt="" coords="5,177,241,231"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a9ed941f1ed70afed67a67e497fedba56" title=" " alt="" coords="289,5,545,45"/>
+<area shape="poly" title=" " alt="" coords="146,174,206,114,245,82,288,55,303,48,305,53,291,60,249,86,210,118,150,178"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="311,70,524,95"/>
+<area shape="poly" title=" " alt="" coords="162,174,220,138,288,106,318,96,320,101,290,110,223,143,165,179"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a69937a8c69cf8d2044f35f07dcf7ab9e" title=" " alt="" coords="317,120,517,160"/>
+<area shape="poly" title=" " alt="" coords="241,176,311,160,312,166,242,181"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a9432e498ccba78dd6a5d832329b53f3c" title=" " alt="" coords="317,184,517,224"/>
+<area shape="poly" title=" " alt="" coords="241,201,303,201,303,207,241,207"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#ade441c64dbcff27b529ddc1607f9788a" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="317,248,517,288"/>
+<area shape="poly" title=" " alt="" coords="242,227,312,242,311,248,241,232"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a27a9de2382554522a9a3ef0c47a86b3d" title=" " alt="" coords="317,312,517,352"/>
+<area shape="poly" title=" " alt="" coords="166,229,223,264,290,298,311,305,310,310,288,302,221,269,163,234"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a4c6b838ee73a6a5f367cedc472d56d49" title=" " alt="" coords="317,376,517,416"/>
+<area shape="poly" title=" " alt="" coords="147,230,207,297,247,332,291,362,306,369,303,374,288,366,244,336,203,300,143,233"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fd5f683306d695fa5288fd6a087e11b" name="a6fd5f683306d695fa5288fd6a087e11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd5f683306d695fa5288fd6a087e11b">&#9670;&#160;</a></span>testDaStGenTypeStartTraversalMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testDaStGenTypeStartTraversalMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00028">peano4::parallel::StartTraversalMessage::getStepIdentifier()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00202">peano4::parallel::StartTraversalMessage::receive()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00197">peano4::parallel::StartTraversalMessage::send()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00033">peano4::parallel::StartTraversalMessage::setStepIdentifier()</a>, <a class="el" href="../../db/d45/StartTraversalMessage_8cpp_source.html#l00016">peano4::parallel::StartTraversalMessage::toString()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00328">validateEqualsWithParams2</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a6fd5f683306d695fa5288fd6a087e11b_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a6fd5f683306d695fa5288fd6a087e11b_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a6fd5f683306d695fa5288fd6a087e11b_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a6fd5f683306d695fa5288fd6a087e11b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,144,241,199"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="295,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="151,141,211,90,248,63,288,41,310,32,312,37,290,46,251,68,214,94,154,145"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#ac12c344762c4caebc680482e804a50c3" title=" " alt="" coords="289,55,515,95"/>
+<area shape="poly" title=" " alt="" coords="190,141,288,105,313,97,315,102,290,110,192,146"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#ad09c3f7b01ad999a4490b57c1a90ec84" title=" " alt="" coords="289,119,515,159"/>
+<area shape="poly" title=" " alt="" coords="241,155,276,151,276,156,242,160"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#a4908cde42b34f50aa85773d2dbf27543" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="289,183,515,223"/>
+<area shape="poly" title=" " alt="" coords="242,182,276,186,276,192,241,188"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#af196d6137996282f4c840dff2ddc59ae" title=" " alt="" coords="289,247,515,287"/>
+<area shape="poly" title=" " alt="" coords="192,196,290,233,315,241,313,246,288,238,190,201"/>
+<area shape="rect" href="../../db/d53/structpeano4_1_1parallel_1_1StartTraversalMessage.html#a659aea63c754312cecf600cc0ab391f8" title=" " alt="" coords="289,311,515,351"/>
+<area shape="poly" title=" " alt="" coords="155,197,215,248,252,274,291,297,306,304,304,309,288,302,249,279,212,252,152,201"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09846df14938f90f8bc166a76c11a7e9" name="a09846df14938f90f8bc166a76c11a7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09846df14938f90f8bc166a76c11a7e9">&#9670;&#160;</a></span>testMultithreadedPingPongWithBlockingReceives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingReceives </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a09846df14938f90f8bc166a76c11a7e9_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a09846df14938f90f8bc166a76c11a7e9_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a09846df14938f90f8bc166a76c11a7e9_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a09846df14938f90f8bc166a76c11a7e9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,245,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="293,5,507,31"/>
+<area shape="poly" title=" " alt="" coords="191,77,293,41,326,31,327,37,294,46,193,82"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="319,55,481,95"/>
+<area shape="poly" title=" " alt="" coords="245,91,304,84,305,89,246,96"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="315,119,485,159"/>
+<area shape="poly" title=" " alt="" coords="246,119,301,125,301,130,245,124"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="295,184,505,209"/>
+<area shape="poly" title=" " alt="" coords="193,132,294,169,327,178,326,183,293,174,191,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca988437bc69060f4654b54dd65679fc" name="aca988437bc69060f4654b54dd65679fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca988437bc69060f4654b54dd65679fc">&#9670;&#160;</a></span>testMultithreadedPingPongWithBlockingSends()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSends </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00299">validateEquals</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aca988437bc69060f4654b54dd65679fc_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aca988437bc69060f4654b54dd65679fc_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aca988437bc69060f4654b54dd65679fc_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aca988437bc69060f4654b54dd65679fc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,245,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="293,5,507,31"/>
+<area shape="poly" title=" " alt="" coords="191,77,293,41,326,31,327,37,294,46,193,82"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="319,55,481,95"/>
+<area shape="poly" title=" " alt="" coords="245,91,304,84,305,89,246,96"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="315,119,485,159"/>
+<area shape="poly" title=" " alt="" coords="246,119,301,125,301,130,245,124"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="295,184,505,209"/>
+<area shape="poly" title=" " alt="" coords="193,132,294,169,327,178,326,183,293,174,191,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abeebca6944632aa016092b19098ba236" name="abeebca6944632aa016092b19098ba236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeebca6944632aa016092b19098ba236">&#9670;&#160;</a></span>testMultithreadedPingPongWithBlockingSendsAndReceives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSendsAndReceives </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_abeebca6944632aa016092b19098ba236_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_abeebca6944632aa016092b19098ba236_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_abeebca6944632aa016092b19098ba236_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_abeebca6944632aa016092b19098ba236_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,296,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="344,5,557,31"/>
+<area shape="poly" title=" " alt="" coords="228,77,343,41,378,31,380,37,345,46,230,83"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="369,55,532,95"/>
+<area shape="poly" title=" " alt="" coords="296,89,355,83,356,88,297,94"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="365,119,536,159"/>
+<area shape="poly" title=" " alt="" coords="297,120,352,126,351,131,296,126"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="345,184,556,209"/>
+<area shape="poly" title=" " alt="" coords="230,132,345,169,380,178,378,183,343,174,228,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5951267eec15e0cbaf0769bf7ec820b" name="ad5951267eec15e0cbaf0769bf7ec820b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5951267eec15e0cbaf0769bf7ec820b">&#9670;&#160;</a></span>testMultithreadedPingPongWithNonblockingReceives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingReceives </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ad5951267eec15e0cbaf0769bf7ec820b_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ad5951267eec15e0cbaf0769bf7ec820b_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ad5951267eec15e0cbaf0769bf7ec820b_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_ad5951267eec15e0cbaf0769bf7ec820b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,257,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="305,5,519,31"/>
+<area shape="poly" title=" " alt="" coords="200,77,305,41,338,31,340,37,306,46,202,82"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="331,55,493,95"/>
+<area shape="poly" title=" " alt="" coords="257,90,317,83,317,89,258,96"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="327,119,497,159"/>
+<area shape="poly" title=" " alt="" coords="258,119,313,125,313,131,257,124"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="307,184,517,209"/>
+<area shape="poly" title=" " alt="" coords="202,132,306,169,340,178,338,183,305,174,200,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0bcdd8fe96ef2977a8efac1ddea738a9" name="a0bcdd8fe96ef2977a8efac1ddea738a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bcdd8fe96ef2977a8efac1ddea738a9">&#9670;&#160;</a></span>testMultithreadedPingPongWithNonblockingSends()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSends </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00299">validateEquals</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a0bcdd8fe96ef2977a8efac1ddea738a9_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a0bcdd8fe96ef2977a8efac1ddea738a9_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a0bcdd8fe96ef2977a8efac1ddea738a9_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_a0bcdd8fe96ef2977a8efac1ddea738a9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,245,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="293,5,507,31"/>
+<area shape="poly" title=" " alt="" coords="191,77,293,41,326,31,327,37,294,46,193,82"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="319,55,481,95"/>
+<area shape="poly" title=" " alt="" coords="245,91,304,84,305,89,246,96"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="315,119,485,159"/>
+<area shape="poly" title=" " alt="" coords="246,119,301,125,301,130,245,124"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="295,184,505,209"/>
+<area shape="poly" title=" " alt="" coords="193,132,294,169,327,178,326,183,293,174,191,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea9d5eca35f9f169ef4319cbb32ef0d0" name="aea9d5eca35f9f169ef4319cbb32ef0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9d5eca35f9f169ef4319cbb32ef0d0">&#9670;&#160;</a></span>testMultithreadedPingPongWithNonblockingSendsAndReceives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSendsAndReceives </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d2/daa/multicore_8cpp_source.html#l00034">tarch::multicore::spawnTasks()</a>, and <a class="el" href="../../dc/d61/TestMacros_8h_source.html#l00037">validate</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aea9d5eca35f9f169ef4319cbb32ef0d0_cgraph.png" border="0" usemap="#ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aea9d5eca35f9f169ef4319cbb32ef0d0_cgraph" alt=""/></div>
+<map name="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aea9d5eca35f9f169ef4319cbb32ef0d0_cgraph" id="ad8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest_aea9d5eca35f9f169ef4319cbb32ef0d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,321,135"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="369,5,583,31"/>
+<area shape="poly" title=" " alt="" coords="247,77,369,41,405,31,406,36,370,46,249,82"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="395,55,557,95"/>
+<area shape="poly" title=" " alt="" coords="321,88,381,82,381,88,322,94"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="391,119,561,159"/>
+<area shape="poly" title=" " alt="" coords="322,121,377,127,377,132,321,126"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="371,184,581,209"/>
+<area shape="poly" title=" " alt="" coords="249,132,370,169,406,178,405,183,369,174,247,137"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="af7330b8ae808e680585c0277ba3f76fb" name="af7330b8ae808e680585c0277ba3f76fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7330b8ae808e680585c0277ba3f76fb">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> peano4::parallel::tests::PingPongTest::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logging device. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/df8/PingPongTest_8h_source.html#l00026">26</a> of file <a class="el" href="../../da/df8/PingPongTest_8h_source.html">PingPongTest.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/peano4/parallel/tests/<a class="el" href="../../da/df8/PingPongTest_8h_source.html">PingPongTest.h</a></li>
+<li>src/peano4/parallel/tests/<a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html">PingPongTest.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../d1/d32/namespacepeano4_1_1parallel.html">parallel</a></li><li class="navelem"><a class="el" href="../../d3/db3/namespacepeano4_1_1parallel_1_1tests.html">tests</a></li><li class="navelem"><a class="el" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html">PingPongTest</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:17 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

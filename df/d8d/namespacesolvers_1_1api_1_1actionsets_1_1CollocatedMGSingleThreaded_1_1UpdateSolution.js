@@ -1,0 +1,4 @@
+var namespacesolvers_1_1api_1_1actionsets_1_1CollocatedMGSingleThreaded_1_1UpdateSolution =
+[
+    [ "UpdateSolution", "d3/d0f/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSingleThreaded_1_1UpdateSolution_1_1UpdateSolution.html", "d3/d0f/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSingleThreaded_1_1UpdateSolution_1_1UpdateSolution" ]
+];

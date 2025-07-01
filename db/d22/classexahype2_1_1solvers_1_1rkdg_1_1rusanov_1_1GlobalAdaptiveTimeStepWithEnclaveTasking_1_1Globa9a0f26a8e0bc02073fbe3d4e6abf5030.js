@@ -1,0 +1,25 @@
+var classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030 =
+[
+    [ "__init__", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a7d7a6eff7f025fef83a254200d3f0eb2", null ],
+    [ "set_implementation", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a465633dddb880243ac94fa293fb81cdc", null ],
+    [ "user_action_set_includes", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a0330de66fce15e4a065411c393f7f042", null ],
+    [ "_abstract_solver_user_declarations", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a7b79023f770f15ba51b5ee33861f78de", null ],
+    [ "_abstract_solver_user_definitions", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a216de68c0564219f9949a390d18afca4", null ],
+    [ "_add_solver_contributions_call", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a9d1599111dbd96b34b15e8ff9c74a1cf", null ],
+    [ "_compute_eigenvalue", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a616050864776a31a8c62dbfac7b2a34c", null ],
+    [ "_compute_new_time_step_size", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a30d150346a436411b6ba38e53bafa8b7", null ],
+    [ "_compute_time_step_size", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#af0fa78b484980d42e808cdbd455d5f9c", null ],
+    [ "_constructor_implementation", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a925fa57d0b62b6e63d5b5917230fb656", null ],
+    [ "_finish_time_step_implementation", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#af23a2827a9cd1804e1e9fea337ee4b5f", null ],
+    [ "_fused_volumetric_compute_kernel_call_stateless_cpu", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#ab53e2ba600a1ac2fc3c367a1a313b7ae", null ],
+    [ "_fused_volumetric_compute_kernel_call_stateless_gpu", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#ae4e4a95d432775a0060bbd2c054333bd", null ],
+    [ "_kernel_namespace", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#afecc028393b27ff278b840c437fb61f5", null ],
+    [ "_multiply_with_inverted_mass_matrix_call", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#ac8a171fe0a1b0bc0174b66a0edbbbc3e", null ],
+    [ "_Riemann_compute_kernel_call", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a6abf21fa2ff2d97b925ced7b5a46f00c", null ],
+    [ "_solver_user_declarations", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#afb9c0f8d636480b655e8c8ec035011e3", null ],
+    [ "_solver_user_definitions", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a748a991734fb61efffcb24883a813b5e", null ],
+    [ "_start_time_step_implementation", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a27acdfb8add35b4beace9509d0316df1", null ],
+    [ "_time_step_relaxation", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#a48ca5fb1db2ee4b0dd01ac12f4d62455", null ],
+    [ "_volumetric_compute_kernel_call", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#ac9580d306a8d2dcde7ce1f63d3706854", null ],
+    [ "_volumetric_compute_kernel_call_stateless", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html#ab3f689c9a3ac4109bb527ed592f3c6e2", null ]
+];

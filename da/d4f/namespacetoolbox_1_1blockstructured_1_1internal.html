@@ -1,0 +1,961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">toolbox::blockstructured::internal Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da9/structtoolbox_1_1blockstructured_1_1internal_1_1CellInterpolationOperatorKey.html">CellInterpolationOperatorKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d33/structtoolbox_1_1blockstructured_1_1internal_1_1FaceInterpolationOperatorKey.html">FaceInterpolationOperatorKey</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4d4875280837116d99fdf9d026c00dce" id="r_a4d4875280837116d99fdf9d026c00dce"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../d6/d33/structtoolbox_1_1blockstructured_1_1internal_1_1FaceInterpolationOperatorKey.html">FaceInterpolationOperatorKey</a>, <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d4875280837116d99fdf9d026c00dce">FaceInterpolationMap</a></td></tr>
+<tr class="separator:a4d4875280837116d99fdf9d026c00dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c58a3fb6433d2c3498aee0223645c1" id="r_a59c58a3fb6433d2c3498aee0223645c1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../de/da9/structtoolbox_1_1blockstructured_1_1internal_1_1CellInterpolationOperatorKey.html">CellInterpolationOperatorKey</a>, <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59c58a3fb6433d2c3498aee0223645c1">CellInterpolationMap</a></td></tr>
+<tr class="memdesc:a59c58a3fb6433d2c3498aee0223645c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cell interpolation is a huge matrix.  <br /></td></tr>
+<tr class="separator:a59c58a3fb6433d2c3498aee0223645c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aff1cb6b9cea5020c3d51896bf004e6b6" id="r_aff1cb6b9cea5020c3d51896bf004e6b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff1cb6b9cea5020c3d51896bf004e6b6">createLinearInterpolationMatrix</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> normal, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> extrapolateLinearly, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> interpolateLinearlyAlongNormal)</td></tr>
+<tr class="memdesc:aff1cb6b9cea5020c3d51896bf004e6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The realisation relies on the following observations/follows these steps:  <br /></td></tr>
+<tr class="separator:aff1cb6b9cea5020c3d51896bf004e6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843eb498c3aa69a8ff1a1357be55465f" id="r_a843eb498c3aa69a8ff1a1357be55465f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843eb498c3aa69a8ff1a1357be55465f">createLinearInterpolationMatrix</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> extrapolateLinearly)</td></tr>
+<tr class="memdesc:a843eb498c3aa69a8ff1a1357be55465f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a volumetric version of the interpolation.  <br /></td></tr>
+<tr class="separator:a843eb498c3aa69a8ff1a1357be55465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca40d98bb1bcb32fb00cb8b1fa6f8f06" id="r_aca40d98bb1bcb32fb00cb8b1fa6f8f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca40d98bb1bcb32fb00cb8b1fa6f8f06">createLinearInterpolationMatrix</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInInputPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInOutputPatch, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> extrapolateLinearly)</td></tr>
+<tr class="separator:aca40d98bb1bcb32fb00cb8b1fa6f8f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea05ea5dbf37491782dfcc82f3a86462" id="r_aea05ea5dbf37491782dfcc82f3a86462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea05ea5dbf37491782dfcc82f3a86462">createPiecewiseConstantInterpolationMatrix</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> normal, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> overlap)</td></tr>
+<tr class="memdesc:aea05ea5dbf37491782dfcc82f3a86462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create piecewise constant interpolation matrix.  <br /></td></tr>
+<tr class="separator:aea05ea5dbf37491782dfcc82f3a86462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c04a802c817225c14897910e5746971" id="r_a2c04a802c817225c14897910e5746971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c04a802c817225c14897910e5746971">createPiecewiseConstantInterpolationMatrix</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch)</td></tr>
+<tr class="memdesc:a2c04a802c817225c14897910e5746971"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a volumetric version of the interpolation.  <br /></td></tr>
+<tr class="separator:a2c04a802c817225c14897910e5746971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da875273e50b6a07f06478ea8755973" id="r_a2da875273e50b6a07f06478ea8755973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2da875273e50b6a07f06478ea8755973">createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> &amp;P1d, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> normal)</td></tr>
+<tr class="memdesc:a2da875273e50b6a07f06478ea8755973"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine accepts a \( 3k \times k \) matrix as input.  <br /></td></tr>
+<tr class="separator:a2da875273e50b6a07f06478ea8755973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618a3a449d982e69ad054579b0bdbae0" id="r_a618a3a449d982e69ad054579b0bdbae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a618a3a449d982e69ad054579b0bdbae0">createInterpolationMatrixFrom1dTemplateByLinearInterpolationAlongNormal</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> &amp;P1d, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> normal)</td></tr>
+<tr class="memdesc:a618a3a449d982e69ad054579b0bdbae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an extension of <a class="el" href="#a2da875273e50b6a07f06478ea8755973" title="This routine accepts a  matrix as input.">createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()</a>.  <br /></td></tr>
+<tr class="separator:a618a3a449d982e69ad054579b0bdbae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1e0b659915ddc928856a8bbf41b574" id="r_a6f1e0b659915ddc928856a8bbf41b574"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a6f1e0b659915ddc928856a8bbf41b574"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6f1e0b659915ddc928856a8bbf41b574">projectInterpolatedFineCellsOnHaloLayer_AoS</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;marker, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> overlap, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__ fineGridCellValuesLeft, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__ fineGridCellValuesRight, T *fineGridFaceValues)</td></tr>
+<tr class="memdesc:a6f1e0b659915ddc928856a8bbf41b574"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine assumes that you have the whole patch data of hte left and right adjacent patch at hands.  <br /></td></tr>
+<tr class="separator:a6f1e0b659915ddc928856a8bbf41b574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21882a1cfee7f1aa45f562d9fa31a85a" id="r_a21882a1cfee7f1aa45f562d9fa31a85a"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a21882a1cfee7f1aa45f562d9fa31a85a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a21882a1cfee7f1aa45f562d9fa31a85a">interpolateCell_AoS_piecewise_constant</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;relativePositionWithinFatherCell, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__ fineGridValues, T *coarseGridValues)</td></tr>
+<tr class="separator:a21882a1cfee7f1aa45f562d9fa31a85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd0a74eab45ae4de0f4bb4c7b7ecb47" id="r_a1dd0a74eab45ae4de0f4bb4c7b7ecb47"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a1dd0a74eab45ae4de0f4bb4c7b7ecb47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1dd0a74eab45ae4de0f4bb4c7b7ecb47">interpolateCell_AoS_linear</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;relativePositionWithinFatherCell, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__ fineGridValues, T *coarseGridValues, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> extrapolateLinearly)</td></tr>
+<tr class="separator:a1dd0a74eab45ae4de0f4bb4c7b7ecb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188bc1f07e4fa6cd7c694847dce7a8dc" id="r_a188bc1f07e4fa6cd7c694847dce7a8dc"><td class="memTemplParams" colspan="2">template&lt;typename T  = double&gt; </td></tr>
+<tr class="memitem:a188bc1f07e4fa6cd7c694847dce7a8dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a188bc1f07e4fa6cd7c694847dce7a8dc">clearHalfOfHaloLayerAoS</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;marker, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> overlap, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> clearInnerPart, T *values)</td></tr>
+<tr class="memdesc:a188bc1f07e4fa6cd7c694847dce7a8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear half of a halo layer.  <br /></td></tr>
+<tr class="separator:a188bc1f07e4fa6cd7c694847dce7a8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf01d9311cfbf021be3a01f59bee9a30" id="r_aaf01d9311cfbf021be3a01f59bee9a30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf01d9311cfbf021be3a01f59bee9a30">projectCells_AoS</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;fineGridCellMarker, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfDoFsPerAxisInPatch, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>(<a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; coarseVolume, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; fineVolume, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; coarseVolumeCentre, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; fineVolumeCentre, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> coarseVolumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> fineVolumeH)&gt; update)</td></tr>
+<tr class="memdesc:aaf01d9311cfbf021be3a01f59bee9a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function.  <br /></td></tr>
+<tr class="separator:aaf01d9311cfbf021be3a01f59bee9a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a59c58a3fb6433d2c3498aee0223645c1" name="a59c58a3fb6433d2c3498aee0223645c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c58a3fb6433d2c3498aee0223645c1">&#9670;&#160;</a></span>CellInterpolationMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="../../de/da9/structtoolbox_1_1blockstructured_1_1internal_1_1CellInterpolationOperatorKey.html">CellInterpolationOperatorKey</a>, <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a>*&gt; <a class="el" href="#a59c58a3fb6433d2c3498aee0223645c1">toolbox::blockstructured::internal::CellInterpolationMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A cell interpolation is a huge matrix. </p>
+<p>If a patch consists of \( p \) entries per coordinate axis, then the matrix has the dimensions \( p^d
+\cdot 3^d \times p^d \). Its input is always the \( p^d \) vector of the coarse mesh. The output is typically a \( p^d \) vector as well, but there are \( 3^d \) of these guys.</p>
+<p>We store one huge interpolation matrix and then pick the right band out of it. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d2a/Interpolation_8h_source.html#l01075">1075</a> of file <a class="el" href="../../df/d2a/Interpolation_8h_source.html">Interpolation.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d4875280837116d99fdf9d026c00dce" name="a4d4875280837116d99fdf9d026c00dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4875280837116d99fdf9d026c00dce">&#9670;&#160;</a></span>FaceInterpolationMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="../../d6/d33/structtoolbox_1_1blockstructured_1_1internal_1_1FaceInterpolationOperatorKey.html">FaceInterpolationOperatorKey</a>, <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a>*&gt; <a class="el" href="#a4d4875280837116d99fdf9d026c00dce">toolbox::blockstructured::internal::FaceInterpolationMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d2a/Interpolation_8h_source.html#l01062">1062</a> of file <a class="el" href="../../df/d2a/Interpolation_8h_source.html">Interpolation.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a188bc1f07e4fa6cd7c694847dce7a8dc" name="a188bc1f07e4fa6cd7c694847dce7a8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188bc1f07e4fa6cd7c694847dce7a8dc">&#9670;&#160;</a></span>clearHalfOfHaloLayerAoS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::blockstructured::internal::clearHalfOfHaloLayerAoS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>overlap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>clearInnerPart</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>values</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear half of a halo layer. </p>
+<p>Faces in blockstructured codes with patches of size NxNxN typically carry overlaps of size MxNxN. The M is an even number with M&lt;2N. If you use overlaps/halos of size 1, then M=2: a face manages one layer from the left and one layer from the right.</p>
+<p>In blockstructured codes, you often have to erase half of this halo layer. If you run into an adaptive grid, for examples, you want to erase hanging layers before you interpolate or restrict into them. This is what this routine does.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">marker</td><td>This marker identifies a face. See the class documentation in particular for details about the enumeration (selected faces) of the faces from a cell's point of view. </td></tr>
+    <tr><td class="paramname">numberOfDoFsPerAxisInPatch</td><td>The N in the description above </td></tr>
+    <tr><td class="paramname">overlap</td><td>Equals M/2 in the description above, i.e. if you each patch is surrounded by one halo layer, then the total overlap equals two and this argument equals 1. </td></tr>
+    <tr><td class="paramname">unknowns</td><td>Number of unknowns that we store per voxel. </td></tr>
+    <tr><td class="paramname">clearOuterPart</td><td>If this flag is set, we clear the outer half of the overlap (relative to the normal identified by marker). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l01319">1319</a> of file <a class="el" href="../../d2/da5/Restriction_8cpph_source.html">Restriction.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00125">dfore</a>, and <a class="el" href="../../dd/d5a/Enumeration_8cpp_source.html#l00004">toolbox::blockstructured::serialiseVoxelIndexInOverlap()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a188bc1f07e4fa6cd7c694847dce7a8dc_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a188bc1f07e4fa6cd7c694847dce7a8dc_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a188bc1f07e4fa6cd7c694847dce7a8dc_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a188bc1f07e4fa6cd7c694847dce7a8dc_cgraph">
+<area shape="rect" title="Clear half of a halo layer." alt="" coords="5,5,259,45"/>
+<area shape="rect" href="../../d1/d28/namespacetoolbox_1_1blockstructured.html#a7861d850984f3d783a117134511eeeba" title="The volumes or elements within an overlap are always enumerated lexicographically." alt="" coords="307,5,525,45"/>
+<area shape="poly" title=" " alt="" coords="259,23,293,23,293,28,259,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2da875273e50b6a07f06478ea8755973" name="a2da875273e50b6a07f06478ea8755973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da875273e50b6a07f06478ea8755973">&#9670;&#160;</a></span>createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>P1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This routine accepts a \( 3k \times k \) matrix as input. </p>
+<p>This is the 1d matrix. It clearly maps a sequence of k finite volumes onto a new sequence of 3k volumes.</p>
+<p>We now exploit the fact any interpolation routine is basically a rotation or mirroring of this operator, while we have to take into account that we need two times k entries as we always store left and right halo overlaps. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01036">assertionEquals1</a>, <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00417">tarch::la::DynamicMatrix::cols()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../dd/dc9/benchmarks_2other_2noh2d-common_2swift_2equation__of__state_8h_source.html#l00164">P</a>, <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00415">tarch::la::DynamicMatrix::rows()</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00215">tarch::la::DynamicMatrix::toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00141">createLinearInterpolationMatrix()</a>, and <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00046">createPiecewiseConstantInterpolationMatrix()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_cgraph">
+<area shape="rect" title="This routine accepts a &#160;matrix as input." alt="" coords="5,55,311,124"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a42a92dd61f68c5e9288d08df002e6e1f" title=" " alt="" coords="359,5,541,45"/>
+<area shape="poly" title=" " alt="" coords="310,53,345,46,346,51,311,58"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a8f446384521e31144d784ca49348cfdf" title=" " alt="" coords="359,69,541,109"/>
+<area shape="poly" title=" " alt="" coords="311,87,345,87,345,92,311,92"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="359,133,541,173"/>
+<area shape="poly" title=" " alt="" coords="311,120,346,128,345,133,310,125"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="594,91,697,117"/>
+<area shape="poly" title=" " alt="" coords="529,131,580,118,582,123,530,136"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="589,141,701,166"/>
+<area shape="poly" title=" " alt="" coords="541,151,575,151,575,156,541,156"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="592,190,699,215"/>
+<area shape="poly" title=" " alt="" coords="530,171,582,184,580,189,529,176"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_icgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_icgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_icgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2da875273e50b6a07f06478ea8755973_icgraph">
+<area shape="rect" title="This routine accepts a &#160;matrix as input." alt="" coords="305,38,611,107"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#aff1cb6b9cea5020c3d51896bf004e6b6" title="The realisation relies on the following observations/follows these steps:" alt="" coords="5,5,257,60"/>
+<area shape="poly" title=" " alt="" coords="291,55,257,51,258,45,292,50"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#aea05ea5dbf37491782dfcc82f3a86462" title="Create piecewise constant interpolation matrix." alt="" coords="5,84,257,139"/>
+<area shape="poly" title=" " alt="" coords="292,95,258,99,257,94,291,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a618a3a449d982e69ad054579b0bdbae0" name="a618a3a449d982e69ad054579b0bdbae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618a3a449d982e69ad054579b0bdbae0">&#9670;&#160;</a></span>createInterpolationMatrixFrom1dTemplateByLinearInterpolationAlongNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createInterpolationMatrixFrom1dTemplateByLinearInterpolationAlongNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>P1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an extension of <a class="el" href="#a2da875273e50b6a07f06478ea8755973" title="This routine accepts a  matrix as input.">createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()</a>. </p>
+<p>In the setup as sketched below</p>
+<div class="image">
+<img src="../../Interpolation_createLinearInterpolationMatrix.png" alt=""/>
+</div>
+<p>we have two options to initialise bright green values: We can either use the bright red volumes only, or we can interpolate between the bright red ones and the dark red ones. This operation does the latter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01036">assertionEquals1</a>, <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00417">tarch::la::DynamicMatrix::cols()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../dd/dc9/benchmarks_2other_2noh2d-common_2swift_2equation__of__state_8h_source.html#l00164">P</a>, <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00415">tarch::la::DynamicMatrix::rows()</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00215">tarch::la::DynamicMatrix::toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00141">createLinearInterpolationMatrix()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_cgraph">
+<area shape="rect" title="This is an extension of createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()." alt="" coords="5,55,319,124"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a42a92dd61f68c5e9288d08df002e6e1f" title=" " alt="" coords="367,5,549,45"/>
+<area shape="poly" title=" " alt="" coords="318,53,352,45,354,51,320,58"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a8f446384521e31144d784ca49348cfdf" title=" " alt="" coords="367,69,549,109"/>
+<area shape="poly" title=" " alt="" coords="319,87,353,87,353,92,319,92"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="367,133,549,173"/>
+<area shape="poly" title=" " alt="" coords="320,121,354,128,352,133,318,126"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="602,91,705,117"/>
+<area shape="poly" title=" " alt="" coords="537,131,588,118,590,123,538,136"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="597,141,709,166"/>
+<area shape="poly" title=" " alt="" coords="549,151,583,151,583,156,549,156"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="600,190,707,215"/>
+<area shape="poly" title=" " alt="" coords="538,171,590,184,588,189,537,176"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_icgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_icgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_icgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a618a3a449d982e69ad054579b0bdbae0_icgraph">
+<area shape="rect" title="This is an extension of createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()." alt="" coords="305,5,619,75"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#aff1cb6b9cea5020c3d51896bf004e6b6" title="The realisation relies on the following observations/follows these steps:" alt="" coords="5,13,257,67"/>
+<area shape="poly" title=" " alt="" coords="292,43,257,43,257,37,292,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca40d98bb1bcb32fb00cb8b1fa6f8f06" name="aca40d98bb1bcb32fb00cb8b1fa6f8f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca40d98bb1bcb32fb00cb8b1fa6f8f06">&#9670;&#160;</a></span>createLinearInterpolationMatrix() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createLinearInterpolationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInInputPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInOutputPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>extrapolateLinearly</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a843eb498c3aa69a8ff1a1357be55465f" name="a843eb498c3aa69a8ff1a1357be55465f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843eb498c3aa69a8ff1a1357be55465f">&#9670;&#160;</a></span>createLinearInterpolationMatrix() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createLinearInterpolationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>extrapolateLinearly</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is a volumetric version of the interpolation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00370">logTraceInWith1Argument</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00419">tarch::la::DynamicMatrix::replicateRows()</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00215">tarch::la::DynamicMatrix::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a843eb498c3aa69a8ff1a1357be55465f_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a843eb498c3aa69a8ff1a1357be55465f_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a843eb498c3aa69a8ff1a1357be55465f_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a843eb498c3aa69a8ff1a1357be55465f_cgraph">
+<area shape="rect" title="This is a volumetric version of the interpolation." alt="" coords="5,65,257,120"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ab023cf990654cc91beebccf2d6740f68" title="Split the matrix into blocks of rows of size blockSize." alt="" coords="305,105,488,145"/>
+<area shape="poly" title=" " alt="" coords="258,105,292,109,291,115,257,111"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="305,41,488,81"/>
+<area shape="poly" title=" " alt="" coords="257,75,291,71,292,76,258,80"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="556,55,659,80"/>
+<area shape="poly" title=" " alt="" coords="470,102,546,81,547,86,471,107"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#aae91784cef0863c931755f762c7470cb" title="Free memory." alt="" coords="536,153,679,179"/>
+<area shape="poly" title=" " alt="" coords="489,140,530,148,529,153,488,145"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="551,104,663,129"/>
+<area shape="poly" title=" " alt="" coords="488,119,538,117,538,122,488,124"/>
+<area shape="poly" title=" " alt="" coords="488,61,543,63,542,68,488,66"/>
+<area shape="poly" title=" " alt="" coords="473,78,546,98,545,103,472,83"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="554,5,661,31"/>
+<area shape="poly" title=" " alt="" coords="487,40,540,29,541,34,489,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff1cb6b9cea5020c3d51896bf004e6b6" name="aff1cb6b9cea5020c3d51896bf004e6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1cb6b9cea5020c3d51896bf004e6b6">&#9670;&#160;</a></span>createLinearInterpolationMatrix() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createLinearInterpolationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>extrapolateLinearly</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>interpolateLinearlyAlongNormal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The realisation relies on the following observations/follows these steps: </p>
+<h2>A 1d setup </h2>
+<p>We first construct a 1d interpolation. Starting from the hard-coded pattern</p>
+<pre>
+{1.0/3.0, 2.0/3.0,     0.0},
+{    0.0, 3.0/3.0,     0.0},
+{    0.0, 2.0/3.0, 1.0/3.0}
+   </pre><p>we repeat this whole thing numberOfDoFsPerAxisInPatch times and each time shift by one. For numberOfDoFsPerAxisInPatch=4 this yields for example</p>
+<pre>
+{0.333333,0.666667,       0,0,0,0},
+{0,              1,       0,0,0,0},
+{0,       0.666667,0.333333,0,0,0},
+{0,       0.333333,0.666667,0,0,0},
+{0,              0,       1,0,0,0},
+...
+   </pre><p>Let this be the matrix P1d. If we had a 1d setup, we could compute fine = P1d * coarse and would get all fine grid values in one rush. Obviously, we do not have a 1d setup.</p>
+<h2>2d extensions </h2>
+<p>Once we know P1d, we have to "blow is up". The input does not have numberOfDoFsPerAxisInPatch entries but has numberOfDoFsPerAxisInPatch*2 entries. Also the image has to be multiplied by two. We fist determine the normal and look whether we are left or right of this normal for the fine grid face. Next, we reiterate that we work with a lexicographic enumeration. If we want to study the left face of a cell,</p>
+<h2>The issue with the missing diagonal element </h2>
+<p>We do not know the diagonal element which we'd need to interpolate the outmost cells in our data. Without knowing them, two options are on the table: We can interpolate constantly at the edges, or we can extrapolate. While extrapolation might sound to be a good choice, I found that it sometimes yields physically invalid results. The Euler equations, for example, will immediately give you negative (tiny) energies or negative pressure.</p>
+<div class="image">
+<img src="../../Interpolation_createLinearInterpolationMatrix.png" alt=""/>
+</div>
+<p>The picture above illustrates the problem: We have by default no access to diagonal voxels in the mesh. This missing piece of information is illustrated by a voxel which is crossed out. If we now map the bright red voxels onto the bright green voxels, we don't really know what to do with the outermost voxels: We can extrapolate constantly or linearly, but we will always be slightly wrong, as we lack the information from the neighbour.</p>
+<p>Extrapolating constantly seems to be pretty robust, but actually makes our interpolation scheme deterioriate towards something in-between piece-wise constant and linear. Extrapolating linearly is better, but might yield unphysical solutions. For example, assume there is a density shock with a steep drop between the two outermost voxels. If we extrapolate linearly, we might end up with an interpolated/extrapolated fine grid voxel with negative density. This yields a wrong solution. To fix such a case, you might want to work with linear extrapolation but also use a postprocessing (clean-up) step. See the guidebook for an explanation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00062">createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()</a>, <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00099">createInterpolationMatrixFrom1dTemplateByLinearInterpolationAlongNormal()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00419">tarch::la::DynamicMatrix::replicateRows()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aff1cb6b9cea5020c3d51896bf004e6b6_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aff1cb6b9cea5020c3d51896bf004e6b6_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aff1cb6b9cea5020c3d51896bf004e6b6_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aff1cb6b9cea5020c3d51896bf004e6b6_cgraph">
+<area shape="rect" title="The realisation relies on the following observations/follows these steps:" alt="" coords="5,118,257,173"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#a2da875273e50b6a07f06478ea8755973" title="This routine accepts a &#160;matrix as input." alt="" coords="309,111,615,180"/>
+<area shape="poly" title=" " alt="" coords="258,143,296,143,296,148,258,148"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#a618a3a449d982e69ad054579b0bdbae0" title="This is an extension of createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()." alt="" coords="305,17,619,87"/>
+<area shape="poly" title=" " alt="" coords="228,115,325,88,327,93,230,121"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ab023cf990654cc91beebccf2d6740f68" title="Split the matrix into blocks of rows of size blockSize." alt="" coords="667,197,849,237"/>
+<area shape="poly" title=" " alt="" coords="221,170,306,189,397,201,489,209,653,215,653,220,489,214,396,207,305,195,220,175"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a42a92dd61f68c5e9288d08df002e6e1f" title=" " alt="" coords="667,5,849,45"/>
+<area shape="poly" title=" " alt="" coords="593,108,617,96,631,86,641,76,651,66,665,55,677,49,680,53,668,60,654,70,645,80,635,91,620,101,595,113"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a8f446384521e31144d784ca49348cfdf" title=" " alt="" coords="667,69,849,109"/>
+<area shape="poly" title=" " alt="" coords="614,114,653,106,654,112,615,119"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="667,133,849,173"/>
+<area shape="poly" title=" " alt="" coords="615,147,653,148,653,153,615,152"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="917,147,1020,173"/>
+<area shape="poly" title=" " alt="" coords="849,154,904,155,904,161,849,159"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="913,197,1025,222"/>
+<area shape="poly" title=" " alt="" coords="835,171,908,190,906,196,833,176"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="915,98,1022,123"/>
+<area shape="poly" title=" " alt="" coords="849,132,901,122,902,127,850,137"/>
+<area shape="poly" title=" " alt="" coords="619,35,653,32,653,37,619,41"/>
+<area shape="poly" title=" " alt="" coords="619,69,653,73,653,79,619,74"/>
+<area shape="poly" title=" " alt="" coords="586,84,620,96,668,119,686,126,684,131,666,124,618,101,584,89"/>
+<area shape="poly" title=" " alt="" coords="831,195,907,174,908,179,833,200"/>
+<area shape="poly" title=" " alt="" coords="849,211,899,209,899,215,849,217"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#aae91784cef0863c931755f762c7470cb" title="Free memory." alt="" coords="897,246,1040,271"/>
+<area shape="poly" title=" " alt="" coords="850,233,891,241,890,246,849,238"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c04a802c817225c14897910e5746971" name="a2c04a802c817225c14897910e5746971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c04a802c817225c14897910e5746971">&#9670;&#160;</a></span>createPiecewiseConstantInterpolationMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createPiecewiseConstantInterpolationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is a volumetric version of the interpolation. </p>
+<p>It is close to trivial, as we can employ <a class="el" href="#aaf01d9311cfbf021be3a01f59bee9a30" title="Helper function.">internal::projectCells_AoS()</a> to identify pairs of coarse-fine volumes that overlap and then we simply copy over results. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d9e/Loop_8h_source.html#l00043">dfor</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00098">dfor3</a>, <a class="el" href="../../d1/dc2/Linearised_8cpph_source.html#l00034">peano4::utils::dLinearised()</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00117">enddforx</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../dc/dfc/exahype2_2solvers_2fv_2godunov_2kernels_2omp_2Loop_8template_8h_source.html#l00169">numberOfPatches</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00215">tarch::la::DynamicMatrix::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2c04a802c817225c14897910e5746971_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2c04a802c817225c14897910e5746971_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2c04a802c817225c14897910e5746971_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a2c04a802c817225c14897910e5746971_cgraph">
+<area shape="rect" title="This is a volumetric version of the interpolation." alt="" coords="5,20,257,75"/>
+<area shape="rect" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095" title="Map d&#45;dimensional vector onto integer index." alt="" coords="305,5,495,31"/>
+<area shape="poly" title=" " alt="" coords="257,31,291,27,292,32,258,36"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="309,55,491,95"/>
+<area shape="poly" title=" " alt="" coords="258,58,295,62,294,67,257,63"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="547,13,650,39"/>
+<area shape="poly" title=" " alt="" coords="480,53,533,39,534,45,482,58"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="543,63,655,88"/>
+<area shape="poly" title=" " alt="" coords="492,73,529,73,529,78,492,78"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="545,112,652,137"/>
+<area shape="poly" title=" " alt="" coords="482,93,534,106,533,111,480,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea05ea5dbf37491782dfcc82f3a86462" name="aea05ea5dbf37491782dfcc82f3a86462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea05ea5dbf37491782dfcc82f3a86462">&#9670;&#160;</a></span>createPiecewiseConstantInterpolationMatrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html">tarch::la::DynamicMatrix</a> * toolbox::blockstructured::internal::createPiecewiseConstantInterpolationMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>normal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>overlap</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create piecewise constant interpolation matrix. </p>
+<p>The matrix is very simple as it holds exclusively zeroes and ones. To construct it, we run over the image and and look for each image voxel which coarser face voxel is overlaps. In this context, we exploit the fact that all voxels are enumerated lexicographically:</p>
+<div class="image">
+<img src="../../Interpolation_createPiecewiseConstantInterpolationMatrix.png" alt=""/>
+</div>
+<p>The resulting matrix for the example above (where the normal equals 0) is 24x8 matrix which equals</p>
+<p>\(
+\begin{array}{cccccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}
+  \)</p>
+<p>Below is another example for a face on y-direction in a 2D setup, assuming three-partitioning for every patch. when we refine a face, we get \( 3^{d-1} \) subfaces. we enumerate the volumes within a surface first, and then move to the next surface lexicographically.</p>
+<div class="image">
+<img src="../../Interpolation_ydirection_example.png" alt=""/>
+</div>
+<h2><a class="anchor" id="autotoc_md262"></a>
+Construction algorithm</h2>
+<p>I have two variants of the actual construction in here. One of them is commented out. It is the manual flavour which I wanted to keep to allow people to understand what's going on.</p>
+<p>The one shipped is way more elegant (in my opinion) than the manual implementation. It starts from the observation that a 1d interpolation from a mesh onto a subdivided mesh with a subdivision factor by three is very simplistic matrix.</p>
+<p class="formulaDsp">
+\[
+  \begin{array}{cccccccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1
+  \end{array}
+ \]
+</p>
+<p>Here, I use four-partitioning.</p>
+<h2><a class="anchor" id="autotoc_md263"></a>
+Formatting of documentation (doxygen)</h2>
+<p>Doxygen nowadays supports markup syntax. Unfortunately, this documentation would be indented more than five spaces which makes some of the write-up preformatted in markup. So the doxygen parser completely messes up things.</p>
+<p>For this reason, the documentation here is not properly indented. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html">Interpolation.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00062">createInterpolationMatrixFrom1dTemplateByInsertingZeroColsAndRows()</a>, and <a class="el" href="../../d6/d43/DynamicMatrix_8cpp_source.html#l00419">tarch::la::DynamicMatrix::replicateRows()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aea05ea5dbf37491782dfcc82f3a86462_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aea05ea5dbf37491782dfcc82f3a86462_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aea05ea5dbf37491782dfcc82f3a86462_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aea05ea5dbf37491782dfcc82f3a86462_cgraph">
+<area shape="rect" title="Create piecewise constant interpolation matrix." alt="" coords="5,126,257,181"/>
+<area shape="rect" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html#a2da875273e50b6a07f06478ea8755973" title="This routine accepts a &#160;matrix as input." alt="" coords="305,69,611,139"/>
+<area shape="poly" title=" " alt="" coords="257,132,291,127,292,132,258,137"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ab023cf990654cc91beebccf2d6740f68" title="Split the matrix into blocks of rows of size blockSize." alt="" coords="659,197,841,237"/>
+<area shape="poly" title=" " alt="" coords="258,164,645,204,645,209,257,169"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a42a92dd61f68c5e9288d08df002e6e1f" title=" " alt="" coords="659,5,841,45"/>
+<area shape="poly" title=" " alt="" coords="586,67,661,47,662,52,588,72"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#a8f446384521e31144d784ca49348cfdf" title=" " alt="" coords="659,69,841,109"/>
+<area shape="poly" title=" " alt="" coords="611,94,645,92,645,97,611,99"/>
+<area shape="rect" href="../../dc/dd8/classtarch_1_1la_1_1DynamicMatrix.html#ac8c94ce746ad85ad57360a0d24165250" title=" " alt="" coords="659,133,841,173"/>
+<area shape="poly" title=" " alt="" coords="611,127,645,133,645,138,610,132"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a55773443ce28f529a0be1ebcff2567bc" title="Extract row from matrix." alt="" coords="909,147,1012,173"/>
+<area shape="poly" title=" " alt="" coords="841,154,896,155,896,161,841,159"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="905,197,1017,222"/>
+<area shape="poly" title=" " alt="" coords="827,171,900,190,898,196,825,176"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae01b5f0ab6af4c79606b1d8f32499147" title="Extract row from matrix." alt="" coords="907,98,1014,123"/>
+<area shape="poly" title=" " alt="" coords="841,132,893,122,894,127,842,137"/>
+<area shape="poly" title=" " alt="" coords="823,195,899,174,900,179,825,200"/>
+<area shape="poly" title=" " alt="" coords="841,211,891,209,891,215,841,217"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#aae91784cef0863c931755f762c7470cb" title="Free memory." alt="" coords="889,246,1032,271"/>
+<area shape="poly" title=" " alt="" coords="842,233,883,241,882,246,841,238"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1dd0a74eab45ae4de0f4bb4c7b7ecb47" name="a1dd0a74eab45ae4de0f4bb4c7b7ecb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd0a74eab45ae4de0f4bb4c7b7ecb47">&#9670;&#160;</a></span>interpolateCell_AoS_linear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::blockstructured::internal::interpolateCell_AoS_linear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>relativePositionWithinFatherCell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__</td>          <td class="paramname"><span class="paramname"><em>fineGridValues</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>coarseGridValues</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>extrapolateLinearly</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21882a1cfee7f1aa45f562d9fa31a85a" name="a21882a1cfee7f1aa45f562d9fa31a85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21882a1cfee7f1aa45f562d9fa31a85a">&#9670;&#160;</a></span>interpolateCell_AoS_piecewise_constant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::blockstructured::internal::interpolateCell_AoS_piecewise_constant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>relativePositionWithinFatherCell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__</td>          <td class="paramname"><span class="paramname"><em>fineGridValues</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>coarseGridValues</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>Other <a class="el" href="#a21882a1cfee7f1aa45f562d9fa31a85a">interpolateCell_AoS_piecewise_constant()</a> variant which delegates to this one which is also used by the face interpolation. </dd></dl>
+
+</div>
+</div>
+<a id="aaf01d9311cfbf021be3a01f59bee9a30" name="aaf01d9311cfbf021be3a01f59bee9a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf01d9311cfbf021be3a01f59bee9a30">&#9670;&#160;</a></span>projectCells_AoS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::blockstructured::internal::projectCells_AoS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>fineGridCellMarker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>(<a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; coarseVolume, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; fineVolume, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; coarseVolumeCentre, <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; fineVolumeCentre, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> coarseVolumeH, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> fineVolumeH)&gt;</td>          <td class="paramname"><span class="paramname"><em>update</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function. </p>
+<p>This function runs through all fine grid/coarse grid cell combinations which are identified via fineGridCellMarker. So we call the functor once per fine grid cell, but \( 3^d \) times or not at all for any coarse grid cell. This routine is used as a helper function for piece-wise constant interpolation. It is not that useful for d-linear interpolation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/de0/Restriction_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../dd/de0/Restriction_8cpp_source.html">Restriction.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d0a/SmartPointerVector_8cpph_source.html#l00140">tarch::la::convertScalar()</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00043">dfor</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00371">logTraceInWith2Arguments</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>, and <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aaf01d9311cfbf021be3a01f59bee9a30_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aaf01d9311cfbf021be3a01f59bee9a30_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aaf01d9311cfbf021be3a01f59bee9a30_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_aaf01d9311cfbf021be3a01f59bee9a30_cgraph">
+<area shape="rect" title="Helper function." alt="" coords="5,49,203,89"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a762465c2e6b6f193b7e207e82a2d3245" title=" " alt="" coords="274,5,446,31"/>
+<area shape="poly" title=" " alt="" coords="202,47,282,31,283,36,203,52"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="517,31,629,56"/>
+<area shape="poly" title=" " alt="" coords="203,61,503,44,504,50,203,66"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18" title=" " alt="" coords="251,107,469,132"/>
+<area shape="poly" title=" " alt="" coords="203,86,283,101,282,107,202,91"/>
+<area shape="poly" title=" " alt="" coords="447,26,504,32,503,38,446,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6f1e0b659915ddc928856a8bbf41b574" name="a6f1e0b659915ddc928856a8bbf41b574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1e0b659915ddc928856a8bbf41b574">&#9670;&#160;</a></span>projectInterpolatedFineCellsOnHaloLayer_AoS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::blockstructured::internal::projectInterpolatedFineCellsOnHaloLayer_AoS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDoFsPerAxisInPatch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>overlap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__</td>          <td class="paramname"><span class="paramname"><em>fineGridCellValuesLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> T *__restrict__</td>          <td class="paramname"><span class="paramname"><em>fineGridCellValuesRight</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>fineGridFaceValues</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This routine assumes that you have the whole patch data of hte left and right adjacent patch at hands. </p>
+<p>We identify the overlap with the fine halo layer and copy values over from these two arrays onto the face data. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l00005">5</a> of file <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html">Interpolation.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d9e/Loop_8h_source.html#l00125">dfore</a>, <a class="el" href="../../d1/dc2/Linearised_8cpph_source.html#l00034">peano4::utils::dLinearised()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00372">logTraceInWith3Arguments</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, and <a class="el" href="../../dd/d5a/Enumeration_8cpp_source.html#l00004">toolbox::blockstructured::serialiseVoxelIndexInOverlap()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a6f1e0b659915ddc928856a8bbf41b574_cgraph.png" border="0" usemap="#ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a6f1e0b659915ddc928856a8bbf41b574_cgraph" alt=""/></div>
+<map name="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a6f1e0b659915ddc928856a8bbf41b574_cgraph" id="ada/d4f/namespacetoolbox_1_1blockstructured_1_1internal_a6f1e0b659915ddc928856a8bbf41b574_cgraph">
+<area shape="rect" title="This routine assumes that you have the whole patch data of hte left and right adjacent patch at hands..." alt="" coords="5,20,217,75"/>
+<area shape="rect" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095" title="Map d&#45;dimensional vector onto integer index." alt="" coords="280,5,469,31"/>
+<area shape="poly" title=" " alt="" coords="217,33,266,27,267,33,218,38"/>
+<area shape="rect" href="../../d1/d28/namespacetoolbox_1_1blockstructured.html#a7861d850984f3d783a117134511eeeba" title="The volumes or elements within an overlap are always enumerated lexicographically." alt="" coords="265,55,484,95"/>
+<area shape="poly" title=" " alt="" coords="218,56,252,60,252,65,217,61"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dd9/namespacetoolbox.html">toolbox</a></li><li class="navelem"><a class="el" href="../../d1/d28/namespacetoolbox_1_1blockstructured.html">blockstructured</a></li><li class="navelem"><a class="el" href="../../da/d4f/namespacetoolbox_1_1blockstructured_1_1internal.html">internal</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:06 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

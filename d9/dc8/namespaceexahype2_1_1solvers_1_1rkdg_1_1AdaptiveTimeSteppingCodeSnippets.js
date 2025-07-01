@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1rkdg_1_1AdaptiveTimeSteppingCodeSnippets =
+[
+    [ "AdaptiveTimeSteppingCodeSnippets", "df/df5/classexahype2_1_1solvers_1_1rkdg_1_1AdaptiveTimeSteppingCodeSnippets_1_1AdaptiveTimeSteppingCodeSnippets.html", "df/df5/classexahype2_1_1solvers_1_1rkdg_1_1AdaptiveTimeSteppingCodeSnippets_1_1AdaptiveTimeSteppingCodeSnippets" ]
+];

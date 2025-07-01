@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['of_20a_20solver_0',['Localisation of a solver',['../d5/d5f/page_peano_localisation.html',1,'page_peano4_home']]],
+  ['of_20compute_20kernels_20for_20the_20shallow_20water_20equations_1',['Benchmarks of Compute Kernels for the Shallow Water Equations',['../d5/d56/benchmarks_exahype2_shallow_water_kernel_benchmarks.html',1,'']]],
+  ['of_20exagrype_2',['Advanced Usage of ExaGRyPE',['../df/d1a/tutorials_exahype2_applications_exagrype_advanced.html',1,'tutorials_exahype2_applications_exagrype']]],
+  ['of_20freedom_20layout_3',['Terminology and degree of freedom layout',['../de/d44/page_multigrid_terminology.html',1,'page_multigrid_home']]],
+  ['of_20larger_20exahype_20applications_4',['Design patterns of larger ExaHyPE applications',['../dc/d25/tutorials_exahype2_design-patterns.html',1,'page_exahype2_tutorials']]],
+  ['of_20norway_5',['Landslide on the Tafjord Region of Norway',['../dd/d1f/applications_exahype2_shallow_water_tafjord_landslide.html',1,'applications_exahype2_shallow_water']]],
+  ['of_20various_20solvers_20and_20additional_20mesh_20traversals_6',['Coupling of various solvers and additional mesh traversals',['../da/d8c/tutorials_exahype2_coupling.html',1,'page_exahype2_tutorials']]],
+  ['offline_20command_20line_20conversation_20into_20vtk_20file_20formats_7',['Offline (command-line) conversation into VTK file formats',['../de/dbe/documentation_tarch_visualisation_offline-conversion.html',1,'documentation_tarch_visualisation']]],
+  ['on_20a_20circular_20island_8',['Solitary wave run-up and run-down on a circular island',['../d8/d84/applications_exahype2_shallow_water_circular_island.html',1,'applications_exahype2_shallow_water']]],
+  ['on_20an_20inclined_20plane_9',['Landslide Dam Break on an Inclined Plane',['../d3/dca/applications_exahype2_shallow_water_dam_break_landslide.html',1,'applications_exahype2_shallow_water']]],
+  ['on_20clusters_10',['Run ExaGRyPE on Clusters',['../d8/da0/tutorials_exahype2_applications_exagrype_clusters.html',1,'tutorials_exahype2_applications_exagrype']]],
+  ['on_20the_20tafjord_20region_20of_20norway_11',['Landslide on the Tafjord Region of Norway',['../dd/d1f/applications_exahype2_shallow_water_tafjord_landslide.html',1,'applications_exahype2_shallow_water']]],
+  ['operators_12',['Matrix-free DG with jumping coefficients or precomputed cell operators',['../d9/d7f/tutorials_multigrid_matrixfree_jumping_coefficients_and_optimisation.html',1,'page_mghype_tutorials']]],
+  ['optimisation_13',['optimisation',['../d7/dfe/page_exahype_performance_optimisation.html',1,'Performance optimisation'],['../da/d8a/page_peano_performance_optimisation.html',1,'Performance optimisation'],['../d3/dc8/page_swift_performance_optimisation.html',1,'Performance optimisation']]],
+  ['optimistic_20solvers_14',['Enclave and optimistic solvers',['../d5/d35/documentation_exahype2_solvers_enclave_solvers.html',1,'page_exahype2_home']]],
+  ['or_20precomputed_20cell_20operators_15',['Matrix-free DG with jumping coefficients or precomputed cell operators',['../d9/d7f/tutorials_multigrid_matrixfree_jumping_coefficients_and_optimisation.html',1,'page_mghype_tutorials']]],
+  ['orbit_16',['orbit',['../d3/da0/tutorials_swift2_planet_orbit.html',1,'Planet orbit'],['../d9/d7c/tests_swift2_planet_orbit.html',1,'Planet orbit']]],
+  ['oscillation_20in_20a_20symmetrical_20paraboloid_17',['Oscillation in a symmetrical paraboloid',['../d4/df2/applications_exahype2_shallow_water_oscillating_lake.html',1,'applications_exahype2_shallow_water']]],
+  ['other_20codes_20and_20adding_20additional_20mesh_20sweeps_18',['Coupling ExaHyPE to other codes and adding additional mesh sweeps',['../d2/dee/page_exahype2_coupling.html',1,'page_exahype2_home']]],
+  ['otter_20task_20tracing_19',['Otter task tracing',['../d3/d0d/tarch_multicore_otter.html',1,'']]],
+  ['output_20',['Visualisation and output',['../d2/d2d/page_exahype_visualisation.html',1,'page_exahype2_home']]],
+  ['over_20the_20mesh_20entities_21',['Design principle: Unfolding the linear algebra steps over the mesh entities',['../dd/d88/page_multigrid_unfolding.html',1,'page_multigrid_home']]],
+  ['overview_22',['Tutorials Overview',['../d5/dda/page_tutorials_overview.html',1,'index']]]
+];

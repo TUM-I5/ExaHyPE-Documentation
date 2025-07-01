@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">benchmarks::exahype2::ccz4::CCZ4SBH_FV Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for benchmarks::exahype2::ccz4::CCZ4SBH_FV:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dd1/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV__inherit__graph.png" border="0" usemap="#abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_inherit__map" alt="Inheritance graph"/></div>
+<map name="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_inherit__map" id="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_inherit__map">
+<area shape="rect" title=" " alt="" coords="21,93,196,133"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" title=" " alt="" coords="111,59,111,93,106,93,106,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for benchmarks::exahype2::ccz4::CCZ4SBH_FV:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d04/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV__coll__graph.png" border="0" usemap="#abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_coll__map" alt="Collaboration graph"/></div>
+<map name="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_coll__map" id="abenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_coll__map">
+<area shape="rect" title=" " alt="" coords="752,63,927,103"/>
+<area shape="rect" title=" " alt="" coords="412,5,619,45"/>
+<area shape="poly" title=" " alt="" coords="632,43,728,60,752,64,751,70,728,65,632,48"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="444,70,587,95"/>
+<area shape="poly" title=" " alt="" coords="600,80,751,80,751,85,600,85"/>
+<area shape="rect" title=" " alt="" coords="193,70,280,95"/>
+<area shape="poly" title=" " alt="" coords="294,80,444,80,444,85,294,85"/>
+<area shape="rect" title=" " alt="" coords="5,63,144,103"/>
+<area shape="poly" title=" " alt="" coords="157,80,193,80,193,85,157,85"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html" title=" " alt="" coords="422,120,609,160"/>
+<area shape="poly" title=" " alt="" coords="622,119,728,100,751,96,752,101,728,105,622,124"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ace3697f9a3550d9e62a33de3bc22efd1" id="r_ace3697f9a3550d9e62a33de3bc22efd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace3697f9a3550d9e62a33de3bc22efd1">CCZ4SBH_FV</a> ()</td></tr>
+<tr class="memdesc:ace3697f9a3550d9e62a33de3bc22efd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the two punctures object if required.  <br /></td></tr>
+<tr class="separator:ace3697f9a3550d9e62a33de3bc22efd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9482dd8967f5367628073d633550bb0" id="r_ac9482dd8967f5367628073d633550bb0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9482dd8967f5367628073d633550bb0">initialCondition</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ Q, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;volumeH, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> gridIsConstructed) override</td></tr>
+<tr class="separator:ac9482dd8967f5367628073d633550bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e377298d6588adf14541cd09ac58878" id="r_a9e377298d6588adf14541cd09ac58878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e377298d6588adf14541cd09ac58878">reduceAdmissibleTimeStepSize</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d8/d7e/exahype2_2solvers_2fv_2godunov_2kernels_2kokkos_2Loop_8template_8h.html#acecd8d5f5f51cdecc27bbd970eeeacb5">timeStepSize</a>)</td></tr>
+<tr class="memdesc:a9e377298d6588adf14541cd09ac58878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite limiters time step size.  <br /></td></tr>
+<tr class="separator:a9e377298d6588adf14541cd09ac58878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b7c18ea4320b98eaef12d09ea3e699" id="r_a34b7c18ea4320b98eaef12d09ea3e699"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b7c18ea4320b98eaef12d09ea3e699">startTimeStep</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> globalMinTimeStamp, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> globalMaxTimeStamp, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> globalMinTimeStepSize, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> globalMaxTimeStepSize) override</td></tr>
+<tr class="memdesc:a34b7c18ea4320b98eaef12d09ea3e699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call superclass and after that report/maintain _numberOfPatches.  <br /></td></tr>
+<tr class="separator:a34b7c18ea4320b98eaef12d09ea3e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae576d1ac24ce617f056554b090bf43d0" id="r_ae576d1ac24ce617f056554b090bf43d0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae576d1ac24ce617f056554b090bf43d0">finishTimeStep</a> () override</td></tr>
+<tr class="memdesc:ae576d1ac24ce617f056554b090bf43d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call superclass and after that report/maintain _numberOfPatches.  <br /></td></tr>
+<tr class="separator:ae576d1ac24ce617f056554b090bf43d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f8e1d5e6aa7962f79b2ca7a426a424" id="r_a44f8e1d5e6aa7962f79b2ca7a426a424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44f8e1d5e6aa7962f79b2ca7a426a424">incNumberOfPatches</a> ()</td></tr>
+<tr class="separator:a44f8e1d5e6aa7962f79b2ca7a426a424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa395e8acf933a2ccd2f3e1e14412904c" id="r_aa395e8acf933a2ccd2f3e1e14412904c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa395e8acf933a2ccd2f3e1e14412904c">isCellOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;marker)</td></tr>
+<tr class="memdesc:aa395e8acf933a2ccd2f3e1e14412904c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is octant area overlapping with BH impact area.  <br /></td></tr>
+<tr class="separator:aa395e8acf933a2ccd2f3e1e14412904c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f8a62ea13af9aad2dd1698c05bec76" id="r_ab5f8a62ea13af9aad2dd1698c05bec76"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f8a62ea13af9aad2dd1698c05bec76">areAllFaceConnectedCellsOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;marker)</td></tr>
+<tr class="separator:ab5f8a62ea13af9aad2dd1698c05bec76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dce9a90b00ad8e66a376e553c001eb6" id="r_a4dce9a90b00ad8e66a376e553c001eb6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dce9a90b00ad8e66a376e553c001eb6">areBothAdjacentCellsOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;marker)</td></tr>
+<tr class="memdesc:a4dce9a90b00ad8e66a376e553c001eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check two adjacent octants.  <br /></td></tr>
+<tr class="separator:a4dce9a90b00ad8e66a376e553c001eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a0a27eed9fba6c83b7489df7915a21" id="r_ac8a0a27eed9fba6c83b7489df7915a21"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8a0a27eed9fba6c83b7489df7915a21">isOneAdjacentCellOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;marker)</td></tr>
+<tr class="separator:ac8a0a27eed9fba6c83b7489df7915a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3a3c3cfbc6094628a2dee5eb765a51" id="r_a8e3a3c3cfbc6094628a2dee5eb765a51"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e3a3c3cfbc6094628a2dee5eb765a51">areBothAdjacentCellsOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;marker, <a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> faceNumber)</td></tr>
+<tr class="memdesc:a8e3a3c3cfbc6094628a2dee5eb765a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the faceNumberth adjacent face is adjacent to inside cells.  <br /></td></tr>
+<tr class="separator:a8e3a3c3cfbc6094628a2dee5eb765a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a03912e0909ba4e8539886f4b2a90c8b9" id="r_a03912e0909ba4e8539886f4b2a90c8b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03912e0909ba4e8539886f4b2a90c8b9">isCellOverlappingWithBHImpactArea</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;cellCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;cellH)</td></tr>
+<tr class="separator:a03912e0909ba4e8539886f4b2a90c8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6e6c001542bd5e509b2946243ff4275a" id="r_a6e6c001542bd5e509b2946243ff4275a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6c001542bd5e509b2946243ff4275a">_numberOfPatches</a></td></tr>
+<tr class="separator:a6e6c001542bd5e509b2946243ff4275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aec62e5a5aad2aea8f5aa5eebc834e365" id="r_aec62e5a5aad2aea8f5aa5eebc834e365"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec62e5a5aad2aea8f5aa5eebc834e365">_log</a></td></tr>
+<tr class="separator:aec62e5a5aad2aea8f5aa5eebc834e365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf47ea533a52da8f1d63aa43b48a0da" id="r_abbf47ea533a52da8f1d63aa43b48a0da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbf47ea533a52da8f1d63aa43b48a0da">_semaphore</a></td></tr>
+<tr class="separator:abbf47ea533a52da8f1d63aa43b48a0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html#l00026">26</a> of file <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ace3697f9a3550d9e62a33de3bc22efd1" name="ace3697f9a3550d9e62a33de3bc22efd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace3697f9a3550d9e62a33de3bc22efd1">&#9670;&#160;</a></span>CCZ4SBH_FV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">benchmarks::exahype2::ccz4::CCZ4SBH_FV::CCZ4SBH_FV </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise the two punctures object if required. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/da4/CCZ4SBH__FD4_8cpp_source.html#l00012">benchmarks::exahype2::ccz4::prepareTwoPunctures()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_ace3697f9a3550d9e62a33de3bc22efd1_cgraph.png" border="0" usemap="#ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_ace3697f9a3550d9e62a33de3bc22efd1_cgraph" alt=""/></div>
+<map name="ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_ace3697f9a3550d9e62a33de3bc22efd1_cgraph" id="ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_ace3697f9a3550d9e62a33de3bc22efd1_cgraph">
+<area shape="rect" title="Initialise the two punctures object if required." alt="" coords="5,227,252,267"/>
+<area shape="rect" href="../../d2/d5a/namespacebenchmarks_1_1exahype2_1_1ccz4.html#a4959f6fe41f01ca9591a578779f2d4f0" title=" " alt="" coords="300,227,507,267"/>
+<area shape="poly" title=" " alt="" coords="252,244,286,244,286,249,252,249"/>
+<area shape="rect" href="../../d8/d82/structTP_1_1Parameters.html#a6520f2c5d2bcee28eeca86a956fea995" title=" " alt="" coords="555,122,787,147"/>
+<area shape="poly" title=" " alt="" coords="451,224,626,150,628,155,453,229"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ac3648f62c7d1cb9ffdcbb04820363744" title=" " alt="" coords="587,258,755,283"/>
+<area shape="poly" title=" " alt="" coords="507,253,573,259,572,265,507,259"/>
+<area shape="rect" href="../../d0/da4/structTP_1_1LoggingAdapter.html#a3a903fe41096aaeec9f3b7ce739d57ca" title=" " alt="" coords="857,5,1005,45"/>
+<area shape="poly" title=" " alt="" coords="695,120,757,89,834,55,853,47,855,52,836,60,760,94,698,124"/>
+<area shape="rect" href="../../d6/d74/TP__Logging_8cpp.html#a2ff8025a1b0fb60e7c9955d8437d23df" title=" " alt="" coords="1139,45,1214,70"/>
+<area shape="poly" title=" " alt="" coords="1006,32,1126,48,1125,53,1005,38"/>
+<area shape="poly" title=" " alt="" coords="687,256,734,215,761,188,784,159,799,130,805,105,813,81,833,55,844,47,847,51,837,59,818,83,810,107,804,132,789,161,765,191,738,219,690,260"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ad047cd740b42bb55b2277f64f0793de9" title=" " alt="" coords="1636,233,1831,273"/>
+<area shape="poly" title=" " alt="" coords="755,267,1622,252,1622,258,755,272"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a176b86d13ad653255b2b162907831b11" title=" " alt="" coords="2135,1014,2289,1039"/>
+<area shape="poly" title=" " alt="" coords="717,255,841,224,1019,187,1227,156,1335,146,1441,143,1735,143,1775,149,1827,164,1944,211,2088,281,2105,307,2120,341,2146,426,2166,529,2183,640,2203,854,2212,1000,2207,1001,2198,855,2177,641,2161,530,2141,428,2115,343,2100,310,2085,285,1941,216,1825,169,1774,154,1734,148,1441,148,1335,152,1228,161,1020,192,842,230,718,261"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a6e70fb9d41ba1308bcb471c3a4020163" title=" " alt="" coords="1349,531,1536,557"/>
+<area shape="poly" title=" " alt="" coords="709,281,1393,524,1391,529,707,286"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a75636c60efe6545d4935edd17842ac42" title=" " alt="" coords="835,1021,1028,1046"/>
+<area shape="poly" title=" " alt="" coords="679,283,924,1007,919,1008,674,285"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ada62360990a13ddbf00590a428b72728" title=" " alt="" coords="1630,1557,1837,1597"/>
+<area shape="poly" title=" " alt="" coords="676,284,689,409,719,632,741,765,768,905,800,1048,837,1186,862,1277,879,1357,894,1429,911,1494,933,1556,966,1616,1013,1677,1078,1741,1138,1789,1196,1828,1254,1856,1311,1873,1369,1877,1429,1869,1492,1847,1559,1811,1571,1801,1579,1791,1587,1767,1592,1740,1606,1709,1652,1652,1697,1605,1701,1609,1656,1655,1610,1712,1597,1741,1592,1768,1584,1793,1575,1805,1561,1816,1494,1852,1431,1874,1369,1883,1310,1878,1252,1861,1194,1833,1135,1794,1074,1745,1009,1680,961,1619,929,1558,906,1496,889,1430,874,1358,856,1278,832,1187,794,1049,762,906,735,766,714,632,684,410,671,284"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ac3aa55727bc3cc18b034371058712768" title=" " alt="" coords="1345,1223,1541,1263"/>
+<area shape="poly" title=" " alt="" coords="676,284,688,427,718,660,739,784,766,899,799,993,817,1030,837,1057,889,1104,948,1143,1013,1174,1080,1197,1148,1215,1214,1227,1332,1239,1331,1244,1214,1232,1147,1220,1079,1202,1011,1179,946,1148,886,1109,833,1060,812,1032,794,996,761,900,734,785,712,661,683,428,670,284"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a8568b9cbe79ca5576576e540dff488c8" title=" " alt="" coords="1095,616,1258,656"/>
+<area shape="poly" title=" " alt="" coords="691,282,1138,606,1135,610,688,286"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a3bb82db72227782b5a7885841f5d543d" title=" " alt="" coords="1631,1722,1835,1747"/>
+<area shape="poly" title=" " alt="" coords="675,284,679,523,686,720,699,944,719,1173,747,1389,765,1485,786,1571,810,1643,837,1700,870,1750,904,1794,940,1833,978,1865,1017,1892,1058,1914,1101,1930,1145,1942,1191,1949,1239,1951,1288,1949,1339,1944,1446,1920,1559,1883,1607,1858,1650,1824,1686,1788,1712,1757,1716,1760,1690,1792,1654,1828,1610,1862,1561,1888,1447,1925,1340,1949,1288,1955,1238,1957,1190,1954,1144,1947,1099,1935,1056,1918,1014,1897,974,1869,936,1836,900,1798,865,1753,832,1703,805,1645,781,1572,760,1486,742,1389,713,1173,693,944,681,721,673,523,669,284"/>
+<area shape="rect" href="../../d0/da4/structTP_1_1LoggingAdapter.html#a6ec9bd86a1dcf2e3d427add63a097c5e" title=" " alt="" coords="857,69,1005,109"/>
+<area shape="poly" title=" " alt="" coords="682,256,743,195,786,159,833,126,858,113,860,117,836,130,790,163,747,199,686,260"/>
+<area shape="poly" title=" " alt="" coords="1831,248,1896,254,1965,269,1999,282,2032,297,2062,317,2089,341,2105,364,2121,393,2146,470,2167,563,2183,665,2204,863,2212,1000,2207,1000,2198,863,2178,666,2162,564,2141,472,2116,395,2101,366,2085,344,2059,321,2029,302,1997,286,1964,275,1895,260,1831,254"/>
+<area shape="poly" title=" " alt="" coords="1466,529,1513,497,1537,474,1558,449,1569,427,1575,405,1577,365,1581,325,1590,305,1606,285,1622,272,1625,277,1610,289,1594,308,1586,326,1582,365,1580,406,1574,429,1562,452,1541,478,1516,501,1469,533"/>
+<area shape="poly" title=" " alt="" coords="1535,536,1558,523,1572,508,1578,492,1580,458,1583,423,1591,406,1606,391,1649,371,1707,355,1776,346,1849,342,1922,345,1990,354,2047,369,2088,391,2106,410,2122,436,2148,505,2169,591,2185,685,2205,870,2212,1000,2207,1001,2200,871,2180,686,2164,592,2143,507,2117,439,2102,414,2085,395,2045,374,1989,359,1922,350,1849,348,1776,351,1709,361,1651,376,1610,396,1595,409,1588,424,1586,458,1583,494,1576,511,1562,527,1537,541"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a780531a08a556e28cf534aaabceb533f" title=" " alt="" coords="1653,628,1814,668"/>
+<area shape="poly" title=" " alt="" coords="1471,554,1533,583,1609,613,1640,623,1638,628,1607,619,1531,588,1468,559"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#aee9c7f5077e197487621aa13a1f8c7af" title=" " alt="" coords="1640,693,1827,718"/>
+<area shape="poly" title=" " alt="" coords="1457,555,1518,615,1561,649,1609,678,1631,686,1629,691,1607,682,1558,653,1514,619,1453,559"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a1d78c642a789cd39e9fee4facb0d1d12" title=" " alt="" coords="1608,945,1859,970"/>
+<area shape="poly" title=" " alt="" coords="1455,555,1610,778,1717,932,1713,935,1606,782,1451,558"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a34f7efd5552efa5603f85b99e8f2784e" title=" " alt="" coords="2147,1407,2277,1447"/>
+<area shape="poly" title=" " alt="" coords="1535,535,1558,523,1569,513,1575,503,1581,480,1587,456,1594,445,1607,435,1651,417,1711,406,1780,400,1854,401,1928,408,1995,421,2050,441,2072,453,2089,468,2097,482,2104,505,2114,571,2127,754,2132,940,2137,1052,2172,1245,2205,1393,2200,1394,2167,1246,2132,1052,2127,941,2121,754,2109,572,2099,506,2092,484,2085,471,2069,458,2048,446,1993,427,1927,413,1854,407,1781,406,1712,411,1653,422,1609,440,1598,448,1592,458,1586,481,1580,505,1573,517,1562,528,1538,540"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ae26d10305def2a02efa427e4219dd83d" title=" " alt="" coords="1907,630,2086,655"/>
+<area shape="poly" title=" " alt="" coords="1536,529,1608,524,1690,523,1776,531,1859,549,1893,563,1924,581,1973,619,1970,623,1921,586,1890,568,1858,555,1775,536,1689,529,1608,529,1536,534"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a0d0240e96d95ea730849f975109362e0" title=" " alt="" coords="1649,1197,1818,1237"/>
+<area shape="poly" title=" " alt="" coords="1454,556,1504,644,1535,707,1563,772,1579,831,1586,878,1594,924,1611,982,1635,1039,1663,1095,1714,1184,1709,1187,1658,1097,1630,1041,1605,984,1588,925,1581,879,1574,832,1557,774,1530,709,1500,647,1450,558"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a43d9e1e2f204030b2ece412376948f94" title=" " alt="" coords="1639,449,1827,489"/>
+<area shape="poly" title=" " alt="" coords="1493,529,1640,490,1642,496,1494,534"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a7e041d8b7623049278cf39654b7fa516" title=" " alt="" coords="1651,564,1815,604"/>
+<area shape="poly" title=" " alt="" coords="1536,554,1638,568,1637,574,1535,559"/>
+<area shape="rect" href="../../da/dc1/namespaceTP.html#af5ee5941fa391d2485ebeafcc47670e9" title=" " alt="" coords="1675,298,1792,323"/>
+<area shape="poly" title=" " alt="" coords="1529,529,1558,510,1573,490,1580,470,1581,427,1582,384,1590,362,1606,341,1631,324,1660,314,1662,319,1634,328,1610,345,1594,365,1587,385,1586,427,1586,470,1578,492,1562,514,1531,534"/>
+<area shape="poly" title=" " alt="" coords="1829,942,1857,923,1874,899,1881,873,1881,846,1877,820,1874,793,1875,767,1884,741,1905,718,1951,690,1973,684,1995,682,2018,685,2040,692,2088,718,2121,746,2148,781,2169,820,2185,860,2204,939,2212,1000,2207,1000,2199,940,2180,862,2164,822,2143,784,2117,750,2085,722,2038,697,2017,690,1995,687,1974,689,1953,695,1908,722,1888,744,1880,768,1879,793,1882,819,1886,846,1886,873,1879,901,1861,927,1831,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a7307aaf50ef6f73b6fbc3c3cea9c5a10" title=" " alt="" coords="1926,781,2067,806"/>
+<area shape="poly" title=" " alt="" coords="1823,942,1857,923,1868,911,1875,898,1880,872,1886,844,1893,830,1905,817,1913,810,1917,815,1908,821,1897,833,1891,846,1885,873,1880,900,1873,914,1860,927,1825,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a679949f8aea3ce8daab2da50fd061685" title=" " alt="" coords="1924,1299,2069,1339"/>
+<area shape="poly" title=" " alt="" coords="1746,969,1975,1286,1971,1289,1742,972"/>
+<area shape="poly" title=" " alt="" coords="1779,942,1846,929,1928,924,1970,928,2012,936,2052,951,2088,974,2113,1004,2134,1049,2153,1106,2169,1168,2194,1295,2209,1393,2204,1393,2189,1296,2164,1169,2148,1107,2129,1051,2108,1007,2085,978,2050,956,2011,941,1970,933,1928,930,1847,935,1780,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a98a06c9a9135caf377ba29647e079966" title=" " alt="" coords="1921,830,2073,855"/>
+<area shape="poly" title=" " alt="" coords="1810,942,1857,923,1872,911,1881,899,1890,886,1905,872,1933,858,1936,863,1908,877,1894,889,1885,902,1876,915,1860,928,1812,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a6964c20017d3d58f32d521b4cb28a108" title=" " alt="" coords="1917,731,2077,757"/>
+<area shape="poly" title=" " alt="" coords="1827,942,1857,923,1871,905,1878,886,1880,847,1882,808,1890,787,1905,767,1911,762,1915,766,1909,771,1894,790,1887,809,1886,848,1884,888,1876,908,1860,927,1830,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a0de0ae29e4b1d550cbe91854a6ca765b" title=" " alt="" coords="1927,1414,2067,1439"/>
+<area shape="poly" title=" " alt="" coords="1745,969,1798,1057,1831,1119,1861,1184,1875,1231,1881,1270,1888,1307,1909,1349,1935,1380,1965,1404,1961,1408,1931,1384,1904,1352,1883,1309,1875,1271,1870,1233,1856,1186,1826,1121,1793,1060,1741,972"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a66d8c5718d56ab92cd3597c93319456a" title=" " alt="" coords="1931,1032,2062,1072"/>
+<area shape="poly" title=" " alt="" coords="1771,968,1928,1025,1926,1030,1769,973"/>
+<area shape="poly" title=" " alt="" coords="1829,942,1857,923,1878,893,1886,863,1886,833,1882,802,1877,770,1876,738,1884,706,1905,673,1920,660,1923,664,1909,676,1889,708,1882,739,1882,770,1887,801,1891,832,1891,864,1882,895,1861,927,1832,947"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a8d639bce4d9cf44280b25ff7c6431c17" title=" " alt="" coords="1921,1147,2072,1173"/>
+<area shape="poly" title=" " alt="" coords="1753,968,1970,1137,1967,1141,1749,972"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a149d35b6672ed3051cf97f9ae9b7d4ab" title=" " alt="" coords="1907,1565,2087,1590"/>
+<area shape="poly" title=" " alt="" coords="1746,969,1802,1056,1834,1118,1861,1185,1868,1221,1872,1267,1875,1375,1877,1430,1882,1480,1893,1522,1909,1552,1911,1554,1907,1558,1905,1555,1888,1524,1877,1481,1872,1430,1869,1376,1867,1267,1863,1221,1856,1186,1830,1121,1797,1059,1742,972"/>
+<area shape="poly" title=" " alt="" coords="2058,1296,2085,1278,2109,1252,2130,1222,2164,1159,2188,1099,2202,1052,2207,1053,2193,1101,2169,1162,2134,1225,2113,1255,2088,1282,2061,1301"/>
+<area shape="poly" title=" " alt="" coords="2047,1336,2088,1355,2167,1398,2164,1402,2085,1360,2045,1341"/>
+<area shape="poly" title=" " alt="" coords="2017,1412,2051,1385,2085,1349,2109,1311,2130,1270,2165,1186,2189,1109,2203,1052,2208,1053,2194,1110,2170,1187,2135,1272,2113,1313,2089,1352,2055,1389,2020,1416"/>
+<area shape="poly" title=" " alt="" coords="2067,1424,2133,1424,2133,1429,2067,1429"/>
+<area shape="poly" title=" " alt="" coords="1819,1224,1841,1234,1861,1249,1879,1275,1886,1302,1886,1329,1882,1355,1879,1381,1880,1405,1889,1428,1908,1450,1936,1467,1967,1477,1999,1481,2032,1480,2098,1468,2155,1449,2156,1454,2099,1473,2033,1485,1999,1486,1966,1482,1934,1472,1905,1454,1884,1431,1875,1406,1874,1381,1877,1354,1880,1328,1880,1302,1874,1277,1857,1253,1839,1239,1817,1229"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a29334c66941f61b8e7f7eabc9086b442" title=" " alt="" coords="1917,481,2076,521"/>
+<area shape="poly" title=" " alt="" coords="1828,478,1904,487,1903,493,1827,483"/>
+<area shape="poly" title=" " alt="" coords="931,1020,940,945,962,824,981,754,1005,683,1036,614,1074,549,1099,516,1128,485,1192,431,1263,385,1339,348,1415,318,1490,295,1622,265,1623,271,1492,300,1417,323,1341,353,1266,390,1195,435,1131,489,1103,519,1078,552,1041,616,1010,685,986,756,968,825,945,945,936,1021"/>
+<area shape="poly" title=" " alt="" coords="1028,1029,1907,1017,2087,1017,2121,1019,2121,1024,2087,1023,1907,1023,1028,1034"/>
+<area shape="poly" title=" " alt="" coords="930,1020,933,947,940,893,951,833,969,770,995,708,1029,651,1074,602,1103,581,1134,565,1202,543,1271,533,1335,531,1335,537,1271,538,1203,548,1136,570,1106,586,1078,606,1033,654,999,710,974,772,957,834,945,894,939,947,935,1021"/>
+<area shape="poly" title=" " alt="" coords="939,1045,979,1196,1031,1422,1038,1471,1042,1514,1043,1586,1050,1657,1061,1696,1078,1742,1143,1887,1175,1949,1210,2002,1252,2045,1302,2078,1331,2090,1364,2098,1441,2105,1735,2105,1791,2108,1840,2113,1927,2121,1966,2119,2005,2110,2044,2090,2085,2057,2100,2038,2115,2013,2139,1946,2160,1864,2176,1772,2197,1592,2206,1460,2212,1461,2202,1593,2181,1773,2165,1865,2145,1948,2119,2015,2105,2041,2089,2061,2047,2094,2006,2115,1967,2125,1927,2127,1840,2118,1790,2113,1735,2111,1441,2111,1363,2104,1330,2095,1300,2083,1248,2050,1206,2005,1171,1951,1138,1889,1074,1744,1055,1698,1045,1658,1037,1587,1036,1514,1033,1472,1025,1423,974,1197,934,1047"/>
+<area shape="poly" title=" " alt="" coords="937,1046,944,1096,959,1176,983,1276,1020,1388,1071,1502,1102,1557,1137,1608,1177,1656,1222,1699,1271,1735,1326,1764,1392,1791,1422,1801,1450,1806,1477,1806,1503,1800,1530,1786,1558,1765,1571,1748,1581,1725,1590,1665,1590,1593,1585,1513,1580,1432,1578,1357,1586,1294,1594,1269,1606,1249,1619,1237,1635,1228,1637,1232,1622,1241,1610,1252,1599,1271,1591,1295,1584,1358,1585,1432,1591,1512,1596,1592,1596,1666,1586,1727,1576,1750,1562,1769,1533,1791,1505,1805,1477,1811,1449,1811,1421,1806,1391,1796,1324,1769,1269,1740,1218,1703,1173,1660,1133,1612,1097,1559,1066,1504,1015,1390,978,1278,953,1177,938,1097,931,1047"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a31bbe41fca61fffc6500811dea6b55a1" title=" " alt="" coords="1077,1465,1276,1490"/>
+<area shape="poly" title=" " alt="" coords="942,1045,1164,1451,1159,1454,937,1047"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ad25d85db0a85698a7699f59240113f7b" title=" " alt="" coords="1076,1046,1277,1071"/>
+<area shape="poly" title=" " alt="" coords="1029,1041,1063,1044,1062,1050,1028,1046"/>
+<area shape="poly" title=" " alt="" coords="1179,1464,1223,1312,1251,1200,1275,1084,1280,1028,1281,958,1279,794,1281,711,1288,634,1301,568,1311,541,1323,518,1349,490,1378,473,1407,465,1438,460,1468,457,1499,450,1529,436,1558,412,1570,396,1576,380,1580,348,1585,317,1593,300,1606,285,1622,273,1625,277,1610,289,1597,303,1590,318,1585,349,1581,381,1574,398,1562,415,1532,440,1500,455,1469,462,1438,466,1409,470,1380,478,1353,494,1327,522,1315,543,1306,569,1293,634,1286,711,1285,794,1286,958,1285,1029,1280,1084,1256,1201,1228,1314,1185,1465"/>
+<area shape="poly" title=" " alt="" coords="1251,1462,1325,1451,1378,1447,1446,1446,1602,1445,1680,1441,1753,1432,1813,1417,1838,1407,1857,1394,1873,1377,1880,1358,1882,1319,1883,1278,1890,1257,1905,1237,1927,1219,1949,1210,1993,1205,2037,1203,2061,1196,2085,1183,2121,1153,2152,1117,2196,1050,2200,1053,2157,1120,2125,1156,2088,1188,2063,1201,2038,1208,1993,1210,1951,1215,1930,1224,1909,1241,1894,1260,1888,1279,1887,1319,1885,1360,1877,1379,1860,1398,1840,1411,1815,1422,1754,1437,1681,1446,1602,1450,1446,1451,1379,1452,1326,1456,1251,1467"/>
+<area shape="poly" title=" " alt="" coords="1179,1464,1221,1312,1275,1083,1288,996,1293,927,1301,858,1323,773,1346,713,1373,655,1423,567,1428,570,1378,658,1351,715,1328,774,1306,859,1298,927,1293,997,1280,1085,1226,1313,1184,1465"/>
+<area shape="poly" title=" " alt="" coords="1182,1490,1198,1587,1229,1736,1250,1813,1273,1883,1299,1940,1313,1961,1327,1977,1345,1986,1375,1996,1463,2015,1578,2031,1706,2043,1834,2050,1949,2051,2037,2045,2067,2038,2085,2030,2101,2013,2115,1990,2140,1927,2161,1849,2177,1762,2197,1589,2206,1460,2212,1461,2203,1589,2182,1763,2166,1850,2145,1929,2120,1992,2105,2016,2088,2034,2069,2043,2038,2050,1949,2057,1834,2056,1705,2049,1577,2036,1462,2020,1373,2001,1343,1991,1324,1981,1309,1965,1294,1943,1268,1885,1245,1814,1224,1737,1193,1588,1177,1491"/>
+<area shape="poly" title=" " alt="" coords="1191,1462,1247,1420,1284,1398,1324,1379,1362,1371,1426,1363,1596,1345,1764,1324,1824,1311,1857,1298,1873,1280,1882,1262,1887,1223,1888,1182,1893,1159,1904,1135,1928,1104,1955,1079,1958,1083,1932,1108,1909,1137,1898,1160,1893,1182,1892,1224,1887,1263,1878,1283,1860,1302,1826,1316,1765,1329,1596,1350,1426,1368,1363,1376,1326,1384,1287,1402,1250,1425,1194,1467"/>
+<area shape="poly" title=" " alt="" coords="1198,1462,1254,1433,1325,1405,1377,1396,1444,1392,1600,1390,1680,1386,1752,1379,1813,1365,1838,1355,1857,1342,1872,1325,1880,1308,1882,1270,1884,1230,1890,1210,1905,1190,1922,1177,1925,1181,1909,1194,1895,1213,1889,1231,1887,1270,1885,1309,1877,1328,1860,1346,1840,1359,1815,1370,1753,1384,1680,1392,1601,1395,1444,1397,1378,1402,1326,1411,1256,1438,1201,1467"/>
+<area shape="poly" title=" " alt="" coords="1184,1490,1198,1535,1226,1599,1245,1632,1268,1664,1295,1691,1327,1714,1391,1745,1420,1754,1448,1759,1475,1757,1503,1750,1530,1736,1558,1714,1570,1699,1579,1679,1588,1625,1589,1559,1585,1487,1581,1414,1580,1347,1587,1290,1595,1267,1606,1249,1634,1228,1637,1233,1610,1252,1600,1269,1592,1291,1586,1347,1586,1414,1590,1487,1594,1559,1593,1625,1584,1680,1575,1702,1562,1718,1533,1740,1504,1755,1476,1763,1448,1764,1419,1759,1389,1750,1324,1718,1292,1695,1264,1667,1240,1635,1221,1601,1193,1537,1179,1491"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#aa5902353d91d6010191a3c59479be960" title=" " alt="" coords="1919,1930,2075,1955"/>
+<area shape="poly" title=" " alt="" coords="1183,1489,1197,1541,1223,1616,1243,1656,1266,1696,1294,1733,1327,1765,1371,1791,1432,1816,1506,1840,1589,1862,1760,1899,1906,1926,1905,1931,1759,1904,1588,1867,1505,1845,1430,1821,1368,1796,1324,1769,1290,1736,1262,1699,1238,1659,1218,1618,1191,1542,1178,1491"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#ab00923f6d0c9a4dbfcacd9ef9a259582" title=" " alt="" coords="1931,1980,2062,2020"/>
+<area shape="poly" title=" " alt="" coords="1181,1490,1189,1556,1212,1655,1230,1710,1255,1764,1287,1814,1327,1857,1360,1883,1395,1905,1471,1942,1552,1969,1634,1988,1715,1999,1791,2004,1918,2004,1918,2009,1791,2009,1715,2004,1634,1993,1551,1975,1469,1947,1393,1910,1357,1887,1324,1861,1283,1817,1250,1766,1225,1712,1206,1657,1184,1557,1176,1491"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#ab345b430e273538f5b7d0ac8cfae6b4f" title=" " alt="" coords="1377,1613,1508,1653"/>
+<area shape="poly" title=" " alt="" coords="1192,1488,1246,1542,1285,1573,1327,1599,1365,1614,1363,1619,1324,1604,1282,1577,1243,1546,1188,1492"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#ade5afcfaab1ada50561458618f6e2707" title=" " alt="" coords="1367,1678,1519,1703"/>
+<area shape="poly" title=" " alt="" coords="1186,1489,1205,1525,1236,1572,1277,1622,1301,1644,1327,1663,1355,1676,1353,1681,1324,1668,1297,1648,1273,1625,1232,1575,1201,1527,1182,1492"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ac1defa406c614e66d634d4e2ca41b964" title=" " alt="" coords="1369,785,1516,825"/>
+<area shape="poly" title=" " alt="" coords="1180,1464,1323,1091,1425,837,1430,839,1328,1093,1185,1466"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a10a215bf3d90dbd6552bccd2ad020a20" title=" " alt="" coords="1369,1465,1516,1490"/>
+<area shape="poly" title=" " alt="" coords="1276,1475,1356,1475,1356,1480,1276,1480"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#a76c7d1a0400bdd9ed0bdce361416d053" title=" " alt="" coords="1355,1514,1531,1539"/>
+<area shape="poly" title=" " alt="" coords="1246,1487,1361,1509,1360,1514,1245,1493"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a581d43eaa88bae39ce71595e89b4ebac" title=" " alt="" coords="1346,1563,1539,1589"/>
+<area shape="poly" title=" " alt="" coords="1200,1488,1256,1519,1326,1549,1353,1557,1351,1563,1324,1555,1253,1523,1197,1492"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ac5a46cefe1236c95cc35a2c5283b6b45" title=" " alt="" coords="1325,1103,1560,1129"/>
+<area shape="poly" title=" " alt="" coords="1181,1464,1231,1354,1273,1280,1323,1209,1366,1167,1409,1134,1412,1139,1369,1171,1327,1212,1277,1283,1235,1356,1185,1466"/>
+<area shape="poly" title=" " alt="" coords="1454,783,1505,692,1533,632,1557,569,1567,526,1569,487,1564,418,1563,385,1567,353,1581,320,1606,285,1622,272,1625,276,1610,288,1585,322,1572,354,1568,386,1569,418,1575,487,1572,527,1563,570,1538,634,1510,695,1459,786"/>
+<area shape="poly" title=" " alt="" coords="1516,808,1607,811,1707,810,1798,800,1833,791,1857,778,1873,760,1880,741,1879,699,1878,677,1880,656,1888,635,1905,617,1952,589,1974,582,1997,580,2019,583,2042,589,2088,617,2112,644,2133,685,2152,737,2168,795,2194,912,2209,1000,2204,1001,2189,913,2163,797,2147,739,2128,688,2107,647,2085,621,2039,594,2018,588,1997,586,1975,588,1954,594,1908,621,1892,638,1885,657,1883,677,1885,699,1885,742,1877,763,1860,782,1835,796,1799,805,1708,815,1607,817,1516,813"/>
+<area shape="poly" title=" " alt="" coords="1463,783,1525,731,1564,703,1607,679,1639,666,1641,671,1609,684,1567,708,1528,735,1467,787"/>
+<area shape="poly" title=" " alt="" coords="1480,783,1539,755,1607,728,1642,718,1643,724,1609,733,1541,760,1483,788"/>
+<area shape="poly" title=" " alt="" coords="1483,823,1697,936,1695,941,1481,828"/>
+<area shape="poly" title=" " alt="" coords="1458,824,1481,860,1515,904,1558,947,1583,965,1609,980,1653,992,1712,996,1852,991,1924,988,1991,990,2047,999,2070,1007,2088,1018,2110,1045,2131,1085,2149,1135,2165,1190,2192,1303,2208,1392,2203,1393,2186,1304,2160,1192,2144,1136,2126,1087,2106,1048,2085,1022,2067,1011,2045,1004,1990,995,1924,994,1852,996,1712,1001,1652,998,1607,985,1580,970,1555,951,1511,907,1477,863,1453,827"/>
+<area shape="poly" title=" " alt="" coords="1494,823,1571,847,1617,857,1666,863,1717,864,1766,859,1814,845,1857,822,1872,807,1880,792,1884,757,1885,720,1892,700,1905,681,1935,659,1938,663,1909,685,1896,702,1891,721,1889,757,1885,793,1877,810,1860,826,1816,850,1767,864,1717,870,1666,868,1616,862,1570,852,1492,828"/>
+<area shape="poly" title=" " alt="" coords="1457,824,1518,934,1562,1005,1610,1076,1658,1135,1704,1185,1700,1189,1654,1139,1606,1079,1558,1008,1514,937,1452,827"/>
+<area shape="poly" title=" " alt="" coords="1453,784,1477,747,1512,701,1555,654,1607,614,1637,599,1639,604,1609,618,1559,658,1516,704,1481,750,1458,787"/>
+<area shape="rect" href="../../d8/d5c/classTP_1_1TwoPunctures.html#ad69c987f9a36c46162adf563a7401078" title=" " alt="" coords="1620,742,1847,767"/>
+<area shape="poly" title=" " alt="" coords="1516,790,1646,767,1647,772,1517,795"/>
+<area shape="poly" title=" " alt="" coords="1841,740,1857,729,1872,711,1881,693,1885,656,1887,616,1893,595,1904,572,1925,548,1949,528,1952,532,1929,551,1909,575,1898,596,1892,617,1890,657,1886,695,1877,714,1860,733,1844,744"/>
+<area shape="poly" title=" " alt="" coords="1449,1102,1501,995,1532,918,1557,837,1565,783,1566,714,1563,553,1563,471,1569,395,1582,332,1592,306,1606,285,1622,271,1625,275,1610,288,1597,308,1587,333,1574,396,1569,471,1568,553,1571,714,1570,783,1563,838,1537,920,1506,997,1453,1104"/>
+<area shape="poly" title=" " alt="" coords="1560,1121,1672,1123,1805,1120,1947,1107,2017,1096,2086,1081,2134,1065,2177,1044,2179,1048,2136,1069,2087,1087,2018,1101,1947,1112,1805,1125,1672,1128,1560,1126"/>
+<area shape="poly" title=" " alt="" coords="1558,1126,1743,1152,1819,1167,1845,1175,1860,1183,1877,1204,1885,1225,1886,1267,1887,1309,1893,1329,1908,1349,1938,1362,1995,1378,2134,1409,2133,1414,1994,1383,1936,1367,1905,1353,1889,1332,1881,1310,1881,1267,1880,1226,1873,1206,1857,1187,1843,1180,1818,1173,1742,1157,1557,1131"/>
+<area shape="poly" title=" " alt="" coords="1449,1102,1472,1067,1507,1021,1553,972,1607,931,1643,915,1677,908,1740,908,1769,909,1798,905,1827,893,1857,870,1874,848,1882,825,1884,803,1882,779,1882,731,1889,706,1905,681,1933,659,1936,663,1909,684,1894,708,1887,732,1888,779,1889,803,1887,827,1878,850,1861,874,1830,898,1800,910,1770,914,1740,914,1677,913,1645,920,1609,936,1556,976,1511,1024,1476,1070,1454,1104"/>
+<area shape="poly" title=" " alt="" coords="1488,1126,1561,1152,1609,1176,1649,1191,1647,1196,1607,1181,1559,1157,1486,1131"/>
+<area shape="poly" title=" " alt="" coords="1758,1555,1808,1507,1834,1477,1856,1444,1867,1421,1872,1401,1874,1361,1880,1324,1889,1305,1905,1285,1927,1267,1950,1257,1994,1252,2038,1249,2061,1242,2085,1227,2126,1186,2159,1138,2183,1091,2199,1052,2204,1054,2188,1093,2163,1141,2130,1189,2088,1231,2063,1247,2039,1254,1994,1258,1951,1262,1930,1271,1909,1289,1894,1307,1885,1325,1880,1362,1877,1401,1872,1423,1861,1447,1838,1480,1812,1511,1762,1559"/>
+<area shape="poly" title=" " alt="" coords="1752,1555,1905,1401,1962,1346,1965,1350,1909,1405,1756,1559"/>
+<area shape="poly" title=" " alt="" coords="1767,1595,1829,1629,1868,1646,1911,1660,1956,1670,2001,1673,2044,1667,2085,1650,2110,1632,2131,1610,2164,1559,2187,1505,2201,1459,2206,1461,2192,1507,2169,1561,2135,1613,2113,1636,2088,1654,2046,1672,2001,1678,1955,1675,1910,1665,1866,1651,1826,1634,1764,1600"/>
+<area shape="poly" title=" " alt="" coords="1768,1555,1960,1444,1963,1449,1771,1560"/>
+<area shape="poly" title=" " alt="" coords="1837,1575,1893,1575,1893,1580,1837,1580"/>
+<area shape="poly" title=" " alt="" coords="1762,1596,1813,1644,1839,1675,1861,1709,1873,1740,1878,1769,1877,1821,1877,1845,1880,1868,1890,1892,1909,1917,1912,1920,1909,1924,1905,1920,1885,1895,1875,1870,1872,1845,1872,1820,1873,1769,1868,1742,1856,1712,1835,1678,1809,1647,1758,1600"/>
+<area shape="poly" title=" " alt="" coords="1762,1595,1813,1643,1840,1675,1861,1709,1875,1747,1880,1782,1877,1845,1875,1875,1877,1904,1888,1935,1909,1966,1921,1977,1918,1981,1905,1970,1883,1937,1872,1906,1870,1875,1871,1845,1875,1782,1870,1749,1856,1712,1835,1678,1810,1647,1759,1599"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a11d943b3984d18cc39857f05f0a06fcb" title=" " alt="" coords="1921,1515,2073,1541"/>
+<area shape="poly" title=" " alt="" coords="1836,1555,1914,1541,1915,1546,1837,1561"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a9951cf7f9117a3eeb5d4c612bd345733" title=" " alt="" coords="1923,1614,2070,1639"/>
+<area shape="poly" title=" " alt="" coords="1837,1594,1915,1609,1914,1614,1836,1599"/>
+<area shape="poly" title=" " alt="" coords="1464,1261,1708,1545,1704,1549,1460,1265"/>
+<area shape="rect" href="../../da/dc1/namespaceTP.html#ab6045859713abd91587283c90b4e9770" title=" " alt="" coords="1698,1262,1769,1287"/>
+<area shape="poly" title=" " alt="" coords="1541,1251,1685,1267,1684,1272,1540,1256"/>
+<area shape="poly" title=" " alt="" coords="1184,614,1203,572,1233,517,1273,460,1297,434,1324,411,1356,392,1385,380,1441,372,1496,366,1526,356,1558,339,1573,326,1582,312,1591,298,1606,284,1622,276,1624,281,1610,289,1595,302,1586,315,1577,330,1562,344,1528,361,1498,371,1441,378,1387,385,1358,396,1327,415,1301,438,1277,464,1237,520,1207,574,1188,616"/>
+<area shape="poly" title=" " alt="" coords="1259,635,1638,643,1638,649,1258,640"/>
+<area shape="poly" title=" " alt="" coords="1259,643,1627,689,1626,695,1258,649"/>
+<area shape="poly" title=" " alt="" coords="1190,655,1210,694,1240,742,1279,793,1327,835,1394,874,1468,904,1541,925,1610,940,1609,945,1540,930,1466,909,1392,879,1324,839,1275,796,1236,746,1205,697,1185,658"/>
+<area shape="poly" title=" " alt="" coords="1181,615,1199,565,1228,496,1269,423,1295,388,1323,357,1391,299,1452,263,1520,240,1607,219,1680,198,1742,182,1771,180,1800,185,1829,197,1860,219,1891,254,1906,290,1908,326,1904,364,1897,403,1893,443,1895,486,1909,532,1939,580,1973,618,1969,622,1935,583,1904,534,1890,487,1888,443,1892,402,1899,363,1903,326,1900,291,1887,257,1857,223,1827,202,1798,190,1771,186,1743,187,1682,203,1609,224,1521,245,1454,268,1394,303,1327,361,1299,392,1274,426,1233,499,1204,567,1186,617"/>
+<area shape="poly" title=" " alt="" coords="1185,655,1250,919,1292,1063,1312,1113,1327,1139,1348,1153,1378,1165,1457,1185,1548,1199,1635,1208,1634,1213,1547,1204,1456,1190,1377,1170,1346,1158,1323,1143,1307,1115,1287,1064,1245,920,1180,657"/>
+<area shape="poly" title=" " alt="" coords="1258,626,1637,590,1638,596,1259,631"/>
+<area shape="poly" title=" " alt="" coords="1199,614,1255,568,1324,518,1389,481,1444,458,1496,433,1558,393,1572,379,1581,366,1591,353,1607,340,1633,328,1661,319,1662,324,1635,333,1609,345,1595,357,1585,369,1576,382,1562,397,1499,438,1446,463,1392,486,1327,522,1258,572,1203,618"/>
+<area shape="poly" title=" " alt="" coords="1186,655,1263,956,1305,1117,1328,1191,1357,1214,1354,1218,1323,1193,1300,1118,1257,958,1180,657"/>
+<area shape="poly" title=" " alt="" coords="1835,1736,1899,1731,1966,1717,1999,1706,2030,1691,2059,1673,2085,1650,2109,1620,2122,1591,2129,1563,2130,1535,2126,1471,2127,1435,2132,1394,2203,1052,2208,1053,2137,1395,2132,1435,2132,1471,2135,1535,2134,1564,2127,1593,2113,1623,2089,1654,2062,1677,2033,1696,2001,1711,1967,1722,1900,1736,1836,1741"/>
+<area shape="poly" title=" " alt="" coords="1751,1720,1804,1674,1832,1643,1856,1608,1869,1579,1876,1553,1880,1506,1883,1457,1891,1431,1904,1401,1927,1371,1954,1345,1958,1349,1931,1374,1909,1404,1896,1433,1888,1458,1885,1506,1881,1554,1874,1581,1861,1611,1837,1646,1808,1678,1754,1724"/>
+<area shape="poly" title=" " alt="" coords="1768,1745,1832,1764,1915,1779,1960,1780,2004,1776,2046,1765,2085,1744,2117,1716,2144,1682,2164,1644,2180,1603,2199,1524,2207,1460,2212,1460,2204,1525,2185,1605,2169,1646,2148,1685,2121,1720,2088,1749,2048,1770,2005,1781,1960,1786,1915,1784,1831,1770,1767,1750"/>
+<area shape="poly" title=" " alt="" coords="1749,1720,1800,1673,1830,1642,1856,1608,1872,1580,1880,1555,1888,1531,1905,1502,1933,1471,1964,1446,1967,1450,1937,1475,1909,1506,1893,1533,1885,1557,1877,1582,1861,1611,1834,1645,1804,1677,1752,1724"/>
+<area shape="poly" title=" " alt="" coords="1746,1720,1811,1663,1856,1629,1905,1600,1925,1592,1927,1597,1908,1605,1859,1634,1814,1667,1749,1724"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#a87586ba1ad132b859230c724df478fbb" title=" " alt="" coords="1915,1881,2078,1906"/>
+<area shape="poly" title=" " alt="" coords="1810,1745,1836,1756,1860,1771,1879,1796,1885,1820,1891,1844,1909,1866,1917,1872,1914,1876,1905,1870,1886,1846,1880,1822,1874,1798,1857,1775,1834,1760,1808,1750"/>
+<area shape="rect" href="../../d3/d20/namespaceTP_1_1Utilities.html#aa8ae2995487c9189739e61bcaccd2347" title=" " alt="" coords="1931,1816,2062,1856"/>
+<area shape="poly" title=" " alt="" coords="1783,1745,1860,1771,1908,1795,1937,1808,1935,1813,1906,1800,1858,1776,1781,1750"/>
+<area shape="poly" title=" " alt="" coords="1005,77,1125,61,1126,67,1006,82"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5f8a62ea13af9aad2dd1698c05bec76" name="ab5f8a62ea13af9aad2dd1698c05bec76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f8a62ea13af9aad2dd1698c05bec76">&#9670;&#160;</a></span>areAllFaceConnectedCellsOverlappingWithBHImpactArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::areAllFaceConnectedCellsOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e3a3c3cfbc6094628a2dee5eb765a51" name="a8e3a3c3cfbc6094628a2dee5eb765a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3a3c3cfbc6094628a2dee5eb765a51">&#9670;&#160;</a></span>areBothAdjacentCellsOverlappingWithBHImpactArea() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::areBothAdjacentCellsOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a></td>          <td class="paramname"><span class="paramname"><em>faceNumber</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the faceNumberth adjacent face is adjacent to inside cells. </p>
+<p>So first of all, we check if the current cell is overlapping with the BH area. If this is not the case, we can return false immediately. Otherwise, we can move one cell left, right, up, down, front or left and check for this cell as well. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4dce9a90b00ad8e66a376e553c001eb6" name="a4dce9a90b00ad8e66a376e553c001eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dce9a90b00ad8e66a376e553c001eb6">&#9670;&#160;</a></span>areBothAdjacentCellsOverlappingWithBHImpactArea() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::areBothAdjacentCellsOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check two adjacent octants. </p>
+<p>Each face has to adjacent octants. We check if <a class="el" href="#aa395e8acf933a2ccd2f3e1e14412904c" title="Is octant area overlapping with BH impact area.">isCellOverlappingWithBHImpactArea()</a> holds for both of them. Delete logic to <a class="el" href="#aa395e8acf933a2ccd2f3e1e14412904c" title="Is octant area overlapping with BH impact area.">isCellOverlappingWithBHImpactArea()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae576d1ac24ce617f056554b090bf43d0" name="ae576d1ac24ce617f056554b090bf43d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae576d1ac24ce617f056554b090bf43d0">&#9670;&#160;</a></span>finishTimeStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::finishTimeStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call superclass and after that report/maintain _numberOfPatches. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00162">162</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>.</p>
+
+</div>
+</div>
+<a id="a44f8e1d5e6aa7962f79b2ca7a426a424" name="a44f8e1d5e6aa7962f79b2ca7a426a424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f8e1d5e6aa7962f79b2ca7a426a424">&#9670;&#160;</a></span>incNumberOfPatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::incNumberOfPatches </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9482dd8967f5367628073d633550bb0" name="ac9482dd8967f5367628073d633550bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9482dd8967f5367628073d633550bb0">&#9670;&#160;</a></span>initialCondition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::initialCondition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>Q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>gridIsConstructed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00372">logTraceInWith3Arguments</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00379">logTraceOut</a>, and <a class="el" href="../../d1/da4/CCZ4SBH__FD4_8cpp_source.html#l00010">benchmarks::exahype2::ccz4::twoPunctures</a>.</p>
+
+</div>
+</div>
+<a id="aa395e8acf933a2ccd2f3e1e14412904c" name="aa395e8acf933a2ccd2f3e1e14412904c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa395e8acf933a2ccd2f3e1e14412904c">&#9670;&#160;</a></span>isCellOverlappingWithBHImpactArea() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::isCellOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html">peano4::datamanagement::CellMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is octant area overlapping with BH impact area. </p>
+<p><a class="el" href="../../db/d37/structAny.html">Any</a> unrefined octant overlapping with the impact area should hold a FV solution. Delete logic to <a class="el" href="#aa395e8acf933a2ccd2f3e1e14412904c" title="Is octant area overlapping with BH impact area.">isCellOverlappingWithBHImpactArea()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a03912e0909ba4e8539886f4b2a90c8b9" name="a03912e0909ba4e8539886f4b2a90c8b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03912e0909ba4e8539886f4b2a90c8b9">&#9670;&#160;</a></span>isCellOverlappingWithBHImpactArea() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::isCellOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellH</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d88/VectorOperations_8cpph_source.html#l00099">tarch::la::norm2()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_a03912e0909ba4e8539886f4b2a90c8b9_cgraph.png" border="0" usemap="#ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_a03912e0909ba4e8539886f4b2a90c8b9_cgraph" alt=""/></div>
+<map name="ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_a03912e0909ba4e8539886f4b2a90c8b9_cgraph" id="ad0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV_a03912e0909ba4e8539886f4b2a90c8b9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,280,60"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a3e47d3ba3c5b4f04858225287fe8c971" title="Computes the 2&#45;norm of the vector, i.e." alt="" coords="328,20,453,45"/>
+<area shape="poly" title=" " alt="" coords="280,30,314,30,314,35,280,35"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#aea568e31035b5864dfd25a1ec69a20a8" title=" " alt="" coords="501,20,680,45"/>
+<area shape="poly" title=" " alt="" coords="453,30,488,30,488,35,453,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac8a0a27eed9fba6c83b7489df7915a21" name="ac8a0a27eed9fba6c83b7489df7915a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a0a27eed9fba6c83b7489df7915a21">&#9670;&#160;</a></span>isOneAdjacentCellOverlappingWithBHImpactArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::isOneAdjacentCellOverlappingWithBHImpactArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html">peano4::datamanagement::FaceMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e377298d6588adf14541cd09ac58878" name="a9e377298d6588adf14541cd09ac58878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e377298d6588adf14541cd09ac58878">&#9670;&#160;</a></span>reduceAdmissibleTimeStepSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::reduceAdmissibleTimeStepSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>timeStepSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overwrite limiters time step size. </p>
+<p>The FV solver calculates its admissible time step size in <a class="el" href="#ae576d1ac24ce617f056554b090bf43d0" title="Call superclass and after that report/maintain _numberOfPatches.">finishTimeStep()</a>. So you can always overwrite it in <a class="el" href="#a34b7c18ea4320b98eaef12d09ea3e699" title="Call superclass and after that report/maintain _numberOfPatches.">startTimeStep()</a>. Due to stability reasons, you should always reduce the admissible time step size but never ever increase it. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../d8/d7e/exahype2_2solvers_2fv_2godunov_2kernels_2kokkos_2Loop_8template_8h_source.html#l00017">timeStepSize</a>.</p>
+
+</div>
+</div>
+<a id="a34b7c18ea4320b98eaef12d09ea3e699" name="a34b7c18ea4320b98eaef12d09ea3e699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b7c18ea4320b98eaef12d09ea3e699">&#9670;&#160;</a></span>startTimeStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::startTimeStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>globalMinTimeStamp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>globalMaxTimeStamp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>globalMinTimeStepSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>globalMaxTimeStepSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call superclass and after that report/maintain _numberOfPatches. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aec62e5a5aad2aea8f5aa5eebc834e365" name="aec62e5a5aad2aea8f5aa5eebc834e365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec62e5a5aad2aea8f5aa5eebc834e365">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html#l00028">28</a> of file <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a>.</p>
+
+</div>
+</div>
+<a id="a6e6c001542bd5e509b2946243ff4275a" name="a6e6c001542bd5e509b2946243ff4275a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6c001542bd5e509b2946243ff4275a">&#9670;&#160;</a></span>_numberOfPatches</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d22/namespacebenchmarks.html#ac65625ec69a385630013c8334a40fe93">int</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::_numberOfPatches</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html#l00031">31</a> of file <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a>.</p>
+
+</div>
+</div>
+<a id="abbf47ea533a52da8f1d63aa43b48a0da" name="abbf47ea533a52da8f1d63aa43b48a0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf47ea533a52da8f1d63aa43b48a0da">&#9670;&#160;</a></span>_semaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a> benchmarks::exahype2::ccz4::CCZ4SBH_FV::_semaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html#l00029">29</a> of file <a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>benchmarks/exahype2/ccz4/single-black-hole/<a class="el" href="../../d5/dac/CCZ4SBH__FV_8h_source.html">CCZ4SBH_FV.h</a></li>
+<li>benchmarks/exahype2/ccz4/single-black-hole/<a class="el" href="../../d2/d21/CCZ4SBH__FV_8cpp_source.html">CCZ4SBH_FV.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d22/namespacebenchmarks.html">benchmarks</a></li><li class="navelem"><a class="el" href="../../d5/d86/namespacebenchmarks_1_1exahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../d2/d5a/namespacebenchmarks_1_1exahype2_1_1ccz4.html">ccz4</a></li><li class="navelem"><a class="el" href="../../d0/d46/classbenchmarks_1_1exahype2_1_1ccz4_1_1CCZ4SBH__FV.html">CCZ4SBH_FV</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:20 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

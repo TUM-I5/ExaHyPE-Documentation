@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['kernel_3c_3c_3c_20dimgrid_2c_20dimblock_2c_200_2c_20tarch_3a_3aaccelerator_3a_3adevicestreamget_28_29_3e_0',['kernel&lt;&lt;&lt; dimGrid, dimBlock, 0, tarch::accelerator::deviceStreamGet()&gt;',['../df/d1e/exahype2_2solvers_2fv_2godunov_2kernels_2cuda_2Loop_8template_8h.html#aca642942103905528310e3b2975d313a',1,'Loop.template.h']]],
+  ['kernel_5fdeval_1',['kernel_deval',['../d4/d73/namespaceswift2_1_1kernels_1_1legacy_1_1kernelHydro.html#a143f061fc8b41ba681b936ec4f0e26a1',1,'swift2::kernels::legacy::kernelHydro::kernel_deval()'],['../d0/de2/hydro__iact_8h.html#a4fe1053c6b9e19777ed6ec255b44eb45',1,'kernel_deval(ui, &amp;wi, &amp;wi_dx):&#160;hydro_iact.h'],['../d0/de2/hydro__iact_8h.html#a165e6924616289410922bd6be83e2c01',1,'kernel_deval(uj, &amp;wj, &amp;wj_dx):&#160;hydro_iact.h']]],
+  ['kernel_5feval_2',['kernel_eval',['../d4/d73/namespaceswift2_1_1kernels_1_1legacy_1_1kernelHydro.html#abf6a61be3d0cd03569e7a963b09720c9',1,'swift2::kernels::legacy::kernelHydro']]],
+  ['kroneckerproduct_3',['kroneckerProduct',['../d6/d43/DynamicMatrix_8cpp.html#aacc5d0391b6bbffdbb84127fad6433b5',1,'kroneckerProduct(const tarch::la::DynamicMatrix &amp;lhs, const tarch::la::DynamicMatrix &amp;rhs):&#160;DynamicMatrix.cpp'],['../d0/d73/DynamicMatrix_8h.html#aacc5d0391b6bbffdbb84127fad6433b5',1,'kroneckerProduct(const tarch::la::DynamicMatrix &amp;lhs, const tarch::la::DynamicMatrix &amp;rhs):&#160;DynamicMatrix.cpp']]]
+];

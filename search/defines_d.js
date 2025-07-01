@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['otter_5fdeclare_5fhandle_0',['OTTER_DECLARE_HANDLE',['../d9/d7e/otter_8h.html#a7da424030a5de14313668244ca0783d1',1,'otter.h']]],
+  ['otter_5fdefine_5ftask_1',['OTTER_DEFINE_TASK',['../d9/d7e/otter_8h.html#acf1472052e2baa2480b1b1c3ecce2044',1,'otter.h']]],
+  ['otter_5ffinalise_2',['OTTER_FINALISE',['../d9/d7e/otter_8h.html#a09ac7fc3faef154e7c4e468dc8e771f0',1,'otter.h']]],
+  ['otter_5finit_5ftask_3',['OTTER_INIT_TASK',['../d9/d7e/otter_8h.html#af76b508b252d5bd8c3896c5f211a7489',1,'otter.h']]],
+  ['otter_5finitialise_4',['OTTER_INITIALISE',['../d9/d7e/otter_8h.html#a835d72dacecdac3e9fd297bf06599528',1,'otter.h']]],
+  ['otter_5fphase_5fbegin_5',['OTTER_PHASE_BEGIN',['../d9/d7e/otter_8h.html#a90b94bee0b8a7f06b0ae01bfe5d25a72',1,'otter.h']]],
+  ['otter_5fphase_5fend_6',['OTTER_PHASE_END',['../d9/d7e/otter_8h.html#a473bd83ba4a884b28d80ba68510df9da',1,'otter.h']]],
+  ['otter_5fphase_5fswitch_7',['OTTER_PHASE_SWITCH',['../d9/d7e/otter_8h.html#a96d8624fd3b232c2a5bd5570cb400468',1,'otter.h']]],
+  ['otter_5fpool_5fadd_8',['OTTER_POOL_ADD',['../d9/d7e/otter_8h.html#a1143adc0567ac7a23010f1a1faaee499',1,'otter.h']]],
+  ['otter_5fpool_5fborrow_9',['OTTER_POOL_BORROW',['../d9/d7e/otter_8h.html#ac3a7208fda0a3097f8a6b81578a490a4',1,'otter.h']]],
+  ['otter_5fpool_5fdecl_5fborrow_10',['OTTER_POOL_DECL_BORROW',['../d9/d7e/otter_8h.html#ab02ea8fa50609e7a90c645307e1b4851',1,'otter.h']]],
+  ['otter_5fpool_5fdecl_5fpop_11',['OTTER_POOL_DECL_POP',['../d9/d7e/otter_8h.html#a5faa01efac476be1b229cebfe102e5c0',1,'otter.h']]],
+  ['otter_5fpool_5fpop_12',['OTTER_POOL_POP',['../d9/d7e/otter_8h.html#a5516db8d962b61c32a46129d2ae3d819',1,'otter.h']]],
+  ['otter_5fpool_5fsize_13',['OTTER_POOL_SIZE',['../d9/d7e/otter_8h.html#aba92973732eb37603ef23a5cd84d1e62',1,'otter.h']]],
+  ['otter_5ftask_5fend_14',['OTTER_TASK_END',['../d9/d7e/otter_8h.html#a6a5b885b868a97b098e6c40beb35a183',1,'otter.h']]],
+  ['otter_5ftask_5fstart_15',['OTTER_TASK_START',['../d9/d7e/otter_8h.html#ab10a800c11a205dc819b3864f631ac1b',1,'otter.h']]],
+  ['otter_5ftask_5fwait_5fend_16',['OTTER_TASK_WAIT_END',['../d9/d7e/otter_8h.html#afd0f76c23ed902b50d8dd73d83ca699e',1,'otter.h']]],
+  ['otter_5ftask_5fwait_5fimplicit_17',['OTTER_TASK_WAIT_IMPLICIT',['../d9/d7e/otter_8h.html#a08db659b05aedc07f3f2fffc6ce55b17',1,'otter.h']]],
+  ['otter_5ftask_5fwait_5fstart_18',['OTTER_TASK_WAIT_START',['../d9/d7e/otter_8h.html#a7d0cf9d291cd5b3c58b38d7b71132e8e',1,'otter.h']]],
+  ['otter_5ftask_5fyield_5fend_19',['OTTER_TASK_YIELD_END',['../d9/d7e/otter_8h.html#ad0f834cd972a186b689e88e9b96df1c9',1,'otter.h']]],
+  ['otter_5ftask_5fyield_5fstart_20',['OTTER_TASK_YIELD_START',['../d9/d7e/otter_8h.html#aea44f9596931ae586da349f49f8b21dc',1,'otter.h']]],
+  ['otter_5futil_5fassert_21',['OTTER_UTIL_ASSERT',['../d9/d7e/otter_8h.html#ab1a83055e73185fdf1b52ea7f6607662',1,'otter.h']]]
+];

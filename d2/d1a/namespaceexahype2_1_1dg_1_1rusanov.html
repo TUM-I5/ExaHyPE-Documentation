@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/d1a/namespaceexahype2_1_1dg_1_1rusanov.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">exahype2::dg::rusanov Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d1/d9c/namespaceexahype2_1_1dg_1_1rusanov_1_1omp" id="r_d1/d9c/namespaceexahype2_1_1dg_1_1rusanov_1_1omp"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9c/namespaceexahype2_1_1dg_1_1rusanov_1_1omp.html">omp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/db0/namespaceexahype2_1_1dg_1_1rusanov_1_1tests" id="r_dd/db0/namespaceexahype2_1_1dg_1_1rusanov_1_1tests"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db0/namespaceexahype2_1_1dg_1_1rusanov_1_1tests.html">tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2f1df014628917f7e75bd2d593f4f760" id="r_a2f1df014628917f7e75bd2d593f4f760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1df014628917f7e75bd2d593f4f760">solveRiemannProblem_pointwise_in_situ</a> (<a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">::exahype2::dg::Flux</a> flux, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">::exahype2::dg::NonConservativeProduct</a> ncp, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a1fcaeafd95dd08eceb6adaef432a1679">::exahype2::dg::MaxEigenvalue</a> <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h.html#afc5396d2f2be5abdf232294422c19c62">maxEigenvalue</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a0445981e6d724051043ca58b254f4f98">cellSize</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> faceNumber, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ quadraturePoints, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> useFlux, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> useNcp, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ projectedValues, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ solution)</td></tr>
+<tr class="memdesc:a2f1df014628917f7e75bd2d593f4f760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve Riemann problem on face.  <br /></td></tr>
+<tr class="separator:a2f1df014628917f7e75bd2d593f4f760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae719afc3d223828d8f32d318ce48003c" id="r_ae719afc3d223828d8f32d318ce48003c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae719afc3d223828d8f32d318ce48003c">solveRiemannProblem_pointwise_in_situ_with_gradient_projection</a> (<a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">::exahype2::dg::Flux</a> flux, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">::exahype2::dg::NonConservativeProduct</a> ncp, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a1fcaeafd95dd08eceb6adaef432a1679">::exahype2::dg::MaxEigenvalue</a> <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h.html#afc5396d2f2be5abdf232294422c19c62">maxEigenvalue</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;faceCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a0445981e6d724051043ca58b254f4f98">cellSize</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> faceNumber, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ quadraturePoints, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> useFlux, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> useNcp, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ projectedValues, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ solution)</td></tr>
+<tr class="separator:ae719afc3d223828d8f32d318ce48003c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67e7278dc8a29ae4401dcf7b0b7c2d5" id="r_aa67e7278dc8a29ae4401dcf7b0b7c2d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67e7278dc8a29ae4401dcf7b0b7c2d5">cellIntegral_patchwise_in_situ_GaussLegendre_functors</a> (<a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;cellData, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">Flux</a> flux, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">NonConservativeProduct</a> nonConservativeProduct, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#ad133fadfc583ba5018a7fbff4f5261c0">Source</a> source, <a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a4abcadde7ec45f49f3c3d720fc971656">PointSources</a> pointSources, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QuadratureNodes1d, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ MassMatrixDiagonal1d, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ StiffnessMatrix1d, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ DerivativeOperator1d, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateFlux, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateNonconservativeProduct, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateSource, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluatePointSources)</td></tr>
+<tr class="memdesc:aa67e7278dc8a29ae4401dcf7b0b7c2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to generic implementation in parent directory.  <br /></td></tr>
+<tr class="separator:aa67e7278dc8a29ae4401dcf7b0b7c2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31bc5688b586b8202679c2ff0d6ed44" id="r_ad31bc5688b586b8202679c2ff0d6ed44"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad31bc5688b586b8202679c2ff0d6ed44">multiplyWithInvertedMassMatrix_GaussLegendre</a> (<a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;cellData, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ MassMatrixDiagonal1d)</td></tr>
+<tr class="memdesc:ad31bc5688b586b8202679c2ff0d6ed44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to generic implementation.  <br /></td></tr>
+<tr class="separator:ad31bc5688b586b8202679c2ff0d6ed44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4d0d61dd37350ed4e7f40398df7a52" id="r_a3d4d0d61dd37350ed4e7f40398df7a52"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d4d0d61dd37350ed4e7f40398df7a52">integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQLeft, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQRight, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQBottom, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQUp, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 2, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a0445981e6d724051043ca58b254f4f98">cellSize</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ BasisFunctionValuesLeft, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ MassMatrixDiagonal1d, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ cellQ)</td></tr>
+<tr class="memdesc:a3d4d0d61dd37350ed4e7f40398df7a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to generic implementation.  <br /></td></tr>
+<tr class="separator:a3d4d0d61dd37350ed4e7f40398df7a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d10ee2c11f914cd678eda70639455c" id="r_ac4d10ee2c11f914cd678eda70639455c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d10ee2c11f914cd678eda70639455c">integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQLeft, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQRight, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQBottom, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQUp, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQFront, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ faceQBack, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 3, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a0445981e6d724051043ca58b254f4f98">cellSize</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__ BasisFunctionValuesLeft, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ MassMatrixDiagonal1d, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ cellQ)</td></tr>
+<tr class="memdesc:ac4d10ee2c11f914cd678eda70639455c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to generic implementation.  <br /></td></tr>
+<tr class="separator:ac4d10ee2c11f914cd678eda70639455c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447eeeb55326a7adab1f97f3cbe20bdb" id="r_a447eeeb55326a7adab1f97f3cbe20bdb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables&gt; </td></tr>
+<tr class="memitem:a447eeeb55326a7adab1f97f3cbe20bdb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a447eeeb55326a7adab1f97f3cbe20bdb">cellIntegral_patchwise_in_situ_GaussLegendre</a> (<a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;cellData, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateFlux, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateNonconservativeProduct, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluateSource, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> evaluatePointSources)</td></tr>
+<tr class="separator:a447eeeb55326a7adab1f97f3cbe20bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a447eeeb55326a7adab1f97f3cbe20bdb" name="a447eeeb55326a7adab1f97f3cbe20bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447eeeb55326a7adab1f97f3cbe20bdb">&#9670;&#160;</a></span>cellIntegral_patchwise_in_situ_GaussLegendre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> order, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknowns, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> auxiliaryVariables&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::cellIntegral_patchwise_in_situ_GaussLegendre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellData</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateFlux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateNonconservativeProduct</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateSource</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluatePointSources</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de6/Rusanov_8h_source.html#l00264">264</a> of file <a class="el" href="../../d2/de6/Rusanov_8h_source.html">Rusanov.h</a>.</p>
+
+</div>
+</div>
+<a id="aa67e7278dc8a29ae4401dcf7b0b7c2d5" name="aa67e7278dc8a29ae4401dcf7b0b7c2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67e7278dc8a29ae4401dcf7b0b7c2d5">&#9670;&#160;</a></span>cellIntegral_patchwise_in_situ_GaussLegendre_functors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::cellIntegral_patchwise_in_situ_GaussLegendre_functors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellData</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">Flux</a></td>          <td class="paramname"><span class="paramname"><em>flux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">NonConservativeProduct</a></td>          <td class="paramname"><span class="paramname"><em>nonConservativeProduct</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#ad133fadfc583ba5018a7fbff4f5261c0">Source</a></td>          <td class="paramname"><span class="paramname"><em>source</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a4abcadde7ec45f49f3c3d720fc971656">PointSources</a></td>          <td class="paramname"><span class="paramname"><em>pointSources</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QuadratureNodes1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>MassMatrixDiagonal1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>StiffnessMatrix1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>DerivativeOperator1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateFlux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateNonconservativeProduct</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluateSource</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>evaluatePointSources</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to generic implementation in parent directory. </p>
+<p>static keyword required to avoid multiple definition linker errors. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de6/Rusanov_8h_source.html#l00148">148</a> of file <a class="el" href="../../d2/de6/Rusanov_8h_source.html">Rusanov.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/dfb/CellIntegral_8cpp_source.html#l00007">exahype2::dg::cellIntegral_patchwise_in_situ_GaussLegendre_functors()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov_aa67e7278dc8a29ae4401dcf7b0b7c2d5_cgraph.png" border="0" usemap="#ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_aa67e7278dc8a29ae4401dcf7b0b7c2d5_cgraph" alt=""/></div>
+<map name="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_aa67e7278dc8a29ae4401dcf7b0b7c2d5_cgraph" id="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_aa67e7278dc8a29ae4401dcf7b0b7c2d5_cgraph">
+<area shape="rect" title="Delegate to generic implementation in parent directory." alt="" coords="5,97,244,152"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#aabc4aa73b3c4da1a7c2b91a59a023e48" title=" " alt="" coords="292,97,544,152"/>
+<area shape="poly" title=" " alt="" coords="244,122,279,122,279,127,244,127"/>
+<area shape="rect" href="../../db/dc1/GenericRusanov_8template_8h.html#a8601275e9edc6c7ee34fb2aeb1ee71f5" title=" " alt="" coords="682,5,729,31"/>
+<area shape="poly" title=" " alt="" coords="467,95,526,66,591,39,668,21,669,26,593,45,528,71,470,100"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#ad17ac2b2d2a271b8307e78c1cceaaa2d" title="The number of nodes in a cell is basically the input to the power of d." alt="" coords="592,55,819,80"/>
+<area shape="poly" title=" " alt="" coords="544,97,627,80,628,85,545,102"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#a6759181b9597e1330429fc69d85f7e93" title="Construct location of a quadrature point." alt="" coords="599,105,811,145"/>
+<area shape="poly" title=" " alt="" coords="544,122,586,122,586,127,544,127"/>
+<area shape="rect" href="../../db/dc1/GenericRusanov_8template_8h.html#af5fe9b6928b6b29068ffa31ca11a6291" title=" " alt="" coords="616,169,795,195"/>
+<area shape="poly" title=" " alt="" coords="545,147,628,164,627,169,544,152"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a0652bd2078150d09c0cb5eed30291804" title="Computes the volume of the tetrahedron spanned by the Cartesian unit vectors scaled by the correspond..." alt="" coords="639,219,771,244"/>
+<area shape="poly" title=" " alt="" coords="471,150,529,178,593,203,626,213,625,218,591,209,527,183,469,154"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18" title=" " alt="" coords="867,112,1085,137"/>
+<area shape="poly" title=" " alt="" coords="811,122,853,122,853,127,811,127"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4d10ee2c11f914cd678eda70639455c" name="ac4d10ee2c11f914cd678eda70639455c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d10ee2c11f914cd678eda70639455c">&#9670;&#160;</a></span>integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQRight</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQBottom</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQUp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQFront</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQBack</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 3, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>BasisFunctionValuesLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>MassMatrixDiagonal1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>cellQ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to generic implementation. </p>
+<p>static keyword required to avoid multiple definition linker errors. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de6/Rusanov_8h_source.html#l00232">232</a> of file <a class="el" href="../../d2/de6/Rusanov_8h_source.html">Rusanov.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp_source.html#l00052">cellSize</a>, and <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00332">exahype2::dg::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ac4d10ee2c11f914cd678eda70639455c_cgraph.png" border="0" usemap="#ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ac4d10ee2c11f914cd678eda70639455c_cgraph" alt=""/></div>
+<map name="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ac4d10ee2c11f914cd678eda70639455c_cgraph" id="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ac4d10ee2c11f914cd678eda70639455c_cgraph">
+<area shape="rect" title="Delegate to generic implementation." alt="" coords="5,5,248,60"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#ade9d85f21e5fd03df1e4c4350750ab11" title="Given a numerical flux at the various faces, this computes and adds the Riemann integral of this flux..." alt="" coords="296,5,549,60"/>
+<area shape="poly" title=" " alt="" coords="248,30,282,30,282,35,248,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d4d0d61dd37350ed4e7f40398df7a52" name="a3d4d0d61dd37350ed4e7f40398df7a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4d0d61dd37350ed4e7f40398df7a52">&#9670;&#160;</a></span>integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQRight</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQBottom</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>faceQUp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; 2, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> __restrict__</td>          <td class="paramname"><span class="paramname"><em>BasisFunctionValuesLeft</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>MassMatrixDiagonal1d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>cellQ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to generic implementation. </p>
+<p>static keyword required to avoid multiple definition linker errors. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de6/Rusanov_8h_source.html#l00203">203</a> of file <a class="el" href="../../d2/de6/Rusanov_8h_source.html">Rusanov.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp_source.html#l00052">cellSize</a>, and <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00332">exahype2::dg::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a3d4d0d61dd37350ed4e7f40398df7a52_cgraph.png" border="0" usemap="#ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a3d4d0d61dd37350ed4e7f40398df7a52_cgraph" alt=""/></div>
+<map name="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a3d4d0d61dd37350ed4e7f40398df7a52_cgraph" id="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a3d4d0d61dd37350ed4e7f40398df7a52_cgraph">
+<area shape="rect" title="Delegate to generic implementation." alt="" coords="5,5,248,60"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#ade9d85f21e5fd03df1e4c4350750ab11" title="Given a numerical flux at the various faces, this computes and adds the Riemann integral of this flux..." alt="" coords="296,5,549,60"/>
+<area shape="poly" title=" " alt="" coords="248,30,282,30,282,35,248,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad31bc5688b586b8202679c2ff0d6ed44" name="ad31bc5688b586b8202679c2ff0d6ed44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31bc5688b586b8202679c2ff0d6ed44">&#9670;&#160;</a></span>multiplyWithInvertedMassMatrix_GaussLegendre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::multiplyWithInvertedMassMatrix_GaussLegendre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">::exahype2::CellData</a>&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellData</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>MassMatrixDiagonal1d</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegate to generic implementation. </p>
+<p>static keyword required to avoid multiple definition linker errors. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de6/Rusanov_8h_source.html#l00184">184</a> of file <a class="el" href="../../d2/de6/Rusanov_8h_source.html">Rusanov.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/dfb/CellIntegral_8cpp_source.html#l00258">exahype2::dg::multiplyWithInvertedMassMatrix_GaussLegendre()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ad31bc5688b586b8202679c2ff0d6ed44_cgraph.png" border="0" usemap="#ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ad31bc5688b586b8202679c2ff0d6ed44_cgraph" alt=""/></div>
+<map name="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ad31bc5688b586b8202679c2ff0d6ed44_cgraph" id="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_ad31bc5688b586b8202679c2ff0d6ed44_cgraph">
+<area shape="rect" title="Delegate to generic implementation." alt="" coords="5,5,249,60"/>
+<area shape="rect" href="../../da/d24/namespaceexahype2_1_1dg.html#a2864c238cc5565608eeaf797e40a5a75" title="Final step of DG algorithm." alt="" coords="297,13,556,53"/>
+<area shape="poly" title=" " alt="" coords="250,30,283,30,283,35,250,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f1df014628917f7e75bd2d593f4f760" name="a2f1df014628917f7e75bd2d593f4f760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1df014628917f7e75bd2d593f4f760">&#9670;&#160;</a></span>solveRiemannProblem_pointwise_in_situ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::solveRiemannProblem_pointwise_in_situ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">::exahype2::dg::Flux</a></td>          <td class="paramname"><span class="paramname"><em>flux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">::exahype2::dg::NonConservativeProduct</a></td>          <td class="paramname"><span class="paramname"><em>ncp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a1fcaeafd95dd08eceb6adaef432a1679">::exahype2::dg::MaxEigenvalue</a></td>          <td class="paramname"><span class="paramname"><em>maxEigenvalue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>faceNumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>quadraturePoints</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>useFlux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>useNcp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>projectedValues</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>solution</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Solve Riemann problem on face. </p>
+<p>This routine solves the Riemann problem on one face through a <a class="el" href="../../d5/d0e/namespaceRusanov.html">Rusanov</a> solver. It takes the average of the flux left and right, reduces it by the jump subject to a scaling with the maximum eigenvalue, and finally adds/substracts the ncp terms.</p>
+<p>The implementation is purely point-wise, i.e. we run over the quadrature points and use <a class="el" href="../../d5/d0e/namespaceRusanov.html">Rusanov</a> per point. It is not clear if this is reasonable in all cases. It might be better for example to determine the max eigenvalue per face once and then update all quadrature point subject to this one eigenvalue.</p>
+<h2><a class="anchor" id="autotoc_md32"></a>
+Implementation details</h2>
+<p>The DoFs per face are ordered in standard Peano order: </p><pre class="fragment">    2 3
+    0 1
+</pre><p> 2 3 [ o o ] 2 3 0 1 [ o o ] 0 1 2 3 0 1</p>
+<p>The lrEnumerator is used for quantities that we evaluate right and left of the face. The faceEnumerator is for data that we evaluate directly on the face.</p>
+<h2><a class="anchor" id="autotoc_md33"></a>
+Linearity in h</h2>
+<p>The ncp - as so often - deserves special attention: As we have a non-conservative term here, we don't write the same flux to the left and the right face. Indeed, they carry exactly switched signs. We furthermore note that the original <a class="el" href="../../da/db8/namespacePDE.html">PDE</a> formulation speaks of a term \( B(Q) \nabla B \) whereas the Finite Volume formulation's <a class="el" href="../../d5/d0e/namespaceRusanov.html">Rusanov</a> solver uses a \( 0.5 B( 0.5(Q^++Q^-) ) (Q^+-Q^-) \) term. Therefore, we need an additional factor of 0.5. However, we do not need any additional calibration, as we simply pass in the Q differences into the DG ncp term which expects the gradient. Whatever comes out of it, should be by a factor of h too big already, i.e. have the right cardinality of the FV expression.</p>
+<p>In theory, it might be that B is not linear in the vector, i.e. not linear in an h scaling. However, we always can assume that the B that is passed in here is a linearisation along the face. Therefore, we can assume that the scaling is by definition fine with our observation.</p>
+<h2><a class="anchor" id="autotoc_md34"></a>
+Sign discussion</h2>
+<p>We rely on the formulation as discussed on the page Discontinuous Galerkin. See <a class="el" href="../../df/d60/dg_8h.html">dg.h</a> or the doxygen html pages for details. I also recommend to read through the documentation of <a class="el" href="#aa67e7278dc8a29ae4401dcf7b0b7c2d5" title="Delegate to generic implementation in parent directory.">cellIntegral_patchwise_in_situ_GaussLegendre_functors()</a> before we dive into the discussion.</p>
+<p>All the comments below assume that both the left and the right side of the flux compute the flux in the normal direction. It is then the backpropagation of the Riemann solution which takes into the account that the <code>right'' faces denote an outflow, while the</code>left'' faces encode an inflow.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a3d4d0d61dd37350ed4e7f40398df7a52" title="Delegate to generic implementation.">integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre()</a></dd></dl>
+<p>Bringing all these facts together, we conclude that we end up with a 1:1 translation of Finite Volumes into the DG world. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dff/Rusanov_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../d7/dff/Rusanov_8cpp_source.html">Rusanov.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp_source.html#l00052">cellSize</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00125">dfore</a>, <a class="el" href="../../db/dc1/GenericRusanov_8template_8h.html#a8601275e9edc6c7ee34fb2aeb1ee71f5">flux()</a>, and <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h_source.html#l00067">maxEigenvalue</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a2f1df014628917f7e75bd2d593f4f760_cgraph.png" border="0" usemap="#ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a2f1df014628917f7e75bd2d593f4f760_cgraph" alt=""/></div>
+<map name="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a2f1df014628917f7e75bd2d593f4f760_cgraph" id="ad2/d1a/namespaceexahype2_1_1dg_1_1rusanov_a2f1df014628917f7e75bd2d593f4f760_cgraph">
+<area shape="rect" title="Solve Riemann problem on face." alt="" coords="5,5,183,60"/>
+<area shape="rect" href="../../db/dc1/GenericRusanov_8template_8h.html#a8601275e9edc6c7ee34fb2aeb1ee71f5" title=" " alt="" coords="231,20,277,45"/>
+<area shape="poly" title=" " alt="" coords="183,30,217,30,217,35,183,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae719afc3d223828d8f32d318ce48003c" name="ae719afc3d223828d8f32d318ce48003c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae719afc3d223828d8f32d318ce48003c">&#9670;&#160;</a></span>solveRiemannProblem_pointwise_in_situ_with_gradient_projection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::dg::rusanov::solveRiemannProblem_pointwise_in_situ_with_gradient_projection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e">::exahype2::dg::Flux</a></td>          <td class="paramname"><span class="paramname"><em>flux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828">::exahype2::dg::NonConservativeProduct</a></td>          <td class="paramname"><span class="paramname"><em>ncp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html#a1fcaeafd95dd08eceb6adaef432a1679">::exahype2::dg::MaxEigenvalue</a></td>          <td class="paramname"><span class="paramname"><em>maxEigenvalue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cellSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknowns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>auxiliaryVariables</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>faceNumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>quadraturePoints</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>useFlux</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>useNcp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>projectedValues</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>solution</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2f1df014628917f7e75bd2d593f4f760" title="Solve Riemann problem on face.">solveRiemannProblem_pointwise_in_situ()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dff/Rusanov_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../d7/dff/Rusanov_8cpp_source.html">Rusanov.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01076">assertionMsg</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html">dg</a></li><li class="navelem"><a class="el" href="../../d2/d1a/namespaceexahype2_1_1dg_1_1rusanov.html">rusanov</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:29 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

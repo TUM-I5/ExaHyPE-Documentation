@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['elastic_20wave_20equation_0',['The Elastic Wave Equation',['../d2/d68/page_tutorials_exahype2_symhype_elastic.html',1,'page_exahype2_tutorials']]],
+  ['enclave_20and_20optimistic_20solvers_1',['Enclave and optimistic solvers',['../d5/d35/documentation_exahype2_solvers_enclave_solvers.html',1,'page_exahype2_home']]],
+  ['entities_2',['entities',['../d6/dd6/tutorials_peano4_assign_data_to_mesh.html',1,'Assigning data to mesh entities'],['../dd/d88/page_multigrid_unfolding.html',1,'Design principle: Unfolding the linear algebra steps over the mesh entities']]],
+  ['enumerators_3',['ExaHyPE 2 enumerators',['../de/d66/exahype2_enumerator.html',1,'page_exahype2_home']]],
+  ['equation_4',['equation',['../df/d82/tutorials_mghype_numerics_continuous_galerkin_poisson.html',1,'Continuous Galerkin for the Poisson equation'],['../d5/d36/tutorials_multigrid_matrixfree_discontinuous_galerkin_poisson.html',1,'Matrix-free Discontinuous Galerkin for the Poisson equation'],['../d0/d2c/tutorials_multigrid_matrixfree_mixed_DG_poisson.html',1,'Matrix-free mixed DG for the Poisson equation'],['../d1/ded/benchmarks_documentation_multigrid_petsc_poisson.html',1,'Poisson equation']]],
+  ['equation_5',['Equation',['../dd/dea/page_tutorials_exahype2_symhype_acoustic.html',1,'The Acoustic Wave Equation'],['../dd/d5a/page_tutorials_exahype2_symhype_advection.html',1,'The Advection Equation'],['../d2/d68/page_tutorials_exahype2_symhype_elastic.html',1,'The Elastic Wave Equation'],['../dd/d92/page_tutorials_exahype2_symhype_euler.html',1,'The Euler Equation']]],
+  ['equation_20swe_6',['The Shallow Water Equation (SWE)',['../d0/d10/page_tutorials_exahype2_symhype_swe.html',1,'page_exahype2_tutorials']]],
+  ['equation_20with_20petsc_7',['equation with PETSc',['../dc/de6/tutorials_documentation_multigrid_petsc_continuous_galerkin_poisson.html',1,'Continuous Galerkin for the Poisson equation with PETSc'],['../d3/d42/tutorials_documentation_multigrid_petsc_discontinuous_galerkin_poisson.html',1,'Discontinuous Galerkin for the Poisson equation with PETSc'],['../d7/d6a/tutorials_documentation_multigrid_petsc_hybrid_galerkin_poisson.html',1,'Hybrid Galerkin for the Poisson equation with PETSc'],['../d5/d6b/tutorials_documentation_multigrid_petsc_mixed_galerkin_poisson.html',1,'Mixed Galerkin for the Poisson equation with PETSc']]],
+  ['equations_8',['Benchmarks of Compute Kernels for the Shallow Water Equations',['../d5/d56/benchmarks_exahype2_shallow_water_kernel_benchmarks.html',1,'']]],
+  ['euler_20equation_9',['The Euler Equation',['../dd/d92/page_tutorials_exahype2_symhype_euler.html',1,'page_exahype2_tutorials']]],
+  ['events_10',['Action sets and events',['../da/d1b/peano_action_sets.html',1,'page_peano4_home']]],
+  ['exagrype_11',['ExaGRyPE',['../df/d1a/tutorials_exahype2_applications_exagrype_advanced.html',1,'Advanced Usage of ExaGRyPE'],['../dc/d0c/tutorials_exahype2_applications_exagrype_setup.html',1,'Configure ExaGRyPE'],['../dc/d1a/applications_exahype2_ExaGRyPE.html',1,'ExaGRyPE'],['../da/dce/tutorials_exahype2_applications_exagrype.html',1,'How to Use ExaGRyPE'],['../d9/dff/tutorials_exahype2_applications_exagrype_running.html',1,'Use ExaGRyPE']]],
+  ['exagrype_20on_20clusters_12',['Run ExaGRyPE on Clusters',['../d8/da0/tutorials_exahype2_applications_exagrype_clusters.html',1,'tutorials_exahype2_applications_exagrype']]],
+  ['exahype_202_13',['ExaHyPE 2',['../d3/d82/page_exahype2_home.html',1,'index']]],
+  ['exahype_202_20enumerators_14',['ExaHyPE 2 enumerators',['../de/d66/exahype2_enumerator.html',1,'page_exahype2_home']]],
+  ['exahype_202_20solvers_15',['ExaHyPE 2 solvers',['../d2/d72/page_exahype_solvers.html',1,'page_exahype2_home']]],
+  ['exahype_20applications_16',['Design patterns of larger ExaHyPE applications',['../dc/d25/tutorials_exahype2_design-patterns.html',1,'page_exahype2_tutorials']]],
+  ['exahype_20to_20other_20codes_20and_20adding_20additional_20mesh_20sweeps_17',['Coupling ExaHyPE to other codes and adding additional mesh sweeps',['../d2/dee/page_exahype2_coupling.html',1,'page_exahype2_home']]],
+  ['exaseis_18',['ExaSeis',['../db/d93/applications_exahype2_exaseis.html',1,'page_exahype_applications']]],
+  ['explore_20data_20with_20pyvista_19',['Explore data with PyVista',['../dc/d4f/documentation_tarch_visualisation_pyvista.html',1,'documentation_tarch_visualisation']]],
+  ['explosion_20',['Explosion',['../d3/db4/applications_exahype2_navier_stokes_gaussian_explosion.html',1,'Gaussian Explosion'],['../dd/d75/applications_exahype2_navier_stokes_point_explosion.html',1,'Point Explosion']]],
+  ['extend_20the_20visualisation_20and_20checkpointing_21',['Extend the visualisation (and checkpointing)',['../dc/d02/page_exahype_extend-visualisation.html',1,'page_exahype2_home']]],
+  ['extensions_22',['TBB extensions',['../d7/d2b/tbb_extension.html',1,'']]]
+];

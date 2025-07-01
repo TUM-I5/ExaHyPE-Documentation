@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">ccz4-main.cpp File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iomanip&gt;</code><br />
+<code>#include &quot;config.h&quot;</code><br />
+<code>#include &quot;Constants.h&quot;</code><br />
+<code>#include &quot;ccz4-main.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d0f/exahype2_2UnitTests_8h_source.html">exahype2/UnitTests.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d15/exahype2_2UserInterface_8h_source.html">exahype2/UserInterface.h</a>&quot;</code><br />
+<code>#include &quot;observers/CreateGrid.h&quot;</code><br />
+<code>#include &quot;observers/CreateGridAndConvergeLoadBalancing.h&quot;</code><br />
+<code>#include &quot;observers/CreateGridButPostponeRefinement.h&quot;</code><br />
+<code>#include &quot;observers/InitGrid.h&quot;</code><br />
+<code>#include &quot;observers/PlotSolution.h&quot;</code><br />
+<code>#include &quot;observers/CheckpointSolution.h&quot;</code><br />
+<code>#include &quot;observers/TimeStep.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/da4/peano4_8h_source.html">peano4/peano4.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d71/peano4_2UnitTests_8h_source.html">peano4/UnitTests.h</a>&quot;</code><br />
+<code>#include &quot;repositories/DataRepository.h&quot;</code><br />
+<code>#include &quot;repositories/SolverRepository.h&quot;</code><br />
+<code>#include &quot;repositories/StepRepository.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d90/tarch_2UnitTests_8h_source.html">tarch/UnitTests.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d2e/Spacetree_8h_source.html">peano4/grid/Spacetree.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d08/SpacetreeSet_8h_source.html">peano4/parallel/SpacetreeSet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d45/Log_8h_source.html">tarch/logging/Log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d31/LogFilter_8h_source.html">tarch/logging/LogFilter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d95/tarch_2logging_2Statistics_8h_source.html">tarch/logging/Statistics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dd7/Core_8h_source.html">tarch/multicore/Core.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d52/multicore_8h_source.html">tarch/multicore/multicore.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d7e/otter_8h_source.html">tarch/multicore/otter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d2c/NonCriticalAssertions_8h_source.html">tarch/NonCriticalAssertions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">tarch/tests/TreeTestCaseCollection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dc4/Measurement_8h_source.html">tarch/timing/Measurement.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d42/Watch_8h_source.html">tarch/timing/Watch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d3d/toolbox_2blockstructured_2UnitTests_8h_source.html">toolbox/blockstructured/UnitTests.h</a>&quot;</code><br />
+<code>#include &quot;toolbox/loadbalancing/loadbalancing.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for ccz4-main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d94/applications_2exahype2_2ccz4_2ccz4-main_8cpp__incl.png" border="0" usemap="#aapplications_2exahype2_2ccz4_2ccz4-main_8cpp" alt=""/></div>
+<map name="aapplications_2exahype2_2ccz4_2ccz4-main_8cpp" id="aapplications_2exahype2_2ccz4_2ccz4-main_8cpp">
+<area shape="rect" title=" " alt="" coords="2054,5,2223,45"/>
+<area shape="rect" title=" " alt="" coords="5,101,80,126"/>
+<area shape="poly" title=" " alt="" coords="2053,29,1660,29,1094,36,798,44,519,56,279,73,99,96,85,99,84,94,98,91,279,68,519,51,797,39,1094,31,1660,24,2053,24"/>
+<area shape="rect" title=" " alt="" coords="421,416,494,441"/>
+<area shape="poly" title=" " alt="" coords="2054,29,1645,28,1074,35,788,43,536,55,341,72,273,83,229,96,185,114,151,133,138,145,128,159,122,177,120,200,120,283,122,305,128,324,138,341,151,356,185,381,227,399,274,412,322,419,407,425,406,431,321,425,273,417,225,404,183,385,147,360,134,344,123,326,117,306,115,283,115,200,117,176,123,157,134,142,148,129,183,109,227,91,272,78,340,67,536,50,788,37,1074,29,1645,23,2054,23"/>
+<area shape="rect" title=" " alt="" coords="2227,101,2325,126"/>
+<area shape="poly" title=" " alt="" coords="2170,43,2247,91,2245,96,2167,48"/>
+<area shape="rect" title=" " alt="" coords="2349,101,2451,126"/>
+<area shape="poly" title=" " alt="" coords="2197,43,2353,94,2351,99,2195,48"/>
+<area shape="rect" href="../../d2/d0f/exahype2_2UnitTests_8h.html" title=" " alt="" coords="3051,189,3213,214"/>
+<area shape="poly" title=" " alt="" coords="2129,47,2120,67,2113,90,2112,112,2122,132,2142,144,2176,154,2279,168,2415,175,2568,178,2862,176,2973,176,3039,179,3069,183,3068,189,3038,184,2973,181,2862,182,2568,183,2415,180,2279,173,2175,159,2140,148,2118,135,2107,114,2108,89,2115,65,2125,44"/>
+<area shape="rect" href="../../df/d15/exahype2_2UserInterface_8h.html" title=" " alt="" coords="2475,101,2666,126"/>
+<area shape="poly" title=" " alt="" coords="2224,41,2500,95,2499,101,2223,46"/>
+<area shape="rect" title=" " alt="" coords="2690,101,2862,126"/>
+<area shape="poly" title=" " alt="" coords="2224,33,2431,57,2679,91,2707,95,2706,101,2678,96,2431,62,2223,38"/>
+<area shape="rect" title=" " alt="" coords="2886,93,3133,133"/>
+<area shape="poly" title=" " alt="" coords="2224,30,2508,54,2873,90,2872,96,2507,59,2224,36"/>
+<area shape="rect" title=" " alt="" coords="3157,93,3400,133"/>
+<area shape="poly" title=" " alt="" coords="2224,28,2617,49,2877,67,3144,91,3143,96,2876,72,2617,54,2224,33"/>
+<area shape="rect" title=" " alt="" coords="3425,101,3575,126"/>
+<area shape="poly" title=" " alt="" coords="2224,24,2433,26,2728,36,3068,56,3242,71,3412,91,3440,95,3439,101,3412,96,3241,76,3067,61,2728,41,2433,32,2224,29"/>
+<area shape="rect" title=" " alt="" coords="3599,101,3779,126"/>
+<area shape="poly" title=" " alt="" coords="2224,24,2459,26,2796,35,3189,55,3391,71,3588,91,3623,96,3622,101,3588,96,3390,76,3188,61,2796,41,2459,32,2224,29"/>
+<area shape="rect" title=" " alt="" coords="3803,101,4031,126"/>
+<area shape="poly" title=" " alt="" coords="2224,24,2488,27,2875,37,3329,57,3563,72,3792,91,3837,96,3836,101,3792,96,3563,77,3329,62,2875,42,2488,33,2224,30"/>
+<area shape="rect" title=" " alt="" coords="4055,101,4219,126"/>
+<area shape="poly" title=" " alt="" coords="2224,25,2593,31,3119,44,3653,63,3876,76,4044,91,4075,95,4074,101,4044,96,3875,81,3653,69,3119,49,2593,37,2223,30"/>
+<area shape="rect" href="../../d4/da4/peano4_8h.html" title=" " alt="" coords="1631,269,1766,295"/>
+<area shape="poly" title=" " alt="" coords="2054,32,1980,38,1893,50,1802,68,1714,96,1670,112,1635,126,1607,147,1581,183,1575,202,1581,220,1605,245,1637,262,1634,267,1602,249,1576,223,1569,202,1576,180,1603,143,1632,121,1668,107,1712,91,1801,63,1892,45,1979,33,2053,27"/>
+<area shape="rect" href="../../de/d71/peano4_2UnitTests_8h.html" title=" " alt="" coords="3237,189,3384,214"/>
+<area shape="poly" title=" " alt="" coords="2141,45,2147,90,2157,113,2172,131,2197,143,2238,153,2358,166,2514,174,2689,176,3024,175,3150,175,3226,179,3252,183,3251,188,3225,184,3150,181,3024,180,2689,181,2514,179,2358,172,2237,158,2196,148,2169,135,2152,116,2142,92,2136,46"/>
+<area shape="rect" title=" " alt="" coords="4243,101,4458,126"/>
+<area shape="poly" title=" " alt="" coords="2224,25,3206,46,3797,65,4045,77,4232,91,4275,96,4274,101,4232,96,4045,83,3797,71,3205,51,2223,31"/>
+<area shape="rect" title=" " alt="" coords="4483,101,4707,126"/>
+<area shape="poly" title=" " alt="" coords="2224,25,3316,45,3981,64,4260,77,4471,91,4516,96,4515,101,4470,96,4260,82,3981,69,3315,50,2224,30"/>
+<area shape="rect" title=" " alt="" coords="4730,101,4942,126"/>
+<area shape="poly" title=" " alt="" coords="2224,25,2707,30,3429,42,4172,61,4484,75,4719,91,4761,96,4761,101,4718,96,4483,80,4172,67,3429,47,2706,35,2223,30"/>
+<area shape="rect" href="../../d6/d90/tarch_2UnitTests_8h.html" title=" " alt="" coords="3408,189,3539,214"/>
+<area shape="poly" title=" " alt="" coords="2148,44,2173,90,2192,113,2216,131,2246,141,2294,150,2430,162,2605,169,2800,171,3173,172,3313,174,3396,179,3420,183,3419,188,3396,184,3313,179,3173,178,2800,177,2605,174,2430,167,2293,155,2245,147,2213,136,2189,117,2169,93,2143,47"/>
+<area shape="rect" href="../../d1/d2e/Spacetree_8h.html" title=" " alt="" coords="1819,101,1999,126"/>
+<area shape="poly" title=" " alt="" coords="2089,48,1954,98,1952,93,2087,43"/>
+<area shape="rect" href="../../d1/d45/Log_8h.html" title=" " alt="" coords="677,269,824,295"/>
+<area shape="poly" title=" " alt="" coords="2054,30,1706,33,1233,43,998,51,791,62,632,77,576,86,540,96,489,119,446,148,432,165,425,182,427,200,438,220,452,231,473,241,530,257,597,267,664,274,663,279,597,273,529,262,471,246,449,236,434,223,422,202,420,181,428,162,443,144,486,114,538,91,575,81,631,72,791,57,998,46,1233,37,1706,27,2054,24"/>
+<area shape="rect" href="../../d5/d52/multicore_8h.html" title=" " alt="" coords="931,343,1130,368"/>
+<area shape="poly" title=" " alt="" coords="2054,32,1922,38,1751,49,1562,68,1372,96,1291,107,1218,113,1151,118,1089,125,1034,140,982,167,958,186,934,209,889,271,884,282,885,292,898,310,924,325,957,337,955,342,922,330,895,314,880,294,879,281,884,268,930,205,954,182,979,162,1032,135,1088,120,1150,112,1217,108,1291,102,1372,91,1561,63,1751,44,1921,32,2053,26"/>
+<area shape="rect" href="../../d0/d08/SpacetreeSet_8h.html" title=" " alt="" coords="1064,181,1256,221"/>
+<area shape="poly" title=" " alt="" coords="2054,34,1819,54,1676,72,1534,96,1368,137,1229,179,1227,174,1367,131,1533,91,1675,67,1818,49,2054,29"/>
+<area shape="rect" href="../../da/d31/LogFilter_8h.html" title=" " alt="" coords="1597,343,1776,368"/>
+<area shape="poly" title=" " alt="" coords="2054,35,1984,43,1911,56,1849,73,1826,83,1810,95,1793,119,1787,142,1787,166,1791,190,1798,240,1794,268,1781,296,1758,321,1731,339,1728,334,1755,317,1776,293,1789,266,1792,240,1786,190,1782,166,1781,141,1788,117,1806,91,1823,79,1847,68,1910,50,1983,38,2053,30"/>
+<area shape="rect" href="../../d5/d95/tarch_2logging_2Statistics_8h.html" title=" " alt="" coords="587,101,770,126"/>
+<area shape="poly" title=" " alt="" coords="2054,32,1538,51,1189,70,834,96,778,102,777,96,833,91,1188,65,1538,46,2054,26"/>
+<area shape="rect" href="../../d9/d42/Watch_8h.html" title=" " alt="" coords="448,189,605,214"/>
+<area shape="poly" title=" " alt="" coords="2054,31,1698,37,1219,50,788,69,645,81,600,88,577,96,560,112,547,133,533,176,528,174,543,131,556,109,575,91,599,83,644,76,788,64,1219,44,1697,32,2053,25"/>
+<area shape="rect" href="../../d6/dd7/Core_8h.html" title=" " alt="" coords="206,189,373,214"/>
+<area shape="poly" title=" " alt="" coords="2054,29,1677,29,1157,36,898,44,670,57,494,73,433,84,393,96,365,112,341,134,305,179,301,176,337,130,362,108,391,91,432,79,493,68,669,51,898,39,1157,31,1677,24,2054,24"/>
+<area shape="rect" href="../../d9/d7e/otter_8h.html" title=" " alt="" coords="199,343,366,368"/>
+<area shape="poly" title=" " alt="" coords="2054,30,1667,34,1131,45,863,53,626,65,442,79,378,87,335,96,289,110,253,124,224,145,197,183,190,203,190,223,195,244,204,264,232,302,260,332,257,335,227,305,200,267,190,246,184,224,185,202,192,180,220,142,250,119,287,105,334,91,377,82,442,73,626,59,863,48,1130,39,1667,29,2054,25"/>
+<area shape="rect" href="../../df/d2c/NonCriticalAssertions_8h.html" title=" " alt="" coords="4965,101,5176,126"/>
+<area shape="poly" title=" " alt="" coords="2224,24,2746,29,3536,40,4354,59,4696,73,4955,91,4997,96,4997,101,4954,96,4696,79,4353,65,3536,45,2746,34,2224,30"/>
+<area shape="rect" href="../../db/d3b/TreeTestCaseCollection_8h.html" title=" " alt="" coords="1590,181,1770,221"/>
+<area shape="poly" title=" " alt="" coords="2054,37,1891,60,1816,76,1764,96,1743,111,1725,130,1698,171,1693,168,1721,127,1740,107,1761,91,1814,71,1890,54,2053,32"/>
+<area shape="rect" href="../../d6/dc4/Measurement_8h.html" title=" " alt="" coords="681,189,887,214"/>
+<area shape="poly" title=" " alt="" coords="2054,31,1779,37,1422,49,1094,68,976,81,908,96,876,113,847,135,803,180,799,176,844,131,873,108,906,91,975,76,1093,63,1422,44,1779,32,2054,25"/>
+<area shape="rect" href="../../db/d3d/toolbox_2blockstructured_2UnitTests_8h.html" title=" " alt="" coords="2851,181,3027,221"/>
+<area shape="poly" title=" " alt="" coords="2113,47,2091,67,2072,89,2064,112,2065,122,2071,131,2088,142,2116,150,2201,163,2314,170,2441,174,2685,176,2832,179,2837,179,2837,185,2832,184,2685,181,2441,179,2314,176,2201,168,2115,155,2085,146,2067,135,2060,124,2058,111,2068,86,2087,63,2110,43"/>
+<area shape="rect" title=" " alt="" coords="5199,93,5366,133"/>
+<area shape="poly" title=" " alt="" coords="2223,24,2778,25,3631,33,4087,41,4520,53,4897,69,5186,91,5185,96,4897,74,4519,58,4087,46,3630,38,2778,30,2223,29"/>
+<area shape="rect" href="../../d5/dc6/TestCase_8h.html" title=" " alt="" coords="2952,269,3117,295"/>
+<area shape="poly" title=" " alt="" coords="3119,216,3061,263,3058,259,3116,212"/>
+<area shape="poly" title=" " alt="" coords="1634,297,1416,333,1143,371,779,406,508,427,508,421,779,401,1142,365,1416,327,1633,292"/>
+<area shape="rect" href="../../d6/dbe/Vector_8h.html" title=" " alt="" coords="2199,343,2326,368"/>
+<area shape="poly" title=" " alt="" coords="1766,289,2186,342,2185,347,1766,294"/>
+<area shape="rect" title=" " alt="" coords="2583,416,2641,441"/>
+<area shape="poly" title=" " alt="" coords="2319,365,2570,416,2569,421,2318,371"/>
+<area shape="poly" title=" " alt="" coords="3271,217,3089,268,3087,263,3270,211"/>
+<area shape="poly" title=" " alt="" coords="3429,217,3397,224,3256,250,3128,270,3127,265,3255,244,3395,219,3428,211"/>
+<area shape="poly" title=" " alt="" coords="1991,123,2055,131,2190,133,2417,136,2534,140,2638,148,2718,161,2745,169,2762,179,2773,194,2779,210,2781,242,2770,275,2750,307,2724,338,2695,366,2641,410,2638,406,2691,362,2720,334,2745,304,2765,272,2776,241,2774,211,2768,197,2758,183,2743,174,2717,166,2638,153,2534,146,2416,141,2190,139,2054,136,1991,129"/>
+<area shape="rect" href="../../d4/df5/AutomatonState_8h.html" title=" " alt="" coords="2545,269,2685,295"/>
+<area shape="poly" title=" " alt="" coords="1970,123,2019,131,2157,134,2387,136,2507,140,2613,148,2695,160,2722,169,2739,179,2746,190,2748,201,2740,223,2714,249,2681,267,2679,262,2710,245,2735,220,2743,200,2741,192,2735,183,2720,174,2693,165,2613,153,2507,146,2387,142,2157,139,2018,136,1969,129"/>
+<area shape="rect" href="../../dc/d05/GridVertex_8h.html" title=" " alt="" coords="2361,269,2463,295"/>
+<area shape="poly" title=" " alt="" coords="1973,123,2019,131,2115,134,2242,133,2305,136,2362,143,2410,157,2429,167,2443,180,2452,199,2451,220,2443,241,2432,259,2427,256,2438,238,2446,219,2447,200,2439,183,2426,172,2408,162,2361,149,2304,141,2241,139,2115,139,2018,136,1972,129"/>
+<area shape="rect" href="../../d5/d77/GridStatistics_8h.html" title=" " alt="" coords="1897,269,2018,295"/>
+<area shape="poly" title=" " alt="" coords="1915,125,1953,255,1948,257,1910,127"/>
+<area shape="rect" href="../../dc/d58/GridControlEvent_8h.html" title=" " alt="" coords="2042,269,2187,295"/>
+<area shape="poly" title=" " alt="" coords="1917,125,1944,170,1964,196,1987,219,2025,244,2065,262,2063,267,2022,249,1984,223,1960,199,1939,173,1913,127"/>
+<area shape="rect" href="../../d8/dbf/GridTraversalEventGenerator_8h.html" title=" " alt="" coords="2504,189,2725,214"/>
+<area shape="poly" title=" " alt="" coords="1972,123,2019,131,2150,146,2252,156,2486,179,2526,184,2526,189,2485,184,2252,161,2149,152,2018,136,1971,129"/>
+<area shape="poly" title=" " alt="" coords="1819,117,1671,121,1480,130,1266,150,1158,165,1053,184,979,202,907,224,791,267,790,262,906,219,978,197,1051,179,1157,160,1266,145,1480,125,1671,115,1819,112"/>
+<area shape="rect" href="../../dd/d84/STDVectorStack_8h.html" title=" " alt="" coords="1280,189,1515,214"/>
+<area shape="poly" title=" " alt="" coords="1841,129,1480,189,1479,184,1840,123"/>
+<area shape="rect" title=" " alt="" coords="1437,416,1480,441"/>
+<area shape="poly" title=" " alt="" coords="1910,127,1901,173,1880,240,1864,276,1844,311,1819,343,1790,370,1766,382,1734,393,1652,410,1494,428,1493,422,1651,404,1732,388,1764,378,1786,366,1815,340,1840,308,1859,274,1875,238,1896,172,1905,126"/>
+<area shape="rect" href="../../d7/df3/STDStackMap_8h.html" title=" " alt="" coords="2213,189,2429,214"/>
+<area shape="poly" title=" " alt="" coords="1965,123,2254,183,2252,188,1964,129"/>
+<area shape="rect" href="../../db/d67/HierarchicalStackMap_8h.html" title=" " alt="" coords="1997,181,2189,221"/>
+<area shape="poly" title=" " alt="" coords="1935,124,2041,173,2039,178,1933,129"/>
+<area shape="poly" title=" " alt="" coords="2559,297,2333,343,2332,337,2558,292"/>
+<area shape="poly" title=" " alt="" coords="2389,297,2301,339,2298,334,2387,292"/>
+<area shape="poly" title=" " alt="" coords="2007,292,2201,337,2199,342,2006,297"/>
+<area shape="poly" title=" " alt="" coords="2140,292,2227,334,2225,339,2137,297"/>
+<area shape="poly" title=" " alt="" coords="2676,211,2960,264,2959,269,2675,217"/>
+<area shape="poly" title=" " alt="" coords="2617,214,2617,255,2612,255,2612,214"/>
+<area shape="poly" title=" " alt="" coords="2586,216,2455,267,2453,262,2584,212"/>
+<area shape="poly" title=" " alt="" coords="2522,217,2442,224,2205,238,2005,246,1664,251,1324,255,1123,261,887,272,838,275,837,270,887,267,1123,255,1324,249,1664,246,2004,241,2205,233,2441,219,2521,211"/>
+<area shape="poly" title=" " alt="" coords="728,297,494,412,492,407,726,292"/>
+<area shape="poly" title=" " alt="" coords="1502,211,1579,219,1780,234,1937,243,2295,267,2347,271,2347,277,2294,272,1936,248,1780,239,1578,224,1501,217"/>
+<area shape="poly" title=" " alt="" coords="1321,217,1268,224,838,274,838,269,1268,219,1321,211"/>
+<area shape="rect" href="../../df/d4f/Task_8h.html" title=" " alt="" coords="1441,269,1607,295"/>
+<area shape="poly" title=" " alt="" coords="1417,212,1495,260,1492,264,1415,216"/>
+<area shape="poly" title=" " alt="" coords="1445,297,1124,343,1123,338,1444,292"/>
+<area shape="poly" title=" " alt="" coords="1521,296,1472,405,1467,402,1516,294"/>
+<area shape="poly" title=" " alt="" coords="939,371,508,424,507,419,938,365"/>
+<area shape="poly" title=" " alt="" coords="1100,365,1424,419,1424,424,1099,371"/>
+<area shape="rect" href="../../d3/db7/maps_8h.html" title=" " alt="" coords="2211,269,2282,295"/>
+<area shape="poly" title=" " alt="" coords="2312,216,2269,261,2265,258,2308,212"/>
+<area shape="poly" title=" " alt="" coords="2131,219,2213,261,2211,265,2129,224"/>
+<area shape="poly" title=" " alt="" coords="1064,224,824,269,823,264,1063,218"/>
+<area shape="poly" title=" " alt="" coords="1248,219,1458,264,1457,269,1247,224"/>
+<area shape="poly" title=" " alt="" coords="1245,219,1323,241,1356,254,1379,267,1408,299,1430,335,1445,371,1455,402,1450,404,1440,373,1425,338,1403,302,1376,271,1354,259,1322,246,1244,224"/>
+<area shape="poly" title=" " alt="" coords="1257,217,1268,219,1408,231,1528,237,1732,238,1937,241,2057,250,2198,267,2197,272,2056,255,1936,246,1732,243,1527,242,1408,237,1268,224,1256,223"/>
+<area shape="rect" href="../../d8/de7/Service_8h.html" title=" " alt="" coords="1187,269,1365,295"/>
+<area shape="poly" title=" " alt="" coords="1190,219,1249,259,1246,264,1187,224"/>
+<area shape="rect" href="../../d1/d3a/multicore_2BooleanSemaphore_8h.html" title=" " alt="" coords="899,269,1163,295"/>
+<area shape="poly" title=" " alt="" coords="1130,224,1063,264,1060,260,1127,219"/>
+<area shape="poly" title=" " alt="" coords="1033,295,1033,329,1028,329,1028,295"/>
+<area shape="poly" title=" " alt="" coords="1651,371,1494,419,1492,414,1649,365"/>
+<area shape="poly" title=" " alt="" coords="677,127,665,170,665,196,672,220,690,243,713,260,710,265,686,247,667,223,660,196,660,169,671,125"/>
+<area shape="poly" title=" " alt="" coords="737,123,816,145,860,160,901,179,962,218,1010,258,1007,262,959,222,899,184,858,165,815,150,736,129"/>
+<area shape="poly" title=" " alt="" coords="659,129,561,184,558,179,657,124"/>
+<area shape="poly" title=" " alt="" coords="560,211,706,262,704,267,558,217"/>
+<area shape="poly" title=" " alt="" coords="300,213,442,403,438,406,296,216"/>
+<area shape="poly" title=" " alt="" coords="352,211,392,219,667,264,666,270,392,224,351,217"/>
+<area shape="poly" title=" " alt="" coords="326,211,573,284,744,328,920,365,1066,388,1210,405,1424,423,1423,428,1210,410,1065,393,920,371,743,333,572,289,324,217"/>
+<area shape="poly" title=" " alt="" coords="312,366,417,408,415,413,310,370"/>
+<area shape="poly" title=" " alt="" coords="1770,206,1985,219,2938,273,2938,278,1985,224,1770,211"/>
+<area shape="poly" title=" " alt="" coords="1590,217,1527,224,1207,250,887,272,838,276,837,271,886,267,1207,245,1526,219,1589,212"/>
+<area shape="poly" title=" " alt="" coords="782,215,763,258,758,256,777,213"/>
+<area shape="poly" title=" " alt="" coords="2964,219,3012,258,3008,263,2960,224"/>
+</map>
+</div>
+</div>
+<p><a href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a832439084ea25145fd3b2894160a520b" id="r_a832439084ea25145fd3b2894160a520b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832439084ea25145fd3b2894160a520b">selectNextAlgorithmicStep</a> ()</td></tr>
+<tr class="memdesc:a832439084ea25145fd3b2894160a520b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decide which step to run next.  <br /></td></tr>
+<tr class="separator:a832439084ea25145fd3b2894160a520b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bf1a12c5c98ddec5b65e07fe74cabe" id="r_ac6bf1a12c5c98ddec5b65e07fe74cabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6bf1a12c5c98ddec5b65e07fe74cabe">step</a> ()</td></tr>
+<tr class="separator:ac6bf1a12c5c98ddec5b65e07fe74cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main routine of the SPH code.  <br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5e0c560fe19fd1cf2f94b84de758afc3" id="r_a5e0c560fe19fd1cf2f94b84de758afc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e0c560fe19fd1cf2f94b84de758afc3">_log</a> (&quot;::&quot;)</td></tr>
+<tr class="separator:a5e0c560fe19fd1cf2f94b84de758afc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee3b4d370625e625e5cc97ae7baf11c" id="r_a4ee3b4d370625e625e5cc97ae7baf11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ee3b4d370625e625e5cc97ae7baf11c">timePerMeshSweepMeasurement</a></td></tr>
+<tr class="separator:a4ee3b4d370625e625e5cc97ae7baf11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2148d33ba56140f338949ab306b36df6" id="r_a2148d33ba56140f338949ab306b36df6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2148d33ba56140f338949ab306b36df6">gridConstructionMeasurement</a></td></tr>
+<tr class="separator:a2148d33ba56140f338949ab306b36df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80798c8a23f81622e1e525b7c38cfc95" id="r_a80798c8a23f81622e1e525b7c38cfc95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80798c8a23f81622e1e525b7c38cfc95">timeStepMeasurement</a></td></tr>
+<tr class="separator:a80798c8a23f81622e1e525b7c38cfc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd98dca810d0b94ebc603388f7b74ea8" id="r_abd98dca810d0b94ebc603388f7b74ea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd98dca810d0b94ebc603388f7b74ea8">plotMeasurement</a></td></tr>
+<tr class="separator:abd98dca810d0b94ebc603388f7b74ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main routine of the SPH code. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">530</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00552">tarch::mpi::Rank::abort()</a>, <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00126">tarch::tests::TreeTestCaseCollection::addTestCase()</a>, <a class="el" href="../../d6/da8/tarch_2logging_2Statistics_8cpp_source.html#l00068">tarch::logging::Statistics::clear()</a>, <a class="el" href="../../d1/d93/Measurement_8cpp_source.html#l00058">tarch::timing::Measurement::getAccumulatedValue()</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00074">tarch::timing::Watch::getCalendarTime()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, <a class="el" href="../../d6/da8/tarch_2logging_2Statistics_8cpp_source.html#l00016">tarch::logging::Statistics::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d2/d57/TestCase_8cpp_source.html#l00011">tarch::tests::TestCase::getNumberOfErrors()</a>, <a class="el" href="../../d6/d7c/exahype2_2UnitTests_8cpp_source.html#l00022">exahype2::getUnitTests()</a>, <a class="el" href="../../da/d63/peano4_2UnitTests_8cpp_source.html#l00013">peano4::getUnitTests()</a>, <a class="el" href="../../df/d42/tarch_2UnitTests_8cpp_source.html#l00017">tarch::getUnitTests()</a>, <a class="el" href="../../d5/dc4/toolbox_2blockstructured_2UnitTests_8cpp_source.html#l00010">toolbox::blockstructured::getUnitTests()</a>, <a class="el" href="../../d1/d93/Measurement_8cpp_source.html#l00066">tarch::timing::Measurement::getValue()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00055">gridConstructionMeasurement</a>, <a class="el" href="../../d9/df3/NonCriticalAssertions_8cpp_source.html#l00053">tarch::initNonCriticalAssertionEnvironment()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00418">tarch::mpi::Rank::isGlobalMaster()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00464">logError</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00125">OTTER_FINALISE</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00124">OTTER_INITIALISE</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00057">plotMeasurement</a>, <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00056">tarch::tests::TreeTestCaseCollection::run()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00068">selectNextAlgorithmicStep()</a>, <a class="el" href="../../d1/d93/Measurement_8cpp_source.html#l00101">tarch::timing::Measurement::setValue()</a>, <a class="el" href="../../d9/df3/NonCriticalAssertions_8cpp_source.html#l00046">tarch::shutdownNonCriticalAssertionEnvironment()</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00048">tarch::timing::Watch::start()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00055">tarch::timing::Watch::stop()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00054">timePerMeshSweepMeasurement</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00056">timeStepMeasurement</a>, <a class="el" href="../../d1/d93/Measurement_8cpp_source.html#l00139">tarch::timing::Measurement::toString()</a>, and <a class="el" href="../../d6/da8/tarch_2logging_2Statistics_8cpp_source.html#l00169">tarch::logging::Statistics::writeToCSV()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+<area shape="rect" title="Main routine of the SPH code." alt="" coords="5,732,60,757"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ae5cdae803c2af01a8fea10991ac44f15" title="A proper abort in an MPI context has to use MPI_Abort." alt="" coords="131,5,302,31"/>
+<area shape="poly" title=" " alt="" coords="32,732,39,595,53,378,75,167,89,91,97,65,106,48,120,36,124,39,110,52,102,67,95,92,81,167,58,378,44,595,37,732"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a221ed543b82f7c82d46b5368cf99b040" title="Adds a new test case." alt="" coords="383,443,571,483"/>
+<area shape="poly" title=" " alt="" coords="31,732,34,648,45,523,54,459,67,400,84,353,106,321,134,301,161,287,187,280,214,278,241,281,269,290,327,321,340,333,348,346,354,374,358,402,364,415,375,428,382,434,379,438,371,432,360,418,353,403,349,375,343,348,336,336,324,326,267,295,240,287,214,283,188,285,163,292,137,306,110,325,89,355,72,402,59,460,50,524,40,648,37,732"/>
+<area shape="rect" href="../../d7/d06/classtarch_1_1logging_1_1Statistics.html#a60058131c2cb55ff23a491ede1a3a8a1" title=" " alt="" coords="127,106,306,146"/>
+<area shape="poly" title=" " alt="" coords="31,732,32,622,39,449,48,358,61,274,80,205,92,177,106,156,114,148,118,152,110,160,97,180,85,206,67,275,53,359,44,450,37,622,36,732"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#a04b26f8b2106b39857f28b810fd087e1" title=" " alt="" coords="115,170,318,210"/>
+<area shape="poly" title=" " alt="" coords="31,732,33,632,43,479,52,399,65,324,83,263,94,239,106,220,109,217,113,221,110,224,98,241,88,265,70,326,57,399,48,480,39,632,37,732"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a1beb62d9659cb240d2943fea0c7342f4" title="This method returns the elapsed calendar time between the start and stop command of the timer,..." alt="" coords="400,673,553,713"/>
+<area shape="poly" title=" " alt="" coords="46,756,72,783,90,796,109,806,169,827,220,837,243,836,268,831,324,806,335,798,341,789,348,768,355,745,372,723,386,713,389,717,375,727,359,747,353,769,346,791,339,802,327,811,270,836,244,842,219,842,168,832,107,811,87,801,69,787,42,759"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="937,1023,1107,1063"/>
+<area shape="poly" title=" " alt="" coords="37,758,38,863,46,1028,55,1115,68,1195,86,1261,97,1286,110,1306,125,1320,145,1333,197,1356,261,1373,332,1386,404,1394,473,1396,533,1394,579,1386,661,1359,722,1328,777,1287,845,1232,908,1166,992,1072,996,1075,912,1170,848,1236,780,1292,724,1332,664,1364,581,1391,533,1399,473,1402,403,1399,331,1391,260,1379,195,1361,143,1338,122,1324,106,1309,93,1289,81,1263,63,1196,50,1116,41,1029,32,864,31,758"/>
+<area shape="rect" href="../../d7/d06/classtarch_1_1logging_1_1Statistics.html#afa797bdb0be71bbe06dbe1359c0d2969" title="This is not the canonical realisation of singletons as I use it usually for stats in Peano." alt="" coords="127,335,306,375"/>
+<area shape="poly" title=" " alt="" coords="32,732,39,661,53,557,74,454,89,414,106,386,114,378,118,382,110,389,94,416,80,456,58,558,44,661,38,732"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="915,1196,1129,1221"/>
+<area shape="poly" title=" " alt="" coords="37,758,40,921,50,1188,59,1325,72,1446,89,1537,99,1567,110,1584,130,1599,157,1613,228,1637,317,1654,420,1662,529,1658,640,1641,695,1627,747,1609,798,1586,845,1558,885,1525,919,1485,947,1440,969,1393,999,1303,1014,1234,1019,1236,1004,1304,974,1395,951,1443,923,1488,889,1529,848,1563,800,1591,749,1614,696,1632,641,1646,530,1664,419,1667,317,1659,226,1642,155,1618,127,1603,106,1588,94,1569,84,1538,67,1447,54,1325,45,1188,34,922,31,758"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="395,737,558,777"/>
+<area shape="poly" title=" " alt="" coords="41,756,64,805,84,831,109,850,167,875,192,881,216,883,266,875,324,850,340,837,348,821,356,804,372,787,382,780,385,785,375,791,360,807,353,824,344,841,327,855,268,880,216,888,191,886,165,880,107,855,80,834,60,808,36,759"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a032d565b3670f9855380438add55dbfd" title=" " alt="" coords="136,514,297,554"/>
+<area shape="poly" title=" " alt="" coords="33,731,39,698,52,653,73,605,88,583,106,564,122,553,125,557,110,568,92,587,78,608,57,655,44,699,38,732"/>
+<area shape="rect" href="../../dd/d6c/namespaceexahype2.html#ab7f7575f22b7e7469896e386fafbf1f9" title="Please destroy after usage." alt="" coords="129,464,304,489"/>
+<area shape="poly" title=" " alt="" coords="31,732,33,688,43,625,52,591,65,558,83,527,106,500,116,493,119,497,110,504,87,530,70,560,57,593,48,626,38,688,36,732"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a3280be3718a894b8eff4fb301faa76a3" title="Please destroy after usage." alt="" coords="137,579,296,604"/>
+<area shape="poly" title=" " alt="" coords="35,731,58,674,79,642,106,615,123,605,125,609,110,619,83,645,63,677,40,733"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a090c6cb8e730a266ed1a2a8b11c99702" title="Please destroy after usage." alt="" coords="145,235,289,260"/>
+<area shape="poly" title=" " alt="" coords="32,732,35,642,46,506,55,435,68,369,85,315,106,278,130,259,134,264,110,281,90,317,73,371,61,436,51,507,40,642,37,732"/>
+<area shape="rect" href="../../d1/d28/namespacetoolbox_1_1blockstructured.html#ade45751355941726fa9042a483aad1df" title="Please destroy after usage." alt="" coords="127,399,307,439"/>
+<area shape="poly" title=" " alt="" coords="33,731,57,587,78,505,91,472,106,450,113,443,117,447,110,453,96,475,83,506,62,589,38,732"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#a82e51f7bf4c1869209c0dcaddb21a2bb" title=" " alt="" coords="115,629,318,669"/>
+<area shape="poly" title=" " alt="" coords="44,730,71,704,107,678,120,672,123,676,109,683,74,708,48,733"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a8a2a78ea75eca588f15a8ec1c0dc45d9" title="Register the assertion tag from the global communicator." alt="" coords="108,693,325,733"/>
+<area shape="poly" title=" " alt="" coords="60,737,94,731,95,737,61,743"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3356d19b2cfaa2dc5142dc4cbab56a9a" title="Is this node the global master process, i.e." alt="" coords="121,922,312,962"/>
+<area shape="poly" title=" " alt="" coords="39,757,46,786,60,825,81,866,110,901,126,913,122,917,106,905,76,869,55,827,41,788,34,758"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a29de05636580ab976a36a1a205c30575" title="Runs all test cases assigned." alt="" coords="123,986,311,1026"/>
+<area shape="poly" title=" " alt="" coords="37,758,40,799,51,857,72,919,89,947,110,972,114,976,111,980,106,976,85,950,68,921,45,858,35,800,32,758"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a832439084ea25145fd3b2894160a520b" title="Decide which step to run next." alt="" coords="379,393,575,419"/>
+<area shape="poly" title=" " alt="" coords="32,731,38,601,51,396,61,292,73,199,88,130,97,106,106,92,133,71,160,57,186,50,213,48,240,52,268,61,327,92,363,120,393,156,417,195,436,237,462,317,475,379,469,380,457,318,431,239,412,198,388,159,359,124,324,96,266,66,239,57,213,53,187,55,162,62,136,76,110,96,101,109,93,131,79,200,66,292,57,396,43,601,37,732"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#abee891470c44b923558fa39190ec156f" title="Set the value." alt="" coords="375,1451,578,1491"/>
+<area shape="poly" title=" " alt="" coords="37,757,43,890,58,1100,80,1303,94,1375,102,1398,110,1412,126,1424,150,1434,212,1450,287,1460,362,1466,361,1471,286,1465,211,1455,148,1439,123,1429,106,1416,97,1401,89,1376,74,1303,52,1101,38,891,32,758"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a5ce898348f7990d617b31c81d62802af" title="peano4::shutdownParallelEnvironment()." alt="" coords="117,757,316,797"/>
+<area shape="poly" title=" " alt="" coords="61,747,104,754,103,760,60,752"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a882e3950fab71e4f369f1d9b4de37ca6" title="(Re)Start the Timer" alt="" coords="400,801,553,841"/>
+<area shape="poly" title=" " alt="" coords="38,757,45,818,59,903,81,986,94,1016,110,1036,137,1055,164,1069,191,1077,217,1080,243,1077,269,1069,296,1055,324,1036,342,1016,350,995,352,973,350,949,348,900,355,875,371,851,386,839,390,843,375,854,360,877,353,901,355,949,357,973,356,996,347,1019,327,1040,299,1060,271,1074,244,1082,217,1085,190,1082,162,1074,135,1060,106,1040,90,1019,76,987,54,904,40,819,33,758"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="191,1101,242,1127"/>
+<area shape="poly" title=" " alt="" coords="38,757,45,825,59,922,81,1018,94,1055,110,1080,125,1092,142,1101,178,1110,177,1115,140,1106,122,1097,106,1084,90,1057,76,1019,54,923,40,825,32,758"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a727c6c99986b9680b2ba511dbcfa7e9e" title="Stop timer." alt="" coords="400,1337,553,1377"/>
+<area shape="poly" title=" " alt="" coords="38,757,45,833,60,946,82,1060,95,1106,110,1138,138,1174,170,1206,207,1235,245,1260,323,1301,394,1330,392,1335,321,1306,242,1265,203,1239,167,1210,134,1177,106,1141,90,1107,77,1061,55,947,40,833,32,758"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#ab80a916e817ab6cf7d3824fe853088a3" title=" " alt="" coords="115,1534,318,1574"/>
+<area shape="poly" title=" " alt="" coords="37,757,43,907,57,1149,79,1384,94,1468,102,1497,110,1514,120,1524,117,1528,106,1517,97,1499,88,1469,74,1384,52,1149,38,908,32,758"/>
+<area shape="rect" href="../../d7/d06/classtarch_1_1logging_1_1Statistics.html#a75a2d3245350032d8f5e8616b3493d8e" title="Write data to csv file." alt="" coords="387,1515,566,1555"/>
+<area shape="poly" title=" " alt="" coords="37,757,43,900,56,1128,66,1245,78,1348,93,1427,101,1453,110,1468,121,1475,143,1482,210,1497,374,1521,373,1526,209,1502,142,1487,119,1480,106,1472,96,1455,88,1428,73,1349,61,1245,51,1128,37,900,32,758"/>
+<area shape="poly" title=" " alt="" coords="304,470,369,466,369,472,304,475"/>
+<area shape="poly" title=" " alt="" coords="295,578,324,564,340,548,347,530,355,511,372,493,380,488,383,492,375,497,360,514,352,532,344,551,327,568,297,583"/>
+<area shape="poly" title=" " alt="" coords="290,256,310,264,327,277,342,297,350,316,352,354,355,392,361,410,375,428,381,433,378,437,371,432,357,413,349,393,347,355,344,317,337,299,323,281,307,269,288,260"/>
+<area shape="poly" title=" " alt="" coords="307,432,369,443,369,448,306,437"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ab3cd3664dd66aa6062b2e3feab03171e" title=" " alt="" coords="411,508,543,533"/>
+<area shape="poly" title=" " alt="" coords="301,626,324,613,339,597,347,579,355,561,372,544,396,531,399,536,375,548,359,564,352,581,343,600,327,617,303,631"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ab501a52fc09ea23bb061edbbfbcc89aa" title="Return a Free Tag." alt="" coords="383,558,570,598"/>
+<area shape="poly" title=" " alt="" coords="304,690,324,679,339,662,347,644,355,626,372,608,380,603,383,607,375,612,360,629,352,646,344,665,327,683,306,695"/>
+<area shape="poly" title=" " alt="" coords="565,417,582,429,606,464,615,497,616,531,611,564,606,598,604,631,611,666,630,702,654,729,679,746,704,757,731,765,787,780,817,794,848,816,898,864,942,917,1004,1010,1000,1013,937,920,894,868,845,820,814,799,785,785,729,770,703,762,676,751,651,733,626,705,606,668,599,632,600,597,606,563,610,531,610,498,601,466,578,433,562,421"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a85eb3c28124a032792ec6451adf2bad3" title="Return statistics object for primary spacetree." alt="" coords="637,473,837,513"/>
+<area shape="poly" title=" " alt="" coords="542,416,581,429,605,443,629,457,651,466,649,471,627,462,603,447,579,434,541,421"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="637,830,837,870"/>
+<area shape="poly" title=" " alt="" coords="566,417,582,430,610,472,622,513,622,553,616,594,608,635,605,677,611,721,630,767,655,797,685,820,682,824,651,801,626,770,605,722,600,677,603,634,611,593,617,553,617,513,606,474,578,433,563,421"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ae444be0fcfa265e15282951c1033322e" title=" " alt="" coords="638,651,837,691"/>
+<area shape="poly" title=" " alt="" coords="564,417,582,429,601,456,609,482,610,509,607,535,604,561,605,587,612,612,630,638,634,641,630,645,626,641,608,614,600,588,599,561,602,535,605,509,604,483,596,458,578,433,561,421"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a3c78d84459df151a063cd1d26edadc76" title=" " alt="" coords="628,587,847,627"/>
+<area shape="poly" title=" " alt="" coords="560,417,582,429,601,452,609,475,615,498,630,523,660,553,692,577,689,582,656,557,626,526,611,500,604,476,596,454,578,433,557,421"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="681,308,793,333"/>
+<area shape="poly" title=" " alt="" coords="505,391,561,367,627,343,667,332,669,338,629,349,563,372,507,396"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8a2b782cd625b91d5fdfb97b56f18caa" title="The user tells the set which program step to use, i.e." alt="" coords="653,358,822,398"/>
+<area shape="poly" title=" " alt="" coords="575,393,639,386,639,391,575,398"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="701,423,774,448"/>
+<area shape="poly" title=" " alt="" coords="575,414,688,427,687,432,575,420"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#a330c69208e5ce8528313b3ac6828e8af" title=" " alt="" coords="923,473,1121,513"/>
+<area shape="poly" title=" " alt="" coords="838,490,909,490,909,495,838,495"/>
+<area shape="poly" title=" " alt="" coords="836,626,849,638,859,654,868,675,877,726,881,787,881,852,881,980,886,1034,897,1074,917,1108,942,1139,994,1186,990,1190,938,1142,913,1111,892,1076,881,1035,876,981,876,852,876,787,872,727,862,677,855,657,845,641,832,630"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="895,819,1149,844"/>
+<area shape="poly" title=" " alt="" coords="824,625,848,637,883,667,926,713,1004,806,1000,809,922,717,880,671,845,642,822,630"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a69937a8c69cf8d2044f35f07dcf7ab9e" title=" " alt="" coords="922,562,1122,602"/>
+<area shape="poly" title=" " alt="" coords="847,595,908,589,908,595,847,600"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a9432e498ccba78dd6a5d832329b53f3c" title=" " alt="" coords="922,626,1122,666"/>
+<area shape="poly" title=" " alt="" coords="847,620,909,628,908,633,847,625"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="701,1423,774,1448"/>
+<area shape="poly" title=" " alt="" coords="578,1455,687,1440,687,1445,578,1460"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="650,1472,825,1497"/>
+<area shape="poly" title=" " alt="" coords="578,1474,636,1477,636,1482,578,1479"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ac590971491dd848132ae5c9e3e73140b" title=" " alt="" coords="373,623,580,648"/>
+<area shape="poly" title=" " alt="" coords="305,754,324,743,340,723,347,702,354,680,372,659,382,652,385,656,375,663,358,682,352,703,345,725,327,747,308,759"/>
+<area shape="poly" title=" " alt="" coords="241,1101,284,1076,306,1058,323,1037,342,994,348,953,346,915,340,877,335,839,335,802,346,763,371,723,386,710,390,714,375,726,350,765,340,802,340,839,345,876,352,914,354,954,347,995,328,1039,310,1062,288,1080,244,1106"/>
+<area shape="poly" title=" " alt="" coords="242,1110,282,1103,304,1096,324,1085,339,1069,346,1050,354,1032,372,1016,417,1001,476,993,547,991,625,993,785,1007,924,1025,923,1031,784,1012,624,999,547,996,477,998,418,1006,375,1020,358,1035,351,1052,343,1071,327,1089,306,1101,284,1108,243,1115"/>
+<area shape="poly" title=" " alt="" coords="239,1125,281,1157,327,1200,341,1222,349,1241,357,1257,375,1272,414,1290,455,1303,497,1312,541,1317,628,1317,715,1307,796,1289,870,1267,981,1224,982,1229,872,1272,798,1294,716,1312,629,1323,540,1322,497,1317,454,1308,412,1295,372,1276,353,1261,344,1243,337,1224,323,1204,278,1161,235,1129"/>
+<area shape="poly" title=" " alt="" coords="241,1101,284,1076,305,1058,323,1037,339,1003,345,971,345,940,341,910,339,880,340,849,350,819,371,787,382,778,385,781,375,790,355,821,345,850,344,879,347,909,350,939,351,971,344,1004,328,1039,309,1062,287,1080,244,1106"/>
+<area shape="poly" title=" " alt="" coords="242,1111,283,1105,305,1097,324,1085,335,1072,342,1059,347,1030,352,1001,359,986,372,972,398,953,422,940,469,931,520,927,548,923,579,914,679,873,681,878,581,919,549,928,520,933,470,936,424,945,400,957,375,976,363,989,357,1003,352,1031,347,1061,340,1075,327,1089,307,1102,285,1110,243,1117"/>
+<area shape="poly" title=" " alt="" coords="226,1126,279,1239,323,1315,375,1387,404,1416,435,1441,432,1445,401,1420,371,1390,318,1318,274,1241,221,1128"/>
+<area shape="poly" title=" " alt="" coords="242,1111,284,1103,305,1094,323,1080,342,1052,350,1024,350,996,347,968,343,939,344,910,352,880,371,851,386,839,389,843,375,854,357,883,349,911,349,939,352,967,356,996,355,1025,347,1054,327,1084,308,1099,286,1108,243,1116"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47a6f4a7920541f3d68afcc3a8c3c72f" title=" " alt="" coords="385,1030,568,1070"/>
+<area shape="poly" title=" " alt="" coords="242,1105,381,1071,382,1076,243,1111"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="389,1158,564,1198"/>
+<area shape="poly" title=" " alt="" coords="243,1117,382,1152,381,1157,242,1123"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="391,1222,562,1262"/>
+<area shape="poly" title=" " alt="" coords="237,1125,296,1165,374,1208,391,1215,389,1220,372,1212,294,1169,234,1129"/>
+<area shape="poly" title=" " alt="" coords="234,1125,278,1167,328,1224,342,1251,349,1274,357,1295,375,1316,392,1328,389,1332,372,1320,353,1297,344,1275,337,1253,323,1228,275,1171,231,1129"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#a572ffc6edabe32f97768f80cc1005129" title=" " alt="" coords="389,865,564,905"/>
+<area shape="poly" title=" " alt="" coords="242,1111,284,1103,305,1094,323,1080,338,1061,345,1042,347,1003,349,963,357,942,371,922,385,910,388,914,375,925,361,945,355,964,353,1004,350,1043,343,1064,327,1084,308,1098,285,1108,243,1116"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="377,1094,577,1134"/>
+<area shape="poly" title=" " alt="" coords="242,1111,362,1111,362,1117,242,1117"/>
+<area shape="poly" title=" " alt="" coords="541,1091,627,1066,705,1055,783,1047,924,1041,924,1046,784,1053,705,1060,629,1071,543,1096"/>
+<area shape="poly" title=" " alt="" coords="577,1129,935,1191,934,1196,576,1134"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a8103e3890b4eda9a1313e77158edd662" title="Run through the set of unanswered questions and, well, answer them." alt="" coords="637,1081,837,1121"/>
+<area shape="poly" title=" " alt="" coords="577,1106,624,1104,624,1109,577,1112"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#aa374695492af7dcea21449149001db89" title=" " alt="" coords="647,1196,827,1221"/>
+<area shape="poly" title=" " alt="" coords="551,1132,581,1144,605,1159,629,1174,670,1190,668,1195,627,1179,603,1164,579,1148,549,1137"/>
+<area shape="poly" title=" " alt="" coords="837,1078,923,1060,925,1066,838,1083"/>
+<area shape="poly" title=" " alt="" coords="797,1118,848,1137,978,1188,976,1193,846,1142,795,1123"/>
+<area shape="poly" title=" " alt="" coords="758,1078,995,852,999,856,762,1082"/>
+<area shape="poly" title=" " alt="" coords="828,1206,901,1206,901,1211,828,1211"/>
+<area shape="poly" title=" " alt="" coords="566,1549,632,1554,704,1551,778,1537,813,1525,845,1508,881,1480,912,1446,939,1409,961,1369,994,1293,1012,1234,1017,1235,999,1295,966,1372,943,1412,917,1450,885,1484,848,1512,815,1530,779,1543,705,1557,632,1559,566,1554"/>
+<area shape="poly" title=" " alt="" coords="566,1515,657,1497,658,1503,567,1521"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a832439084ea25145fd3b2894160a520b" name="a832439084ea25145fd3b2894160a520b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832439084ea25145fd3b2894160a520b">&#9670;&#160;</a></span>selectNextAlgorithmicStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> selectNextAlgorithmicStep </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decide which step to run next. </p>
+<h2><a class="anchor" id="autotoc_md746"></a>
+Control of the parallel grid construction</h2>
+<dl class="section return"><dt>Returns</dt><dd>continues to run </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00665">peano4::parallel::SpacetreeSet::getGridStatistics()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00029">peano4::parallel::SpacetreeSet::getInstance()</a>, <a class="el" href="../../d2/d00/GridStatistics_8cpp_source.html#l00095">peano4::grid::GridStatistics::getMinH()</a>, <a class="el" href="../../d9/df3/NonCriticalAssertions_8cpp_source.html#l00093">tarch::hasNonCriticalAssertionBeenViolated()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00464">logError</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00440">logWarning</a>, <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00415">peano4::parallel::Node::setNextProgramStep()</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_cgraph.png" border="0" usemap="#ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_cgraph" alt=""/></div>
+<map name="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_cgraph" id="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_cgraph">
+<area shape="rect" title="Decide which step to run next." alt="" coords="5,237,201,262"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a85eb3c28124a032792ec6451adf2bad3" title="Return statistics object for primary spacetree." alt="" coords="259,5,459,45"/>
+<area shape="poly" title=" " alt="" coords="108,235,127,199,158,151,198,99,248,55,257,49,260,54,251,59,202,103,162,154,132,202,113,238"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="274,69,443,109"/>
+<area shape="poly" title=" " alt="" coords="114,235,168,179,206,147,248,119,262,112,264,117,251,124,209,151,171,183,118,238"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="259,133,459,173"/>
+<area shape="poly" title=" " alt="" coords="130,234,248,183,271,175,273,180,250,188,132,239"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ae444be0fcfa265e15282951c1033322e" title=" " alt="" coords="259,197,458,237"/>
+<area shape="poly" title=" " alt="" coords="201,234,245,229,246,234,202,240"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a3c78d84459df151a063cd1d26edadc76" title=" " alt="" coords="249,261,468,301"/>
+<area shape="poly" title=" " alt="" coords="202,259,236,263,236,269,201,264"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="303,326,415,351"/>
+<area shape="poly" title=" " alt="" coords="131,260,185,285,250,311,290,322,289,327,248,316,183,290,129,265"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8a2b782cd625b91d5fdfb97b56f18caa" title="The user tells the set which program step to use, i.e." alt="" coords="274,376,443,416"/>
+<area shape="poly" title=" " alt="" coords="119,260,174,309,211,337,251,362,265,369,263,373,248,366,208,342,170,313,116,264"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="322,441,395,466"/>
+<area shape="poly" title=" " alt="" coords="113,261,132,294,163,339,203,386,251,426,279,439,309,446,307,451,277,444,248,430,199,390,158,343,128,297,109,263"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#a330c69208e5ce8528313b3ac6828e8af" title=" " alt="" coords="544,5,743,45"/>
+<area shape="poly" title=" " alt="" coords="459,23,530,23,530,28,459,28"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="516,190,771,215"/>
+<area shape="poly" title=" " alt="" coords="432,259,467,247,491,235,515,224,545,216,546,221,517,229,493,240,469,252,434,264"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="537,239,750,265"/>
+<area shape="poly" title=" " alt="" coords="468,267,522,262,523,267,468,273"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a69937a8c69cf8d2044f35f07dcf7ab9e" title=" " alt="" coords="543,289,743,329"/>
+<area shape="poly" title=" " alt="" coords="468,289,530,296,529,301,468,295"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a9432e498ccba78dd6a5d832329b53f3c" title=" " alt="" coords="543,353,743,393"/>
+<area shape="poly" title=" " alt="" coords="434,299,469,312,493,326,517,339,539,347,537,352,515,344,491,331,467,317,432,304"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_icgraph.png" border="0" usemap="#ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_icgraph" alt=""/></div>
+<map name="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_icgraph" id="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_a832439084ea25145fd3b2894160a520b_icgraph">
+<area shape="rect" title="Decide which step to run next." alt="" coords="108,5,304,31"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6bf1a12c5c98ddec5b65e07fe74cabe" name="ac6bf1a12c5c98ddec5b65e07fe74cabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bf1a12c5c98ddec5b65e07fe74cabe">&#9670;&#160;</a></span>step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> step </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[Additional mesh sweep case step]</p>
+<p>[Additional mesh sweep case step]</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">254</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="#a5e0c560fe19fd1cf2f94b84de758afc3">_log</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00113">otter::phase::create_grid</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00115">otter::phase::create_grid_converge</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00114">otter::phase::create_grid_no_refine</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00074">tarch::timing::Watch::getCalendarTime()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00420">peano4::parallel::Node::getCurrentProgramStep()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00029">peano4::parallel::SpacetreeSet::getInstance()</a>, <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00109">tarch::logging::LogFilter::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00055">gridConstructionMeasurement</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00110">otter::phase::init</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00128">OTTER_DEFINE_TASK</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00144">OTTER_PHASE_SWITCH</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00136">OTTER_TASK_END</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00135">OTTER_TASK_START</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00141">OTTER_TASK_WAIT_IMPLICIT</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00111">otter::phase::plot</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00057">plotMeasurement</a>, <a class="el" href="../../d1/d93/Measurement_8cpp_source.html#l00101">tarch::timing::Measurement::setValue()</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00048">tarch::timing::Watch::start()</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00106">otter::label::step</a>, <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00055">tarch::timing::Watch::stop()</a>, <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00114">tarch::logging::LogFilter::switchProgramPhase()</a>, <a class="el" href="../../d9/d7e/otter_8h_source.html#l00112">otter::phase::timestep</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00056">timeStepMeasurement</a>, and <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00461">peano4::parallel::SpacetreeSet::traverse()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_cgraph.png" border="0" usemap="#ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_cgraph" alt=""/></div>
+<map name="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_cgraph" id="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,1971,56,1997"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a1beb62d9659cb240d2943fea0c7342f4" title="This method returns the elapsed calendar time between the start and stop command of the timer,..." alt="" coords="129,5,282,45"/>
+<area shape="poly" title=" " alt="" coords="29,1971,32,1615,43,984,52,656,64,368,81,156,90,90,102,56,115,43,119,47,106,59,96,91,86,156,70,368,57,656,48,984,38,1615,35,1971"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47a6f4a7920541f3d68afcc3a8c3c72f" title=" " alt="" coords="114,69,297,109"/>
+<area shape="poly" title=" " alt="" coords="29,1971,33,1627,44,1020,54,704,66,427,82,223,91,159,102,127,111,116,115,120,106,129,96,161,87,224,72,427,59,704,50,1020,38,1627,35,1971"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="1030,1813,1199,1853"/>
+<area shape="poly" title=" " alt="" coords="35,1970,59,1926,78,1903,103,1886,131,1874,157,1868,202,1869,249,1878,307,1885,407,1894,492,1907,637,1936,707,1946,780,1948,863,1941,959,1920,992,1909,1023,1893,1076,1859,1079,1864,1025,1898,994,1914,961,1925,864,1946,780,1954,706,1951,637,1941,491,1912,406,1899,306,1891,248,1883,202,1874,157,1873,133,1879,105,1890,82,1907,63,1929,39,1972"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="105,1900,305,1940"/>
+<area shape="poly" title=" " alt="" coords="55,1970,103,1950,124,1942,126,1947,105,1954,57,1975"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="118,1964,293,2004"/>
+<area shape="poly" title=" " alt="" coords="56,1981,104,1981,104,1987,56,1987"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="1008,618,1221,643"/>
+<area shape="poly" title=" " alt="" coords="30,1971,34,1865,45,1680,66,1452,82,1333,101,1217,123,1077,135,955,144,845,156,744,177,647,193,598,213,549,238,499,269,448,307,394,353,337,421,262,492,198,564,147,601,127,639,112,677,101,716,94,756,93,796,97,836,106,877,121,919,142,962,170,987,191,1010,215,1048,271,1075,332,1094,396,1106,459,1113,517,1117,604,1111,604,1108,517,1101,460,1089,397,1070,334,1043,273,1006,219,984,195,958,174,917,147,875,126,835,111,795,102,755,98,717,100,679,106,641,117,604,132,567,152,495,202,425,266,357,340,312,397,274,450,243,502,218,552,198,600,182,648,162,745,150,846,141,955,128,1078,107,1218,87,1334,72,1453,50,1680,39,1865,35,1971"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="124,2028,287,2068"/>
+<area shape="poly" title=" " alt="" coords="57,1993,105,2014,126,2021,124,2026,103,2018,55,1998"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="120,2092,291,2132"/>
+<area shape="poly" title=" " alt="" coords="41,1996,66,2036,84,2059,106,2078,114,2083,111,2088,102,2082,80,2062,61,2040,36,1999"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#abee891470c44b923558fa39190ec156f" title="Set the value." alt="" coords="104,2156,307,2196"/>
+<area shape="poly" title=" " alt="" coords="37,1996,44,2026,56,2065,77,2107,106,2142,111,2146,108,2151,102,2146,72,2109,52,2067,38,2028,32,1997"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a882e3950fab71e4f369f1d9b4de37ca6" title="(Re)Start the Timer" alt="" coords="129,2220,282,2260"/>
+<area shape="poly" title=" " alt="" coords="35,1996,38,2037,48,2093,70,2153,86,2181,106,2206,118,2216,115,2220,102,2210,81,2184,65,2156,43,2094,33,2037,30,1997"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a727c6c99986b9680b2ba511dbcfa7e9e" title="Stop timer." alt="" coords="129,2284,282,2324"/>
+<area shape="poly" title=" " alt="" coords="36,1997,59,2137,80,2218,92,2249,106,2270,118,2281,115,2285,102,2274,88,2252,75,2220,54,2139,31,1997"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#a572ffc6edabe32f97768f80cc1005129" title=" " alt="" coords="118,2348,293,2388"/>
+<area shape="poly" title=" " alt="" coords="36,1996,42,2066,55,2168,76,2268,90,2308,106,2334,110,2338,106,2342,102,2338,85,2310,71,2270,50,2169,37,2067,30,1997"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="105,1229,305,1269"/>
+<area shape="poly" title=" " alt="" coords="32,1971,194,1282,199,1283,38,1972"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="469,2189,543,2214"/>
+<area shape="poly" title=" " alt="" coords="307,2182,456,2195,456,2200,306,2187"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="419,2139,593,2165"/>
+<area shape="poly" title=" " alt="" coords="307,2165,405,2157,405,2163,307,2171"/>
+<area shape="poly" title=" " alt="" coords="213,1269,228,1334,255,1428,298,1533,325,1584,357,1632,435,1729,470,1766,506,1797,546,1824,590,1847,706,1892,775,1910,831,1913,888,1906,959,1892,1013,1877,1062,1857,1064,1862,1015,1882,961,1897,889,1911,831,1919,774,1915,705,1897,588,1852,543,1828,503,1801,467,1770,431,1733,353,1635,320,1587,293,1535,250,1430,222,1336,208,1270"/>
+<area shape="poly" title=" " alt="" coords="205,1229,216,1094,241,893,261,789,285,694,316,617,333,588,353,567,396,537,443,515,492,499,543,490,595,485,648,486,754,499,854,523,945,553,1021,584,1078,610,1076,614,1019,589,943,558,853,528,753,504,648,491,595,491,543,495,493,504,445,520,399,542,356,571,338,592,320,620,290,695,266,790,246,894,221,1095,210,1229"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a8103e3890b4eda9a1313e77158edd662" title="Run through the set of unanswered questions and, well, answer them." alt="" coords="406,872,606,912"/>
+<area shape="poly" title=" " alt="" coords="219,1228,276,1151,353,1056,474,920,478,924,357,1059,281,1155,223,1231"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#aa374695492af7dcea21449149001db89" title=" " alt="" coords="416,351,596,377"/>
+<area shape="poly" title=" " alt="" coords="206,1229,222,1086,253,866,274,750,297,642,324,550,352,484,377,451,407,423,467,381,470,385,410,427,381,455,357,487,329,552,303,643,279,751,259,867,228,1086,211,1229"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aa07efe0ea318000757b2acd065b0a8ba" title=" " alt="" coords="406,1325,606,1365"/>
+<area shape="poly" title=" " alt="" coords="248,1267,299,1290,355,1311,394,1321,392,1327,354,1316,297,1295,246,1272"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8a93c14d54c30233541e6a10da2c0bde" title="You should call this operation only on the ranks &gt;0 to find out whether you should do more iteration/..." alt="" coords="421,581,591,621"/>
+<area shape="poly" title=" " alt="" coords="203,1229,206,1133,212,1064,224,987,242,905,268,823,305,744,353,673,384,645,420,624,423,629,387,649,357,676,309,747,273,825,247,907,229,988,218,1065,211,1133,209,1229"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a18d9a6ada9314cb6a982fc1b5b2b82c6" title="This operation should be called pretty close towards the end of a traversal." alt="" coords="406,1069,606,1109"/>
+<area shape="poly" title=" " alt="" coords="222,1227,277,1173,313,1143,353,1119,392,1104,394,1109,356,1124,316,1148,280,1177,226,1231"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8184e84956133244ca1f9ef348516956" title=" " alt="" coords="393,687,619,727"/>
+<area shape="poly" title=" " alt="" coords="209,1228,226,1163,255,1069,297,962,323,909,352,859,379,822,409,788,467,734,471,738,413,792,383,825,357,861,328,911,302,964,260,1071,231,1165,214,1230"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a6cbbb95e899ec85ae0473cf42c00f176" title=" " alt="" coords="405,1133,607,1173"/>
+<area shape="poly" title=" " alt="" coords="246,1227,297,1204,354,1183,391,1172,392,1178,355,1188,299,1209,248,1232"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a994c91ffe58385d3c06f4d921bf43e81" title=" " alt="" coords="355,1197,657,1237"/>
+<area shape="poly" title=" " alt="" coords="305,1236,341,1232,341,1238,306,1241"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a0fa99ca041b01b58cf60f5b738305913" title=" " alt="" coords="363,1261,649,1301"/>
+<area shape="poly" title=" " alt="" coords="306,1257,350,1262,349,1267,305,1263"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="419,1389,593,1429"/>
+<area shape="poly" title=" " alt="" coords="226,1268,280,1322,316,1351,356,1375,406,1393,404,1398,354,1380,313,1355,277,1326,222,1272"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="371,1453,641,1493"/>
+<area shape="poly" title=" " alt="" coords="218,1268,239,1305,269,1352,308,1400,356,1439,367,1445,364,1450,353,1444,305,1403,265,1355,234,1308,214,1271"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="401,1518,611,1543"/>
+<area shape="poly" title=" " alt="" coords="214,1269,230,1318,259,1382,300,1449,326,1478,356,1503,389,1519,386,1524,353,1508,323,1482,296,1452,254,1385,225,1320,209,1270"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af2db839ebe2f009b8a85bfe328eb6fa0" title="Copy the data from a splitting tree onto its new workers." alt="" coords="381,1567,631,1622"/>
+<area shape="poly" title=" " alt="" coords="213,1269,227,1326,254,1403,273,1444,296,1484,324,1521,356,1553,371,1563,367,1567,353,1557,320,1524,292,1487,268,1446,249,1405,222,1327,208,1270"/>
+<area shape="poly" title=" " alt="" coords="543,910,617,948,706,985,745,995,780,997,843,994,873,994,902,999,932,1012,962,1037,982,1062,1000,1096,1031,1184,1057,1291,1077,1409,1103,1638,1114,1800,1109,1800,1098,1639,1072,1410,1052,1292,1026,1186,995,1099,977,1065,958,1041,929,1017,900,1004,872,999,843,999,780,1003,744,1000,705,991,615,953,541,915"/>
+<area shape="poly" title=" " alt="" coords="526,870,655,737,677,705,687,692,704,679,756,661,829,648,994,633,995,638,830,654,757,667,707,684,691,695,681,708,659,740,530,874"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="705,694,960,719"/>
+<area shape="poly" title=" " alt="" coords="524,870,598,800,649,762,704,730,727,721,729,726,706,734,652,766,601,804,528,874"/>
+<area shape="rect" href="../../df/d06/structpeano4_1_1grid_1_1AutomatonState.html#af987ccce2206d77462a6a652be654335" title=" " alt="" coords="724,744,941,784"/>
+<area shape="poly" title=" " alt="" coords="542,869,616,832,704,794,729,785,731,790,706,798,618,836,544,874"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a59bed030f4816c88a02ff326e7a0811c" title="This operation is not const as it does some internal bookkeeping." alt="" coords="748,808,917,848"/>
+<area shape="poly" title=" " alt="" coords="606,870,734,845,735,850,607,875"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="709,1051,957,1091"/>
+<area shape="poly" title=" " alt="" coords="532,910,607,969,656,1001,707,1030,741,1044,738,1049,704,1034,653,1006,604,973,529,914"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545" title=" " alt="" coords="709,872,957,912"/>
+<area shape="poly" title=" " alt="" coords="606,889,695,889,695,895,606,895"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a751e49c699fded29e8ea2bbb27ec085c" title=" " alt="" coords="709,936,957,976"/>
+<area shape="poly" title=" " alt="" coords="607,909,717,931,716,936,606,914"/>
+<area shape="poly" title=" " alt="" coords="544,374,706,425,778,440,837,445,893,455,925,466,961,483,1003,511,1041,544,1097,605,1093,609,1038,547,1000,515,959,488,923,471,892,460,836,450,778,445,705,431,542,379"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="723,312,942,352"/>
+<area shape="poly" title=" " alt="" coords="596,353,709,341,710,347,597,358"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="723,376,942,416"/>
+<area shape="poly" title=" " alt="" coords="597,370,710,381,709,387,596,375"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="743,184,923,224"/>
+<area shape="poly" title=" " alt="" coords="522,349,597,294,649,262,704,234,728,224,730,229,706,238,652,266,600,298,525,353"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="731,248,934,288"/>
+<area shape="poly" title=" " alt="" coords="544,349,705,297,735,289,737,294,706,303,545,354"/>
+<area shape="poly" title=" " alt="" coords="607,1346,635,1357,659,1375,679,1401,691,1426,699,1452,701,1478,695,1529,682,1580,669,1631,664,1681,667,1705,674,1729,688,1753,707,1777,721,1784,748,1791,827,1805,1017,1824,1016,1829,826,1810,746,1797,719,1789,704,1781,683,1756,670,1731,662,1706,659,1681,664,1630,677,1579,690,1528,696,1478,693,1453,687,1428,674,1404,655,1379,633,1362,605,1351"/>
+<area shape="poly" title=" " alt="" coords="605,1335,632,1325,656,1311,667,1300,673,1289,679,1265,685,1239,692,1227,704,1215,738,1196,772,1188,804,1188,836,1192,866,1196,897,1195,927,1186,958,1165,986,1127,1012,1070,1035,999,1056,921,1088,768,1107,657,1112,658,1093,769,1061,923,1040,1001,1017,1072,990,1130,962,1169,930,1191,898,1200,866,1201,835,1198,804,1194,772,1194,740,1201,707,1219,696,1230,690,1241,684,1266,678,1291,671,1304,659,1315,634,1330,607,1340"/>
+<area shape="poly" title=" " alt="" coords="605,1340,633,1329,655,1312,669,1291,678,1264,686,1195,685,1112,678,1023,672,933,671,850,679,780,689,752,703,730,708,726,712,729,707,734,694,755,685,781,676,850,678,933,684,1022,690,1112,691,1195,683,1265,673,1293,659,1315,635,1334,607,1345"/>
+<area shape="poly" title=" " alt="" coords="605,1338,632,1328,655,1311,674,1287,682,1261,682,1235,679,1209,676,1182,677,1155,684,1128,703,1101,707,1097,711,1101,707,1104,689,1130,682,1155,681,1182,684,1208,688,1235,687,1262,679,1289,659,1315,635,1333,607,1343"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a2b44dbeda9845c18d2d97b834ce0cc71" title=" " alt="" coords="733,1293,933,1333"/>
+<area shape="poly" title=" " alt="" coords="606,1333,719,1322,719,1327,607,1338"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a32f14062e953a7eae2006343a18b755a" title="Only the SpacetreeSet should call this operation." alt="" coords="748,1485,917,1525"/>
+<area shape="poly" title=" " alt="" coords="607,1351,634,1360,659,1375,671,1387,678,1399,684,1424,690,1449,696,1460,707,1471,736,1488,734,1493,704,1475,692,1463,685,1451,679,1426,673,1401,667,1390,656,1379,632,1365,605,1356"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3" title=" " alt="" coords="709,1549,957,1589"/>
+<area shape="poly" title=" " alt="" coords="607,1348,635,1359,659,1375,675,1395,683,1416,684,1457,686,1497,692,1516,707,1536,712,1539,708,1543,703,1539,688,1519,680,1498,679,1457,678,1417,671,1398,656,1379,632,1363,605,1353"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a49e92b919a5d722323f191e6328af9fc" title=" " alt="" coords="733,1843,933,1883"/>
+<area shape="poly" title=" " alt="" coords="607,1346,635,1357,659,1375,681,1404,695,1432,703,1460,706,1488,700,1544,686,1599,672,1655,666,1710,668,1738,675,1766,688,1794,707,1822,723,1836,719,1840,703,1826,683,1797,670,1768,663,1739,660,1710,667,1654,681,1598,695,1543,701,1488,698,1461,690,1434,676,1407,655,1379,633,1362,605,1351"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ada7c6605e8c2ee65cae97acac03b1048" title=" " alt="" coords="719,1613,946,1653"/>
+<area shape="poly" title=" " alt="" coords="607,1347,635,1358,659,1375,680,1403,688,1432,688,1461,685,1489,681,1517,681,1545,688,1572,707,1600,711,1603,707,1607,703,1603,684,1575,676,1546,675,1517,679,1488,683,1460,683,1433,675,1406,655,1379,632,1363,605,1352"/>
+<area shape="rect" href="../../df/df6/classpeano4_1_1grid_1_1Spacetree.html#a1a92ee6f9a9b343569d57077f921cb25" title=" " alt="" coords="745,1677,921,1717"/>
+<area shape="poly" title=" " alt="" coords="607,1347,635,1358,659,1375,684,1412,693,1448,691,1485,685,1521,678,1557,676,1593,684,1628,707,1663,733,1682,730,1686,703,1667,679,1630,671,1593,673,1557,679,1520,686,1484,688,1449,679,1414,655,1379,633,1362,605,1352"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="737,1742,928,1767"/>
+<area shape="poly" title=" " alt="" coords="607,1346,635,1357,659,1375,677,1398,688,1420,695,1442,698,1465,694,1510,684,1554,674,1598,670,1642,673,1663,679,1685,690,1706,707,1727,726,1742,723,1746,703,1731,686,1709,674,1687,667,1665,665,1642,668,1597,678,1553,689,1509,692,1465,690,1443,683,1422,672,1401,655,1379,633,1362,605,1351"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47bc7f10fa1fa287bf94138032e9716b" title="You hand in a tree number and the node tells you on which rank such a tree is hosted." alt="" coords="748,1229,917,1269"/>
+<area shape="poly" title=" " alt="" coords="605,1327,656,1311,680,1295,704,1279,734,1268,736,1273,707,1284,683,1300,658,1316,607,1332"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a255dea5ec5043a45b96c5bd8b4979551" title=" " alt="" coords="733,1115,933,1155"/>
+<area shape="poly" title=" " alt="" coords="605,1337,632,1327,656,1311,669,1295,676,1279,679,1244,682,1208,689,1189,703,1171,719,1159,722,1163,707,1175,694,1192,687,1209,685,1244,682,1280,674,1298,659,1315,635,1332,607,1342"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3" title=" " alt="" coords="709,1357,957,1397"/>
+<area shape="poly" title=" " alt="" coords="607,1352,695,1361,695,1367,606,1358"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#af7c05762262cb60344edb50f23fe00c7" title=" " alt="" coords="731,1421,935,1461"/>
+<area shape="poly" title=" " alt="" coords="607,1358,658,1375,683,1391,707,1407,726,1415,724,1419,704,1412,680,1395,656,1380,605,1363"/>
+<area shape="poly" title=" " alt="" coords="934,1325,962,1343,1007,1396,1042,1456,1069,1520,1088,1586,1102,1649,1110,1708,1116,1799,1111,1799,1105,1709,1096,1650,1083,1587,1064,1522,1037,1458,1003,1399,958,1347,931,1330"/>
+<area shape="poly" title=" " alt="" coords="931,1298,958,1279,974,1259,990,1232,1018,1160,1042,1072,1062,976,1092,788,1108,657,1113,657,1098,789,1068,977,1047,1073,1023,1161,994,1234,979,1262,962,1283,934,1302"/>
+<area shape="poly" title=" " alt="" coords="933,1850,1016,1841,1017,1846,933,1855"/>
+<area shape="poly" title=" " alt="" coords="916,1234,939,1224,958,1209,986,1166,1012,1103,1036,1026,1057,941,1089,775,1107,657,1112,658,1094,776,1062,942,1041,1027,1017,1105,991,1169,962,1212,942,1228,918,1239"/>
+<area shape="poly" title=" " alt="" coords="931,1118,958,1101,1002,1050,1037,991,1064,927,1083,863,1096,800,1104,743,1110,657,1116,657,1110,743,1101,801,1088,864,1069,929,1042,993,1007,1053,962,1105,934,1123"/>
+<area shape="poly" title=" " alt="" coords="591,587,669,580,762,575,861,576,960,584,1016,596,1067,611,1066,616,1015,601,960,589,861,581,762,580,669,585,591,593"/>
+<area shape="poly" title=" " alt="" coords="550,684,622,657,705,635,779,625,855,620,994,620,994,625,855,625,780,630,706,640,623,662,552,689"/>
+<area shape="poly" title=" " alt="" coords="620,704,692,704,692,709,620,709"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_icgraph.png" border="0" usemap="#ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_icgraph" alt=""/></div>
+<map name="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_icgraph" id="ad7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_ac6bf1a12c5c98ddec5b65e07fe74cabe_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,159,31"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5e0c560fe19fd1cf2f94b84de758afc3" name="a5e0c560fe19fd1cf2f94b84de758afc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0c560fe19fd1cf2f94b84de758afc3">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> _log(&quot;::&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;::&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="a2148d33ba56140f338949ab306b36df6" name="a2148d33ba56140f338949ab306b36df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2148d33ba56140f338949ab306b36df6">&#9670;&#160;</a></span>gridConstructionMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a> gridConstructionMeasurement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="abd98dca810d0b94ebc603388f7b74ea8" name="abd98dca810d0b94ebc603388f7b74ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd98dca810d0b94ebc603388f7b74ea8">&#9670;&#160;</a></span>plotMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a> plotMeasurement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="a4ee3b4d370625e625e5cc97ae7baf11c" name="a4ee3b4d370625e625e5cc97ae7baf11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee3b4d370625e625e5cc97ae7baf11c">&#9670;&#160;</a></span>timePerMeshSweepMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a> timePerMeshSweepMeasurement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+
+</div>
+</div>
+<a id="a80798c8a23f81622e1e525b7c38cfc95" name="a80798c8a23f81622e1e525b7c38cfc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80798c8a23f81622e1e525b7c38cfc95">&#9670;&#160;</a></span>timeStepMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html">tarch::timing::Measurement</a> timeStepMeasurement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html">ccz4-main.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a6e4fee11f07c3b70486e88fe92cbbdc.html">applications</a></li><li class="navelem"><a class="el" href="../../dir_1297bcdd37ee30661574862ec1af345a.html">exahype2</a></li><li class="navelem"><a class="el" href="../../dir_824dc0a7e730f476416f0b22edd1d0eb.html">ccz4</a></li><li class="navelem"><a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html">ccz4-main.cpp</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:25:49 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

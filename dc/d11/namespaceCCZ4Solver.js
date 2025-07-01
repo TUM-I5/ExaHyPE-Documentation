@@ -1,0 +1,27 @@
+var namespaceCCZ4Solver =
+[
+    [ "AbstractCCZ4Solver", "dd/d75/classCCZ4Solver_1_1AbstractCCZ4Solver.html", "dd/d75/classCCZ4Solver_1_1AbstractCCZ4Solver" ],
+    [ "CCZ4Solver_FD4_GlobalAdaptiveTimeStep", "d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html", "d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep" ],
+    [ "CCZ4Solver_FD4_GlobalAdaptiveTimeStepWithEnclaveTasking", "d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html", "d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking" ],
+    [ "CCZ4Solver_FD4_SecondOrderFormulation_GlobalAdaptiveTimeStepWithEnclaveTasking", "d2/d05/classCCZ4Solver_1_1CCZ4Solver__FD4__SecondOrderFormulation__GlobalAdaptiveTimeStepWithEnclaveTasking.html", "d2/d05/classCCZ4Solver_1_1CCZ4Solver__FD4__SecondOrderFormulation__GlobalAdaptiveTimeStepWithEnclaveTasking" ],
+    [ "CCZ4Solver_FV_GlobalAdaptiveTimeStep", "d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html", "d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep" ],
+    [ "CCZ4Solver_FV_GlobalAdaptiveTimeStepWithEnclaveTasking", "d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html", "d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking" ],
+    [ "CCZ4Solver_RKDG_GlobalAdaptiveTimeStep", "d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html", "d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep" ],
+    [ "CCZ4Solver_RKDG_GlobalAdaptiveTimeStepWithEnclaveTasking", "da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html", "da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking" ],
+    [ "add_tracer_to_DG_solver", "dc/d11/namespaceCCZ4Solver.html#a50524ae57851b62cbb3b5a9a0d1940bb", null ],
+    [ "add_tracer_to_FD4_solver", "dc/d11/namespaceCCZ4Solver.html#a5995cb67f28274d79339a177bae6fb88", null ],
+    [ "add_tracer_to_FV_solver", "dc/d11/namespaceCCZ4Solver.html#a102d3b956f466250415ffdebab9313b0", null ],
+    [ "construct_DG_eigenvalues", "dc/d11/namespaceCCZ4Solver.html#aa6138370e011b43f8d6fff3f12e881ab", null ],
+    [ "construct_DG_ncp", "dc/d11/namespaceCCZ4Solver.html#a24d5e0d90dfeaabbdc14b9121ee7a7aa", null ],
+    [ "construct_DG_postprocessing_kernel", "dc/d11/namespaceCCZ4Solver.html#af102dd375e487b1fd297910fc97e3d75", null ],
+    [ "construct_DG_source_term", "dc/d11/namespaceCCZ4Solver.html#afad4b352264c0103615ff4a259e4f91e", null ],
+    [ "construct_FD4_eigenvalues", "dc/d11/namespaceCCZ4Solver.html#ae6a1af3684c3285cc8a4f35ecdac50f4", null ],
+    [ "construct_FD4_ncp", "dc/d11/namespaceCCZ4Solver.html#a0a2fe469a3d7d73b85c6c6950f84828e", null ],
+    [ "construct_FD4_postprocessing_kernel", "dc/d11/namespaceCCZ4Solver.html#a64218419a4bc97b2e51c4fb3050e269a", null ],
+    [ "construct_FD4_source_term", "dc/d11/namespaceCCZ4Solver.html#aa2b468546bb0e9b92b1cd3773d0849eb", null ],
+    [ "construct_FV_eigenvalues", "dc/d11/namespaceCCZ4Solver.html#a50d448f5abf108a85c8f0ec0a5b60d39", null ],
+    [ "construct_FV_ncp", "dc/d11/namespaceCCZ4Solver.html#a210fbf34644af57a581a92149d245bf6", null ],
+    [ "construct_FV_postprocessing_kernel", "dc/d11/namespaceCCZ4Solver.html#ab59b5c3e20a5f0dd5f4b61c06144bdf9", null ],
+    [ "construct_FV_source_term", "dc/d11/namespaceCCZ4Solver.html#a421c1faf56ca97172348fb236c90096a", null ],
+    [ "auxiliary_variables", "dc/d11/namespaceCCZ4Solver.html#a628b2b1f0d989ef89d6bf6f66793f46f", null ]
+];

@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/da1/classtarch_1_1logging_1_1ScorePLogger.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::logging::ScorePLogger Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Command Line Logger.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::logging::ScorePLogger:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d95/classtarch_1_1logging_1_1ScorePLogger__coll__graph.png" border="0" usemap="#atarch_1_1logging_1_1ScorePLogger_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1logging_1_1ScorePLogger_coll__map" id="atarch_1_1logging_1_1ScorePLogger_coll__map">
+<area shape="rect" title="Command Line Logger." alt="" coords="68,285,275,311"/>
+<area shape="poly" title=" " alt="" coords="289,290,301,298,293,305,275,308,274,303,291,300,296,298,287,295"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="5,190,148,215"/>
+<area shape="poly" title=" " alt="" coords="100,223,161,283,158,287,96,227"/>
+<area shape="rect" title=" " alt="" coords="33,95,120,120"/>
+<area shape="poly" title=" " alt="" coords="79,134,79,190,74,190,74,134"/>
+<area shape="rect" title=" " alt="" coords="7,5,146,45"/>
+<area shape="poly" title=" " alt="" coords="79,59,79,94,74,94,74,59"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html" title=" " alt="" coords="173,183,359,223"/>
+<area shape="poly" title=" " alt="" coords="239,234,185,287,181,283,235,230"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a45ba1f4ae677f68a79bacb025037b594" id="r_a45ba1f4ae677f68a79bacb025037b594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45ba1f4ae677f68a79bacb025037b594">~ScorePLogger</a> ()</td></tr>
+<tr class="separator:a45ba1f4ae677f68a79bacb025037b594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373283bc8bc2bdf019d3c7f86788148a" id="r_a373283bc8bc2bdf019d3c7f86788148a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373283bc8bc2bdf019d3c7f86788148a">getLogMachineName</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a373283bc8bc2bdf019d3c7f86788148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is public as some analysis frameworks check explicitly whether these features are switched on.  <br /></td></tr>
+<tr class="separator:a373283bc8bc2bdf019d3c7f86788148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d260f58347335f9ff26f1f885a9394" id="r_a42d260f58347335f9ff26f1f885a9394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42d260f58347335f9ff26f1f885a9394">getLogThreadName</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a42d260f58347335f9ff26f1f885a9394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is public as some analysis frameworks check explicitly whether these features are switched on.  <br /></td></tr>
+<tr class="separator:a42d260f58347335f9ff26f1f885a9394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b347ba512934466f03be77665d36402" id="r_a2b347ba512934466f03be77665d36402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b347ba512934466f03be77665d36402">getLogTrace</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a2b347ba512934466f03be77665d36402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is public as some analysis frameworks check explicitly whether these features are switched on.  <br /></td></tr>
+<tr class="separator:a2b347ba512934466f03be77665d36402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b46c452dc45500e23a3f1d280b3b3a" id="r_a53b46c452dc45500e23a3f1d280b3b3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b46c452dc45500e23a3f1d280b3b3a">getLogTimeStamp</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a53b46c452dc45500e23a3f1d280b3b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is public as some analysis frameworks check explicitly whether these features are switched on.  <br /></td></tr>
+<tr class="separator:a53b46c452dc45500e23a3f1d280b3b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288ce66a2bf01d7417eb3cb79a460eb3" id="r_a288ce66a2bf01d7417eb3cb79a460eb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288ce66a2bf01d7417eb3cb79a460eb3">debug</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="separator:a288ce66a2bf01d7417eb3cb79a460eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f556d46543343a414315a239dba9d5" id="r_ab1f556d46543343a414315a239dba9d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1f556d46543343a414315a239dba9d5">info</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="separator:ab1f556d46543343a414315a239dba9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967b017ae3554fb9a1ad074d35304eae" id="r_a967b017ae3554fb9a1ad074d35304eae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967b017ae3554fb9a1ad074d35304eae">warning</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="memdesc:a967b017ae3554fb9a1ad074d35304eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Warning.  <br /></td></tr>
+<tr class="separator:a967b017ae3554fb9a1ad074d35304eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e2075d22d2276e53d46043f442170a" id="r_a94e2075d22d2276e53d46043f442170a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94e2075d22d2276e53d46043f442170a">error</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="memdesc:a94e2075d22d2276e53d46043f442170a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Error.  <br /></td></tr>
+<tr class="separator:a94e2075d22d2276e53d46043f442170a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5332aa64945f3b628b840da5db851c91" id="r_a5332aa64945f3b628b840da5db851c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5332aa64945f3b628b840da5db851c91">traceIn</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="separator:a5332aa64945f3b628b840da5db851c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45cff067dcddee762aff1e3fe779ffcd" id="r_a45cff067dcddee762aff1e3fe779ffcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45cff067dcddee762aff1e3fe779ffcd">traceOut</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="separator:a45cff067dcddee762aff1e3fe779ffcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac799aae569d6b048bdb52e891e14a08d" id="r_ac799aae569d6b048bdb52e891e14a08d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac799aae569d6b048bdb52e891e14a08d">indent</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> indent, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="memdesc:ac799aae569d6b048bdb52e891e14a08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the logger to increment/decrement the indent.  <br /></td></tr>
+<tr class="separator:ac799aae569d6b048bdb52e891e14a08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c7cb171e1d7661f84ec7e2fab4a93f" id="r_a82c7cb171e1d7661f84ec7e2fab4a93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c7cb171e1d7661f84ec7e2fab4a93f">close</a> ()</td></tr>
+<tr class="separator:a82c7cb171e1d7661f84ec7e2fab4a93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a47ecc8249c7eb4405a824a38f070a65c" id="r_a47ecc8249c7eb4405a824a38f070a65c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47ecc8249c7eb4405a824a38f070a65c">getInstance</a> ()</td></tr>
+<tr class="separator:a47ecc8249c7eb4405a824a38f070a65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad664997ffdc7bb2a7335dabc08d11e47" id="r_ad664997ffdc7bb2a7335dabc08d11e47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad664997ffdc7bb2a7335dabc08d11e47">operator=</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html">CommandLineLogger</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ad664997ffdc7bb2a7335dabc08d11e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declared private since assignment does not make sense for an output class (output information mismatch).  <br /></td></tr>
+<tr class="separator:ad664997ffdc7bb2a7335dabc08d11e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37d7b8dfeeac9769cad1a2f5663f618" id="r_af37d7b8dfeeac9769cad1a2f5663f618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af37d7b8dfeeac9769cad1a2f5663f618">ScorePLogger</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a> &amp;)=delete</td></tr>
+<tr class="memdesc:af37d7b8dfeeac9769cad1a2f5663f618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declared private since copying does not make sense for an output class (output information mismatch).  <br /></td></tr>
+<tr class="separator:af37d7b8dfeeac9769cad1a2f5663f618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd089319eb9563b4711c4349b2c40b3a" id="r_acd089319eb9563b4711c4349b2c40b3a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd089319eb9563b4711c4349b2c40b3a">constructMessageString</a> (std::string messageType, long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> rank, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> threadId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;message)</td></tr>
+<tr class="memdesc:acd089319eb9563b4711c4349b2c40b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct message string.  <br /></td></tr>
+<tr class="separator:acd089319eb9563b4711c4349b2c40b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9042acf38dd61ad6d16f6982a7da4c28" id="r_a9042acf38dd61ad6d16f6982a7da4c28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9042acf38dd61ad6d16f6982a7da4c28">ScorePLogger</a> ()</td></tr>
+<tr class="memdesc:a9042acf38dd61ad6d16f6982a7da4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">It's a singleton.  <br /></td></tr>
+<tr class="separator:a9042acf38dd61ad6d16f6982a7da4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2595e97181182dac416732a167b8d0b" id="r_aa2595e97181182dac416732a167b8d0b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2595e97181182dac416732a167b8d0b">getTimeStampHumanReadable</a> (long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> timestampNanoseconds) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa2595e97181182dac416732a167b8d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abfae87a6beaebc6f0067986a4b26c6a5" id="r_abfae87a6beaebc6f0067986a4b26c6a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfae87a6beaebc6f0067986a4b26c6a5">_semaphore</a></td></tr>
+<tr class="separator:abfae87a6beaebc6f0067986a4b26c6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aa38fa3da5d7a2047fea7f2acd60520ad" id="r_aa38fa3da5d7a2047fea7f2acd60520ad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa38fa3da5d7a2047fea7f2acd60520ad">_log</a></td></tr>
+<tr class="separator:aa38fa3da5d7a2047fea7f2acd60520ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19bcbdf68a090d07d213be24d2fa3c6" id="r_ae19bcbdf68a090d07d213be24d2fa3c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae19bcbdf68a090d07d213be24d2fa3c6">_singleton</a></td></tr>
+<tr class="separator:ae19bcbdf68a090d07d213be24d2fa3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Command Line Logger. </p>
+<p>Standard log output device. Implements the LogHandle. Usually there's only one instance of this class for only the <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> type aggregates it in a static way. For a detailed description of this compiler flags please browse through the static consts of the class or the howto page.</p>
+<p>An interesting issue is the behaviour of the command line logger in the parallel mode if debug is switched on. In this case the number of messages soon becomes unreadable for any human. Thus, the command line logger internally creates one output file rank.log for each rank and writes all the information into this file. info, warnings and errors are written (in short form) to std::cout / std::cerr, too.</p>
+<p>If the debug mode is not set, all information is written to std::cout.</p>
+<p>Note, that if multithreading is switched on (TBB-flag), the access to std::cout or the logfile respectively is synchronized. The other methods are not thread-safe and should be called only in safe context for defined behaviour.</p>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+<dl class="section rcs"><dt>Revision</dt><dd>1.19 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl, Wolfgang Eckhardt </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html#l00054">54</a> of file <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af37d7b8dfeeac9769cad1a2f5663f618" name="af37d7b8dfeeac9769cad1a2f5663f618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37d7b8dfeeac9769cad1a2f5663f618">&#9670;&#160;</a></span>ScorePLogger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::logging::ScorePLogger::ScorePLogger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a> &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declared private since copying does not make sense for an output class (output information mismatch). </p>
+
+</div>
+</div>
+<a id="a9042acf38dd61ad6d16f6982a7da4c28" name="a9042acf38dd61ad6d16f6982a7da4c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9042acf38dd61ad6d16f6982a7da4c28">&#9670;&#160;</a></span>ScorePLogger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::logging::ScorePLogger::ScorePLogger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>It's a singleton. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45ba1f4ae677f68a79bacb025037b594" name="a45ba1f4ae677f68a79bacb025037b594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ba1f4ae677f68a79bacb025037b594">&#9670;&#160;</a></span>~ScorePLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::logging::ScorePLogger::~ScorePLogger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a82c7cb171e1d7661f84ec7e2fab4a93f" name="a82c7cb171e1d7661f84ec7e2fab4a93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c7cb171e1d7661f84ec7e2fab4a93f">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd089319eb9563b4711c4349b2c40b3a" name="acd089319eb9563b4711c4349b2c40b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd089319eb9563b4711c4349b2c40b3a">&#9670;&#160;</a></span>constructMessageString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::logging::ScorePLogger::constructMessageString </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>messageType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct message string. </p>
+<p>!!! Thread Safety</p>
+<p>The message string relies on the global field _indent. This one might change throughout the execution of this method. However, I accept such a behavior: Changing _indent throughout the message execution makes the method add the wrong number of whitespaces in front of the message. That is a 'bug' we can accept.</p>
+<p>To satisfy Intel Inspector et al at least slightly, I copy over _indent before I actually construct the message string. So the indent can't change while we add the spaces/tabs to the output. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a288ce66a2bf01d7417eb3cb79a460eb3" name="a288ce66a2bf01d7417eb3cb79a460eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288ce66a2bf01d7417eb3cb79a460eb3">&#9670;&#160;</a></span>debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::debug </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00035">tarch::logging::LogFilter::FilterListEntry::TargetDebug</a>.</p>
+
+</div>
+</div>
+<a id="a94e2075d22d2276e53d46043f442170a" name="a94e2075d22d2276e53d46043f442170a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e2075d22d2276e53d46043f442170a">&#9670;&#160;</a></span>error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::error </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write Error. </p>
+<p>In the implementation, I call a flush on cout before I write to cerr. Otherwise, the cerr messages might overtake cout. Before the operation returns, it does a flush on cerr, too. Otherwise, the message might not occur, i.e. the application might shut down before the message is flushed to the terminal. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00552">tarch::mpi::Rank::abort()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da1/classtarch_1_1logging_1_1ScorePLogger_a94e2075d22d2276e53d46043f442170a_cgraph.png" border="0" usemap="#ade/da1/classtarch_1_1logging_1_1ScorePLogger_a94e2075d22d2276e53d46043f442170a_cgraph" alt=""/></div>
+<map name="ade/da1/classtarch_1_1logging_1_1ScorePLogger_a94e2075d22d2276e53d46043f442170a_cgraph" id="ade/da1/classtarch_1_1logging_1_1ScorePLogger_a94e2075d22d2276e53d46043f442170a_cgraph">
+<area shape="rect" title="Write Error." alt="" coords="5,5,212,45"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ae5cdae803c2af01a8fea10991ac44f15" title="A proper abort in an MPI context has to use MPI_Abort." alt="" coords="260,13,431,38"/>
+<area shape="poly" title=" " alt="" coords="212,23,246,23,246,28,212,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47ecc8249c7eb4405a824a38f070a65c" name="a47ecc8249c7eb4405a824a38f070a65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ecc8249c7eb4405a824a38f070a65c">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">tarch::logging::ScorePLogger</a> &amp; tarch::logging::ScorePLogger::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a373283bc8bc2bdf019d3c7f86788148a" name="a373283bc8bc2bdf019d3c7f86788148a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373283bc8bc2bdf019d3c7f86788148a">&#9670;&#160;</a></span>getLogMachineName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::logging::ScorePLogger::getLogMachineName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is public as some analysis frameworks check explicitly whether these features are switched on. </p>
+
+</div>
+</div>
+<a id="a42d260f58347335f9ff26f1f885a9394" name="a42d260f58347335f9ff26f1f885a9394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d260f58347335f9ff26f1f885a9394">&#9670;&#160;</a></span>getLogThreadName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::logging::ScorePLogger::getLogThreadName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is public as some analysis frameworks check explicitly whether these features are switched on. </p>
+
+</div>
+</div>
+<a id="a53b46c452dc45500e23a3f1d280b3b3a" name="a53b46c452dc45500e23a3f1d280b3b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b46c452dc45500e23a3f1d280b3b3a">&#9670;&#160;</a></span>getLogTimeStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::logging::ScorePLogger::getLogTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is public as some analysis frameworks check explicitly whether these features are switched on. </p>
+
+</div>
+</div>
+<a id="a2b347ba512934466f03be77665d36402" name="a2b347ba512934466f03be77665d36402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b347ba512934466f03be77665d36402">&#9670;&#160;</a></span>getLogTrace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::logging::ScorePLogger::getLogTrace </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is public as some analysis frameworks check explicitly whether these features are switched on. </p>
+
+</div>
+</div>
+<a id="aa2595e97181182dac416732a167b8d0b" name="aa2595e97181182dac416732a167b8d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2595e97181182dac416732a167b8d0b">&#9670;&#160;</a></span>getTimeStampHumanReadable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::logging::ScorePLogger::getTimeStampHumanReadable </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac799aae569d6b048bdb52e891e14a08d" name="ac799aae569d6b048bdb52e891e14a08d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac799aae569d6b048bdb52e891e14a08d">&#9670;&#160;</a></span>indent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::indent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>indent</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tells the logger to increment/decrement the indent. </p>
+<p>!!! Thread Safety</p>
+<p>_indent is a global static field shared by all threads. If we increment or decrement it, this is first of all a read followed by a write. Consequently data races could occur and the counter could become smaller than zero. This ain't possible in the sequential code as each increment is accompanied by a decrement. The following table illustrates the race:</p>
+<p>|| value of _indent || Thread 1 || Thread 2 | 2 | initial condition | initial condition | | enter indent(false) | enter indent(true) | | fetch indent into register | fetch indent into register | | register value -= 2 | register value += 2 | 4 | is a little bit slower | write back new value of indent | 0 | write back new value of indent |</p>
+<p>To avoid this data race, I introduced a semaphore. This one could also be implemented with TBB's atomic construct, e.g., but I prefer the semaphor / critical section technique.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trace</td><td>Needed in debug mode to be able to find out who called indent(false) without an indent(true) </td></tr>
+    <tr><td class="paramname">message</td><td>Needed in debug mode to be able to find out who called indent(false) without an indent(true) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1f556d46543343a414315a239dba9d5" name="ab1f556d46543343a414315a239dba9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f556d46543343a414315a239dba9d5">&#9670;&#160;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::info </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00034">tarch::logging::LogFilter::FilterListEntry::TargetInfo</a>.</p>
+
+</div>
+</div>
+<a id="ad664997ffdc7bb2a7335dabc08d11e47" name="ad664997ffdc7bb2a7335dabc08d11e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad664997ffdc7bb2a7335dabc08d11e47">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a> &amp; tarch::logging::ScorePLogger::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html">CommandLineLogger</a> &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declared private since assignment does not make sense for an output class (output information mismatch). </p>
+
+</div>
+</div>
+<a id="a5332aa64945f3b628b840da5db851c91" name="a5332aa64945f3b628b840da5db851c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5332aa64945f3b628b840da5db851c91">&#9670;&#160;</a></span>traceIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::traceIn </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45cff067dcddee762aff1e3fe779ffcd" name="a45cff067dcddee762aff1e3fe779ffcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45cff067dcddee762aff1e3fe779ffcd">&#9670;&#160;</a></span>traceOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::traceOut </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a967b017ae3554fb9a1ad074d35304eae" name="a967b017ae3554fb9a1ad074d35304eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967b017ae3554fb9a1ad074d35304eae">&#9670;&#160;</a></span>warning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::ScorePLogger::warning </td>
+          <td>(</td>
+          <td class="paramtype">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>timestampNanoseconds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>threadId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write Warning. </p>
+<p>In the implementation, I call a flush on cout before I write to cerr. Otherwise, the cerr messages might overtake cout. Before the operation returns, it does a flush on cerr, too. Otherwise, the message might not occur, i.e. the application might shut down before the message is flushed to the terminal. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aa38fa3da5d7a2047fea7f2acd60520ad" name="aa38fa3da5d7a2047fea7f2acd60520ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38fa3da5d7a2047fea7f2acd60520ad">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> tarch::logging::ScorePLogger::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html#l00056">56</a> of file <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a>.</p>
+
+</div>
+</div>
+<a id="abfae87a6beaebc6f0067986a4b26c6a5" name="abfae87a6beaebc6f0067986a4b26c6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfae87a6beaebc6f0067986a4b26c6a5">&#9670;&#160;</a></span>_semaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a> tarch::logging::ScorePLogger::_semaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html#l00060">60</a> of file <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a>.</p>
+
+</div>
+</div>
+<a id="ae19bcbdf68a090d07d213be24d2fa3c6" name="ae19bcbdf68a090d07d213be24d2fa3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19bcbdf68a090d07d213be24d2fa3c6">&#9670;&#160;</a></span>_singleton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">tarch::logging::ScorePLogger</a> tarch::logging::ScorePLogger::_singleton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/logging/<a class="el" href="../../d8/de3/ScorePLogger_8h_source.html">ScorePLogger.h</a></li>
+<li>src/tarch/logging/<a class="el" href="../../d6/d78/ScorePLogger_8cpp_source.html">ScorePLogger.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d5/d43/namespacetarch_1_1logging.html">logging</a></li><li class="navelem"><a class="el" href="../../de/da1/classtarch_1_1logging_1_1ScorePLogger.html">ScorePLogger</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:52 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

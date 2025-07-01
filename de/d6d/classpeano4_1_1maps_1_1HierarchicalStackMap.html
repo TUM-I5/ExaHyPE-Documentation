@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">peano4::maps::HierarchicalStackMap&lt; T &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for peano4::maps::HierarchicalStackMap&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d99/classpeano4_1_1maps_1_1HierarchicalStackMap__coll__graph.png" border="0" usemap="#apeano4_1_1maps_1_1HierarchicalStackMap_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="apeano4_1_1maps_1_1HierarchicalStackMap_3_01T_01_4_coll__map" id="apeano4_1_1maps_1_1HierarchicalStackMap_3_01T_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="13,401,213,441"/>
+<area shape="rect" title=" " alt="" coords="5,284,221,339"/>
+<area shape="poly" title=" " alt="" coords="116,353,116,401,111,401,111,353"/>
+<area shape="rect" href="../../d5/d26/structpeano4_1_1maps_1_1HierarchicalStackMap_1_1TreeData.html" title="Data of one tree." alt="" coords="13,181,213,221"/>
+<area shape="poly" title=" " alt="" coords="116,235,116,284,111,284,111,235"/>
+<area shape="rect" title=" " alt="" coords="37,93,190,119"/>
+<area shape="poly" title=" " alt="" coords="116,132,116,181,111,181,111,132"/>
+<area shape="rect" title=" " alt="" coords="94,5,133,31"/>
+<area shape="poly" title=" " alt="" coords="116,45,116,93,111,93,111,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/structpeano4_1_1maps_1_1HierarchicalStackMap_1_1TreeData.html">TreeData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data of one tree.  <a href="../../d5/d26/structpeano4_1_1maps_1_1HierarchicalStackMap_1_1TreeData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae080c5d024d958ae91374d7bec8693ef" id="r_ae080c5d024d958ae91374d7bec8693ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae080c5d024d958ae91374d7bec8693ef">HierarchicalStackMap</a> ()</td></tr>
+<tr class="separator:ae080c5d024d958ae91374d7bec8693ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31c8e60c3fed0d212f18baac1f182a3" id="r_ae31c8e60c3fed0d212f18baac1f182a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae31c8e60c3fed0d212f18baac1f182a3">~HierarchicalStackMap</a> ()</td></tr>
+<tr class="separator:ae31c8e60c3fed0d212f18baac1f182a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa045c54eab4e52aec02116c588d54827" id="r_aa045c54eab4e52aec02116c588d54827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa045c54eab4e52aec02116c588d54827">empty</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> stackId) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa045c54eab4e52aec02116c588d54827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dba5adf738e9c3c8081158eb949cfb6" id="r_a4dba5adf738e9c3c8081158eb949cfb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dba5adf738e9c3c8081158eb949cfb6">clear</a> ()</td></tr>
+<tr class="separator:a4dba5adf738e9c3c8081158eb949cfb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a3834aa015bec56530924e29a47f53" id="r_a36a3834aa015bec56530924e29a47f53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36a3834aa015bec56530924e29a47f53">clear</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetree)</td></tr>
+<tr class="separator:a36a3834aa015bec56530924e29a47f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d68bb6e0ec644c8419c81e92507feb" id="r_a55d68bb6e0ec644c8419c81e92507feb"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d68bb6e0ec644c8419c81e92507feb">getForPush</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> stackId)</td></tr>
+<tr class="memdesc:a55d68bb6e0ec644c8419c81e92507feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stack belonging to a tree.  <br /></td></tr>
+<tr class="separator:a55d68bb6e0ec644c8419c81e92507feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6074d6418a79e8acffd89090b6d2aa" id="r_a4d6074d6418a79e8acffd89090b6d2aa"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6074d6418a79e8acffd89090b6d2aa">getForPush</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;key)</td></tr>
+<tr class="separator:a4d6074d6418a79e8acffd89090b6d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5078ce4c0434b3b6779870dc77a49c6" id="r_ab5078ce4c0434b3b6779870dc77a49c6"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5078ce4c0434b3b6779870dc77a49c6">getForPop</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> stackId)</td></tr>
+<tr class="separator:ab5078ce4c0434b3b6779870dc77a49c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a6d500ce9b03396f0a99b92e4b89d1" id="r_a58a6d500ce9b03396f0a99b92e4b89d1"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58a6d500ce9b03396f0a99b92e4b89d1">getForPop</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;key)</td></tr>
+<tr class="separator:a58a6d500ce9b03396f0a99b92e4b89d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c51bc4236cacd4b948c2b546a1dfc0e" id="r_a0c51bc4236cacd4b948c2b546a1dfc0e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c51bc4236cacd4b948c2b546a1dfc0e">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a0c51bc4236cacd4b948c2b546a1dfc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5813eebff58662e1c038ddfa00d4c77c" id="r_a5813eebff58662e1c038ddfa00d4c77c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5813eebff58662e1c038ddfa00d4c77c">getKeys</a> ()</td></tr>
+<tr class="memdesc:a5813eebff58662e1c038ddfa00d4c77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This one should be const, but I might need a semaphore, so I have to omit the const qualifier.  <br /></td></tr>
+<tr class="separator:a5813eebff58662e1c038ddfa00d4c77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eeb511b73f82e17b7eeefd6057b66e" id="r_a96eeb511b73f82e17b7eeefd6057b66e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eeb511b73f82e17b7eeefd6057b66e">garbageCollection</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetree)</td></tr>
+<tr class="separator:a96eeb511b73f82e17b7eeefd6057b66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f48df6d95aa9579285dd3f531544559" id="r_a7f48df6d95aa9579285dd3f531544559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f48df6d95aa9579285dd3f531544559">holdsStack</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> stackId) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a7f48df6d95aa9579285dd3f531544559"><td class="mdescLeft">&#160;</td><td class="mdescRight">For debugging/assertions.  <br /></td></tr>
+<tr class="separator:a7f48df6d95aa9579285dd3f531544559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af650fb6c3a600ff26b3e1fef4a5e7d2b" id="r_af650fb6c3a600ff26b3e1fef4a5e7d2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af650fb6c3a600ff26b3e1fef4a5e7d2b">holdsStack</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;key) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:af650fb6c3a600ff26b3e1fef4a5e7d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a05d3554771f529095f53da2b14ac6e98" id="r_a05d3554771f529095f53da2b14ac6e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05d3554771f529095f53da2b14ac6e98">createStack</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> localTreeNumber, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> stackNumber)</td></tr>
+<tr class="memdesc:a05d3554771f529095f53da2b14ac6e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine is not thread-safe, i.e.  <br /></td></tr>
+<tr class="separator:a05d3554771f529095f53da2b14ac6e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a810200ff59d5e3ad15317a95095be3ce" id="r_a810200ff59d5e3ad15317a95095be3ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d26/structpeano4_1_1maps_1_1HierarchicalStackMap_1_1TreeData.html">TreeData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a810200ff59d5e3ad15317a95095be3ce">_data</a></td></tr>
+<tr class="memdesc:a810200ff59d5e3ad15317a95095be3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of maps.  <br /></td></tr>
+<tr class="separator:a810200ff59d5e3ad15317a95095be3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class peano4::maps::HierarchicalStackMap&lt; T &gt;</div><h2>Software architecture </h2>
+<p>There's one entry per tree. I use the mapping from global to local trees, so I don't have to maintain too many entries for 'just in case'. Each entry has a semaphore of its own. So if we need a lock, we only lock once per tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00037">37</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae080c5d024d958ae91374d7bec8693ef" name="ae080c5d024d958ae91374d7bec8693ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae080c5d024d958ae91374d7bec8693ef">&#9670;&#160;</a></span>HierarchicalStackMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::HierarchicalStackMap </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00227">227</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+</div>
+</div>
+<a id="ae31c8e60c3fed0d212f18baac1f182a3" name="ae31c8e60c3fed0d212f18baac1f182a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31c8e60c3fed0d212f18baac1f182a3">&#9670;&#160;</a></span>~HierarchicalStackMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::~<a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">HierarchicalStackMap</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00217">217</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dba5adf738e9c3c8081158eb949cfb6" name="a4dba5adf738e9c3c8081158eb949cfb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dba5adf738e9c3c8081158eb949cfb6">&#9670;&#160;</a></span>clear() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/df0/classpeano4_1_1maps_1_1STDStackMap.html#aa8a93057691527ba2677e0dff39f3202" title="Clear the whole stack map.">STDStackMap::clear()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00251">251</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/de9/Makefile_8py_source.html#l00020">peano4.output.Makefile.Makefile::__init__()</a>, and <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00058">peano4::parallel::SpacetreeSet::shutdown()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4dba5adf738e9c3c8081158eb949cfb6_icgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4dba5adf738e9c3c8081158eb949cfb6_icgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4dba5adf738e9c3c8081158eb949cfb6_icgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4dba5adf738e9c3c8081158eb949cfb6_icgraph">
+<area shape="rect" title=" " alt="" coords="584,37,784,77"/>
+<area shape="rect" href="../../dd/d31/classpeano4_1_1output_1_1Makefile_1_1Makefile.html#adf4fc3e8937afe3404f4d2a685147942" title=" " alt="" coords="297,5,536,45"/>
+<area shape="poly" title=" " alt="" coords="570,46,536,42,536,37,571,41"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#ac7383614be7ae6babc6441894be5e1aa" title=" " alt="" coords="317,69,517,109"/>
+<area shape="poly" title=" " alt="" coords="571,74,517,80,516,75,570,68"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a74f6dc3de6405111f5219bd65789f395" title=" " alt="" coords="108,77,249,102"/>
+<area shape="poly" title=" " alt="" coords="303,92,250,92,250,87,303,87"/>
+<area shape="rect" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,77,60,102"/>
+<area shape="poly" title=" " alt="" coords="94,92,60,92,60,87,94,87"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36a3834aa015bec56530924e29a47f53" name="a36a3834aa015bec56530924e29a47f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a3834aa015bec56530924e29a47f53">&#9670;&#160;</a></span>clear() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetree</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00264">264</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, and <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/de9/Makefile_8py_source.html#l00020">peano4.output.Makefile.Makefile::__init__()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,205,77"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="253,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="205,41,239,36,240,41,206,46"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="253,69,423,109"/>
+<area shape="poly" title=" " alt="" coords="206,68,240,73,239,78,205,74"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="471,47,684,73"/>
+<area shape="poly" title=" " alt="" coords="422,76,460,72,460,77,423,82"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="472,97,683,137"/>
+<area shape="poly" title=" " alt="" coords="423,97,459,101,458,106,422,102"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_icgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_icgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_icgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a36a3834aa015bec56530924e29a47f53_icgraph">
+<area shape="rect" title=" " alt="" coords="292,5,492,45"/>
+<area shape="rect" href="../../dd/d31/classpeano4_1_1output_1_1Makefile_1_1Makefile.html#adf4fc3e8937afe3404f4d2a685147942" title=" " alt="" coords="5,5,244,45"/>
+<area shape="poly" title=" " alt="" coords="278,28,244,28,244,23,278,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05d3554771f529095f53da2b14ac6e98" name="a05d3554771f529095f53da2b14ac6e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d3554771f529095f53da2b14ac6e98">&#9670;&#160;</a></span>createStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::createStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>localTreeNumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>stackNumber</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This routine is not thread-safe, i.e. </p>
+<p>if you need it thread-safe then you have to wrap it into a semaphore manually. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00117">117</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<a id="aa045c54eab4e52aec02116c588d54827" name="aa045c54eab4e52aec02116c588d54827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa045c54eab4e52aec02116c588d54827">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>stackId</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00132">132</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, and <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00367">peano4::parallel::SpacetreeSet::streamDataFromSplittingTreesToNewTrees()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,205,77"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="253,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="205,41,239,36,240,41,206,46"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="253,69,423,109"/>
+<area shape="poly" title=" " alt="" coords="206,68,240,73,239,78,205,74"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="471,47,684,73"/>
+<area shape="poly" title=" " alt="" coords="422,76,460,72,460,77,423,82"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="472,97,683,137"/>
+<area shape="poly" title=" " alt="" coords="423,97,459,101,458,106,422,102"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_icgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_icgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_icgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_aa045c54eab4e52aec02116c588d54827_icgraph">
+<area shape="rect" title=" " alt="" coords="792,47,992,87"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af2db839ebe2f009b8a85bfe328eb6fa0" title="Copy the data from a splitting tree onto its new workers." alt="" coords="495,40,744,95"/>
+<area shape="poly" title=" " alt="" coords="778,70,744,70,744,65,778,65"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="247,47,447,87"/>
+<area shape="poly" title=" " alt="" coords="481,70,447,70,447,65,481,65"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a63ad06a0041cb535df105cf2f445a73c" title=" " alt="" coords="108,5,199,31"/>
+<area shape="poly" title=" " alt="" coords="254,46,198,32,199,27,255,41"/>
+<area shape="rect" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp.html#a716631ca95d6176da3ed3886635e801e" title=" " alt="" coords="108,55,199,80"/>
+<area shape="poly" title=" " alt="" coords="233,70,199,70,199,65,233,65"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="128,104,179,129"/>
+<area shape="poly" title=" " alt="" coords="255,93,179,113,178,108,254,88"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,104,60,129"/>
+<area shape="poly" title=" " alt="" coords="114,119,60,119,60,114,114,114"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a96eeb511b73f82e17b7eeefd6057b66e" name="a96eeb511b73f82e17b7eeefd6057b66e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eeb511b73f82e17b7eeefd6057b66e">&#9670;&#160;</a></span>garbageCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::garbageCollection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetree</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/df0/classpeano4_1_1maps_1_1STDStackMap.html#a08ba1564824a1fd7fbb446526b473905" title="Invoke garbage collection.">STDStackMap::garbageCollection(int)</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00233">233</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00168">peano4::parallel::Node::isStorageStackNumber()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a96eeb511b73f82e17b7eeefd6057b66e_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a96eeb511b73f82e17b7eeefd6057b66e_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a96eeb511b73f82e17b7eeefd6057b66e_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a96eeb511b73f82e17b7eeefd6057b66e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,217,109"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="270,5,439,45"/>
+<area shape="poly" title=" " alt="" coords="187,67,264,46,266,51,189,72"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="270,69,439,109"/>
+<area shape="poly" title=" " alt="" coords="218,87,256,87,256,92,218,92"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a14b486e191aa755025380201b3d877ae" title="There are communication stacks and storage stacks." alt="" coords="265,133,444,173"/>
+<area shape="poly" title=" " alt="" coords="189,107,266,127,264,132,187,112"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="492,49,705,74"/>
+<area shape="poly" title=" " alt="" coords="439,77,478,73,478,78,440,82"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="493,99,704,139"/>
+<area shape="poly" title=" " alt="" coords="440,97,480,102,479,107,439,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58a6d500ce9b03396f0a99b92e4b89d1" name="a58a6d500ce9b03396f0a99b92e4b89d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a6d500ce9b03396f0a99b92e4b89d1">&#9670;&#160;</a></span>getForPop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::getForPop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00180">180</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, and <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a58a6d500ce9b03396f0a99b92e4b89d1_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a58a6d500ce9b03396f0a99b92e4b89d1_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a58a6d500ce9b03396f0a99b92e4b89d1_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a58a6d500ce9b03396f0a99b92e4b89d1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,205,77"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="253,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="205,41,239,36,240,41,206,46"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="253,69,423,109"/>
+<area shape="poly" title=" " alt="" coords="206,68,240,73,239,78,205,74"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="471,47,684,73"/>
+<area shape="poly" title=" " alt="" coords="422,76,460,72,460,77,423,82"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="472,97,683,137"/>
+<area shape="poly" title=" " alt="" coords="423,97,459,101,458,106,422,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5078ce4c0434b3b6779870dc77a49c6" name="ab5078ce4c0434b3b6779870dc77a49c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5078ce4c0434b3b6779870dc77a49c6">&#9670;&#160;</a></span>getForPop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::getForPop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>stackId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a55d68bb6e0ec644c8419c81e92507feb" title="Get the stack belonging to a tree.">getForPush(int,int)</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00174">174</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d6074d6418a79e8acffd89090b6d2aa" name="a4d6074d6418a79e8acffd89090b6d2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6074d6418a79e8acffd89090b6d2aa">&#9670;&#160;</a></span>getForPush() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::getForPush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00163">163</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>, and <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00519">tarch::mpi::Rank::getRank()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4d6074d6418a79e8acffd89090b6d2aa_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4d6074d6418a79e8acffd89090b6d2aa_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4d6074d6418a79e8acffd89090b6d2aa_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a4d6074d6418a79e8acffd89090b6d2aa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,92,205,132"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="264,5,433,45"/>
+<area shape="poly" title=" " alt="" coords="162,89,278,48,280,53,163,94"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="492,70,705,95"/>
+<area shape="poly" title=" " alt="" coords="205,103,478,87,478,92,206,109"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="264,120,433,160"/>
+<area shape="poly" title=" " alt="" coords="206,121,251,126,250,131,205,126"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="253,185,444,210"/>
+<area shape="poly" title=" " alt="" coords="153,130,254,169,283,178,281,183,252,175,151,135"/>
+<area shape="poly" title=" " alt="" coords="433,118,529,96,530,101,434,123"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="493,120,704,160"/>
+<area shape="poly" title=" " alt="" coords="433,137,480,137,480,143,433,143"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55d68bb6e0ec644c8419c81e92507feb" name="a55d68bb6e0ec644c8419c81e92507feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d68bb6e0ec644c8419c81e92507feb">&#9670;&#160;</a></span>getForPush() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::getForPush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>stackId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the stack belonging to a tree. </p>
+<p>There are two versions of the routine: one is thread-safe, the other one does not employ a dedicated semaphore. The one with a semaphore can lazily create stacks; which is the reason why we need the semaphore: everytime we lazily insert new stacks, we run risk that we break the consistency of the underlying container. Originally, I worked with thread-safe accessors only. This resulted in disappointing timings and notably speedup. With a carelfull distinction, I got down the runtime to two third of the original.</p>
+<dl class="section return"><dt>Returns</dt><dd>A stack of type T. Actually, it is a pointer and this routine is a lazy creation, i.e. might create the result upon demand. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00142">142</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00367">peano4::parallel::SpacetreeSet::streamDataFromSplittingTreesToNewTrees()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a55d68bb6e0ec644c8419c81e92507feb_icgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a55d68bb6e0ec644c8419c81e92507feb_icgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a55d68bb6e0ec644c8419c81e92507feb_icgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a55d68bb6e0ec644c8419c81e92507feb_icgraph">
+<area shape="rect" title="Get the stack belonging to a tree." alt="" coords="792,47,992,87"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af2db839ebe2f009b8a85bfe328eb6fa0" title="Copy the data from a splitting tree onto its new workers." alt="" coords="495,40,744,95"/>
+<area shape="poly" title=" " alt="" coords="778,70,744,70,744,65,778,65"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="247,47,447,87"/>
+<area shape="poly" title=" " alt="" coords="481,70,447,70,447,65,481,65"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a63ad06a0041cb535df105cf2f445a73c" title=" " alt="" coords="108,5,199,31"/>
+<area shape="poly" title=" " alt="" coords="254,46,198,32,199,27,255,41"/>
+<area shape="rect" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp.html#a716631ca95d6176da3ed3886635e801e" title=" " alt="" coords="108,55,199,80"/>
+<area shape="poly" title=" " alt="" coords="233,70,199,70,199,65,233,65"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="128,104,179,129"/>
+<area shape="poly" title=" " alt="" coords="255,93,179,113,178,108,254,88"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,104,60,129"/>
+<area shape="poly" title=" " alt="" coords="114,119,60,119,60,114,114,114"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5813eebff58662e1c038ddfa00d4c77c" name="a5813eebff58662e1c038ddfa00d4c77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5813eebff58662e1c038ddfa00d4c77c">&#9670;&#160;</a></span>getKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">peano4::maps::StackKey</a> &gt; <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::getKeys </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This one should be const, but I might need a semaphore, so I have to omit the const qualifier. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00205">205</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a5813eebff58662e1c038ddfa00d4c77c_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a5813eebff58662e1c038ddfa00d4c77c_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a5813eebff58662e1c038ddfa00d4c77c_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_a5813eebff58662e1c038ddfa00d4c77c_cgraph">
+<area shape="rect" title="This one should be const, but I might need a semaphore, so I have to omit the const qualifier." alt="" coords="5,5,205,45"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="253,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="206,23,239,23,239,28,206,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af650fb6c3a600ff26b3e1fef4a5e7d2b" name="af650fb6c3a600ff26b3e1fef4a5e7d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af650fb6c3a600ff26b3e1fef4a5e7d2b">&#9670;&#160;</a></span>holdsStack() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::holdsStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../df/db6/namespacepeano4_1_1maps.html#a6034b89002c9756cec966806ab80673c">StackKey</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00154">154</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00077">peano4::parallel::Node::getInstance()</a>, and <a class="el" href="../../db/d92/Node_8h_source.html#l00059">peano4::parallel::Node::getLocalTreeId()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_af650fb6c3a600ff26b3e1fef4a5e7d2b_cgraph.png" border="0" usemap="#ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_af650fb6c3a600ff26b3e1fef4a5e7d2b_cgraph" alt=""/></div>
+<map name="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_af650fb6c3a600ff26b3e1fef4a5e7d2b_cgraph" id="ade/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap_af650fb6c3a600ff26b3e1fef4a5e7d2b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,205,77"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="253,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="205,41,239,36,240,41,206,46"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="253,69,423,109"/>
+<area shape="poly" title=" " alt="" coords="206,68,240,73,239,78,205,74"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="471,47,684,73"/>
+<area shape="poly" title=" " alt="" coords="422,76,460,72,460,77,423,82"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="472,97,683,137"/>
+<area shape="poly" title=" " alt="" coords="423,97,459,101,458,106,422,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f48df6d95aa9579285dd3f531544559" name="a7f48df6d95aa9579285dd3f531544559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f48df6d95aa9579285dd3f531544559">&#9670;&#160;</a></span>holdsStack() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::holdsStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>stackId</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For debugging/assertions. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00148">148</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+</div>
+</div>
+<a id="a0c51bc4236cacd4b948c2b546a1dfc0e" name="a0c51bc4236cacd4b948c2b546a1dfc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c51bc4236cacd4b948c2b546a1dfc0e">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00191">191</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a810200ff59d5e3ad15317a95095be3ce" name="a810200ff59d5e3ad15317a95095be3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810200ff59d5e3ad15317a95095be3ce">&#9670;&#160;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../d5/d26/structpeano4_1_1maps_1_1HierarchicalStackMap_1_1TreeData.html">TreeData</a> &gt; <a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">peano4::maps::HierarchicalStackMap</a>&lt; T &gt;::_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A vector of maps. </p>
+<p>I hold one entry per local spacetree, i.e. map all global ids onto local indices. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html#l00050">50</a> of file <a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00033">peano4.datamodel.DaStGen2.DaStGen2Generator::construct_output()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00080">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00077">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ScatteredOnHeap_IndexByList::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00124">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ScatteredOnHeap_IndexByVector::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00168">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ContinuousPerVertex::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00215">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_GlobalContinuous::construct_output()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00028">peano4.datamodel.DaStGen2.DaStGen2Generator::get_header_file_include()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00075">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::get_header_file_include()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00037">peano4.toolbox.particles.ParticleSet.AbstractParticleSetGenerator::get_header_file_include()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00024">peano4.datamodel.DaStGen2.DaStGen2Generator::get_stack_container()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00071">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::get_stack_container()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00016">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::get_stack_container()</a>, and <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00030">peano4.toolbox.particles.ParticleSet.AbstractParticleSetGenerator::get_stack_container()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/peano4/maps/<a class="el" href="../../db/d67/HierarchicalStackMap_8h_source.html">HierarchicalStackMap.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../df/db6/namespacepeano4_1_1maps.html">maps</a></li><li class="navelem"><a class="el" href="../../de/d6d/classpeano4_1_1maps_1_1HierarchicalStackMap.html">HierarchicalStackMap</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:13 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">peano4::datamanagement::VertexMarker Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Vertex marker to provide information about selected vertex.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for peano4::datamanagement::VertexMarker:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da6/structpeano4_1_1datamanagement_1_1VertexMarker__coll__graph.png" border="0" usemap="#apeano4_1_1datamanagement_1_1VertexMarker_coll__map" alt="Collaboration graph"/></div>
+<map name="apeano4_1_1datamanagement_1_1VertexMarker_coll__map" id="apeano4_1_1datamanagement_1_1VertexMarker_coll__map">
+<area shape="rect" title="Vertex marker to provide information about selected vertex." alt="" coords="453,217,648,257"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="22,23,193,63"/>
+<area shape="poly" title=" " alt="" coords="206,32,260,33,318,39,376,53,431,76,470,107,502,145,527,184,543,216,538,218,522,187,498,148,467,111,428,81,375,58,317,44,260,38,206,37"/>
+<area shape="rect" title=" " alt="" coords="11,177,203,202"/>
+<area shape="poly" title=" " alt="" coords="217,196,430,217,453,220,453,226,429,223,217,201"/>
+<area shape="rect" title=" " alt="" coords="5,226,209,251"/>
+<area shape="poly" title=" " alt="" coords="223,236,453,235,453,240,223,241"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="36,277,179,317"/>
+<area shape="poly" title=" " alt="" coords="193,293,305,287,429,271,491,255,492,260,430,276,306,292,193,299"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="37,341,178,381"/>
+<area shape="poly" title=" " alt="" coords="192,356,306,343,368,331,428,312,481,286,523,255,526,260,483,290,430,317,370,336,307,349,192,362"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad8d1a29e05c14a11469999ce6047945e" id="r_ad8d1a29e05c14a11469999ce6047945e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8d1a29e05c14a11469999ce6047945e">VertexMarker</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">::peano4::grid::GridTraversalEvent</a> &amp;event, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="#a68f66cefcc07724f6baa46c582d87c0c">select</a>=0)</td></tr>
+<tr class="separator:ad8d1a29e05c14a11469999ce6047945e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f66cefcc07724f6baa46c582d87c0c" id="r_a68f66cefcc07724f6baa46c582d87c0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html">VertexMarker</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68f66cefcc07724f6baa46c582d87c0c">select</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> number)</td></tr>
+<tr class="memdesc:a68f66cefcc07724f6baa46c582d87c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks a vertex within a cell.  <br /></td></tr>
+<tr class="separator:a68f66cefcc07724f6baa46c582d87c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad867d9aef4cee1c7a6c2baffa33e87eb" id="r_ad867d9aef4cee1c7a6c2baffa33e87eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad867d9aef4cee1c7a6c2baffa33e87eb">getSelectedVertexNumber</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:ad867d9aef4cee1c7a6c2baffa33e87eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about selected vertex.  <br /></td></tr>
+<tr class="separator:ad867d9aef4cee1c7a6c2baffa33e87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb9ec5df023cf18abf8a8eb56706e0c" id="r_aabb9ec5df023cf18abf8a8eb56706e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb9ec5df023cf18abf8a8eb56706e0c">x</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aabb9ec5df023cf18abf8a8eb56706e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">We do enumerate the vertices in a lexicographic way, i.e.  <br /></td></tr>
+<tr class="separator:aabb9ec5df023cf18abf8a8eb56706e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b1329ffffe64c17962b2c183f9d564" id="r_a79b1329ffffe64c17962b2c183f9d564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79b1329ffffe64c17962b2c183f9d564">x</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a79b1329ffffe64c17962b2c183f9d564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609463acabc9d94b7ca22a8b0466f89b" id="r_a609463acabc9d94b7ca22a8b0466f89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a609463acabc9d94b7ca22a8b0466f89b">isParentOfSubtree</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a609463acabc9d94b7ca22a8b0466f89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a400059712c31d2cacba6809f7a498" id="r_a05a400059712c31d2cacba6809f7a498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05a400059712c31d2cacba6809f7a498">isParentOfSubtree</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a05a400059712c31d2cacba6809f7a498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3928838b8e8b383c9c6e8178755f5de8" id="r_a3928838b8e8b383c9c6e8178755f5de8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3928838b8e8b383c9c6e8178755f5de8">h</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a3928838b8e8b383c9c6e8178755f5de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3576847ab92b5aaf64488c38ddd0f7c" id="r_ad3576847ab92b5aaf64488c38ddd0f7c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3576847ab92b5aaf64488c38ddd0f7c">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ad3576847ab92b5aaf64488c38ddd0f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f6e3ca7ce3dd423c99084d43d542a7" id="r_ac2f6e3ca7ce3dd423c99084d43d542a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f6e3ca7ce3dd423c99084d43d542a7">hasBeenRefined</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:ac2f6e3ca7ce3dd423c99084d43d542a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vertex is refined iff it is surrounded by \( 2^d \) cells which are refined.  <br /></td></tr>
+<tr class="separator:ac2f6e3ca7ce3dd423c99084d43d542a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa036a945babb9ff8be882a8f688d91b3" id="r_aa036a945babb9ff8be882a8f688d91b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa036a945babb9ff8be882a8f688d91b3">hasBeenRefined</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa036a945babb9ff8be882a8f688d91b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54f975b99e02aeeba06c77e62ef3ba2" id="r_ad54f975b99e02aeeba06c77e62ef3ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54f975b99e02aeeba06c77e62ef3ba2">willBeRefined</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ad54f975b99e02aeeba06c77e62ef3ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd3c7eec8d87ec4d2d403639063c21c" id="r_a5bd3c7eec8d87ec4d2d403639063c21c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bd3c7eec8d87ec4d2d403639063c21c">willBeRefined</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a5bd3c7eec8d87ec4d2d403639063c21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84793fdaab304acefd8fac04f25cb4dd" id="r_a84793fdaab304acefd8fac04f25cb4dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84793fdaab304acefd8fac04f25cb4dd">getNumberOfAdjacentTrees</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a84793fdaab304acefd8fac04f25cb4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of adjacent trees of current vertex.  <br /></td></tr>
+<tr class="separator:a84793fdaab304acefd8fac04f25cb4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c15cb71d38e3b37f371a2a80fdc85c" id="r_a04c15cb71d38e3b37f371a2a80fdc85c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c15cb71d38e3b37f371a2a80fdc85c">getNumberOfAdjacentTrees</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a04c15cb71d38e3b37f371a2a80fdc85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f87a2b190cc3b31b753d8725f682432" id="r_a2f87a2b190cc3b31b753d8725f682432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f87a2b190cc3b31b753d8725f682432">isLocal</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a2f87a2b190cc3b31b753d8725f682432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c46df05978838fc7eb51ed9d8a52912" id="r_a5c46df05978838fc7eb51ed9d8a52912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c46df05978838fc7eb51ed9d8a52912">isLocal</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a5c46df05978838fc7eb51ed9d8a52912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a vertex local, i.e.  <br /></td></tr>
+<tr class="separator:a5c46df05978838fc7eb51ed9d8a52912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9164dd283a8814456b00ace31c428d8c" id="r_a9164dd283a8814456b00ace31c428d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9164dd283a8814456b00ace31c428d8c">isHanging</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a9164dd283a8814456b00ace31c428d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3df93a0cd8379d221319837274164b" id="r_abe3df93a0cd8379d221319837274164b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3df93a0cd8379d221319837274164b">isHanging</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:abe3df93a0cd8379d221319837274164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bb2d508b4c1644a56d17b6d3f85214" id="r_a81bb2d508b4c1644a56d17b6d3f85214"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81bb2d508b4c1644a56d17b6d3f85214">isAdjacentToParallelDomainBoundary</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a81bb2d508b4c1644a56d17b6d3f85214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is currently selected/analysed vertex adjacent to parallel domain boundary.  <br /></td></tr>
+<tr class="separator:a81bb2d508b4c1644a56d17b6d3f85214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf321ea3eaaa51aad9e8a5e0405e414" id="r_a5cf321ea3eaaa51aad9e8a5e0405e414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cf321ea3eaaa51aad9e8a5e0405e414">isAdjacentToParallelDomainBoundary</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a5cf321ea3eaaa51aad9e8a5e0405e414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is one vertex of cell adjacent to parallel domain boundary.  <br /></td></tr>
+<tr class="separator:a5cf321ea3eaaa51aad9e8a5e0405e414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef7ae7db50b2b9fa535160a79d33211" id="r_aaef7ae7db50b2b9fa535160a79d33211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaef7ae7db50b2b9fa535160a79d33211">isParentCellLocal</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aaef7ae7db50b2b9fa535160a79d33211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whenever we touch a vertex the first or the last time, we touch it from a cell: If we touch a vertex the first time, the traversal is just about to enter a cell and sees that one of its vertices is not loaded yet.  <br /></td></tr>
+<tr class="separator:aaef7ae7db50b2b9fa535160a79d33211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfa9f2fd5dee2e796e2511f468c7d80" id="r_aecfa9f2fd5dee2e796e2511f468c7d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfa9f2fd5dee2e796e2511f468c7d80">isParentVertexLocal</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aecfa9f2fd5dee2e796e2511f468c7d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the parent vertex local.  <br /></td></tr>
+<tr class="separator:aecfa9f2fd5dee2e796e2511f468c7d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77ccfeb505b93dab94b36074c9307f7" id="r_af77ccfeb505b93dab94b36074c9307f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af77ccfeb505b93dab94b36074c9307f7">getRelativePositionWithinFatherCell</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:af77ccfeb505b93dab94b36074c9307f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative position within parent cell.  <br /></td></tr>
+<tr class="separator:af77ccfeb505b93dab94b36074c9307f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a72ee55f85f97f6a40cf1353f59b17" id="r_a96a72ee55f85f97f6a40cf1353f59b17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96a72ee55f85f97f6a40cf1353f59b17">getRelativePositionWithinFatherCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a96a72ee55f85f97f6a40cf1353f59b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428c9c9d199e28545d7611ead1ff31be" id="r_a428c9c9d199e28545d7611ead1ff31be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428c9c9d199e28545d7611ead1ff31be">coincidesWithCoarseGridVertex</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a428c9c9d199e28545d7611ead1ff31be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does vertex spatially coincide with coarser level's vertex.  <br /></td></tr>
+<tr class="separator:a428c9c9d199e28545d7611ead1ff31be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1ea6e39615d3bc2838907e9becb26b" id="r_a5b1ea6e39615d3bc2838907e9becb26b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1ea6e39615d3bc2838907e9becb26b">isContainedInAdjacentCells</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="#aabb9ec5df023cf18abf8a8eb56706e0c">x</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> scaleAdjacentCells=1.0, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tolerance=<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a78bcae01889a108e6db2dbb6daae09c0">tarch::la::NUMERICAL_ZERO_DIFFERENCE</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a5b1ea6e39615d3bc2838907e9becb26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return true if x is contained within the adjacent cells.  <br /></td></tr>
+<tr class="separator:a5b1ea6e39615d3bc2838907e9becb26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af278bb67779c5c9cb5783ce6b21534" id="r_a6af278bb67779c5c9cb5783ce6b21534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6af278bb67779c5c9cb5783ce6b21534">isContainedInAdjacentCellsByDimension</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="#aabb9ec5df023cf18abf8a8eb56706e0c">x</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dim, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> scaleAdjacentCells=1.0, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tolerance=<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a78bcae01889a108e6db2dbb6daae09c0">tarch::la::NUMERICAL_ZERO_DIFFERENCE</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a6af278bb67779c5c9cb5783ce6b21534"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-dimensional version of <a class="el" href="#a5b1ea6e39615d3bc2838907e9becb26b" title="Will return true if x is contained within the adjacent cells.">isContainedInAdjacentCells()</a>  <br /></td></tr>
+<tr class="separator:a6af278bb67779c5c9cb5783ce6b21534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fbe16bb43f2ceb0253d4178fa78bdf" id="r_a73fbe16bb43f2ceb0253d4178fa78bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73fbe16bb43f2ceb0253d4178fa78bdf">getRelativeAdjacentCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;<a class="el" href="#aabb9ec5df023cf18abf8a8eb56706e0c">x</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a73fbe16bb43f2ceb0253d4178fa78bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each vertex is surrounded by \( 2^d \) cells.  <br /></td></tr>
+<tr class="separator:a73fbe16bb43f2ceb0253d4178fa78bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea283e30cc2a923617d7fe7bae766b8a" id="r_aea283e30cc2a923617d7fe7bae766b8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea283e30cc2a923617d7fe7bae766b8a">getInvokingCellCentre</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aea283e30cc2a923617d7fe7bae766b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return centre of cell from which this vertex marker is constructed.  <br /></td></tr>
+<tr class="separator:aea283e30cc2a923617d7fe7bae766b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a456304fa2c66cf33446bf10cbc4a2e" id="r_a7a456304fa2c66cf33446bf10cbc4a2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a456304fa2c66cf33446bf10cbc4a2e">getInvokingParentCellsCentre</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a7a456304fa2c66cf33446bf10cbc4a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="#aea283e30cc2a923617d7fe7bae766b8a" title="Return centre of cell from which this vertex marker is constructed.">getInvokingCellCentre()</a>.  <br /></td></tr>
+<tr class="separator:a7a456304fa2c66cf33446bf10cbc4a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f2995c29dd3a9fa8fef38798847f75" id="r_aa8f2995c29dd3a9fa8fef38798847f75"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f2995c29dd3a9fa8fef38798847f75">areAdjacentCellsLocal</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aa8f2995c29dd3a9fa8fef38798847f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are adjacent cells of selected vertex local.  <br /></td></tr>
+<tr class="separator:aa8f2995c29dd3a9fa8fef38798847f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abb8a1f62158580fbfe7d843e5aee4d41" id="r_abb8a1f62158580fbfe7d843e5aee4d41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8a1f62158580fbfe7d843e5aee4d41">isParentLocal</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:abb8a1f62158580fbfe7d843e5aee4d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b207d7a416b20f5343006e360bb31a" id="r_a22b207d7a416b20f5343006e360bb31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22b207d7a416b20f5343006e360bb31a">VertexMarker</a> ()=default</td></tr>
+<tr class="memdesc:a22b207d7a416b20f5343006e360bb31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some unit tests prefer to construct a marker manually, so I offer a dummy default constructor.  <br /></td></tr>
+<tr class="separator:a22b207d7a416b20f5343006e360bb31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af57f00d9fd545fb655203c006721a2f6" id="r_af57f00d9fd545fb655203c006721a2f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af57f00d9fd545fb655203c006721a2f6">_cellCentre</a></td></tr>
+<tr class="memdesc:af57f00d9fd545fb655203c006721a2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centre of the underlying cell.  <br /></td></tr>
+<tr class="separator:af57f00d9fd545fb655203c006721a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf48e5d2c393c694d01e588e811762ee" id="r_acf48e5d2c393c694d01e588e811762ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf48e5d2c393c694d01e588e811762ee">_h</a></td></tr>
+<tr class="memdesc:acf48e5d2c393c694d01e588e811762ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the underlying cell.  <br /></td></tr>
+<tr class="separator:acf48e5d2c393c694d01e588e811762ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b17c81a2db17dc5d9ecc0c7c5090261" id="r_a3b17c81a2db17dc5d9ecc0c7c5090261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b17c81a2db17dc5d9ecc0c7c5090261">_select</a></td></tr>
+<tr class="separator:a3b17c81a2db17dc5d9ecc0c7c5090261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0bcfae91b8c5115247efa75feca166" id="r_a6f0bcfae91b8c5115247efa75feca166"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0bcfae91b8c5115247efa75feca166">_hasBeenRefined</a></td></tr>
+<tr class="separator:a6f0bcfae91b8c5115247efa75feca166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9408748bfaf3f1cb02a09993da99d6d2" id="r_a9408748bfaf3f1cb02a09993da99d6d2"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9408748bfaf3f1cb02a09993da99d6d2">_willBeRefined</a></td></tr>
+<tr class="separator:a9408748bfaf3f1cb02a09993da99d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae321ab199acdd59d5d79a7f2aa5a0063" id="r_ae321ab199acdd59d5d79a7f2aa5a0063"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae321ab199acdd59d5d79a7f2aa5a0063">_isLocal</a></td></tr>
+<tr class="separator:ae321ab199acdd59d5d79a7f2aa5a0063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0bd1877576623024a5f864712c7c24" id="r_aeb0bd1877576623024a5f864712c7c24"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb0bd1877576623024a5f864712c7c24">_isHanging</a></td></tr>
+<tr class="separator:aeb0bd1877576623024a5f864712c7c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d8378c4a644741e50f1d70cf19595c" id="r_a57d8378c4a644741e50f1d70cf19595c"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d8378c4a644741e50f1d70cf19595c">_isParentVertexLocal</a></td></tr>
+<tr class="separator:a57d8378c4a644741e50f1d70cf19595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57b65c68d9e9cfc09c233061c44329b" id="r_af57b65c68d9e9cfc09c233061c44329b"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ab318547449d48a539d5ee3949b7f5ace">ThreePowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af57b65c68d9e9cfc09c233061c44329b">_isAdjacentCellLocal</a></td></tr>
+<tr class="separator:af57b65c68d9e9cfc09c233061c44329b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f35f8675e562c5ef364a1022f55232" id="r_ad4f35f8675e562c5ef364a1022f55232"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f35f8675e562c5ef364a1022f55232">_isParentOfSubtree</a></td></tr>
+<tr class="separator:ad4f35f8675e562c5ef364a1022f55232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d9d70996bfafd138d5d6db6b9b7e32" id="r_ad6d9d70996bfafd138d5d6db6b9b7e32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6d9d70996bfafd138d5d6db6b9b7e32">_isParentCellLocal</a></td></tr>
+<tr class="separator:ad6d9d70996bfafd138d5d6db6b9b7e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5bf67b85790e1c33c99ea99974591b" id="r_aeb5bf67b85790e1c33c99ea99974591b"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb5bf67b85790e1c33c99ea99974591b">_isAdjacentToParallelDomainBoundary</a></td></tr>
+<tr class="separator:aeb5bf67b85790e1c33c99ea99974591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ff32e9d88ba95080661f1cf3d08575" id="r_a01ff32e9d88ba95080661f1cf3d08575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01ff32e9d88ba95080661f1cf3d08575">_relativePositionOfCellWithinFatherCell</a></td></tr>
+<tr class="memdesc:a01ff32e9d88ba95080661f1cf3d08575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entries from (0,1,2).  <br /></td></tr>
+<tr class="separator:a01ff32e9d88ba95080661f1cf3d08575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3959671ff4d7e32fb7f3b0935cf81235" id="r_a3959671ff4d7e32fb7f3b0935cf81235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3959671ff4d7e32fb7f3b0935cf81235">_numberOfAdjacentTrees</a></td></tr>
+<tr class="memdesc:a3959671ff4d7e32fb7f3b0935cf81235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of adjacent trees per vertex.  <br /></td></tr>
+<tr class="separator:a3959671ff4d7e32fb7f3b0935cf81235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a335ef75e37fcb9b30e66e79e3d4f587d" id="r_a335ef75e37fcb9b30e66e79e3d4f587d"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a335ef75e37fcb9b30e66e79e3d4f587d">toolbox::particles::tests::MultiscaleTransitionsTest</a></td></tr>
+<tr class="memdesc:a335ef75e37fcb9b30e66e79e3d4f587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For unit tests.  <br /></td></tr>
+<tr class="separator:a335ef75e37fcb9b30e66e79e3d4f587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8dd40a4670c39255d802a76424bfc8" id="r_a5d8dd40a4670c39255d802a76424bfc8"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d8dd40a4670c39255d802a76424bfc8">toolbox::particles::tests::TestHelpers</a></td></tr>
+<tr class="separator:a5d8dd40a4670c39255d802a76424bfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Vertex marker to provide information about selected vertex. </p>
+<p>A vertex marker is handed into each and every observer/action set routine which is vertex-based. That is routines such as touchVertexFirstTime(). The marker provides information about the underlying vertex.</p>
+<p>Notably, we can provide</p>
+<ul>
+<li>geometric information such as the position of a vertex or the size of the adjacent cells.</li>
+<li>status information such as whether a vertex is hanging.</li>
+<li>grid layout information such as the vertex's position within the parent cell.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md120"></a>
+Rationale</h2>
+<p>Peano's events (observer and action set routines) are internally all implemented on a per cell basis. So we invoke touchVertexFirstTime() from the cell when the first adjacent cell of a vertex is entered. Therefore, we know the selected vertex.</p>
+<p>Peano runs through the mesh with a tree automaton. A lot of information about vertices thus is recomputed on-the-fly all the time, as it is easy to derive it from the context. We know, for example, from the state of the traversal automaton if a vertex is hanging or not or which position in space it has. Therefore, such information is not stored within the vertex (unless for debugging purposes). Not only would the information be redundant, it would also be very inefficient: If you work with k data records per vertex, each one would hold the same information about the underlying vertex's position. So it makes more sense to encode such information with a separate object.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/dd3/structpeano4_1_1datamanagement_1_1FaceMarker.html" title="Provide information about selected face.">FaceMarker</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> the analogous information <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> faces. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00085">85</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a22b207d7a416b20f5343006e360bb31a" name="a22b207d7a416b20f5343006e360bb31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b207d7a416b20f5343006e360bb31a">&#9670;&#160;</a></span>VertexMarker() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4::datamanagement::VertexMarker::VertexMarker </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Some unit tests prefer to construct a marker manually, so I offer a dummy default constructor. </p>
+<p>The normal code should and does not use a default constructor. </p>
+
+</div>
+</div>
+<a id="ad8d1a29e05c14a11469999ce6047945e" name="ad8d1a29e05c14a11469999ce6047945e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d1a29e05c14a11469999ce6047945e">&#9670;&#160;</a></span>VertexMarker() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4::datamanagement::VertexMarker::VertexMarker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">::peano4::grid::GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>select</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa8f2995c29dd3a9fa8fef38798847f75" name="aa8f2995c29dd3a9fa8fef38798847f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f2995c29dd3a9fa8fef38798847f75">&#9670;&#160;</a></span>areAdjacentCellsLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt; <a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a> &gt; peano4::datamanagement::VertexMarker::areAdjacentCellsLocal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Are adjacent cells of selected vertex local. </p>
+<h2><a class="anchor" id="autotoc_md122"></a>
+Correctness</h2>
+<p>I originally thought I could add the assertion</p>
+<div class="fragment"><div class="line"><a class="code hl_define" href="../../dc/d46/Assertions_8h.html#a076e57cb010b7a1f9db57560c77e5e4f">assertion2</a>( result.all() or <a class="code hl_function" href="#a81bb2d508b4c1644a56d17b6d3f85214">isAdjacentToParallelDomainBoundary</a>(), result, <a class="code hl_function" href="#ad3576847ab92b5aaf64488c38ddd0f7c">toString</a>() );</div>
+<div class="ttc" id="aAssertions_8h_html_a076e57cb010b7a1f9db57560c77e5e4f"><div class="ttname"><a href="../../dc/d46/Assertions_8h.html#a076e57cb010b7a1f9db57560c77e5e4f">assertion2</a></div><div class="ttdeci">#define assertion2(expr, param0, param1)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d46/Assertions_8h_source.html#l01019">Assertions.h:1019</a></div></div>
+<div class="ttc" id="astructpeano4_1_1datamanagement_1_1VertexMarker_html_a81bb2d508b4c1644a56d17b6d3f85214"><div class="ttname"><a href="#a81bb2d508b4c1644a56d17b6d3f85214">peano4::datamanagement::VertexMarker::isAdjacentToParallelDomainBoundary</a></div><div class="ttdeci">bool isAdjacentToParallelDomainBoundary() const</div><div class="ttdoc">Is currently selected/analysed vertex adjacent to parallel domain boundary.</div><div class="ttdef"><b>Definition</b> <a href="../../da/d52/VertexMarker_8cpp_source.html#l00160">VertexMarker.cpp:160</a></div></div>
+<div class="ttc" id="astructpeano4_1_1datamanagement_1_1VertexMarker_html_ad3576847ab92b5aaf64488c38ddd0f7c"><div class="ttname"><a href="#ad3576847ab92b5aaf64488c38ddd0f7c">peano4::datamanagement::VertexMarker::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d52/VertexMarker_8cpp_source.html#l00101">VertexMarker.cpp:101</a></div></div>
+</div><!-- fragment --><p>However, this assertion fails at the global domain boundary, where some adjacent cells are not local (they are outside) and the vertices nevertheless are not parallel boundary vertices either. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d9e/Loop_8h_source.html#l00086">dfor2</a>, <a class="el" href="../../d1/dc2/Linearised_8cpph_source.html#l00034">peano4::utils::dLinearised()</a>, and <a class="el" href="../../db/d9e/Loop_8h_source.html#l00117">enddforx</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aa8f2995c29dd3a9fa8fef38798847f75_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aa8f2995c29dd3a9fa8fef38798847f75_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aa8f2995c29dd3a9fa8fef38798847f75_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aa8f2995c29dd3a9fa8fef38798847f75_cgraph">
+<area shape="rect" title="Are adjacent cells of selected vertex local." alt="" coords="5,5,275,45"/>
+<area shape="rect" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095" title="Map d&#45;dimensional vector onto integer index." alt="" coords="323,13,512,38"/>
+<area shape="poly" title=" " alt="" coords="275,23,309,23,309,28,275,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a428c9c9d199e28545d7611ead1ff31be" name="a428c9c9d199e28545d7611ead1ff31be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428c9c9d199e28545d7611ead1ff31be">&#9670;&#160;</a></span>coincidesWithCoarseGridVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::coincidesWithCoarseGridVertex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Does vertex spatially coincide with coarser level's vertex. </p>
+<p>The vertex (0,0,0) coincides with a coarse grid vertex, the (3,0,0) does so too, and so forth.</p>
+<h2><a class="anchor" id="autotoc_md121"></a>
+Frequent use case</h2>
+<p>If you want to program some simply injection, it helps to identify vertices which coincide spatially with vertices on the next coarser level. A classic are codes like</p>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> ( marker.coincidesWithCoarseGridVertex() ) {</div>
+<div class="line">  <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions,int&gt;</a> parent = marker.getRelativePositionWithinFatherCell() / 3;</div>
+<div class="line">  coarseGridVerticesX( <a class="code hl_function" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095">peano4::utils::dLinearised</a>(parent,2) ).set...</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacepeano4_1_1utils_html_a4f1a4f16c96662b344839f6beb4cd095"><div class="ttname"><a href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f1a4f16c96662b344839f6beb4cd095">peano4::utils::dLinearised</a></div><div class="ttdeci">GPUCallableMethod int dLinearised(const std::bitset&lt; Dimensions &gt; &amp;counter)</div><div class="ttdoc">Map d-dimensional vector onto integer index.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dc2/Linearised_8cpph_source.html#l00034">Linearised.cpph:34</a></div></div>
+<div class="ttc" id="astructtarch_1_1la_1_1Vector_html"><div class="ttname"><a href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a></div><div class="ttdoc">Simple vector class.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbe/Vector_8h_source.html#l00084">Vector.h:84</a></div></div>
+</div><!-- fragment --><p>within touchVertexLastTime. This snippet looks if two vertices coincide spatially. If so, it computes the parent's relative position within the parent cell which is simply a division by 3. We then linearise this vector index and thus have access to the parent. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea283e30cc2a923617d7fe7bae766b8a" name="aea283e30cc2a923617d7fe7bae766b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea283e30cc2a923617d7fe7bae766b8a">&#9670;&#160;</a></span>getInvokingCellCentre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; peano4::datamanagement::VertexMarker::getInvokingCellCentre </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return centre of cell from which this vertex marker is constructed. </p>
+<p>Peano runs through the mesh element-wisely. That is, each touchVertexFirstTime() and touchVertexLastTime() is called from a cell. It looks at its \( 2^d \) adjacent vertices and then invokes the vertex events for these vertices if necessary. This routine yields the centre of this cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a456304fa2c66cf33446bf10cbc4a2e" name="a7a456304fa2c66cf33446bf10cbc4a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a456304fa2c66cf33446bf10cbc4a2e">&#9670;&#160;</a></span>getInvokingParentCellsCentre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; peano4::datamanagement::VertexMarker::getInvokingParentCellsCentre </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="#aea283e30cc2a923617d7fe7bae766b8a" title="Return centre of cell from which this vertex marker is constructed.">getInvokingCellCentre()</a>. </p>
+<p>This routine gives you the centre of its parent cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a7a456304fa2c66cf33446bf10cbc4a2e_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a7a456304fa2c66cf33446bf10cbc4a2e_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a7a456304fa2c66cf33446bf10cbc4a2e_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a7a456304fa2c66cf33446bf10cbc4a2e_cgraph">
+<area shape="rect" title="See getInvokingCellCentre()." alt="" coords="5,5,248,60"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="296,20,369,45"/>
+<area shape="poly" title=" " alt="" coords="248,30,282,30,282,35,248,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a84793fdaab304acefd8fac04f25cb4dd" name="a84793fdaab304acefd8fac04f25cb4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84793fdaab304acefd8fac04f25cb4dd">&#9670;&#160;</a></span>getNumberOfAdjacentTrees() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> peano4::datamanagement::VertexMarker::getNumberOfAdjacentTrees </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of adjacent trees of current vertex. </p>
+<p>This routine is valid if and only if you call it for a local, non-hanging vertex. Otherwise, its behaviour is undefined (and will actually trigger an assertion). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04c15cb71d38e3b37f371a2a80fdc85c" name="a04c15cb71d38e3b37f371a2a80fdc85c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c15cb71d38e3b37f371a2a80fdc85c">&#9670;&#160;</a></span>getNumberOfAdjacentTrees() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> peano4::datamanagement::VertexMarker::getNumberOfAdjacentTrees </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a04c15cb71d38e3b37f371a2a80fdc85c_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a04c15cb71d38e3b37f371a2a80fdc85c_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a04c15cb71d38e3b37f371a2a80fdc85c_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a04c15cb71d38e3b37f371a2a80fdc85c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,309,45"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="357,13,431,38"/>
+<area shape="poly" title=" " alt="" coords="310,23,343,23,343,28,310,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73fbe16bb43f2ceb0253d4178fa78bdf" name="a73fbe16bb43f2ceb0253d4178fa78bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fbe16bb43f2ceb0253d4178fa78bdf">&#9670;&#160;</a></span>getRelativeAdjacentCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; peano4::datamanagement::VertexMarker::getRelativeAdjacentCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Each vertex is surrounded by \( 2^d \) cells. </p>
+<p>In reality, it might be fewer of them, as we might have to deal with a hanging vertex, but logically we can always assume that there were \( 2^d \). Let's assume that they are grouped lexicographically around the vertex, i.e. we have</p>
+<div class="fragment"><div class="line">2 | 3</div>
+<div class="line">--+--</div>
+<div class="line">0 | 1</div>
+</div><!-- fragment --><p>cells centred around a central vertex denoted by the plus in this fancy ASCII art. If x falls into the cell 1, this routine would return (1,0). If it falls into cell 3, it would return (1,1). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af77ccfeb505b93dab94b36074c9307f7" name="af77ccfeb505b93dab94b36074c9307f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77ccfeb505b93dab94b36074c9307f7">&#9670;&#160;</a></span>getRelativePositionWithinFatherCell() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; peano4::datamanagement::VertexMarker::getRelativePositionWithinFatherCell </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relative position within parent cell. </p>
+<p>Return relative position within father cell. The result is from (0,1,2,3)^d and denotes the vertex position within a 3x3 or 3x3x3 respectively mesh.</p>
+<p>You can reconstruct the left bottom vertex of the coarser cell through </p><div class="fragment"><div class="line">marker.x() - <a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents</a>(</div>
+<div class="line">  <a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">tarch::la::convertScalar&lt;double&gt;</a>(marker.getRelativePositionWithinFatherCell()),</div>
+<div class="line">  marker.h()</div>
+<div class="line">)</div>
+<div class="ttc" id="anamespacetarch_1_1la_html_a9ab5aa4e4252e6d78ba62df6a711c47a"><div class="ttname"><a href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">tarch::la::max</a></div><div class="ttdeci">double max(double a, double b, double c)</div><div class="ttdoc">I need the maximum of three values all the time, to I decided to write a function for this.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/deb/Scalar_8cpp_source.html#l00008">Scalar.cpp:8</a></div></div>
+<div class="ttc" id="anamespacetarch_1_1la_html_adca36f9134d5ca53daa05b82d9a1ce18"><div class="ttname"><a href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents</a></div><div class="ttdeci">Matrix&lt; Rows, Cols, Scalar &gt; multiplyComponents(const Matrix&lt; Rows, X, Scalar &gt; &amp;lhs, const Matrix&lt; X, Cols, Scalar &gt; &amp;rhs)</div></div>
+</div><!-- fragment --><p>If you want to know a particular position of a coarse grid vertex identified through the bitset target, you can do through </p><div class="fragment"><div class="line">marker.x()</div>
+<div class="line">-</div>
+<div class="line"><a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents</a>(</div>
+<div class="line">  <a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">tarch::la::convertScalar&lt;double&gt;</a>(marker.getRelativePositionWithinFatherCell()),</div>
+<div class="line">  marker.h()</div>
+<div class="line">)</div>
+<div class="line">+</div>
+<div class="line"><a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents</a>(</div>
+<div class="line">  <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions,double&gt;</a>(target),</div>
+<div class="line">  3.0*marker.h()</div>
+<div class="line">)</div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a428c9c9d199e28545d7611ead1ff31be" title="Does vertex spatially coincide with coarser level&#39;s vertex.">coincidesWithCoarseGridVertex()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a96a72ee55f85f97f6a40cf1353f59b17" name="a96a72ee55f85f97f6a40cf1353f59b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a72ee55f85f97f6a40cf1353f59b17">&#9670;&#160;</a></span>getRelativePositionWithinFatherCell() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; peano4::datamanagement::VertexMarker::getRelativePositionWithinFatherCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad867d9aef4cee1c7a6c2baffa33e87eb" name="ad867d9aef4cee1c7a6c2baffa33e87eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad867d9aef4cee1c7a6c2baffa33e87eb">&#9670;&#160;</a></span>getSelectedVertexNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> peano4::datamanagement::VertexMarker::getSelectedVertexNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Information about selected vertex. </p>
+<p>Even though you are given a vertex marker for a vertex routine such as touchVertexFirstTime(), Peano behind the scenes invokes this routine from a cell. That is, it enters a cell, then runs over all \( 2^d \) adjacent vertex and puzzles out for each vertex if it has to call touchVertexFirstTime() or not.</p>
+<p><a class="el" href="#ad867d9aef4cee1c7a6c2baffa33e87eb" title="Information about selected vertex.">getSelectedVertexNumber()</a> tells you which logical number a vertex has within the underlying cell behind the scenes.</p>
+<div class="image">
+<img src="../../VertexEnumerator.png" alt=""/>
+</div>
+<p>The routine is barely used by user codes. Some technical helper routines use the selected number for some arithmetics, but the code indeed might be cleaner if we did hide this routine from the user altogether and make the routine explicitly available only to friends. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00168">168</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>.</p>
+
+</div>
+</div>
+<a id="a3928838b8e8b383c9c6e8178755f5de8" name="a3928838b8e8b383c9c6e8178755f5de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3928838b8e8b383c9c6e8178755f5de8">&#9670;&#160;</a></span>h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; peano4::datamanagement::VertexMarker::h </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00187">187</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00101">_h</a>.</p>
+
+</div>
+</div>
+<a id="ac2f6e3ca7ce3dd423c99084d43d542a7" name="ac2f6e3ca7ce3dd423c99084d43d542a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f6e3ca7ce3dd423c99084d43d542a7">&#9670;&#160;</a></span>hasBeenRefined() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::hasBeenRefined </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vertex is refined iff it is surrounded by \( 2^d \) cells which are refined. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00195">195</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00195">hasBeenRefined()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00195">hasBeenRefined()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_cgraph">
+<area shape="rect" title="A vertex is refined iff it is surrounded by &#160;cells which are refined." alt="" coords="5,29,236,69"/>
+<area shape="poly" title=" " alt="" coords="78,30,75,20,82,10,97,5,121,3,147,6,162,13,160,18,146,11,121,8,99,10,85,15,80,21,83,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ac2f6e3ca7ce3dd423c99084d43d542a7_icgraph">
+<area shape="rect" title="A vertex is refined iff it is surrounded by &#160;cells which are refined." alt="" coords="5,29,236,69"/>
+<area shape="poly" title=" " alt="" coords="160,18,146,11,121,8,99,10,85,15,80,21,83,28,78,30,75,20,82,10,97,5,121,3,147,6,162,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa036a945babb9ff8be882a8f688d91b3" name="aa036a945babb9ff8be882a8f688d91b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa036a945babb9ff8be882a8f688d91b3">&#9670;&#160;</a></span>hasBeenRefined() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::hasBeenRefined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00196">196</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00105">_hasBeenRefined</a>.</p>
+
+</div>
+</div>
+<a id="a81bb2d508b4c1644a56d17b6d3f85214" name="a81bb2d508b4c1644a56d17b6d3f85214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bb2d508b4c1644a56d17b6d3f85214">&#9670;&#160;</a></span>isAdjacentToParallelDomainBoundary() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isAdjacentToParallelDomainBoundary </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is currently selected/analysed vertex adjacent to parallel domain boundary. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5cf321ea3eaaa51aad9e8a5e0405e414" name="a5cf321ea3eaaa51aad9e8a5e0405e414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf321ea3eaaa51aad9e8a5e0405e414">&#9670;&#160;</a></span>isAdjacentToParallelDomainBoundary() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isAdjacentToParallelDomainBoundary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is one vertex of cell adjacent to parallel domain boundary. </p>
+<p>Peano runs through the mesh cell by cell. Within a cell, you can ask if the ith vertex actually is adjacent to a parallel domain boundary. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5cf321ea3eaaa51aad9e8a5e0405e414_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5cf321ea3eaaa51aad9e8a5e0405e414_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5cf321ea3eaaa51aad9e8a5e0405e414_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5cf321ea3eaaa51aad9e8a5e0405e414_cgraph">
+<area shape="rect" title="Is one vertex of cell adjacent to parallel domain boundary." alt="" coords="5,5,212,60"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="260,20,333,45"/>
+<area shape="poly" title=" " alt="" coords="212,30,247,30,247,35,212,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b1ea6e39615d3bc2838907e9becb26b" name="a5b1ea6e39615d3bc2838907e9becb26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1ea6e39615d3bc2838907e9becb26b">&#9670;&#160;</a></span>isContainedInAdjacentCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isContainedInAdjacentCells </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>scaleAdjacentCells</em><span class="paramdefsep"> = </span><span class="paramdefval">1.0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>tolerance</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a78bcae01889a108e6db2dbb6daae09c0">tarch::la::NUMERICAL_ZERO_DIFFERENCE</a></span></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Will return true if x is contained within the adjacent cells. </p>
+<p>You can use shrink those cells via the additional parameter if you want.</p>
+<p>The geometric operation is defined over the closed interval, i.e. we look into the adjacent cubes to the vertex and their faces still count as "inside". If x is exactly on the face of a cube adjacent to the vertex, we will get back a true. Indeed, the cubes are even slightly bigger due to machine precision. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, and <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00056">tarch::la::smallerEquals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5b1ea6e39615d3bc2838907e9becb26b_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5b1ea6e39615d3bc2838907e9becb26b_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5b1ea6e39615d3bc2838907e9becb26b_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a5b1ea6e39615d3bc2838907e9becb26b_cgraph">
+<area shape="rect" title="Will return true if x is contained within the adjacent cells." alt="" coords="5,16,220,71"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="319,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="220,29,305,21,305,26,221,35"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="268,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="221,51,255,55,254,60,220,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6af278bb67779c5c9cb5783ce6b21534" name="a6af278bb67779c5c9cb5783ce6b21534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af278bb67779c5c9cb5783ce6b21534">&#9670;&#160;</a></span>isContainedInAdjacentCellsByDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isContainedInAdjacentCellsByDimension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>dim</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>scaleAdjacentCells</em><span class="paramdefsep"> = </span><span class="paramdefval">1.0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>tolerance</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a78bcae01889a108e6db2dbb6daae09c0">tarch::la::NUMERICAL_ZERO_DIFFERENCE</a></span></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One-dimensional version of <a class="el" href="#a5b1ea6e39615d3bc2838907e9becb26b" title="Will return true if x is contained within the adjacent cells.">isContainedInAdjacentCells()</a> </p>
+<p>Same as <a class="el" href="#a5b1ea6e39615d3bc2838907e9becb26b" title="Will return true if x is contained within the adjacent cells.">isContainedInAdjacentCells()</a>, but only checks along a single dimension provided by <code>int dim</code>. This variant is sometimes way faster, as it only checks the direction of interest.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dim</td><td>Positive integer with 0 &lt;= dim &lt; Dimensions which indicates the search direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d92/CompressedFloat_8h_source.html#l00015">std::abs()</a>, and <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00056">tarch::la::smallerEquals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a6af278bb67779c5c9cb5783ce6b21534_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a6af278bb67779c5c9cb5783ce6b21534_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a6af278bb67779c5c9cb5783ce6b21534_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a6af278bb67779c5c9cb5783ce6b21534_cgraph">
+<area shape="rect" title="One&#45;dimensional version of isContainedInAdjacentCells()" alt="" coords="5,16,220,71"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="319,5,392,31"/>
+<area shape="poly" title=" " alt="" coords="220,29,305,21,305,26,221,35"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="268,55,443,80"/>
+<area shape="poly" title=" " alt="" coords="221,51,255,55,254,60,220,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9164dd283a8814456b00ace31c428d8c" name="a9164dd283a8814456b00ace31c428d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9164dd283a8814456b00ace31c428d8c">&#9670;&#160;</a></span>isHanging() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isHanging </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00224">224</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00224">isHanging()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00224">isHanging()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,200,69"/>
+<area shape="poly" title=" " alt="" coords="66,30,64,20,70,11,83,5,103,3,126,6,138,13,135,17,124,11,103,8,84,10,73,15,69,21,71,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a9164dd283a8814456b00ace31c428d8c_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,200,69"/>
+<area shape="poly" title=" " alt="" coords="135,17,124,11,103,8,84,10,73,15,69,21,71,28,66,30,64,20,70,11,83,5,103,3,126,6,138,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe3df93a0cd8379d221319837274164b" name="abe3df93a0cd8379d221319837274164b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3df93a0cd8379d221319837274164b">&#9670;&#160;</a></span>isHanging() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isHanging </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00226">226</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00108">_isHanging</a>.</p>
+
+</div>
+</div>
+<a id="a2f87a2b190cc3b31b753d8725f682432" name="a2f87a2b190cc3b31b753d8725f682432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f87a2b190cc3b31b753d8725f682432">&#9670;&#160;</a></span>isLocal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isLocal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>isLocal(int) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> currently selected/represented vertex </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00214">214</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00214">isLocal()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00214">isLocal()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,200,69"/>
+<area shape="poly" title=" " alt="" coords="66,30,64,20,70,11,83,5,103,3,126,6,138,13,135,17,124,11,103,8,84,10,73,15,69,21,71,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a2f87a2b190cc3b31b753d8725f682432_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,200,69"/>
+<area shape="poly" title=" " alt="" coords="135,17,124,11,103,8,84,10,73,15,69,21,71,28,66,30,64,20,70,11,83,5,103,3,126,6,138,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c46df05978838fc7eb51ed9d8a52912" name="a5c46df05978838fc7eb51ed9d8a52912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c46df05978838fc7eb51ed9d8a52912">&#9670;&#160;</a></span>isLocal() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isLocal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is a vertex local, i.e. </p>
+<p>not adjacent to any boundary or remote </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00219">219</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00107">_isLocal</a>.</p>
+
+</div>
+</div>
+<a id="aaef7ae7db50b2b9fa535160a79d33211" name="aaef7ae7db50b2b9fa535160a79d33211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef7ae7db50b2b9fa535160a79d33211">&#9670;&#160;</a></span>isParentCellLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isParentCellLocal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whenever we touch a vertex the first or the last time, we touch it from a cell: If we touch a vertex the first time, the traversal is just about to enter a cell and sees that one of its vertices is not loaded yet. </p>
+<p>When we issue a touchVertexLastTime() event, the traversal is just about to leave a cell.</p>
+<p>So there's a cell state associated with any vertex event, and, therefore, we know if the corresponding cell is local and whether its parent cell is local.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aecfa9f2fd5dee2e796e2511f468c7d80" title="Is the parent vertex local.">isParentVertexLocal()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00254">254</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00113">_isParentCellLocal</a>.</p>
+
+</div>
+</div>
+<a id="abb8a1f62158580fbfe7d843e5aee4d41" name="abb8a1f62158580fbfe7d843e5aee4d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8a1f62158580fbfe7d843e5aee4d41">&#9670;&#160;</a></span>isParentLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isParentLocal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05a400059712c31d2cacba6809f7a498" name="a05a400059712c31d2cacba6809f7a498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a400059712c31d2cacba6809f7a498">&#9670;&#160;</a></span>isParentOfSubtree() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isParentOfSubtree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00185">185</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00185">isParentOfSubtree()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00185">isParentOfSubtree()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,248,69"/>
+<area shape="poly" title=" " alt="" coords="81,30,79,20,86,10,102,5,127,3,155,6,170,13,168,18,153,11,127,8,103,10,89,15,84,21,87,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a05a400059712c31d2cacba6809f7a498_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,248,69"/>
+<area shape="poly" title=" " alt="" coords="168,18,153,11,127,8,103,10,89,15,84,21,87,28,81,30,79,20,86,10,102,5,127,3,155,6,170,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a609463acabc9d94b7ca22a8b0466f89b" name="a609463acabc9d94b7ca22a8b0466f89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609463acabc9d94b7ca22a8b0466f89b">&#9670;&#160;</a></span>isParentOfSubtree() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isParentOfSubtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00184">184</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00111">_isParentOfSubtree</a>.</p>
+
+</div>
+</div>
+<a id="aecfa9f2fd5dee2e796e2511f468c7d80" name="aecfa9f2fd5dee2e796e2511f468c7d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfa9f2fd5dee2e796e2511f468c7d80">&#9670;&#160;</a></span>isParentVertexLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::isParentVertexLocal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is the parent vertex local. </p>
+<p>Is a parent vertex local, i.e. not adjacent to any boundary or remote. Peano traverses the tree in a strict octant-wise (multiscale-wise) order. That is, whenever you receive a touchVertexFirstTime() or touchVertexLastTime() event, the Peano core has actually entered a cell and recognised "whoops, I haven't
+used that vertex yet" or "this will be the last time this vertex
+is available". See the <a class="el" href="../../da/d1b/peano_action_sets.html">generic event description</a> on an overview of all of these events.</p>
+<div class="image">
+<img src="../../VertexMarker_isParentVertexLocal.png" alt=""/>
+</div>
+<p>As a logical consequence, there are always \( 2^d \) parent vertices when you encounter a vertex for the first or last time. But you never know which parent cell it will be. The code could have stepped down from A into a or from B into b. So the parent vertices could be the green or the blue ones.</p>
+<p>This routine allows you to find out if these vertices are local. It will always return if <a class="el" href="#aaef7ae7db50b2b9fa535160a79d33211" title="Whenever we touch a vertex the first or the last time, we touch it from a cell: If we touch a vertex ...">isParentCellLocal()</a> does not hold. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, and <a class="el" href="../../d9/df1/Globals_8h_source.html#l00021">TwoPowerD</a>.</p>
+
+</div>
+</div>
+<a id="a68f66cefcc07724f6baa46c582d87c0c" name="a68f66cefcc07724f6baa46c582d87c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f66cefcc07724f6baa46c582d87c0c">&#9670;&#160;</a></span>select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html">peano4::datamanagement::VertexMarker</a> &amp; peano4::datamanagement::VertexMarker::select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>number</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Picks a vertex within a cell. </p>
+<p>After that, the routine returns.</p>
+<p>This routine is only called by Peano's internal observer, i.e. the class constructing <a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html" title="Vertex marker to provide information about selected vertex.">VertexMarker</a> objects. Users never call this routine. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>, <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>, and <a class="el" href="../../d9/df1/Globals_8h_source.html#l00021">TwoPowerD</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a68f66cefcc07724f6baa46c582d87c0c_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a68f66cefcc07724f6baa46c582d87c0c_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a68f66cefcc07724f6baa46c582d87c0c_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_a68f66cefcc07724f6baa46c582d87c0c_cgraph">
+<area shape="rect" title="Picks a vertex within a cell." alt="" coords="5,5,200,45"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="248,13,321,38"/>
+<area shape="poly" title=" " alt="" coords="200,23,234,23,234,28,200,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3576847ab92b5aaf64488c38ddd0f7c" name="ad3576847ab92b5aaf64488c38ddd0f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3576847ab92b5aaf64488c38ddd0f7c">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string peano4::datamanagement::VertexMarker::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad3576847ab92b5aaf64488c38ddd0f7c_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad3576847ab92b5aaf64488c38ddd0f7c_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad3576847ab92b5aaf64488c38ddd0f7c_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad3576847ab92b5aaf64488c38ddd0f7c_icgraph">
+<area shape="rect" title=" " alt="" coords="272,20,467,60"/>
+<area shape="rect" href="../../d5/d12/classtoolbox_1_1particles_1_1tests_1_1TestHelpers.html#ad2f05c2baa428e77be95f48fb63b5ecb" title="Test particleAssignedToVertexWillBeLocal()" alt="" coords="5,5,224,75"/>
+<area shape="poly" title=" " alt="" coords="258,43,224,43,224,37,258,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad54f975b99e02aeeba06c77e62ef3ba2" name="ad54f975b99e02aeeba06c77e62ef3ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54f975b99e02aeeba06c77e62ef3ba2">&#9670;&#160;</a></span>willBeRefined() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::willBeRefined </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00198">198</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">_select</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00198">willBeRefined()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00198">willBeRefined()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_cgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_cgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_cgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,220,69"/>
+<area shape="poly" title=" " alt="" coords="73,30,70,20,77,10,91,5,113,3,138,6,151,13,149,18,136,11,113,8,92,10,80,15,75,21,78,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_ad54f975b99e02aeeba06c77e62ef3ba2_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,220,69"/>
+<area shape="poly" title=" " alt="" coords="149,18,136,11,113,8,92,10,80,15,75,21,78,28,73,30,70,20,77,10,91,5,113,3,138,6,151,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5bd3c7eec8d87ec4d2d403639063c21c" name="a5bd3c7eec8d87ec4d2d403639063c21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd3c7eec8d87ec4d2d403639063c21c">&#9670;&#160;</a></span>willBeRefined() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::willBeRefined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00199">199</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00106">_willBeRefined</a>.</p>
+
+</div>
+</div>
+<a id="a79b1329ffffe64c17962b2c183f9d564" name="a79b1329ffffe64c17962b2c183f9d564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b1329ffffe64c17962b2c183f9d564">&#9670;&#160;</a></span>x() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; peano4::datamanagement::VertexMarker::x </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Position in space of currently selected vertex. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aabb9ec5df023cf18abf8a8eb56706e0c" name="aabb9ec5df023cf18abf8a8eb56706e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb9ec5df023cf18abf8a8eb56706e0c">&#9670;&#160;</a></span>x() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; peano4::datamanagement::VertexMarker::x </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We do enumerate the vertices in a lexicographic way, i.e. </p>
+<p>we start with the bottom left vertex. Then we run along the first Cartesian axis, then the second, and so forth. This yields a z-pattern for the enumeration.</p>
+<dl class="section return"><dt>Returns</dt><dd>Position of ith vertex </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aabb9ec5df023cf18abf8a8eb56706e0c_icgraph.png" border="0" usemap="#add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aabb9ec5df023cf18abf8a8eb56706e0c_icgraph" alt=""/></div>
+<map name="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aabb9ec5df023cf18abf8a8eb56706e0c_icgraph" id="add/dc6/structpeano4_1_1datamanagement_1_1VertexMarker_aabb9ec5df023cf18abf8a8eb56706e0c_icgraph">
+<area shape="rect" title="We do enumerate the vertices in a lexicographic way, i.e." alt="" coords="272,20,467,60"/>
+<area shape="rect" href="../../d5/d12/classtoolbox_1_1particles_1_1tests_1_1TestHelpers.html#ad2f05c2baa428e77be95f48fb63b5ecb" title="Test particleAssignedToVertexWillBeLocal()" alt="" coords="5,5,224,75"/>
+<area shape="poly" title=" " alt="" coords="258,43,224,43,224,37,258,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a335ef75e37fcb9b30e66e79e3d4f587d" name="a335ef75e37fcb9b30e66e79e3d4f587d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335ef75e37fcb9b30e66e79e3d4f587d">&#9670;&#160;</a></span>toolbox::particles::tests::MultiscaleTransitionsTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../db/d7c/classtoolbox_1_1particles_1_1tests_1_1MultiscaleTransitionsTest.html">toolbox::particles::tests::MultiscaleTransitionsTest</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For unit tests. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00090">90</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<a id="a5d8dd40a4670c39255d802a76424bfc8" name="a5d8dd40a4670c39255d802a76424bfc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8dd40a4670c39255d802a76424bfc8">&#9670;&#160;</a></span>toolbox::particles::tests::TestHelpers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d5/d12/classtoolbox_1_1particles_1_1tests_1_1TestHelpers.html">toolbox::particles::tests::TestHelpers</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00091">91</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="af57f00d9fd545fb655203c006721a2f6" name="af57f00d9fd545fb655203c006721a2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57f00d9fd545fb655203c006721a2f6">&#9670;&#160;</a></span>_cellCentre</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt; peano4::datamanagement::VertexMarker::_cellCentre</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Centre of the underlying cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00096">96</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="acf48e5d2c393c694d01e588e811762ee" name="acf48e5d2c393c694d01e588e811762ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf48e5d2c393c694d01e588e811762ee">&#9670;&#160;</a></span>_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt; peano4::datamanagement::VertexMarker::_h</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of the underlying cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00101">101</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00187">h()</a>, and <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="a6f0bcfae91b8c5115247efa75feca166" name="a6f0bcfae91b8c5115247efa75feca166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0bcfae91b8c5115247efa75feca166">&#9670;&#160;</a></span>_hasBeenRefined</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_hasBeenRefined</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00105">105</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00196">hasBeenRefined()</a>, and <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="af57b65c68d9e9cfc09c233061c44329b" name="af57b65c68d9e9cfc09c233061c44329b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57b65c68d9e9cfc09c233061c44329b">&#9670;&#160;</a></span>_isAdjacentCellLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ab318547449d48a539d5ee3949b7f5ace">ThreePowerD</a>&gt; peano4::datamanagement::VertexMarker::_isAdjacentCellLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00110">110</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="aeb5bf67b85790e1c33c99ea99974591b" name="aeb5bf67b85790e1c33c99ea99974591b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5bf67b85790e1c33c99ea99974591b">&#9670;&#160;</a></span>_isAdjacentToParallelDomainBoundary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_isAdjacentToParallelDomainBoundary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00117">117</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<a id="aeb0bd1877576623024a5f864712c7c24" name="aeb0bd1877576623024a5f864712c7c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0bd1877576623024a5f864712c7c24">&#9670;&#160;</a></span>_isHanging</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_isHanging</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00108">108</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00226">isHanging()</a>, and <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="ae321ab199acdd59d5d79a7f2aa5a0063" name="ae321ab199acdd59d5d79a7f2aa5a0063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae321ab199acdd59d5d79a7f2aa5a0063">&#9670;&#160;</a></span>_isLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_isLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00107">107</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00219">isLocal()</a>, and <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>.</p>
+
+</div>
+</div>
+<a id="ad6d9d70996bfafd138d5d6db6b9b7e32" name="ad6d9d70996bfafd138d5d6db6b9b7e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d9d70996bfafd138d5d6db6b9b7e32">&#9670;&#160;</a></span>_isParentCellLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> peano4::datamanagement::VertexMarker::_isParentCellLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00113">113</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00254">isParentCellLocal()</a>.</p>
+
+</div>
+</div>
+<a id="ad4f35f8675e562c5ef364a1022f55232" name="ad4f35f8675e562c5ef364a1022f55232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f35f8675e562c5ef364a1022f55232">&#9670;&#160;</a></span>_isParentOfSubtree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_isParentOfSubtree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00111">111</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00184">isParentOfSubtree()</a>.</p>
+
+</div>
+</div>
+<a id="a57d8378c4a644741e50f1d70cf19595c" name="a57d8378c4a644741e50f1d70cf19595c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d8378c4a644741e50f1d70cf19595c">&#9670;&#160;</a></span>_isParentVertexLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_isParentVertexLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00109">109</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<a id="a3959671ff4d7e32fb7f3b0935cf81235" name="a3959671ff4d7e32fb7f3b0935cf81235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3959671ff4d7e32fb7f3b0935cf81235">&#9670;&#160;</a></span>_numberOfAdjacentTrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&gt; peano4::datamanagement::VertexMarker::_numberOfAdjacentTrees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of adjacent trees per vertex. </p>
+<p>Obviously only relevant/valid if the vertex is local. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00128">128</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<a id="a01ff32e9d88ba95080661f1cf3d08575" name="a01ff32e9d88ba95080661f1cf3d08575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ff32e9d88ba95080661f1cf3d08575">&#9670;&#160;</a></span>_relativePositionOfCellWithinFatherCell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&gt; peano4::datamanagement::VertexMarker::_relativePositionOfCellWithinFatherCell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Entries from (0,1,2). </p>
+<p>(0,0) or (0,0,0) is the left, bottom cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00122">122</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b17c81a2db17dc5d9ecc0c7c5090261" name="a3b17c81a2db17dc5d9ecc0c7c5090261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b17c81a2db17dc5d9ecc0c7c5090261">&#9670;&#160;</a></span>_select</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> peano4::datamanagement::VertexMarker::_select</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00103">103</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00168">getSelectedVertexNumber()</a>, <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00195">hasBeenRefined()</a>, <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00224">isHanging()</a>, <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00214">isLocal()</a>, <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00185">isParentOfSubtree()</a>, <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00198">willBeRefined()</a>.</p>
+
+</div>
+</div>
+<a id="a9408748bfaf3f1cb02a09993da99d6d2" name="a9408748bfaf3f1cb02a09993da99d6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9408748bfaf3f1cb02a09993da99d6d2">&#9670;&#160;</a></span>_willBeRefined</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;<a class="el" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>&gt; peano4::datamanagement::VertexMarker::_willBeRefined</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00106">106</a> of file <a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dee/tests_2TestHelpers_8cpp_source.html#l00016">toolbox::particles::tests::TestHelpers::testParticleAssignedToVertexWillBeLocal()</a>, and <a class="el" href="../../dc/df3/VertexMarker_8h_source.html#l00199">willBeRefined()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/peano4/datamanagement/<a class="el" href="../../dc/df3/VertexMarker_8h_source.html">VertexMarker.h</a></li>
+<li>src/peano4/datamanagement/<a class="el" href="../../da/d52/VertexMarker_8cpp_source.html">VertexMarker.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../d7/d8f/namespacepeano4_1_1datamanagement.html">datamanagement</a></li><li class="navelem"><a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html">VertexMarker</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:07 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

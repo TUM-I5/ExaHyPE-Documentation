@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/dfa/namespaceexahype2_1_1postprocessing_1_1plot-loadbalancing.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">exahype2.postprocessing.plot-loadbalancing Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a181fcf836bd32b89f01e29282eedfdd1" id="r_a181fcf836bd32b89f01e29282eedfdd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a181fcf836bd32b89f01e29282eedfdd1">parser</a></td></tr>
+<tr class="separator:a181fcf836bd32b89f01e29282eedfdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf54a915b1441f620044fcca04f0a3f" id="r_a6bf54a915b1441f620044fcca04f0a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf54a915b1441f620044fcca04f0a3f">nargs</a></td></tr>
+<tr class="separator:a6bf54a915b1441f620044fcca04f0a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e013d2d31f57d55ab5bc57650e192d" id="r_a33e013d2d31f57d55ab5bc57650e192d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e013d2d31f57d55ab5bc57650e192d">help</a></td></tr>
+<tr class="separator:a33e013d2d31f57d55ab5bc57650e192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327b9de00f6a8092086f887b8d4e76b8" id="r_a327b9de00f6a8092086f887b8d4e76b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a327b9de00f6a8092086f887b8d4e76b8">default</a></td></tr>
+<tr class="separator:a327b9de00f6a8092086f887b8d4e76b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa054f94fec97afad144df77224fcd27b" id="r_aa054f94fec97afad144df77224fcd27b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa054f94fec97afad144df77224fcd27b">action</a></td></tr>
+<tr class="separator:aa054f94fec97afad144df77224fcd27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2c4ed27f0bb41282225f15f8535f84" id="r_acf2c4ed27f0bb41282225f15f8535f84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2c4ed27f0bb41282225f15f8535f84">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:acf2c4ed27f0bb41282225f15f8535f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ce1e811f258309e66a533ef7ae560b" id="r_ac8ce1e811f258309e66a533ef7ae560b"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ce1e811f258309e66a533ef7ae560b">data_points</a> = []</td></tr>
+<tr class="separator:ac8ce1e811f258309e66a533ef7ae560b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad181fb351358b47459040fcc74375bfe" id="r_ad181fb351358b47459040fcc74375bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad181fb351358b47459040fcc74375bfe">folder</a> = args.file[0]</td></tr>
+<tr class="separator:ad181fb351358b47459040fcc74375bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c08cd6ccfb3bb505e331b2f0d97d40" id="r_a19c08cd6ccfb3bb505e331b2f0d97d40"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c08cd6ccfb3bb505e331b2f0d97d40">files</a> = []</td></tr>
+<tr class="separator:a19c08cd6ccfb3bb505e331b2f0d97d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9190198b1e3f4822bf412f0df55b5cd" id="r_af9190198b1e3f4822bf412f0df55b5cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9190198b1e3f4822bf412f0df55b5cd">new_data</a></td></tr>
+<tr class="separator:af9190198b1e3f4822bf412f0df55b5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb209421bfc6a3835afc6f21b5ac535" id="r_afeb209421bfc6a3835afc6f21b5ac535"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeb209421bfc6a3835afc6f21b5ac535">transformed_data</a> = []</td></tr>
+<tr class="separator:afeb209421bfc6a3835afc6f21b5ac535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463e976c91bcaa7e1518e1669a7f5089" id="r_a463e976c91bcaa7e1518e1669a7f5089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a463e976c91bcaa7e1518e1669a7f5089">max_num_threads</a> = 1</td></tr>
+<tr class="separator:a463e976c91bcaa7e1518e1669a7f5089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f675cc48f5c44c622c6dc136fe2cf4" id="r_a36f675cc48f5c44c622c6dc136fe2cf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f675cc48f5c44c622c6dc136fe2cf4">relative_max_deviation_of_all_avg_cells</a></td></tr>
+<tr class="separator:a36f675cc48f5c44c622c6dc136fe2cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162aef9f63e9432401bef31c78d01759" id="r_a162aef9f63e9432401bef31c78d01759"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a162aef9f63e9432401bef31c78d01759">data</a> = <a class="el" href="#afeb209421bfc6a3835afc6f21b5ac535">transformed_data</a></td></tr>
+<tr class="separator:a162aef9f63e9432401bef31c78d01759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1a8bca6ed4e4b3ffeb27e2a3b43466" id="r_a8e1a8bca6ed4e4b3ffeb27e2a3b43466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1a8bca6ed4e4b3ffeb27e2a3b43466">ideal_x</a> = 1</td></tr>
+<tr class="separator:a8e1a8bca6ed4e4b3ffeb27e2a3b43466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab057f755d9725f49b6c9ecf727c3be3f" id="r_ab057f755d9725f49b6c9ecf727c3be3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab057f755d9725f49b6c9ecf727c3be3f">base</a> = <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(math.log2(<a class="el" href="#a463e976c91bcaa7e1518e1669a7f5089">max_num_threads</a>))</td></tr>
+<tr class="separator:ab057f755d9725f49b6c9ecf727c3be3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab16590429fcd49c130b6c523113998" id="r_a4ab16590429fcd49c130b6c523113998"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ab16590429fcd49c130b6c523113998">relative_max_deviation_cells_column_name</a></td></tr>
+<tr class="separator:a4ab16590429fcd49c130b6c523113998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd08a61e4384b93bc4f554f351ed1c4" id="r_aafd08a61e4384b93bc4f554f351ed1c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafd08a61e4384b93bc4f554f351ed1c4">df</a></td></tr>
+<tr class="separator:aafd08a61e4384b93bc4f554f351ed1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee545b79da3dbde6e31b919a26949472" id="r_aee545b79da3dbde6e31b919a26949472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a></td></tr>
+<tr class="separator:aee545b79da3dbde6e31b919a26949472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58277fe0c1670d46264adf4f55eb1f4e" id="r_a58277fe0c1670d46264adf4f55eb1f4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58277fe0c1670d46264adf4f55eb1f4e">x</a> = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[&quot;Threads&quot;]</td></tr>
+<tr class="separator:a58277fe0c1670d46264adf4f55eb1f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1171810152a5fef338db957a6d5cc135" id="r_a1171810152a5fef338db957a6d5cc135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1171810152a5fef338db957a6d5cc135">y</a> = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[<a class="el" href="#a4ab16590429fcd49c130b6c523113998">relative_max_deviation_cells_column_name</a>]</td></tr>
+<tr class="separator:a1171810152a5fef338db957a6d5cc135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06115fc487103a14d39a1d0b98e339dc" id="r_a06115fc487103a14d39a1d0b98e339dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06115fc487103a14d39a1d0b98e339dc">categories</a> = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[&quot;LoadBalancingStrategy&quot;]</td></tr>
+<tr class="separator:a06115fc487103a14d39a1d0b98e339dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065e3c358eb5ed80f4bc0736b6a3a580" id="r_a065e3c358eb5ed80f4bc0736b6a3a580"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a065e3c358eb5ed80f4bc0736b6a3a580">unique_categories</a> = categories.unique()</td></tr>
+<tr class="separator:a065e3c358eb5ed80f4bc0736b6a3a580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c52d576e1de35045e4d2bbba718042" id="r_aa4c52d576e1de35045e4d2bbba718042"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4c52d576e1de35045e4d2bbba718042">category_colors</a></td></tr>
+<tr class="separator:aa4c52d576e1de35045e4d2bbba718042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0402d434a2db3c216578535d3f3abc40" id="r_a0402d434a2db3c216578535d3f3abc40"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0402d434a2db3c216578535d3f3abc40">colors</a> = [<a class="el" href="#aa4c52d576e1de35045e4d2bbba718042">category_colors</a>[category] <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> category in <a class="el" href="#a06115fc487103a14d39a1d0b98e339dc">categories</a>]</td></tr>
+<tr class="separator:a0402d434a2db3c216578535d3f3abc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26796723a01ee79719af22321d9924b9" id="r_a26796723a01ee79719af22321d9924b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26796723a01ee79719af22321d9924b9">c</a></td></tr>
+<tr class="separator:a26796723a01ee79719af22321d9924b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe337c39587e43e2d98df7acadfe2752" id="r_afe337c39587e43e2d98df7acadfe2752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe337c39587e43e2d98df7acadfe2752">label</a></td></tr>
+<tr class="separator:afe337c39587e43e2d98df7acadfe2752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b13c4136fb4f315594967a5e6911695" id="r_a3b13c4136fb4f315594967a5e6911695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b13c4136fb4f315594967a5e6911695">color</a></td></tr>
+<tr class="separator:a3b13c4136fb4f315594967a5e6911695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92779e643fd64352ed2c7683bbc06d14" id="r_a92779e643fd64352ed2c7683bbc06d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92779e643fd64352ed2c7683bbc06d14">linestyle</a></td></tr>
+<tr class="separator:a92779e643fd64352ed2c7683bbc06d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801ded7f2085b40529e9e1ce418be0d3" id="r_a801ded7f2085b40529e9e1ce418be0d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a801ded7f2085b40529e9e1ce418be0d3">i</a> = 1</td></tr>
+<tr class="separator:a801ded7f2085b40529e9e1ce418be0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c803bbbc0333d61c97746230f9a710" id="r_a46c803bbbc0333d61c97746230f9a710"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46c803bbbc0333d61c97746230f9a710">xticks</a> = []</td></tr>
+<tr class="separator:a46c803bbbc0333d61c97746230f9a710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcb5ad699cf46db487a968c5f6367a5" id="r_a5dcb5ad699cf46db487a968c5f6367a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dcb5ad699cf46db487a968c5f6367a5">labels</a></td></tr>
+<tr class="separator:a5dcb5ad699cf46db487a968c5f6367a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539b4c97890f45c1f014ccaaa2ac8502" id="r_a539b4c97890f45c1f014ccaaa2ac8502"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a539b4c97890f45c1f014ccaaa2ac8502">legend_elements</a></td></tr>
+<tr class="separator:a539b4c97890f45c1f014ccaaa2ac8502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d8b72b0cc7199897d4811a285be259" id="r_aa7d8b72b0cc7199897d4811a285be259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7d8b72b0cc7199897d4811a285be259">handles</a></td></tr>
+<tr class="separator:aa7d8b72b0cc7199897d4811a285be259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249643a35ad2bd5757c07b55b8ed5ba6" id="r_a249643a35ad2bd5757c07b55b8ed5ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249643a35ad2bd5757c07b55b8ed5ba6">title</a></td></tr>
+<tr class="separator:a249643a35ad2bd5757c07b55b8ed5ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ccee1f32e92762eab8d5f49da5a487" id="r_a85ccee1f32e92762eab8d5f49da5a487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ccee1f32e92762eab8d5f49da5a487">ideal_added</a> = False</td></tr>
+<tr class="separator:a85ccee1f32e92762eab8d5f49da5a487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986db64e7f40908f17352f165975523e" id="r_a986db64e7f40908f17352f165975523e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a986db64e7f40908f17352f165975523e">max_construction_time</a> = 0</td></tr>
+<tr class="separator:a986db64e7f40908f17352f165975523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c949bbdc83f6a9538c8ad2acd5f5e2" id="r_ab2c949bbdc83f6a9538c8ad2acd5f5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2c949bbdc83f6a9538c8ad2acd5f5e2">min_construction_time</a> = sys.maxsize</td></tr>
+<tr class="separator:ab2c949bbdc83f6a9538c8ad2acd5f5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79677113281f0291b70f9b6376d18ca" id="r_ab79677113281f0291b70f9b6376d18ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab79677113281f0291b70f9b6376d18ca">ideal_y</a> = data_point.total_construction_time</td></tr>
+<tr class="separator:ab79677113281f0291b70f9b6376d18ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca69c5bd4740edac5205e924aecb1497" id="r_aca69c5bd4740edac5205e924aecb1497"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca69c5bd4740edac5205e924aecb1497">yticks</a> = []</td></tr>
+<tr class="separator:aca69c5bd4740edac5205e924aecb1497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f45efc3578ffdf5273ce353f780bb2" id="r_a45f45efc3578ffdf5273ce353f780bb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f45efc3578ffdf5273ce353f780bb2">s</a></td></tr>
+<tr class="separator:a45f45efc3578ffdf5273ce353f780bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa054f94fec97afad144df77224fcd27b" name="aa054f94fec97afad144df77224fcd27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa054f94fec97afad144df77224fcd27b">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00040">40</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="acf2c4ed27f0bb41282225f15f8535f84" name="acf2c4ed27f0bb41282225f15f8535f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2c4ed27f0bb41282225f15f8535f84">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00059">59</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="ab057f755d9725f49b6c9ecf727c3be3f" name="ab057f755d9725f49b6c9ecf727c3be3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab057f755d9725f49b6c9ecf727c3be3f">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.base = <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(math.log2(<a class="el" href="#a463e976c91bcaa7e1518e1669a7f5089">max_num_threads</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00138">138</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a26796723a01ee79719af22321d9924b9" name="a26796723a01ee79719af22321d9924b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26796723a01ee79719af22321d9924b9">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00186">186</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a06115fc487103a14d39a1d0b98e339dc" name="a06115fc487103a14d39a1d0b98e339dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06115fc487103a14d39a1d0b98e339dc">&#9670;&#160;</a></span>categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.categories = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[&quot;LoadBalancingStrategy&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00174">174</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="aa4c52d576e1de35045e4d2bbba718042" name="aa4c52d576e1de35045e4d2bbba718042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c52d576e1de35045e4d2bbba718042">&#9670;&#160;</a></span>category_colors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict exahype2.postprocessing.plot-loadbalancing.category_colors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>            category: color</div>
+<div class="line"><span class="lineno">    3</span>            <span class="keywordflow">for</span> category, color <span class="keywordflow">in</span> zip(unique_categories, plt.cm.tab10.colors)</div>
+<div class="line"><span class="lineno">    4</span>        }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00178">178</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a3b13c4136fb4f315594967a5e6911695" name="a3b13c4136fb4f315594967a5e6911695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b13c4136fb4f315594967a5e6911695">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00193">193</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a0402d434a2db3c216578535d3f3abc40" name="a0402d434a2db3c216578535d3f3abc40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0402d434a2db3c216578535d3f3abc40">&#9670;&#160;</a></span>colors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.colors = [<a class="el" href="#aa4c52d576e1de35045e4d2bbba718042">category_colors</a>[category] <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> category in <a class="el" href="#a06115fc487103a14d39a1d0b98e339dc">categories</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00184">184</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a162aef9f63e9432401bef31c78d01759" name="a162aef9f63e9432401bef31c78d01759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162aef9f63e9432401bef31c78d01759">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.data = <a class="el" href="#afeb209421bfc6a3835afc6f21b5ac535">transformed_data</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00134">134</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="ac8ce1e811f258309e66a533ef7ae560b" name="ac8ce1e811f258309e66a533ef7ae560b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ce1e811f258309e66a533ef7ae560b">&#9670;&#160;</a></span>data_points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.data_points = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00062">62</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a327b9de00f6a8092086f887b8d4e76b8" name="a327b9de00f6a8092086f887b8d4e76b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327b9de00f6a8092086f887b8d4e76b8">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00034">34</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="aafd08a61e4384b93bc4f554f351ed1c4" name="aafd08a61e4384b93bc4f554f351ed1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd08a61e4384b93bc4f554f351ed1c4">&#9670;&#160;</a></span>df</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.df</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  pd.DataFrame(</div>
+<div class="line"><span class="lineno">    2</span>            data,</div>
+<div class="line"><span class="lineno">    3</span>            columns=[</div>
+<div class="line"><span class="lineno">    4</span>                <span class="stringliteral">&quot;Threads&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>                relative_max_deviation_cells_column_name,</div>
+<div class="line"><span class="lineno">    6</span>                <span class="stringliteral">&quot;LoadBalancingStrategy&quot;</span>,</div>
+<div class="line"><span class="lineno">    7</span>            ],</div>
+<div class="line"><span class="lineno">    8</span>        )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00159">159</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a19c08cd6ccfb3bb505e331b2f0d97d40" name="a19c08cd6ccfb3bb505e331b2f0d97d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c08cd6ccfb3bb505e331b2f0d97d40">&#9670;&#160;</a></span>files</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.files = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00066">66</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="ad181fb351358b47459040fcc74375bfe" name="ad181fb351358b47459040fcc74375bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad181fb351358b47459040fcc74375bfe">&#9670;&#160;</a></span>folder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.folder = args.file[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00065">65</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="aee545b79da3dbde6e31b919a26949472" name="aee545b79da3dbde6e31b919a26949472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee545b79da3dbde6e31b919a26949472">&#9670;&#160;</a></span>grouped_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.grouped_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  df.groupby(</div>
+<div class="line"><span class="lineno">    2</span>            [<span class="stringliteral">&quot;Threads&quot;</span>, <span class="stringliteral">&quot;LoadBalancingStrategy&quot;</span>], as_index=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">    3</span>        ).mean()</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00168">168</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="aa7d8b72b0cc7199897d4811a285be259" name="aa7d8b72b0cc7199897d4811a285be259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d8b72b0cc7199897d4811a285be259">&#9670;&#160;</a></span>handles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.handles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00232">232</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a33e013d2d31f57d55ab5bc57650e192d" name="a33e013d2d31f57d55ab5bc57650e192d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e013d2d31f57d55ab5bc57650e192d">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00028">28</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a801ded7f2085b40529e9e1ce418be0d3" name="a801ded7f2085b40529e9e1ce418be0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801ded7f2085b40529e9e1ce418be0d3">&#9670;&#160;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> exahype2.postprocessing.plot-loadbalancing.i = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00208">208</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a85ccee1f32e92762eab8d5f49da5a487" name="a85ccee1f32e92762eab8d5f49da5a487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ccee1f32e92762eab8d5f49da5a487">&#9670;&#160;</a></span>ideal_added</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2.postprocessing.plot-loadbalancing.ideal_added = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00271">271</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a8e1a8bca6ed4e4b3ffeb27e2a3b43466" name="a8e1a8bca6ed4e4b3ffeb27e2a3b43466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1a8bca6ed4e4b3ffeb27e2a3b43466">&#9670;&#160;</a></span>ideal_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> exahype2.postprocessing.plot-loadbalancing.ideal_x = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00136">136</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="ab79677113281f0291b70f9b6376d18ca" name="ab79677113281f0291b70f9b6376d18ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79677113281f0291b70f9b6376d18ca">&#9670;&#160;</a></span>ideal_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.ideal_y = data_point.total_construction_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00300">300</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="afe337c39587e43e2d98df7acadfe2752" name="afe337c39587e43e2d98df7acadfe2752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe337c39587e43e2d98df7acadfe2752">&#9670;&#160;</a></span>label</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.label</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00186">186</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a5dcb5ad699cf46db487a968c5f6367a5" name="a5dcb5ad699cf46db487a968c5f6367a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcb5ad699cf46db487a968c5f6367a5">&#9670;&#160;</a></span>labels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.labels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00214">214</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a539b4c97890f45c1f014ccaaa2ac8502" name="a539b4c97890f45c1f014ccaaa2ac8502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539b4c97890f45c1f014ccaaa2ac8502">&#9670;&#160;</a></span>legend_elements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.legend_elements</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  [</div>
+<div class="line"><span class="lineno">    2</span>            Line2D(</div>
+<div class="line"><span class="lineno">    3</span>                [0],</div>
+<div class="line"><span class="lineno">    4</span>                [0],</div>
+<div class="line"><span class="lineno">    5</span>                marker=<span class="stringliteral">&quot;o&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>                color=<span class="stringliteral">&quot;w&quot;</span>,</div>
+<div class="line"><span class="lineno">    7</span>                markerfacecolor=category_colors[cat],</div>
+<div class="line"><span class="lineno">    8</span>                markersize=10,</div>
+<div class="line"><span class="lineno">    9</span>                label=cat,</div>
+<div class="line"><span class="lineno">   10</span>            )</div>
+<div class="line"><span class="lineno">   11</span>            <span class="keywordflow">for</span> cat <span class="keywordflow">in</span> unique_categories</div>
+<div class="line"><span class="lineno">   12</span>        ]</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00220">220</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a92779e643fd64352ed2c7683bbc06d14" name="a92779e643fd64352ed2c7683bbc06d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92779e643fd64352ed2c7683bbc06d14">&#9670;&#160;</a></span>linestyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.linestyle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00194">194</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a986db64e7f40908f17352f165975523e" name="a986db64e7f40908f17352f165975523e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986db64e7f40908f17352f165975523e">&#9670;&#160;</a></span>max_construction_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> exahype2.postprocessing.plot-loadbalancing.max_construction_time = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00275">275</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a463e976c91bcaa7e1518e1669a7f5089" name="a463e976c91bcaa7e1518e1669a7f5089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463e976c91bcaa7e1518e1669a7f5089">&#9670;&#160;</a></span>max_num_threads</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> exahype2.postprocessing.plot-loadbalancing.max_num_threads = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00096">96</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="ab2c949bbdc83f6a9538c8ad2acd5f5e2" name="ab2c949bbdc83f6a9538c8ad2acd5f5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c949bbdc83f6a9538c8ad2acd5f5e2">&#9670;&#160;</a></span>min_construction_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> exahype2.postprocessing.plot-loadbalancing.min_construction_time = sys.maxsize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00276">276</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a6bf54a915b1441f620044fcca04f0a3f" name="a6bf54a915b1441f620044fcca04f0a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf54a915b1441f620044fcca04f0a3f">&#9670;&#160;</a></span>nargs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.nargs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00027">27</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="af9190198b1e3f4822bf412f0df55b5cd" name="af9190198b1e3f4822bf412f0df55b5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9190198b1e3f4822bf412f0df55b5cd">&#9670;&#160;</a></span>new_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.new_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d9/dea/classexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData.html">exahype2.postprocessing.PerformanceData</a>(</div>
+<div class="line"><span class="lineno">    2</span>                    folder + <span class="stringliteral">&quot;/&quot;</span> + data_file, verbose=args.verbose</div>
+<div class="line"><span class="lineno">    3</span>                )</div>
+<div class="ttc" id="aclassexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData_html"><div class="ttname"><a href="../../d9/dea/classexahype2_1_1postprocessing_1_1PerformanceData_1_1PerformanceData.html">exahype2.postprocessing.PerformanceData.PerformanceData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d46/PerformanceData_8py_source.html#l00012">PerformanceData.py:12</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00077">77</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a181fcf836bd32b89f01e29282eedfdd1" name="a181fcf836bd32b89f01e29282eedfdd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181fcf836bd32b89f01e29282eedfdd1">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>        description=</div>
+<div class="line"><span class="lineno">    3</span>    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00016">16</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a4ab16590429fcd49c130b6c523113998" name="a4ab16590429fcd49c130b6c523113998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab16590429fcd49c130b6c523113998">&#9670;&#160;</a></span>relative_max_deviation_cells_column_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str exahype2.postprocessing.plot-loadbalancing.relative_max_deviation_cells_column_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  (</div>
+<div class="line"><span class="lineno">    2</span>                <span class="stringliteral">&quot;Relative Deviation of Local Cells&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>            )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00149">149</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a36f675cc48f5c44c622c6dc136fe2cf4" name="a36f675cc48f5c44c622c6dc136fe2cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f675cc48f5c44c622c6dc136fe2cf4">&#9670;&#160;</a></span>relative_max_deviation_of_all_avg_cells</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.relative_max_deviation_of_all_avg_cells</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00107">107</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a45f45efc3578ffdf5273ce353f780bb2" name="a45f45efc3578ffdf5273ce353f780bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f45efc3578ffdf5273ce353f780bb2">&#9670;&#160;</a></span>s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00539">539</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a249643a35ad2bd5757c07b55b8ed5ba6" name="a249643a35ad2bd5757c07b55b8ed5ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249643a35ad2bd5757c07b55b8ed5ba6">&#9670;&#160;</a></span>title</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.title</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00232">232</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="afeb209421bfc6a3835afc6f21b5ac535" name="afeb209421bfc6a3835afc6f21b5ac535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb209421bfc6a3835afc6f21b5ac535">&#9670;&#160;</a></span>transformed_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.transformed_data = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00094">94</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a065e3c358eb5ed80f4bc0736b6a3a580" name="a065e3c358eb5ed80f4bc0736b6a3a580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065e3c358eb5ed80f4bc0736b6a3a580">&#9670;&#160;</a></span>unique_categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.unique_categories = categories.unique()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00176">176</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a58277fe0c1670d46264adf4f55eb1f4e" name="a58277fe0c1670d46264adf4f55eb1f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58277fe0c1670d46264adf4f55eb1f4e">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.x = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[&quot;Threads&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00172">172</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a46c803bbbc0333d61c97746230f9a710" name="a46c803bbbc0333d61c97746230f9a710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c803bbbc0333d61c97746230f9a710">&#9670;&#160;</a></span>xticks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.xticks = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00209">209</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="a1171810152a5fef338db957a6d5cc135" name="a1171810152a5fef338db957a6d5cc135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1171810152a5fef338db957a6d5cc135">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.postprocessing.plot-loadbalancing.y = <a class="el" href="#aee545b79da3dbde6e31b919a26949472">grouped_data</a>[<a class="el" href="#a4ab16590429fcd49c130b6c523113998">relative_max_deviation_cells_column_name</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00173">173</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+<a id="aca69c5bd4740edac5205e924aecb1497" name="aca69c5bd4740edac5205e924aecb1497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca69c5bd4740edac5205e924aecb1497">&#9670;&#160;</a></span>yticks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list exahype2.postprocessing.plot-loadbalancing.yticks = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html#l00380">380</a> of file <a class="el" href="../../d3/d4d/plot-loadbalancing_8py_source.html">plot-loadbalancing.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../df/d71/namespaceexahype2_1_1postprocessing.html">postprocessing</a></li><li class="navelem"><a class="el" href="../../d5/dfa/namespaceexahype2_1_1postprocessing_1_1plot-loadbalancing.html">plot-loadbalancing</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:32 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

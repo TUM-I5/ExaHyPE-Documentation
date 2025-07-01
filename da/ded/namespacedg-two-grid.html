@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/ded/namespacedg-two-grid.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">dg-two-grid Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a065e14f4dfdcff32035721fe88846833" id="r_a065e14f4dfdcff32035721fe88846833"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a065e14f4dfdcff32035721fe88846833">args</a> = <a class="el" href="../../df/dde/namespacecommonsteps.html#a8f9c598248417dfd70abd444da47ffe4">commonsteps.get_args</a>()</td></tr>
+<tr class="separator:a065e14f4dfdcff32035721fe88846833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea208fcef7a6e48314931fabc3a324d" id="r_abea208fcef7a6e48314931fabc3a324d"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea208fcef7a6e48314931fabc3a324d">executable</a> = &quot;peano4matrixfree&quot;</td></tr>
+<tr class="separator:abea208fcef7a6e48314931fabc3a324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38349eb783340a8aaa4d748b1d2a1286" id="r_a38349eb783340a8aaa4d748b1d2a1286"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38349eb783340a8aaa4d748b1d2a1286">project</a></td></tr>
+<tr class="separator:a38349eb783340a8aaa4d748b1d2a1286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e09401fe6a296d17a33347098e5a06e" id="r_a1e09401fe6a296d17a33347098e5a06e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e09401fe6a296d17a33347098e5a06e">matrices</a></td></tr>
+<tr class="separator:a1e09401fe6a296d17a33347098e5a06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e39113d46c2975f4c4e065670b2317" id="r_af6e39113d46c2975f4c4e065670b2317"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e39113d46c2975f4c4e065670b2317">assembly_matrix</a></td></tr>
+<tr class="separator:af6e39113d46c2975f4c4e065670b2317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46b27e6c8d7bce4e06342c1679d43ad" id="r_ad46b27e6c8d7bce4e06342c1679d43ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad46b27e6c8d7bce4e06342c1679d43ad">assembly_matrix_scaling</a></td></tr>
+<tr class="separator:ad46b27e6c8d7bce4e06342c1679d43ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a067abf48ae07d18fc94575dd92f8c1" id="r_a9a067abf48ae07d18fc94575dd92f8c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a067abf48ae07d18fc94575dd92f8c1">mass_matrix</a></td></tr>
+<tr class="separator:a9a067abf48ae07d18fc94575dd92f8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca4dff8fa6a3953d557592d5ba6f75e" id="r_afca4dff8fa6a3953d557592d5ba6f75e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca4dff8fa6a3953d557592d5ba6f75e">mass_matrix_scaling</a></td></tr>
+<tr class="separator:afca4dff8fa6a3953d557592d5ba6f75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad980be96772b59d70cc982fac3f9a8a2" id="r_ad980be96772b59d70cc982fac3f9a8a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad980be96772b59d70cc982fac3f9a8a2">face_from_cell_projection_scaling</a> = matrices.get_face_from_cell_matrix()</td></tr>
+<tr class="separator:ad980be96772b59d70cc982fac3f9a8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2aa025b55a2aa92503a7b0c4af36d3" id="r_adb2aa025b55a2aa92503a7b0c4af36d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb2aa025b55a2aa92503a7b0c4af36d3">cell_from_face_projection_scaling</a> = matrices.get_cell_from_face_matrix()</td></tr>
+<tr class="separator:adb2aa025b55a2aa92503a7b0c4af36d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec5e89a739527db622fafad5756673a" id="r_a6ec5e89a739527db622fafad5756673a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec5e89a739527db622fafad5756673a">approximate_system_matrix_scaling</a> = matrices.get_A_tilde()</td></tr>
+<tr class="separator:a6ec5e89a739527db622fafad5756673a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928e30299f6c3b60da1e29574a9279de" id="r_a928e30299f6c3b60da1e29574a9279de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a928e30299f6c3b60da1e29574a9279de">solver</a></td></tr>
+<tr class="separator:a928e30299f6c3b60da1e29574a9279de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c4566a74158c0f188fe70a05144d4c" id="r_af0c4566a74158c0f188fe70a05144d4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c4566a74158c0f188fe70a05144d4c">correction_equation_matrices</a></td></tr>
+<tr class="separator:af0c4566a74158c0f188fe70a05144d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb45f90c4073dad99bde21451e86d7d" id="r_a6eb45f90c4073dad99bde21451e86d7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb45f90c4073dad99bde21451e86d7d">system_matrix</a></td></tr>
+<tr class="separator:a6eb45f90c4073dad99bde21451e86d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab387d0d5842c4d42a95242e73929c76f" id="r_ab387d0d5842c4d42a95242e73929c76f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab387d0d5842c4d42a95242e73929c76f">system_matrix_scaling</a></td></tr>
+<tr class="separator:ab387d0d5842c4d42a95242e73929c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7791b5a43a1b9f0cfe8344b73c4927" id="r_aad7791b5a43a1b9f0cfe8344b73c4927"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7791b5a43a1b9f0cfe8344b73c4927">correction_equation_solver</a></td></tr>
+<tr class="separator:aad7791b5a43a1b9f0cfe8344b73c4927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c2b99e1bd3d439ac70839e4c077116" id="r_a93c2b99e1bd3d439ac70839e4c077116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93c2b99e1bd3d439ac70839e4c077116">intergrid_operators</a></td></tr>
+<tr class="separator:a93c2b99e1bd3d439ac70839e4c077116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f69191b0beeb08520b1ed50500fb66" id="r_aa7f69191b0beeb08520b1ed50500fb66"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f69191b0beeb08520b1ed50500fb66">prolongation_matrix</a> = [intergrid_operators.prolongation()]</td></tr>
+<tr class="separator:aa7f69191b0beeb08520b1ed50500fb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb0744176ceee2dc17adb7711045d3a" id="r_a0fb0744176ceee2dc17adb7711045d3a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fb0744176ceee2dc17adb7711045d3a">prolongation_matrix_scaling</a> = [0]</td></tr>
+<tr class="separator:a0fb0744176ceee2dc17adb7711045d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf35504f023cbab8017418735ddbfa3" id="r_aaaf35504f023cbab8017418735ddbfa3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf35504f023cbab8017418735ddbfa3">restriction_matrix</a> = [intergrid_operators.restriction()]</td></tr>
+<tr class="separator:aaaf35504f023cbab8017418735ddbfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db6c5a640edc5d18285acfeb823e4c9" id="r_a7db6c5a640edc5d18285acfeb823e4c9"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7db6c5a640edc5d18285acfeb823e4c9">restriction_matrix_scaling</a> = [0]</td></tr>
+<tr class="separator:a7db6c5a640edc5d18285acfeb823e4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e416733573854166c572c2ba561b57" id="r_a34e416733573854166c572c2ba561b57"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34e416733573854166c572c2ba561b57">injection_matrix</a> = [intergrid_operators.injection()]</td></tr>
+<tr class="separator:a34e416733573854166c572c2ba561b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb837d860e268c695a1909cdd7cc805e" id="r_afb837d860e268c695a1909cdd7cc805e"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb837d860e268c695a1909cdd7cc805e">injection_matrix_scaling</a> = [0]</td></tr>
+<tr class="separator:afb837d860e268c695a1909cdd7cc805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366d89e7d2c4c63483d64bb79ea3e6a6" id="r_a366d89e7d2c4c63483d64bb79ea3e6a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a366d89e7d2c4c63483d64bb79ea3e6a6">preprocessing_action_set</a></td></tr>
+<tr class="separator:a366d89e7d2c4c63483d64bb79ea3e6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625d429e4683eaed3c830716613dcff0" id="r_a625d429e4683eaed3c830716613dcff0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a625d429e4683eaed3c830716613dcff0">auxiliary</a></td></tr>
+<tr class="separator:a625d429e4683eaed3c830716613dcff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6ec5e89a739527db622fafad5756673a" name="a6ec5e89a739527db622fafad5756673a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec5e89a739527db622fafad5756673a">&#9670;&#160;</a></span>approximate_system_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.approximate_system_matrix_scaling = matrices.get_A_tilde()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00037">37</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a065e14f4dfdcff32035721fe88846833" name="a065e14f4dfdcff32035721fe88846833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065e14f4dfdcff32035721fe88846833">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.args = <a class="el" href="../../df/dde/namespacecommonsteps.html#a8f9c598248417dfd70abd444da47ffe4">commonsteps.get_args</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00010">10</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="af6e39113d46c2975f4c4e065670b2317" name="af6e39113d46c2975f4c4e065670b2317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e39113d46c2975f4c4e065670b2317">&#9670;&#160;</a></span>assembly_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.assembly_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00030">30</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="ad46b27e6c8d7bce4e06342c1679d43ad" name="ad46b27e6c8d7bce4e06342c1679d43ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46b27e6c8d7bce4e06342c1679d43ad">&#9670;&#160;</a></span>assembly_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.assembly_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00030">30</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a625d429e4683eaed3c830716613dcff0" name="a625d429e4683eaed3c830716613dcff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625d429e4683eaed3c830716613dcff0">&#9670;&#160;</a></span>auxiliary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.auxiliary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00124">124</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="adb2aa025b55a2aa92503a7b0c4af36d3" name="adb2aa025b55a2aa92503a7b0c4af36d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb2aa025b55a2aa92503a7b0c4af36d3">&#9670;&#160;</a></span>cell_from_face_projection_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.cell_from_face_projection_scaling = matrices.get_cell_from_face_matrix()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00035">35</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="af0c4566a74158c0f188fe70a05144d4c" name="af0c4566a74158c0f188fe70a05144d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c4566a74158c0f188fe70a05144d4c">&#9670;&#160;</a></span>correction_equation_matrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.correction_equation_matrices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity</a>(</div>
+<div class="line"><span class="lineno">    2</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  poly_degree = 1,</div>
+<div class="line"><span class="lineno">    4</span>  unknowns_per_node = 1</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity_html"><div class="ttname"><a href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a></div><div class="ttdoc">Using normalised identity matrix instead of the mass matrix.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00010">DLinearMassIdentity.py:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00069">69</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="aad7791b5a43a1b9f0cfe8344b73c4927" name="aad7791b5a43a1b9f0cfe8344b73c4927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7791b5a43a1b9f0cfe8344b73c4927">&#9670;&#160;</a></span>correction_equation_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.correction_equation_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.solvers.api.CollocatedDLinearDiscretisationWithPointJacobi(</div>
+<div class="line"><span class="lineno">    2</span>  name = <span class="stringliteral">&quot;CollocatedPoisson&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>  unknowns_per_vertex = 1, </div>
+<div class="line"><span class="lineno">    4</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    5</span>  min_h = args.meshsize,</div>
+<div class="line"><span class="lineno">    6</span>  max_h = args.meshsize,</div>
+<div class="line"><span class="lineno">    7</span>  local_assembly_matrix = system_matrix,</div>
+<div class="line"><span class="lineno">    8</span>  local_assembly_matrix_scaling=system_matrix_scaling,</div>
+<div class="line"><span class="lineno">    9</span>  mass_matrix = mass_matrix,</div>
+<div class="line"><span class="lineno">   10</span>  mass_matrix_scaling = mass_matrix_scaling,</div>
+<div class="line"><span class="lineno">   11</span>  solver_tolerance              = 1e-12,</div>
+<div class="line"><span class="lineno">   12</span>  smoother_relaxation           = 0.5</div>
+<div class="line"><span class="lineno">   13</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00080">80</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="abea208fcef7a6e48314931fabc3a324d" name="abea208fcef7a6e48314931fabc3a324d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea208fcef7a6e48314931fabc3a324d">&#9670;&#160;</a></span>executable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str dg-two-grid.executable = &quot;peano4matrixfree&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00013">13</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="ad980be96772b59d70cc982fac3f9a8a2" name="ad980be96772b59d70cc982fac3f9a8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad980be96772b59d70cc982fac3f9a8a2">&#9670;&#160;</a></span>face_from_cell_projection_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.face_from_cell_projection_scaling = matrices.get_face_from_cell_matrix()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00033">33</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a34e416733573854166c572c2ba561b57" name="a34e416733573854166c572c2ba561b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e416733573854166c572c2ba561b57">&#9670;&#160;</a></span>injection_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.injection_matrix = [intergrid_operators.injection()]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00106">106</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="afb837d860e268c695a1909cdd7cc805e" name="afb837d860e268c695a1909cdd7cc805e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb837d860e268c695a1909cdd7cc805e">&#9670;&#160;</a></span>injection_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.injection_matrix_scaling = [0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00107">107</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a93c2b99e1bd3d439ac70839e4c077116" name="a93c2b99e1bd3d439ac70839e4c077116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c2b99e1bd3d439ac70839e4c077116">&#9670;&#160;</a></span>intergrid_operators</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.intergrid_operators</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d76/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators_1_1IntergridOperators.html">mghype.api.matrixgenerators.blockmatrix.IntergridOperators</a>(</div>
+<div class="line"><span class="lineno">    2</span>  dim = args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  coarse_order = 1,</div>
+<div class="line"><span class="lineno">    4</span>  fine_order = args.poly_degree</div>
+<div class="line"><span class="lineno">    5</span>  )</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators_1_1IntergridOperators_html"><div class="ttname"><a href="../../dc/d76/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators_1_1IntergridOperators.html">mghype.api.matrixgenerators.blockmatrix.IntergridOperators.IntergridOperators</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/IntergridOperators_8py_source.html#l00004">IntergridOperators.py:4</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00097">97</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a9a067abf48ae07d18fc94575dd92f8c1" name="a9a067abf48ae07d18fc94575dd92f8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a067abf48ae07d18fc94575dd92f8c1">&#9670;&#160;</a></span>mass_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.mass_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00031">31</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="afca4dff8fa6a3953d557592d5ba6f75e" name="afca4dff8fa6a3953d557592d5ba6f75e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca4dff8fa6a3953d557592d5ba6f75e">&#9670;&#160;</a></span>mass_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.mass_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00031">31</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a1e09401fe6a296d17a33347098e5a06e" name="a1e09401fe6a296d17a33347098e5a06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e09401fe6a296d17a33347098e5a06e">&#9670;&#160;</a></span>matrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.matrices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html">mghype.api.matrixgenerators.GaussLobattoMatrixFree</a>(</div>
+<div class="line"><span class="lineno">    2</span>  args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  args.poly_degree,</div>
+<div class="line"><span class="lineno">    4</span>  1,  <span class="comment"># Unknowns per cell dof. Scalar PDE here</span></div>
+<div class="line"><span class="lineno">    5</span>  2,  <span class="comment"># We use the penalty formulation (see docu in tutorials)</span></div>
+<div class="line"><span class="lineno">    6</span>  2</div>
+<div class="line"><span class="lineno">    7</span>)</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree_html"><div class="ttname"><a href="../../df/d64/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobattoMatrixFree.html">mghype.api.matrixgenerators.GaussLobatto.GaussLobattoMatrixFree</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d02/GaussLobatto_8py_source.html#l00298">GaussLobatto.py:298</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00021">21</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a366d89e7d2c4c63483d64bb79ea3e6a6" name="a366d89e7d2c4c63483d64bb79ea3e6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366d89e7d2c4c63483d64bb79ea3e6a6">&#9670;&#160;</a></span>preprocessing_action_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.preprocessing_action_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00109">109</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a38349eb783340a8aaa4d748b1d2a1286" name="a38349eb783340a8aaa4d748b1d2a1286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38349eb783340a8aaa4d748b1d2a1286">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.api.Project( project_name = <span class="stringliteral">&quot;DGTwoGrid&quot;</span>, </div>
+<div class="line"><span class="lineno">    2</span>                              namespace = [ <span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;multigrid&quot;</span>, <span class="stringliteral">&quot;matrixfree&quot;</span>, <span class="stringliteral">&quot;poisson&quot;</span> ],</div>
+<div class="line"><span class="lineno">    3</span>                              executable = executable</div>
+<div class="line"><span class="lineno">    4</span>                            )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00015">15</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="aa7f69191b0beeb08520b1ed50500fb66" name="aa7f69191b0beeb08520b1ed50500fb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f69191b0beeb08520b1ed50500fb66">&#9670;&#160;</a></span>prolongation_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.prolongation_matrix = [intergrid_operators.prolongation()]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00102">102</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a0fb0744176ceee2dc17adb7711045d3a" name="a0fb0744176ceee2dc17adb7711045d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb0744176ceee2dc17adb7711045d3a">&#9670;&#160;</a></span>prolongation_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.prolongation_matrix_scaling = [0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00103">103</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="aaaf35504f023cbab8017418735ddbfa3" name="aaaf35504f023cbab8017418735ddbfa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf35504f023cbab8017418735ddbfa3">&#9670;&#160;</a></span>restriction_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.restriction_matrix = [intergrid_operators.restriction()]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00104">104</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a7db6c5a640edc5d18285acfeb823e4c9" name="a7db6c5a640edc5d18285acfeb823e4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db6c5a640edc5d18285acfeb823e4c9">&#9670;&#160;</a></span>restriction_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list dg-two-grid.restriction_matrix_scaling = [0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00105">105</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a928e30299f6c3b60da1e29574a9279de" name="a928e30299f6c3b60da1e29574a9279de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928e30299f6c3b60da1e29574a9279de">&#9670;&#160;</a></span>solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.solvers.api.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver(</div>
+<div class="line"><span class="lineno">    2</span>  name = <span class="stringliteral">&quot;DGPoisson&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    4</span>  poly_degree = args.poly_degree,</div>
+<div class="line"><span class="lineno">    5</span>  unknowns_per_cell_node = 1,</div>
+<div class="line"><span class="lineno">    6</span>  solutions_per_face_node = 2,</div>
+<div class="line"><span class="lineno">    7</span>  projections_per_face_node = 2,</div>
+<div class="line"><span class="lineno">    8</span>  min_h = args.meshsize,</div>
+<div class="line"><span class="lineno">    9</span>  max_h = args.meshsize,</div>
+<div class="line"><span class="lineno">   10</span>  assembly_matrix= assembly_matrix, </div>
+<div class="line"><span class="lineno">   11</span>  assembly_matrix_scaling = assembly_matrix_scaling, </div>
+<div class="line"><span class="lineno">   12</span>  mass_matrix = mass_matrix, </div>
+<div class="line"><span class="lineno">   13</span>  mass_matrix_scaling = mass_matrix_scaling, </div>
+<div class="line"><span class="lineno">   14</span>  face_from_cell_projection = face_from_cell_projection, </div>
+<div class="line"><span class="lineno">   15</span>  face_from_cell_projection_scaling = face_from_cell_projection_scaling,</div>
+<div class="line"><span class="lineno">   16</span>  cell_from_face_projection = cell_from_face_projection, </div>
+<div class="line"><span class="lineno">   17</span>  cell_from_face_projection_scaling = cell_from_face_projection_scaling,</div>
+<div class="line"><span class="lineno">   18</span>  riemann_matrix = matrices.get_face_face_riemann_problem_matrix(),</div>
+<div class="line"><span class="lineno">   19</span>  boundary_matrix = matrices.get_boundary_matrix(),</div>
+<div class="line"><span class="lineno">   20</span>  cell_relaxation = args.omega_c,</div>
+<div class="line"><span class="lineno">   21</span>  face_relaxation = args.omega_f,  <span class="comment"># default here is 1, i.e. we solve exactly. See class docu</span></div>
+<div class="line"><span class="lineno">   22</span>  approximate_system_matrix = approximate_system_matrix,</div>
+<div class="line"><span class="lineno">   23</span>  approximate_system_matrix_scaling = approximate_system_matrix_scaling,</div>
+<div class="line"><span class="lineno">   24</span>  solver_tolerance = 1.0e-14,</div>
+<div class="line"><span class="lineno">   25</span>  integration_points = 0.5*(matrices.get_nodal_points_1d() + 1.0) <span class="comment"># Should be specified in [0,1] interval</span></div>
+<div class="line"><span class="lineno">   26</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00040">40</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="a6eb45f90c4073dad99bde21451e86d7d" name="a6eb45f90c4073dad99bde21451e86d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb45f90c4073dad99bde21451e86d7d">&#9670;&#160;</a></span>system_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.system_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00074">74</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+<a id="ab387d0d5842c4d42a95242e73929c76f" name="ab387d0d5842c4d42a95242e73929c76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab387d0d5842c4d42a95242e73929c76f">&#9670;&#160;</a></span>system_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg-two-grid.system_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html#l00074">74</a> of file <a class="el" href="../../df/d7e/dg-two-grid_8py_source.html">dg-two-grid.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/ded/namespacedg-two-grid.html">dg-two-grid</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:25 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

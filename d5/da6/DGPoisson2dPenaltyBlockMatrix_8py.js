@@ -1,0 +1,4 @@
+var DGPoisson2dPenaltyBlockMatrix_8py =
+[
+    [ "mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix", "d3/de6/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dPenaltyBlockMatrix_1_1DGPoisson2dPenaltyBlockMatrix.html", "d3/de6/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dPenaltyBlockMatrix_1_1DGPoisson2dPenaltyBlockMatrix" ]
+];

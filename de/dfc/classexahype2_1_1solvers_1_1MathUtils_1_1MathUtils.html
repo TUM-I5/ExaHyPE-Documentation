@@ -1,0 +1,919 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/dfc/classexahype2_1_1solvers_1_1MathUtils_1_1MathUtils.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+  <div class="headertitle"><div class="title">exahype2.solvers.MathUtils.MathUtils Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aac3e79e1822fa863b3cc82c639cb2dfd" id="r_aac3e79e1822fa863b3cc82c639cb2dfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3e79e1822fa863b3cc82c639cb2dfd">matrixTranspose</a> (M)</td></tr>
+<tr class="memdesc:aac3e79e1822fa863b3cc82c639cb2dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transpose a matrix M.  <br /></td></tr>
+<tr class="separator:aac3e79e1822fa863b3cc82c639cb2dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca39e346edce94c41161aad66b7fc5b" id="r_aeca39e346edce94c41161aad66b7fc5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca39e346edce94c41161aad66b7fc5b">matrixDot</a> (A, B)</td></tr>
+<tr class="memdesc:aeca39e346edce94c41161aad66b7fc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dot B.  <br /></td></tr>
+<tr class="separator:aeca39e346edce94c41161aad66b7fc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84feed415b7acdd2dc902c39ab4fd75" id="r_ae84feed415b7acdd2dc902c39ab4fd75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae84feed415b7acdd2dc902c39ab4fd75">matrixInverse</a> (M)</td></tr>
+<tr class="memdesc:ae84feed415b7acdd2dc902c39ab4fd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">M^-1.  <br /></td></tr>
+<tr class="separator:ae84feed415b7acdd2dc902c39ab4fd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a5b5ae769c94efc9c5002e8356b26c" id="r_a89a5b5ae769c94efc9c5002e8356b26c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89a5b5ae769c94efc9c5002e8356b26c">matrixInverse_Pivot</a> (M)</td></tr>
+<tr class="memdesc:a89a5b5ae769c94efc9c5002e8356b26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a matrix inverse using a pivot algorithm.  <br /></td></tr>
+<tr class="separator:a89a5b5ae769c94efc9c5002e8356b26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8aa11c64ada310d420d41eb6ced639" id="r_a6f8aa11c64ada310d420d41eb6ced639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8aa11c64ada310d420d41eb6ced639">vectorPad</a> (v, padSize)</td></tr>
+<tr class="memdesc:a6f8aa11c64ada310d420d41eb6ced639"><td class="mdescLeft">&#160;</td><td class="mdescRight">zero-pad a vector  <br /></td></tr>
+<tr class="separator:a6f8aa11c64ada310d420d41eb6ced639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ad39cd9990f671725009ca02ee5054" id="r_a64ad39cd9990f671725009ca02ee5054"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64ad39cd9990f671725009ca02ee5054">matrixPadAndFlatten_RowMajor</a> (M, padSize)</td></tr>
+<tr class="memdesc:a64ad39cd9990f671725009ca02ee5054"><td class="mdescLeft">&#160;</td><td class="mdescRight">a b c d e f =&gt; a b c 0 d e f 0  <br /></td></tr>
+<tr class="separator:a64ad39cd9990f671725009ca02ee5054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da42b8a6770c1a44befba21e84bc84a" id="r_a8da42b8a6770c1a44befba21e84bc84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da42b8a6770c1a44befba21e84bc84a">matrixPadAndFlatten_ColMajor</a> (M, padSize)</td></tr>
+<tr class="memdesc:a8da42b8a6770c1a44befba21e84bc84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">a b c d e f =&gt; a d 0 b e 0 c f 0  <br /></td></tr>
+<tr class="separator:a8da42b8a6770c1a44befba21e84bc84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c3d7cb089f020353ffa0e633fb3b95" id="r_aa7c3d7cb089f020353ffa0e633fb3b95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7c3d7cb089f020353ffa0e633fb3b95">getGaussLegendre</a> (nDof)</td></tr>
+<tr class="memdesc:aa7c3d7cb089f020353ffa0e633fb3b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Legendre weights, points.  <br /></td></tr>
+<tr class="separator:aa7c3d7cb089f020353ffa0e633fb3b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64100fb7c6268a80ba2511beaaf51c3c" id="r_a64100fb7c6268a80ba2511beaaf51c3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64100fb7c6268a80ba2511beaaf51c3c">getGaussLobatto</a> (nDof)</td></tr>
+<tr class="memdesc:a64100fb7c6268a80ba2511beaaf51c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Lobatto weights, points.  <br /></td></tr>
+<tr class="separator:a64100fb7c6268a80ba2511beaaf51c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d645ccdda72de113ccdaa688afb8823" id="r_a0d645ccdda72de113ccdaa688afb8823"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d645ccdda72de113ccdaa688afb8823">baseFunc1d</a> (xi, xin, N)</td></tr>
+<tr class="memdesc:a0d645ccdda72de113ccdaa688afb8823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the ADER-DG basis functions and their first derivative.  <br /></td></tr>
+<tr class="separator:a0d645ccdda72de113ccdaa688afb8823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902fc80dc7287798abdb228386a1f73a" id="r_a902fc80dc7287798abdb228386a1f73a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a902fc80dc7287798abdb228386a1f73a">assembleStiffnessMatrix</a> (xGPN, wGPN, N)</td></tr>
+<tr class="memdesc:a902fc80dc7287798abdb228386a1f73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the (reference) element stiffness matrix for an approximation of order N.  <br /></td></tr>
+<tr class="separator:a902fc80dc7287798abdb228386a1f73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5e0587e1e437eaed9d926cd9e095ea" id="r_a9a5e0587e1e437eaed9d926cd9e095ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a5e0587e1e437eaed9d926cd9e095ea">assembleK1</a> (Kxi, xGPN, N)</td></tr>
+<tr class="memdesc:a9a5e0587e1e437eaed9d926cd9e095ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the difference between the reference element mass operator evaluated at point xi=1.0 and the element stiffness matrix.  <br /></td></tr>
+<tr class="separator:a9a5e0587e1e437eaed9d926cd9e095ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab450237921b88158b123f19e3e2f8ef1" id="r_ab450237921b88158b123f19e3e2f8ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab450237921b88158b123f19e3e2f8ef1">assembleMassMatrix</a> (xGPN, wGPN, N)</td></tr>
+<tr class="memdesc:ab450237921b88158b123f19e3e2f8ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the (reference) element mass matrix for an approximation of order N.  <br /></td></tr>
+<tr class="separator:ab450237921b88158b123f19e3e2f8ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad662ad4e3b0d7e96987d6454fc026156" id="r_ad662ad4e3b0d7e96987d6454fc026156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad662ad4e3b0d7e96987d6454fc026156">assembleDiscreteDerivativeOperator</a> (MM, Kxi)</td></tr>
+<tr class="memdesc:ad662ad4e3b0d7e96987d6454fc026156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes some derivative values for debugging purposes.  <br /></td></tr>
+<tr class="separator:ad662ad4e3b0d7e96987d6454fc026156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907c12bbe89caaf76a586d79530e5162" id="r_a907c12bbe89caaf76a586d79530e5162"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a907c12bbe89caaf76a586d79530e5162">assembleFineGridProjector1d</a> (xGPN, j, N)</td></tr>
+<tr class="memdesc:a907c12bbe89caaf76a586d79530e5162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the degrees of freedom located on a coarse grid edge nodes to degrees of freedoms located on nodes of a fine grid edge.  <br /></td></tr>
+<tr class="separator:a907c12bbe89caaf76a586d79530e5162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b12c8f63fd9d5cd7b19d439cefbdd5d" id="r_a8b12c8f63fd9d5cd7b19d439cefbdd5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b12c8f63fd9d5cd7b19d439cefbdd5d">LagrangBasisPoly</a> (x, order, i, xi=None)</td></tr>
+<tr class="memdesc:a8b12c8f63fd9d5cd7b19d439cefbdd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the i-th Lagrange basis polynomial as symbolic expression.  <br /></td></tr>
+<tr class="separator:a8b12c8f63fd9d5cd7b19d439cefbdd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea77d84cea31f1656d02e00a9e26d10a" id="r_aea77d84cea31f1656d02e00a9e26d10a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea77d84cea31f1656d02e00a9e26d10a">assembleBasisFunction</a> (quadNodes)</td></tr>
+<tr class="separator:aea77d84cea31f1656d02e00a9e26d10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c4bdfe4731f88e1e61da88f9dfb605" id="r_ad3c4bdfe4731f88e1e61da88f9dfb605"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3c4bdfe4731f88e1e61da88f9dfb605">assembleQuadratureConversion</a> (fromQ, toQ, N)</td></tr>
+<tr class="memdesc:ad3c4bdfe4731f88e1e61da88f9dfb605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return base conversion matrix.  <br /></td></tr>
+<tr class="separator:ad3c4bdfe4731f88e1e61da88f9dfb605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ea3d45090090d11266771d5c1a8295" id="r_ab4ea3d45090090d11266771d5c1a8295"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ea3d45090090d11266771d5c1a8295">assembleDGToFV</a> (nodes, weights, N, Nlim)</td></tr>
+<tr class="memdesc:ab4ea3d45090090d11266771d5c1a8295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return conversion matrix from DG grid to FV grid.  <br /></td></tr>
+<tr class="separator:ab4ea3d45090090d11266771d5c1a8295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ce314513ee73c4f49708bb21fba415" id="r_a41ce314513ee73c4f49708bb21fba415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41ce314513ee73c4f49708bb21fba415">assembleFVToDG</a> (dg2fv, weights, N, Nlim)</td></tr>
+<tr class="memdesc:a41ce314513ee73c4f49708bb21fba415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return conversion matrix from FV grid to DG grid.  <br /></td></tr>
+<tr class="separator:a41ce314513ee73c4f49708bb21fba415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00009">9</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aea77d84cea31f1656d02e00a9e26d10a" name="aea77d84cea31f1656d02e00a9e26d10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea77d84cea31f1656d02e00a9e26d10a">&#9670;&#160;</a></span>assembleBasisFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleBasisFunction </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>quadNodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l01032">1032</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="ab4ea3d45090090d11266771d5c1a8295" name="ab4ea3d45090090d11266771d5c1a8295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ea3d45090090d11266771d5c1a8295">&#9670;&#160;</a></span>assembleDGToFV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleDGToFV </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>nodes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>weights</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Nlim</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return conversion matrix from DG grid to FV grid. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l01075">1075</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="ad662ad4e3b0d7e96987d6454fc026156" name="ad662ad4e3b0d7e96987d6454fc026156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad662ad4e3b0d7e96987d6454fc026156">&#9670;&#160;</a></span>assembleDiscreteDerivativeOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleDiscreteDerivativeOperator </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MM</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Kxi</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes some derivative values for debugging purposes. </p>
+<p>Args: MM: The (reference) element mass matrix for a approximation of order N. Kxi: The (reference) element stiffness matrix for a approximation of order N.</p>
+<p>Returns: dudx: Derivative values for debugging purposes. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00950">950</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a907c12bbe89caaf76a586d79530e5162" name="a907c12bbe89caaf76a586d79530e5162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907c12bbe89caaf76a586d79530e5162">&#9670;&#160;</a></span>assembleFineGridProjector1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleFineGridProjector1d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transforms the degrees of freedom located on a coarse grid edge nodes to degrees of freedoms located on nodes of a fine grid edge. </p>
+<p>The difference in levels is 1.</p>
+<p>Let us denote by P the 1d fine grid projector (=1d equidistantGridProjector). The fine grid DoF are computed according to:</p>
+<p>u^{fine;j}_i = sum_{m} P^{j}_im u^{coarse}_m</p>
+<p>Args: xGPN: Gauss-Legendre nodes (N nodes). j: <a class="el" href="../../d9/d55/classIndex.html">Index</a> of one the three subintervals: 0,1, or 2. N: Number of nodal basis functions (=order+1). Returns: equidistantGridProjector: The corresponding degrees of freedom located at nodes of an equidistant grid over (0,1). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00972">972</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a41ce314513ee73c4f49708bb21fba415" name="a41ce314513ee73c4f49708bb21fba415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ce314513ee73c4f49708bb21fba415">&#9670;&#160;</a></span>assembleFVToDG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleFVToDG </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dg2fv</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>weights</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Nlim</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return conversion matrix from FV grid to DG grid. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l01091">1091</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a9a5e0587e1e437eaed9d926cd9e095ea" name="a9a5e0587e1e437eaed9d926cd9e095ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5e0587e1e437eaed9d926cd9e095ea">&#9670;&#160;</a></span>assembleK1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleK1 </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Kxi</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the difference between the reference element mass operator evaluated at point xi=1.0 and the element stiffness matrix. </p>
+<p>Args: K_xi: The (reference) element stiffness matrix for a approximation of order N. xGPN: Gauss-Legendre nodes (N nodes). N: Order of approximation corresponding to N+1 nodal basis functions. Returns: K1: &lt;unknown&gt; </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00895">895</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="ab450237921b88158b123f19e3e2f8ef1" name="ab450237921b88158b123f19e3e2f8ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab450237921b88158b123f19e3e2f8ef1">&#9670;&#160;</a></span>assembleMassMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleMassMatrix </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>wGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the (reference) element mass matrix for an approximation of order N. </p>
+<p>Args: xGPN: Gauss-Legendre nodes (N nodes). wGPN: N Gauss-Legendre weights (N weights). N: Number of nodal basis functions (=order+1). Returns: M_xi: The (reference) element mass matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00922">922</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="ad3c4bdfe4731f88e1e61da88f9dfb605" name="ad3c4bdfe4731f88e1e61da88f9dfb605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c4bdfe4731f88e1e61da88f9dfb605">&#9670;&#160;</a></span>assembleQuadratureConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleQuadratureConversion </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fromQ</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>toQ</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return base conversion matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l01065">1065</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a902fc80dc7287798abdb228386a1f73a" name="a902fc80dc7287798abdb228386a1f73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a902fc80dc7287798abdb228386a1f73a">&#9670;&#160;</a></span>assembleStiffnessMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.assembleStiffnessMatrix </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>wGPN</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the (reference) element stiffness matrix for an approximation of order N. </p>
+<p>Args: xGPN: Gauss-Legendre nodes (N nodes). wGPN: Gauss-Legendre weights (N weights). N: Number of nodal basis functions (=order+1). Returns: K_xi: The (reference) element stiffness matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00867">867</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a0d645ccdda72de113ccdaa688afb8823" name="a0d645ccdda72de113ccdaa688afb8823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d645ccdda72de113ccdaa688afb8823">&#9670;&#160;</a></span>baseFunc1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.baseFunc1d </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xi</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the ADER-DG basis functions and their first derivative. </p>
+<p>Args: xi: The reference element point the basis functions are evaluated at. Here, xi refers to the greek letter that is often used as a reference element coordinate. xin: The reference element nodes corresponding to the nodal basis functions. N: Number of nodal basis functions (=order+1). Returns: phi: Basis function values. phi_xi: First derivatives of the basis functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00828">828</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="aa7c3d7cb089f020353ffa0e633fb3b95" name="aa7c3d7cb089f020353ffa0e633fb3b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c3d7cb089f020353ffa0e633fb3b95">&#9670;&#160;</a></span>getGaussLegendre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.getGaussLegendre </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>nDof</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return Gauss-Legendre weights, points. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00115">115</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a64100fb7c6268a80ba2511beaaf51c3c" name="a64100fb7c6268a80ba2511beaaf51c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64100fb7c6268a80ba2511beaaf51c3c">&#9670;&#160;</a></span>getGaussLobatto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.getGaussLobatto </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>nDof</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return Gauss-Lobatto weights, points. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00475">475</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a8b12c8f63fd9d5cd7b19d439cefbdd5d" name="a8b12c8f63fd9d5cd7b19d439cefbdd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b12c8f63fd9d5cd7b19d439cefbdd5d">&#9670;&#160;</a></span>LagrangBasisPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.LagrangBasisPoly </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>order</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xi</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the i-th Lagrange basis polynomial as symbolic expression. </p>
+<p>Algorithm was obtained from <a href="https://wanglongqi.github.io/python/2014/03/24/implement-of-lagrange-polynomial/">https://wanglongqi.github.io/python/2014/03/24/implement-of-lagrange-polynomial/</a>.</p>
+<h2><a class="anchor" id="autotoc_md334"></a>
+Parameters</h2>
+<p>x: symbolic variable Symbolic variable. order : number Order of the Lagrange basis polynomial. xi : number The node the basis polynomial should pass through i : number The node we are interested in. </p>
+<h2><a class="anchor" id="autotoc_md335"></a>
+Returns</h2>
+<p>Li: symbolic expression The i-th Lagrange basis polynomial as symbolic expression. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l01003">1003</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="aeca39e346edce94c41161aad66b7fc5b" name="aeca39e346edce94c41161aad66b7fc5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca39e346edce94c41161aad66b7fc5b">&#9670;&#160;</a></span>matrixDot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixDot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>A</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A dot B. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00022">22</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="ae84feed415b7acdd2dc902c39ab4fd75" name="ae84feed415b7acdd2dc902c39ab4fd75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84feed415b7acdd2dc902c39ab4fd75">&#9670;&#160;</a></span>matrixInverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixInverse </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M^-1. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00030">30</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a89a5b5ae769c94efc9c5002e8356b26c" name="a89a5b5ae769c94efc9c5002e8356b26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a5b5ae769c94efc9c5002e8356b26c">&#9670;&#160;</a></span>matrixInverse_Pivot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixInverse_Pivot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute a matrix inverse using a pivot algorithm. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00035">35</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a8da42b8a6770c1a44befba21e84bc84a" name="a8da42b8a6770c1a44befba21e84bc84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da42b8a6770c1a44befba21e84bc84a">&#9670;&#160;</a></span>matrixPadAndFlatten_ColMajor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixPadAndFlatten_ColMajor </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>padSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>a b c d e f =&gt; a d 0 b e 0 c f 0 </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00099">99</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a64ad39cd9990f671725009ca02ee5054" name="a64ad39cd9990f671725009ca02ee5054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ad39cd9990f671725009ca02ee5054">&#9670;&#160;</a></span>matrixPadAndFlatten_RowMajor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixPadAndFlatten_RowMajor </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>padSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>a b c d e f =&gt; a b c 0 d e f 0 </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00087">87</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="aac3e79e1822fa863b3cc82c639cb2dfd" name="aac3e79e1822fa863b3cc82c639cb2dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3e79e1822fa863b3cc82c639cb2dfd">&#9670;&#160;</a></span>matrixTranspose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.matrixTranspose </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transpose a matrix M. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00017">17</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<a id="a6f8aa11c64ada310d420d41eb6ced639" name="a6f8aa11c64ada310d420d41eb6ced639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8aa11c64ada310d420d41eb6ced639">&#9670;&#160;</a></span>vectorPad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">exahype2.solvers.MathUtils.MathUtils.vectorPad </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>v</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>padSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>zero-pad a vector </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/MathUtils_8py_source.html#l00080">80</a> of file <a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>python/exahype2/solvers/<a class="el" href="../../dc/d7a/MathUtils_8py_source.html">MathUtils.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../d0/d4e/namespaceexahype2_1_1solvers.html">solvers</a></li><li class="navelem"><a class="el" href="../../db/d1a/namespaceexahype2_1_1solvers_1_1MathUtils.html">MathUtils</a></li><li class="navelem"><a class="el" href="../../de/dfc/classexahype2_1_1solvers_1_1MathUtils_1_1MathUtils.html">MathUtils</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:46 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

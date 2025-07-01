@@ -1,0 +1,4 @@
+var namespacesolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Unshifted =
+[
+    [ "DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_Unshifted", "d7/dab/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Unshifted_1_1Def8b403fd69555dd24c94fbc9188e4b5.html", "d7/dab/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Unshifted_1_1Def8b403fd69555dd24c94fbc9188e4b5" ]
+];

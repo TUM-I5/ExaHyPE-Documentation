@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">toolbox::loadbalancing::LoadBalancer Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for toolbox::loadbalancing::LoadBalancer:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dcb/classtoolbox_1_1loadbalancing_1_1LoadBalancer__coll__graph.png" border="0" usemap="#atoolbox_1_1loadbalancing_1_1LoadBalancer_coll__map" alt="Collaboration graph"/></div>
+<map name="atoolbox_1_1loadbalancing_1_1LoadBalancer_coll__map" id="atoolbox_1_1loadbalancing_1_1LoadBalancer_coll__map">
+<area shape="rect" title=" " alt="" coords="1123,121,1293,161"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="528,109,671,135"/>
+<area shape="poly" title=" " alt="" coords="684,122,1122,135,1122,141,684,127"/>
+<area shape="rect" href="../../dd/d58/classtoolbox_1_1loadbalancing_1_1Blacklist.html" title="Blacklisting." alt="" coords="807,43,977,83"/>
+<area shape="poly" title=" " alt="" coords="676,104,806,78,807,83,677,109"/>
+<area shape="rect" href="../../d5/dbe/classtoolbox_1_1loadbalancing_1_1Statistics.html" title="Statistics helper routine for load balancing." alt="" coords="807,170,977,210"/>
+<area shape="poly" title=" " alt="" coords="655,136,717,153,807,172,806,177,715,158,654,141"/>
+<area shape="rect" title=" " alt="" coords="241,109,327,135"/>
+<area shape="poly" title=" " alt="" coords="341,119,528,119,528,125,341,125"/>
+<area shape="rect" title=" " alt="" coords="5,102,144,142"/>
+<area shape="poly" title=" " alt="" coords="158,119,240,119,240,125,158,125"/>
+<area shape="rect" href="../../d2/d2f/classtoolbox_1_1loadbalancing_1_1Configuration.html" title="Abstract interface to tweak the behaviour of the load balancer." alt="" coords="807,234,977,274"/>
+<area shape="poly" title=" " alt="" coords="983,228,1098,190,1168,158,1170,163,1100,195,985,233"/>
+<area shape="poly" title=" " alt="" coords="991,77,1099,101,1154,118,1152,123,1098,106,990,82"/>
+<area shape="rect" title=" " alt="" coords="507,5,692,60"/>
+<area shape="poly" title=" " alt="" coords="706,41,807,52,806,57,705,46"/>
+<area shape="rect" href="../../d3/dd0/structtoolbox_1_1loadbalancing_1_1Blacklist_1_1BlacklistData.html" title=" " alt="" coords="193,13,375,53"/>
+<area shape="poly" title=" " alt="" coords="389,30,506,30,506,35,389,35"/>
+<area shape="poly" title=" " alt="" coords="991,172,1122,151,1123,157,992,177"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7629922ff0e2f3efe94640bca3432bae" id="r_a7629922ff0e2f3efe94640bca3432bae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7629922ff0e2f3efe94640bca3432bae">LoadBalancer</a> (<a class="el" href="../../d2/d2f/classtoolbox_1_1loadbalancing_1_1Configuration.html">Configuration</a> *configuration=new <a class="el" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1DefaultConfiguration.html">DefaultConfiguration</a>)</td></tr>
+<tr class="separator:a7629922ff0e2f3efe94640bca3432bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf7a78667d5cf8809d3f0b4c8d06f3f" id="r_a4bf7a78667d5cf8809d3f0b4c8d06f3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bf7a78667d5cf8809d3f0b4c8d06f3f">~LoadBalancer</a> ()</td></tr>
+<tr class="separator:a4bf7a78667d5cf8809d3f0b4c8d06f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3835fe4b0dff12eb124d7225311d77c4" id="r_a3835fe4b0dff12eb124d7225311d77c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3835fe4b0dff12eb124d7225311d77c4">enable</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> value)</td></tr>
+<tr class="separator:a3835fe4b0dff12eb124d7225311d77c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4011da3400449426bbebfe390aafdfb8" id="r_a4011da3400449426bbebfe390aafdfb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4011da3400449426bbebfe390aafdfb8">isEnabled</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> globally) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a4011da3400449426bbebfe390aafdfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9be880a6eda752fb691ae2da9c74966" id="r_ac9be880a6eda752fb691ae2da9c74966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9be880a6eda752fb691ae2da9c74966">update</a> ()</td></tr>
+<tr class="separator:ac9be880a6eda752fb691ae2da9c74966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dde91135ed3b82ce8e3274bcfe1677a" id="r_a5dde91135ed3b82ce8e3274bcfe1677a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dde91135ed3b82ce8e3274bcfe1677a">getGlobalNumberOfTrees</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a5dde91135ed3b82ce8e3274bcfe1677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf16a53161dea65db6117c2f84e00927" id="r_abf16a53161dea65db6117c2f84e00927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf16a53161dea65db6117c2f84e00927">getGlobalNumberOfInnerUnrefinedCells</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:abf16a53161dea65db6117c2f84e00927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71844198462f19fb0cf617e7e6b3d0c5" id="r_a71844198462f19fb0cf617e7e6b3d0c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71844198462f19fb0cf617e7e6b3d0c5">hasStagnated</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a71844198462f19fb0cf617e7e6b3d0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35ba9b68451ae03ec155bc59f201b85" id="r_aa35ba9b68451ae03ec155bc59f201b85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa35ba9b68451ae03ec155bc59f201b85">hasSplitRecently</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa35ba9b68451ae03ec155bc59f201b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a865cb891736a5c643a44c38128ff86" id="r_a4a865cb891736a5c643a44c38128ff86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a865cb891736a5c643a44c38128ff86">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a4a865cb891736a5c643a44c38128ff86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f2e7765b46d3443dd1f80ef13a557af" id="r_a9f2e7765b46d3443dd1f80ef13a557af"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f2e7765b46d3443dd1f80ef13a557af">getStatistics</a> ()</td></tr>
+<tr class="separator:a9f2e7765b46d3443dd1f80ef13a557af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7ebb1795116b8efc0ce6c38cbc928ba6" id="r_a7ebb1795116b8efc0ce6c38cbc928ba6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebb1795116b8efc0ce6c38cbc928ba6">updateInterRankLoadBalancing</a> ()</td></tr>
+<tr class="separator:a7ebb1795116b8efc0ce6c38cbc928ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41019ac50e52dd04f884e26f2ca272b8" id="r_a41019ac50e52dd04f884e26f2ca272b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41019ac50e52dd04f884e26f2ca272b8">updateIntraRankLoadBalancing</a> ()</td></tr>
+<tr class="separator:a41019ac50e52dd04f884e26f2ca272b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bc93d4cb27b706ed061ec21221504f" id="r_a08bc93d4cb27b706ed061ec21221504f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08bc93d4cb27b706ed061ec21221504f">triggerSplit</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfCells, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> targetRank)</td></tr>
+<tr class="separator:a08bc93d4cb27b706ed061ec21221504f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4f6eafb697d6ed05ba2f536eb0eedba2" id="r_a4f6eafb697d6ed05ba2f536eb0eedba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d2f/classtoolbox_1_1loadbalancing_1_1Configuration.html">Configuration</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f6eafb697d6ed05ba2f536eb0eedba2">_configuration</a></td></tr>
+<tr class="separator:a4f6eafb697d6ed05ba2f536eb0eedba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1959cebb2ecf587340ad2e8f10a81ca7" id="r_a1959cebb2ecf587340ad2e8f10a81ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d58/classtoolbox_1_1loadbalancing_1_1Blacklist.html">Blacklist</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1959cebb2ecf587340ad2e8f10a81ca7">_blacklist</a></td></tr>
+<tr class="separator:a1959cebb2ecf587340ad2e8f10a81ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccf78afab812011befadf483d0a5612" id="r_a5ccf78afab812011befadf483d0a5612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dbe/classtoolbox_1_1loadbalancing_1_1Statistics.html">Statistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ccf78afab812011befadf483d0a5612">_statistics</a></td></tr>
+<tr class="separator:a5ccf78afab812011befadf483d0a5612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ffefb9c07762a161ebcf2cca97404f" id="r_a82ffefb9c07762a161ebcf2cca97404f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5ef">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82ffefb9c07762a161ebcf2cca97404f">_state</a></td></tr>
+<tr class="separator:a82ffefb9c07762a161ebcf2cca97404f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a28e09e8fbe3a1f796063411ffbde0e70" id="r_a28e09e8fbe3a1f796063411ffbde0e70"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28e09e8fbe3a1f796063411ffbde0e70">_log</a></td></tr>
+<tr class="separator:a28e09e8fbe3a1f796063411ffbde0e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00017">17</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7629922ff0e2f3efe94640bca3432bae" name="a7629922ff0e2f3efe94640bca3432bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7629922ff0e2f3efe94640bca3432bae">&#9670;&#160;</a></span>LoadBalancer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">toolbox::loadbalancing::LoadBalancer::LoadBalancer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d2f/classtoolbox_1_1loadbalancing_1_1Configuration.html">Configuration</a> *</td>          <td class="paramname"><span class="paramname"><em>configuration</em><span class="paramdefsep"> = </span><span class="paramdefval">new&#160;<a class="el" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1DefaultConfiguration.html">DefaultConfiguration</a></span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00043">_state</a>, <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00042">_statistics</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efab80c7c5ecb18838ef58e66f746c2801c">toolbox::loadbalancing::InterRankDistribution</a>, and <a class="el" href="../../d5/dcf/toolbox_2loadbalancing_2Statistics_8cpp_source.html#l00170">toolbox::loadbalancing::Statistics::notifyOfStateChange()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7629922ff0e2f3efe94640bca3432bae_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7629922ff0e2f3efe94640bca3432bae_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7629922ff0e2f3efe94640bca3432bae_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7629922ff0e2f3efe94640bca3432bae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,220,45"/>
+<area shape="rect" href="../../d5/dbe/classtoolbox_1_1loadbalancing_1_1Statistics.html#ae93fa27a33c4ba888c96a7852e280269" title=" " alt="" coords="268,5,501,45"/>
+<area shape="poly" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4bf7a78667d5cf8809d3f0b4c8d06f3f" name="a4bf7a78667d5cf8809d3f0b4c8d06f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf7a78667d5cf8809d3f0b4c8d06f3f">&#9670;&#160;</a></span>~LoadBalancer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">toolbox::loadbalancing::LoadBalancer::~LoadBalancer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3835fe4b0dff12eb124d7225311d77c4" name="a3835fe4b0dff12eb124d7225311d77c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3835fe4b0dff12eb124d7225311d77c4">&#9670;&#160;</a></span>enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::loadbalancing::LoadBalancer::enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efa7a93fb3db68005c2c9f367a1dd41f9a9">toolbox::loadbalancing::InterRankBalancing</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, and <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efa8e5f448f5887f1fdda194c5b2a7fba70">toolbox::loadbalancing::SwitchedOff</a>.</p>
+
+</div>
+</div>
+<a id="abf16a53161dea65db6117c2f84e00927" name="abf16a53161dea65db6117c2f84e00927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf16a53161dea65db6117c2f84e00927">&#9670;&#160;</a></span>getGlobalNumberOfInnerUnrefinedCells()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::loadbalancing::LoadBalancer::getGlobalNumberOfInnerUnrefinedCells </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dde91135ed3b82ce8e3274bcfe1677a" name="a5dde91135ed3b82ce8e3274bcfe1677a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dde91135ed3b82ce8e3274bcfe1677a">&#9670;&#160;</a></span>getGlobalNumberOfTrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::loadbalancing::LoadBalancer::getGlobalNumberOfTrees </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f2e7765b46d3443dd1f80ef13a557af" name="a9f2e7765b46d3443dd1f80ef13a557af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2e7765b46d3443dd1f80ef13a557af">&#9670;&#160;</a></span>getStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::loadbalancing::LoadBalancer::getStatistics </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00665">peano4::parallel::SpacetreeSet::getGridStatistics()</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00029">peano4::parallel::SpacetreeSet::getInstance()</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00702">peano4::parallel::SpacetreeSet::getLocalSpacetrees()</a>, <a class="el" href="../../d2/d00/GridStatistics_8cpp_source.html#l00039">peano4::grid::GridStatistics::getNumberOfLocalUnrefinedCells()</a>, and <a class="el" href="../../d2/d00/GridStatistics_8cpp_source.html#l00047">peano4::grid::GridStatistics::getNumberOfRemoteUnrefinedCells()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d51/ExaHyPEMain_8template_8cpp_source.html#l00251">step()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_cgraph">
+<area shape="rect" title=" " alt="" coords="5,133,212,173"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a85eb3c28124a032792ec6451adf2bad3" title="Return statistics object for primary spacetree." alt="" coords="292,5,492,45"/>
+<area shape="poly" title=" " alt="" coords="134,131,190,92,259,55,279,47,281,52,261,60,192,97,137,135"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="292,69,492,109"/>
+<area shape="poly" title=" " alt="" coords="197,131,289,110,290,115,199,136"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#abd1643da8908cfca6368aae3bba9ab02" title=" " alt="" coords="292,133,492,173"/>
+<area shape="poly" title=" " alt="" coords="212,151,278,151,278,156,212,156"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#a290e9a9254d115c09c710f6ca14afcff" title=" " alt="" coords="269,197,515,237"/>
+<area shape="poly" title=" " alt="" coords="199,171,290,192,289,197,197,176"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ad3585f3e0d16f0d70e61f00cb74260ac" title=" " alt="" coords="260,261,524,301"/>
+<area shape="poly" title=" " alt="" coords="137,171,192,210,261,247,281,255,279,260,259,252,190,214,134,176"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#a330c69208e5ce8528313b3ac6828e8af" title=" " alt="" coords="572,5,771,45"/>
+<area shape="poly" title=" " alt="" coords="492,23,558,23,558,28,492,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_icgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_icgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_icgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a9f2e7765b46d3443dd1f80ef13a557af_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,413,45"/>
+<area shape="rect" href="../../d9/d51/ExaHyPEMain_8template_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="108,13,159,38"/>
+<area shape="poly" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+<area shape="rect" href="../../d9/d51/ExaHyPEMain_8template_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa35ba9b68451ae03ec155bc59f201b85" name="aa35ba9b68451ae03ec155bc59f201b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35ba9b68451ae03ec155bc59f201b85">&#9670;&#160;</a></span>hasSplitRecently()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::loadbalancing::LoadBalancer::hasSplitRecently </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a71844198462f19fb0cf617e7e6b3d0c5" name="a71844198462f19fb0cf617e7e6b3d0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71844198462f19fb0cf617e7e6b3d0c5">&#9670;&#160;</a></span>hasStagnated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::loadbalancing::LoadBalancer::hasStagnated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efab2dcd03a9a484d040624efba45d7ddbc">toolbox::loadbalancing::Stagnation</a>, and <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efa8e5f448f5887f1fdda194c5b2a7fba70">toolbox::loadbalancing::SwitchedOff</a>.</p>
+
+</div>
+</div>
+<a id="a4011da3400449426bbebfe390aafdfb8" name="a4011da3400449426bbebfe390aafdfb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4011da3400449426bbebfe390aafdfb8">&#9670;&#160;</a></span>isEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::loadbalancing::LoadBalancer::isEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>globally</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, and <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efa8e5f448f5887f1fdda194c5b2a7fba70">toolbox::loadbalancing::SwitchedOff</a>.</p>
+
+</div>
+</div>
+<a id="a4a865cb891736a5c643a44c38128ff86" name="a4a865cb891736a5c643a44c38128ff86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a865cb891736a5c643a44c38128ff86">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::loadbalancing::LoadBalancer::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00172">172</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>.</p>
+
+</div>
+</div>
+<a id="a08bc93d4cb27b706ed061ec21221504f" name="a08bc93d4cb27b706ed061ec21221504f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bc93d4cb27b706ed061ec21221504f">&#9670;&#160;</a></span>triggerSplit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::loadbalancing::LoadBalancer::triggerSplit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfCells</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>targetRank</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00029">peano4::parallel::SpacetreeSet::getInstance()</a>, <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00702">peano4::parallel::SpacetreeSet::getLocalSpacetrees()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00464">logError</a>, and <a class="el" href="../../d2/df0/SpacetreeSet_8cpp_source.html#l00713">peano4::parallel::SpacetreeSet::split()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a08bc93d4cb27b706ed061ec21221504f_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a08bc93d4cb27b706ed061ec21221504f_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a08bc93d4cb27b706ed061ec21221504f_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a08bc93d4cb27b706ed061ec21221504f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,477,204,517"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="252,413,452,453"/>
+<area shape="poly" title=" " alt="" coords="182,475,260,454,262,459,183,480"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#abd1643da8908cfca6368aae3bba9ab02" title=" " alt="" coords="252,477,452,517"/>
+<area shape="poly" title=" " alt="" coords="204,495,238,495,238,500,204,500"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a4c99275a5fd270dce1999818063bd802" title="Split a local tree." alt="" coords="252,541,452,581"/>
+<area shape="poly" title=" " alt="" coords="183,515,262,535,260,540,182,520"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3" title=" " alt="" coords="530,5,778,45"/>
+<area shape="poly" title=" " alt="" coords="437,539,450,528,470,498,483,469,491,439,493,411,486,353,471,296,457,238,451,180,454,151,462,122,476,92,498,62,516,46,520,50,502,66,481,95,467,123,459,152,456,180,462,237,477,294,491,352,498,410,496,440,489,470,475,500,454,531,441,543"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a49e92b919a5d722323f191e6328af9fc" title=" " alt="" coords="554,120,754,160"/>
+<area shape="poly" title=" " alt="" coords="437,539,450,528,466,505,476,484,485,440,481,397,472,353,463,310,460,266,463,244,470,221,481,199,498,177,517,161,540,149,542,154,520,165,502,181,486,202,474,223,468,245,465,266,468,309,477,352,487,396,490,440,481,485,470,508,454,531,441,543"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="907,56,1076,96"/>
+<area shape="poly" title=" " alt="" coords="437,539,450,528,459,512,466,492,472,442,470,316,468,251,469,191,478,141,487,121,498,106,526,89,566,76,615,68,669,63,786,61,893,66,893,71,786,67,670,68,615,73,567,81,528,94,502,110,491,124,483,143,475,191,473,251,475,316,478,442,471,494,464,514,454,531,441,543"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="1175,242,1388,267"/>
+<area shape="poly" title=" " alt="" coords="435,539,450,527,464,509,472,490,474,451,476,412,484,391,498,370,540,328,579,298,618,275,657,260,745,240,856,220,931,208,991,206,1127,220,1219,236,1218,241,1126,225,991,212,931,214,856,225,746,245,659,265,620,280,582,302,543,332,502,374,488,393,482,413,479,452,477,491,469,511,454,531,438,543"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a255dea5ec5043a45b96c5bd8b4979551" title=" " alt="" coords="891,235,1091,275"/>
+<area shape="poly" title=" " alt="" coords="430,539,450,527,466,512,474,497,483,480,498,463,546,426,588,398,666,359,855,291,898,276,900,281,857,296,668,363,591,402,549,431,502,467,487,483,479,499,470,515,454,531,432,544"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a458b1e97bbb08a62840c1f494633aa9e" title=" " alt="" coords="530,605,778,645"/>
+<area shape="poly" title=" " alt="" coords="445,579,501,591,544,600,543,605,499,596,444,584"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#aa491a74d2227e95a538b3d5f4076390c" title=" " alt="" coords="500,477,808,517"/>
+<area shape="poly" title=" " alt="" coords="444,539,499,527,543,518,544,523,501,532,445,544"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a59bed030f4816c88a02ff326e7a0811c" title="This operation is not const as it does some internal bookkeeping." alt="" coords="569,669,739,709"/>
+<area shape="poly" title=" " alt="" coords="379,579,433,618,501,655,556,672,555,677,499,660,430,623,376,584"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a7cfae5baa7c161d85705f2f8cf1e0703" title=" " alt="" coords="509,541,799,581"/>
+<area shape="poly" title=" " alt="" coords="452,559,495,559,495,564,452,564"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545" title=" " alt="" coords="530,733,778,773"/>
+<area shape="poly" title=" " alt="" coords="368,580,390,612,420,650,458,688,501,719,518,727,516,732,499,724,454,692,416,653,385,615,364,583"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a39dcc85e917582e601772f414d892432" title=" " alt="" coords="530,797,778,837"/>
+<area shape="poly" title=" " alt="" coords="363,581,381,624,410,679,450,736,474,761,502,783,519,793,516,798,498,788,471,765,446,739,405,682,376,626,358,583"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a751e49c699fded29e8ea2bbb27ec085c" title=" " alt="" coords="530,861,778,901"/>
+<area shape="poly" title=" " alt="" coords="360,581,374,635,401,708,420,746,443,784,470,818,502,847,519,858,516,863,498,851,466,822,438,787,415,749,396,710,369,637,355,582"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a6de11550a424b8f79da95ecf81596246" title=" " alt="" coords="530,925,778,965"/>
+<area shape="poly" title=" " alt="" coords="358,581,368,646,392,736,411,784,435,831,465,874,502,911,519,923,516,927,498,915,461,878,431,834,406,786,387,737,363,647,353,582"/>
+<area shape="poly" title=" " alt="" coords="754,118,893,92,894,97,755,124"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a426860ede252fd2c044bdfda9f973d79" title=" " alt="" coords="907,120,1076,160"/>
+<area shape="poly" title=" " alt="" coords="754,137,893,137,893,143,754,143"/>
+<area shape="poly" title=" " alt="" coords="1072,158,1128,176,1191,204,1246,233,1244,237,1189,209,1126,181,1070,163"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="1176,120,1387,160"/>
+<area shape="poly" title=" " alt="" coords="1076,137,1162,137,1162,143,1076,143"/>
+<area shape="poly" title=" " alt="" coords="1092,252,1161,252,1161,257,1092,257"/>
+<area shape="poly" title=" " alt="" coords="676,475,767,397,816,359,855,335,928,309,988,299,1049,295,1126,284,1207,268,1208,273,1127,289,1050,300,988,304,929,314,857,340,819,364,770,402,679,479"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="904,669,1079,709"/>
+<area shape="poly" title=" " alt="" coords="793,515,810,527,824,543,831,560,835,593,838,625,845,640,858,655,892,675,890,680,854,659,840,643,833,627,830,593,826,561,819,546,806,531,789,520"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3" title=" " alt="" coords="867,349,1115,389"/>
+<area shape="poly" title=" " alt="" coords="690,475,765,437,855,399,881,391,883,396,857,404,767,442,693,480"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="856,733,1127,773"/>
+<area shape="poly" title=" " alt="" coords="794,515,810,527,828,551,836,576,837,601,835,625,833,650,834,673,841,697,858,720,862,723,858,727,854,723,836,699,828,674,827,649,830,625,832,601,831,577,823,554,806,531,791,520"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="882,413,1101,453"/>
+<area shape="poly" title=" " alt="" coords="760,475,872,453,873,458,761,480"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="882,477,1101,517"/>
+<area shape="poly" title=" " alt="" coords="808,495,869,495,869,500,808,500"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="901,541,1081,581"/>
+<area shape="poly" title=" " alt="" coords="761,515,888,539,887,544,760,520"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="890,605,1093,645"/>
+<area shape="poly" title=" " alt="" coords="786,515,810,527,826,543,834,560,842,576,858,591,878,602,876,607,854,595,838,579,830,562,822,546,806,532,784,520"/>
+<area shape="rect" href="../../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html#aed01fe13fe4c18031154be6ad8f96c70" title=" " alt="" coords="1183,733,1380,773"/>
+<area shape="poly" title=" " alt="" coords="1127,751,1169,751,1169,756,1127,756"/>
+<area shape="poly" title=" " alt="" coords="795,579,810,592,832,624,840,658,838,692,832,725,826,758,825,789,834,819,858,847,892,872,925,890,958,900,990,903,1023,899,1056,889,1090,871,1125,848,1136,823,1154,768,1197,600,1272,280,1277,281,1202,601,1159,769,1141,825,1129,851,1093,876,1058,894,1024,905,990,908,957,905,923,895,889,877,854,851,829,822,820,790,820,757,826,724,833,691,834,658,827,626,806,595,792,584"/>
+<area shape="poly" title=" " alt="" coords="786,579,810,591,826,607,834,624,842,640,858,655,892,672,890,676,854,660,838,643,830,626,822,610,806,596,784,584"/>
+<area shape="poly" title=" " alt="" coords="793,579,810,591,824,607,831,624,835,657,838,689,845,704,858,719,863,724,860,728,854,723,840,707,833,691,830,657,826,625,819,610,806,595,789,584"/>
+<area shape="poly" title=" " alt="" coords="784,539,806,527,822,512,830,496,838,479,854,463,868,455,871,460,858,467,842,482,834,499,826,516,810,532,786,544"/>
+<area shape="poly" title=" " alt="" coords="760,539,872,517,873,522,761,544"/>
+<area shape="poly" title=" " alt="" coords="800,559,888,559,888,564,800,564"/>
+<area shape="poly" title=" " alt="" coords="761,579,877,601,876,606,760,584"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="867,797,1115,837"/>
+<area shape="poly" title=" " alt="" coords="794,579,810,591,828,615,836,640,837,665,835,689,833,714,834,737,841,761,858,784,862,787,858,791,854,787,836,763,828,738,827,713,830,689,832,665,831,641,823,618,806,595,791,584"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9be880a6eda752fb691ae2da9c74966" name="ac9be880a6eda752fb691ae2da9c74966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9be880a6eda752fb691ae2da9c74966">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::loadbalancing::LoadBalancer::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efab80c7c5ecb18838ef58e66f746c2801c">toolbox::loadbalancing::InterRankDistribution</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efae9d974e6068aea8f7e7ebc80dcf6cc92">toolbox::loadbalancing::IntraRankDistribution</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efa8e5f448f5887f1fdda194c5b2a7fba70">toolbox::loadbalancing::SwitchedOff</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_ac9be880a6eda752fb691ae2da9c74966_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_ac9be880a6eda752fb691ae2da9c74966_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_ac9be880a6eda752fb691ae2da9c74966_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_ac9be880a6eda752fb691ae2da9c74966_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="224,13,297,38"/>
+<area shape="poly" title=" " alt="" coords="176,23,210,23,210,28,176,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ebb1795116b8efc0ce6c38cbc928ba6" name="a7ebb1795116b8efc0ce6c38cbc928ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebb1795116b8efc0ce6c38cbc928ba6">&#9670;&#160;</a></span>updateInterRankLoadBalancing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::loadbalancing::LoadBalancer::updateInterRankLoadBalancing </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../df/df3/Rank_8h_source.html#l00425">tarch::mpi::Rank::getNumberOfRanks()</a>, <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efae9d974e6068aea8f7e7ebc80dcf6cc92">toolbox::loadbalancing::IntraRankDistribution</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00418">tarch::mpi::Rank::isGlobalMaster()</a>, and <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7ebb1795116b8efc0ce6c38cbc928ba6_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7ebb1795116b8efc0ce6c38cbc928ba6_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7ebb1795116b8efc0ce6c38cbc928ba6_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a7ebb1795116b8efc0ce6c38cbc928ba6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,48,240,103"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="288,5,501,31"/>
+<area shape="poly" title=" " alt="" coords="240,48,320,31,321,36,241,53"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="289,55,500,95"/>
+<area shape="poly" title=" " alt="" coords="240,73,275,73,275,78,240,78"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3356d19b2cfaa2dc5142dc4cbab56a9a" title="Is this node the global master process, i.e." alt="" coords="299,119,490,159"/>
+<area shape="poly" title=" " alt="" coords="240,100,297,114,295,119,239,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41019ac50e52dd04f884e26f2ca272b8" name="a41019ac50e52dd04f884e26f2ca272b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41019ac50e52dd04f884e26f2ca272b8">&#9670;&#160;</a></span>updateIntraRankLoadBalancing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::loadbalancing::LoadBalancer::updateIntraRankLoadBalancing </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">tarch::multicore::Core::getNumberOfThreads()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, and <a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5efab2dcd03a9a484d040624efba45d7ddbc">toolbox::loadbalancing::Stagnation</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a41019ac50e52dd04f884e26f2ca272b8_cgraph.png" border="0" usemap="#ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a41019ac50e52dd04f884e26f2ca272b8_cgraph" alt=""/></div>
+<map name="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a41019ac50e52dd04f884e26f2ca272b8_cgraph" id="ad2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer_a41019ac50e52dd04f884e26f2ca272b8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,48,240,103"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="288,5,501,31"/>
+<area shape="poly" title=" " alt="" coords="240,48,320,31,321,36,241,53"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="313,55,476,95"/>
+<area shape="poly" title=" " alt="" coords="240,73,300,73,300,78,240,78"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a7d5bd53fa4d7e8150827ddd9d2a0730f" title="Returns the number of threads that is used." alt="" coords="309,119,480,159"/>
+<area shape="poly" title=" " alt="" coords="240,100,297,114,295,119,239,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a1959cebb2ecf587340ad2e8f10a81ca7" name="a1959cebb2ecf587340ad2e8f10a81ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1959cebb2ecf587340ad2e8f10a81ca7">&#9670;&#160;</a></span>_blacklist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d58/classtoolbox_1_1loadbalancing_1_1Blacklist.html">Blacklist</a> toolbox::loadbalancing::LoadBalancer::_blacklist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+
+</div>
+</div>
+<a id="a4f6eafb697d6ed05ba2f536eb0eedba2" name="a4f6eafb697d6ed05ba2f536eb0eedba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6eafb697d6ed05ba2f536eb0eedba2">&#9670;&#160;</a></span>_configuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d2f/classtoolbox_1_1loadbalancing_1_1Configuration.html">Configuration</a>* toolbox::loadbalancing::LoadBalancer::_configuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00040">40</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+
+</div>
+</div>
+<a id="a28e09e8fbe3a1f796063411ffbde0e70" name="a28e09e8fbe3a1f796063411ffbde0e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e09e8fbe3a1f796063411ffbde0e70">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> toolbox::loadbalancing::LoadBalancer::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+
+</div>
+</div>
+<a id="a82ffefb9c07762a161ebcf2cca97404f" name="a82ffefb9c07762a161ebcf2cca97404f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ffefb9c07762a161ebcf2cca97404f">&#9670;&#160;</a></span>_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html#ae6ed09ab548ea9230112680042a6d5ef">State</a> toolbox::loadbalancing::LoadBalancer::_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00043">43</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00012">LoadBalancer()</a>.</p>
+
+</div>
+</div>
+<a id="a5ccf78afab812011befadf483d0a5612" name="a5ccf78afab812011befadf483d0a5612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccf78afab812011befadf483d0a5612">&#9670;&#160;</a></span>_statistics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dbe/classtoolbox_1_1loadbalancing_1_1Statistics.html">Statistics</a> toolbox::loadbalancing::LoadBalancer::_statistics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html#l00042">42</a> of file <a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00012">LoadBalancer()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/toolbox/loadbalancing/<a class="el" href="../../d6/ddd/LoadBalancer_8h_source.html">LoadBalancer.h</a></li>
+<li>src/toolbox/loadbalancing/<a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html">LoadBalancer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dd9/namespacetoolbox.html">toolbox</a></li><li class="navelem"><a class="el" href="../../d2/d1a/namespacetoolbox_1_1loadbalancing.html">loadbalancing</a></li><li class="navelem"><a class="el" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer.html">LoadBalancer</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:07 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

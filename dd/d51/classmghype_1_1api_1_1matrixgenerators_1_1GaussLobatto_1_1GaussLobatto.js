@@ -1,0 +1,27 @@
+var classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto =
+[
+    [ "__init__", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a539bb6b476f862737d51d68120024d99", null ],
+    [ "eval_integral", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a3ac4994634564fdc370b720ae71ecf5b", null ],
+    [ "get_averaging_riemann_solver", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#aad9dc1149423c5f2f4358dda9b684587", null ],
+    [ "get_cell_identity_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a43bd05ba5303fc2e4fd32d9adcab6dbb", null ],
+    [ "get_cell_mass_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a8996cc6e820bd1efe7d12a39c14a31ae", null ],
+    [ "get_cell_system_matrix_for_laplacian", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a351b8363aa3316ab470d033b4b44a526", null ],
+    [ "get_cell_to_face_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a85514784d0864b398070a7fa408aa353", null ],
+    [ "get_face_face_riemann_problem_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a991b7852fcec99f19edd52816ee0ea60", null ],
+    [ "get_face_to_cell_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a6af13d0d442068bf9a12bbb30e318f32", null ],
+    [ "get_nodal_points_1d", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#aeae8bff8f23ac4afb6dd87a64fb81c95", null ],
+    [ "get_points1d", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a0e548ae35d3088a8a2e6a71861b9b994", null ],
+    [ "get_points1d_legendre", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#afd8ac99f577cc942c570dee36192ba96", null ],
+    [ "get_points_unit_interval", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a1f47f3250d57fc3dd5d44bc3e1cb010c", null ],
+    [ "get_weights1d", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a205ede3b49bfc8212ca000a652aa5b4f", null ],
+    [ "get_weights1d_legendre", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a895b9208f7b82c1dfd74d077e92ac8a1", null ],
+    [ "block_matrix", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#aca3ecfbd2316e43468acfb9582bc76a0", null ],
+    [ "cell_nodes", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a7ba4e9572bdb5a758f8707c2643ecdad", null ],
+    [ "dimensions", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a5448fb88dd39dc6f7f6b8e145b777b9e", null ],
+    [ "face_nodes", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a2a867676471fa85fc78702332d9e62bb", null ],
+    [ "points1d", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#aefd8ea69cb67fba8b2ea0ab3add8b91d", null ],
+    [ "poly_degree", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a3f2acc811462b9c15b770436695199cc", null ],
+    [ "unknowns_per_cell_node", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#ade375de81baafbdcc1e7e572a6b7f328", null ],
+    [ "unknowns_per_face_node", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a28080f071e5c096660b41b01ff1eecce", null ],
+    [ "use_unit_interval", "dd/d51/classmghype_1_1api_1_1matrixgenerators_1_1GaussLobatto_1_1GaussLobatto.html#a5aa2803fe96068330e3a4cfc9286a921", null ]
+];

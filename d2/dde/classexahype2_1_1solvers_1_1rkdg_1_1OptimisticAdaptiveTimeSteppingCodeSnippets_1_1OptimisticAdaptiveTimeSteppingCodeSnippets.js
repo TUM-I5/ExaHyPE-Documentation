@@ -1,0 +1,7 @@
+var classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets =
+[
+    [ "__init__", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets.html#a11c14e7d696b391c94bb79dae3e45308", null ],
+    [ "create_finish_time_step_implementation", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets.html#a0046a721c5b5cb03089e00e99256e3bb", null ],
+    [ "create_start_time_step_implementation", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets.html#a173cad47a6be20e013e5474f2c2eb205", null ],
+    [ "_time_step_relaxation", "d2/dde/classexahype2_1_1solvers_1_1rkdg_1_1OptimisticAdaptiveTimeSteppingCodeSnippets_1_1OptimisticAdaptiveTimeSteppingCodeSnippets.html#a4f0e4307e2038815bd6aea89d117d99e", null ]
+];

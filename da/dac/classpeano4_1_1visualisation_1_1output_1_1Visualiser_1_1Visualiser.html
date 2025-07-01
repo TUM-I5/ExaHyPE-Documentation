@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">peano4.visualisation.output.Visualiser.Visualiser Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The visualiser is first and foremost a persistency layer around datasets.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for peano4.visualisation.output.Visualiser.Visualiser:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d03/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser__inherit__graph.png" border="0" usemap="#apeano4_8visualisation_8output_8Visualiser_8Visualiser_inherit__map" alt="Inheritance graph"/></div>
+<map name="apeano4_8visualisation_8output_8Visualiser_8Visualiser_inherit__map" id="apeano4_8visualisation_8output_8Visualiser_8Visualiser_inherit__map">
+<area shape="rect" title="The visualiser is first and foremost a persistency layer around datasets." alt="" coords="53,5,260,45"/>
+<area shape="rect" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html" title="The visualiser is first and foremost a persistency layer around datasets." alt="" coords="5,93,308,133"/>
+<area shape="poly" title=" " alt="" coords="159,59,159,93,154,93,154,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2d9f92e230d232ffb152be318d8fbb2e" id="r_a2d9f92e230d232ffb152be318d8fbb2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d9f92e230d232ffb152be318d8fbb2e">__init__</a> (self, file_name, start, end, <a class="el" href="#a34fc46932e28c1ccb8ed4cf7a6b31dd2">verbose</a>=False)</td></tr>
+<tr class="memdesc:a2d9f92e230d232ffb152be318d8fbb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract superclass of a visualiser.  <br /></td></tr>
+<tr class="separator:a2d9f92e230d232ffb152be318d8fbb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0205e976bf7d71f7154984da9e91cd" id="r_aad0205e976bf7d71f7154984da9e91cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad0205e976bf7d71f7154984da9e91cd">display</a> (self)</td></tr>
+<tr class="memdesc:aad0205e976bf7d71f7154984da9e91cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the one routine the visualisers typically do overwrite.  <br /></td></tr>
+<tr class="separator:aad0205e976bf7d71f7154984da9e91cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70dff7504ccca7432365f7833e9a3b2" id="r_ae70dff7504ccca7432365f7833e9a3b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae70dff7504ccca7432365f7833e9a3b2">display_single_file</a> (self)</td></tr>
+<tr class="memdesc:ae70dff7504ccca7432365f7833e9a3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If we are here we've supplied a single file which is itself a snapshot.  <br /></td></tr>
+<tr class="separator:ae70dff7504ccca7432365f7833e9a3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0400f800752a453b94768f88ad6046" id="r_a9e0400f800752a453b94768f88ad6046"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e0400f800752a453b94768f88ad6046">read_metadata</a> (self)</td></tr>
+<tr class="memdesc:a9e0400f800752a453b94768f88ad6046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the patch file metadata.  <br /></td></tr>
+<tr class="separator:a9e0400f800752a453b94768f88ad6046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667c04f4e708352847f32883e6db1e95" id="r_a667c04f4e708352847f32883e6db1e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a667c04f4e708352847f32883e6db1e95">append_filter</a> (self, filter)</td></tr>
+<tr class="separator:a667c04f4e708352847f32883e6db1e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c2d8335de43128091b05d5a9e63d05" id="r_a97c2d8335de43128091b05d5a9e63d05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97c2d8335de43128091b05d5a9e63d05">remove_filters</a> (self)</td></tr>
+<tr class="separator:a97c2d8335de43128091b05d5a9e63d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d34fbdd2a7fb03c06c92c28cdd89d7" id="r_ac0d34fbdd2a7fb03c06c92c28cdd89d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0d34fbdd2a7fb03c06c92c28cdd89d7">parse_and_render_snapshot</a> (self, snapshot)</td></tr>
+<tr class="memdesc:ac0d34fbdd2a7fb03c06c92c28cdd89d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">We pass in a snapshot object here, which should contain time stamp and filenames for everything we want to render here.  <br /></td></tr>
+<tr class="separator:ac0d34fbdd2a7fb03c06c92c28cdd89d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277c7536ef1a25aa32571aed1089aa0a" id="r_a277c7536ef1a25aa32571aed1089aa0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a277c7536ef1a25aa32571aed1089aa0a">parse_snapshot</a> (self, snapshot)</td></tr>
+<tr class="memdesc:a277c7536ef1a25aa32571aed1089aa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">We rewrite "reload" from previous version of this file.  <br /></td></tr>
+<tr class="separator:a277c7536ef1a25aa32571aed1089aa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a8ad5beb32913156e7915e948ec82a841" id="r_a8ad5beb32913156e7915e948ec82a841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ad5beb32913156e7915e948ec82a841">identifier</a></td></tr>
+<tr class="separator:a8ad5beb32913156e7915e948ec82a841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fc46932e28c1ccb8ed4cf7a6b31dd2" id="r_a34fc46932e28c1ccb8ed4cf7a6b31dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34fc46932e28c1ccb8ed4cf7a6b31dd2">verbose</a></td></tr>
+<tr class="separator:a34fc46932e28c1ccb8ed4cf7a6b31dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f21f5597b8738423c4592ce2f0944d8" id="r_a4f21f5597b8738423c4592ce2f0944d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f21f5597b8738423c4592ce2f0944d8">snapshots</a></td></tr>
+<tr class="separator:a4f21f5597b8738423c4592ce2f0944d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9b7233b36f3c75fff47f65a7b87b17" id="r_a8f9b7233b36f3c75fff47f65a7b87b17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f9b7233b36f3c75fff47f65a7b87b17">meta_data_has_been_read</a></td></tr>
+<tr class="separator:a8f9b7233b36f3c75fff47f65a7b87b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9ce0d6764b35a9cbe5a4aa14407a0e4a" id="r_a9ce0d6764b35a9cbe5a4aa14407a0e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce0d6764b35a9cbe5a4aa14407a0e4a">_file_name</a></td></tr>
+<tr class="separator:a9ce0d6764b35a9cbe5a4aa14407a0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3957800a5d1f924dfd3fa6b58b42da28" id="r_a3957800a5d1f924dfd3fa6b58b42da28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3957800a5d1f924dfd3fa6b58b42da28">_start</a></td></tr>
+<tr class="separator:a3957800a5d1f924dfd3fa6b58b42da28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf9e638c2339ccf755badd14bd00100" id="r_a5cf9e638c2339ccf755badd14bd00100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cf9e638c2339ccf755badd14bd00100">_end</a></td></tr>
+<tr class="separator:a5cf9e638c2339ccf755badd14bd00100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9a9111549ef8edf43f3f00f07c969b" id="r_a4e9a9111549ef8edf43f3f00f07c969b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9a9111549ef8edf43f3f00f07c969b">_filter</a></td></tr>
+<tr class="separator:a4e9a9111549ef8edf43f3f00f07c969b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bedf89bef0ee279e5dd9f2bf92a0ac0" id="r_a2bedf89bef0ee279e5dd9f2bf92a0ac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bedf89bef0ee279e5dd9f2bf92a0ac0">_dimensions</a></td></tr>
+<tr class="separator:a2bedf89bef0ee279e5dd9f2bf92a0ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29f32facef6a303b3885a726e63c3b6" id="r_ab29f32facef6a303b3885a726e63c3b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab29f32facef6a303b3885a726e63c3b6">_description</a></td></tr>
+<tr class="separator:ab29f32facef6a303b3885a726e63c3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe459b398fff0bb9970b6b41e22290cf" id="r_abe459b398fff0bb9970b6b41e22290cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe459b398fff0bb9970b6b41e22290cf">_is_data_associated_to_cell</a></td></tr>
+<tr class="separator:abe459b398fff0bb9970b6b41e22290cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The visualiser is first and foremost a persistency layer around datasets. </p>
+<p>It serves as abstract base class for real output formats, i.e. it can parse files and hold them, but it does not do anything with them.</p>
+<p>The flow should work like this:</p><ul>
+<li>Pass the file name of the patch file meta data to this class. We then use read_metadata() to read this file, and gather, for each timestamp, the list of patch files that we need to read. For each timestamp, we create an instance of the Snapshot helper class, which captures the timestamp, plus a list of patch files to parse</li>
+<li>We then pass back to display(). Then, for each snapshot, we do the following:<ul>
+<li>Create a PatchFileParser object for each patch file within this timestamp</li>
+<li>Read all the patch file data and combine it into the PatchFileData class in this file.</li>
+<li>Return this data to child class, so that it can be rendered by display()</li>
+</ul>
+</li>
+</ul>
+<p>Currently, the only working child class is the VTU renderer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00195">195</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2d9f92e230d232ffb152be318d8fbb2e" name="a2d9f92e230d232ffb152be318d8fbb2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9f92e230d232ffb152be318d8fbb2e">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>file_name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>start</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>end</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>verbose</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abstract superclass of a visualiser. </p>
+<p>file_name: String Name of a Peano patch file. This does not need to be a meta file.</p>
+<p>If we run <a class="el" href="../../d3/dba/render_8py.html">render.py</a> with the argument -s (to denote we are using single file), then we will use the file_name to create a member of the snapshot class (which captures the patch file to read, with default timestamp of 0). This is then parsed by parse_and_render, and handed back to child class.</p>
+<p>If this is a meta file, then display() will be used.</p>
+<p>verbose: Boolean Controls how much the class writes out.</p>
+<h2><a class="anchor" id="autotoc_md468"></a>
+Attributes</h2>
+<p>self.identifier: String Pick one subidentifier from the input file. If this one is empty, we take every input data set. However, some output formats (such as ParaView) don't support multiple output data sets, so we might end up with either the first or last one from the file - depending on the implementations. </p>
+
+<p>Reimplemented in <a class="el" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#aa2cf5117ed4b06f3188c743c3457ea91">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00222">222</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a667c04f4e708352847f32883e6db1e95" name="a667c04f4e708352847f32883e6db1e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667c04f4e708352847f32883e6db1e95">&#9670;&#160;</a></span>append_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.append_filter </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>filter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00337">337</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00252">peano4.visualisation.output.Visualiser.Visualiser._filter</a>.</p>
+
+</div>
+</div>
+<a id="aad0205e976bf7d71f7154984da9e91cd" name="aad0205e976bf7d71f7154984da9e91cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0205e976bf7d71f7154984da9e91cd">&#9670;&#160;</a></span>display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.display </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is the one routine the visualisers typically do overwrite. </p>
+
+<p>Reimplemented in <a class="el" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#abb35843e487204240c6ebae3ada0d39e">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00271">271</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_aad0205e976bf7d71f7154984da9e91cd_cgraph.png" border="0" usemap="#ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_aad0205e976bf7d71f7154984da9e91cd_cgraph" alt=""/></div>
+<map name="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_aad0205e976bf7d71f7154984da9e91cd_cgraph" id="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_aad0205e976bf7d71f7154984da9e91cd_cgraph">
+<area shape="rect" title="This is the one routine the visualisers typically do overwrite." alt="" coords="5,13,212,53"/>
+<area shape="rect" href="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html#a9e0400f800752a453b94768f88ad6046" title="Read the patch file metadata." alt="" coords="260,5,467,60"/>
+<area shape="poly" title=" " alt="" coords="212,30,246,30,246,35,212,35"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae70dff7504ccca7432365f7833e9a3b2" name="ae70dff7504ccca7432365f7833e9a3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70dff7504ccca7432365f7833e9a3b2">&#9670;&#160;</a></span>display_single_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.display_single_file </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If we are here we've supplied a single file which is itself a snapshot. </p>
+<p>Turn it into an instance of the snapshot helper class, set the timestamp to 0 and pass it back. We can just call parse_and_render_snapshot() on the result </p>
+
+<p>Reimplemented in <a class="el" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#a07b727c7df3404efe0a6f908abca4c30">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00279">279</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d46/PerformanceData_8py_source.html#l00033">exahype2.postprocessing.PerformanceData.PerformanceData._file_name</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00249">peano4.visualisation.output.Visualiser.Visualiser._file_name</a>, and <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00415">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid._file_name</a>.</p>
+
+</div>
+</div>
+<a id="ac0d34fbdd2a7fb03c06c92c28cdd89d7" name="ac0d34fbdd2a7fb03c06c92c28cdd89d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d34fbdd2a7fb03c06c92c28cdd89d7">&#9670;&#160;</a></span>parse_and_render_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.parse_and_render_snapshot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>snapshot</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We pass in a snapshot object here, which should contain time stamp and filenames for everything we want to render here. </p>
+<p>Behaviour is:</p><ul>
+<li>parse all the files listed in snapshot (use the method we wrote)</li>
+<li>return a dict, where the keys are unknown names, and the values are cell data to be rendered</li>
+<li>child class should handle the rest. </li>
+</ul>
+
+<p>Reimplemented in <a class="el" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#ae14124efa39aa07823f13a3a9faf8f46">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00345">345</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00361">peano4.visualisation.output.Visualiser.Visualiser.parse_snapshot()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00510">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.display_single_file()</a>, and <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00379">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.process_snapshot()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_cgraph.png" border="0" usemap="#ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_cgraph" alt=""/></div>
+<map name="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_cgraph" id="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_cgraph">
+<area shape="rect" title="We pass in a snapshot object here, which should contain time stamp and filenames for everything we wa..." alt="" coords="5,5,212,60"/>
+<area shape="rect" href="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html#a277c7536ef1a25aa32571aed1089aa0a" title="We rewrite &quot;reload&quot; from previous version of this file." alt="" coords="260,5,467,60"/>
+<area shape="poly" title=" " alt="" coords="212,30,246,30,246,35,212,35"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_icgraph.png" border="0" usemap="#ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_icgraph" alt=""/></div>
+<map name="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_icgraph" id="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_ac0d34fbdd2a7fb03c06c92c28cdd89d7_icgraph">
+<area shape="rect" title="We pass in a snapshot object here, which should contain time stamp and filenames for everything we wa..." alt="" coords="328,69,535,124"/>
+<area shape="rect" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#a07b727c7df3404efe0a6f908abca4c30" title="If we are here we&#39;ve supplied a single file which is itself a snapshot." alt="" coords="5,29,280,84"/>
+<area shape="poly" title=" " alt="" coords="314,83,280,78,281,73,315,78"/>
+<area shape="rect" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#a899e717a69421e4cee89ec093354796f" title="Helper function to process a single snapshot." alt="" coords="5,108,280,163"/>
+<area shape="poly" title=" " alt="" coords="315,115,281,120,280,114,314,110"/>
+<area shape="poly" title=" " alt="" coords="191,19,174,11,143,8,117,10,100,15,92,21,92,29,87,29,87,19,97,10,116,5,143,3,175,6,193,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a277c7536ef1a25aa32571aed1089aa0a" name="a277c7536ef1a25aa32571aed1089aa0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277c7536ef1a25aa32571aed1089aa0a">&#9670;&#160;</a></span>parse_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.parse_snapshot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>snapshot</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We rewrite "reload" from previous version of this file. </p>
+<p>We take in a argument of "snapshot", which is a helper class with two attributes: timestamp and a list of patch files to parse.</p>
+<p>We need to ensure that self.identifier is set correctly so that the correct unknown is picked by the PatchFileParser. Remove this line of comment when this is done.</p>
+<p>Also need to handle removal of relative file paths here</p>
+<p>The reason we (possibly) apply filters on individual pieces of data, or once the patches have been concatenated is because we may have more than one file to parse per snapshot. The choice is is about whether we want to apply filters before combining all the patches into one list, or afterwards?</p>
+<p>What does this function do?</p><ul>
+<li>Get filename for each patch file in this timestamp</li>
+<li>Produce a PatchFileParser object for each</li>
+<li>Parse each file in parallel</li>
+<li>Apply all the filters specified in <a class="el" href="../../d3/dba/render_8py.html">render.py</a></li>
+<li>Amalgamate data as in original reload() method</li>
+<li>Returns a dict, where the keys are unknown names, and the values are patches that can be placed into individual patch files </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00361">361</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00252">peano4.visualisation.output.Visualiser.Visualiser._filter</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00255">peano4.visualisation.output.Visualiser.Visualiser.identifier</a>, <a class="el" href="../../da/d59/TP__Parameters_8h_source.html#l00019">TP::Parameters.verbose</a>, <a class="el" href="../../da/d2b/visualisation_2filters_2Filter_8py_source.html#l00022">peano4.visualisation.filters.Filter.Filter.verbose</a>, and <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00258">peano4.visualisation.output.Visualiser.Visualiser.verbose</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00345">peano4.visualisation.output.Visualiser.Visualiser.parse_and_render_snapshot()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a277c7536ef1a25aa32571aed1089aa0a_icgraph.png" border="0" usemap="#ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a277c7536ef1a25aa32571aed1089aa0a_icgraph" alt=""/></div>
+<map name="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a277c7536ef1a25aa32571aed1089aa0a_icgraph" id="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a277c7536ef1a25aa32571aed1089aa0a_icgraph">
+<area shape="rect" title="We rewrite &quot;reload&quot; from previous version of this file." alt="" coords="583,69,789,124"/>
+<area shape="rect" href="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html#ac0d34fbdd2a7fb03c06c92c28cdd89d7" title="We pass in a snapshot object here, which should contain time stamp and filenames for everything we wa..." alt="" coords="328,69,535,124"/>
+<area shape="poly" title=" " alt="" coords="569,99,535,99,535,94,569,94"/>
+<area shape="rect" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#a07b727c7df3404efe0a6f908abca4c30" title="If we are here we&#39;ve supplied a single file which is itself a snapshot." alt="" coords="5,29,280,84"/>
+<area shape="poly" title=" " alt="" coords="314,83,280,78,281,73,315,78"/>
+<area shape="rect" href="../../de/dea/classpeano4_1_1visualisation_1_1output_1_1VTUUnstructuredGrid_1_1VTUUnstructuredGrid.html#a899e717a69421e4cee89ec093354796f" title="Helper function to process a single snapshot." alt="" coords="5,108,280,163"/>
+<area shape="poly" title=" " alt="" coords="315,115,281,120,280,114,314,110"/>
+<area shape="poly" title=" " alt="" coords="191,19,174,11,143,8,117,10,100,15,92,21,92,29,87,29,87,19,97,10,116,5,143,3,175,6,193,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e0400f800752a453b94768f88ad6046" name="a9e0400f800752a453b94768f88ad6046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0400f800752a453b94768f88ad6046">&#9670;&#160;</a></span>read_metadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.read_metadata </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the patch file metadata. </p>
+<p>In this routine we should:</p><ul>
+<li>Count the number of timesteps this patch file records</li>
+<li>Get each of the file paths for the timestep </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">292</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00251">peano4.visualisation.output.Visualiser.Visualiser._end</a>, <a class="el" href="../../d8/d46/PerformanceData_8py_source.html#l00033">exahype2.postprocessing.PerformanceData.PerformanceData._file_name</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00249">peano4.visualisation.output.Visualiser.Visualiser._file_name</a>, <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00415">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid._file_name</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00250">peano4.visualisation.output.Visualiser.Visualiser._start</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00269">peano4.visualisation.output.Visualiser.Visualiser.meta_data_has_been_read</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00266">peano4.visualisation.output.Visualiser.Visualiser.snapshots</a>, and <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00437">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.snapshots</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00271">peano4.visualisation.output.Visualiser.Visualiser.display()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a9e0400f800752a453b94768f88ad6046_icgraph.png" border="0" usemap="#ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a9e0400f800752a453b94768f88ad6046_icgraph" alt=""/></div>
+<map name="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a9e0400f800752a453b94768f88ad6046_icgraph" id="ada/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser_a9e0400f800752a453b94768f88ad6046_icgraph">
+<area shape="rect" title="Read the patch file metadata." alt="" coords="260,5,467,60"/>
+<area shape="rect" href="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html#aad0205e976bf7d71f7154984da9e91cd" title="This is the one routine the visualisers typically do overwrite." alt="" coords="5,13,212,53"/>
+<area shape="poly" title=" " alt="" coords="247,35,212,35,212,30,247,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a97c2d8335de43128091b05d5a9e63d05" name="a97c2d8335de43128091b05d5a9e63d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c2d8335de43128091b05d5a9e63d05">&#9670;&#160;</a></span>remove_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.remove_filters </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00341">341</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00252">peano4.visualisation.output.Visualiser.Visualiser._filter</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab29f32facef6a303b3885a726e63c3b6" name="ab29f32facef6a303b3885a726e63c3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29f32facef6a303b3885a726e63c3b6">&#9670;&#160;</a></span>_description</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._description</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00261">261</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00159">peano4.visualisation.output.Visualiser.PatchFileData.apply_renderer_to_data()</a>, and <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00140">peano4.visualisation.output.Visualiser.PatchFileData.copy_data_from_parser_object()</a>.</p>
+
+</div>
+</div>
+<a id="a2bedf89bef0ee279e5dd9f2bf92a0ac0" name="a2bedf89bef0ee279e5dd9f2bf92a0ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bedf89bef0ee279e5dd9f2bf92a0ac0">&#9670;&#160;</a></span>_dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._dimensions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00260">260</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00282">exahype2.Project.Project.__configure_makefile()</a>, <a class="el" href="../../de/d29/python_2swift2_2Project_8py_source.html#l00303">swift2.Project.Project.__configure_makefile()</a>, <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00118">api.Project.Project.__configure_makefile()</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00154">exahype2.Project.Project.__export_constants()</a>, <a class="el" href="../../de/d29/python_2swift2_2Project_8py_source.html#l00126">swift2.Project.Project.__export_constants()</a>, <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00277">api.Project.Project.__export_constants()</a>, <a class="el" href="../../d2/da0/src_2mghype_2petsc_2api_2Project_8py_source.html#l00070">api.Project.Project.__init__()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d4/d47/ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi_8py_source.html#l00144">solvers.api.ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi.ContinuousGalerkinDiscretisationGaussLobattoWithBlockJacobi._construct_narrow_to_interior_matrix()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00903">exahype2.solvers.aderdg.ADERDG.ADERDG.add_implementation_files_to_project()</a>, <a class="el" href="../../df/d4c/elastic__planar__waves_8py_source.html#l00081">scenarios.elastic_planar_waves.ElasticPlanarWaves.analytical_solution()</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00159">peano4.visualisation.output.Visualiser.PatchFileData.apply_renderer_to_data()</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00739">exahype2.Project.Project.generate_Peano4_project()</a>, <a class="el" href="../../df/d4c/elastic__planar__waves_8py_source.html#l00027">scenarios.elastic_planar_waves.ElasticPlanarWaves.initial_conditions()</a>, <a class="el" href="../../de/d29/python_2swift2_2Project_8py_source.html#l00318">swift2.Project.Project.set_global_simulation_parameters()</a>, <a class="el" href="../../df/d92/src_2mghype_2matrixfree_2api_2Project_8py_source.html#l00142">api.Project.Project.set_global_simulation_parameters()</a>, <a class="el" href="../../d2/da0/src_2mghype_2petsc_2api_2Project_8py_source.html#l00144">api.Project.Project.set_global_simulation_parameters()</a>, <a class="el" href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00299">exahype2.Project.Project.set_global_simulation_parameters()</a>, and <a class="el" href="../../dd/dfe/scenario_8py_source.html#l00031">scenarios.scenario.Scenario.set_global_simulation_parameters()</a>.</p>
+
+</div>
+</div>
+<a id="a5cf9e638c2339ccf755badd14bd00100" name="a5cf9e638c2339ccf755badd14bd00100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf9e638c2339ccf755badd14bd00100">&#9670;&#160;</a></span>_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00251">251</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>.</p>
+
+</div>
+</div>
+<a id="a9ce0d6764b35a9cbe5a4aa14407a0e4a" name="a9ce0d6764b35a9cbe5a4aa14407a0e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce0d6764b35a9cbe5a4aa14407a0e4a">&#9670;&#160;</a></span>_file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._file_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00249">249</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00279">peano4.visualisation.output.Visualiser.Visualiser.display_single_file()</a>, <a class="el" href="../../d8/d46/PerformanceData_8py_source.html#l00149">exahype2.postprocessing.PerformanceData.PerformanceData.parse()</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>, and <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00514">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.write_vtu()</a>.</p>
+
+</div>
+</div>
+<a id="a4e9a9111549ef8edf43f3f00f07c969b" name="a4e9a9111549ef8edf43f3f00f07c969b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9a9111549ef8edf43f3f00f07c969b">&#9670;&#160;</a></span>_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._filter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00252">252</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00337">peano4.visualisation.output.Visualiser.Visualiser.append_filter()</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00361">peano4.visualisation.output.Visualiser.Visualiser.parse_snapshot()</a>, and <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00341">peano4.visualisation.output.Visualiser.Visualiser.remove_filters()</a>.</p>
+
+</div>
+</div>
+<a id="abe459b398fff0bb9970b6b41e22290cf" name="abe459b398fff0bb9970b6b41e22290cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe459b398fff0bb9970b6b41e22290cf">&#9670;&#160;</a></span>_is_data_associated_to_cell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._is_data_associated_to_cell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00262">262</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00159">peano4.visualisation.output.Visualiser.PatchFileData.apply_renderer_to_data()</a>, and <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00140">peano4.visualisation.output.Visualiser.PatchFileData.copy_data_from_parser_object()</a>.</p>
+
+</div>
+</div>
+<a id="a3957800a5d1f924dfd3fa6b58b42da28" name="a3957800a5d1f924dfd3fa6b58b42da28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3957800a5d1f924dfd3fa6b58b42da28">&#9670;&#160;</a></span>_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser._start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00250">250</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>.</p>
+
+</div>
+</div>
+<a id="a8ad5beb32913156e7915e948ec82a841" name="a8ad5beb32913156e7915e948ec82a841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad5beb32913156e7915e948ec82a841">&#9670;&#160;</a></span>identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.identifier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00255">255</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00361">peano4.visualisation.output.Visualiser.Visualiser.parse_snapshot()</a>.</p>
+
+</div>
+</div>
+<a id="a8f9b7233b36f3c75fff47f65a7b87b17" name="a8f9b7233b36f3c75fff47f65a7b87b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9b7233b36f3c75fff47f65a7b87b17">&#9670;&#160;</a></span>meta_data_has_been_read</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.meta_data_has_been_read</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00269">269</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>.</p>
+
+</div>
+</div>
+<a id="a4f21f5597b8738423c4592ce2f0944d8" name="a4f21f5597b8738423c4592ce2f0944d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f21f5597b8738423c4592ce2f0944d8">&#9670;&#160;</a></span>snapshots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.snapshots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00266">266</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00292">peano4.visualisation.output.Visualiser.Visualiser.read_metadata()</a>.</p>
+
+</div>
+</div>
+<a id="a34fc46932e28c1ccb8ed4cf7a6b31dd2" name="a34fc46932e28c1ccb8ed4cf7a6b31dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34fc46932e28c1ccb8ed4cf7a6b31dd2">&#9670;&#160;</a></span>verbose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4.visualisation.output.Visualiser.Visualiser.verbose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00258">258</a> of file <a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d2b/visualisation_2filters_2Filter_8py_source.html#l00025">peano4.visualisation.filters.Filter.Filter.__str__()</a>, <a class="el" href="../../d3/dff/Visualiser_8py_source.html#l00361">peano4.visualisation.output.Visualiser.Visualiser.parse_snapshot()</a>, <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00379">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.process_snapshot()</a>, <a class="el" href="../../d1/d18/AverageOverCell_8py_source.html#l00028">peano4.visualisation.filters.AverageOverCell.AverageOverCell.render()</a>, <a class="el" href="../../d2/d54/Calculator_8py_source.html#l00038">peano4.visualisation.filters.Calculator.Calculator.render()</a>, <a class="el" href="../../d4/df0/ExtractFineGrid_8py_source.html#l00078">peano4.visualisation.filters.ExtractFineGrid.ExtractFineGrid.render()</a>, and <a class="el" href="../../de/de9/VTUUnstructuredGrid_8py_source.html#l00514">peano4.visualisation.output.VTUUnstructuredGrid.VTUUnstructuredGrid.write_vtu()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>python/peano4/visualisation/output/<a class="el" href="../../d3/dff/Visualiser_8py_source.html">Visualiser.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../d7/dcd/namespacepeano4_1_1visualisation.html">visualisation</a></li><li class="navelem"><a class="el" href="../../d6/d12/namespacepeano4_1_1visualisation_1_1output.html">output</a></li><li class="navelem"><a class="el" href="../../dc/dbe/namespacepeano4_1_1visualisation_1_1output_1_1Visualiser.html">Visualiser</a></li><li class="navelem"><a class="el" href="../../da/dac/classpeano4_1_1visualisation_1_1output_1_1Visualiser_1_1Visualiser.html">Visualiser</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:28 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

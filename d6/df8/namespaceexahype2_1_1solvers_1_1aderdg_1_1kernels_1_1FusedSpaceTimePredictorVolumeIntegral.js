@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1FusedSpaceTimePredictorVolumeIntegral =
+[
+    [ "FusedSpaceTimePredictorVolumeIntegral", "d7/def/classexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1FusedSpaceTimePredictorVolumeIntegral_1_1FusedSpaceTimePredictorVolumeIntegral.html", "d7/def/classexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1FusedSpaceTimePredictorVolumeIntegral_1_1FusedSpaceTimePredictorVolumeIntegral" ]
+];

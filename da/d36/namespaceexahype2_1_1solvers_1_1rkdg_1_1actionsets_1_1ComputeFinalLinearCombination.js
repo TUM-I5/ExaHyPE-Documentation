@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ComputeFinalLinearCombination =
+[
+    [ "ComputeFinalLinearCombination", "d8/d73/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ComputeFinalLinearCombination_1_1ComputeFinalLinearCombination.html", "d8/d73/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1ComputeFinalLinearCombination_1_1ComputeFinalLinearCombination" ]
+];

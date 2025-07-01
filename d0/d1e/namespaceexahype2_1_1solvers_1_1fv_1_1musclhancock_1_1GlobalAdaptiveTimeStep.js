@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1fv_1_1musclhancock_1_1GlobalAdaptiveTimeStep =
+[
+    [ "GlobalAdaptiveTimeStep", "da/d43/classexahype2_1_1solvers_1_1fv_1_1musclhancock_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html", "da/d43/classexahype2_1_1solvers_1_1fv_1_1musclhancock_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep" ]
+];

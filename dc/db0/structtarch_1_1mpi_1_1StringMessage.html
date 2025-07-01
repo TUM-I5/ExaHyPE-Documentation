@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/db0/structtarch_1_1mpi_1_1StringMessage.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::mpi::StringMessage Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The string message looks like the other messages which I generate through DaStGen 2, but I actually wrote it myself manually to support dynamic string lengths.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::mpi::StringMessage:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/ddf/structtarch_1_1mpi_1_1StringMessage__coll__graph.png" border="0" usemap="#atarch_1_1mpi_1_1StringMessage_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1mpi_1_1StringMessage_coll__map" id="atarch_1_1mpi_1_1StringMessage_coll__map">
+<area shape="rect" title="The string message looks like the other messages which I generate through DaStGen 2,..." alt="" coords="5,183,197,208"/>
+<area shape="rect" title=" " alt="" coords="58,95,145,120"/>
+<area shape="poly" title=" " alt="" coords="104,134,104,182,99,182,99,134"/>
+<area shape="rect" title=" " alt="" coords="32,5,171,45"/>
+<area shape="poly" title=" " alt="" coords="104,59,104,94,99,94,99,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a43fbb51cbcb7434335af36d9e3e8a145" id="r_a43fbb51cbcb7434335af36d9e3e8a145"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43fbb51cbcb7434335af36d9e3e8a145">StringMessage</a> ()</td></tr>
+<tr class="separator:a43fbb51cbcb7434335af36d9e3e8a145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af917484264d8f5f25a2bf2a1f52a5a02" id="r_af917484264d8f5f25a2bf2a1f52a5a02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af917484264d8f5f25a2bf2a1f52a5a02">StringMessage</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;value)</td></tr>
+<tr class="separator:af917484264d8f5f25a2bf2a1f52a5a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab666784a9fcc3f7a85df73ec296fdd6a" id="r_ab666784a9fcc3f7a85df73ec296fdd6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab666784a9fcc3f7a85df73ec296fdd6a">getData</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ab666784a9fcc3f7a85df73ec296fdd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ee8af6e94df6678a0e43b3d9602dde" id="r_a42ee8af6e94df6678a0e43b3d9602dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ee8af6e94df6678a0e43b3d9602dde">setData</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;value)</td></tr>
+<tr class="separator:a42ee8af6e94df6678a0e43b3d9602dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263c8945af1cfa912eeaa7a182e39376" id="r_a263c8945af1cfa912eeaa7a182e39376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263c8945af1cfa912eeaa7a182e39376">getSenderRank</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a263c8945af1cfa912eeaa7a182e39376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f92ff13ef302860d71e7a55796b8883" id="r_a8f92ff13ef302860d71e7a55796b8883"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f92ff13ef302860d71e7a55796b8883">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a8f92ff13ef302860d71e7a55796b8883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a472d45267dee3afd83480f2a2c427f9f" id="r_a472d45267dee3afd83480f2a2c427f9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a472d45267dee3afd83480f2a2c427f9f">sendAndPollDanglingMessages</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;message, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> destination, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag)</td></tr>
+<tr class="separator:a472d45267dee3afd83480f2a2c427f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17d5eec7367cc316d908ab9d9cbfc48" id="r_ae17d5eec7367cc316d908ab9d9cbfc48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae17d5eec7367cc316d908ab9d9cbfc48">receiveAndPollDanglingMessages</a> (<a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;message, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> source, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag)</td></tr>
+<tr class="separator:ae17d5eec7367cc316d908ab9d9cbfc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b2c4d324447e011c75c199317a0e38" id="r_a34b2c4d324447e011c75c199317a0e38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b2c4d324447e011c75c199317a0e38">send</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;buffer, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> destination, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag, MPI_Comm communicator)</td></tr>
+<tr class="memdesc:a34b2c4d324447e011c75c199317a0e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">In DaStGen (the first version), I had a non-static version of the send as well as the receive.  <br /></td></tr>
+<tr class="separator:a34b2c4d324447e011c75c199317a0e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897939f0e47e4c6f9b4bc83770185d7d" id="r_a897939f0e47e4c6f9b4bc83770185d7d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897939f0e47e4c6f9b4bc83770185d7d">receive</a> (<a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;buffer, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> source, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag, MPI_Comm communicator)</td></tr>
+<tr class="separator:a897939f0e47e4c6f9b4bc83770185d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef493bf76fc7d1dd06fe1d911df4e639" id="r_aef493bf76fc7d1dd06fe1d911df4e639"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef493bf76fc7d1dd06fe1d911df4e639">send</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;buffer, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> destination, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; startCommunicationFunctor, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; waitFunctor, MPI_Comm communicator)</td></tr>
+<tr class="memdesc:aef493bf76fc7d1dd06fe1d911df4e639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative to the other <a class="el" href="#a34b2c4d324447e011c75c199317a0e38" title="In DaStGen (the first version), I had a non-static version of the send as well as the receive.">send()</a> where I trigger a non-blocking send an then invoke the functor until the corresponding MPI_Test tells me that the message went through.  <br /></td></tr>
+<tr class="separator:aef493bf76fc7d1dd06fe1d911df4e639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a58a35169efd727b9cdc63e4627e8b3" id="r_a2a58a35169efd727b9cdc63e4627e8b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a58a35169efd727b9cdc63e4627e8b3">receive</a> (<a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;buffer, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> source, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; startCommunicationFunctor, std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; waitFunctor, MPI_Comm communicator)</td></tr>
+<tr class="separator:a2a58a35169efd727b9cdc63e4627e8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b32e0c98caf8e13488746097d5a5c0" id="r_a04b32e0c98caf8e13488746097d5a5c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04b32e0c98caf8e13488746097d5a5c0">isMessageInQueue</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tag, MPI_Comm communicator)</td></tr>
+<tr class="memdesc:a04b32e0c98caf8e13488746097d5a5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">In older DaStGen version, I tried to find out whether a particular message type is in the MPI queue.  <br /></td></tr>
+<tr class="separator:a04b32e0c98caf8e13488746097d5a5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a94062316f96f3f6adb462e2811ee3984" id="r_a94062316f96f3f6adb462e2811ee3984"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94062316f96f3f6adb462e2811ee3984">_data</a></td></tr>
+<tr class="separator:a94062316f96f3f6adb462e2811ee3984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3a6190909c6530cb6a2ac570c62446" id="r_a6a3a6190909c6530cb6a2ac570c62446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a3a6190909c6530cb6a2ac570c62446">_senderDestinationRank</a></td></tr>
+<tr class="separator:a6a3a6190909c6530cb6a2ac570c62446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The string message looks like the other messages which I generate through DaStGen 2, but I actually wrote it myself manually to support dynamic string lengths. </p>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00034">34</a> of file <a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a43fbb51cbcb7434335af36d9e3e8a145" name="a43fbb51cbcb7434335af36d9e3e8a145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fbb51cbcb7434335af36d9e3e8a145">&#9670;&#160;</a></span>StringMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::mpi::StringMessage::StringMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00036">36</a> of file <a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a>.</p>
+
+</div>
+</div>
+<a id="af917484264d8f5f25a2bf2a1f52a5a02" name="af917484264d8f5f25a2bf2a1f52a5a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af917484264d8f5f25a2bf2a1f52a5a02">&#9670;&#160;</a></span>StringMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::mpi::StringMessage::StringMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab666784a9fcc3f7a85df73ec296fdd6a" name="ab666784a9fcc3f7a85df73ec296fdd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab666784a9fcc3f7a85df73ec296fdd6a">&#9670;&#160;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::mpi::StringMessage::getData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d8f/StringTest_8cpp_source.html#l00019">tarch::mpi::tests::StringTest::testSendReceive()</a>, and <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00011">toString()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_ab666784a9fcc3f7a85df73ec296fdd6a_icgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_ab666784a9fcc3f7a85df73ec296fdd6a_icgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_ab666784a9fcc3f7a85df73ec296fdd6a_icgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_ab666784a9fcc3f7a85df73ec296fdd6a_icgraph">
+<area shape="rect" title=" " alt="" coords="496,5,688,45"/>
+<area shape="rect" href="../../d7/d66/classtarch_1_1mpi_1_1tests_1_1StringTest.html#a8336e5f655ea281dafcdd61b68667c56" title="Tests constructors." alt="" coords="5,5,208,45"/>
+<area shape="poly" title=" " alt="" coords="482,25,448,24,256,24,208,25,208,20,256,19,448,19,482,19"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#a8f92ff13ef302860d71e7a55796b8883" title=" " alt="" coords="256,33,448,73"/>
+<area shape="poly" title=" " alt="" coords="483,41,448,45,448,40,482,35"/>
+<area shape="poly" title=" " alt="" coords="242,43,208,40,208,34,243,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a263c8945af1cfa912eeaa7a182e39376" name="a263c8945af1cfa912eeaa7a182e39376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263c8945af1cfa912eeaa7a182e39376">&#9670;&#160;</a></span>getSenderRank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::mpi::StringMessage::getSenderRank </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The rank of the sender of an object. It only make ssense to call this routine after you've invoked receive with MPI_ANY_SOURCE. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04b32e0c98caf8e13488746097d5a5c0" name="a04b32e0c98caf8e13488746097d5a5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b32e0c98caf8e13488746097d5a5c0">&#9670;&#160;</a></span>isMessageInQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::mpi::StringMessage::isMessageInQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm</td>          <td class="paramname"><span class="paramname"><em>communicator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In older DaStGen version, I tried to find out whether a particular message type is in the MPI queue. </p>
+<p>That is, I looked whether a message on this tag does exist, and then I looked whether the memory footprint matches via count. I think this is invalid. MPI really looks only into the number of bytes, so you have to know which type drops in once there is a message on a tag. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a897939f0e47e4c6f9b4bc83770185d7d" name="a897939f0e47e4c6f9b4bc83770185d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897939f0e47e4c6f9b4bc83770185d7d">&#9670;&#160;</a></span>receive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::receive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>source</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm</td>          <td class="paramname"><span class="paramname"><em>communicator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00106">_data</a>, and <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00108">_senderDestinationRank</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00049">receiveAndPollDanglingMessages()</a>, and <a class="el" href="../../de/d8f/StringTest_8cpp_source.html#l00019">tarch::mpi::tests::StringTest::testSendReceive()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a897939f0e47e4c6f9b4bc83770185d7d_icgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a897939f0e47e4c6f9b4bc83770185d7d_icgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a897939f0e47e4c6f9b4bc83770185d7d_icgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a897939f0e47e4c6f9b4bc83770185d7d_icgraph">
+<area shape="rect" title=" " alt="" coords="304,37,496,77"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#ae17d5eec7367cc316d908ab9d9cbfc48" title=" " alt="" coords="5,5,256,45"/>
+<area shape="poly" title=" " alt="" coords="290,47,256,43,257,38,291,42"/>
+<area shape="rect" href="../../d7/d66/classtarch_1_1mpi_1_1tests_1_1StringTest.html#a8336e5f655ea281dafcdd61b68667c56" title="Tests constructors." alt="" coords="29,69,232,109"/>
+<area shape="poly" title=" " alt="" coords="290,73,233,80,232,75,290,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a58a35169efd727b9cdc63e4627e8b3" name="a2a58a35169efd727b9cdc63e4627e8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a58a35169efd727b9cdc63e4627e8b3">&#9670;&#160;</a></span>receive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::receive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>source</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>startCommunicationFunctor</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>waitFunctor</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm</td>          <td class="paramname"><span class="paramname"><em>communicator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00106">_data</a>, and <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00108">_senderDestinationRank</a>.</p>
+
+</div>
+</div>
+<a id="ae17d5eec7367cc316d908ab9d9cbfc48" name="ae17d5eec7367cc316d908ab9d9cbfc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17d5eec7367cc316d908ab9d9cbfc48">&#9670;&#160;</a></span>receiveAndPollDanglingMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::receiveAndPollDanglingMessages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>source</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00531">tarch::mpi::Rank::getCommunicator()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00032">tarch::services::ServiceRepository::getInstance()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00078">receive()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00079">tarch::services::ServiceRepository::receiveDanglingMessages()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00197">tarch::mpi::Rank::setDeadlockTimeOutTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00192">tarch::mpi::Rank::setDeadlockWarningTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00123">tarch::mpi::Rank::triggerDeadlockTimeOut()</a>, and <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00147">tarch::mpi::Rank::writeTimeOutWarning()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_ae17d5eec7367cc316d908ab9d9cbfc48_cgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_ae17d5eec7367cc316d908ab9d9cbfc48_cgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_ae17d5eec7367cc316d908ab9d9cbfc48_cgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_ae17d5eec7367cc316d908ab9d9cbfc48_cgraph">
+<area shape="rect" title=" " alt="" coords="5,233,256,273"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="312,5,567,31"/>
+<area shape="poly" title=" " alt="" coords="140,231,163,190,199,137,246,84,273,60,303,40,315,33,317,38,305,44,276,64,250,88,203,141,168,193,144,234"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="333,55,546,80"/>
+<area shape="poly" title=" " alt="" coords="145,230,208,160,253,122,303,90,323,82,325,87,305,95,256,126,212,164,149,234"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="352,105,527,145"/>
+<area shape="poly" title=" " alt="" coords="161,230,225,192,303,154,338,143,340,148,305,159,227,196,164,235"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#a897939f0e47e4c6f9b4bc83770185d7d" title=" " alt="" coords="343,169,535,209"/>
+<area shape="poly" title=" " alt="" coords="227,230,329,209,330,214,229,235"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="304,233,575,273"/>
+<area shape="poly" title=" " alt="" coords="256,250,290,250,290,255,256,255"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="330,297,549,337"/>
+<area shape="poly" title=" " alt="" coords="229,270,329,291,328,296,227,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="330,361,549,401"/>
+<area shape="poly" title=" " alt="" coords="164,271,227,309,305,346,328,354,326,359,303,351,225,314,161,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="349,425,529,465"/>
+<area shape="poly" title=" " alt="" coords="150,271,213,340,257,378,305,410,337,424,335,429,303,415,253,382,209,344,146,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="338,489,541,529"/>
+<area shape="poly" title=" " alt="" coords="144,272,167,315,202,370,249,427,276,452,305,474,326,486,324,490,303,479,273,456,245,430,198,373,162,317,139,274"/>
+<area shape="rect" href="../../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html#aed01fe13fe4c18031154be6ad8f96c70" title=" " alt="" coords="623,233,820,273"/>
+<area shape="poly" title=" " alt="" coords="575,250,609,250,609,255,575,255"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34b2c4d324447e011c75c199317a0e38" name="a34b2c4d324447e011c75c199317a0e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b2c4d324447e011c75c199317a0e38">&#9670;&#160;</a></span>send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>destination</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm</td>          <td class="paramname"><span class="paramname"><em>communicator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In DaStGen (the first version), I had a non-static version of the send as well as the receive. </p>
+<p>However, this did not work with newer C++11 versions, as a member function using this as pointer usually doesn't see the vtable while the init sees the object from outside, i.e. including a vtable. So this routine now is basically an alias for a blocking MPI_Send. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00106">_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00032">sendAndPollDanglingMessages()</a>, and <a class="el" href="../../de/d8f/StringTest_8cpp_source.html#l00019">tarch::mpi::tests::StringTest::testSendReceive()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a34b2c4d324447e011c75c199317a0e38_icgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a34b2c4d324447e011c75c199317a0e38_icgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a34b2c4d324447e011c75c199317a0e38_icgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a34b2c4d324447e011c75c199317a0e38_icgraph">
+<area shape="rect" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="287,37,479,77"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#a472d45267dee3afd83480f2a2c427f9f" title=" " alt="" coords="5,5,239,45"/>
+<area shape="poly" title=" " alt="" coords="273,47,238,42,239,37,273,41"/>
+<area shape="rect" href="../../d7/d66/classtarch_1_1mpi_1_1tests_1_1StringTest.html#a8336e5f655ea281dafcdd61b68667c56" title="Tests constructors." alt="" coords="21,69,223,109"/>
+<area shape="poly" title=" " alt="" coords="273,73,224,80,223,74,272,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef493bf76fc7d1dd06fe1d911df4e639" name="aef493bf76fc7d1dd06fe1d911df4e639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef493bf76fc7d1dd06fe1d911df4e639">&#9670;&#160;</a></span>send() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>destination</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>startCommunicationFunctor</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>waitFunctor</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm</td>          <td class="paramname"><span class="paramname"><em>communicator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alternative to the other <a class="el" href="#a34b2c4d324447e011c75c199317a0e38" title="In DaStGen (the first version), I had a non-static version of the send as well as the receive.">send()</a> where I trigger a non-blocking send an then invoke the functor until the corresponding MPI_Test tells me that the message went through. </p>
+<p>In systems with heavy MPI usage, this can help to avoid deadlocks. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00106">_data</a>.</p>
+
+</div>
+</div>
+<a id="a472d45267dee3afd83480f2a2c427f9f" name="a472d45267dee3afd83480f2a2c427f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472d45267dee3afd83480f2a2c427f9f">&#9670;&#160;</a></span>sendAndPollDanglingMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::sendAndPollDanglingMessages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">tarch::mpi::StringMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>destination</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>tag</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00531">tarch::mpi::Rank::getCommunicator()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00032">tarch::services::ServiceRepository::getInstance()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00079">tarch::services::ServiceRepository::receiveDanglingMessages()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00073">send()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00197">tarch::mpi::Rank::setDeadlockTimeOutTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00192">tarch::mpi::Rank::setDeadlockWarningTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00123">tarch::mpi::Rank::triggerDeadlockTimeOut()</a>, and <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00147">tarch::mpi::Rank::writeTimeOutWarning()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a472d45267dee3afd83480f2a2c427f9f_cgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a472d45267dee3afd83480f2a2c427f9f_cgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a472d45267dee3afd83480f2a2c427f9f_cgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a472d45267dee3afd83480f2a2c427f9f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,233,239,273"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="295,5,549,31"/>
+<area shape="poly" title=" " alt="" coords="130,231,152,190,186,137,231,84,257,60,285,40,297,33,300,38,288,44,260,64,234,88,190,140,157,193,135,234"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="315,55,529,80"/>
+<area shape="poly" title=" " alt="" coords="135,231,160,199,195,161,237,122,285,90,305,82,307,87,288,95,240,126,199,165,164,203,139,234"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="335,105,509,145"/>
+<area shape="poly" title=" " alt="" coords="150,230,211,192,286,154,321,142,322,147,288,159,213,196,153,235"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="287,169,557,209"/>
+<area shape="poly" title=" " alt="" coords="216,230,314,209,315,214,217,235"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#a34b2c4d324447e011c75c199317a0e38" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="326,233,518,273"/>
+<area shape="poly" title=" " alt="" coords="239,250,312,250,312,255,239,255"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="313,297,531,337"/>
+<area shape="poly" title=" " alt="" coords="217,270,315,291,314,296,216,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="313,361,531,401"/>
+<area shape="poly" title=" " alt="" coords="153,270,213,309,288,346,310,354,308,359,286,351,211,314,150,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="332,425,512,465"/>
+<area shape="poly" title=" " alt="" coords="140,271,199,340,241,378,288,410,320,424,318,429,285,415,238,383,196,344,136,275"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="321,489,523,529"/>
+<area shape="poly" title=" " alt="" coords="134,272,156,315,189,370,234,427,260,452,288,474,309,486,306,490,285,479,256,456,230,430,185,373,151,317,130,274"/>
+<area shape="rect" href="../../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html#aed01fe13fe4c18031154be6ad8f96c70" title=" " alt="" coords="605,169,803,209"/>
+<area shape="poly" title=" " alt="" coords="558,186,592,186,592,191,558,191"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42ee8af6e94df6678a0e43b3d9602dde" name="a42ee8af6e94df6678a0e43b3d9602dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ee8af6e94df6678a0e43b3d9602dde">&#9670;&#160;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::StringMessage::setData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d8f/StringTest_8cpp_source.html#l00019">tarch::mpi::tests::StringTest::testSendReceive()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a42ee8af6e94df6678a0e43b3d9602dde_icgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a42ee8af6e94df6678a0e43b3d9602dde_icgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a42ee8af6e94df6678a0e43b3d9602dde_icgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a42ee8af6e94df6678a0e43b3d9602dde_icgraph">
+<area shape="rect" title=" " alt="" coords="256,5,448,45"/>
+<area shape="rect" href="../../d7/d66/classtarch_1_1mpi_1_1tests_1_1StringTest.html#a8336e5f655ea281dafcdd61b68667c56" title="Tests constructors." alt="" coords="5,5,208,45"/>
+<area shape="poly" title=" " alt="" coords="242,28,208,28,208,23,242,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f92ff13ef302860d71e7a55796b8883" name="a8f92ff13ef302860d71e7a55796b8883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f92ff13ef302860d71e7a55796b8883">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::mpi::StringMessage::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00108">_senderDestinationRank</a>, and <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00021">getData()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d8f/StringTest_8cpp_source.html#l00019">tarch::mpi::tests::StringTest::testSendReceive()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_cgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_cgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_cgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,197,45"/>
+<area shape="rect" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html#ab666784a9fcc3f7a85df73ec296fdd6a" title=" " alt="" coords="245,5,437,45"/>
+<area shape="poly" title=" " alt="" coords="197,23,232,23,232,28,197,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_icgraph.png" border="0" usemap="#adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_icgraph" alt=""/></div>
+<map name="adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_icgraph" id="adc/db0/structtarch_1_1mpi_1_1StringMessage_a8f92ff13ef302860d71e7a55796b8883_icgraph">
+<area shape="rect" title=" " alt="" coords="256,5,448,45"/>
+<area shape="rect" href="../../d7/d66/classtarch_1_1mpi_1_1tests_1_1StringTest.html#a8336e5f655ea281dafcdd61b68667c56" title="Tests constructors." alt="" coords="5,5,208,45"/>
+<area shape="poly" title=" " alt="" coords="242,28,208,28,208,23,242,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a94062316f96f3f6adb462e2811ee3984" name="a94062316f96f3f6adb462e2811ee3984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94062316f96f3f6adb462e2811ee3984">&#9670;&#160;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::mpi::StringMessage::_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00106">106</a> of file <a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00033">peano4.datamodel.DaStGen2.DaStGen2Generator::construct_output()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00080">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00077">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ScatteredOnHeap_IndexByList::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00124">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ScatteredOnHeap_IndexByVector::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00168">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_ContinuousPerVertex::construct_output()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00215">peano4.toolbox.particles.ParticleSet.ParticleSetGenerator_GlobalContinuous::construct_output()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00028">peano4.datamodel.DaStGen2.DaStGen2Generator::get_header_file_include()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00075">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::get_header_file_include()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00037">peano4.toolbox.particles.ParticleSet.AbstractParticleSetGenerator::get_header_file_include()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00024">peano4.datamodel.DaStGen2.DaStGen2Generator::get_stack_container()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00071">peano4.datamodel.DaStGen2.DaStGen2GeneratorForObjectsWithSmartPointers::get_stack_container()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00016">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::get_stack_container()</a>, <a class="el" href="../../db/de4/ParticleSet_8py_source.html#l00030">peano4.toolbox.particles.ParticleSet.AbstractParticleSetGenerator::get_stack_container()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00078">receive()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00111">receive()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00073">send()</a>, and <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00091">send()</a>.</p>
+
+</div>
+</div>
+<a id="a6a3a6190909c6530cb6a2ac570c62446" name="a6a3a6190909c6530cb6a2ac570c62446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3a6190909c6530cb6a2ac570c62446">&#9670;&#160;</a></span>_senderDestinationRank</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::mpi::StringMessage::_senderDestinationRank</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d4b/StringMessage_8h_source.html#l00108">108</a> of file <a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00078">receive()</a>, <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00111">receive()</a>, and <a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html#l00011">toString()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/tarch/mpi/<a class="el" href="../../d7/d4b/StringMessage_8h_source.html">StringMessage.h</a></li>
+<li>src/tarch/mpi/<a class="el" href="../../d0/d1e/StringMessage_8cpp_source.html">StringMessage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../db/d1d/namespacetarch_1_1mpi.html">mpi</a></li><li class="navelem"><a class="el" href="../../dc/db0/structtarch_1_1mpi_1_1StringMessage.html">StringMessage</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:54 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

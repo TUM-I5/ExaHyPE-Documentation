@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">api.solvers.Solver.Solver Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Abstract base class for all PETSc solvers.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for api.solvers.Solver.Solver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/de6/classapi_1_1solvers_1_1Solver_1_1Solver__inherit__graph.png" border="0" usemap="#aapi_8solvers_8Solver_8Solver_inherit__map" alt="Inheritance graph"/></div>
+<map name="aapi_8solvers_8Solver_8Solver_inherit__map" id="aapi_8solvers_8Solver_8Solver_inherit__map">
+<area shape="rect" title="Abstract base class for all PETSc solvers." alt="" coords="5,79,188,104"/>
+<area shape="rect" title=" " alt="" coords="65,5,128,31"/>
+<area shape="poly" title=" " alt="" coords="99,44,99,79,94,79,94,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for api.solvers.Solver.Solver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d5c/classapi_1_1solvers_1_1Solver_1_1Solver__coll__graph.png" border="0" usemap="#aapi_8solvers_8Solver_8Solver_coll__map" alt="Collaboration graph"/></div>
+<map name="aapi_8solvers_8Solver_8Solver_coll__map" id="aapi_8solvers_8Solver_8Solver_coll__map">
+<area shape="rect" title="Abstract base class for all PETSc solvers." alt="" coords="5,79,188,104"/>
+<area shape="rect" title=" " alt="" coords="65,5,128,31"/>
+<area shape="poly" title=" " alt="" coords="99,44,99,79,94,79,94,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a47cfa46f431729797f11c46274c021e7" id="r_a47cfa46f431729797f11c46274c021e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47cfa46f431729797f11c46274c021e7">__init__</a> (self, <a class="el" href="#a5804b616921da557d2d217e32c57c564">name</a>, <a class="el" href="#ac37554dbb6c68201ef2e44ba164d413a">min_h</a>, <a class="el" href="#afaaf246dde0b7dd47b6e40745a9b4ce0">max_h</a>)</td></tr>
+<tr class="memdesc:a47cfa46f431729797f11c46274c021e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">name: String Every solver has a unique name.  <br /></td></tr>
+<tr class="separator:a47cfa46f431729797f11c46274c021e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bffc08c3e090c240e4f193d092642e1" id="r_a2bffc08c3e090c240e4f193d092642e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bffc08c3e090c240e4f193d092642e1">add_to_plot</a> (self, observer)</td></tr>
+<tr class="memdesc:a2bffc08c3e090c240e4f193d092642e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:a2bffc08c3e090c240e4f193d092642e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0df526a8233e7b6cdf4bb6e9a87b09" id="r_abd0df526a8233e7b6cdf4bb6e9a87b09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd0df526a8233e7b6cdf4bb6e9a87b09">add_to_create_grid</a> (self, observer)</td></tr>
+<tr class="memdesc:abd0df526a8233e7b6cdf4bb6e9a87b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:abd0df526a8233e7b6cdf4bb6e9a87b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac114125d2b6069dc46a7872778925f" id="r_a7ac114125d2b6069dc46a7872778925f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ac114125d2b6069dc46a7872778925f">add_to_enumerate_and_init_solution</a> (self, observer)</td></tr>
+<tr class="memdesc:a7ac114125d2b6069dc46a7872778925f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:a7ac114125d2b6069dc46a7872778925f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3d5c2e1e783570b2c3a84f32ee32a6" id="r_a6b3d5c2e1e783570b2c3a84f32ee32a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b3d5c2e1e783570b2c3a84f32ee32a6">add_to_init_petsc</a> (self, observer)</td></tr>
+<tr class="memdesc:a6b3d5c2e1e783570b2c3a84f32ee32a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use here.  <br /></td></tr>
+<tr class="separator:a6b3d5c2e1e783570b2c3a84f32ee32a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81421d56c791a54c0bc0f3d5fa45c154" id="r_a81421d56c791a54c0bc0f3d5fa45c154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81421d56c791a54c0bc0f3d5fa45c154">add_to_assemble</a> (self, observer)</td></tr>
+<tr class="memdesc:a81421d56c791a54c0bc0f3d5fa45c154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:a81421d56c791a54c0bc0f3d5fa45c154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d97298bc50a537d8e389ac37dacc75" id="r_ae4d97298bc50a537d8e389ac37dacc75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d97298bc50a537d8e389ac37dacc75">add_to_map_solution_onto_mesh</a> (self, observer)</td></tr>
+<tr class="memdesc:ae4d97298bc50a537d8e389ac37dacc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:ae4d97298bc50a537d8e389ac37dacc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bffc08c3e090c240e4f193d092642e1" id="r_a2bffc08c3e090c240e4f193d092642e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bffc08c3e090c240e4f193d092642e1">add_to_plot</a> (self, observer)</td></tr>
+<tr class="memdesc:a2bffc08c3e090c240e4f193d092642e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add whatever action set you want to use to observer.  <br /></td></tr>
+<tr class="separator:a2bffc08c3e090c240e4f193d092642e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c68b3897c9416e62e2b82d8f52fbc46" id="r_a9c68b3897c9416e62e2b82d8f52fbc46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c68b3897c9416e62e2b82d8f52fbc46">add_to_Peano4_datamodel</a> (self, datamodel, verbose)</td></tr>
+<tr class="memdesc:a9c68b3897c9416e62e2b82d8f52fbc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise index model.  <br /></td></tr>
+<tr class="separator:a9c68b3897c9416e62e2b82d8f52fbc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08123cd44fe558f2a7340f6e6b07850a" id="r_a08123cd44fe558f2a7340f6e6b07850a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08123cd44fe558f2a7340f6e6b07850a">add_use_statements</a> (self, observer)</td></tr>
+<tr class="memdesc:a08123cd44fe558f2a7340f6e6b07850a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the index numbers to be used in each and every mesh traversal.  <br /></td></tr>
+<tr class="separator:a08123cd44fe558f2a7340f6e6b07850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ab54030a3b379b8da812478ba6fa08" id="r_aa0ab54030a3b379b8da812478ba6fa08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0ab54030a3b379b8da812478ba6fa08">add_implementation_files_to_project</a> (self, namespace, output)</td></tr>
+<tr class="memdesc:aa0ab54030a3b379b8da812478ba6fa08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine is typically not invoked by a user.  <br /></td></tr>
+<tr class="separator:aa0ab54030a3b379b8da812478ba6fa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d73a8b60d0ec6e4e56edfca34bf63c2" id="r_a3d73a8b60d0ec6e4e56edfca34bf63c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d73a8b60d0ec6e4e56edfca34bf63c2">typename</a> (self)</td></tr>
+<tr class="separator:a3d73a8b60d0ec6e4e56edfca34bf63c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404bc819f89a6ff53412ae8088f7025c" id="r_a404bc819f89a6ff53412ae8088f7025c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a404bc819f89a6ff53412ae8088f7025c">instance_name</a> (self)</td></tr>
+<tr class="memdesc:a404bc819f89a6ff53412ae8088f7025c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the object that will be created for this solver.  <br /></td></tr>
+<tr class="separator:a404bc819f89a6ff53412ae8088f7025c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed41cdc9580ebffd4bdea1e548522f3d" id="r_aed41cdc9580ebffd4bdea1e548522f3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed41cdc9580ebffd4bdea1e548522f3d">number_of_matrix_entries_per_vertex</a> (self)</td></tr>
+<tr class="separator:aed41cdc9580ebffd4bdea1e548522f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c40daf10cecbb885a1511fe9139afff" id="r_a7c40daf10cecbb885a1511fe9139afff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c40daf10cecbb885a1511fe9139afff">number_of_matrix_entries_per_face</a> (self)</td></tr>
+<tr class="separator:a7c40daf10cecbb885a1511fe9139afff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102d230dd6037bcc0ca66c11175219ff" id="r_a102d230dd6037bcc0ca66c11175219ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a102d230dd6037bcc0ca66c11175219ff">number_of_matrix_entries_per_cell</a> (self)</td></tr>
+<tr class="separator:a102d230dd6037bcc0ca66c11175219ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87bca83735be26866772989b338589a6" id="r_a87bca83735be26866772989b338589a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87bca83735be26866772989b338589a6">create_readme_descriptor</a> (self)</td></tr>
+<tr class="memdesc:a87bca83735be26866772989b338589a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should really be abstract and properly be initialised.  <br /></td></tr>
+<tr class="separator:a87bca83735be26866772989b338589a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5804b616921da557d2d217e32c57c564" id="r_a5804b616921da557d2d217e32c57c564"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5804b616921da557d2d217e32c57c564">name</a> (self)</td></tr>
+<tr class="separator:a5804b616921da557d2d217e32c57c564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ac37554dbb6c68201ef2e44ba164d413a" id="r_ac37554dbb6c68201ef2e44ba164d413a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac37554dbb6c68201ef2e44ba164d413a">min_h</a></td></tr>
+<tr class="separator:ac37554dbb6c68201ef2e44ba164d413a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaaf246dde0b7dd47b6e40745a9b4ce0" id="r_afaaf246dde0b7dd47b6e40745a9b4ce0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaaf246dde0b7dd47b6e40745a9b4ce0">max_h</a></td></tr>
+<tr class="separator:afaaf246dde0b7dd47b6e40745a9b4ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8458476acdea8817977509fbdb7c3688" id="r_a8458476acdea8817977509fbdb7c3688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8458476acdea8817977509fbdb7c3688">_name</a></td></tr>
+<tr class="separator:a8458476acdea8817977509fbdb7c3688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e38613b9c70f24db217dcdabbd37e0a" id="r_a3e38613b9c70f24db217dcdabbd37e0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e38613b9c70f24db217dcdabbd37e0a">_vertex_petsc_data</a></td></tr>
+<tr class="separator:a3e38613b9c70f24db217dcdabbd37e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa759f561a7980f1c02a6692e442bc5b9" id="r_aa759f561a7980f1c02a6692e442bc5b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa759f561a7980f1c02a6692e442bc5b9">_face_petsc_data</a></td></tr>
+<tr class="separator:aa759f561a7980f1c02a6692e442bc5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fbf4dd231c90f895e2ce928f33f5bc" id="r_a71fbf4dd231c90f895e2ce928f33f5bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71fbf4dd231c90f895e2ce928f33f5bc">_cell_petsc_data</a></td></tr>
+<tr class="separator:a71fbf4dd231c90f895e2ce928f33f5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract base class for all PETSc solvers. </p>
+<p>A PETSc solver in Peano is Python class which represents one solver aka one <a class="el" href="../../da/db8/namespacePDE.html">PDE</a> problem. Various of these solvers might have to be combined in one project.</p>
+<p>It is the project's job to define which mesh traversals (grid construction, visualisation, ...) are required, how to run through these, how to load balance. Each solver in return will know what unknows we require per mesh entity (vertex, face, ...). Most solvers will create a Python representation of these unknowns in their constructor. Once the user has constructed a solver and added it to the underlying project, is it the project's job to ask each solver</p>
+<ul>
+<li>can you add your data model to the underlying Peano project;</li>
+<li>can you tell me which data entities all of the mesh traversals have to use;</li>
+<li>add your particular action sets to the grid construction, initialisation, visualisation, ...</li>
+</ul>
+<p>For further information how the solvers add their solver-specific data to the project's generic mesh traversals, consult also generic documentation in peano4.actionsets.ActionSet.</p>
+<h2><a class="anchor" id="autotoc_md117"></a>
+Realisation</h2>
+<p>Most solvers will split the realisation of the solver into different parts.</p>
+<p>First and foremost, it will have to manage data associated with the grid vertices, faces, cells. This is the static data model. As I don't want to write classes for these unknowns, the solvers typically use DaStGen 2, which simply is a code generator to create a class per data model. This part is all handled within Python, and you should not see them in the output. If you want to study these models however, you can peek into the generated vertexdata or facedata repositories.</p>
+<p>For the actual code semantics, most solvers introduce a type which represents the solver. This one defines, for example, what the initial value looks like. It is actually realised as two classes: An abstract base class and its implementation. The abstract base class contains all the variables that can be modified via Python. The realisation itself is then the actual C++ code which users might want to modify after the Python call has succeeded and set everything up. That is: the Python PETSc API will give you both an abstract solver class and its subclass in the working directory. The abstract base class will be overwritten every time you run the Python script. The subclass is only a template that you should befill with your problem-specific knowledge. It will not be overwritten by any subsequent Python calls.</p>
+<p>The actual solver class that you have to implement yourself is instantiated within a file called repositories/SolverRepository. This one is generated, too, but you can peek into it. It instantiates each solver exactly one and this is the object instance against which the actual solver algorithm operates from hereon.</p>
+<p>The glue between Peano and the solver is the action sets, i.e. the classes that encode how the grid traversal and observations made throughout the traversal are mapped onto either Peano's routines, routines from the toolbox, or functions from the solver objects. These action sets define what happens if the code reads a vertex for the first time of a mesh traversal, e.g.</p>
+<h2><a class="anchor" id="autotoc_md118"></a>
+Links to high level concepts</h2>
+<ul>
+<li>For the types of mesh entities, please consult <a class="el" href="../../d8/d87/documentation_multigrid_boundary_conditions.html">Boundary Conditions</a>. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00012">12</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a47cfa46f431729797f11c46274c021e7" name="a47cfa46f431729797f11c46274c021e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cfa46f431729797f11c46274c021e7">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>min_h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>max_h</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>name: String Every solver has a unique name. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00085">85</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa0ab54030a3b379b8da812478ba6fa08" name="aa0ab54030a3b379b8da812478ba6fa08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ab54030a3b379b8da812478ba6fa08">&#9670;&#160;</a></span>add_implementation_files_to_project()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_implementation_files_to_project </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>namespace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This routine is typically not invoked by a user. </p>
+<p>output: <a class="el" href="../../dd/deb/namespacepeano4_1_1output_1_1Output.html">peano4.output.Output</a> Add artefacts this output in any implementation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00218">218</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a81421d56c791a54c0bc0f3d5fa45c154" name="a81421d56c791a54c0bc0f3d5fa45c154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81421d56c791a54c0bc0f3d5fa45c154">&#9670;&#160;</a></span>add_to_assemble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_assemble </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00154">154</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="abd0df526a8233e7b6cdf4bb6e9a87b09" name="abd0df526a8233e7b6cdf4bb6e9a87b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0df526a8233e7b6cdf4bb6e9a87b09">&#9670;&#160;</a></span>add_to_create_grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_create_grid </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00124">124</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a7ac114125d2b6069dc46a7872778925f" name="a7ac114125d2b6069dc46a7872778925f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac114125d2b6069dc46a7872778925f">&#9670;&#160;</a></span>add_to_enumerate_and_init_solution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_enumerate_and_init_solution </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00133">133</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a6b3d5c2e1e783570b2c3a84f32ee32a6" name="a6b3d5c2e1e783570b2c3a84f32ee32a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3d5c2e1e783570b2c3a84f32ee32a6">&#9670;&#160;</a></span>add_to_init_petsc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_init_petsc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use here. </p>
+<p>I am not sure if there is a real grid traversal tied to this step. So maybe nothing is called. Has to be checked. Anyway, most solvers leave this one blank. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00142">142</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="ae4d97298bc50a537d8e389ac37dacc75" name="ae4d97298bc50a537d8e389ac37dacc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d97298bc50a537d8e389ac37dacc75">&#9670;&#160;</a></span>add_to_map_solution_onto_mesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_map_solution_onto_mesh </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00164">164</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a9c68b3897c9416e62e2b82d8f52fbc46" name="a9c68b3897c9416e62e2b82d8f52fbc46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c68b3897c9416e62e2b82d8f52fbc46">&#9670;&#160;</a></span>add_to_Peano4_datamodel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_Peano4_datamodel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>datamodel</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>verbose</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise index model. </p>
+<p>We build up a data model, which is really an index model in this case. Every vertex, face and cell can hold a data model which is only one integer. This integer encodes the first index of a matrix unknown held by the grid entity. For the plain DG code, there are no vertex unknowns. However, we have two types of face indices: Those for the projection and those for the solution of the Riemann problem.</p>
+<p>You might want to overwrite this routine, but please ensure that you still call this superclass implementation, too. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00182">182</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00101">api.solvers.Solver.Solver._cell_petsc_data</a>, <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00100">api.solvers.Solver.Solver._face_petsc_data</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00099">api.solvers.Solver.Solver._vertex_petsc_data</a>.</p>
+
+</div>
+</div>
+<a id="a2bffc08c3e090c240e4f193d092642e1" name="a2bffc08c3e090c240e4f193d092642e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bffc08c3e090c240e4f193d092642e1">&#9670;&#160;</a></span>add_to_plot() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_plot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00114">114</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a2bffc08c3e090c240e4f193d092642e1" name="a2bffc08c3e090c240e4f193d092642e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bffc08c3e090c240e4f193d092642e1">&#9670;&#160;</a></span>add_to_plot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_to_plot </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add whatever action set you want to use to observer. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00174">174</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a08123cd44fe558f2a7340f6e6b07850a" name="a08123cd44fe558f2a7340f6e6b07850a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08123cd44fe558f2a7340f6e6b07850a">&#9670;&#160;</a></span>add_use_statements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.add_use_statements </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>observer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the index numbers to be used in each and every mesh traversal. </p>
+<p>You can overwrite the routine and add your own stuff. However, please ensure this routine still is invoked, too. <br  />
+ </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00203">203</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00101">api.solvers.Solver.Solver._cell_petsc_data</a>, <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00100">api.solvers.Solver.Solver._face_petsc_data</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00099">api.solvers.Solver.Solver._vertex_petsc_data</a>.</p>
+
+</div>
+</div>
+<a id="a87bca83735be26866772989b338589a6" name="a87bca83735be26866772989b338589a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87bca83735be26866772989b338589a6">&#9670;&#160;</a></span>create_readme_descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.create_readme_descriptor </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Should really be abstract and properly be initialised. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Todo</a></b></dt><dd>Has to be implemented properly, i.e. should at least report on the type and the name of the solver</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00255">255</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a404bc819f89a6ff53412ae8088f7025c" name="a404bc819f89a6ff53412ae8088f7025c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404bc819f89a6ff53412ae8088f7025c">&#9670;&#160;</a></span>instance_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.instance_name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the name of the object that will be created for this solver. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00234">234</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00058">solvers.api.Solver.Solver.typename()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00230">api.solvers.Solver.Solver.typename()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/dc5/CollocatedMG_8py_source.html#l00277">solvers.api.CollocatedMG.CollocatedMG.get_vertex_merge_method()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_cgraph.png" border="0" usemap="#ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_cgraph" alt=""/></div>
+<map name="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_cgraph" id="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_cgraph">
+<area shape="rect" title="Return the name of the object that will be created for this solver." alt="" coords="5,31,289,56"/>
+<area shape="rect" href="../../d8/d79/classsolvers_1_1api_1_1Solver_1_1Solver.html#a1088abd65d94a0e4acb789ab86d2ced7" title=" " alt="" coords="337,5,588,31"/>
+<area shape="poly" title=" " alt="" coords="289,29,324,26,324,32,290,35"/>
+<area shape="rect" href="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a3d73a8b60d0ec6e4e56edfca34bf63c2" title=" " alt="" coords="337,55,588,80"/>
+<area shape="poly" title=" " alt="" coords="290,51,324,54,324,59,289,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_icgraph.png" border="0" usemap="#ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_icgraph" alt=""/></div>
+<map name="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_icgraph" id="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a404bc819f89a6ff53412ae8088f7025c_icgraph">
+<area shape="rect" title="Return the name of the object that will be created for this solver." alt="" coords="611,44,895,69"/>
+<area shape="rect" href="../../da/df4/classsolvers_1_1api_1_1CollocatedMG_1_1CollocatedMG.html#a8364f6c6a9f6c7f707489647c6f05c2b" title=" " alt="" coords="371,29,563,84"/>
+<area shape="poly" title=" " alt="" coords="597,59,563,59,563,54,597,54"/>
+<area shape="rect" href="../../d6/d20/classsolvers_1_1api_1_1CollocatedDLinearDiscretisationWithPointJacobi_1_1CollocatedDLinearDiscretisationWithPointJacobi.html#a4f5fd92e54ba2ddff4cc73ba31896f48" title="Collocated low&#45;order (d&#45;linear) Finite Elements." alt="" coords="5,29,323,84"/>
+<area shape="poly" title=" " alt="" coords="357,59,323,59,323,54,357,54"/>
+<area shape="poly" title=" " alt="" coords="215,19,196,11,164,8,137,10,119,15,111,21,111,29,106,29,106,19,117,10,136,5,164,3,198,6,217,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5804b616921da557d2d217e32c57c564" name="a5804b616921da557d2d217e32c57c564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5804b616921da557d2d217e32c57c564">&#9670;&#160;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.name </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00267">267</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d96/SBH_8py_source.html#l00166">SBH.Limiter._name</a>, <a class="el" href="../../d0/d8a/Attribute_8py_source.html#l00065">dastgen2.attributes.Attribute.Attribute._name</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00093">dastgen2.attributes.BooleanArray.BooleanArray._name</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00072">exahype2.solvers.aderdg.ADERDG.ADERDG._name</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00132">exahype2.solvers.elliptic.AMRMarker.AMRMarker._name</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00117">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells._name</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00185">exahype2.solvers.fv.FV.FV._name</a>, <a class="el" href="../../d5/d03/PosterioriLimiting_8py_source.html#l00033">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting._name</a>, <a class="el" href="../../d3/d0f/StaticLimiting_8py_source.html#l00029">exahype2.solvers.limiting.StaticLimiting.StaticLimiting._name</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00250">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._name</a>, <a class="el" href="../../da/db8/rkdg_2SeparateSweeps_8py_source.html#l00040">exahype2.solvers.rkdg.SeparateSweeps.SeparateSweeps._name</a>, <a class="el" href="../../d0/deb/rkdg_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00215">exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking._name</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00116">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._name</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00278">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.OneSweepPerRungeKuttaStep._name</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00360">exahype2.solvers.rkfd.SeparateSweeps.SeparateSweeps._name</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00313">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking._name</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00077">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray._name</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00047">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray._name</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00088">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray._name</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00025">solvers.api.Solver.Solver._name</a>, <a class="el" href="../../d8/d07/mghype_2matrixfree_2solvers_2Solver_8h_source.html#l00067">mghype::matrixfree::solvers::Solver._name</a>, <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00095">api.solvers.Solver.Solver._name</a>, and <a class="el" href="../../d8/d4e/ServiceRepository_8h_source.html#l00030">tarch::services::ServiceRepository::ServiceEntry._name</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d16/Gemms_8py_source.html#l00114">exahype2.solvers.aderdg.kernels.Gemms.Gemms.__repr__()</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00162">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.__setup_algorithm_steps()</a>, <a class="el" href="../../d5/d48/AlgorithmStep_8py_source.html#l00232">swift2.particle.AlgorithmStep.AlgorithmStep.__str__()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00143">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius._setup_algorithm_steps_dict()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00151">peano4.datamodel.DoF.DoF.additional_load_and_store_arguments_for_other_dof()</a>, <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00710">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle.algorithm_steps()</a>, <a class="el" href="../../db/d1a/UserActionSet_8py_source.html#l00039">peano4.solversteps.UserActionSet.UserActionSet.get_action_set_name()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00109">peano4.datamodel.DoF.DoF.get_full_qualified_type()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00118">peano4.datamodel.DoF.DoF.get_logical_type_name()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00141">dastgen2.attributes.Enumeration.Enumeration.get_to_string()</a>, and <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle.readme_descriptor()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a5804b616921da557d2d217e32c57c564_icgraph.png" border="0" usemap="#ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a5804b616921da557d2d217e32c57c564_icgraph" alt=""/></div>
+<map name="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a5804b616921da557d2d217e32c57c564_icgraph" id="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a5804b616921da557d2d217e32c57c564_icgraph">
+<area shape="rect" title=" " alt="" coords="712,454,935,479"/>
+<area shape="rect" href="../../d4/db3/classexahype2_1_1solvers_1_1aderdg_1_1kernels_1_1Gemms_1_1Gemms.html#aeaefa3f1f11c98ccf127dbbf8b07e57d" title=" " alt="" coords="388,5,629,45"/>
+<area shape="poly" title=" " alt="" coords="818,441,808,365,783,261,763,205,736,152,703,102,662,59,628,40,631,35,666,55,707,99,741,149,767,203,788,259,813,364,823,440"/>
+<area shape="rect" href="../../d6/d23/classswift2_1_1particle_1_1ExplicitEulerFixedSearchRadius_1_1ExplicitEulerFixedSearchRadius.html#af66e6948622d09e2fbb8e5e8fede471a" title="Create a repository of algorithmic steps which are then ordered into the actual time stepping sequenc..." alt="" coords="393,69,624,139"/>
+<area shape="poly" title=" " alt="" coords="814,441,797,382,768,304,748,263,723,223,695,185,662,153,623,129,625,125,666,149,699,182,728,220,752,260,773,302,802,380,819,440"/>
+<area shape="rect" href="../../d7/d72/classswift2_1_1particle_1_1AlgorithmStep_1_1AlgorithmStep.html#a91e056f26edaff31585d040a97d7c4e6" title=" " alt="" coords="410,163,607,203"/>
+<area shape="poly" title=" " alt="" coords="811,442,792,393,761,331,718,269,692,241,663,217,636,203,607,193,609,188,638,198,665,212,695,237,722,265,765,329,797,391,816,440"/>
+<area shape="rect" href="../../d2/df7/classswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius.html#a2c6c4fd548c289924aa11cd5d13c85b0" title="Create a repository of algorithmic steps which are then ordered into the actual time stepping sequenc..." alt="" coords="389,227,628,296"/>
+<area shape="poly" title=" " alt="" coords="803,445,745,378,706,342,663,310,627,293,629,288,665,306,709,337,749,374,807,441"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a8a9279b7d9399ff2d8fa69ac28bfbce2" title="You can make Peano&#39;s store and load arguments of any DoF depend on other DoFs that you have loaded be..." alt="" coords="374,321,643,375"/>
+<area shape="poly" title=" " alt="" coords="788,449,730,419,663,389,629,378,631,373,665,384,733,414,790,445"/>
+<area shape="rect" href="../../d7/d10/classswift2_1_1particle_1_1ExplicitEulerDynamicSearchRadius_1_1ExplicitEulerDynamicSearchRadius.html#aa1ab94aa4f58a878f9056a09d1f72bc9" title="The explicit Euler basically consists of two steps per particle." alt="" coords="353,399,664,454"/>
+<area shape="poly" title=" " alt="" coords="709,455,664,449,664,444,710,450"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a2b6ee46ece99382cd2f53bfb32bfb90f" title="Return algorithm steps: A list of AlgorithmStep objects to be executed in that order." alt="" coords="367,478,651,533"/>
+<area shape="poly" title=" " alt="" coords="706,484,651,490,651,485,706,478"/>
+<area shape="rect" href="../../df/dc1/classpeano4_1_1solversteps_1_1UserActionSet_1_1UserActionSet.html#ad830274b3771492f9019e1061b892368" title="Returns a description (word) for the mapping which is also used as class name for the generated type." alt="" coords="397,557,621,611"/>
+<area shape="poly" title=" " alt="" coords="789,488,732,518,665,546,622,561,620,555,663,542,729,513,786,484"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a458da0ff83b4488ea8e598907c86db56" title=" " alt="" coords="396,636,621,676"/>
+<area shape="poly" title=" " alt="" coords="807,493,750,560,710,596,665,626,623,643,621,638,663,622,707,592,746,556,803,489"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ae991fc6dbdeb7301cf2a4f244e36f995" title="What should the data type be called within the data repository, or within action sets." alt="" coords="396,700,621,740"/>
+<area shape="poly" title=" " alt="" coords="814,494,792,537,760,591,718,645,693,669,665,690,623,710,621,705,663,686,689,665,714,641,756,588,788,535,809,491"/>
+<area shape="rect" href="../../d9/df1/classdastgen2_1_1attributes_1_1Enumeration_1_1Enumeration.html#ac5406d2fc90b2facadf9e508e335ed91" title="This function generates the method body which is called in yourDataModel.toString() method." alt="" coords="389,764,629,804"/>
+<area shape="poly" title=" " alt="" coords="818,493,801,549,770,620,750,657,726,693,698,726,666,754,630,773,628,768,662,750,694,722,722,690,745,654,766,617,796,547,813,492"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab8fb6db184c812c743573426faf75ac2" title="Create default readme descriptor." alt="" coords="411,828,607,868"/>
+<area shape="poly" title=" " alt="" coords="821,494,807,560,779,648,759,695,734,740,703,782,666,818,638,835,608,845,606,840,636,830,662,814,699,779,729,737,754,693,774,646,802,559,816,492"/>
+<area shape="rect" href="../../d1/dbb/classpeano4_1_1toolbox_1_1particles_1_1postprocessing_1_1ParticleVTUReader_1_1VTUParticleSet.html#ad3c850372709e6396fd5a7c386588c7c" title=" " alt="" coords="5,163,305,203"/>
+<area shape="poly" title=" " alt="" coords="396,185,306,185,306,180,396,180"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a2819ff075b7b7f56f670e2a8232f4d9a" title="Add dependency (particle consistency) checks." alt="" coords="34,447,277,487"/>
+<area shape="poly" title=" " alt="" coords="340,448,277,456,276,450,339,443"/>
+<area shape="poly" title=" " alt="" coords="352,491,277,483,277,477,353,486"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#af75757c1fcb3d5916611fd6b0e525801" title="What should the data type be called within the data repository." alt="" coords="43,636,268,676"/>
+<area shape="poly" title=" " alt="" coords="382,659,268,659,268,653,382,653"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a102d230dd6037bcc0ca66c11175219ff" name="a102d230dd6037bcc0ca66c11175219ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102d230dd6037bcc0ca66c11175219ff">&#9670;&#160;</a></span>number_of_matrix_entries_per_cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.number_of_matrix_entries_per_cell </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00251">251</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/dad/DiscontinuousGalerkinDiscretisation_8py_source.html#l00273">api.solvers.DiscontinuousGalerkinDiscretisation.AssemblePetscMatrix.get_constructor_body()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a102d230dd6037bcc0ca66c11175219ff_icgraph.png" border="0" usemap="#ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a102d230dd6037bcc0ca66c11175219ff_icgraph" alt=""/></div>
+<map name="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a102d230dd6037bcc0ca66c11175219ff_icgraph" id="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a102d230dd6037bcc0ca66c11175219ff_icgraph">
+<area shape="rect" title=" " alt="" coords="296,13,531,53"/>
+<area shape="rect" href="../../d7/def/classapi_1_1solvers_1_1DiscontinuousGalerkinDiscretisation_1_1AssemblePetscMatrix.html#a01e1a8f9d74413292db68d04a7b77894" title="Define body of constructor." alt="" coords="5,5,248,60"/>
+<area shape="poly" title=" " alt="" coords="282,35,248,35,248,30,282,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c40daf10cecbb885a1511fe9139afff" name="a7c40daf10cecbb885a1511fe9139afff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c40daf10cecbb885a1511fe9139afff">&#9670;&#160;</a></span>number_of_matrix_entries_per_face()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.number_of_matrix_entries_per_face </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00247">247</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="aed41cdc9580ebffd4bdea1e548522f3d" name="aed41cdc9580ebffd4bdea1e548522f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed41cdc9580ebffd4bdea1e548522f3d">&#9670;&#160;</a></span>number_of_matrix_entries_per_vertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.number_of_matrix_entries_per_vertex </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00243">243</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+</div>
+</div>
+<a id="a3d73a8b60d0ec6e4e56edfca34bf63c2" name="a3d73a8b60d0ec6e4e56edfca34bf63c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d73a8b60d0ec6e4e56edfca34bf63c2">&#9670;&#160;</a></span>typename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.typename </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00230">230</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d96/SBH_8py_source.html#l00166">SBH.Limiter._name</a>, <a class="el" href="../../d0/d8a/Attribute_8py_source.html#l00065">dastgen2.attributes.Attribute.Attribute._name</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00093">dastgen2.attributes.BooleanArray.BooleanArray._name</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00072">exahype2.solvers.aderdg.ADERDG.ADERDG._name</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00132">exahype2.solvers.elliptic.AMRMarker.AMRMarker._name</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00117">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells._name</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00185">exahype2.solvers.fv.FV.FV._name</a>, <a class="el" href="../../d5/d03/PosterioriLimiting_8py_source.html#l00033">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting._name</a>, <a class="el" href="../../d3/d0f/StaticLimiting_8py_source.html#l00029">exahype2.solvers.limiting.StaticLimiting.StaticLimiting._name</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00250">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._name</a>, <a class="el" href="../../da/db8/rkdg_2SeparateSweeps_8py_source.html#l00040">exahype2.solvers.rkdg.SeparateSweeps.SeparateSweeps._name</a>, <a class="el" href="../../d0/deb/rkdg_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00215">exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking._name</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00116">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._name</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00278">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.OneSweepPerRungeKuttaStep._name</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00360">exahype2.solvers.rkfd.SeparateSweeps.SeparateSweeps._name</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00313">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking._name</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00077">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray._name</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00047">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray._name</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00088">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray._name</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00025">solvers.api.Solver.Solver._name</a>, <a class="el" href="../../d8/d07/mghype_2matrixfree_2solvers_2Solver_8h_source.html#l00067">mghype::matrixfree::solvers::Solver._name</a>, <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00095">api.solvers.Solver.Solver._name</a>, and <a class="el" href="../../d8/d4e/ServiceRepository_8h_source.html#l00030">tarch::services::ServiceRepository::ServiceEntry._name</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d25/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8py_source.html#l00542">solvers.api.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.add_implementation_files_to_project()</a>, <a class="el" href="../../db/dfd/CollocatedDLinearDiscretisationWithPointJacobi_8py_source.html#l00281">solvers.api.CollocatedDLinearDiscretisationWithPointJacobi.CollocatedDLinearDiscretisationWithPointJacobi.get_vertex_merge_method()</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00061">solvers.api.Solver.Solver.instance_name()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00234">api.solvers.Solver.Solver.instance_name()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a3d73a8b60d0ec6e4e56edfca34bf63c2_icgraph.png" border="0" usemap="#ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a3d73a8b60d0ec6e4e56edfca34bf63c2_icgraph" alt=""/></div>
+<map name="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a3d73a8b60d0ec6e4e56edfca34bf63c2_icgraph" id="ad5/d91/classapi_1_1solvers_1_1Solver_1_1Solver_a3d73a8b60d0ec6e4e56edfca34bf63c2_icgraph">
+<area shape="rect" title=" " alt="" coords="1117,140,1368,165"/>
+<area shape="rect" href="../../d5/d78/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_1_1Discontinuou7caba829862ffd08361f2e57820cadcb.html#a6f609016fcab7c3a85e9166dd23a8fa2" title="The solver creates two classes: An abstract base class and its implementations." alt="" coords="708,5,1069,89"/>
+<area shape="poly" title=" " alt="" coords="1185,139,1029,92,1031,87,1187,134"/>
+<area shape="rect" href="../../d6/d20/classsolvers_1_1api_1_1CollocatedDLinearDiscretisationWithPointJacobi_1_1CollocatedDLinearDiscretisationWithPointJacobi.html#aec8b0f293415513ce484a8b99ed4f904" title=" " alt="" coords="371,93,660,162"/>
+<area shape="poly" title=" " alt="" coords="1103,151,660,135,660,130,1104,145"/>
+<area shape="rect" href="../../d8/d79/classsolvers_1_1api_1_1Solver_1_1Solver.html#a8e9548f58f93765e27e83491e05edd4c" title="Return the name of the object that will be created for this solver." alt="" coords="747,165,1031,191"/>
+<area shape="poly" title=" " alt="" coords="1103,165,1031,170,1031,165,1103,160"/>
+<area shape="rect" href="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a404bc819f89a6ff53412ae8088f7025c" title="Return the name of the object that will be created for this solver." alt="" coords="747,215,1031,240"/>
+<area shape="poly" title=" " alt="" coords="1192,172,1070,206,1005,217,1004,212,1069,201,1191,167"/>
+<area shape="rect" href="../../d6/d20/classsolvers_1_1api_1_1CollocatedDLinearDiscretisationWithPointJacobi_1_1CollocatedDLinearDiscretisationWithPointJacobi.html#a4f5fd92e54ba2ddff4cc73ba31896f48" title="Collocated low&#45;order (d&#45;linear) Finite Elements." alt="" coords="5,144,323,199"/>
+<area shape="poly" title=" " alt="" coords="357,150,323,154,323,149,356,145"/>
+<area shape="poly" title=" " alt="" coords="223,133,202,126,164,123,132,125,112,130,102,136,102,144,97,144,98,134,109,125,132,119,164,117,203,120,225,128"/>
+<area shape="rect" href="../../da/df4/classsolvers_1_1api_1_1CollocatedMG_1_1CollocatedMG.html#a8364f6c6a9f6c7f707489647c6f05c2b" title=" " alt="" coords="419,187,611,241"/>
+<area shape="poly" title=" " alt="" coords="743,195,612,207,612,202,743,189"/>
+<area shape="poly" title=" " alt="" coords="405,203,323,193,323,188,406,198"/>
+<area shape="poly" title=" " alt="" coords="732,224,611,220,612,215,732,219"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a71fbf4dd231c90f895e2ce928f33f5bc" name="a71fbf4dd231c90f895e2ce928f33f5bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fbf4dd231c90f895e2ce928f33f5bc">&#9670;&#160;</a></span>_cell_petsc_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver._cell_petsc_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00101">101</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00182">api.solvers.Solver.Solver.add_to_Peano4_datamodel()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00203">api.solvers.Solver.Solver.add_use_statements()</a>.</p>
+
+</div>
+</div>
+<a id="aa759f561a7980f1c02a6692e442bc5b9" name="aa759f561a7980f1c02a6692e442bc5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa759f561a7980f1c02a6692e442bc5b9">&#9670;&#160;</a></span>_face_petsc_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver._face_petsc_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00100">100</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00182">api.solvers.Solver.Solver.add_to_Peano4_datamodel()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00203">api.solvers.Solver.Solver.add_use_statements()</a>.</p>
+
+</div>
+</div>
+<a id="a8458476acdea8817977509fbdb7c3688" name="a8458476acdea8817977509fbdb7c3688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8458476acdea8817977509fbdb7c3688">&#9670;&#160;</a></span>_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver._name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00095">95</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00144">exahype2.solvers.elliptic.AMRMarker.AMRMarker.__str__()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00132">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00245">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.__str__()</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00099">solvers.api.Solver.Solver.__str__()</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00734">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking._enclave_task_name()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00045">dastgen2.attributes.Enumeration.Enumeration._enum_name()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01453">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01393">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00741">exahype2.solvers.aderdg.ADERDG.ADERDG._interpolate_face_data_default_guard()</a>, <a class="el" href="../../db/d03/aderdg_2SingleSweep_8py_source.html#l00185">exahype2.solvers.aderdg.SingleSweep.SingleSweep._interpolate_face_data_default_guard()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00145">SBH.Limiter._load_cell_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00687">exahype2.solvers.aderdg.ADERDG.ADERDG._load_cell_data_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00979">exahype2.solvers.fv.FV.FV._load_cell_data_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01052">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._load_cell_data_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00900">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._load_cell_data_default_guard()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00174">SBH.Limiter._load_face_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00712">exahype2.solvers.aderdg.ADERDG.ADERDG._load_face_data_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01012">exahype2.solvers.fv.FV.FV._load_face_data_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01087">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._load_face_data_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00937">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._load_face_data_default_guard()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00154">SBH.Limiter._provide_cell_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00667">exahype2.solvers.aderdg.ADERDG.ADERDG._provide_cell_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00936">exahype2.solvers.fv.FV.FV._provide_cell_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01015">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._provide_cell_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00864">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._provide_cell_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00677">exahype2.solvers.aderdg.ADERDG.ADERDG._provide_face_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00955">exahype2.solvers.fv.FV.FV._provide_face_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01026">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._provide_face_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00874">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._provide_face_data_to_compute_kernels_default_guard()</a>, <a class="el" href="../../db/d03/aderdg_2SingleSweep_8py_source.html#l00178">exahype2.solvers.aderdg.SingleSweep.SingleSweep._restrict_face_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00727">exahype2.solvers.aderdg.ADERDG.ADERDG._store_boundary_data_default_guard()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00131">SBH.Limiter._store_cell_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00657">exahype2.solvers.aderdg.ADERDG.ADERDG._store_cell_data_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00965">exahype2.solvers.fv.FV.FV._store_cell_data_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01037">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._store_cell_data_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00884">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._store_cell_data_default_guard()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00169">SBH.Limiter._store_face_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00702">exahype2.solvers.aderdg.ADERDG.ADERDG._store_face_data_default_guard()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00998">exahype2.solvers.fv.FV.FV._store_face_data_default_guard()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01072">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._store_face_data_default_guard()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00921">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._store_face_data_default_guard()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00753">exahype2.solvers.aderdg.ADERDG.ADERDG._unknown_identifier()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00278">exahype2.solvers.elliptic.AMRMarker.AMRMarker._unknown_identifier()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00226">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells._unknown_identifier()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01031">exahype2.solvers.fv.FV.FV._unknown_identifier()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01107">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._unknown_identifier()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00958">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._unknown_identifier()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01274">exahype2.solvers.fv.FV.FV.add_actions_to_checkpoint_solution()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01215">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.add_actions_to_checkpoint_solution()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00812">exahype2.solvers.aderdg.ADERDG.ADERDG.add_actions_to_plot_solution()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00295">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.add_actions_to_plot_solution()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01219">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.add_actions_to_plot_solution()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01187">exahype2.solvers.fv.FV.FV.add_actions_to_plot_solution()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01120">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.add_actions_to_plot_solution()</a>, <a class="el" href="../../d0/deb/rkdg_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00235">exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.add_entries_to_text_replacement_dictionary()</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00705">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.add_entries_to_text_replacement_dictionary()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00903">exahype2.solvers.aderdg.ADERDG.ADERDG.add_implementation_files_to_project()</a>, <a class="el" href="../../d6/d25/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8py_source.html#l00542">solvers.api.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver.add_implementation_files_to_project()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00286">exahype2.solvers.elliptic.AMRMarker.AMRMarker.add_to_Peano4_datamodel()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00234">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.add_to_Peano4_datamodel()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00179">SBH.Limiter.create_action_sets()</a>, <a class="el" href="../../db/d03/aderdg_2SingleSweep_8py_source.html#l00125">exahype2.solvers.aderdg.SingleSweep.SingleSweep.create_action_sets()</a>, <a class="el" href="../../da/db8/rkdg_2SeparateSweeps_8py_source.html#l00110">exahype2.solvers.rkdg.SeparateSweeps.SeparateSweeps.create_action_sets()</a>, <a class="el" href="../../d2/dd3/fv_2SingleSweep_8py_source.html#l00059">exahype2.solvers.fv.SingleSweep.SingleSweep.create_data_structures()</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00233">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.OneSweepPerRungeKuttaStep.create_data_structures()</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00333">exahype2.solvers.rkfd.SeparateSweeps.SeparateSweeps.create_data_structures()</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00452">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.create_data_structures()</a>, <a class="el" href="../../d0/d8a/Attribute_8py_source.html#l00259">dastgen2.attributes.Attribute.Attribute.get_accessor_name()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00147">dastgen2.attributes.BooleanArray.BooleanArray.get_constructor_arguments()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00094">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_constructor_arguments()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00061">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_constructor_arguments()</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00096">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray.get_constructor_arguments()</a>, <a class="el" href="../../dc/d4a/CollocatedLowOrderDiscretisation_8py_source.html#l00205">api.solvers.CollocatedLowOrderDiscretisation.AssemblePetscMatrix.get_constructor_body()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00102">dastgen2.attributes.BooleanArray.BooleanArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../df/d38/DoubleArray_8py_source.html#l00084">dastgen2.attributes.DoubleArray.DoubleArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../d9/dc7/IntegerArray_8py_source.html#l00071">dastgen2.attributes.IntegerArray.IntegerArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00091">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00058">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00093">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray.get_first_plain_C_attribute()</a>, <a class="el" href="../../d6/db0/Boolean_8py_source.html#l00112">dastgen2.attributes.Boolean.Boolean.get_method_body()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00105">dastgen2.attributes.BooleanArray.BooleanArray.get_method_body()</a>, <a class="el" href="../../da/df9/Double_8py_source.html#l00123">dastgen2.attributes.Double.Double.get_method_body()</a>, <a class="el" href="../../df/d38/DoubleArray_8py_source.html#l00087">dastgen2.attributes.DoubleArray.DoubleArray.get_method_body()</a>, <a class="el" href="../../dc/d56/DoublePointer_8py_source.html#l00107">dastgen2.attributes.DoublePointer.DoublePointer.get_method_body()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00097">dastgen2.attributes.Enumeration.Enumeration.get_method_body()</a>, <a class="el" href="../../db/dc2/Integer_8py_source.html#l00123">dastgen2.attributes.Integer.Integer.get_method_body()</a>, <a class="el" href="../../d9/dc7/IntegerArray_8py_source.html#l00074">dastgen2.attributes.IntegerArray.IntegerArray.get_method_body()</a>, <a class="el" href="../../d6/d0a/String_8py_source.html#l00168">dastgen2.attributes.String.String.get_method_body()</a>, <a class="el" href="../../d9/d7f/UserDefinedType_8py_source.html#l00148">dastgen2.attributes.UserDefinedType.UserDefinedType.get_method_body()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00099">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_method_body()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00067">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_method_body()</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00101">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray.get_method_body()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00063">dastgen2.attributes.BooleanArray.BooleanArray.get_methods()</a>, <a class="el" href="../../df/d38/DoubleArray_8py_source.html#l00054">dastgen2.attributes.DoubleArray.DoubleArray.get_methods()</a>, <a class="el" href="../../d9/dc7/IntegerArray_8py_source.html#l00043">dastgen2.attributes.IntegerArray.IntegerArray.get_methods()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00043">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_methods()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00014">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_methods()</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00046">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray.get_methods()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00756">exahype2.solvers.aderdg.ADERDG.ADERDG.get_name_of_global_instance()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00282">exahype2.solvers.elliptic.AMRMarker.AMRMarker.get_name_of_global_instance()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00230">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.get_name_of_global_instance()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01034">exahype2.solvers.fv.FV.FV.get_name_of_global_instance()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01111">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.get_name_of_global_instance()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00961">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.get_name_of_global_instance()</a>, <a class="el" href="../../d6/db0/Boolean_8py_source.html#l00070">dastgen2.attributes.Boolean.Boolean.get_plain_C_attributes()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00083">dastgen2.attributes.BooleanArray.BooleanArray.get_plain_C_attributes()</a>, <a class="el" href="../../da/df9/Double_8py_source.html#l00084">dastgen2.attributes.Double.Double.get_plain_C_attributes()</a>, <a class="el" href="../../df/d38/DoubleArray_8py_source.html#l00070">dastgen2.attributes.DoubleArray.DoubleArray.get_plain_C_attributes()</a>, <a class="el" href="../../dc/d56/DoublePointer_8py_source.html#l00078">dastgen2.attributes.DoublePointer.DoublePointer.get_plain_C_attributes()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00088">dastgen2.attributes.Enumeration.Enumeration.get_plain_C_attributes()</a>, <a class="el" href="../../db/dc2/Integer_8py_source.html#l00080">dastgen2.attributes.Integer.Integer.get_plain_C_attributes()</a>, <a class="el" href="../../d9/dc7/IntegerArray_8py_source.html#l00055">dastgen2.attributes.IntegerArray.IntegerArray.get_plain_C_attributes()</a>, <a class="el" href="../../d6/d0a/String_8py_source.html#l00099">dastgen2.attributes.String.String.get_plain_C_attributes()</a>, <a class="el" href="../../d9/d7f/UserDefinedType_8py_source.html#l00116">dastgen2.attributes.UserDefinedType.UserDefinedType.get_plain_C_attributes()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00065">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_plain_C_attributes()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00033">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_plain_C_attributes()</a>, <a class="el" href="../../d6/d0a/String_8py_source.html#l00165">dastgen2.attributes.String.String.get_setter_getter_name()</a>, <a class="el" href="../../d6/db0/Boolean_8py_source.html#l00137">dastgen2.attributes.Boolean.Boolean.get_to_string()</a>, <a class="el" href="../../d3/d63/BooleanArray_8py_source.html#l00153">dastgen2.attributes.BooleanArray.BooleanArray.get_to_string()</a>, <a class="el" href="../../da/df9/Double_8py_source.html#l00139">dastgen2.attributes.Double.Double.get_to_string()</a>, <a class="el" href="../../df/d38/DoubleArray_8py_source.html#l00107">dastgen2.attributes.DoubleArray.DoubleArray.get_to_string()</a>, <a class="el" href="../../dc/d56/DoublePointer_8py_source.html#l00123">dastgen2.attributes.DoublePointer.DoublePointer.get_to_string()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00141">dastgen2.attributes.Enumeration.Enumeration.get_to_string()</a>, <a class="el" href="../../db/dc2/Integer_8py_source.html#l00139">dastgen2.attributes.Integer.Integer.get_to_string()</a>, <a class="el" href="../../d9/dc7/IntegerArray_8py_source.html#l00094">dastgen2.attributes.IntegerArray.IntegerArray.get_to_string()</a>, <a class="el" href="../../d9/d7f/UserDefinedType_8py_source.html#l00174">dastgen2.attributes.UserDefinedType.UserDefinedType.get_to_string()</a>, <a class="el" href="../../da/dfe/Peano4DoubleArray_8py_source.html#l00167">peano4.dastgen2.Peano4DoubleArray.Peano4DoubleArray.get_to_string()</a>, <a class="el" href="../../d0/dca/Peano4IntegerArray_8py_source.html#l00126">peano4.dastgen2.Peano4IntegerArray.Peano4IntegerArray.get_to_string()</a>, <a class="el" href="../../d5/d30/Peano4SmartPointerDoubleArray_8py_source.html#l00133">peano4.dastgen2.Peano4SmartPointerDoubleArray.Peano4SmartPointerDoubleArray.get_to_string()</a>, <a class="el" href="../../d0/d8a/Attribute_8py_source.html#l00279">dastgen2.attributes.Attribute.Attribute.name()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00393">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.name()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01717">exahype2.solvers.fv.FV.FV.name()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01539">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.name()</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00096">solvers.api.Solver.Solver.name()</a>, <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00267">api.solvers.Solver.Solver.name()</a>, <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00058">solvers.api.Solver.Solver.typename()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00230">api.solvers.Solver.Solver.typename()</a>.</p>
+
+</div>
+</div>
+<a id="a3e38613b9c70f24db217dcdabbd37e0a" name="a3e38613b9c70f24db217dcdabbd37e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e38613b9c70f24db217dcdabbd37e0a">&#9670;&#160;</a></span>_vertex_petsc_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver._vertex_petsc_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00099">99</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00182">api.solvers.Solver.Solver.add_to_Peano4_datamodel()</a>, and <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00203">api.solvers.Solver.Solver.add_use_statements()</a>.</p>
+
+</div>
+</div>
+<a id="afaaf246dde0b7dd47b6e40745a9b4ce0" name="afaaf246dde0b7dd47b6e40745a9b4ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaaf246dde0b7dd47b6e40745a9b4ce0">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.max_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00097">97</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00099">solvers.api.Solver.Solver.__str__()</a>, <a class="el" href="../../dc/d4a/CollocatedLowOrderDiscretisation_8py_source.html#l00205">api.solvers.CollocatedLowOrderDiscretisation.AssemblePetscMatrix.get_constructor_body()</a>, <a class="el" href="../../d0/dad/DiscontinuousGalerkinDiscretisation_8py_source.html#l00273">api.solvers.DiscontinuousGalerkinDiscretisation.AssemblePetscMatrix.get_constructor_body()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle.readme_descriptor()</a>, and <a class="el" href="../../db/d6a/ExtractMeshResolution_8py_source.html#l00039">peano4.visualisation.filters.ExtractMeshResolution.ExtractMeshResolution.render()</a>.</p>
+
+</div>
+</div>
+<a id="ac37554dbb6c68201ef2e44ba164d413a" name="ac37554dbb6c68201ef2e44ba164d413a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37554dbb6c68201ef2e44ba164d413a">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">api.solvers.Solver.Solver.min_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html#l00096">96</a> of file <a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d42/matrixfree_2solvers_2api_2Solver_8py_source.html#l00099">solvers.api.Solver.Solver.__str__()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle.readme_descriptor()</a>, and <a class="el" href="../../db/d6a/ExtractMeshResolution_8py_source.html#l00039">peano4.visualisation.filters.ExtractMeshResolution.ExtractMeshResolution.render()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/mghype/petsc/api/solvers/<a class="el" href="../../d7/d50/petsc_2api_2solvers_2Solver_8py_source.html">Solver.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d3f/namespaceapi.html">api</a></li><li class="navelem"><a class="el" href="../../d6/dfc/namespaceapi_1_1solvers.html">solvers</a></li><li class="navelem"><a class="el" href="../../d0/d4c/namespaceapi_1_1solvers_1_1Solver.html">Solver</a></li><li class="navelem"><a class="el" href="../../d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html">Solver</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:19 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

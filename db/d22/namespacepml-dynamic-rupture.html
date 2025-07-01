@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('db/d22/namespacepml-dynamic-rupture.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">pml-dynamic-rupture Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a244da51eaef612b4ccad15927247f6b9" id="r_a244da51eaef612b4ccad15927247f6b9"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a244da51eaef612b4ccad15927247f6b9">available_scenarios</a></td></tr>
+<tr class="separator:a244da51eaef612b4ccad15927247f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253e8539a299e08226f38f87eb057ae2" id="r_a253e8539a299e08226f38f87eb057ae2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a> = &quot;TPV28&quot;</td></tr>
+<tr class="separator:a253e8539a299e08226f38f87eb057ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb424b0b958a4e85ec0a65c8a6c3167" id="r_a2bb424b0b958a4e85ec0a65c8a6c3167"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bb424b0b958a4e85ec0a65c8a6c3167">scenario_string</a> = scenario.lower()</td></tr>
+<tr class="separator:a2bb424b0b958a4e85ec0a65c8a6c3167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b352a1f4af525724743b97da3b71f7" id="r_ae7b352a1f4af525724743b97da3b71f7"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7b352a1f4af525724743b97da3b71f7">my_scenario</a> = <a class="el" href="#a244da51eaef612b4ccad15927247f6b9">available_scenarios</a>[<a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>]</td></tr>
+<tr class="separator:ae7b352a1f4af525724743b97da3b71f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88710913ee5bc262e627b37cc68924dc" id="r_a88710913ee5bc262e627b37cc68924dc"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88710913ee5bc262e627b37cc68924dc">unknowns</a> = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;u&quot;: 3, &quot;pml&quot;: 27}</td></tr>
+<tr class="separator:a88710913ee5bc262e627b37cc68924dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83eee79a97167821ee9072581218561e" id="r_a83eee79a97167821ee9072581218561e"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83eee79a97167821ee9072581218561e">auxiliary_variables</a></td></tr>
+<tr class="separator:a83eee79a97167821ee9072581218561e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4774203c41011881103d614bff90bee7" id="r_a4774203c41011881103d614bff90bee7"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4774203c41011881103d614bff90bee7">offset</a> = my_scenario.domain_offset</td></tr>
+<tr class="separator:a4774203c41011881103d614bff90bee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f93f8795f0f6b6f4a9fdc7227d49f42" id="r_a1f93f8795f0f6b6f4a9fdc7227d49f42"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f93f8795f0f6b6f4a9fdc7227d49f42">size</a> = my_scenario.domain_size</td></tr>
+<tr class="separator:a1f93f8795f0f6b6f4a9fdc7227d49f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cb05bb1dcfabab7ef992bcdd02c018" id="r_a76cb05bb1dcfabab7ef992bcdd02c018"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76cb05bb1dcfabab7ef992bcdd02c018">end_time</a> = my_scenario.end_time</td></tr>
+<tr class="separator:a76cb05bb1dcfabab7ef992bcdd02c018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad131282a46dd8f3b9e3f1af8e15125d6" id="r_ad131282a46dd8f3b9e3f1af8e15125d6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad131282a46dd8f3b9e3f1af8e15125d6">plot_dt</a> = 0.0</td></tr>
+<tr class="separator:ad131282a46dd8f3b9e3f1af8e15125d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5250d94df4f86dbb2bbb973fc20401f" id="r_ae5250d94df4f86dbb2bbb973fc20401f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5250d94df4f86dbb2bbb973fc20401f">order</a> = 5</td></tr>
+<tr class="separator:ae5250d94df4f86dbb2bbb973fc20401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539ac14532f1d4bc850dfbcbf303af88" id="r_a539ac14532f1d4bc850dfbcbf303af88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a539ac14532f1d4bc850dfbcbf303af88">min_level</a> = 3</td></tr>
+<tr class="separator:a539ac14532f1d4bc850dfbcbf303af88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4299df04d95646ebee68145555d40a47" id="r_a4299df04d95646ebee68145555d40a47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4299df04d95646ebee68145555d40a47">max_depth</a> = 0</td></tr>
+<tr class="separator:a4299df04d95646ebee68145555d40a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34eada47aec47c236936eede694361e" id="r_ad34eada47aec47c236936eede694361e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34eada47aec47c236936eede694361e">max_h</a> = 1.1 * min(<a class="el" href="#a1f93f8795f0f6b6f4a9fdc7227d49f42">size</a>) / (3.0**<a class="el" href="#a539ac14532f1d4bc850dfbcbf303af88">min_level</a>)</td></tr>
+<tr class="separator:ad34eada47aec47c236936eede694361e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1467ef00864f5b4f7a2d705dee648ea9" id="r_a1467ef00864f5b4f7a2d705dee648ea9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1467ef00864f5b4f7a2d705dee648ea9">min_h</a> = <a class="el" href="#ad34eada47aec47c236936eede694361e">max_h</a> / (3.0**<a class="el" href="#a4299df04d95646ebee68145555d40a47">max_depth</a>)</td></tr>
+<tr class="separator:a1467ef00864f5b4f7a2d705dee648ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7546e373fc2679dc102112bdbdc8bf" id="r_a3a7546e373fc2679dc102112bdbdc8bf"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7546e373fc2679dc102112bdbdc8bf">precision</a> = &quot;fp64&quot;</td></tr>
+<tr class="separator:a3a7546e373fc2679dc102112bdbdc8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8819d39708efcc7b7d20eec413e682" id="r_add8819d39708efcc7b7d20eec413e682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add8819d39708efcc7b7d20eec413e682">theSolver</a></td></tr>
+<tr class="separator:add8819d39708efcc7b7d20eec413e682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd4a0164a79fa95d8552d92046a9011" id="r_affd4a0164a79fa95d8552d92046a9011"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd4a0164a79fa95d8552d92046a9011">is_linear</a></td></tr>
+<tr class="separator:affd4a0164a79fa95d8552d92046a9011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a4f0fb741866c27dd93596c463065e" id="r_a43a4f0fb741866c27dd93596c463065e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a4f0fb741866c27dd93596c463065e">polynomials</a></td></tr>
+<tr class="separator:a43a4f0fb741866c27dd93596c463065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5986528afa929d588d27ad1a63df973f" id="r_a5986528afa929d588d27ad1a63df973f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5986528afa929d588d27ad1a63df973f">initialise_patches</a></td></tr>
+<tr class="separator:a5986528afa929d588d27ad1a63df973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217da98e9c4345f691c1ebc3d3dcc69e" id="r_a217da98e9c4345f691c1ebc3d3dcc69e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a217da98e9c4345f691c1ebc3d3dcc69e">initial_conditions</a></td></tr>
+<tr class="separator:a217da98e9c4345f691c1ebc3d3dcc69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb372b3bca0c85957280ff5578f0a6a0" id="r_acb372b3bca0c85957280ff5578f0a6a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb372b3bca0c85957280ff5578f0a6a0">boundary_conditions</a></td></tr>
+<tr class="separator:acb372b3bca0c85957280ff5578f0a6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c45dacbe9f5a816d9112443c61b2f7" id="r_a07c45dacbe9f5a816d9112443c61b2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c45dacbe9f5a816d9112443c61b2f7">max_eigenvalue</a></td></tr>
+<tr class="separator:a07c45dacbe9f5a816d9112443c61b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8143d2e1c87fefda52f51c33932f7a" id="r_a2e8143d2e1c87fefda52f51c33932f7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e8143d2e1c87fefda52f51c33932f7a">flux</a></td></tr>
+<tr class="separator:a2e8143d2e1c87fefda52f51c33932f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8554fdf7a271d20d8bd57553d1e91235" id="r_a8554fdf7a271d20d8bd57553d1e91235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8554fdf7a271d20d8bd57553d1e91235">ncp</a></td></tr>
+<tr class="separator:a8554fdf7a271d20d8bd57553d1e91235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96347eee86ffaa766b21d9dae7a75f1a" id="r_a96347eee86ffaa766b21d9dae7a75f1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96347eee86ffaa766b21d9dae7a75f1a">material_parameters</a></td></tr>
+<tr class="separator:a96347eee86ffaa766b21d9dae7a75f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d4dd47eba241dbcacf241de933ca30" id="r_a96d4dd47eba241dbcacf241de933ca30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d4dd47eba241dbcacf241de933ca30">riemann_solver</a></td></tr>
+<tr class="separator:a96d4dd47eba241dbcacf241de933ca30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0389a6ce690bdcb18c67dfd35f931821" id="r_a0389a6ce690bdcb18c67dfd35f931821"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0389a6ce690bdcb18c67dfd35f931821">source_term</a></td></tr>
+<tr class="separator:a0389a6ce690bdcb18c67dfd35f931821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c42804d145d5f311877de073c913937" id="r_a0c42804d145d5f311877de073c913937"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c42804d145d5f311877de073c913937">project</a> = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;pml&quot;, executable=<a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>)</td></tr>
+<tr class="separator:a0c42804d145d5f311877de073c913937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f033601afa636f80bb922fded640992" id="r_a2f033601afa636f80bb922fded640992"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f033601afa636f80bb922fded640992">filename</a> = <a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#a539ac14532f1d4bc850dfbcbf303af88">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#ae5250d94df4f86dbb2bbb973fc20401f">order</a>)+&quot;_pr_&quot;+str(<a class="el" href="#a3a7546e373fc2679dc102112bdbdc8bf">precision</a>)</td></tr>
+<tr class="separator:a2f033601afa636f80bb922fded640992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff2bcf16e94148f2a7d3e564cbbd618" id="r_a9ff2bcf16e94148f2a7d3e564cbbd618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ff2bcf16e94148f2a7d3e564cbbd618">dimensions</a></td></tr>
+<tr class="separator:a9ff2bcf16e94148f2a7d3e564cbbd618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebea98c229a7dd319383030bc5631a5" id="r_a3ebea98c229a7dd319383030bc5631a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ebea98c229a7dd319383030bc5631a5">min_end_time</a></td></tr>
+<tr class="separator:a3ebea98c229a7dd319383030bc5631a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6506b7b3940971bb811b21ea27d6dd11" id="r_a6506b7b3940971bb811b21ea27d6dd11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6506b7b3940971bb811b21ea27d6dd11">max_end_time</a></td></tr>
+<tr class="separator:a6506b7b3940971bb811b21ea27d6dd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac253c3e17f8fd122969dfae367b3171d" id="r_ac253c3e17f8fd122969dfae367b3171d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac253c3e17f8fd122969dfae367b3171d">first_plot_time_stamp</a></td></tr>
+<tr class="separator:ac253c3e17f8fd122969dfae367b3171d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af076347d3c458b7766d3839a5d910b3a" id="r_af076347d3c458b7766d3839a5d910b3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af076347d3c458b7766d3839a5d910b3a">time_in_between_plots</a></td></tr>
+<tr class="separator:af076347d3c458b7766d3839a5d910b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681848d9b4a54402fb8d7769eeb5f6e3" id="r_a681848d9b4a54402fb8d7769eeb5f6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a681848d9b4a54402fb8d7769eeb5f6e3">periodic_BC</a></td></tr>
+<tr class="separator:a681848d9b4a54402fb8d7769eeb5f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727099bf23ea52a7b297da408d1c860d" id="r_a727099bf23ea52a7b297da408d1c860d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a727099bf23ea52a7b297da408d1c860d">peano4_project</a> = project.generate_Peano4_project(verbose=False)</td></tr>
+<tr class="separator:a727099bf23ea52a7b297da408d1c860d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149b0c96f0611c6689240d755a8d22ce" id="r_a149b0c96f0611c6689240d755a8d22ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149b0c96f0611c6689240d755a8d22ce">make_clean_first</a></td></tr>
+<tr class="separator:a149b0c96f0611c6689240d755a8d22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a83eee79a97167821ee9072581218561e" name="a83eee79a97167821ee9072581218561e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83eee79a97167821ee9072581218561e">&#9670;&#160;</a></span>auxiliary_variables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml-dynamic-rupture.auxiliary_variables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;rho&quot;</span>: 1, <span class="stringliteral">&quot;cp&quot;</span>: 1, <span class="stringliteral">&quot;cs&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;dmp_pml&quot;</span>: 3, <span class="stringliteral">&quot;jacobian&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;metric_derivative&quot;</span>: 9,</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;curve_grid&quot;</span>: 3,</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00029">29</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a244da51eaef612b4ccad15927247f6b9" name="a244da51eaef612b4ccad15927247f6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244da51eaef612b4ccad15927247f6b9">&#9670;&#160;</a></span>available_scenarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml-dynamic-rupture.available_scenarios</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;TPV5&quot;</span>: <a class="code hl_class" href="../../d3/d3d/classScenario_1_1TPV5_1_1TPV5.html">Scenario.TPV5</a>(),</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;TPV26&quot;</span>: <a class="code hl_class" href="../../d7/db3/classScenario_1_1TPV26_1_1TPV26.html">Scenario.TPV26</a>(), </div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;TPV28&quot;</span>: <a class="code hl_class" href="../../d6/df3/classScenario_1_1TPV28_1_1TPV28.html">Scenario.TPV28</a>(),</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;TPV29&quot;</span>: <a class="code hl_class" href="../../d9/d35/classScenario_1_1TPV29_1_1TPV29.html">Scenario.TPV29</a>()</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+<div class="ttc" id="aclassScenario_1_1TPV26_1_1TPV26_html"><div class="ttname"><a href="../../d7/db3/classScenario_1_1TPV26_1_1TPV26.html">Scenario.TPV26.TPV26</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d2f/TPV26_8py_source.html#l00007">TPV26.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV28_1_1TPV28_html"><div class="ttname"><a href="../../d6/df3/classScenario_1_1TPV28_1_1TPV28.html">Scenario.TPV28.TPV28</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d68/TPV28_8py_source.html#l00007">TPV28.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV29_1_1TPV29_html"><div class="ttname"><a href="../../d9/d35/classScenario_1_1TPV29_1_1TPV29.html">Scenario.TPV29.TPV29</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dab/TPV29_8py_source.html#l00007">TPV29.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV5_1_1TPV5_html"><div class="ttname"><a href="../../d3/d3d/classScenario_1_1TPV5_1_1TPV5.html">Scenario.TPV5.TPV5</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2b/TPV5_8py_source.html#l00007">TPV5.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00017">17</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="acb372b3bca0c85957280ff5578f0a6a0" name="acb372b3bca0c85957280ff5578f0a6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb372b3bca0c85957280ff5578f0a6a0">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00069">69</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a9ff2bcf16e94148f2a7d3e564cbbd618" name="a9ff2bcf16e94148f2a7d3e564cbbd618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff2bcf16e94148f2a7d3e564cbbd618">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00105">105</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a76cb05bb1dcfabab7ef992bcdd02c018" name="a76cb05bb1dcfabab7ef992bcdd02c018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cb05bb1dcfabab7ef992bcdd02c018">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml-dynamic-rupture.end_time = my_scenario.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00038">38</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2f033601afa636f80bb922fded640992" name="a2f033601afa636f80bb922fded640992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f033601afa636f80bb922fded640992">&#9670;&#160;</a></span>filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str pml-dynamic-rupture.filename = <a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#a539ac14532f1d4bc850dfbcbf303af88">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#ae5250d94df4f86dbb2bbb973fc20401f">order</a>)+&quot;_pr_&quot;+str(<a class="el" href="#a3a7546e373fc2679dc102112bdbdc8bf">precision</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00089">89</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ac253c3e17f8fd122969dfae367b3171d" name="ac253c3e17f8fd122969dfae367b3171d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac253c3e17f8fd122969dfae367b3171d">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00110">110</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2e8143d2e1c87fefda52f51c33932f7a" name="a2e8143d2e1c87fefda52f51c33932f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8143d2e1c87fefda52f51c33932f7a">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00071">71</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a217da98e9c4345f691c1ebc3d3dcc69e" name="a217da98e9c4345f691c1ebc3d3dcc69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217da98e9c4345f691c1ebc3d3dcc69e">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00068">68</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5986528afa929d588d27ad1a63df973f" name="a5986528afa929d588d27ad1a63df973f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5986528afa929d588d27ad1a63df973f">&#9670;&#160;</a></span>initialise_patches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.initialise_patches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00063">63</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="affd4a0164a79fa95d8552d92046a9011" name="affd4a0164a79fa95d8552d92046a9011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd4a0164a79fa95d8552d92046a9011">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00061">61</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a149b0c96f0611c6689240d755a8d22ce" name="a149b0c96f0611c6689240d755a8d22ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149b0c96f0611c6689240d755a8d22ce">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00123">123</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a96347eee86ffaa766b21d9dae7a75f1a" name="a96347eee86ffaa766b21d9dae7a75f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96347eee86ffaa766b21d9dae7a75f1a">&#9670;&#160;</a></span>material_parameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.material_parameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00073">73</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a4299df04d95646ebee68145555d40a47" name="a4299df04d95646ebee68145555d40a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4299df04d95646ebee68145555d40a47">&#9670;&#160;</a></span>max_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml-dynamic-rupture.max_depth = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00042">42</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a07c45dacbe9f5a816d9112443c61b2f7" name="a07c45dacbe9f5a816d9112443c61b2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c45dacbe9f5a816d9112443c61b2f7">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00070">70</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a6506b7b3940971bb811b21ea27d6dd11" name="a6506b7b3940971bb811b21ea27d6dd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6506b7b3940971bb811b21ea27d6dd11">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00109">109</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad34eada47aec47c236936eede694361e" name="ad34eada47aec47c236936eede694361e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34eada47aec47c236936eede694361e">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml-dynamic-rupture.max_h = 1.1 * min(<a class="el" href="#a1f93f8795f0f6b6f4a9fdc7227d49f42">size</a>) / (3.0**<a class="el" href="#a539ac14532f1d4bc850dfbcbf303af88">min_level</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00043">43</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a3ebea98c229a7dd319383030bc5631a5" name="a3ebea98c229a7dd319383030bc5631a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebea98c229a7dd319383030bc5631a5">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00108">108</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a1467ef00864f5b4f7a2d705dee648ea9" name="a1467ef00864f5b4f7a2d705dee648ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1467ef00864f5b4f7a2d705dee648ea9">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml-dynamic-rupture.min_h = <a class="el" href="#ad34eada47aec47c236936eede694361e">max_h</a> / (3.0**<a class="el" href="#a4299df04d95646ebee68145555d40a47">max_depth</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00044">44</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a539ac14532f1d4bc850dfbcbf303af88" name="a539ac14532f1d4bc850dfbcbf303af88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539ac14532f1d4bc850dfbcbf303af88">&#9670;&#160;</a></span>min_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml-dynamic-rupture.min_level = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00041">41</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ae7b352a1f4af525724743b97da3b71f7" name="ae7b352a1f4af525724743b97da3b71f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b352a1f4af525724743b97da3b71f7">&#9670;&#160;</a></span>my_scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml-dynamic-rupture.my_scenario = <a class="el" href="#a244da51eaef612b4ccad15927247f6b9">available_scenarios</a>[<a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00026">26</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a8554fdf7a271d20d8bd57553d1e91235" name="a8554fdf7a271d20d8bd57553d1e91235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8554fdf7a271d20d8bd57553d1e91235">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00072">72</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a4774203c41011881103d614bff90bee7" name="a4774203c41011881103d614bff90bee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4774203c41011881103d614bff90bee7">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.offset = my_scenario.domain_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00036">36</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ae5250d94df4f86dbb2bbb973fc20401f" name="ae5250d94df4f86dbb2bbb973fc20401f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5250d94df4f86dbb2bbb973fc20401f">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml-dynamic-rupture.order = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00040">40</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a727099bf23ea52a7b297da408d1c860d" name="a727099bf23ea52a7b297da408d1c860d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727099bf23ea52a7b297da408d1c860d">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.peano4_project = project.generate_Peano4_project(verbose=False)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00117">117</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a681848d9b4a54402fb8d7769eeb5f6e3" name="a681848d9b4a54402fb8d7769eeb5f6e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681848d9b4a54402fb8d7769eeb5f6e3">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00112">112</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad131282a46dd8f3b9e3f1af8e15125d6" name="ad131282a46dd8f3b9e3f1af8e15125d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad131282a46dd8f3b9e3f1af8e15125d6">&#9670;&#160;</a></span>plot_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml-dynamic-rupture.plot_dt = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00039">39</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a43a4f0fb741866c27dd93596c463065e" name="a43a4f0fb741866c27dd93596c463065e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a4f0fb741866c27dd93596c463065e">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00062">62</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a3a7546e373fc2679dc102112bdbdc8bf" name="a3a7546e373fc2679dc102112bdbdc8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7546e373fc2679dc102112bdbdc8bf">&#9670;&#160;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.precision = &quot;fp64&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00046">46</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a0c42804d145d5f311877de073c913937" name="a0c42804d145d5f311877de073c913937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c42804d145d5f311877de073c913937">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.project = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;pml&quot;, executable=<a class="el" href="#a253e8539a299e08226f38f87eb057ae2">scenario</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00085">85</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a96d4dd47eba241dbcacf241de933ca30" name="a96d4dd47eba241dbcacf241de933ca30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d4dd47eba241dbcacf241de933ca30">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00074">74</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a253e8539a299e08226f38f87eb057ae2" name="a253e8539a299e08226f38f87eb057ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253e8539a299e08226f38f87eb057ae2">&#9670;&#160;</a></span>scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str pml-dynamic-rupture.scenario = &quot;TPV28&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00024">24</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2bb424b0b958a4e85ec0a65c8a6c3167" name="a2bb424b0b958a4e85ec0a65c8a6c3167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb424b0b958a4e85ec0a65c8a6c3167">&#9670;&#160;</a></span>scenario_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str pml-dynamic-rupture.scenario_string = scenario.lower()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00025">25</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a1f93f8795f0f6b6f4a9fdc7227d49f42" name="a1f93f8795f0f6b6f4a9fdc7227d49f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f93f8795f0f6b6f4a9fdc7227d49f42">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.size = my_scenario.domain_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00037">37</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a0389a6ce690bdcb18c67dfd35f931821" name="a0389a6ce690bdcb18c67dfd35f931821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0389a6ce690bdcb18c67dfd35f931821">&#9670;&#160;</a></span>source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00075">75</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="add8819d39708efcc7b7d20eec413e682" name="add8819d39708efcc7b7d20eec413e682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8819d39708efcc7b7d20eec413e682">&#9670;&#160;</a></span>theSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.theSolver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ElasticSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns=unknowns,</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=auxiliary_variables,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.9</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00050">50</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="af076347d3c458b7766d3839a5d910b3a" name="af076347d3c458b7766d3839a5d910b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af076347d3c458b7766d3839a5d910b3a">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml-dynamic-rupture.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00111">111</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a88710913ee5bc262e627b37cc68924dc" name="a88710913ee5bc262e627b37cc68924dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88710913ee5bc262e627b37cc68924dc">&#9670;&#160;</a></span>unknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml-dynamic-rupture.unknowns = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;u&quot;: 3, &quot;pml&quot;: 27}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html#l00028">28</a> of file <a class="el" href="../../d0/dbd/pml-dynamic-rupture_8py_source.html">pml-dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/d22/namespacepml-dynamic-rupture.html">pml-dynamic-rupture</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:29 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

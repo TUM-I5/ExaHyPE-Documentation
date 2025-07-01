@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for block matrix storage format, defining the interface.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d96/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix__inherit__graph.png" border="0" usemap="#amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_inherit__map" alt="Inheritance graph"/></div>
+<map name="amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_inherit__map" id="amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_inherit__map">
+<area shape="rect" title="Base class for block matrix storage format, defining the interface." alt="" coords="103,41,405,81"/>
+<area shape="rect" href="../../d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html" title="Classical DG discretisation of 2d classical Poisson formulation with spurious facet function spaces." alt="" coords="453,5,808,45"/>
+<area shape="poly" title=" " alt="" coords="419,43,453,40,454,45,420,48"/>
+<area shape="rect" href="../../d3/de6/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dPenaltyBlockMatrix_1_1DGPoisson2dPenaltyBlockMatrix.html" title="Classical DG discretisation of 2d classical Poisson formulation with spurious facet function spaces." alt="" coords="468,70,793,125"/>
+<area shape="poly" title=" " alt="" coords="419,74,468,79,467,84,419,80"/>
+<area shape="rect" title=" " alt="" coords="5,49,55,74"/>
+<area shape="poly" title=" " alt="" coords="69,59,103,59,103,64,69,64"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dfa/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix__coll__graph.png" border="0" usemap="#amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_coll__map" alt="Collaboration graph"/></div>
+<map name="amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_coll__map" id="amghype_8api_8matrixgenerators_8blockmatrix_8BlockMatrix_8BlockMatrix_coll__map">
+<area shape="rect" title="Base class for block matrix storage format, defining the interface." alt="" coords="5,79,308,119"/>
+<area shape="rect" title=" " alt="" coords="132,5,181,31"/>
+<area shape="poly" title=" " alt="" coords="159,44,159,79,154,79,154,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7b9bf481a362f0d3c7862923d2ca78c6" id="r_a7b9bf481a362f0d3c7862923d2ca78c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b9bf481a362f0d3c7862923d2ca78c6">__init__</a> (self, <a class="el" href="#aa7fa0ac116b137716c670b55145875b1">dim</a>, basis)</td></tr>
+<tr class="memdesc:a7b9bf481a362f0d3c7862923d2ca78c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise instance :arg dim: dimension :arg basis: nodal basis.  <br /></td></tr>
+<tr class="separator:a7b9bf481a362f0d3c7862923d2ca78c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cc7ab28ebe9ec6269d70af4da53495" id="r_a32cc7ab28ebe9ec6269d70af4da53495"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32cc7ab28ebe9ec6269d70af4da53495">L_C</a> (self)</td></tr>
+<tr class="memdesc:a32cc7ab28ebe9ec6269d70af4da53495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list L_C defining the cell function spaces.  <br /></td></tr>
+<tr class="separator:a32cc7ab28ebe9ec6269d70af4da53495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691db72fd4ab2eea42e434c11accc482" id="r_a691db72fd4ab2eea42e434c11accc482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a691db72fd4ab2eea42e434c11accc482">L_F</a> (self)</td></tr>
+<tr class="memdesc:a691db72fd4ab2eea42e434c11accc482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list L_F defining the facet function spaces.  <br /></td></tr>
+<tr class="separator:a691db72fd4ab2eea42e434c11accc482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f44041162520fcbc40975a9633122d9" id="r_a3f44041162520fcbc40975a9633122d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f44041162520fcbc40975a9633122d9">fs_labels_C</a> (self)</td></tr>
+<tr class="memdesc:a3f44041162520fcbc40975a9633122d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of cell function space labels.  <br /></td></tr>
+<tr class="separator:a3f44041162520fcbc40975a9633122d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5c6c99524744da0f232c7bb86a1817" id="r_adf5c6c99524744da0f232c7bb86a1817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5c6c99524744da0f232c7bb86a1817">fs_labels_F</a> (self)</td></tr>
+<tr class="memdesc:adf5c6c99524744da0f232c7bb86a1817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of facet function space labels.  <br /></td></tr>
+<tr class="separator:adf5c6c99524744da0f232c7bb86a1817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11fb70dff267fb23f7b0ab3c58c8ae1" id="r_ae11fb70dff267fb23f7b0ab3c58c8ae1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11fb70dff267fb23f7b0ab3c58c8ae1">n_C</a> (self, ell)</td></tr>
+<tr class="memdesc:ae11fb70dff267fb23f7b0ab3c58c8ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of unknowns per cell for the ell-th cell function space :arg ell: index of function space  <br /></td></tr>
+<tr class="separator:ae11fb70dff267fb23f7b0ab3c58c8ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aa710517608ff8fe3ac51a4ff053cb" id="r_a51aa710517608ff8fe3ac51a4ff053cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51aa710517608ff8fe3ac51a4ff053cb">n_F</a> (self, ell)</td></tr>
+<tr class="memdesc:a51aa710517608ff8fe3ac51a4ff053cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of unknowns per cell for the ell-th facet function space :arg ell: index of function space  <br /></td></tr>
+<tr class="separator:a51aa710517608ff8fe3ac51a4ff053cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d0a07b79aaf85fa41a951e0fcd99df" id="r_ac5d0a07b79aaf85fa41a951e0fcd99df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5d0a07b79aaf85fa41a951e0fcd99df">A_CC</a> (self, k, ell, gamma)</td></tr>
+<tr class="memdesc:ac5d0a07b79aaf85fa41a951e0fcd99df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return matrix hat(A)_CC^{(k,ell); gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg gamma: power gamma, tuple of size dim.  <br /></td></tr>
+<tr class="separator:ac5d0a07b79aaf85fa41a951e0fcd99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc7b9bca774ba9abfeef1ffdb82b759" id="r_accc7b9bca774ba9abfeef1ffdb82b759"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accc7b9bca774ba9abfeef1ffdb82b759">A_CF</a> (self, k, ell, beta_ref, gamma)</td></tr>
+<tr class="memdesc:accc7b9bca774ba9abfeef1ffdb82b759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return matrix hat(A)_CF^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim.  <br /></td></tr>
+<tr class="separator:accc7b9bca774ba9abfeef1ffdb82b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514f49a722ab02e7c95aa32bb0bcf111" id="r_a514f49a722ab02e7c95aa32bb0bcf111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a514f49a722ab02e7c95aa32bb0bcf111">A_FC</a> (self, k, ell, beta_ref, gamma)</td></tr>
+<tr class="memdesc:a514f49a722ab02e7c95aa32bb0bcf111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return matrix hat(A)_FC^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim.  <br /></td></tr>
+<tr class="separator:a514f49a722ab02e7c95aa32bb0bcf111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba33f6a6abca76732595e68f6060f16" id="r_a7ba33f6a6abca76732595e68f6060f16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ba33f6a6abca76732595e68f6060f16">A_FF</a> (self, k, ell, beta_ref, gamma)</td></tr>
+<tr class="memdesc:a7ba33f6a6abca76732595e68f6060f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return matrix hat(A)_FF^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim.  <br /></td></tr>
+<tr class="separator:a7ba33f6a6abca76732595e68f6060f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c66efa8d86088b7ce933b0e79008fa3" id="r_a8c66efa8d86088b7ce933b0e79008fa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c66efa8d86088b7ce933b0e79008fa3">Xi_C</a> (self, ell)</td></tr>
+<tr class="memdesc:a8c66efa8d86088b7ce933b0e79008fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return nodal points of ell-th cell function space :arg ell: index of function space  <br /></td></tr>
+<tr class="separator:a8c66efa8d86088b7ce933b0e79008fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c7387def755b6b75c0d8ae4a0ef74d" id="r_ab0c7387def755b6b75c0d8ae4a0ef74d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c7387def755b6b75c0d8ae4a0ef74d">Xi_F</a> (self, ell, orientation)</td></tr>
+<tr class="memdesc:ab0c7387def755b6b75c0d8ae4a0ef74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return nodal points of ell-th cell function space :arg ell: index of function space :arg orientation: orientation of reference element  <br /></td></tr>
+<tr class="separator:ab0c7387def755b6b75c0d8ae4a0ef74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332c171bcf8dde1f9b897d5e465d2cf7" id="r_a332c171bcf8dde1f9b897d5e465d2cf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a332c171bcf8dde1f9b897d5e465d2cf7">print_dictionary</a> (self, input, indent=0)</td></tr>
+<tr class="memdesc:a332c171bcf8dde1f9b897d5e465d2cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualise nested dictionary.  <br /></td></tr>
+<tr class="separator:a332c171bcf8dde1f9b897d5e465d2cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aa7fa0ac116b137716c670b55145875b1" id="r_aa7fa0ac116b137716c670b55145875b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7fa0ac116b137716c670b55145875b1">dim</a></td></tr>
+<tr class="separator:aa7fa0ac116b137716c670b55145875b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab14880303cf22e642be3486dc47d6f39" id="r_ab14880303cf22e642be3486dc47d6f39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab14880303cf22e642be3486dc47d6f39">_L_C</a></td></tr>
+<tr class="separator:ab14880303cf22e642be3486dc47d6f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0613de898741d6c5b9500392605c7c85" id="r_a0613de898741d6c5b9500392605c7c85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0613de898741d6c5b9500392605c7c85">_L_F</a></td></tr>
+<tr class="separator:a0613de898741d6c5b9500392605c7c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9c50ef7e312802a858a74ba822c593" id="r_aca9c50ef7e312802a858a74ba822c593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9c50ef7e312802a858a74ba822c593">_A_CC</a></td></tr>
+<tr class="separator:aca9c50ef7e312802a858a74ba822c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8663d1cf668fbdcd255210e476625a" id="r_a1e8663d1cf668fbdcd255210e476625a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e8663d1cf668fbdcd255210e476625a">_A_CF</a></td></tr>
+<tr class="separator:a1e8663d1cf668fbdcd255210e476625a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034db57ddcce72e547f8e2225b7d848e" id="r_a034db57ddcce72e547f8e2225b7d848e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a034db57ddcce72e547f8e2225b7d848e">_A_FC</a></td></tr>
+<tr class="separator:a034db57ddcce72e547f8e2225b7d848e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a4803de384a17259b3a52d628a3135" id="r_af2a4803de384a17259b3a52d628a3135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a4803de384a17259b3a52d628a3135">_A_FF</a></td></tr>
+<tr class="separator:af2a4803de384a17259b3a52d628a3135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005fbd438cc9f5ce9f6d32e88b101d44" id="r_a005fbd438cc9f5ce9f6d32e88b101d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005fbd438cc9f5ce9f6d32e88b101d44">_fs_labels_C</a></td></tr>
+<tr class="separator:a005fbd438cc9f5ce9f6d32e88b101d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4f76a71f6756cc272d0fd421ff724d" id="r_a0d4f76a71f6756cc272d0fd421ff724d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d4f76a71f6756cc272d0fd421ff724d">_fs_labels_F</a></td></tr>
+<tr class="separator:a0d4f76a71f6756cc272d0fd421ff724d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29bf6bbeadec005c5576d02e762b294" id="r_ab29bf6bbeadec005c5576d02e762b294"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab29bf6bbeadec005c5576d02e762b294">_Xi_C</a></td></tr>
+<tr class="separator:ab29bf6bbeadec005c5576d02e762b294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6280d8a0a60725a3a3905f5b0482fdd" id="r_ae6280d8a0a60725a3a3905f5b0482fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6280d8a0a60725a3a3905f5b0482fdd">_Xi_F</a></td></tr>
+<tr class="separator:ae6280d8a0a60725a3a3905f5b0482fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for block matrix storage format, defining the interface. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00005">5</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7b9bf481a362f0d3c7862923d2ca78c6" name="a7b9bf481a362f0d3c7862923d2ca78c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9bf481a362f0d3c7862923d2ca78c6">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>basis</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise instance :arg dim: dimension :arg basis: nodal basis. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a05cc457cf2b643acfb35816f95628a5a">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix</a>, and <a class="el" href="../../d3/de6/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dPenaltyBlockMatrix_1_1DGPoisson2dPenaltyBlockMatrix.html#ab554c2e05ea78fd6b2ee3fb972a11c4d">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00008">8</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac5d0a07b79aaf85fa41a951e0fcd99df" name="ac5d0a07b79aaf85fa41a951e0fcd99df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d0a07b79aaf85fa41a951e0fcd99df">&#9670;&#160;</a></span>A_CC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_CC </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>gamma</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return matrix hat(A)_CC^{(k,ell); gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg gamma: power gamma, tuple of size dim. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00057">57</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00016">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_CC</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00068">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._A_CC</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00086">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._A_CC</a>.</p>
+
+</div>
+</div>
+<a id="accc7b9bca774ba9abfeef1ffdb82b759" name="accc7b9bca774ba9abfeef1ffdb82b759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc7b9bca774ba9abfeef1ffdb82b759">&#9670;&#160;</a></span>A_CF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_CF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>beta_ref</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>gamma</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return matrix hat(A)_CF^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00065">65</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00017">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_CF</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00070">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._A_CF</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00088">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._A_CF</a>.</p>
+
+</div>
+</div>
+<a id="a514f49a722ab02e7c95aa32bb0bcf111" name="a514f49a722ab02e7c95aa32bb0bcf111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514f49a722ab02e7c95aa32bb0bcf111">&#9670;&#160;</a></span>A_FC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_FC </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>beta_ref</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>gamma</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return matrix hat(A)_FC^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00074">74</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00018">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_FC</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00074">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._A_FC</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00092">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._A_FC</a>.</p>
+
+</div>
+</div>
+<a id="a7ba33f6a6abca76732595e68f6060f16" name="a7ba33f6a6abca76732595e68f6060f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba33f6a6abca76732595e68f6060f16">&#9670;&#160;</a></span>A_FF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_FF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>beta_ref</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>gamma</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return matrix hat(A)_FF^{(k,ell); beta_ref; gamma} :arg ell: second function space (from-space) :arg k: first function space (to-space) :arg beta_ref: type of facet :arg gamma: power gamma, tuple of size dim. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00083">83</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00019">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_FF</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00078">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._A_FF</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00096">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._A_FF</a>.</p>
+
+</div>
+</div>
+<a id="a3f44041162520fcbc40975a9633122d9" name="a3f44041162520fcbc40975a9633122d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f44041162520fcbc40975a9633122d9">&#9670;&#160;</a></span>fs_labels_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.fs_labels_C </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return list of cell function space labels. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00036">36</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00020">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._fs_labels_C</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00033">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._fs_labels_C</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00032">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._fs_labels_C</a>.</p>
+
+</div>
+</div>
+<a id="adf5c6c99524744da0f232c7bb86a1817" name="adf5c6c99524744da0f232c7bb86a1817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5c6c99524744da0f232c7bb86a1817">&#9670;&#160;</a></span>fs_labels_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.fs_labels_F </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return list of facet function space labels. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00041">41</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00021">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._fs_labels_F</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00034">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._fs_labels_F</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00033">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._fs_labels_F</a>.</p>
+
+</div>
+</div>
+<a id="a32cc7ab28ebe9ec6269d70af4da53495" name="a32cc7ab28ebe9ec6269d70af4da53495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cc7ab28ebe9ec6269d70af4da53495">&#9670;&#160;</a></span>L_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.L_C </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return list L_C defining the cell function spaces. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00026">26</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00014">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_C</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00031">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._L_C</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00030">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._L_C</a>.</p>
+
+</div>
+</div>
+<a id="a691db72fd4ab2eea42e434c11accc482" name="a691db72fd4ab2eea42e434c11accc482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691db72fd4ab2eea42e434c11accc482">&#9670;&#160;</a></span>L_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.L_F </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return list L_F defining the facet function spaces. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00031">31</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00015">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_F</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00032">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._L_F</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00031">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._L_F</a>.</p>
+
+</div>
+</div>
+<a id="ae11fb70dff267fb23f7b0ab3c58c8ae1" name="ae11fb70dff267fb23f7b0ab3c58c8ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11fb70dff267fb23f7b0ab3c58c8ae1">&#9670;&#160;</a></span>n_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_C </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of unknowns per cell for the ell-th cell function space :arg ell: index of function space </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00045">45</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00014">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_C</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00031">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._L_C</a>, <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00030">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._L_C</a>, <a class="el" href="../../db/d7f/datamodel_2Patch_8py_source.html#l00021">peano4.datamodel.Patch.Patch.dim</a>, <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00013">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.dim</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00073">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGScalarElement.dim</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00151">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGFacetElement.dim</a>, <a class="el" href="../../db/db7/IntergridOperatorsH_8py_source.html#l00010">mghype.api.matrixgenerators.blockmatrix.IntergridOperatorsH.IntergridOperatorsH.dim</a>, and <a class="el" href="../../d4/d15/nodal__basis_8py_source.html#l00016">mghype.api.matrixgenerators.blockmatrix.nodal_basis.NodalBasis.dim</a>.</p>
+
+</div>
+</div>
+<a id="a51aa710517608ff8fe3ac51a4ff053cb" name="a51aa710517608ff8fe3ac51a4ff053cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51aa710517608ff8fe3ac51a4ff053cb">&#9670;&#160;</a></span>n_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_F </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of unknowns per cell for the ell-th facet function space :arg ell: index of function space </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00051">51</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00015">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_F</a>, <a class="el" href="../../d2/d9d/DGPoisson2dBlockMatrix_8py_source.html#l00032">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dBlockMatrix.DGPoisson2dBlockMatrix._L_F</a>, <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00031">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._L_F</a>, <a class="el" href="../../db/d7f/datamodel_2Patch_8py_source.html#l00021">peano4.datamodel.Patch.Patch.dim</a>, <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00013">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.dim</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00073">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGScalarElement.dim</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00151">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGFacetElement.dim</a>, <a class="el" href="../../db/db7/IntergridOperatorsH_8py_source.html#l00010">mghype.api.matrixgenerators.blockmatrix.IntergridOperatorsH.IntergridOperatorsH.dim</a>, and <a class="el" href="../../d4/d15/nodal__basis_8py_source.html#l00016">mghype.api.matrixgenerators.blockmatrix.nodal_basis.NodalBasis.dim</a>.</p>
+
+</div>
+</div>
+<a id="a332c171bcf8dde1f9b897d5e465d2cf7" name="a332c171bcf8dde1f9b897d5e465d2cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332c171bcf8dde1f9b897d5e465d2cf7">&#9670;&#160;</a></span>print_dictionary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.print_dictionary </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>indent</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Visualise nested dictionary. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00106">106</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00106">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.print_dictionary()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00106">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.print_dictionary()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_cgraph.png" border="0" usemap="#ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_cgraph" alt=""/></div>
+<map name="ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_cgraph" id="ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_cgraph">
+<area shape="rect" title="Visualise nested dictionary." alt="" coords="5,29,308,84"/>
+<area shape="poly" title=" " alt="" coords="99,29,99,19,109,10,129,5,157,3,190,6,210,14,207,19,189,11,157,8,129,10,112,15,104,21,104,29"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_icgraph.png" border="0" usemap="#ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_icgraph" alt=""/></div>
+<map name="ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_icgraph" id="ade/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix_a332c171bcf8dde1f9b897d5e465d2cf7_icgraph">
+<area shape="rect" title="Visualise nested dictionary." alt="" coords="5,29,308,84"/>
+<area shape="poly" title=" " alt="" coords="207,19,189,11,157,8,129,10,112,15,104,21,104,29,99,29,99,19,109,10,129,5,157,3,190,6,210,14"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c66efa8d86088b7ce933b0e79008fa3" name="a8c66efa8d86088b7ce933b0e79008fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c66efa8d86088b7ce933b0e79008fa3">&#9670;&#160;</a></span>Xi_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.Xi_C </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return nodal points of ell-th cell function space :arg ell: index of function space </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00092">92</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00022">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._Xi_C</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00073">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._Xi_C</a>.</p>
+
+</div>
+</div>
+<a id="ab0c7387def755b6b75c0d8ae4a0ef74d" name="ab0c7387def755b6b75c0d8ae4a0ef74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c7387def755b6b75c0d8ae4a0ef74d">&#9670;&#160;</a></span>Xi_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.Xi_F </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>orientation</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return nodal points of ell-th cell function space :arg ell: index of function space :arg orientation: orientation of reference element </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00098">98</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00023">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._Xi_F</a>, and <a class="el" href="../../d5/da6/DGPoisson2dPenaltyBlockMatrix_8py_source.html#l00080">mghype.api.matrixgenerators.blockmatrix.DGPoisson2dPenaltyBlockMatrix.DGPoisson2dPenaltyBlockMatrix._Xi_F</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aca9c50ef7e312802a858a74ba822c593" name="aca9c50ef7e312802a858a74ba822c593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9c50ef7e312802a858a74ba822c593">&#9670;&#160;</a></span>_A_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_CC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00016">16</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00057">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_CC()</a>.</p>
+
+</div>
+</div>
+<a id="a1e8663d1cf668fbdcd255210e476625a" name="a1e8663d1cf668fbdcd255210e476625a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8663d1cf668fbdcd255210e476625a">&#9670;&#160;</a></span>_A_CF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_CF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00017">17</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00065">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_CF()</a>.</p>
+
+</div>
+</div>
+<a id="a034db57ddcce72e547f8e2225b7d848e" name="a034db57ddcce72e547f8e2225b7d848e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034db57ddcce72e547f8e2225b7d848e">&#9670;&#160;</a></span>_A_FC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_FC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00018">18</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00074">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_FC()</a>.</p>
+
+</div>
+</div>
+<a id="af2a4803de384a17259b3a52d628a3135" name="af2a4803de384a17259b3a52d628a3135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a4803de384a17259b3a52d628a3135">&#9670;&#160;</a></span>_A_FF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._A_FF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00019">19</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00083">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.A_FF()</a>.</p>
+
+</div>
+</div>
+<a id="a005fbd438cc9f5ce9f6d32e88b101d44" name="a005fbd438cc9f5ce9f6d32e88b101d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005fbd438cc9f5ce9f6d32e88b101d44">&#9670;&#160;</a></span>_fs_labels_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._fs_labels_C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00020">20</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00036">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.fs_labels_C()</a>.</p>
+
+</div>
+</div>
+<a id="a0d4f76a71f6756cc272d0fd421ff724d" name="a0d4f76a71f6756cc272d0fd421ff724d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4f76a71f6756cc272d0fd421ff724d">&#9670;&#160;</a></span>_fs_labels_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._fs_labels_F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00021">21</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00041">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.fs_labels_F()</a>.</p>
+
+</div>
+</div>
+<a id="ab14880303cf22e642be3486dc47d6f39" name="ab14880303cf22e642be3486dc47d6f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14880303cf22e642be3486dc47d6f39">&#9670;&#160;</a></span>_L_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00014">14</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00026">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.L_C()</a>, and <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00045">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_C()</a>.</p>
+
+</div>
+</div>
+<a id="a0613de898741d6c5b9500392605c7c85" name="a0613de898741d6c5b9500392605c7c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0613de898741d6c5b9500392605c7c85">&#9670;&#160;</a></span>_L_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._L_F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00015">15</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00031">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.L_F()</a>, and <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00051">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_F()</a>.</p>
+
+</div>
+</div>
+<a id="ab29bf6bbeadec005c5576d02e762b294" name="ab29bf6bbeadec005c5576d02e762b294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29bf6bbeadec005c5576d02e762b294">&#9670;&#160;</a></span>_Xi_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._Xi_C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00022">22</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00092">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.Xi_C()</a>.</p>
+
+</div>
+</div>
+<a id="ae6280d8a0a60725a3a3905f5b0482fdd" name="ae6280d8a0a60725a3a3905f5b0482fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6280d8a0a60725a3a3905f5b0482fdd">&#9670;&#160;</a></span>_Xi_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix._Xi_F</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00023">23</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00098">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.Xi_F()</a>.</p>
+
+</div>
+</div>
+<a id="aa7fa0ac116b137716c670b55145875b1" name="aa7fa0ac116b137716c670b55145875b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7fa0ac116b137716c670b55145875b1">&#9670;&#160;</a></span>dim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00013">13</a> of file <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7f/datamodel_2Patch_8py_source.html#l00028">peano4.datamodel.Patch.Patch.__str__()</a>, <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00045">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_C()</a>, <a class="el" href="../../d8/d56/BlockMatrix_8py_source.html#l00051">mghype.api.matrixgenerators.blockmatrix.BlockMatrix.BlockMatrix.n_F()</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00078">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGScalarElement.ndof()</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00156">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGFacetElement.ndof()</a>, <a class="el" href="../../d4/d42/finiteelement_8py_source.html#l00121">mghype.api.matrixgenerators.blockmatrix.finiteelement.DGScalarElement.nodes()</a>, and <a class="el" href="../../db/db7/IntergridOperatorsH_8py_source.html#l00016">mghype.api.matrixgenerators.blockmatrix.IntergridOperatorsH.IntergridOperatorsH.prolongation()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/mghype/api/matrixgenerators/blockmatrix/<a class="el" href="../../d8/d56/BlockMatrix_8py_source.html">BlockMatrix.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/df6/namespacemghype.html">mghype</a></li><li class="navelem"><a class="el" href="../../da/d45/namespacemghype_1_1api.html">api</a></li><li class="navelem"><a class="el" href="../../d7/df9/namespacemghype_1_1api_1_1matrixgenerators.html">matrixgenerators</a></li><li class="navelem"><a class="el" href="../../dd/d96/namespacemghype_1_1api_1_1matrixgenerators_1_1blockmatrix.html">blockmatrix</a></li><li class="navelem"><a class="el" href="../../d2/d41/namespacemghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix.html">BlockMatrix</a></li><li class="navelem"><a class="el" href="../../de/d12/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1BlockMatrix_1_1BlockMatrix.html">BlockMatrix</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:01 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

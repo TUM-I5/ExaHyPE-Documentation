@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::tests::TreeTestCaseCollection Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for tarch::tests::TreeTestCaseCollection:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d69/classtarch_1_1tests_1_1TreeTestCaseCollection__inherit__graph.png" border="0" usemap="#atarch_1_1tests_1_1TreeTestCaseCollection_inherit__map" alt="Inheritance graph"/></div>
+<map name="atarch_1_1tests_1_1TreeTestCaseCollection_inherit__map" id="atarch_1_1tests_1_1TreeTestCaseCollection_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,193,119"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html" title="Represents one test case." alt="" coords="19,5,180,31"/>
+<area shape="poly" title=" " alt="" coords="102,44,102,79,97,79,97,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for tarch::tests::TreeTestCaseCollection:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d2f/classtarch_1_1tests_1_1TreeTestCaseCollection__coll__graph.png" border="0" usemap="#atarch_1_1tests_1_1TreeTestCaseCollection_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1tests_1_1TreeTestCaseCollection_coll__map" id="atarch_1_1tests_1_1TreeTestCaseCollection_coll__map">
+<area shape="rect" title=" " alt="" coords="1071,58,1259,98"/>
+<area shape="rect" title=" " alt="" coords="1375,96,1567,151"/>
+<area shape="poly" title=" " alt="" coords="1219,101,1250,113,1283,122,1329,128,1374,129,1374,134,1328,133,1282,127,1249,118,1217,106"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html" title="Represents one test case." alt="" coords="436,89,597,115"/>
+<area shape="poly" title=" " alt="" coords="611,86,621,85,743,77,864,74,1071,73,1071,79,865,79,743,83,622,90,611,91"/>
+<area shape="rect" title=" " alt="" coords="788,102,947,142"/>
+<area shape="poly" title=" " alt="" coords="611,105,788,115,787,120,611,110"/>
+<area shape="rect" title=" " alt="" coords="193,89,280,115"/>
+<area shape="poly" title=" " alt="" coords="294,99,436,99,436,105,294,105"/>
+<area shape="poly" title=" " alt="" coords="278,118,325,137,384,157,449,172,515,178,1166,178,1220,175,1274,169,1374,148,1375,153,1275,174,1220,181,1166,183,515,183,448,177,382,162,323,142,276,123"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="621,5,764,31"/>
+<area shape="poly" title=" " alt="" coords="289,83,303,79,474,46,621,24,622,29,475,51,305,85,291,88"/>
+<area shape="rect" title=" " alt="" coords="5,82,144,122"/>
+<area shape="poly" title=" " alt="" coords="157,99,193,99,193,105,157,105"/>
+<area shape="poly" title=" " alt="" coords="960,108,1046,95,1070,92,1071,97,1047,101,961,113"/>
+<area shape="poly" title=" " alt="" coords="1360,110,1259,95,1259,89,1361,104"/>
+<area shape="poly" title=" " alt="" coords="778,18,905,26,1047,43,1099,55,1098,60,1046,49,905,31,777,23"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a711cebcd3dba954a5a1ed3b9bf7a931d" id="r_a711cebcd3dba954a5a1ed3b9bf7a931d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a711cebcd3dba954a5a1ed3b9bf7a931d">TreeTestCaseCollection</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseCollectionName=&quot;&quot;, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> deleteTestCases=true, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> writeToLog=true)</td></tr>
+<tr class="memdesc:a711cebcd3dba954a5a1ed3b9bf7a931d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a test case collection.  <br /></td></tr>
+<tr class="separator:a711cebcd3dba954a5a1ed3b9bf7a931d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473b055ceec2c5ee34eb1696f6f999a6" id="r_a473b055ceec2c5ee34eb1696f6f999a6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a473b055ceec2c5ee34eb1696f6f999a6">~TreeTestCaseCollection</a> ()</td></tr>
+<tr class="memdesc:a473b055ceec2c5ee34eb1696f6f999a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a473b055ceec2c5ee34eb1696f6f999a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29de05636580ab976a36a1a205c30575" id="r_a29de05636580ab976a36a1a205c30575"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29de05636580ab976a36a1a205c30575">run</a> ()</td></tr>
+<tr class="memdesc:a29de05636580ab976a36a1a205c30575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all test cases assigned.  <br /></td></tr>
+<tr class="separator:a29de05636580ab976a36a1a205c30575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b99b48026534cc5bdd5c663540288f2" id="r_a7b99b48026534cc5bdd5c663540288f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b99b48026534cc5bdd5c663540288f2">run</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;prefix)</td></tr>
+<tr class="memdesc:a7b99b48026534cc5bdd5c663540288f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all test cases assigned.  <br /></td></tr>
+<tr class="separator:a7b99b48026534cc5bdd5c663540288f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221ed543b82f7c82d46b5368cf99b040" id="r_a221ed543b82f7c82d46b5368cf99b040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a221ed543b82f7c82d46b5368cf99b040">addTestCase</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;fullQualifiedPath, <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a> *testCase)</td></tr>
+<tr class="memdesc:a221ed543b82f7c82d46b5368cf99b040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new test case.  <br /></td></tr>
+<tr class="separator:a221ed543b82f7c82d46b5368cf99b040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a1e1d9d728301753e2811806bfa7a9" id="r_a36a1e1d9d728301753e2811806bfa7a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36a1e1d9d728301753e2811806bfa7a9">addTestCase</a> (<a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a> *testCase)</td></tr>
+<tr class="memdesc:a36a1e1d9d728301753e2811806bfa7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above, but fully qualified test case name is extracted from passed object.  <br /></td></tr>
+<tr class="separator:a36a1e1d9d728301753e2811806bfa7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a0f4b1de752852aac3eb0e8c7f1cc04d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a0f4b1de752852aac3eb0e8c7f1cc04d5">TestCase</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseName)</td></tr>
+<tr class="memdesc:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a0f4b1de752852aac3eb0e8c7f1cc04d5 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a0491a7ab979e452aacaa8abd9ce55466"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a0491a7ab979e452aacaa8abd9ce55466">~TestCase</a> ()</td></tr>
+<tr class="memdesc:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a0491a7ab979e452aacaa8abd9ce55466 inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032d565b3670f9855380438add55dbfd inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_a032d565b3670f9855380438add55dbfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a032d565b3670f9855380438add55dbfd">getNumberOfErrors</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a032d565b3670f9855380438add55dbfd inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac816e9f7b8406f3e24ca61eb64d16d8c inherit pub_methods_classtarch_1_1tests_1_1TestCase" id="r_ac816e9f7b8406f3e24ca61eb64d16d8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#ac816e9f7b8406f3e24ca61eb64d16d8c">getTestCaseName</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ac816e9f7b8406f3e24ca61eb64d16d8c inherit pub_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a1210f54314632bc96534343c4c470f50" id="r_a1210f54314632bc96534343c4c470f50"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1210f54314632bc96534343c4c470f50">isNameWithoutHierarchy</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseName)</td></tr>
+<tr class="separator:a1210f54314632bc96534343c4c470f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac620e5b39bffea990bf6e8546866d566" id="r_ac620e5b39bffea990bf6e8546866d566"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac620e5b39bffea990bf6e8546866d566">getFirstIdentifierInHierarchy</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseName)</td></tr>
+<tr class="separator:ac620e5b39bffea990bf6e8546866d566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6358a4ebd577d3317c489c46f1e4b4" id="r_a0f6358a4ebd577d3317c489c46f1e4b4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f6358a4ebd577d3317c489c46f1e4b4">getRemainingPathWithoutIdentifier</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;testCaseName)</td></tr>
+<tr class="separator:a0f6358a4ebd577d3317c489c46f1e4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6fa62c036b929702df121558251373e9" id="r_a6fa62c036b929702df121558251373e9"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fa62c036b929702df121558251373e9">_testCases</a></td></tr>
+<tr class="memdesc:a6fa62c036b929702df121558251373e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of test cases that are executes on a <a class="el" href="#a29de05636580ab976a36a1a205c30575" title="Runs all test cases assigned.">run()</a> call.  <br /></td></tr>
+<tr class="separator:a6fa62c036b929702df121558251373e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18387b52ba21f85404a3289890f1b13" id="r_ac18387b52ba21f85404a3289890f1b13"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html">TreeTestCaseCollection</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18387b52ba21f85404a3289890f1b13">_subTests</a></td></tr>
+<tr class="separator:ac18387b52ba21f85404a3289890f1b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afccc1b22873720073b5bc30589beff" id="r_a6afccc1b22873720073b5bc30589beff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6afccc1b22873720073b5bc30589beff">_writeToLog</a></td></tr>
+<tr class="memdesc:a6afccc1b22873720073b5bc30589beff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the collection wheather to log a progression bar.  <br /></td></tr>
+<tr class="separator:a6afccc1b22873720073b5bc30589beff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b904cd4b2cf75559632b433ef2e030" id="r_a51b904cd4b2cf75559632b433ef2e030"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b904cd4b2cf75559632b433ef2e030">_deleteTestCases</a></td></tr>
+<tr class="memdesc:a51b904cd4b2cf75559632b433ef2e030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells whether the testcases contained should be deleted uppon destruction of this object.  <br /></td></tr>
+<tr class="separator:a51b904cd4b2cf75559632b433ef2e030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3edf0a579c8e6a7402d492d3f2c8c5cb" id="r_a3edf0a579c8e6a7402d492d3f2c8c5cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3edf0a579c8e6a7402d492d3f2c8c5cb">_log</a></td></tr>
+<tr class="memdesc:a3edf0a579c8e6a7402d492d3f2c8c5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log interface the class writes to.  <br /></td></tr>
+<tr class="separator:a3edf0a579c8e6a7402d492d3f2c8c5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:a74a50f48c8d902e063c94647d5a057d9 inherit pro_methods_classtarch_1_1tests_1_1TestCase" id="r_a74a50f48c8d902e063c94647d5a057d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a74a50f48c8d902e063c94647d5a057d9">TestCase</a> ()=delete</td></tr>
+<tr class="separator:a74a50f48c8d902e063c94647d5a057d9 inherit pro_methods_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classtarch_1_1tests_1_1TestCase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classtarch_1_1tests_1_1TestCase')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a></td></tr>
+<tr class="memitem:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_ae1114b8279a89e3c231ac2251dde25c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#ae1114b8279a89e3c231ac2251dde25c8">_testCaseName</a></td></tr>
+<tr class="memdesc:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the test case.  <br /></td></tr>
+<tr class="separator:ae1114b8279a89e3c231ac2251dde25c8 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_a8ba818a0bc030040a5e62326fb6583cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a8ba818a0bc030040a5e62326fb6583cc">_errors</a></td></tr>
+<tr class="memdesc:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error counter.  <br /></td></tr>
+<tr class="separator:a8ba818a0bc030040a5e62326fb6583cc inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase" id="r_a44ec779329ab2d39cdbdb04f2e634eb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a44ec779329ab2d39cdbdb04f2e634eb4">_error</a></td></tr>
+<tr class="memdesc:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate within macro if one specific validation failed.  <br /></td></tr>
+<tr class="separator:a44ec779329ab2d39cdbdb04f2e634eb4 inherit pro_attribs_classtarch_1_1tests_1_1TestCase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl </dd>
+<dd>
+Wolfgang Eckhardt </dd></dl>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+<dl class="section rcs"><dt>Revision</dt><dd>1.7 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00024">24</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a711cebcd3dba954a5a1ed3b9bf7a931d" name="a711cebcd3dba954a5a1ed3b9bf7a931d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711cebcd3dba954a5a1ed3b9bf7a931d">&#9670;&#160;</a></span>TreeTestCaseCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::tests::TreeTestCaseCollection::TreeTestCaseCollection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>testCaseCollectionName</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>deleteTestCases</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>writeToLog</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a test case collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">testCaseCollectionName</td><td>Name of the test case collection. May not contain ::. If you pass in the empty string "", it is a mere container. It still runs all sub test cases, but it does not dump any progress info on this particular package: Usually you get <pre class="fragment">  a.b.c ... ok
+  a.b ... ok
+  a ... pass (no local tests)
+</pre> If a is "", then no message is written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, and <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00033">isNameWithoutHierarchy()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a711cebcd3dba954a5a1ed3b9bf7a931d_cgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a711cebcd3dba954a5a1ed3b9bf7a931d_cgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a711cebcd3dba954a5a1ed3b9bf7a931d_cgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a711cebcd3dba954a5a1ed3b9bf7a931d_cgraph">
+<area shape="rect" title="Creates a test case collection." alt="" coords="5,5,251,45"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a1210f54314632bc96534343c4c470f50" title=" " alt="" coords="299,5,557,45"/>
+<area shape="poly" title=" " alt="" coords="251,23,285,23,285,28,251,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a473b055ceec2c5ee34eb1696f6f999a6" name="a473b055ceec2c5ee34eb1696f6f999a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473b055ceec2c5ee34eb1696f6f999a6">&#9670;&#160;</a></span>~TreeTestCaseCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::tests::TreeTestCaseCollection::~TreeTestCaseCollection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a221ed543b82f7c82d46b5368cf99b040" name="a221ed543b82f7c82d46b5368cf99b040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221ed543b82f7c82d46b5368cf99b040">&#9670;&#160;</a></span>addTestCase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::tests::TreeTestCaseCollection::addTestCase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fullQualifiedPath</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a> *</td>          <td class="paramname"><span class="paramname"><em>testCase</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new test case. </p>
+<p>Although you pass a pointer, you are still responsible for the instance management.</p>
+<p>You have to specify in the constructor of a <a class="el" href="../../d4/d12/classtarch_1_1tests_1_1TestCaseCollection.html" title="Contains a sequence of tests which have to be executed sequentially.">TestCaseCollection</a> whether it should delete testcases contained on construction.</p>
+<p>@Note: default is set to false (i.e. no destruction) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d7c/exahype2_2UnitTests_8cpp_source.html#l00022">exahype2::getUnitTests()</a>, <a class="el" href="../../da/d63/peano4_2UnitTests_8cpp_source.html#l00013">peano4::getUnitTests()</a>, <a class="el" href="../../df/d42/tarch_2UnitTests_8cpp_source.html#l00017">tarch::getUnitTests()</a>, <a class="el" href="../../d5/dc4/toolbox_2blockstructured_2UnitTests_8cpp_source.html#l00010">toolbox::blockstructured::getUnitTests()</a>, <a class="el" href="../../d9/d41/toolbox_2particles_2assignmentchecks_2UnitTests_8cpp_source.html#l00007">toolbox::particles::assignmentchecks::getUnitTests()</a>, <a class="el" href="../../d6/db4/toolbox_2particles_2UnitTests_8cpp_source.html#l00012">toolbox::particles::getUnitTests()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a221ed543b82f7c82d46b5368cf99b040_icgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a221ed543b82f7c82d46b5368cf99b040_icgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a221ed543b82f7c82d46b5368cf99b040_icgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a221ed543b82f7c82d46b5368cf99b040_icgraph">
+<area shape="rect" title="Adds a new test case." alt="" coords="460,155,648,195"/>
+<area shape="rect" href="../../dd/d6c/namespaceexahype2.html#ab7f7575f22b7e7469896e386fafbf1f9" title="Please destroy after usage." alt="" coords="235,220,409,245"/>
+<area shape="poly" title=" " alt="" coords="460,201,375,223,373,217,459,196"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,105,173,131"/>
+<area shape="poly" title=" " alt="" coords="459,155,412,146,278,130,173,122,174,117,278,125,412,141,460,150"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a3280be3718a894b8eff4fb301faa76a3" title="Please destroy after usage." alt="" coords="243,55,401,80"/>
+<area shape="poly" title=" " alt="" coords="506,151,411,102,362,83,364,78,413,97,508,146"/>
+<area shape="rect" href="../../da/d6a/namespacetarch.html#a090c6cb8e730a266ed1a2a8b11c99702" title="Please destroy after usage." alt="" coords="250,5,394,31"/>
+<area shape="poly" title=" " alt="" coords="526,146,476,94,445,67,411,44,385,33,387,28,413,40,448,63,480,90,530,143"/>
+<area shape="rect" href="../../d1/d28/namespacetoolbox_1_1blockstructured.html#ade45751355941726fa9042a483aad1df" title="Please destroy after usage." alt="" coords="232,155,412,195"/>
+<area shape="poly" title=" " alt="" coords="446,178,412,178,412,173,446,173"/>
+<area shape="rect" href="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html#af71e39d0e291d1131189533a4636f84f" title="Please destroy after usage." alt="" coords="243,335,401,389"/>
+<area shape="poly" title=" " alt="" coords="531,208,480,266,448,296,414,324,393,337,390,332,410,320,445,292,476,262,527,205"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#a75c97578e61400327b1bea2e77c52056" title="Please destroy after usage." alt="" coords="255,270,389,310"/>
+<area shape="poly" title=" " alt="" coords="512,205,465,233,413,260,385,272,383,268,411,256,463,228,509,200"/>
+<area shape="poly" title=" " alt="" coords="246,217,231,210,206,192,185,171,154,133,158,129,189,167,210,188,233,205,248,213"/>
+<area shape="rect" href="../../d0/d12/src_2unittests_2main_8cpp.html#a2dcdccc8a8ededb7804d00ba921edb73" title=" " alt="" coords="108,248,184,273"/>
+<area shape="poly" title=" " alt="" coords="229,250,184,257,184,252,228,245"/>
+<area shape="poly" title=" " alt="" coords="265,86,175,113,173,108,263,81"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a5dcb537699bebb9e9db36ab19c5aacf7" title=" " alt="" coords="108,31,184,56"/>
+<area shape="poly" title=" " alt="" coords="229,57,184,51,185,46,230,52"/>
+<area shape="rect" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="poly" title=" " alt="" coords="247,38,233,44,191,76,160,107,156,103,187,71,231,40,245,33"/>
+<area shape="poly" title=" " alt="" coords="237,33,185,41,184,35,236,28"/>
+<area shape="poly" title=" " alt="" coords="246,154,173,129,175,124,248,148"/>
+<area shape="poly" title=" " alt="" coords="248,203,233,210,167,250,164,245,231,205,246,198"/>
+<area shape="poly" title=" " alt="" coords="242,331,231,324,161,276,164,271,233,320,245,326"/>
+<area shape="poly" title=" " alt="" coords="241,279,184,270,185,264,241,274"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36a1e1d9d728301753e2811806bfa7a9" name="a36a1e1d9d728301753e2811806bfa7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a1e1d9d728301753e2811806bfa7a9">&#9670;&#160;</a></span>addTestCase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::tests::TreeTestCaseCollection::addTestCase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a> *</td>          <td class="paramname"><span class="paramname"><em>testCase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Same as above, but fully qualified test case name is extracted from passed object. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/d57/TestCase_8cpp_source.html#l00015">tarch::tests::TestCase::getTestCaseName()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a36a1e1d9d728301753e2811806bfa7a9_cgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a36a1e1d9d728301753e2811806bfa7a9_cgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a36a1e1d9d728301753e2811806bfa7a9_cgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a36a1e1d9d728301753e2811806bfa7a9_cgraph">
+<area shape="rect" title="Same as above, but fully qualified test case name is extracted from passed object." alt="" coords="5,5,193,45"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#ac816e9f7b8406f3e24ca61eb64d16d8c" title=" " alt="" coords="241,5,403,45"/>
+<area shape="poly" title=" " alt="" coords="194,23,228,23,228,28,194,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac620e5b39bffea990bf6e8546866d566" name="ac620e5b39bffea990bf6e8546866d566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac620e5b39bffea990bf6e8546866d566">&#9670;&#160;</a></span>getFirstIdentifierInHierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::tests::TreeTestCaseCollection::getFirstIdentifierInHierarchy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>testCaseName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>.</p>
+
+</div>
+</div>
+<a id="a0f6358a4ebd577d3317c489c46f1e4b4" name="a0f6358a4ebd577d3317c489c46f1e4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6358a4ebd577d3317c489c46f1e4b4">&#9670;&#160;</a></span>getRemainingPathWithoutIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::tests::TreeTestCaseCollection::getRemainingPathWithoutIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>testCaseName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<a id="a1210f54314632bc96534343c4c470f50" name="a1210f54314632bc96534343c4c470f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1210f54314632bc96534343c4c470f50">&#9670;&#160;</a></span>isNameWithoutHierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::tests::TreeTestCaseCollection::isNameWithoutHierarchy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>testCaseName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00011">TreeTestCaseCollection()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a1210f54314632bc96534343c4c470f50_icgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a1210f54314632bc96534343c4c470f50_icgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a1210f54314632bc96534343c4c470f50_icgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a1210f54314632bc96534343c4c470f50_icgraph">
+<area shape="rect" title=" " alt="" coords="299,5,557,45"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a711cebcd3dba954a5a1ed3b9bf7a931d" title="Creates a test case collection." alt="" coords="5,5,251,45"/>
+<area shape="poly" title=" " alt="" coords="285,28,251,28,251,23,285,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29de05636580ab976a36a1a205c30575" name="a29de05636580ab976a36a1a205c30575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29de05636580ab976a36a1a205c30575">&#9670;&#160;</a></span>run() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::tests::TreeTestCaseCollection::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs all test cases assigned. </p>
+
+<p>Implements <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a89a48cb757104625eb04adce6a782158">tarch::tests::TestCase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a29de05636580ab976a36a1a205c30575_icgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a29de05636580ab976a36a1a205c30575_icgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a29de05636580ab976a36a1a205c30575_icgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a29de05636580ab976a36a1a205c30575_icgraph">
+<area shape="rect" title="Runs all test cases assigned." alt="" coords="108,5,296,45"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b99b48026534cc5bdd5c663540288f2" name="a7b99b48026534cc5bdd5c663540288f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b99b48026534cc5bdd5c663540288f2">&#9670;&#160;</a></span>run() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::tests::TreeTestCaseCollection::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs all test cases assigned. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/d57/TestCase_8cpp_source.html#l00011">tarch::tests::TestCase::getNumberOfErrors()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>, and <a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a89a48cb757104625eb04adce6a782158">tarch::tests::TestCase::run()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a7b99b48026534cc5bdd5c663540288f2_cgraph.png" border="0" usemap="#ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a7b99b48026534cc5bdd5c663540288f2_cgraph" alt=""/></div>
+<map name="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a7b99b48026534cc5bdd5c663540288f2_cgraph" id="ad7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection_a7b99b48026534cc5bdd5c663540288f2_cgraph">
+<area shape="rect" title="Runs all test cases assigned." alt="" coords="5,35,193,75"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a032d565b3670f9855380438add55dbfd" title=" " alt="" coords="256,5,417,45"/>
+<area shape="poly" title=" " alt="" coords="193,40,242,34,243,40,194,46"/>
+<area shape="rect" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html#a89a48cb757104625eb04adce6a782158" title="This routine is triggered by the TestCaseCollection." alt="" coords="241,70,432,95"/>
+<area shape="poly" title=" " alt="" coords="194,63,228,67,227,72,193,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a51b904cd4b2cf75559632b433ef2e030" name="a51b904cd4b2cf75559632b433ef2e030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b904cd4b2cf75559632b433ef2e030">&#9670;&#160;</a></span>_deleteTestCases</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::tests::TreeTestCaseCollection::_deleteTestCases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells whether the testcases contained should be deleted uppon destruction of this object. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00046">46</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+
+</div>
+</div>
+<a id="a3edf0a579c8e6a7402d492d3f2c8c5cb" name="a3edf0a579c8e6a7402d492d3f2c8c5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edf0a579c8e6a7402d492d3f2c8c5cb">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> tarch::tests::TreeTestCaseCollection::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log interface the class writes to. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00041">41</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+
+</div>
+</div>
+<a id="ac18387b52ba21f85404a3289890f1b13" name="ac18387b52ba21f85404a3289890f1b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18387b52ba21f85404a3289890f1b13">&#9670;&#160;</a></span>_subTests</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html">TreeTestCaseCollection</a>*&gt; tarch::tests::TreeTestCaseCollection::_subTests</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00031">31</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+
+</div>
+</div>
+<a id="a6fa62c036b929702df121558251373e9" name="a6fa62c036b929702df121558251373e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa62c036b929702df121558251373e9">&#9670;&#160;</a></span>_testCases</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">TestCase</a>*&gt; tarch::tests::TreeTestCaseCollection::_testCases</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sequence of test cases that are executes on a <a class="el" href="#a29de05636580ab976a36a1a205c30575" title="Runs all test cases assigned.">run()</a> call. </p>
+<p>The class is not responsible for destroying them. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00030">30</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+
+</div>
+</div>
+<a id="a6afccc1b22873720073b5bc30589beff" name="a6afccc1b22873720073b5bc30589beff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afccc1b22873720073b5bc30589beff">&#9670;&#160;</a></span>_writeToLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::tests::TreeTestCaseCollection::_writeToLog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the collection wheather to log a progression bar. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html#l00036">36</a> of file <a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/tests/<a class="el" href="../../db/d3b/TreeTestCaseCollection_8h_source.html">TreeTestCaseCollection.h</a></li>
+<li>src/tarch/tests/<a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html">TreeTestCaseCollection.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d8/d6c/namespacetarch_1_1tests.html">tests</a></li><li class="navelem"><a class="el" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html">TreeTestCaseCollection</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:59 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

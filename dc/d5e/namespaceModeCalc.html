@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/d5e/namespaceModeCalc.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">ModeCalc Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a676a7091d4ed74cf0029ab8e58417209" id="r_a676a7091d4ed74cf0029ab8e58417209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a676a7091d4ed74cf0029ab8e58417209">arctan2_2pi</a> (yy, xx)</td></tr>
+<tr class="separator:a676a7091d4ed74cf0029ab8e58417209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa964f80dfe2393c1024c6ee4726367d8" id="r_aa964f80dfe2393c1024c6ee4726367d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa964f80dfe2393c1024c6ee4726367d8">sph_design</a> (func, t=5, author='Hardin', **kwargs)</td></tr>
+<tr class="separator:aa964f80dfe2393c1024c6ee4726367d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1713e73973dbaae916c2d93ae40aa7" id="r_a9c1713e73973dbaae916c2d93ae40aa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1713e73973dbaae916c2d93ae40aa7">gauss_legendre</a> (func, N=40, x_low=0, x_up=<a class="el" href="#adb0356e6175763125295e2524a42b6a6">pi</a>, **kwargs)</td></tr>
+<tr class="memdesc:a9c1713e73973dbaae916c2d93ae40aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss-Legendre 1D integration.  <br /></td></tr>
+<tr class="separator:a9c1713e73973dbaae916c2d93ae40aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271a04200f7324c39486dbe49b0cd37b" id="r_a271a04200f7324c39486dbe49b0cd37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a271a04200f7324c39486dbe49b0cd37b">trapezoidal</a> (func, N=40, x_low=0, x_up=<a class="el" href="#adb0356e6175763125295e2524a42b6a6">pi</a>, **kwargs)</td></tr>
+<tr class="memdesc:a271a04200f7324c39486dbe49b0cd37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss 1D integration.  <br /></td></tr>
+<tr class="separator:a271a04200f7324c39486dbe49b0cd37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18238df126843b05326388e77bf7191" id="r_ac18238df126843b05326388e77bf7191"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac18238df126843b05326388e77bf7191">prod_quad</a> (func, N=20, M=40, **kwargs)</td></tr>
+<tr class="memdesc:ac18238df126843b05326388e77bf7191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gaussian product quadrature using Trapezoidal for azimuthal direction and Gauss-Legendre for polar angle.  <br /></td></tr>
+<tr class="separator:ac18238df126843b05326388e77bf7191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84219f92002454a2433429e817bdc764" id="r_a84219f92002454a2433429e817bdc764"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84219f92002454a2433429e817bdc764">file_len</a> (fname)</td></tr>
+<tr class="separator:a84219f92002454a2433429e817bdc764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adb0356e6175763125295e2524a42b6a6" id="r_adb0356e6175763125295e2524a42b6a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb0356e6175763125295e2524a42b6a6">pi</a> = np.pi</td></tr>
+<tr class="separator:adb0356e6175763125295e2524a42b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1758e4ec9e9220691c17e3443b57d2" id="r_a5b1758e4ec9e9220691c17e3443b57d2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1758e4ec9e9220691c17e3443b57d2">scheme</a> = &quot;t-design&quot;</td></tr>
+<tr class="memdesc:a5b1758e4ec9e9220691c17e3443b57d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">main code scheme="Gauss_Legendre"  <br /></td></tr>
+<tr class="separator:a5b1758e4ec9e9220691c17e3443b57d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1aeb22a74259f6d23ae1b31c127d62" id="r_a8a1aeb22a74259f6d23ae1b31c127d62"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a1aeb22a74259f6d23ae1b31c127d62">file_name</a> = &quot;zz.csv&quot;</td></tr>
+<tr class="separator:a8a1aeb22a74259f6d23ae1b31c127d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd853fb535ac722c8a18f5bc299c017a" id="r_afd853fb535ac722c8a18f5bc299c017a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd853fb535ac722c8a18f5bc299c017a">f</a> = open(<a class="el" href="#a8a1aeb22a74259f6d23ae1b31c127d62">file_name</a>)</td></tr>
+<tr class="separator:afd853fb535ac722c8a18f5bc299c017a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9d7a9add1f6f6b34c248e4420e2919" id="r_a2f9d7a9add1f6f6b34c248e4420e2919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f9d7a9add1f6f6b34c248e4420e2919">dat</a> = f.readlines()[1:]</td></tr>
+<tr class="separator:a2f9d7a9add1f6f6b34c248e4420e2919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f104b44daf4e5c9c698e34710a50b8b" id="r_a6f104b44daf4e5c9c698e34710a50b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a> = 0</td></tr>
+<tr class="separator:a6f104b44daf4e5c9c698e34710a50b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d792b7ca3e773cac4e8fd3836d746c" id="r_a90d792b7ca3e773cac4e8fd3836d746c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d792b7ca3e773cac4e8fd3836d746c">told</a> = 1e6</td></tr>
+<tr class="separator:a90d792b7ca3e773cac4e8fd3836d746c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abd35767c76935d88ebb4392e41810d" id="r_a5abd35767c76935d88ebb4392e41810d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a> = list(map(float,line.split(', ')))</td></tr>
+<tr class="separator:a5abd35767c76935d88ebb4392e41810d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a473f1fa0317608456e69166149f2f5" id="r_a5a473f1fa0317608456e69166149f2f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a473f1fa0317608456e69166149f2f5">tnew</a> = <a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[0]</td></tr>
+<tr class="separator:a5a473f1fa0317608456e69166149f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28a6bf7322e8a689ba3f9fc3679851a" id="r_ab28a6bf7322e8a689ba3f9fc3679851a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab28a6bf7322e8a689ba3f9fc3679851a">N_tracer</a> = 0</td></tr>
+<tr class="separator:ab28a6bf7322e8a689ba3f9fc3679851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef5032a24b359196c6aeb741eaba67e" id="r_a2ef5032a24b359196c6aeb741eaba67e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef5032a24b359196c6aeb741eaba67e">ID1</a> = -100</td></tr>
+<tr class="separator:a2ef5032a24b359196c6aeb741eaba67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae1a4aa6d07ddfe026612506fb71c70" id="r_a0ae1a4aa6d07ddfe026612506fb71c70"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ae1a4aa6d07ddfe026612506fb71c70">coors</a> = []</td></tr>
+<tr class="separator:a0ae1a4aa6d07ddfe026612506fb71c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababcf3bd8e7832a5e01804017c39b4cf" id="r_ababcf3bd8e7832a5e01804017c39b4cf"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ababcf3bd8e7832a5e01804017c39b4cf">coor</a> = [<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[3],<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[4],<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[5]]</td></tr>
+<tr class="separator:ababcf3bd8e7832a5e01804017c39b4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d6afa385e34ae438edf73d2e263e65" id="r_af9d6afa385e34ae438edf73d2e263e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a> = np.zeros((<a class="el" href="#ab28a6bf7322e8a689ba3f9fc3679851a">N_tracer</a>,<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>,7))</td></tr>
+<tr class="separator:af9d6afa385e34ae438edf73d2e263e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff4ae176a6928eb455f96c02622eff3" id="r_aaff4ae176a6928eb455f96c02622eff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaff4ae176a6928eb455f96c02622eff3">t_count</a> = 0</td></tr>
+<tr class="separator:aaff4ae176a6928eb455f96c02622eff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2deb9d36523deebfb60088ff32b1966e" id="r_a2deb9d36523deebfb60088ff32b1966e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2deb9d36523deebfb60088ff32b1966e">N_count</a> = 0</td></tr>
+<tr class="separator:a2deb9d36523deebfb60088ff32b1966e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc47a76965c4fc65b9bf5a270bd2925" id="r_a2dc47a76965c4fc65b9bf5a270bd2925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dc47a76965c4fc65b9bf5a270bd2925">thetas</a></td></tr>
+<tr class="separator:a2dc47a76965c4fc65b9bf5a270bd2925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4170c1f61cbc6f7d75d8bed35dcf708f" id="r_a4170c1f61cbc6f7d75d8bed35dcf708f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4170c1f61cbc6f7d75d8bed35dcf708f">ws</a></td></tr>
+<tr class="separator:a4170c1f61cbc6f7d75d8bed35dcf708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27837aa495a3bf74b62d3478bd265897" id="r_a27837aa495a3bf74b62d3478bd265897"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27837aa495a3bf74b62d3478bd265897">zs</a> = np.cos(np.pi*<a class="el" href="#a2dc47a76965c4fc65b9bf5a270bd2925">thetas</a>/2 + np.pi/2)*0.4</td></tr>
+<tr class="separator:a27837aa495a3bf74b62d3478bd265897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e3b13665fcfcb238c50f008586d4e1" id="r_ac6e3b13665fcfcb238c50f008586d4e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e3b13665fcfcb238c50f008586d4e1">zip_iterator</a> = zip(<a class="el" href="#a27837aa495a3bf74b62d3478bd265897">zs</a>,<a class="el" href="#a4170c1f61cbc6f7d75d8bed35dcf708f">ws</a>)</td></tr>
+<tr class="separator:ac6e3b13665fcfcb238c50f008586d4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d1c2622ac8fe5831e28694479e690f" id="r_ae3d1c2622ac8fe5831e28694479e690f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d1c2622ac8fe5831e28694479e690f">w_dict</a> = dict(<a class="el" href="#ac6e3b13665fcfcb238c50f008586d4e1">zip_iterator</a>)</td></tr>
+<tr class="separator:ae3d1c2622ac8fe5831e28694479e690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4181f78524678740f848aa97a3afefc7" id="r_a4181f78524678740f848aa97a3afefc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4181f78524678740f848aa97a3afefc7">l_mode</a> = 2;</td></tr>
+<tr class="memdesc:a4181f78524678740f848aa97a3afefc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ready for mode decomposition remember to add sin(theta) for GL scheme  <br /></td></tr>
+<tr class="separator:a4181f78524678740f848aa97a3afefc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca26ec2c6338034076bc63331115590" id="r_a3ca26ec2c6338034076bc63331115590"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a> = <a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][3];</td></tr>
+<tr class="separator:a3ca26ec2c6338034076bc63331115590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8f8d0f6e4d688069b6f79ac2bb2de1" id="r_afb8f8d0f6e4d688069b6f79ac2bb2de1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb8f8d0f6e4d688069b6f79ac2bb2de1">p4re</a> = <a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][5]</td></tr>
+<tr class="separator:afb8f8d0f6e4d688069b6f79ac2bb2de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d10e87db17bb0e74d0fa54b58d82acb" id="r_a9d10e87db17bb0e74d0fa54b58d82acb"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d10e87db17bb0e74d0fa54b58d82acb">sintheta</a> = z/(<a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>**2+y**2+z**2)**0.5;</td></tr>
+<tr class="separator:a9d10e87db17bb0e74d0fa54b58d82acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b1ae5ce99ed9583744759e589a83a4" id="r_ad9b1ae5ce99ed9583744759e589a83a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9b1ae5ce99ed9583744759e589a83a4">sinphi</a> = <a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>/(<a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>**2+y**2)**0.5</td></tr>
+<tr class="separator:ad9b1ae5ce99ed9583744759e589a83a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77761f9425e647d56f91c0ff56182208" id="r_a77761f9425e647d56f91c0ff56182208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77761f9425e647d56f91c0ff56182208">cos2phi</a> = 2*<a class="el" href="#ad9b1ae5ce99ed9583744759e589a83a4">sinphi</a>*cosphi</td></tr>
+<tr class="separator:a77761f9425e647d56f91c0ff56182208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3981e933a75f081fe76e9ce51e6f3e" id="r_a7e3981e933a75f081fe76e9ce51e6f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e3981e933a75f081fe76e9ce51e6f3e">ModeRe</a> = np.zeros(<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>)</td></tr>
+<tr class="memdesc:a7e3981e933a75f081fe76e9ce51e6f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">start real surface integral here  <br /></td></tr>
+<tr class="separator:a7e3981e933a75f081fe76e9ce51e6f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f9195e4d884955bcfaa2f90be05a91" id="r_aa7f9195e4d884955bcfaa2f90be05a91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f9195e4d884955bcfaa2f90be05a91">ModeIm</a> = np.zeros(<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>)</td></tr>
+<tr class="separator:aa7f9195e4d884955bcfaa2f90be05a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433beb4e0a11bf61c27458a6e17d3e97" id="r_a433beb4e0a11bf61c27458a6e17d3e97"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a433beb4e0a11bf61c27458a6e17d3e97">w</a> = (1.0/40)*(2*np.pi)*<a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][6]*(np.pi/2.0)</td></tr>
+<tr class="separator:a433beb4e0a11bf61c27458a6e17d3e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a676a7091d4ed74cf0029ab8e58417209" name="a676a7091d4ed74cf0029ab8e58417209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676a7091d4ed74cf0029ab8e58417209">&#9670;&#160;</a></span>arctan2_2pi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.arctan2_2pi </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>yy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>xx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00010">10</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00016">sph_design()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d5e/namespaceModeCalc_a676a7091d4ed74cf0029ab8e58417209_icgraph.png" border="0" usemap="#adc/d5e/namespaceModeCalc_a676a7091d4ed74cf0029ab8e58417209_icgraph" alt=""/></div>
+<map name="adc/d5e/namespaceModeCalc_a676a7091d4ed74cf0029ab8e58417209_icgraph" id="adc/d5e/namespaceModeCalc_a676a7091d4ed74cf0029ab8e58417209_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,383,31"/>
+<area shape="rect" href="../../dc/d5e/namespaceModeCalc.html#aa964f80dfe2393c1024c6ee4726367d8" title=" " alt="" coords="5,5,168,31"/>
+<area shape="poly" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a84219f92002454a2433429e817bdc764" name="a84219f92002454a2433429e817bdc764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84219f92002454a2433429e817bdc764">&#9670;&#160;</a></span>file_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.file_len </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00068">68</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a9c1713e73973dbaae916c2d93ae40aa7" name="a9c1713e73973dbaae916c2d93ae40aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1713e73973dbaae916c2d93ae40aa7">&#9670;&#160;</a></span>gauss_legendre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.gauss_legendre </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>func</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em><span class="paramdefsep"> = </span><span class="paramdefval">40</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_low</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_up</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#adb0356e6175763125295e2524a42b6a6">pi</a></span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gauss-Legendre 1D integration. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00039">39</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="ac18238df126843b05326388e77bf7191" name="ac18238df126843b05326388e77bf7191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18238df126843b05326388e77bf7191">&#9670;&#160;</a></span>prod_quad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.prod_quad </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>func</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em><span class="paramdefsep"> = </span><span class="paramdefval">20</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>M</em><span class="paramdefsep"> = </span><span class="paramdefval">40</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gaussian product quadrature using Trapezoidal for azimuthal direction and Gauss-Legendre for polar angle. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00059">59</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00050">trapezoidal()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d5e/namespaceModeCalc_ac18238df126843b05326388e77bf7191_cgraph.png" border="0" usemap="#adc/d5e/namespaceModeCalc_ac18238df126843b05326388e77bf7191_cgraph" alt=""/></div>
+<map name="adc/d5e/namespaceModeCalc_ac18238df126843b05326388e77bf7191_cgraph" id="adc/d5e/namespaceModeCalc_ac18238df126843b05326388e77bf7191_cgraph">
+<area shape="rect" title="Gaussian product quadrature using Trapezoidal for azimuthal direction and Gauss&#45;Legendre for polar an..." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../dc/d5e/namespaceModeCalc.html#a271a04200f7324c39486dbe49b0cd37b" title="Gauss 1D integration." alt="" coords="212,5,375,31"/>
+<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa964f80dfe2393c1024c6ee4726367d8" name="aa964f80dfe2393c1024c6ee4726367d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa964f80dfe2393c1024c6ee4726367d8">&#9670;&#160;</a></span>sph_design()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.sph_design </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>func</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>t</em><span class="paramdefsep"> = </span><span class="paramdefval">5</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>author</em><span class="paramdefsep"> = </span><span class="paramdefval">'Hardin'</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00010">arctan2_2pi()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d5e/namespaceModeCalc_aa964f80dfe2393c1024c6ee4726367d8_cgraph.png" border="0" usemap="#adc/d5e/namespaceModeCalc_aa964f80dfe2393c1024c6ee4726367d8_cgraph" alt=""/></div>
+<map name="adc/d5e/namespaceModeCalc_aa964f80dfe2393c1024c6ee4726367d8_cgraph" id="adc/d5e/namespaceModeCalc_aa964f80dfe2393c1024c6ee4726367d8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,31"/>
+<area shape="rect" href="../../dc/d5e/namespaceModeCalc.html#a676a7091d4ed74cf0029ab8e58417209" title=" " alt="" coords="216,5,383,31"/>
+<area shape="poly" title=" " alt="" coords="169,15,202,15,202,21,169,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a271a04200f7324c39486dbe49b0cd37b" name="a271a04200f7324c39486dbe49b0cd37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271a04200f7324c39486dbe49b0cd37b">&#9670;&#160;</a></span>trapezoidal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.trapezoidal </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>func</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>N</em><span class="paramdefsep"> = </span><span class="paramdefval">40</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_low</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_up</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#adb0356e6175763125295e2524a42b6a6">pi</a></span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gauss 1D integration. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00050">50</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00059">prod_quad()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d5e/namespaceModeCalc_a271a04200f7324c39486dbe49b0cd37b_icgraph.png" border="0" usemap="#adc/d5e/namespaceModeCalc_a271a04200f7324c39486dbe49b0cd37b_icgraph" alt=""/></div>
+<map name="adc/d5e/namespaceModeCalc_a271a04200f7324c39486dbe49b0cd37b_icgraph" id="adc/d5e/namespaceModeCalc_a271a04200f7324c39486dbe49b0cd37b_icgraph">
+<area shape="rect" title="Gauss 1D integration." alt="" coords="212,5,375,31"/>
+<area shape="rect" href="../../dc/d5e/namespaceModeCalc.html#ac18238df126843b05326388e77bf7191" title="Gaussian product quadrature using Trapezoidal for azimuthal direction and Gauss&#45;Legendre for polar an..." alt="" coords="5,5,164,31"/>
+<area shape="poly" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ababcf3bd8e7832a5e01804017c39b4cf" name="ababcf3bd8e7832a5e01804017c39b4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ababcf3bd8e7832a5e01804017c39b4cf">&#9670;&#160;</a></span>coor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list ModeCalc.coor = [<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[3],<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[4],<a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[5]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00114">114</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a0ae1a4aa6d07ddfe026612506fb71c70" name="a0ae1a4aa6d07ddfe026612506fb71c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae1a4aa6d07ddfe026612506fb71c70">&#9670;&#160;</a></span>coors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.coors = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00108">108</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a77761f9425e647d56f91c0ff56182208" name="a77761f9425e647d56f91c0ff56182208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77761f9425e647d56f91c0ff56182208">&#9670;&#160;</a></span>cos2phi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.cos2phi = 2*<a class="el" href="#ad9b1ae5ce99ed9583744759e589a83a4">sinphi</a>*cosphi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00178">178</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a2f9d7a9add1f6f6b34c248e4420e2919" name="a2f9d7a9add1f6f6b34c248e4420e2919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9d7a9add1f6f6b34c248e4420e2919">&#9670;&#160;</a></span>dat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.dat = f.readlines()[1:]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00089">89</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="af9d6afa385e34ae438edf73d2e263e65" name="af9d6afa385e34ae438edf73d2e263e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d6afa385e34ae438edf73d2e263e65">&#9670;&#160;</a></span>data_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.data_set = np.zeros((<a class="el" href="#ab28a6bf7322e8a689ba3f9fc3679851a">N_tracer</a>,<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>,7))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00121">121</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="afd853fb535ac722c8a18f5bc299c017a" name="afd853fb535ac722c8a18f5bc299c017a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd853fb535ac722c8a18f5bc299c017a">&#9670;&#160;</a></span>f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.f = open(<a class="el" href="#a8a1aeb22a74259f6d23ae1b31c127d62">file_name</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00085">85</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a8a1aeb22a74259f6d23ae1b31c127d62" name="a8a1aeb22a74259f6d23ae1b31c127d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1aeb22a74259f6d23ae1b31c127d62">&#9670;&#160;</a></span>file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str ModeCalc.file_name = &quot;zz.csv&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00081">81</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a2ef5032a24b359196c6aeb741eaba67e" name="a2ef5032a24b359196c6aeb741eaba67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef5032a24b359196c6aeb741eaba67e">&#9670;&#160;</a></span>ID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.ID1 = -100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00107">107</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a4181f78524678740f848aa97a3afefc7" name="a4181f78524678740f848aa97a3afefc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4181f78524678740f848aa97a3afefc7">&#9670;&#160;</a></span>l_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.l_mode = 2;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ready for mode decomposition remember to add sin(theta) for GL scheme </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00169">169</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="aa7f9195e4d884955bcfaa2f90be05a91" name="aa7f9195e4d884955bcfaa2f90be05a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f9195e4d884955bcfaa2f90be05a91">&#9670;&#160;</a></span>ModeIm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.ModeIm = np.zeros(<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00191">191</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e3981e933a75f081fe76e9ce51e6f3e" name="a7e3981e933a75f081fe76e9ce51e6f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3981e933a75f081fe76e9ce51e6f3e">&#9670;&#160;</a></span>ModeRe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.ModeRe = np.zeros(<a class="el" href="#a6f104b44daf4e5c9c698e34710a50b8b">tstep</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start real surface integral here </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00190">190</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a2deb9d36523deebfb60088ff32b1966e" name="a2deb9d36523deebfb60088ff32b1966e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2deb9d36523deebfb60088ff32b1966e">&#9670;&#160;</a></span>N_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.N_count = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00125">125</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="ab28a6bf7322e8a689ba3f9fc3679851a" name="ab28a6bf7322e8a689ba3f9fc3679851a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28a6bf7322e8a689ba3f9fc3679851a">&#9670;&#160;</a></span>N_tracer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.N_tracer = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00106">106</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="afb8f8d0f6e4d688069b6f79ac2bb2de1" name="afb8f8d0f6e4d688069b6f79ac2bb2de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8f8d0f6e4d688069b6f79ac2bb2de1">&#9670;&#160;</a></span>p4re</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.p4re = <a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00173">173</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="adb0356e6175763125295e2524a42b6a6" name="adb0356e6175763125295e2524a42b6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0356e6175763125295e2524a42b6a6">&#9670;&#160;</a></span>pi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.pi = np.pi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00008">8</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a5b1758e4ec9e9220691c17e3443b57d2" name="a5b1758e4ec9e9220691c17e3443b57d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1758e4ec9e9220691c17e3443b57d2">&#9670;&#160;</a></span>scheme</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str ModeCalc.scheme = &quot;t-design&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>main code scheme="Gauss_Legendre" </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00077">77</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="ad9b1ae5ce99ed9583744759e589a83a4" name="ad9b1ae5ce99ed9583744759e589a83a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b1ae5ce99ed9583744759e589a83a4">&#9670;&#160;</a></span>sinphi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ModeCalc.sinphi = <a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>/(<a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>**2+y**2)**0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00177">177</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a9d10e87db17bb0e74d0fa54b58d82acb" name="a9d10e87db17bb0e74d0fa54b58d82acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d10e87db17bb0e74d0fa54b58d82acb">&#9670;&#160;</a></span>sintheta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple ModeCalc.sintheta = z/(<a class="el" href="#a3ca26ec2c6338034076bc63331115590">x</a>**2+y**2+z**2)**0.5;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00175">175</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="aaff4ae176a6928eb455f96c02622eff3" name="aaff4ae176a6928eb455f96c02622eff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff4ae176a6928eb455f96c02622eff3">&#9670;&#160;</a></span>t_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.t_count = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00124">124</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a5abd35767c76935d88ebb4392e41810d" name="a5abd35767c76935d88ebb4392e41810d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abd35767c76935d88ebb4392e41810d">&#9670;&#160;</a></span>tem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.tem = list(map(float,line.split(', ')))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00095">95</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a2dc47a76965c4fc65b9bf5a270bd2925" name="a2dc47a76965c4fc65b9bf5a270bd2925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc47a76965c4fc65b9bf5a270bd2925">&#9670;&#160;</a></span>thetas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.thetas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00146">146</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a5a473f1fa0317608456e69166149f2f5" name="a5a473f1fa0317608456e69166149f2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a473f1fa0317608456e69166149f2f5">&#9670;&#160;</a></span>tnew</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.tnew = <a class="el" href="#a5abd35767c76935d88ebb4392e41810d">tem</a>[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00096">96</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a90d792b7ca3e773cac4e8fd3836d746c" name="a90d792b7ca3e773cac4e8fd3836d746c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d792b7ca3e773cac4e8fd3836d746c">&#9670;&#160;</a></span>told</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.told = 1e6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00093">93</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a6f104b44daf4e5c9c698e34710a50b8b" name="a6f104b44daf4e5c9c698e34710a50b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f104b44daf4e5c9c698e34710a50b8b">&#9670;&#160;</a></span>tstep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ModeCalc.tstep = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00092">92</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a433beb4e0a11bf61c27458a6e17d3e97" name="a433beb4e0a11bf61c27458a6e17d3e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433beb4e0a11bf61c27458a6e17d3e97">&#9670;&#160;</a></span>w</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple ModeCalc.w = (1.0/40)*(2*np.pi)*<a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][6]*(np.pi/2.0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00195">195</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="ae3d1c2622ac8fe5831e28694479e690f" name="ae3d1c2622ac8fe5831e28694479e690f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d1c2622ac8fe5831e28694479e690f">&#9670;&#160;</a></span>w_dict</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.w_dict = dict(<a class="el" href="#ac6e3b13665fcfcb238c50f008586d4e1">zip_iterator</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00149">149</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a4170c1f61cbc6f7d75d8bed35dcf708f" name="a4170c1f61cbc6f7d75d8bed35dcf708f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4170c1f61cbc6f7d75d8bed35dcf708f">&#9670;&#160;</a></span>ws</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.ws</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00146">146</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a3ca26ec2c6338034076bc63331115590" name="a3ca26ec2c6338034076bc63331115590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca26ec2c6338034076bc63331115590">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.x = <a class="el" href="#af9d6afa385e34ae438edf73d2e263e65">data_set</a>[n][t][3];</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00172">172</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="ac6e3b13665fcfcb238c50f008586d4e1" name="ac6e3b13665fcfcb238c50f008586d4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e3b13665fcfcb238c50f008586d4e1">&#9670;&#160;</a></span>zip_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModeCalc.zip_iterator = zip(<a class="el" href="#a27837aa495a3bf74b62d3478bd265897">zs</a>,<a class="el" href="#a4170c1f61cbc6f7d75d8bed35dcf708f">ws</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00148">148</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+<a id="a27837aa495a3bf74b62d3478bd265897" name="a27837aa495a3bf74b62d3478bd265897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27837aa495a3bf74b62d3478bd265897">&#9670;&#160;</a></span>zs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ModeCalc.zs = np.cos(np.pi*<a class="el" href="#a2dc47a76965c4fc65b9bf5a270bd2925">thetas</a>/2 + np.pi/2)*0.4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/de9/ModeCalc_8py_source.html#l00147">147</a> of file <a class="el" href="../../d4/de9/ModeCalc_8py_source.html">ModeCalc.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/d5e/namespaceModeCalc.html">ModeCalc</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:04 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

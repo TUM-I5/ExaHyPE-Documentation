@@ -1,0 +1,4 @@
+var namespaceexahype2_1_1solvers_1_1aderdg_1_1AdaptiveTimeSteppingCodeSnippets =
+[
+    [ "AdaptiveTimeSteppingCodeSnippets", "d6/d33/classexahype2_1_1solvers_1_1aderdg_1_1AdaptiveTimeSteppingCodeSnippets_1_1AdaptiveTimeSteppingCodeSnippets.html", "d6/d33/classexahype2_1_1solvers_1_1aderdg_1_1AdaptiveTimeSteppingCodeSnippets_1_1AdaptiveTimeSteppingCodeSnippets" ]
+];

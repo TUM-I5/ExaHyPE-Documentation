@@ -1,0 +1,852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d4/dfc/classtarch_1_1timing_1_1Watch.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::timing::Watch Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A simple class that has to be included to measure the clock ticks required for an operation.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::timing::Watch:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dde/classtarch_1_1timing_1_1Watch__coll__graph.png" border="0" usemap="#atarch_1_1timing_1_1Watch_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1timing_1_1Watch_coll__map" id="atarch_1_1timing_1_1Watch_coll__map">
+<area shape="rect" title="A simple class that has to be included to measure the clock ticks required for an operation." alt="" coords="5,271,159,296"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="199,183,341,208"/>
+<area shape="poly" title=" " alt="" coords="233,216,109,273,106,268,231,211"/>
+<area shape="rect" title=" " alt="" coords="39,95,125,120"/>
+<area shape="poly" title=" " alt="" coords="81,134,77,169,77,208,83,270,78,271,71,208,72,169,75,133"/>
+<area shape="poly" title=" " alt="" coords="121,123,246,180,243,185,119,128"/>
+<area shape="rect" title=" " alt="" coords="13,5,151,45"/>
+<area shape="poly" title=" " alt="" coords="85,59,85,94,79,94,79,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a15dca6122403cfcd727e19c1dc737072" id="r_a15dca6122403cfcd727e19c1dc737072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15dca6122403cfcd727e19c1dc737072">Watch</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;className, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;operationName, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> plotResultInDestructor, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> startToTickImmediately=true)</td></tr>
+<tr class="memdesc:a15dca6122403cfcd727e19c1dc737072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a watch.  <br /></td></tr>
+<tr class="separator:a15dca6122403cfcd727e19c1dc737072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1c55d4e25c4fcc62d7d6e2307803b8" id="r_a8c1c55d4e25c4fcc62d7d6e2307803b8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c1c55d4e25c4fcc62d7d6e2307803b8">~Watch</a> ()</td></tr>
+<tr class="memdesc:a8c1c55d4e25c4fcc62d7d6e2307803b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For standard version (): Stops the watch and plots the time spent.  <br /></td></tr>
+<tr class="separator:a8c1c55d4e25c4fcc62d7d6e2307803b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882e3950fab71e4f369f1d9b4de37ca6" id="r_a882e3950fab71e4f369f1d9b4de37ca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a882e3950fab71e4f369f1d9b4de37ca6">start</a> ()</td></tr>
+<tr class="memdesc:a882e3950fab71e4f369f1d9b4de37ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Re)Start the Timer  <br /></td></tr>
+<tr class="separator:a882e3950fab71e4f369f1d9b4de37ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727c6c99986b9680b2ba511dbcfa7e9e" id="r_a727c6c99986b9680b2ba511dbcfa7e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a727c6c99986b9680b2ba511dbcfa7e9e">stop</a> ()</td></tr>
+<tr class="memdesc:a727c6c99986b9680b2ba511dbcfa7e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop timer.  <br /></td></tr>
+<tr class="separator:a727c6c99986b9680b2ba511dbcfa7e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7c44022fe69312a28783264b821464" id="r_a4d7c44022fe69312a28783264b821464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d7c44022fe69312a28783264b821464">getCPUTime</a> ()</td></tr>
+<tr class="memdesc:a4d7c44022fe69312a28783264b821464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return CPU Time in Seconds.  <br /></td></tr>
+<tr class="separator:a4d7c44022fe69312a28783264b821464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf803b1dc2181b670aa5abfe53314fd" id="r_a2bf803b1dc2181b670aa5abfe53314fd"><td class="memItemLeft" align="right" valign="top">std::clock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bf803b1dc2181b670aa5abfe53314fd">getCPUTicks</a> ()</td></tr>
+<tr class="memdesc:a2bf803b1dc2181b670aa5abfe53314fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equals <a class="el" href="#a4d7c44022fe69312a28783264b821464" title="Return CPU Time in Seconds.">getCPUTime()</a> but returns the clock ticks instead of the time in seconds.  <br /></td></tr>
+<tr class="separator:a2bf803b1dc2181b670aa5abfe53314fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1beb62d9659cb240d2943fea0c7342f4" id="r_a1beb62d9659cb240d2943fea0c7342f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1beb62d9659cb240d2943fea0c7342f4">getCalendarTime</a> ()</td></tr>
+<tr class="memdesc:a1beb62d9659cb240d2943fea0c7342f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the elapsed calendar time between the start and stop command of the timer, i.e., the real world time.  <br /></td></tr>
+<tr class="separator:a1beb62d9659cb240d2943fea0c7342f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731b9f06e7922b94bd09cfbf134b4363" id="r_a731b9f06e7922b94bd09cfbf134b4363"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a731b9f06e7922b94bd09cfbf134b4363">isOn</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a731b9f06e7922b94bd09cfbf134b4363"><td class="mdescLeft">&#160;</td><td class="mdescRight">This operation returns whether the watch is currently on.  <br /></td></tr>
+<tr class="separator:a731b9f06e7922b94bd09cfbf134b4363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a03e2ae5adbf6b3f2f8f7d7a48c8f0298" id="r_a03e2ae5adbf6b3f2f8f7d7a48c8f0298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03e2ae5adbf6b3f2f8f7d7a48c8f0298">_log</a></td></tr>
+<tr class="memdesc:a03e2ae5adbf6b3f2f8f7d7a48c8f0298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log device the result is written to.  <br /></td></tr>
+<tr class="separator:a03e2ae5adbf6b3f2f8f7d7a48c8f0298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9b19deff6f0c7070cbd30756c5d339" id="r_a6c9b19deff6f0c7070cbd30756c5d339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c9b19deff6f0c7070cbd30756c5d339">_plotResultInDestructor</a></td></tr>
+<tr class="memdesc:a6c9b19deff6f0c7070cbd30756c5d339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to distinguish the (original) standard watch.  <br /></td></tr>
+<tr class="separator:a6c9b19deff6f0c7070cbd30756c5d339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7f66f6915049c9b0b3425dd8d1f9ee" id="r_aec7f66f6915049c9b0b3425dd8d1f9ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec7f66f6915049c9b0b3425dd8d1f9ee">_operationName</a></td></tr>
+<tr class="memdesc:aec7f66f6915049c9b0b3425dd8d1f9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the name of the operation the watch is used within.  <br /></td></tr>
+<tr class="separator:aec7f66f6915049c9b0b3425dd8d1f9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5aa55bee1e3380a657e57b69465f6be" id="r_ae5aa55bee1e3380a657e57b69465f6be"><td class="memItemLeft" align="right" valign="top">std::clock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5aa55bee1e3380a657e57b69465f6be">_startClockTicks</a></td></tr>
+<tr class="memdesc:ae5aa55bee1e3380a657e57b69465f6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the clock ticks at the beginning of the time measurement.  <br /></td></tr>
+<tr class="separator:ae5aa55bee1e3380a657e57b69465f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9cb0e8ee8c5ab3d958dec2f5134c65" id="r_adb9cb0e8ee8c5ab3d958dec2f5134c65"><td class="memItemLeft" align="right" valign="top">std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9cb0e8ee8c5ab3d958dec2f5134c65">_startTime</a></td></tr>
+<tr class="memdesc:adb9cb0e8ee8c5ab3d958dec2f5134c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the time at the beginning of the time measurement.  <br /></td></tr>
+<tr class="separator:adb9cb0e8ee8c5ab3d958dec2f5134c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7605eca46ffc2e1482db19088eadc90" id="r_ac7605eca46ffc2e1482db19088eadc90"><td class="memItemLeft" align="right" valign="top">std::clock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7605eca46ffc2e1482db19088eadc90">_elapsedClockTicks</a></td></tr>
+<tr class="memdesc:ac7605eca46ffc2e1482db19088eadc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the elapsed processor time.  <br /></td></tr>
+<tr class="separator:ac7605eca46ffc2e1482db19088eadc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93de04a22141b42be872af5c42b80d79" id="r_a93de04a22141b42be872af5c42b80d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93de04a22141b42be872af5c42b80d79">_elapsedTime</a></td></tr>
+<tr class="memdesc:a93de04a22141b42be872af5c42b80d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the elapsed calendar time.  <br /></td></tr>
+<tr class="separator:a93de04a22141b42be872af5c42b80d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e39c2d00cf9d93eb63d9082f33a7be" id="r_a30e39c2d00cf9d93eb63d9082f33a7be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30e39c2d00cf9d93eb63d9082f33a7be">_isRunning</a></td></tr>
+<tr class="memdesc:a30e39c2d00cf9d93eb63d9082f33a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has stopTimer() been called before.  <br /></td></tr>
+<tr class="separator:a30e39c2d00cf9d93eb63d9082f33a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple class that has to be included to measure the clock ticks required for an operation. </p>
+<p>To use it you've to create an instance of this class at the beginning of the operation block you want to measure the time spent within it:</p>
+<pre>
+  void anyOperation() {
+    <a class="el" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html" title="A simple class that has to be included to measure the clock ticks required for an operation.">tarch::timing::Watch</a> watch("MyClass", "anyOperation()");
+    ...
+  }
+</pre><p>The result the of the measurement is written to log.info level. Note that this operation works within operation blocks (e.g., a for-loop), too.</p>
+<p>For an extended measurement of calender (i.e., user) time and a saving of the data and access via getters, we implemented parts of what Markus Langlotz gave us for the ancient stokes project. Additionally, the counter overflow and the non-access to the measured time were reasons for introducing this extended version. Furthermore, we now may choose specific computation intervals to be counted in between the start and the stop command.</p>
+<dl class="section version"><dt>Version</dt><dd></dd></dl>
+<dl class="section rcs"><dt>Revision</dt><dd>1.9 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl, Tobias Neckel </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00045">45</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a15dca6122403cfcd727e19c1dc737072" name="a15dca6122403cfcd727e19c1dc737072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15dca6122403cfcd727e19c1dc737072">&#9670;&#160;</a></span>Watch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::timing::Watch::Watch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>className</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>operationName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>plotResultInDestructor</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>startToTickImmediately</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a watch. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">className</td><td>Name of the class the watch is used within (for log). </td></tr>
+    <tr><td class="paramname">operationName</td><td>Name of the operation the watch is used within. </td></tr>
+    <tr><td class="paramname">extendedWatchType</td><td>Bool for extended. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00048">start()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dfc/classtarch_1_1timing_1_1Watch_a15dca6122403cfcd727e19c1dc737072_cgraph.png" border="0" usemap="#ad4/dfc/classtarch_1_1timing_1_1Watch_a15dca6122403cfcd727e19c1dc737072_cgraph" alt=""/></div>
+<map name="ad4/dfc/classtarch_1_1timing_1_1Watch_a15dca6122403cfcd727e19c1dc737072_cgraph" id="ad4/dfc/classtarch_1_1timing_1_1Watch_a15dca6122403cfcd727e19c1dc737072_cgraph">
+<area shape="rect" title="Construct a watch." alt="" coords="5,5,159,45"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a882e3950fab71e4f369f1d9b4de37ca6" title="(Re)Start the Timer" alt="" coords="207,5,360,45"/>
+<area shape="poly" title=" " alt="" coords="159,23,193,23,193,28,159,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c1c55d4e25c4fcc62d7d6e2307803b8" name="a8c1c55d4e25c4fcc62d7d6e2307803b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1c55d4e25c4fcc62d7d6e2307803b8">&#9670;&#160;</a></span>~Watch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::timing::Watch::~Watch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For standard version (): Stops the watch and plots the time spent. </p>
+<p>For the extended version, this is the usual destructor without any special actions. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00411">logInfo</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1beb62d9659cb240d2943fea0c7342f4" name="a1beb62d9659cb240d2943fea0c7342f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1beb62d9659cb240d2943fea0c7342f4">&#9670;&#160;</a></span>getCalendarTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::timing::Watch::getCalendarTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method returns the elapsed calendar time between the start and stop command of the timer, i.e., the real world time. </p>
+<p>The result is given in seconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d66/BenchmarkDriver_8cpp_source.html#l00171">assessKernel()</a>, <a class="el" href="../../d4/da1/Variant3_8cpp_source.html#l00099">firstTask()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00100">firstTask()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d6/da8/tarch_2logging_2Statistics_8cpp_source.html#l00108">tarch::logging::Statistics::initData()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00045">initialTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00042">initialTask()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, <a class="el" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp_source.html#l00349">runBenchmarks()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00224">variant1::runBenchmarks()</a>, <a class="el" href="../../dc/d0e/Variant2_8cpp_source.html#l00229">variant2::runBenchmarks()</a>, <a class="el" href="../../d4/da1/Variant3_8cpp_source.html#l00225">variant3::runBenchmarks()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, <a class="el" href="../../dc/d0e/Variant2_8cpp_source.html#l00102">runKernels()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>, <a class="el" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp_source.html#l00248">runKernels()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00133">secondTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00132">secondTask()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dfc/classtarch_1_1timing_1_1Watch_a1beb62d9659cb240d2943fea0c7342f4_icgraph.png" border="0" usemap="#ad4/dfc/classtarch_1_1timing_1_1Watch_a1beb62d9659cb240d2943fea0c7342f4_icgraph" alt=""/></div>
+<map name="ad4/dfc/classtarch_1_1timing_1_1Watch_a1beb62d9659cb240d2943fea0c7342f4_icgraph" id="ad4/dfc/classtarch_1_1timing_1_1Watch_a1beb62d9659cb240d2943fea0c7342f4_icgraph">
+<area shape="rect" title="This method returns the elapsed calendar time between the start and stop command of the timer,..." alt="" coords="840,535,993,575"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a476510475789a57c8dca35d99077d767" title=" " alt="" coords="649,5,756,31"/>
+<area shape="poly" title=" " alt="" coords="909,522,894,415,868,275,852,204,833,140,813,88,790,52,774,39,755,30,757,25,777,34,794,48,817,85,838,139,857,203,873,274,899,415,914,521"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a3ba8d145905f7aabe0e47a31735868c5" title="Run the benchmark for one particular number of cells." alt="" coords="389,56,513,81"/>
+<area shape="poly" title=" " alt="" coords="909,522,894,422,870,293,853,229,835,172,814,126,790,96,758,75,722,60,683,51,644,47,568,49,503,59,503,53,567,43,644,41,684,46,723,55,760,70,794,92,818,123,840,170,859,228,875,292,900,421,914,521"/>
+<area shape="rect" href="../../d4/da1/Variant3_8cpp.html#a05ba3fd5dac9248d4e8007ede97a9973" title=" " alt="" coords="665,772,741,797"/>
+<area shape="poly" title=" " alt="" coords="905,590,888,628,863,672,832,716,794,755,768,770,742,780,740,775,766,765,790,751,828,713,859,669,883,625,900,588"/>
+<area shape="rect" href="../../d5/de9/namespacevariant3.html#ab25d7a05b6fd985bc2b1e2c4d6752b76" title=" " alt="" coords="357,721,544,747"/>
+<area shape="poly" title=" " alt="" coords="897,589,854,641,825,667,793,688,732,713,666,729,603,737,544,740,544,734,602,732,666,723,730,708,791,684,822,663,850,638,893,585"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#ab396fec6a2bfdb8d1f455bd7847d04ff" title=" " alt="" coords="665,156,741,181"/>
+<area shape="poly" title=" " alt="" coords="910,522,901,455,881,370,866,325,846,281,821,239,790,203,767,186,740,177,742,172,769,182,794,199,825,236,850,278,871,323,886,369,907,454,916,521"/>
+<area shape="rect" href="../../db/def/namespacevariant1.html#a5826fd75fe19ed3fdd2dc416f788f630" title=" " alt="" coords="357,257,544,283"/>
+<area shape="poly" title=" " alt="" coords="911,522,903,460,883,383,868,344,847,307,822,274,791,247,752,228,710,218,667,215,623,219,542,237,481,260,479,255,541,232,622,214,667,210,711,212,754,223,793,242,826,270,852,304,873,341,888,381,908,459,916,521"/>
+<area shape="rect" href="../../d5/d79/Variant6_8cpp.html#a2c1675eb05742d768a52dd2ac838bfd2" title=" " alt="" coords="665,1024,741,1049"/>
+<area shape="poly" title=" " alt="" coords="913,590,897,688,871,815,837,935,816,982,794,1015,769,1030,741,1038,740,1032,767,1025,790,1011,812,980,832,933,866,813,892,687,908,589"/>
+<area shape="rect" href="../../da/d1d/namespacevariant6.html#a0b04509c747acbc09a679b9f283737de" title=" " alt="" coords="357,1024,544,1049"/>
+<area shape="poly" title=" " alt="" coords="915,590,903,700,879,843,863,915,844,979,821,1030,808,1050,794,1064,755,1086,713,1098,668,1101,623,1097,580,1088,540,1076,477,1052,479,1047,541,1071,581,1083,624,1091,668,1095,712,1093,753,1081,790,1060,804,1046,816,1028,839,977,858,913,874,842,897,699,910,589"/>
+<area shape="rect" href="../../db/d6b/Variant5_8cpp.html#abe71b446613b3f8b14f311514de17ae7" title=" " alt="" coords="665,405,741,431"/>
+<area shape="poly" title=" " alt="" coords="884,527,842,489,791,452,740,431,742,426,793,448,845,485,888,523"/>
+<area shape="rect" href="../../de/d4a/namespacevariant5.html#ab99b0238828151d21bad542cce15ac4b" title=" " alt="" coords="357,431,544,456"/>
+<area shape="poly" title=" " alt="" coords="869,531,832,512,791,497,728,480,663,467,544,452,545,447,664,462,729,474,793,491,834,507,871,526"/>
+<area shape="rect" href="../../d7/d06/classtarch_1_1logging_1_1Statistics.html#a48b0bb8ff9f13e0d8ebc9db31d965598" title="Ensures that dataset is there." alt="" coords="613,506,792,546"/>
+<area shape="poly" title=" " alt="" coords="826,546,792,541,792,536,826,540"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#a838713af75d606f7125ad8b4f7b302c7" title=" " alt="" coords="659,307,747,332"/>
+<area shape="poly" title=" " alt="" coords="903,523,887,482,863,434,831,386,790,345,769,334,746,327,748,322,771,329,794,341,835,383,867,431,891,480,908,521"/>
+<area shape="rect" href="../../d8/dfe/Variant4_8cpp.html#ae0db8356b2046c546502026d1616ceef" title=" " alt="" coords="659,620,747,645"/>
+<area shape="poly" title=" " alt="" coords="860,583,793,610,748,624,746,619,791,605,858,578"/>
+<area shape="rect" href="../../d6/d41/namespacevariant4.html#a42462e7412c393ff1aea9128dfde00af" title=" " alt="" coords="357,645,544,671"/>
+<area shape="poly" title=" " alt="" coords="892,588,849,627,822,645,793,659,722,677,648,682,579,680,519,673,520,668,579,675,648,677,721,671,791,654,819,641,845,623,888,584"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="423,949,478,975"/>
+<area shape="poly" title=" " alt="" coords="917,589,910,658,892,746,876,792,855,836,828,877,794,912,769,926,734,937,644,952,551,961,478,964,478,959,551,955,644,947,732,932,767,921,790,908,824,874,850,834,871,790,886,745,905,657,912,589"/>
+<area shape="rect" href="../../d1/d69/namespacevariant2.html#a1bdabddc2c9309c2a62795590fd07fc3" title=" " alt="" coords="357,823,544,848"/>
+<area shape="poly" title=" " alt="" coords="912,589,900,640,878,702,843,762,820,789,794,811,761,829,726,842,689,851,652,856,579,857,517,851,517,845,580,852,651,851,688,846,724,837,759,824,790,806,817,785,839,759,873,699,895,639,907,588"/>
+<area shape="rect" href="../../dc/d0e/Variant2_8cpp.html#a6e6d6298be4f7f8b49eda35a720a7e96" title=" " alt="" coords="657,873,748,899"/>
+<area shape="poly" title=" " alt="" coords="913,589,901,646,879,717,844,791,821,825,794,856,773,871,749,880,747,875,770,866,790,852,817,822,839,789,874,716,896,645,908,588"/>
+<area shape="rect" href="../../d8/dfe/Variant4_8cpp.html#ae6773f9fdd90678fa209ae22ab5305f3" title=" " alt="" coords="657,571,748,596"/>
+<area shape="poly" title=" " alt="" coords="827,570,749,580,748,575,826,565"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a646807dc61c30c31104ca975ca612316" title=" " alt="" coords="657,107,748,132"/>
+<area shape="poly" title=" " alt="" coords="913,522,908,445,891,343,876,289,854,237,826,188,790,145,770,132,747,125,749,120,773,127,794,141,830,185,859,235,881,288,896,342,914,444,918,521"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#a197aef0ea61dd084f41491b6eb8b0cff" title=" " alt="" coords="654,257,751,283"/>
+<area shape="poly" title=" " alt="" coords="906,523,893,472,870,411,837,349,815,321,790,296,772,285,751,278,752,273,774,280,794,292,819,317,841,346,875,409,898,470,912,521"/>
+<area shape="rect" href="../../db/d6b/Variant5_8cpp.html#ab3b8f4db8beb3263f0e7c02ba2974c9a" title=" " alt="" coords="654,356,751,381"/>
+<area shape="poly" title=" " alt="" coords="897,524,854,458,825,424,791,395,772,385,751,378,752,373,774,380,793,390,829,420,859,455,901,521"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="677,975,728,1000"/>
+<area shape="poly" title=" " alt="" coords="917,589,911,664,892,762,876,814,855,865,828,914,794,957,779,969,762,978,729,987,727,982,760,973,776,965,790,953,824,911,851,863,871,812,887,760,905,663,912,589"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#ab62b2a3788115c3ba667e7d7ef98ceb7" title=" " alt="" coords="392,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="636,21,509,21,509,15,636,15"/>
+<area shape="poly" title=" " alt="" coords="636,34,514,59,512,54,635,29"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,5,174,31"/>
+<area shape="poly" title=" " alt="" coords="378,21,174,21,174,15,378,15"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,56,174,81"/>
+<area shape="poly" title=" " alt="" coords="375,71,174,71,174,66,375,66"/>
+<area shape="poly" title=" " alt="" coords="651,777,514,749,515,744,652,772"/>
+<area shape="rect" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,671,174,696"/>
+<area shape="poly" title=" " alt="" coords="360,722,174,690,175,685,361,716"/>
+<area shape="rect" href="../../de/d49/classexahype2_1_1EnclaveBookkeeping.html#a8ec5f5b1fd3c715129561d0fdd7988c1" title=" " alt="" coords="336,149,565,189"/>
+<area shape="poly" title=" " alt="" coords="651,171,566,171,566,166,651,166"/>
+<area shape="poly" title=" " alt="" coords="653,189,614,203,481,260,479,255,612,198,651,184"/>
+<area shape="rect" href="../../dc/d8c/classexahype2_1_1tests_1_1EnclaveBookkeepingTest.html#a45c335c0e4d1915f77a609437f0d85bd" title=" " alt="" coords="5,149,288,189"/>
+<area shape="poly" title=" " alt="" coords="322,171,288,171,288,166,322,166"/>
+<area shape="poly" title=" " alt="" coords="433,295,338,420,159,672,155,669,334,416,429,292"/>
+<area shape="poly" title=" " alt="" coords="651,1039,544,1039,544,1034,651,1034"/>
+<area shape="poly" title=" " alt="" coords="392,1022,362,1007,334,988,298,952,265,911,211,826,172,749,150,697,155,695,177,747,215,824,269,908,302,948,338,984,365,1003,394,1017"/>
+<area shape="poly" title=" " alt="" coords="651,426,545,437,544,431,651,420"/>
+<area shape="poly" title=" " alt="" coords="424,467,166,673,162,669,421,463"/>
+<area shape="poly" title=" " alt="" coords="644,311,516,285,517,280,646,306"/>
+<area shape="poly" title=" " alt="" coords="645,641,545,651,544,646,645,636"/>
+<area shape="poly" title=" " alt="" coords="344,670,175,684,174,678,344,664"/>
+<area shape="poly" title=" " alt="" coords="411,819,172,698,175,694,413,814"/>
+<area shape="poly" title=" " alt="" coords="644,877,514,851,515,845,645,872"/>
+<area shape="poly" title=" " alt="" coords="645,601,614,610,492,648,490,643,613,605,643,596"/>
+<area shape="poly" title=" " alt="" coords="643,110,512,84,513,78,645,105"/>
+<area shape="poly" title=" " alt="" coords="640,273,544,273,544,267,640,267"/>
+<area shape="poly" title=" " alt="" coords="641,387,614,395,492,433,490,428,613,390,640,382"/>
+<area shape="poly" title=" " alt="" coords="663,986,478,967,479,962,664,981"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bf803b1dc2181b670aa5abfe53314fd" name="a2bf803b1dc2181b670aa5abfe53314fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf803b1dc2181b670aa5abfe53314fd">&#9670;&#160;</a></span>getCPUTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::clock_t tarch::timing::Watch::getCPUTicks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equals <a class="el" href="#a4d7c44022fe69312a28783264b821464" title="Return CPU Time in Seconds.">getCPUTime()</a> but returns the clock ticks instead of the time in seconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d7c44022fe69312a28783264b821464" name="a4d7c44022fe69312a28783264b821464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7c44022fe69312a28783264b821464">&#9670;&#160;</a></span>getCPUTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::timing::Watch::getCPUTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return CPU Time in Seconds. </p>
+<p>This method returns the elapsed CPU time between the start and stop command of the timer, i.e., the clock ticks actually spent by the process. Take care: This counter might overflow, especially on a 32 bit architecture.</p>
+<p>!!! Multithreading</p>
+<p>If you use multithreading, CPU time sums up the clock ticks invested by the individual cores, i.e., if you switch from a one core to a dual core machine, the CPU time should roughly double.</p>
+<dl class="section return"><dt>Returns</dt><dd>CPU time in seconds </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a731b9f06e7922b94bd09cfbf134b4363" name="a731b9f06e7922b94bd09cfbf134b4363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731b9f06e7922b94bd09cfbf134b4363">&#9670;&#160;</a></span>isOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::timing::Watch::isOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This operation returns whether the watch is currently on. </p>
+<p>If the routine returns false, it is currently stopped. The concept of on/off is a logical concept. Internally, a watch simply administers system time snapshots, while the get routines return differences of these snapshots. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a882e3950fab71e4f369f1d9b4de37ca6" name="a882e3950fab71e4f369f1d9b4de37ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882e3950fab71e4f369f1d9b4de37ca6">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::timing::Watch::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(Re)Start the Timer </p>
+<p>This method starts the timer. Actually, it restarts the time as the constructor also invokes this operation. You don't have to call <a class="el" href="#a882e3950fab71e4f369f1d9b4de37ca6" title="(Re)Start the Timer">start()</a> after <a class="el" href="#a727c6c99986b9680b2ba511dbcfa7e9e" title="Stop timer.">stop()</a>. If you omit another call to <a class="el" href="#a882e3950fab71e4f369f1d9b4de37ca6" title="(Re)Start the Timer">start()</a>, you just won't reset the baseline, i.e., all getXXXTime() calls will still refer to the same time zero when the <a class="el" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html" title="A simple class that has to be included to measure the clock ticks required for an operation.">Watch</a> has been constructed.</p>
+<dl class="section see"><dt>See also</dt><dd>stopTimer() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>, and <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00010">Watch()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dfc/classtarch_1_1timing_1_1Watch_a882e3950fab71e4f369f1d9b4de37ca6_icgraph.png" border="0" usemap="#ad4/dfc/classtarch_1_1timing_1_1Watch_a882e3950fab71e4f369f1d9b4de37ca6_icgraph" alt=""/></div>
+<map name="ad4/dfc/classtarch_1_1timing_1_1Watch_a882e3950fab71e4f369f1d9b4de37ca6_icgraph" id="ad4/dfc/classtarch_1_1timing_1_1Watch_a882e3950fab71e4f369f1d9b4de37ca6_icgraph">
+<area shape="rect" title="(Re)Start the Timer" alt="" coords="309,23,463,63"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="295,25,261,21,150,16,60,19,60,14,150,11,262,15,296,20"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="159,31,210,56"/>
+<area shape="poly" title=" " alt="" coords="295,46,210,46,210,41,295,41"/>
+<area shape="rect" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html#a15dca6122403cfcd727e19c1dc737072" title="Construct a watch." alt="" coords="108,81,261,121"/>
+<area shape="poly" title=" " alt="" coords="303,70,256,83,255,78,302,65"/>
+<area shape="poly" title=" " alt="" coords="145,39,60,25,61,20,146,34"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a727c6c99986b9680b2ba511dbcfa7e9e" name="a727c6c99986b9680b2ba511dbcfa7e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727c6c99986b9680b2ba511dbcfa7e9e">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::timing::Watch::stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop timer. </p>
+<p>This method stops the timer. You may stop a timer multiple time because the stop does not reset the start time. Please note that all the getters return meaningful results if and only if you call stopTimer(). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d48/Watch_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d66/BenchmarkDriver_8cpp_source.html#l00171">assessKernel()</a>, <a class="el" href="../../d4/da1/Variant3_8cpp_source.html#l00099">firstTask()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00100">firstTask()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00105">firstTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00098">firstTask()</a>, <a class="el" href="../../d6/da8/tarch_2logging_2Statistics_8cpp_source.html#l00108">tarch::logging::Statistics::initData()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00045">initialTask()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00042">initialTask()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, <a class="el" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp_source.html#l00349">runBenchmarks()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00224">variant1::runBenchmarks()</a>, <a class="el" href="../../dc/d0e/Variant2_8cpp_source.html#l00229">variant2::runBenchmarks()</a>, <a class="el" href="../../d4/da1/Variant3_8cpp_source.html#l00225">variant3::runBenchmarks()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00223">variant4::runBenchmarks()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00225">variant5::runBenchmarks()</a>, <a class="el" href="../../d5/d79/Variant6_8cpp_source.html#l00231">variant6::runBenchmarks()</a>, <a class="el" href="../../dc/d0e/Variant2_8cpp_source.html#l00102">runKernels()</a>, <a class="el" href="../../d8/dfe/Variant4_8cpp_source.html#l00100">runKernels()</a>, <a class="el" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp_source.html#l00248">runKernels()</a>, <a class="el" href="../../dd/d4e/Variant1_8cpp_source.html#l00133">secondTask()</a>, <a class="el" href="../../db/d6b/Variant5_8cpp_source.html#l00132">secondTask()</a>, and <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dfc/classtarch_1_1timing_1_1Watch_a727c6c99986b9680b2ba511dbcfa7e9e_icgraph.png" border="0" usemap="#ad4/dfc/classtarch_1_1timing_1_1Watch_a727c6c99986b9680b2ba511dbcfa7e9e_icgraph" alt=""/></div>
+<map name="ad4/dfc/classtarch_1_1timing_1_1Watch_a727c6c99986b9680b2ba511dbcfa7e9e_icgraph" id="ad4/dfc/classtarch_1_1timing_1_1Watch_a727c6c99986b9680b2ba511dbcfa7e9e_icgraph">
+<area shape="rect" title="Stop timer." alt="" coords="840,535,993,575"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a476510475789a57c8dca35d99077d767" title=" " alt="" coords="649,5,756,31"/>
+<area shape="poly" title=" " alt="" coords="909,522,894,415,868,275,852,204,833,140,813,88,790,52,774,39,755,30,757,25,777,34,794,48,817,85,838,139,857,203,873,274,899,415,914,521"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a3ba8d145905f7aabe0e47a31735868c5" title="Run the benchmark for one particular number of cells." alt="" coords="389,56,513,81"/>
+<area shape="poly" title=" " alt="" coords="909,522,894,422,870,293,853,229,835,172,814,126,790,96,758,75,722,60,683,51,644,47,568,49,503,59,503,53,567,43,644,41,684,46,723,55,760,70,794,92,818,123,840,170,859,228,875,292,900,421,914,521"/>
+<area shape="rect" href="../../d4/da1/Variant3_8cpp.html#a05ba3fd5dac9248d4e8007ede97a9973" title=" " alt="" coords="665,772,741,797"/>
+<area shape="poly" title=" " alt="" coords="905,590,888,628,863,672,832,716,794,755,768,770,742,780,740,775,766,765,790,751,828,713,859,669,883,625,900,588"/>
+<area shape="rect" href="../../d5/de9/namespacevariant3.html#ab25d7a05b6fd985bc2b1e2c4d6752b76" title=" " alt="" coords="357,721,544,747"/>
+<area shape="poly" title=" " alt="" coords="897,589,854,641,825,667,793,688,732,713,666,729,603,737,544,740,544,734,602,732,666,723,730,708,791,684,822,663,850,638,893,585"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#ab396fec6a2bfdb8d1f455bd7847d04ff" title=" " alt="" coords="665,156,741,181"/>
+<area shape="poly" title=" " alt="" coords="910,522,901,455,881,370,866,325,846,281,821,239,790,203,767,186,740,177,742,172,769,182,794,199,825,236,850,278,871,323,886,369,907,454,916,521"/>
+<area shape="rect" href="../../db/def/namespacevariant1.html#a5826fd75fe19ed3fdd2dc416f788f630" title=" " alt="" coords="357,257,544,283"/>
+<area shape="poly" title=" " alt="" coords="911,522,903,460,883,383,868,344,847,307,822,274,791,247,752,228,710,218,667,215,623,219,542,237,481,260,479,255,541,232,622,214,667,210,711,212,754,223,793,242,826,270,852,304,873,341,888,381,908,459,916,521"/>
+<area shape="rect" href="../../d5/d79/Variant6_8cpp.html#a2c1675eb05742d768a52dd2ac838bfd2" title=" " alt="" coords="665,1024,741,1049"/>
+<area shape="poly" title=" " alt="" coords="913,590,897,688,871,815,837,935,816,982,794,1015,769,1030,741,1038,740,1032,767,1025,790,1011,812,980,832,933,866,813,892,687,908,589"/>
+<area shape="rect" href="../../da/d1d/namespacevariant6.html#a0b04509c747acbc09a679b9f283737de" title=" " alt="" coords="357,1024,544,1049"/>
+<area shape="poly" title=" " alt="" coords="915,590,903,700,879,843,863,915,844,979,821,1030,808,1050,794,1064,755,1086,713,1098,668,1101,623,1097,580,1088,540,1076,477,1052,479,1047,541,1071,581,1083,624,1091,668,1095,712,1093,753,1081,790,1060,804,1046,816,1028,839,977,858,913,874,842,897,699,910,589"/>
+<area shape="rect" href="../../db/d6b/Variant5_8cpp.html#abe71b446613b3f8b14f311514de17ae7" title=" " alt="" coords="665,405,741,431"/>
+<area shape="poly" title=" " alt="" coords="884,527,842,489,791,452,740,431,742,426,793,448,845,485,888,523"/>
+<area shape="rect" href="../../de/d4a/namespacevariant5.html#ab99b0238828151d21bad542cce15ac4b" title=" " alt="" coords="357,431,544,456"/>
+<area shape="poly" title=" " alt="" coords="869,531,832,512,791,497,728,480,663,467,544,452,545,447,664,462,729,474,793,491,834,507,871,526"/>
+<area shape="rect" href="../../d7/d06/classtarch_1_1logging_1_1Statistics.html#a48b0bb8ff9f13e0d8ebc9db31d965598" title="Ensures that dataset is there." alt="" coords="613,506,792,546"/>
+<area shape="poly" title=" " alt="" coords="826,546,792,541,792,536,826,540"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#a838713af75d606f7125ad8b4f7b302c7" title=" " alt="" coords="659,307,747,332"/>
+<area shape="poly" title=" " alt="" coords="903,523,887,482,863,434,831,386,790,345,769,334,746,327,748,322,771,329,794,341,835,383,867,431,891,480,908,521"/>
+<area shape="rect" href="../../d8/dfe/Variant4_8cpp.html#ae0db8356b2046c546502026d1616ceef" title=" " alt="" coords="659,620,747,645"/>
+<area shape="poly" title=" " alt="" coords="860,583,793,610,748,624,746,619,791,605,858,578"/>
+<area shape="rect" href="../../d6/d41/namespacevariant4.html#a42462e7412c393ff1aea9128dfde00af" title=" " alt="" coords="357,645,544,671"/>
+<area shape="poly" title=" " alt="" coords="892,588,849,627,822,645,793,659,722,677,648,682,579,680,519,673,520,668,579,675,648,677,721,671,791,654,819,641,845,623,888,584"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="423,949,478,975"/>
+<area shape="poly" title=" " alt="" coords="917,589,910,658,892,746,876,792,855,836,828,877,794,912,769,926,734,937,644,952,551,961,478,964,478,959,551,955,644,947,732,932,767,921,790,908,824,874,850,834,871,790,886,745,905,657,912,589"/>
+<area shape="rect" href="../../d1/d69/namespacevariant2.html#a1bdabddc2c9309c2a62795590fd07fc3" title=" " alt="" coords="357,823,544,848"/>
+<area shape="poly" title=" " alt="" coords="912,589,900,640,878,702,843,762,820,789,794,811,761,829,726,842,689,851,652,856,579,857,517,851,517,845,580,852,651,851,688,846,724,837,759,824,790,806,817,785,839,759,873,699,895,639,907,588"/>
+<area shape="rect" href="../../dc/d0e/Variant2_8cpp.html#a6e6d6298be4f7f8b49eda35a720a7e96" title=" " alt="" coords="657,873,748,899"/>
+<area shape="poly" title=" " alt="" coords="913,589,901,646,879,717,844,791,821,825,794,856,773,871,749,880,747,875,770,866,790,852,817,822,839,789,874,716,896,645,908,588"/>
+<area shape="rect" href="../../d8/dfe/Variant4_8cpp.html#ae6773f9fdd90678fa209ae22ab5305f3" title=" " alt="" coords="657,571,748,596"/>
+<area shape="poly" title=" " alt="" coords="827,570,749,580,748,575,826,565"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a646807dc61c30c31104ca975ca612316" title=" " alt="" coords="657,107,748,132"/>
+<area shape="poly" title=" " alt="" coords="913,522,908,445,891,343,876,289,854,237,826,188,790,145,770,132,747,125,749,120,773,127,794,141,830,185,859,235,881,288,896,342,914,444,918,521"/>
+<area shape="rect" href="../../dd/d4e/Variant1_8cpp.html#a197aef0ea61dd084f41491b6eb8b0cff" title=" " alt="" coords="654,257,751,283"/>
+<area shape="poly" title=" " alt="" coords="906,523,893,472,870,411,837,349,815,321,790,296,772,285,751,278,752,273,774,280,794,292,819,317,841,346,875,409,898,470,912,521"/>
+<area shape="rect" href="../../db/d6b/Variant5_8cpp.html#ab3b8f4db8beb3263f0e7c02ba2974c9a" title=" " alt="" coords="654,356,751,381"/>
+<area shape="poly" title=" " alt="" coords="897,524,854,458,825,424,791,395,772,385,751,378,752,373,774,380,793,390,829,420,859,455,901,521"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="677,975,728,1000"/>
+<area shape="poly" title=" " alt="" coords="917,589,911,664,892,762,876,814,855,865,828,914,794,957,779,969,762,978,729,987,727,982,760,973,776,965,790,953,824,911,851,863,871,812,887,760,905,663,912,589"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#ab62b2a3788115c3ba667e7d7ef98ceb7" title=" " alt="" coords="392,5,509,31"/>
+<area shape="poly" title=" " alt="" coords="636,21,509,21,509,15,636,15"/>
+<area shape="poly" title=" " alt="" coords="636,34,514,59,512,54,635,29"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,5,174,31"/>
+<area shape="poly" title=" " alt="" coords="378,21,174,21,174,15,378,15"/>
+<area shape="rect" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,56,174,81"/>
+<area shape="poly" title=" " alt="" coords="375,71,174,71,174,66,375,66"/>
+<area shape="poly" title=" " alt="" coords="651,777,514,749,515,744,652,772"/>
+<area shape="rect" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="119,671,174,696"/>
+<area shape="poly" title=" " alt="" coords="360,722,174,690,175,685,361,716"/>
+<area shape="rect" href="../../de/d49/classexahype2_1_1EnclaveBookkeeping.html#a8ec5f5b1fd3c715129561d0fdd7988c1" title=" " alt="" coords="336,149,565,189"/>
+<area shape="poly" title=" " alt="" coords="651,171,566,171,566,166,651,166"/>
+<area shape="poly" title=" " alt="" coords="653,189,614,203,481,260,479,255,612,198,651,184"/>
+<area shape="rect" href="../../dc/d8c/classexahype2_1_1tests_1_1EnclaveBookkeepingTest.html#a45c335c0e4d1915f77a609437f0d85bd" title=" " alt="" coords="5,149,288,189"/>
+<area shape="poly" title=" " alt="" coords="322,171,288,171,288,166,322,166"/>
+<area shape="poly" title=" " alt="" coords="433,295,338,420,159,672,155,669,334,416,429,292"/>
+<area shape="poly" title=" " alt="" coords="651,1039,544,1039,544,1034,651,1034"/>
+<area shape="poly" title=" " alt="" coords="392,1022,362,1007,334,988,298,952,265,911,211,826,172,749,150,697,155,695,177,747,215,824,269,908,302,948,338,984,365,1003,394,1017"/>
+<area shape="poly" title=" " alt="" coords="651,426,545,437,544,431,651,420"/>
+<area shape="poly" title=" " alt="" coords="424,467,166,673,162,669,421,463"/>
+<area shape="poly" title=" " alt="" coords="644,311,516,285,517,280,646,306"/>
+<area shape="poly" title=" " alt="" coords="645,641,545,651,544,646,645,636"/>
+<area shape="poly" title=" " alt="" coords="344,670,175,684,174,678,344,664"/>
+<area shape="poly" title=" " alt="" coords="411,819,172,698,175,694,413,814"/>
+<area shape="poly" title=" " alt="" coords="644,877,514,851,515,845,645,872"/>
+<area shape="poly" title=" " alt="" coords="645,601,614,610,492,648,490,643,613,605,643,596"/>
+<area shape="poly" title=" " alt="" coords="643,110,512,84,513,78,645,105"/>
+<area shape="poly" title=" " alt="" coords="640,273,544,273,544,267,640,267"/>
+<area shape="poly" title=" " alt="" coords="641,387,614,395,492,433,490,428,613,390,640,382"/>
+<area shape="poly" title=" " alt="" coords="663,986,478,967,479,962,664,981"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ac7605eca46ffc2e1482db19088eadc90" name="ac7605eca46ffc2e1482db19088eadc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7605eca46ffc2e1482db19088eadc90">&#9670;&#160;</a></span>_elapsedClockTicks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::clock_t tarch::timing::Watch::_elapsedClockTicks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds the elapsed processor time. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00080">80</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="a93de04a22141b42be872af5c42b80d79" name="a93de04a22141b42be872af5c42b80d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93de04a22141b42be872af5c42b80d79">&#9670;&#160;</a></span>_elapsedTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> tarch::timing::Watch::_elapsedTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds the elapsed calendar time. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00085">85</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="a30e39c2d00cf9d93eb63d9082f33a7be" name="a30e39c2d00cf9d93eb63d9082f33a7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e39c2d00cf9d93eb63d9082f33a7be">&#9670;&#160;</a></span>_isRunning</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::timing::Watch::_isRunning</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Has stopTimer() been called before. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00090">90</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="a03e2ae5adbf6b3f2f8f7d7a48c8f0298" name="a03e2ae5adbf6b3f2f8f7d7a48c8f0298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e2ae5adbf6b3f2f8f7d7a48c8f0298">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> tarch::timing::Watch::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log device the result is written to. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00050">50</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="aec7f66f6915049c9b0b3425dd8d1f9ee" name="aec7f66f6915049c9b0b3425dd8d1f9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7f66f6915049c9b0b3425dd8d1f9ee">&#9670;&#160;</a></span>_operationName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::timing::Watch::_operationName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the name of the operation the watch is used within. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00061">61</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c9b19deff6f0c7070cbd30756c5d339" name="a6c9b19deff6f0c7070cbd30756c5d339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9b19deff6f0c7070cbd30756c5d339">&#9670;&#160;</a></span>_plotResultInDestructor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::timing::Watch::_plotResultInDestructor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag to distinguish the (original) standard watch. </p>
+<p>Is used in the destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00056">56</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5aa55bee1e3380a657e57b69465f6be" name="ae5aa55bee1e3380a657e57b69465f6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5aa55bee1e3380a657e57b69465f6be">&#9670;&#160;</a></span>_startClockTicks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::clock_t tarch::timing::Watch::_startClockTicks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds the clock ticks at the beginning of the time measurement. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00066">66</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<a id="adb9cb0e8ee8c5ab3d958dec2f5134c65" name="adb9cb0e8ee8c5ab3d958dec2f5134c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9cb0e8ee8c5ab3d958dec2f5134c65">&#9670;&#160;</a></span>_startTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::steady_clock::time_point tarch::timing::Watch::_startTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds the time at the beginning of the time measurement. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d42/Watch_8h_source.html#l00071">71</a> of file <a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/timing/<a class="el" href="../../d9/d42/Watch_8h_source.html">Watch.h</a></li>
+<li>src/tarch/timing/<a class="el" href="../../d9/d48/Watch_8cpp_source.html">Watch.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d1/d80/namespacetarch_1_1timing.html">timing</a></li><li class="navelem"><a class="el" href="../../d4/dfc/classtarch_1_1timing_1_1Watch.html">Watch</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:00 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

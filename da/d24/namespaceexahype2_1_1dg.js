@@ -1,0 +1,68 @@
+var namespaceexahype2_1_1dg =
+[
+    [ "average", "de/dfe/namespaceexahype2_1_1dg_1_1average.html", [
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#abdfa2fba783e4b9665241fbc7b6414c6", null ],
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre_functors", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#ad9239c628600ad351b84c0d21c6a435c", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#a84cf2e7894c6d5e7b475ee16b94aeb81", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#ab74e991aa441abea397c4b3ca7325844", null ],
+      [ "multiplyWithInvertedMassMatrix_GaussLegendre", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#a44cdb1017b655db0c9a0a195b2a69752", null ],
+      [ "solveRiemannProblem_pointwise_in_situ", "de/dfe/namespaceexahype2_1_1dg_1_1average.html#aef3d65a78016f430a3ffcf4ffe096a1e", null ]
+    ] ],
+    [ "fluxaverage", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html", [
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#afcb5dad694d3346709a57bfd111fb478", null ],
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre_functors", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#a7281af6900ba0ff67c60e0f4e2e58977", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#a8f2d4ba572707114176ea37b5668dbbf", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#ac5b713ac654d54b0bfcce86d52927163", null ],
+      [ "multiplyWithInvertedMassMatrix_GaussLegendre", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#a25118d9b11bb6ff1345064d9f8d4b5e3", null ],
+      [ "solveRiemannProblem_pointwise_in_situ", "d2/da4/namespaceexahype2_1_1dg_1_1fluxaverage.html#a36e5f7ae2e0134343662e97a5448a7dc", null ]
+    ] ],
+    [ "internal", "dc/dbc/namespaceexahype2_1_1dg_1_1internal.html", [
+      [ "copySolution", "dc/dbc/namespaceexahype2_1_1dg_1_1internal.html#ae3691e8aafbefbfe68b4f6714d3747c3", null ]
+    ] ],
+    [ "laxfriedrichs", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html", [
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#a4b28e6515ac1e7102d323534c2a15b8b", null ],
+      [ "cellIntegral_patchwise_in_situ_GaussLegendre_functors", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#a2c5a18fe519ddf4d8c61ff700e6138fd", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#a6212b55d25e0a2c3f4fec445a6621efc", null ],
+      [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#ae2822def526c376011f0b54af9a48b8a", null ],
+      [ "multiplyWithInvertedMassMatrix_GaussLegendre", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#ad3f39464f2074991331ad4a462a6a59a", null ],
+      [ "solveRiemannProblem_pointwise_in_situ", "de/dba/namespaceexahype2_1_1dg_1_1laxfriedrichs.html#af1162261de0ba619c0d8a17bbbac6737", null ]
+    ] ],
+    [ "rusanov", "d2/d1a/namespaceexahype2_1_1dg_1_1rusanov.html", "d2/d1a/namespaceexahype2_1_1dg_1_1rusanov" ],
+    [ "tests", "dc/ddc/namespaceexahype2_1_1dg_1_1tests.html", "dc/ddc/namespaceexahype2_1_1dg_1_1tests" ],
+    [ "PointSource", "d3/daa/structexahype2_1_1dg_1_1PointSource.html", "d3/daa/structexahype2_1_1dg_1_1PointSource" ],
+    [ "BoundaryConditions", "da/d24/namespaceexahype2_1_1dg.html#a7b249d178e4f59bae3025c4d85bb5d83", null ],
+    [ "Flux", "da/d24/namespaceexahype2_1_1dg.html#adbb7bcdb092987bf9b7fad5e6b9b456e", null ],
+    [ "MaxEigenvalue", "da/d24/namespaceexahype2_1_1dg.html#a1fcaeafd95dd08eceb6adaef432a1679", null ],
+    [ "NonConservativeProduct", "da/d24/namespaceexahype2_1_1dg.html#a27f1d38cfcbbca2751ad035de243d828", null ],
+    [ "PointSources", "da/d24/namespaceexahype2_1_1dg.html#a4abcadde7ec45f49f3c3d720fc971656", null ],
+    [ "Source", "da/d24/namespaceexahype2_1_1dg.html#ad133fadfc583ba5018a7fbff4f5261c0", null ],
+    [ "applyBoundaryConditions", "da/d24/namespaceexahype2_1_1dg.html#a69f8fdfeeaa9beb3df048084d9f35d64", null ],
+    [ "cellIndexToHullIndex", "da/d24/namespaceexahype2_1_1dg.html#af8b86f01f20a0939cf070f5b2b26d34e", null ],
+    [ "cellIntegral_patchwise_in_situ_GaussLegendre", "da/d24/namespaceexahype2_1_1dg.html#a11d8817cfe4b443a0e054849fd416404", null ],
+    [ "cellIntegral_patchwise_in_situ_GaussLegendre_functors", "da/d24/namespaceexahype2_1_1dg.html#aabc4aa73b3c4da1a7c2b91a59a023e48", null ],
+    [ "clearRiemannResult", "da/d24/namespaceexahype2_1_1dg.html#a7ad73030ef277082b2bb54668b277847", null ],
+    [ "clearSolutionProjection", "da/d24/namespaceexahype2_1_1dg.html#aa5b555a13d44fcd072370506387c6c9a", null ],
+    [ "computeGradient", "da/d24/namespaceexahype2_1_1dg.html#a8c4620280b392aee0cebc451006767f7", null ],
+    [ "copyOneSideOfFaceProjection", "da/d24/namespaceexahype2_1_1dg.html#aec0fce299795f2020c985abfd08181bc", null ],
+    [ "evaluatePolynomial", "da/d24/namespaceexahype2_1_1dg.html#ae7ea8f122f7e3c6f200c3a393a533977", null ],
+    [ "getIndex", "da/d24/namespaceexahype2_1_1dg.html#aa93c7a775673c9b44d9aef24f1aee32a", null ],
+    [ "getNodesPerCell", "da/d24/namespaceexahype2_1_1dg.html#ad17ac2b2d2a271b8307e78c1cceaaa2d", null ],
+    [ "getQuadraturePoint", "da/d24/namespaceexahype2_1_1dg.html#a6759181b9597e1330429fc69d85f7e93", null ],
+    [ "getQuadratureWeight", "da/d24/namespaceexahype2_1_1dg.html#aa713a8587fef73f22f39f3d3b95304f2", null ],
+    [ "getStrides", "da/d24/namespaceexahype2_1_1dg.html#a5a1fb7b3f73fac2d9558f352bcb0763e", null ],
+    [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "da/d24/namespaceexahype2_1_1dg.html#a29d2b16da3171d899594aae64dcde344", null ],
+    [ "integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre", "da/d24/namespaceexahype2_1_1dg.html#ade9d85f21e5fd03df1e4c4350750ab11", null ],
+    [ "interpolateRiemannSolution", "da/d24/namespaceexahype2_1_1dg.html#ad98a3d14e0cbd572414b3419b4fcd881", null ],
+    [ "multiplyWithInvertedMassMatrix_GaussLegendre", "da/d24/namespaceexahype2_1_1dg.html#a2864c238cc5565608eeaf797e40a5a75", null ],
+    [ "plotCell", "da/d24/namespaceexahype2_1_1dg.html#af49d306a30252a83058c8e7584d55f1a", null ],
+    [ "plotFace", "da/d24/namespaceexahype2_1_1dg.html#a24cc28eed7143452330d81f869c98027", null ],
+    [ "projectAllValuesOntoParticle", "da/d24/namespaceexahype2_1_1dg.html#a264c88c9065f63979580611bc49b7b0c", null ],
+    [ "projectValueOntoParticle", "da/d24/namespaceexahype2_1_1dg.html#adeb8b4f06d812d4a3205d66e88a36a4a", null ],
+    [ "projectVolumetricDataAndGradientOntoFaces", "da/d24/namespaceexahype2_1_1dg.html#aa5e9faf2782ae88b4da3c1d4401dd432", null ],
+    [ "projectVolumetricDataAndGradientOntoFaces", "da/d24/namespaceexahype2_1_1dg.html#a67c7e6f552936c2ad8eeea2bc5769f97", null ],
+    [ "projectVolumetricDataOntoFaces", "da/d24/namespaceexahype2_1_1dg.html#acbc6dd13853761135ecc12b8090304d6", null ],
+    [ "projectVolumetricDataOntoFaces", "da/d24/namespaceexahype2_1_1dg.html#aabbb55078f599d89cbc5908343afb68d", null ],
+    [ "reduceMaxEigenvalue_patchwise_functors", "da/d24/namespaceexahype2_1_1dg.html#a695d6a84cfaecd5ebf48ccf79b66ad16", null ],
+    [ "restrictAndAccumulateProjectedFacePolynomial", "da/d24/namespaceexahype2_1_1dg.html#a3635d991cdc632b5897495cc34fb58b0", null ],
+    [ "subtractCell", "da/d24/namespaceexahype2_1_1dg.html#adef377d5e283a5f1e302bcb4f5faeb25", null ]
+];

@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/dcb/namespaceaderdg-fused.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">aderdg-fused Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab5fa7018856041f8f9c5a8361a77b7c6" id="r_ab5fa7018856041f8f9c5a8361a77b7c6"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5fa7018856041f8f9c5a8361a77b7c6">available_scenarios</a></td></tr>
+<tr class="separator:ab5fa7018856041f8f9c5a8361a77b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acead3f158438298ae849ca63c866b440" id="r_acead3f158438298ae849ca63c866b440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acead3f158438298ae849ca63c866b440">parser</a></td></tr>
+<tr class="separator:acead3f158438298ae849ca63c866b440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9337e8aa9f9eb43d98b47a0a376fc1" id="r_a6d9337e8aa9f9eb43d98b47a0a376fc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d9337e8aa9f9eb43d98b47a0a376fc1">choices</a></td></tr>
+<tr class="separator:a6d9337e8aa9f9eb43d98b47a0a376fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081b9041ffba22cad040ef384956946d" id="r_a081b9041ffba22cad040ef384956946d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a081b9041ffba22cad040ef384956946d">default</a></td></tr>
+<tr class="separator:a081b9041ffba22cad040ef384956946d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee9ec5b2385de2347762f046ecd1ffc" id="r_a2ee9ec5b2385de2347762f046ecd1ffc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee9ec5b2385de2347762f046ecd1ffc">help</a></td></tr>
+<tr class="separator:a2ee9ec5b2385de2347762f046ecd1ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700945336c677ca3ef8d2ad715004a43" id="r_a700945336c677ca3ef8d2ad715004a43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a700945336c677ca3ef8d2ad715004a43">type</a></td></tr>
+<tr class="separator:a700945336c677ca3ef8d2ad715004a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c63e5f02d6a26308c4847fa642980e" id="r_ab1c63e5f02d6a26308c4847fa642980e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1c63e5f02d6a26308c4847fa642980e">nargs</a></td></tr>
+<tr class="separator:ab1c63e5f02d6a26308c4847fa642980e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8adacfd7eb367580ed899a7d0c5b6ef" id="r_ad8adacfd7eb367580ed899a7d0c5b6ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8adacfd7eb367580ed899a7d0c5b6ef">action</a></td></tr>
+<tr class="separator:ad8adacfd7eb367580ed899a7d0c5b6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922596e6b9a78fd8be3ec555ee4dbed4" id="r_a922596e6b9a78fd8be3ec555ee4dbed4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a922596e6b9a78fd8be3ec555ee4dbed4">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a922596e6b9a78fd8be3ec555ee4dbed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a2b6a83911f9b29e0a6dd278228b83" id="r_a67a2b6a83911f9b29e0a6dd278228b83"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67a2b6a83911f9b29e0a6dd278228b83">scenario</a> = <a class="el" href="#ab5fa7018856041f8f9c5a8361a77b7c6">available_scenarios</a>[args.scenario]</td></tr>
+<tr class="separator:a67a2b6a83911f9b29e0a6dd278228b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19666fd5b7bf8b467b8a5dc778c5fcd" id="r_ae19666fd5b7bf8b467b8a5dc778c5fcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae19666fd5b7bf8b467b8a5dc778c5fcd">ader_solver</a></td></tr>
+<tr class="separator:ae19666fd5b7bf8b467b8a5dc778c5fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0210bc0f823653f2efabcd0feaeee57" id="r_af0210bc0f823653f2efabcd0feaeee57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0210bc0f823653f2efabcd0feaeee57">polynomials</a></td></tr>
+<tr class="separator:af0210bc0f823653f2efabcd0feaeee57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8035cd735eaa49a9db6922018fd540" id="r_a5f8035cd735eaa49a9db6922018fd540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f8035cd735eaa49a9db6922018fd540">is_linear</a></td></tr>
+<tr class="separator:a5f8035cd735eaa49a9db6922018fd540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab597561bc68a42fefaa783416720a7ac" id="r_ab597561bc68a42fefaa783416720a7ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab597561bc68a42fefaa783416720a7ac">precision</a></td></tr>
+<tr class="separator:ab597561bc68a42fefaa783416720a7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990c8577cb4563dddbe62c79f6f559fe" id="r_a990c8577cb4563dddbe62c79f6f559fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a990c8577cb4563dddbe62c79f6f559fe">initial_conditions</a></td></tr>
+<tr class="separator:a990c8577cb4563dddbe62c79f6f559fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84206a73fc1df65f08ccab78f46aa0ed" id="r_a84206a73fc1df65f08ccab78f46aa0ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84206a73fc1df65f08ccab78f46aa0ed">boundary_conditions</a></td></tr>
+<tr class="separator:a84206a73fc1df65f08ccab78f46aa0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57aa551fd0cc6479d6ee40e6b93584a6" id="r_a57aa551fd0cc6479d6ee40e6b93584a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57aa551fd0cc6479d6ee40e6b93584a6">max_eigenvalue</a></td></tr>
+<tr class="separator:a57aa551fd0cc6479d6ee40e6b93584a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72b3faeef99da0103c295ce2786b1c5" id="r_ad72b3faeef99da0103c295ce2786b1c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72b3faeef99da0103c295ce2786b1c5">flux</a></td></tr>
+<tr class="separator:ad72b3faeef99da0103c295ce2786b1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b942a5885c0a1bc6893184144c13064" id="r_a7b942a5885c0a1bc6893184144c13064"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b942a5885c0a1bc6893184144c13064">ncp</a></td></tr>
+<tr class="separator:a7b942a5885c0a1bc6893184144c13064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8957e63e8583f5046f4d58428e190ef7" id="r_a8957e63e8583f5046f4d58428e190ef7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8957e63e8583f5046f4d58428e190ef7">riemann_solver</a></td></tr>
+<tr class="separator:a8957e63e8583f5046f4d58428e190ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b45ef69090500852745f63f72bca83f" id="r_a5b45ef69090500852745f63f72bca83f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b45ef69090500852745f63f72bca83f">project</a></td></tr>
+<tr class="separator:a5b45ef69090500852745f63f72bca83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc37b907b6ee9058d25cf5cdfeb32ca0" id="r_afc37b907b6ee9058d25cf5cdfeb32ca0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc37b907b6ee9058d25cf5cdfeb32ca0">dimensions</a></td></tr>
+<tr class="separator:afc37b907b6ee9058d25cf5cdfeb32ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197f2f7dd422847ddc0b321fa0f4e6e0" id="r_a197f2f7dd422847ddc0b321fa0f4e6e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197f2f7dd422847ddc0b321fa0f4e6e0">size</a></td></tr>
+<tr class="separator:a197f2f7dd422847ddc0b321fa0f4e6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa204f1547c8265b66bc03eba042e6a74" id="r_aa204f1547c8265b66bc03eba042e6a74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa204f1547c8265b66bc03eba042e6a74">offset</a></td></tr>
+<tr class="separator:aa204f1547c8265b66bc03eba042e6a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771452e765b6423f835cbeeb39842866" id="r_a771452e765b6423f835cbeeb39842866"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771452e765b6423f835cbeeb39842866">min_end_time</a></td></tr>
+<tr class="separator:a771452e765b6423f835cbeeb39842866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6fa23ce4f1c816945b75e6b706456b" id="r_a2b6fa23ce4f1c816945b75e6b706456b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b6fa23ce4f1c816945b75e6b706456b">max_end_time</a></td></tr>
+<tr class="separator:a2b6fa23ce4f1c816945b75e6b706456b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9065288c870238e48aaeab11b72e0ed" id="r_ae9065288c870238e48aaeab11b72e0ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9065288c870238e48aaeab11b72e0ed">first_plot_time_stamp</a></td></tr>
+<tr class="separator:ae9065288c870238e48aaeab11b72e0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000ceb9e000b60f1e9f1d498eed82547" id="r_a000ceb9e000b60f1e9f1d498eed82547"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000ceb9e000b60f1e9f1d498eed82547">time_in_between_plots</a></td></tr>
+<tr class="separator:a000ceb9e000b60f1e9f1d498eed82547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac130e8c77590cbfefbe22a247e9fd7f5" id="r_ac130e8c77590cbfefbe22a247e9fd7f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac130e8c77590cbfefbe22a247e9fd7f5">periodic_BC</a></td></tr>
+<tr class="separator:ac130e8c77590cbfefbe22a247e9fd7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5963c5b1991bac77c8e1a44745380e85" id="r_a5963c5b1991bac77c8e1a44745380e85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5963c5b1991bac77c8e1a44745380e85">mode</a></td></tr>
+<tr class="separator:a5963c5b1991bac77c8e1a44745380e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2e7b1bb15fa1ddb52843680b75e3e5" id="r_a4d2e7b1bb15fa1ddb52843680b75e3e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2e7b1bb15fa1ddb52843680b75e3e5">accuracy</a> = args.accuracy</td></tr>
+<tr class="separator:a4d2e7b1bb15fa1ddb52843680b75e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e29b37a4cc5aa706e47a85c9bde6428" id="r_a3e29b37a4cc5aa706e47a85c9bde6428"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e29b37a4cc5aa706e47a85c9bde6428">formatted_num_cells</a> = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_cells))</td></tr>
+<tr class="separator:a3e29b37a4cc5aa706e47a85c9bde6428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0625b964c4a1302fbadad863626304e" id="r_aa0625b964c4a1302fbadad863626304e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0625b964c4a1302fbadad863626304e">formatted_num_threads</a> = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_threads))</td></tr>
+<tr class="separator:aa0625b964c4a1302fbadad863626304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae6cabcb529738f2c4018c635396d49" id="r_adae6cabcb529738f2c4018c635396d49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adae6cabcb529738f2c4018c635396d49">makefile</a> = project.output.makefile</td></tr>
+<tr class="separator:adae6cabcb529738f2c4018c635396d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33718e3ea02e875cd73b827dcc8040a4" id="r_a33718e3ea02e875cd73b827dcc8040a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33718e3ea02e875cd73b827dcc8040a4">make</a></td></tr>
+<tr class="separator:a33718e3ea02e875cd73b827dcc8040a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19924576475623e187feaad58b2f3a07" id="r_a19924576475623e187feaad58b2f3a07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19924576475623e187feaad58b2f3a07">True</a></td></tr>
+<tr class="separator:a19924576475623e187feaad58b2f3a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddcebd0a0826e7c96fefd4e94f6734b" id="r_a0ddcebd0a0826e7c96fefd4e94f6734b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddcebd0a0826e7c96fefd4e94f6734b">make_clean_first</a></td></tr>
+<tr class="separator:a0ddcebd0a0826e7c96fefd4e94f6734b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba70f88a3829d0cef39e7b5ed5c874e2" id="r_aba70f88a3829d0cef39e7b5ed5c874e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba70f88a3829d0cef39e7b5ed5c874e2">throw_away_data_after_build</a></td></tr>
+<tr class="separator:aba70f88a3829d0cef39e7b5ed5c874e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4d2e7b1bb15fa1ddb52843680b75e3e5" name="a4d2e7b1bb15fa1ddb52843680b75e3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2e7b1bb15fa1ddb52843680b75e3e5">&#9670;&#160;</a></span>accuracy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.accuracy = args.accuracy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00153">153</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ad8adacfd7eb367580ed899a7d0c5b6ef" name="ad8adacfd7eb367580ed899a7d0c5b6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8adacfd7eb367580ed899a7d0c5b6ef">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00070">70</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ae19666fd5b7bf8b467b8a5dc778c5fcd" name="ae19666fd5b7bf8b467b8a5dc778c5fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19666fd5b7bf8b467b8a5dc778c5fcd">&#9670;&#160;</a></span>ader_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.ader_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;AderSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=args.order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns=scenario._equation.num_unknowns,</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=scenario._equation.num_auxiliary_variables,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=0.001,  <span class="comment"># max_cell_size -&gt; arbitrary value</span></div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=0.001,  <span class="comment"># min_cell_size -&gt; arbitrary value</span></div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.5,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00104">104</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a922596e6b9a78fd8be3ec555ee4dbed4" name="a922596e6b9a78fd8be3ec555ee4dbed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922596e6b9a78fd8be3ec555ee4dbed4">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00100">100</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ab5fa7018856041f8f9c5a8361a77b7c6" name="ab5fa7018856041f8f9c5a8361a77b7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5fa7018856041f8f9c5a8361a77b7c6">&#9670;&#160;</a></span>available_scenarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict aderdg-fused.available_scenarios</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;AcousticPlanarWaves&quot;</span>: <a class="code hl_class" href="../../d5/d58/classscenarios_1_1acoustic__planar__waves_1_1AcousticPlanarWaves.html">scenarios.AcousticPlanarWaves</a>(dimensions=2),</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;AdvectionLinear&quot;</span>: <a class="code hl_class" href="../../db/dff/classscenarios_1_1advection__linear_1_1AdvectionLinear.html">scenarios.AdvectionLinear</a>(),</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;ElasticPlanarWaves&quot;</span>: <a class="code hl_class" href="../../de/d36/classscenarios_1_1elastic__planar__waves_1_1ElasticPlanarWaves.html">scenarios.ElasticPlanarWaves</a>(dimensions=2),</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;EulerGaussianBell&quot;</span>: <a class="code hl_class" href="../../dd/dc1/classscenarios_1_1euler__gaussian__bell_1_1EulerGaussianBell.html">scenarios.EulerGaussianBell</a>(),</div>
+<div class="line"><span class="lineno">    6</span>    <span class="stringliteral">&quot;EulerIsotropicVortex&quot;</span>: <a class="code hl_class" href="../../df/df9/classscenarios_1_1euler__isotropic__vortex_1_1EulerIsotropicVortex.html">scenarios.EulerIsotropicVortex</a>(),</div>
+<div class="line"><span class="lineno">    7</span>    <span class="stringliteral">&quot;SWERadialDamBreak&quot;</span>: <a class="code hl_class" href="../../d5/da0/classscenarios_1_1swe__radial__dam__break_1_1SWERadialDamBreak.html">scenarios.SWERadialDamBreak</a>(),</div>
+<div class="line"><span class="lineno">    8</span>    <span class="stringliteral">&quot;SWERestingLake&quot;</span>: <a class="code hl_class" href="../../d0/deb/classscenarios_1_1swe__resting__lake_1_1SWERestingLake.html">scenarios.SWERestingLake</a>(),</div>
+<div class="line"><span class="lineno">    9</span>}</div>
+<div class="ttc" id="aclassscenarios_1_1acoustic__planar__waves_1_1AcousticPlanarWaves_html"><div class="ttname"><a href="../../d5/d58/classscenarios_1_1acoustic__planar__waves_1_1AcousticPlanarWaves.html">scenarios.acoustic_planar_waves.AcousticPlanarWaves</a></div><div class="ttdoc">Scenario reproduced from Dumbser &amp; Käser, https://doi.org/10.1111/j.1365-246X.2006....</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d10/acoustic__planar__waves_8py_source.html#l00013">acoustic_planar_waves.py:13</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1advection__linear_1_1AdvectionLinear_html"><div class="ttname"><a href="../../db/dff/classscenarios_1_1advection__linear_1_1AdvectionLinear.html">scenarios.advection_linear.AdvectionLinear</a></div><div class="ttdoc">Very simple scenario in which the initial value of x is shifted in each spatial dimension.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de4/advection__linear_8py_source.html#l00012">advection_linear.py:12</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1elastic__planar__waves_1_1ElasticPlanarWaves_html"><div class="ttname"><a href="../../de/d36/classscenarios_1_1elastic__planar__waves_1_1ElasticPlanarWaves.html">scenarios.elastic_planar_waves.ElasticPlanarWaves</a></div><div class="ttdoc">Scenario reproduced from Dumbser &amp; Käser, https://doi.org/10.1111/j.1365-246X.2006....</div><div class="ttdef"><b>Definition</b> <a href="../../df/d4c/elastic__planar__waves_8py_source.html#l00012">elastic_planar_waves.py:12</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1euler__gaussian__bell_1_1EulerGaussianBell_html"><div class="ttname"><a href="../../dd/dc1/classscenarios_1_1euler__gaussian__bell_1_1EulerGaussianBell.html">scenarios.euler_gaussian_bell.EulerGaussianBell</a></div><div class="ttdoc">Scenario reproduced from Ioratti, Dumbser &amp; Loubère, https://doi.org/10.1007/s10915-020-01209-w (p.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/da0/euler__gaussian__bell_8py_source.html#l00012">euler_gaussian_bell.py:12</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1euler__isotropic__vortex_1_1EulerIsotropicVortex_html"><div class="ttname"><a href="../../df/df9/classscenarios_1_1euler__isotropic__vortex_1_1EulerIsotropicVortex.html">scenarios.euler_isotropic_vortex.EulerIsotropicVortex</a></div><div class="ttdoc">Scenario reproduced from Ioratti, Dumbser &amp; Loubère, https://doi.org/10.1007/s10915-020-01209-w (p.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d86/euler__isotropic__vortex_8py_source.html#l00012">euler_isotropic_vortex.py:12</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1swe__radial__dam__break_1_1SWERadialDamBreak_html"><div class="ttname"><a href="../../d5/da0/classscenarios_1_1swe__radial__dam__break_1_1SWERadialDamBreak.html">scenarios.swe_radial_dam_break.SWERadialDamBreak</a></div><div class="ttdoc">Classic radial dam break SWE equations, with constant initial water height but a bump in the bathymet...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d99/swe__radial__dam__break_8py_source.html#l00012">swe_radial_dam_break.py:12</a></div></div>
+<div class="ttc" id="aclassscenarios_1_1swe__resting__lake_1_1SWERestingLake_html"><div class="ttname"><a href="../../d0/deb/classscenarios_1_1swe__resting__lake_1_1SWERestingLake.html">scenarios.swe_resting_lake.SWERestingLake</a></div><div class="ttdoc">Resting lake scenario for the shallow water equations.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/ddf/swe__resting__lake_8py_source.html#l00033">swe_resting_lake.py:33</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00010">10</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a84206a73fc1df65f08ccab78f46aa0ed" name="a84206a73fc1df65f08ccab78f46aa0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84206a73fc1df65f08ccab78f46aa0ed">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00122">122</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a6d9337e8aa9f9eb43d98b47a0a376fc1" name="a6d9337e8aa9f9eb43d98b47a0a376fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9337e8aa9f9eb43d98b47a0a376fc1">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00026">26</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a081b9041ffba22cad040ef384956946d" name="a081b9041ffba22cad040ef384956946d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081b9041ffba22cad040ef384956946d">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00027">27</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="afc37b907b6ee9058d25cf5cdfeb32ca0" name="afc37b907b6ee9058d25cf5cdfeb32ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc37b907b6ee9058d25cf5cdfeb32ca0">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00138">138</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ae9065288c870238e48aaeab11b72e0ed" name="ae9065288c870238e48aaeab11b72e0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9065288c870238e48aaeab11b72e0ed">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00143">143</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ad72b3faeef99da0103c295ce2786b1c5" name="ad72b3faeef99da0103c295ce2786b1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72b3faeef99da0103c295ce2786b1c5">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00124">124</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a3e29b37a4cc5aa706e47a85c9bde6428" name="a3e29b37a4cc5aa706e47a85c9bde6428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e29b37a4cc5aa706e47a85c9bde6428">&#9670;&#160;</a></span>formatted_num_cells</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str aderdg-fused.formatted_num_cells = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_cells))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00164">164</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="aa0625b964c4a1302fbadad863626304e" name="aa0625b964c4a1302fbadad863626304e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0625b964c4a1302fbadad863626304e">&#9670;&#160;</a></span>formatted_num_threads</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str aderdg-fused.formatted_num_threads = &quot;{{{}}}&quot;.format(&quot;, &quot;.join(str(val) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> val in args.num_threads))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00171">171</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a2ee9ec5b2385de2347762f046ecd1ffc" name="a2ee9ec5b2385de2347762f046ecd1ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee9ec5b2385de2347762f046ecd1ffc">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00028">28</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a990c8577cb4563dddbe62c79f6f559fe" name="a990c8577cb4563dddbe62c79f6f559fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990c8577cb4563dddbe62c79f6f559fe">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00121">121</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a5f8035cd735eaa49a9db6922018fd540" name="a5f8035cd735eaa49a9db6922018fd540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f8035cd735eaa49a9db6922018fd540">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00116">116</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a33718e3ea02e875cd73b827dcc8040a4" name="a33718e3ea02e875cd73b827dcc8040a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33718e3ea02e875cd73b827dcc8040a4">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00198">198</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a0ddcebd0a0826e7c96fefd4e94f6734b" name="a0ddcebd0a0826e7c96fefd4e94f6734b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddcebd0a0826e7c96fefd4e94f6734b">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00198">198</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="adae6cabcb529738f2c4018c635396d49" name="adae6cabcb529738f2c4018c635396d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae6cabcb529738f2c4018c635396d49">&#9670;&#160;</a></span>makefile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.makefile = project.output.makefile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00189">189</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a57aa551fd0cc6479d6ee40e6b93584a6" name="a57aa551fd0cc6479d6ee40e6b93584a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57aa551fd0cc6479d6ee40e6b93584a6">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00123">123</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a2b6fa23ce4f1c816945b75e6b706456b" name="a2b6fa23ce4f1c816945b75e6b706456b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6fa23ce4f1c816945b75e6b706456b">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00142">142</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a771452e765b6423f835cbeeb39842866" name="a771452e765b6423f835cbeeb39842866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771452e765b6423f835cbeeb39842866">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00141">141</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a5963c5b1991bac77c8e1a44745380e85" name="a5963c5b1991bac77c8e1a44745380e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5963c5b1991bac77c8e1a44745380e85">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00149">149</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ab1c63e5f02d6a26308c4847fa642980e" name="ab1c63e5f02d6a26308c4847fa642980e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c63e5f02d6a26308c4847fa642980e">&#9670;&#160;</a></span>nargs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.nargs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00034">34</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a7b942a5885c0a1bc6893184144c13064" name="a7b942a5885c0a1bc6893184144c13064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b942a5885c0a1bc6893184144c13064">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00125">125</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="aa204f1547c8265b66bc03eba042e6a74" name="aa204f1547c8265b66bc03eba042e6a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa204f1547c8265b66bc03eba042e6a74">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00140">140</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="acead3f158438298ae849ca63c866b440" name="acead3f158438298ae849ca63c866b440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acead3f158438298ae849ca63c866b440">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>    description=<span class="stringliteral">&quot;ExaHyPE 2 - Fused ADER-DG Kernel Benchmarking Script&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00020">20</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ac130e8c77590cbfefbe22a247e9fd7f5" name="ac130e8c77590cbfefbe22a247e9fd7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac130e8c77590cbfefbe22a247e9fd7f5">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00145">145</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="af0210bc0f823653f2efabcd0feaeee57" name="af0210bc0f823653f2efabcd0feaeee57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0210bc0f823653f2efabcd0feaeee57">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00115">115</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="ab597561bc68a42fefaa783416720a7ac" name="ab597561bc68a42fefaa783416720a7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab597561bc68a42fefaa783416720a7ac">&#9670;&#160;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.precision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00117">117</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a5b45ef69090500852745f63f72bca83f" name="a5b45ef69090500852745f63f72bca83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b45ef69090500852745f63f72bca83f">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;benchmarks&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;kernelbenchmarks&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;KernelBenchmarks&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;KernelBenchmarks.{args.build_mode}&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00129">129</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a8957e63e8583f5046f4d58428e190ef7" name="a8957e63e8583f5046f4d58428e190ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8957e63e8583f5046f4d58428e190ef7">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00126">126</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a67a2b6a83911f9b29e0a6dd278228b83" name="a67a2b6a83911f9b29e0a6dd278228b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a2b6a83911f9b29e0a6dd278228b83">&#9670;&#160;</a></span>scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict aderdg-fused.scenario = <a class="el" href="#ab5fa7018856041f8f9c5a8361a77b7c6">available_scenarios</a>[args.scenario]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00102">102</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a197f2f7dd422847ddc0b321fa0f4e6e0" name="a197f2f7dd422847ddc0b321fa0f4e6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197f2f7dd422847ddc0b321fa0f4e6e0">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00139">139</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="aba70f88a3829d0cef39e7b5ed5c874e2" name="aba70f88a3829d0cef39e7b5ed5c874e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba70f88a3829d0cef39e7b5ed5c874e2">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00198">198</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a000ceb9e000b60f1e9f1d498eed82547" name="a000ceb9e000b60f1e9f1d498eed82547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000ceb9e000b60f1e9f1d498eed82547">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00144">144</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a19924576475623e187feaad58b2f3a07" name="a19924576475623e187feaad58b2f3a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19924576475623e187feaad58b2f3a07">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00198">198</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+<a id="a700945336c677ca3ef8d2ad715004a43" name="a700945336c677ca3ef8d2ad715004a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700945336c677ca3ef8d2ad715004a43">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aderdg-fused.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html#l00033">33</a> of file <a class="el" href="../../d5/d12/aderdg-fused_8py_source.html">aderdg-fused.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/dcb/namespaceaderdg-fused.html">aderdg-fused</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:16 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

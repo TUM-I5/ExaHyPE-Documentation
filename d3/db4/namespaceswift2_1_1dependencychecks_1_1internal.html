@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">swift2::dependencychecks::internal Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a296a36ba8395d34275d40afb8533821d" id="r_a296a36ba8395d34275d40afb8533821d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296a36ba8395d34275d40afb8533821d">isValid</a> (<a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a> policy, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> workOnParticle, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> particleIsLocal, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfUpdates, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfMaskOuts)</td></tr>
+<tr class="memdesc:a296a36ba8395d34275d40afb8533821d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is current state that's to be updated valid.  <br /></td></tr>
+<tr class="separator:a296a36ba8395d34275d40afb8533821d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3a6b705381972594ee0a7e5d23e674" id="r_a9b3a6b705381972594ee0a7e5d23e674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b3a6b705381972594ee0a7e5d23e674">previousStepsAllHaveToAccessAtLeastOnce</a> (<a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a> policy)</td></tr>
+<tr class="memdesc:a9b3a6b705381972594ee0a7e5d23e674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do all previous steps have to alter state at least once.  <br /></td></tr>
+<tr class="separator:a9b3a6b705381972594ee0a7e5d23e674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bbfdeddcab0d71aea7c7720656a314" id="r_a99bbfdeddcab0d71aea7c7720656a314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99bbfdeddcab0d71aea7c7720656a314">firstFutureStepThatHasToBeCleared</a> (<a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a> policy, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numberOfSteps)</td></tr>
+<tr class="memdesc:a99bbfdeddcab0d71aea7c7720656a314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which future steps should be checked.  <br /></td></tr>
+<tr class="separator:a99bbfdeddcab0d71aea7c7720656a314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9113d96b7854fe2104add768b058ed8" id="r_ac9113d96b7854fe2104add768b058ed8"><td class="memTemplParams" colspan="2">template&lt;typename Particle &gt; </td></tr>
+<tr class="memitem:ac9113d96b7854fe2104add768b058ed8"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac9113d96b7854fe2104add768b058ed8">outputParticle</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> Particle *particle, <a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a9f0e347a63061f27b38d9e2104a7defa">PAlgorithmStepEnum</a>&lt; Particle &gt; algorithmStep, <a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a2741efc13e0ea177c41b4bcf3badbbe3">PSweepStageEnum</a>&lt; Particle &gt; sweepStageMarkerEnum, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> errors)</td></tr>
+<tr class="memdesc:ac9113d96b7854fe2104add768b058ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is meant to be called on a particle on which dependency issues in the main algorithm steps have been detected.  <br /></td></tr>
+<tr class="separator:ac9113d96b7854fe2104add768b058ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396b17b4010ccc36cdc0f277ccb3ea5a" id="r_a396b17b4010ccc36cdc0f277ccb3ea5a"><td class="memTemplParams" colspan="2">template&lt;typename Particle &gt; </td></tr>
+<tr class="memitem:a396b17b4010ccc36cdc0f277ccb3ea5a"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a396b17b4010ccc36cdc0f277ccb3ea5a">outputParticle</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> Particle *particle, <a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#afee509a5be75a73081213ac2152480ae">PInitStepEnum</a>&lt; Particle &gt; algorithmStep, <a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a2741efc13e0ea177c41b4bcf3badbbe3">PSweepStageEnum</a>&lt; Particle &gt; sweepStageMarkerEnum, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> errors)</td></tr>
+<tr class="separator:a396b17b4010ccc36cdc0f277ccb3ea5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e7b6803b5fd991bccf805cebc614f6" id="r_a59e7b6803b5fd991bccf805cebc614f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59e7b6803b5fd991bccf805cebc614f6">checkPastStages</a> (<a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a> policy, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> isLocal, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> currentStep, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> currentStage, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nsteps, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nstages, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *sweepStateProgression)</td></tr>
+<tr class="memdesc:a59e7b6803b5fd991bccf805cebc614f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that all previous steps and stages.  <br /></td></tr>
+<tr class="separator:a59e7b6803b5fd991bccf805cebc614f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce7577a5b2d7c793b1538d8857c6d5c" id="r_a7ce7577a5b2d7c793b1538d8857c6d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ce7577a5b2d7c793b1538d8857c6d5c">checkFutureStages</a> (<a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a> policy, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> currentStep, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> currentStage, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nsteps, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nstages, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *sweepStateProgression)</td></tr>
+<tr class="memdesc:a7ce7577a5b2d7c793b1538d8857c6d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that all steps and stages after the current one have not been done yet.  <br /></td></tr>
+<tr class="separator:a7ce7577a5b2d7c793b1538d8857c6d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7ce7577a5b2d7c793b1538d8857c6d5c" name="a7ce7577a5b2d7c793b1538d8857c6d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce7577a5b2d7c793b1538d8857c6d5c">&#9670;&#160;</a></span>checkFutureStages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> swift2::dependencychecks::internal::checkFutureStages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a></td>          <td class="paramname"><span class="paramname"><em>policy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>currentStep</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>currentStage</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>nsteps</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>nstages</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *</td>          <td class="paramname"><span class="paramname"><em>sweepStateProgression</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check that all steps and stages after the current one have not been done yet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentStep</td><td>integer value of the current algorithm step </td></tr>
+    <tr><td class="paramname">currentStage</td><td>integer value of the current sweep stage </td></tr>
+    <tr><td class="paramname">nsteps</td><td>Total number of algorithm steps </td></tr>
+    <tr><td class="paramname">nstages</td><td>Total number of sweep stages </td></tr>
+    <tr><td class="paramname">sweepStateProgression</td><td>integer array carrying flags/counters of completed sweep stages and algorithm steps of a particle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>errors: Number of dependency errors detected </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html">DependencyChecks.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00098">firstFutureStepThatHasToBeCleared()</a>, and <a class="el" href="../../d5/db2/MatrixFreeMain_8template_8cpp_source.html#l00184">step()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a7ce7577a5b2d7c793b1538d8857c6d5c_cgraph.png" border="0" usemap="#ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a7ce7577a5b2d7c793b1538d8857c6d5c_cgraph" alt=""/></div>
+<map name="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a7ce7577a5b2d7c793b1538d8857c6d5c_cgraph" id="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a7ce7577a5b2d7c793b1538d8857c6d5c_cgraph">
+<area shape="rect" title="Check that all steps and stages after the current one have not been done yet." alt="" coords="5,2147,216,2187"/>
+<area shape="rect" href="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html#a99bbfdeddcab0d71aea7c7720656a314" title="Which future steps should be checked." alt="" coords="264,2107,476,2162"/>
+<area shape="poly" title=" " alt="" coords="216,2151,250,2147,251,2152,216,2156"/>
+<area shape="rect" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="345,2186,395,2211"/>
+<area shape="poly" title=" " alt="" coords="216,2177,332,2191,331,2197,216,2182"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47a6f4a7920541f3d68afcc3a8c3c72f" title=" " alt="" coords="534,5,717,45"/>
+<area shape="poly" title=" " alt="" coords="395,2198,437,2193,458,2185,474,2172,485,2135,494,2060,502,1819,503,1491,500,1120,496,750,496,421,503,178,511,102,522,63,531,52,535,55,526,65,516,103,508,179,501,421,501,749,505,1120,508,1491,508,1819,499,2061,491,2136,478,2175,460,2190,439,2198,396,2203"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="1450,927,1619,967"/>
+<area shape="poly" title=" " alt="" coords="395,2198,437,2193,457,2185,474,2172,483,2144,491,2087,501,1904,507,1655,510,1374,512,840,515,652,521,561,558,413,575,350,595,294,622,243,658,195,708,150,773,106,819,82,863,63,907,49,950,41,992,37,1033,38,1074,45,1113,55,1151,71,1188,90,1223,114,1258,142,1323,209,1382,292,1413,353,1428,409,1430,462,1425,513,1418,565,1413,620,1416,681,1431,749,1448,795,1470,840,1514,914,1509,917,1465,843,1443,797,1425,750,1411,681,1408,620,1413,565,1420,513,1425,462,1422,410,1408,355,1378,295,1319,213,1254,146,1220,118,1185,95,1149,75,1111,60,1072,50,1033,44,992,42,951,46,908,54,865,68,821,86,776,110,711,154,662,199,626,246,600,296,580,352,564,414,527,562,520,653,517,840,515,1374,512,1656,507,1904,496,2088,488,2145,478,2175,460,2190,438,2198,396,2203"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="525,2207,725,2247"/>
+<area shape="poly" title=" " alt="" coords="396,2199,512,2212,511,2217,395,2204"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="538,2271,713,2311"/>
+<area shape="poly" title=" " alt="" coords="396,2206,525,2256,547,2264,546,2269,523,2261,395,2211"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="1428,1662,1641,1687"/>
+<area shape="poly" title=" " alt="" coords="396,2195,929,2174,1230,2155,1332,2145,1379,2134,1403,2112,1425,2088,1462,2032,1489,1971,1508,1907,1520,1845,1527,1787,1531,1701,1537,1701,1532,1788,1525,1846,1513,1908,1494,1972,1466,2034,1429,2091,1407,2116,1381,2138,1333,2150,1231,2161,929,2179,396,2201"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#abee891470c44b923558fa39190ec156f" title="Set the value." alt="" coords="524,2335,727,2375"/>
+<area shape="poly" title=" " alt="" coords="385,2209,443,2262,482,2293,525,2320,539,2327,536,2332,523,2325,479,2298,439,2267,382,2213"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#a572ffc6edabe32f97768f80cc1005129" title=" " alt="" coords="538,2399,713,2439"/>
+<area shape="poly" title=" " alt="" coords="381,2210,401,2245,434,2292,476,2342,526,2385,535,2390,532,2395,522,2389,472,2345,429,2295,397,2248,376,2213"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="525,573,725,613"/>
+<area shape="poly" title=" " alt="" coords="395,2198,437,2193,457,2185,474,2172,492,2137,510,2080,525,2004,540,1911,564,1688,584,1437,610,944,620,627,626,627,615,944,589,1437,570,1689,545,1912,531,2005,515,2082,497,2139,478,2175,460,2189,438,2198,396,2203"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="889,2318,963,2343"/>
+<area shape="poly" title=" " alt="" coords="727,2344,876,2332,876,2337,727,2349"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="839,2367,1013,2393"/>
+<area shape="poly" title=" " alt="" coords="727,2361,825,2369,825,2374,726,2366"/>
+<area shape="poly" title=" " alt="" coords="726,604,822,613,925,617,1016,611,1051,602,1076,590,1093,571,1101,549,1101,527,1099,503,1096,479,1097,455,1105,432,1124,411,1157,388,1190,371,1222,361,1254,357,1286,360,1318,370,1350,387,1382,411,1400,438,1411,476,1417,522,1419,573,1421,673,1424,716,1431,749,1449,795,1471,840,1514,914,1510,917,1466,843,1444,797,1425,750,1419,717,1416,674,1414,573,1411,523,1406,477,1395,440,1378,415,1347,391,1316,375,1285,365,1254,362,1223,366,1192,376,1160,393,1127,415,1110,435,1102,456,1101,479,1104,502,1107,527,1106,550,1098,573,1079,594,1053,607,1017,616,925,622,822,618,725,609"/>
+<area shape="poly" title=" " alt="" coords="630,613,643,782,670,1048,690,1190,714,1322,743,1433,759,1477,777,1512,813,1567,848,1612,883,1648,921,1677,962,1701,1009,1723,1126,1764,1196,1783,1252,1788,1309,1782,1379,1764,1416,1751,1450,1732,1506,1694,1509,1698,1453,1737,1418,1755,1381,1769,1310,1787,1252,1794,1195,1788,1125,1769,1007,1728,959,1706,918,1681,880,1652,844,1615,809,1570,772,1515,754,1479,738,1435,709,1323,684,1191,665,1049,637,782,625,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a8103e3890b4eda9a1313e77158edd662" title="Run through the set of unanswered questions and, well, answer them." alt="" coords="826,736,1026,776"/>
+<area shape="poly" title=" " alt="" coords="645,612,700,666,736,696,776,720,814,735,812,740,773,725,733,700,696,670,642,615"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#aa374695492af7dcea21449149001db89" title=" " alt="" coords="836,1953,1016,1978"/>
+<area shape="poly" title=" " alt="" coords="630,614,638,832,661,1191,680,1384,705,1565,738,1719,756,1781,777,1829,801,1865,831,1896,892,1943,889,1947,827,1900,797,1868,772,1832,751,1782,732,1720,700,1566,675,1385,656,1192,633,833,624,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aa07efe0ea318000757b2acd065b0a8ba" title=" " alt="" coords="826,1212,1026,1252"/>
+<area shape="poly" title=" " alt="" coords="638,612,912,1198,907,1201,634,615"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8a93c14d54c30233541e6a10da2c0bde" title="You should call this operation only on the ranks &gt;0 to find out whether you should do more iteration/..." alt="" coords="1168,305,1337,345"/>
+<area shape="poly" title=" " alt="" coords="629,572,646,524,674,462,693,429,716,399,743,371,773,348,803,336,843,327,942,317,1053,315,1154,317,1154,323,1053,320,942,322,843,332,805,341,776,353,746,375,720,402,698,432,679,464,651,526,635,574"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a18d9a6ada9314cb6a982fc1b5b2b82c6" title="This operation should be called pretty close towards the end of a traversal." alt="" coords="826,120,1026,160"/>
+<area shape="poly" title=" " alt="" coords="625,573,631,497,639,445,652,388,671,329,697,270,730,217,773,170,791,157,812,148,814,153,794,162,776,174,735,220,701,273,676,331,658,389,645,446,636,498,630,574"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8184e84956133244ca1f9ef348516956" title=" " alt="" coords="813,1461,1039,1501"/>
+<area shape="poly" title=" " alt="" coords="631,613,642,716,667,879,687,973,711,1071,741,1169,777,1263,805,1317,837,1368,900,1449,895,1452,833,1371,800,1319,772,1265,736,1171,706,1073,681,974,662,880,637,716,626,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a6cbbb95e899ec85ae0473cf42c00f176" title=" " alt="" coords="825,184,1027,224"/>
+<area shape="poly" title=" " alt="" coords="626,573,636,507,661,415,680,365,705,317,735,272,773,234,810,213,813,218,776,238,739,276,709,320,685,367,666,416,642,508,631,573"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a994c91ffe58385d3c06f4d921bf43e81" title=" " alt="" coords="775,248,1077,288"/>
+<area shape="poly" title=" " alt="" coords="629,572,644,518,671,446,691,407,714,370,741,335,773,305,792,292,795,296,776,309,745,338,718,373,695,410,676,448,649,520,634,574"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a0fa99ca041b01b58cf60f5b738305913" title=" " alt="" coords="783,363,1069,403"/>
+<area shape="poly" title=" " alt="" coords="635,572,656,536,687,493,726,449,773,412,785,406,788,411,776,417,730,453,691,496,661,539,640,574"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="839,427,1013,467"/>
+<area shape="poly" title=" " alt="" coords="645,571,700,523,735,498,774,476,824,459,826,464,776,481,738,502,703,527,648,575"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="791,491,1061,531"/>
+<area shape="poly" title=" " alt="" coords="679,571,774,540,809,531,810,536,775,545,681,576"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="821,555,1031,581"/>
+<area shape="poly" title=" " alt="" coords="725,582,807,575,807,581,726,588"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af2db839ebe2f009b8a85bfe328eb6fa0" title="Copy the data from a splitting tree onto its new workers." alt="" coords="801,657,1051,711"/>
+<area shape="poly" title=" " alt="" coords="693,611,822,650,821,655,692,616"/>
+<area shape="poly" title=" " alt="" coords="1025,749,1053,738,1075,721,1097,689,1104,656,1102,622,1095,588,1089,553,1088,520,1098,487,1124,457,1156,433,1189,415,1221,405,1253,401,1285,405,1317,415,1349,432,1382,457,1411,489,1426,522,1431,555,1428,590,1419,664,1421,704,1431,749,1449,795,1471,840,1515,914,1510,916,1467,843,1444,797,1425,750,1415,705,1414,663,1423,589,1425,555,1421,523,1407,492,1378,461,1346,437,1315,420,1284,410,1253,407,1222,410,1191,420,1159,437,1127,461,1103,490,1093,520,1094,553,1101,587,1107,621,1109,656,1102,691,1079,725,1055,743,1027,753"/>
+<area shape="poly" title=" " alt="" coords="1025,747,1052,737,1076,721,1090,703,1096,685,1097,646,1099,607,1107,588,1124,571,1147,560,1178,551,1254,544,1329,550,1360,559,1382,571,1394,585,1403,603,1417,649,1424,704,1428,765,1428,886,1431,978,1489,1377,1532,1648,1526,1649,1483,1377,1425,979,1422,886,1422,765,1419,705,1412,650,1399,605,1389,588,1378,575,1358,564,1328,555,1254,549,1179,557,1149,565,1127,575,1111,591,1104,608,1102,646,1101,686,1094,706,1079,725,1055,741,1027,752"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="1125,1469,1380,1494"/>
+<area shape="poly" title=" " alt="" coords="938,775,1002,948,1043,1071,1080,1199,1087,1239,1088,1276,1084,1339,1085,1368,1090,1396,1103,1425,1127,1454,1132,1459,1129,1463,1123,1458,1099,1427,1085,1398,1079,1369,1079,1339,1083,1276,1082,1240,1075,1201,1038,1073,997,950,933,777"/>
+<area shape="rect" href="../../df/d06/structpeano4_1_1grid_1_1AutomatonState.html#af987ccce2206d77462a6a652be654335" title=" " alt="" coords="1144,471,1361,511"/>
+<area shape="poly" title=" " alt="" coords="1025,748,1052,737,1075,721,1093,698,1100,675,1102,651,1100,627,1097,603,1098,578,1106,552,1123,528,1137,516,1140,520,1127,531,1111,555,1104,578,1103,602,1105,627,1107,651,1106,676,1097,700,1079,725,1055,742,1027,753"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a59bed030f4816c88a02ff326e7a0811c" title="This operation is not const as it does some internal bookkeeping." alt="" coords="1168,585,1337,625"/>
+<area shape="poly" title=" " alt="" coords="1025,744,1052,734,1076,721,1092,701,1099,679,1106,657,1124,635,1154,619,1156,623,1127,639,1111,659,1104,681,1097,703,1079,725,1054,739,1027,749"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="1129,777,1377,817"/>
+<area shape="poly" title=" " alt="" coords="1027,766,1115,777,1114,783,1026,771"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545" title=" " alt="" coords="1129,649,1377,689"/>
+<area shape="poly" title=" " alt="" coords="1025,734,1076,720,1124,699,1151,691,1152,696,1126,704,1078,725,1027,740"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a751e49c699fded29e8ea2bbb27ec085c" title=" " alt="" coords="1129,713,1377,753"/>
+<area shape="poly" title=" " alt="" coords="1026,746,1115,740,1115,746,1026,752"/>
+<area shape="poly" title=" " alt="" coords="943,1976,973,2002,1017,2035,1069,2067,1126,2091,1199,2113,1259,2127,1287,2128,1316,2123,1346,2111,1378,2091,1423,2051,1458,2002,1484,1948,1503,1890,1516,1834,1524,1782,1531,1701,1536,1702,1530,1782,1522,1835,1508,1892,1489,1950,1462,2005,1427,2055,1382,2095,1348,2116,1317,2128,1287,2133,1258,2132,1197,2119,1124,2096,1067,2072,1014,2040,970,2007,939,1980"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="1143,1849,1362,1889"/>
+<area shape="poly" title=" " alt="" coords="964,1950,1125,1899,1155,1890,1157,1895,1126,1904,965,1955"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="1143,1913,1362,1953"/>
+<area shape="poly" title=" " alt="" coords="1016,1954,1129,1943,1130,1948,1017,1959"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="1163,1977,1343,2017"/>
+<area shape="poly" title=" " alt="" coords="1017,1971,1149,1985,1149,1990,1016,1977"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="1151,2041,1354,2081"/>
+<area shape="poly" title=" " alt="" coords="965,1976,1126,2027,1157,2035,1155,2040,1125,2032,964,1981"/>
+<area shape="poly" title=" " alt="" coords="961,1209,1035,1171,1124,1133,1163,1123,1196,1117,1255,1114,1312,1107,1343,1098,1379,1083,1417,1060,1452,1032,1506,976,1510,979,1455,1036,1420,1064,1381,1088,1345,1103,1313,1113,1255,1119,1197,1123,1164,1128,1126,1139,1037,1176,963,1214"/>
+<area shape="poly" title=" " alt="" coords="947,1251,1011,1333,1048,1389,1080,1448,1089,1474,1093,1499,1094,1542,1095,1562,1100,1581,1110,1599,1127,1618,1147,1630,1174,1641,1247,1656,1331,1665,1414,1670,1414,1676,1330,1671,1246,1661,1173,1646,1144,1635,1124,1622,1105,1602,1095,1583,1090,1562,1089,1542,1088,1499,1084,1476,1075,1450,1043,1392,1007,1337,943,1254"/>
+<area shape="poly" title=" " alt="" coords="941,1251,969,1294,1010,1350,1064,1407,1094,1432,1127,1454,1142,1461,1140,1466,1124,1458,1091,1436,1060,1410,1006,1353,964,1297,936,1253"/>
+<area shape="poly" title=" " alt="" coords="928,1211,946,1138,982,1034,1008,978,1040,923,1078,872,1124,827,1130,822,1133,827,1127,831,1082,875,1044,926,1013,981,987,1036,951,1140,934,1213"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a2b44dbeda9845c18d2d97b834ce0cc71" title=" " alt="" coords="1153,1212,1353,1252"/>
+<area shape="poly" title=" " alt="" coords="1026,1229,1139,1229,1139,1235,1026,1235"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a32f14062e953a7eae2006343a18b755a" title="Only the SpacetreeSet should call this operation." alt="" coords="1168,1276,1337,1316"/>
+<area shape="poly" title=" " alt="" coords="1027,1249,1155,1274,1154,1279,1026,1254"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3" title=" " alt="" coords="1129,1340,1377,1380"/>
+<area shape="poly" title=" " alt="" coords="964,1250,1038,1288,1126,1326,1151,1334,1149,1339,1124,1330,1036,1292,962,1255"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a49e92b919a5d722323f191e6328af9fc" title=" " alt="" coords="1153,1148,1353,1188"/>
+<area shape="poly" title=" " alt="" coords="1026,1210,1139,1188,1140,1193,1027,1215"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ada7c6605e8c2ee65cae97acac03b1048" title=" " alt="" coords="1139,1404,1366,1444"/>
+<area shape="poly" title=" " alt="" coords="948,1251,1022,1319,1072,1357,1127,1390,1142,1397,1140,1402,1124,1394,1069,1362,1019,1323,945,1254"/>
+<area shape="rect" href="../../df/df6/classpeano4_1_1grid_1_1Spacetree.html#a1a92ee6f9a9b343569d57077f921cb25" title=" " alt="" coords="1165,1519,1341,1559"/>
+<area shape="poly" title=" " alt="" coords="943,1251,1041,1393,1093,1465,1127,1503,1153,1517,1150,1522,1124,1507,1089,1469,1037,1396,939,1254"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="1157,1583,1348,1609"/>
+<area shape="poly" title=" " alt="" coords="946,1251,1009,1335,1046,1390,1080,1448,1093,1484,1097,1515,1105,1542,1114,1555,1127,1569,1146,1581,1143,1585,1124,1573,1110,1559,1100,1544,1092,1516,1088,1485,1075,1450,1041,1393,1004,1338,942,1254"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47bc7f10fa1fa287bf94138032e9716b" title="You hand in a tree number and the node tells you on which rank such a tree is hosted." alt="" coords="1168,1033,1337,1073"/>
+<area shape="poly" title=" " alt="" coords="949,1210,1024,1151,1073,1118,1124,1090,1158,1075,1161,1080,1127,1094,1076,1123,1027,1155,952,1214"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a255dea5ec5043a45b96c5bd8b4979551" title=" " alt="" coords="1153,1684,1353,1724"/>
+<area shape="poly" title=" " alt="" coords="948,1251,1013,1333,1049,1389,1080,1448,1091,1481,1095,1511,1094,1564,1094,1589,1098,1613,1108,1638,1127,1664,1142,1676,1139,1680,1123,1667,1103,1640,1093,1615,1089,1589,1088,1564,1089,1511,1085,1482,1075,1450,1044,1392,1008,1336,944,1254"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3" title=" " alt="" coords="1129,841,1377,881"/>
+<area shape="poly" title=" " alt="" coords="930,1211,952,1148,990,1062,1017,1015,1047,970,1083,927,1124,891,1132,886,1135,890,1127,895,1087,931,1052,973,1021,1018,995,1064,957,1150,936,1213"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#af7c05762262cb60344edb50f23fe00c7" title=" " alt="" coords="1151,905,1355,945"/>
+<area shape="poly" title=" " alt="" coords="934,1211,959,1159,1000,1089,1055,1017,1088,984,1124,955,1136,948,1139,952,1127,960,1091,988,1059,1020,1004,1092,963,1161,938,1213"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a6de11550a424b8f79da95ecf81596246" title=" " alt="" coords="1129,969,1377,1009"/>
+<area shape="poly" title=" " alt="" coords="938,1210,967,1169,1010,1118,1063,1064,1124,1019,1137,1012,1139,1017,1127,1024,1066,1068,1014,1121,971,1173,943,1213"/>
+<area shape="poly" title=" " alt="" coords="1352,1213,1378,1198,1406,1174,1430,1147,1471,1088,1501,1028,1520,979,1525,981,1506,1030,1475,1090,1434,1151,1409,1178,1382,1202,1354,1217"/>
+<area shape="poly" title=" " alt="" coords="1354,1245,1382,1262,1422,1306,1455,1357,1481,1412,1500,1468,1525,1572,1534,1648,1529,1649,1519,1573,1495,1470,1476,1414,1450,1360,1418,1310,1378,1266,1352,1249"/>
+<area shape="poly" title=" " alt="" coords="1342,1145,1379,1127,1421,1093,1458,1053,1513,977,1517,980,1462,1056,1425,1097,1381,1132,1344,1150"/>
+<area shape="poly" title=" " alt="" coords="1302,1071,1344,1097,1365,1115,1382,1134,1424,1201,1457,1274,1483,1349,1503,1423,1526,1557,1535,1648,1530,1649,1521,1557,1498,1424,1478,1350,1452,1276,1419,1204,1378,1138,1361,1118,1341,1102,1299,1076"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="1429,697,1640,737"/>
+<area shape="poly" title=" " alt="" coords="1337,1041,1359,1032,1378,1019,1399,996,1408,972,1414,946,1426,914,1513,749,1517,751,1430,916,1419,947,1413,974,1403,999,1382,1023,1361,1037,1339,1046"/>
+<area shape="poly" title=" " alt="" coords="1353,1691,1414,1684,1415,1690,1353,1696"/>
+<area shape="poly" title=" " alt="" coords="1284,344,1336,391,1362,423,1382,458,1398,506,1408,568,1419,715,1424,864,1431,978,1487,1377,1531,1648,1526,1649,1482,1378,1425,979,1419,864,1414,715,1403,569,1393,507,1378,460,1358,426,1332,395,1280,348"/>
+<area shape="poly" title=" " alt="" coords="1339,338,1362,348,1382,362,1416,398,1445,440,1469,484,1489,530,1516,616,1531,683,1526,684,1511,617,1484,531,1464,486,1441,443,1412,402,1378,366,1359,352,1337,342"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a194b41337a4aa4f320877ec69a9d0f0b" title="Get the global master." alt="" coords="1435,305,1635,345"/>
+<area shape="poly" title=" " alt="" coords="1337,323,1421,323,1421,328,1337,328"/>
+<area shape="poly" title=" " alt="" coords="938,1500,962,1551,1002,1618,1028,1651,1057,1683,1090,1711,1126,1734,1175,1751,1226,1758,1279,1756,1330,1749,1379,1736,1425,1721,1496,1691,1498,1696,1426,1726,1381,1741,1331,1754,1279,1762,1226,1763,1174,1756,1124,1738,1087,1716,1053,1687,1024,1655,998,1621,957,1554,933,1503"/>
+<area shape="poly" title=" " alt="" coords="1040,1479,1112,1479,1112,1484,1040,1484"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a59e7b6803b5fd991bccf805cebc614f6" name="a59e7b6803b5fd991bccf805cebc614f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e7b6803b5fd991bccf805cebc614f6">&#9670;&#160;</a></span>checkPastStages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> swift2::dependencychecks::internal::checkPastStages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a></td>          <td class="paramname"><span class="paramname"><em>policy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>isLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>currentStep</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>currentStage</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>nsteps</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>nstages</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *</td>          <td class="paramname"><span class="paramname"><em>sweepStateProgression</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check that all previous steps and stages. </p>
+<p>If we are given a non-local particle, we can only check the current stage and see if it has not been touched at all. Particles may change their state between two steps, so we cannot really say anything about</p>
+<p>If the policy says <a class="el" href="#a9b3a6b705381972594ee0a7e5d23e674" title="Do all previous steps have to alter state at least once.">previousStepsAllHaveToAccessAtLeastOnce()</a>, Ibefore the current one have been completed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentStep</td><td>integer value of the current algorithm step </td></tr>
+    <tr><td class="paramname">currentStage</td><td>integer value of the current sweep stage </td></tr>
+    <tr><td class="paramname">nsteps</td><td>Total number of algorithm steps </td></tr>
+    <tr><td class="paramname">nstages</td><td>Total number of sweep stages </td></tr>
+    <tr><td class="paramname">sweepStateProgression</td><td>integer array carrying flags/counters of completed sweep stages and algorithm steps of a particle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>errors: Number of dependency errors detected </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html">DependencyChecks.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00075">previousStepsAllHaveToAccessAtLeastOnce()</a>, and <a class="el" href="../../d5/db2/MatrixFreeMain_8template_8cpp_source.html#l00184">step()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a59e7b6803b5fd991bccf805cebc614f6_cgraph.png" border="0" usemap="#ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a59e7b6803b5fd991bccf805cebc614f6_cgraph" alt=""/></div>
+<map name="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a59e7b6803b5fd991bccf805cebc614f6_cgraph" id="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a59e7b6803b5fd991bccf805cebc614f6_cgraph">
+<area shape="rect" title="Check that all previous steps and stages." alt="" coords="5,2147,203,2187"/>
+<area shape="rect" href="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html#a9b3a6b705381972594ee0a7e5d23e674" title="Do all previous steps have to alter state at least once." alt="" coords="251,2107,481,2162"/>
+<area shape="poly" title=" " alt="" coords="203,2152,237,2148,237,2153,203,2157"/>
+<area shape="rect" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="341,2186,391,2211"/>
+<area shape="poly" title=" " alt="" coords="203,2176,327,2191,327,2197,203,2181"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47a6f4a7920541f3d68afcc3a8c3c72f" title=" " alt="" coords="539,5,722,45"/>
+<area shape="poly" title=" " alt="" coords="392,2198,438,2195,461,2186,479,2172,485,2159,491,2135,499,2060,508,1819,509,1491,505,1121,501,750,501,421,508,178,516,102,527,63,537,52,541,55,532,65,521,103,514,179,507,421,507,750,511,1121,514,1491,513,1819,505,2061,496,2136,490,2160,483,2175,463,2191,439,2200,392,2204"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a7bc31c5e9f0f24785ae7e19d7add30c0" title=" " alt="" coords="1455,927,1625,967"/>
+<area shape="poly" title=" " alt="" coords="392,2198,438,2195,461,2186,479,2172,488,2144,496,2088,507,1904,513,1656,515,1374,517,840,520,652,527,561,564,413,581,350,601,294,627,243,664,195,713,150,779,106,824,82,869,63,912,49,955,41,997,37,1039,38,1079,45,1118,55,1156,71,1193,90,1229,114,1263,142,1328,209,1388,292,1419,353,1433,409,1435,462,1430,513,1423,565,1419,620,1421,681,1436,749,1453,795,1475,840,1519,914,1515,917,1471,843,1449,797,1431,750,1416,681,1413,620,1418,565,1425,513,1430,462,1428,410,1414,355,1383,295,1324,213,1260,146,1226,118,1190,95,1154,75,1116,60,1078,50,1038,44,998,42,956,46,914,54,870,68,826,86,781,110,716,154,668,199,632,246,606,296,586,352,569,414,532,562,525,653,523,840,521,1374,518,1656,512,1905,501,2088,494,2145,484,2175,463,2191,439,2200,392,2204"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aaf5202ec306988b5b7a2226ef01908cc" title=" " alt="" coords="531,2207,731,2247"/>
+<area shape="poly" title=" " alt="" coords="392,2199,517,2212,517,2217,391,2204"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="543,2271,718,2311"/>
+<area shape="poly" title=" " alt="" coords="392,2205,530,2256,553,2264,551,2269,528,2261,390,2210"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="1433,1662,1647,1687"/>
+<area shape="poly" title=" " alt="" coords="391,2195,929,2174,1234,2156,1337,2145,1384,2134,1409,2112,1431,2088,1467,2032,1494,1971,1513,1907,1525,1845,1533,1787,1537,1701,1542,1701,1538,1788,1531,1846,1518,1908,1499,1972,1472,2035,1435,2091,1412,2116,1387,2138,1338,2150,1234,2161,930,2180,392,2201"/>
+<area shape="rect" href="../../d8/d3f/classtarch_1_1timing_1_1Measurement.html#abee891470c44b923558fa39190ec156f" title="Set the value." alt="" coords="529,2335,732,2375"/>
+<area shape="poly" title=" " alt="" coords="382,2209,444,2262,486,2293,531,2320,545,2327,543,2332,528,2325,483,2298,440,2266,379,2213"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#a572ffc6edabe32f97768f80cc1005129" title=" " alt="" coords="543,2399,718,2439"/>
+<area shape="poly" title=" " alt="" coords="377,2210,400,2245,434,2292,479,2342,531,2384,541,2390,538,2395,528,2389,475,2345,430,2295,395,2248,373,2213"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af3302644e7f7848b653167f1502f3554" title="Invoke traverse on all spacetrees in parallel." alt="" coords="531,573,731,613"/>
+<area shape="poly" title=" " alt="" coords="391,2198,437,2194,460,2186,479,2172,498,2138,515,2081,531,2004,546,1912,570,1689,590,1437,615,944,626,627,631,627,621,945,595,1438,576,1689,551,1912,536,2005,520,2082,503,2140,483,2175,463,2191,438,2199,392,2203"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="895,2318,968,2343"/>
+<area shape="poly" title=" " alt="" coords="732,2344,881,2332,881,2337,732,2349"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="844,2367,1019,2393"/>
+<area shape="poly" title=" " alt="" coords="732,2361,831,2369,830,2374,732,2366"/>
+<area shape="poly" title=" " alt="" coords="731,604,828,613,930,617,1021,611,1056,602,1081,590,1098,571,1106,549,1107,527,1104,503,1101,479,1102,455,1110,432,1129,411,1163,388,1195,371,1228,361,1260,357,1291,360,1323,370,1355,387,1387,411,1405,438,1416,476,1422,522,1425,573,1427,673,1430,716,1436,749,1454,795,1476,840,1520,914,1515,917,1472,843,1449,797,1431,750,1424,717,1421,674,1419,573,1417,523,1411,477,1400,440,1383,415,1352,391,1321,375,1290,365,1260,362,1229,366,1197,376,1165,393,1132,415,1115,435,1107,456,1107,479,1109,502,1112,527,1111,550,1103,573,1084,594,1058,607,1022,616,930,622,827,618,731,609"/>
+<area shape="poly" title=" " alt="" coords="636,613,648,782,675,1048,695,1190,719,1322,748,1433,765,1477,782,1512,819,1567,854,1612,889,1648,926,1677,967,1701,1014,1723,1131,1764,1201,1783,1257,1788,1314,1782,1385,1764,1421,1751,1456,1732,1512,1694,1515,1698,1458,1737,1423,1755,1386,1769,1315,1787,1258,1794,1200,1788,1130,1769,1012,1728,965,1706,923,1681,885,1652,850,1615,814,1570,778,1515,760,1479,743,1435,714,1323,690,1191,670,1049,643,782,630,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a8103e3890b4eda9a1313e77158edd662" title="Run through the set of unanswered questions and, well, answer them." alt="" coords="831,736,1031,776"/>
+<area shape="poly" title=" " alt="" coords="651,612,705,666,742,696,781,720,819,735,817,740,779,725,738,700,702,670,647,615"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#aa374695492af7dcea21449149001db89" title=" " alt="" coords="841,1953,1021,1978"/>
+<area shape="poly" title=" " alt="" coords="635,614,643,832,666,1191,686,1384,711,1565,743,1719,762,1781,782,1829,806,1865,836,1896,897,1943,894,1947,833,1900,802,1868,778,1832,757,1782,738,1720,706,1566,680,1385,661,1192,638,833,630,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#aa07efe0ea318000757b2acd065b0a8ba" title=" " alt="" coords="831,1212,1031,1252"/>
+<area shape="poly" title=" " alt="" coords="644,612,917,1198,912,1201,639,615"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8a93c14d54c30233541e6a10da2c0bde" title="You should call this operation only on the ranks &gt;0 to find out whether you should do more iteration/..." alt="" coords="1173,305,1343,345"/>
+<area shape="poly" title=" " alt="" coords="635,572,651,524,679,462,699,429,721,399,748,371,779,348,808,336,848,327,948,317,1058,315,1159,317,1159,323,1058,320,948,322,849,332,810,341,781,353,752,375,725,402,703,432,684,464,656,526,640,574"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a18d9a6ada9314cb6a982fc1b5b2b82c6" title="This operation should be called pretty close towards the end of a traversal." alt="" coords="831,120,1031,160"/>
+<area shape="poly" title=" " alt="" coords="630,573,637,497,645,445,658,388,676,329,702,270,736,217,778,170,797,157,817,148,819,153,799,162,782,174,740,220,707,273,681,331,663,389,650,446,642,498,635,574"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a8184e84956133244ca1f9ef348516956" title=" " alt="" coords="818,1461,1045,1501"/>
+<area shape="poly" title=" " alt="" coords="636,613,647,716,673,879,692,973,716,1071,746,1169,782,1263,810,1317,843,1368,905,1449,901,1452,838,1371,805,1319,778,1265,741,1171,711,1073,687,974,667,880,642,716,631,614"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a6cbbb95e899ec85ae0473cf42c00f176" title=" " alt="" coords="830,184,1033,224"/>
+<area shape="poly" title=" " alt="" coords="631,573,642,507,666,415,685,365,710,317,741,272,778,234,816,213,818,218,782,238,745,276,714,320,690,367,671,416,647,508,637,573"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a994c91ffe58385d3c06f4d921bf43e81" title=" " alt="" coords="780,248,1083,288"/>
+<area shape="poly" title=" " alt="" coords="634,572,649,518,677,446,696,407,719,370,746,335,778,305,798,292,801,296,782,309,750,338,723,373,701,410,682,448,654,520,639,574"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a0fa99ca041b01b58cf60f5b738305913" title=" " alt="" coords="789,363,1074,403"/>
+<area shape="poly" title=" " alt="" coords="640,572,661,536,692,493,732,449,779,412,791,406,793,411,781,417,735,453,696,496,666,539,645,574"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="844,427,1019,467"/>
+<area shape="poly" title=" " alt="" coords="650,571,705,523,741,498,779,476,830,459,831,464,781,481,744,502,708,527,654,575"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="796,491,1067,531"/>
+<area shape="poly" title=" " alt="" coords="685,571,779,540,814,531,815,536,781,545,686,576"/>
+<area shape="rect" href="../../d6/d43/namespacetarch_1_1multicore.html#a5f99102c05b0c83033c0e3a7b9e4e104" title=" " alt="" coords="826,555,1037,581"/>
+<area shape="poly" title=" " alt="" coords="731,582,812,575,813,581,731,588"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#af2db839ebe2f009b8a85bfe328eb6fa0" title="Copy the data from a splitting tree onto its new workers." alt="" coords="807,657,1056,711"/>
+<area shape="poly" title=" " alt="" coords="699,611,828,650,826,655,697,616"/>
+<area shape="poly" title=" " alt="" coords="1031,749,1058,738,1081,721,1102,689,1110,656,1107,622,1101,588,1094,553,1094,520,1103,487,1129,457,1162,433,1194,415,1226,405,1258,401,1290,405,1322,415,1355,432,1387,457,1417,489,1432,522,1436,555,1434,590,1425,664,1426,704,1436,749,1454,795,1477,840,1520,914,1515,916,1472,843,1450,797,1431,750,1421,705,1419,663,1428,589,1431,555,1426,523,1412,492,1384,461,1352,437,1320,420,1289,410,1258,407,1227,410,1196,420,1164,437,1132,461,1108,490,1099,520,1100,553,1106,587,1113,621,1115,656,1107,691,1085,725,1060,743,1033,753"/>
+<area shape="poly" title=" " alt="" coords="1030,747,1057,737,1081,721,1095,703,1101,685,1102,646,1104,607,1112,588,1129,571,1152,560,1183,551,1259,544,1335,550,1365,559,1387,571,1399,585,1409,603,1422,649,1430,704,1433,765,1433,886,1436,978,1494,1377,1537,1648,1532,1649,1489,1377,1431,979,1428,886,1428,765,1424,705,1417,650,1404,605,1395,588,1384,575,1363,564,1334,555,1259,549,1184,557,1154,565,1132,575,1117,591,1109,608,1108,646,1107,686,1100,706,1084,725,1060,741,1032,752"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="1131,1469,1385,1494"/>
+<area shape="poly" title=" " alt="" coords="943,775,1007,948,1048,1071,1085,1199,1092,1239,1094,1276,1090,1339,1090,1368,1096,1396,1109,1425,1133,1454,1138,1459,1134,1463,1129,1458,1104,1427,1090,1398,1085,1369,1084,1339,1088,1276,1087,1240,1080,1201,1043,1073,1002,950,938,777"/>
+<area shape="rect" href="../../df/d06/structpeano4_1_1grid_1_1AutomatonState.html#af987ccce2206d77462a6a652be654335" title=" " alt="" coords="1149,471,1367,511"/>
+<area shape="poly" title=" " alt="" coords="1031,748,1058,737,1081,721,1098,698,1106,675,1107,651,1105,627,1103,603,1104,578,1111,552,1129,528,1142,516,1146,520,1133,531,1116,555,1109,578,1108,602,1110,627,1112,651,1111,676,1103,700,1085,725,1060,742,1033,753"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a59bed030f4816c88a02ff326e7a0811c" title="This operation is not const as it does some internal bookkeeping." alt="" coords="1173,585,1343,625"/>
+<area shape="poly" title=" " alt="" coords="1031,744,1057,734,1081,721,1098,701,1104,679,1111,657,1129,635,1159,619,1162,623,1132,639,1116,659,1109,681,1102,703,1084,725,1059,739,1032,749"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a335aba25eb0153590659ae48d7f6eb71" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="1134,777,1382,817"/>
+<area shape="poly" title=" " alt="" coords="1032,766,1120,777,1120,783,1031,771"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a8234a885ab8329a3d554bef233909545" title=" " alt="" coords="1134,649,1382,689"/>
+<area shape="poly" title=" " alt="" coords="1031,734,1082,720,1130,699,1156,691,1157,696,1132,704,1084,725,1032,740"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a751e49c699fded29e8ea2bbb27ec085c" title=" " alt="" coords="1134,713,1382,753"/>
+<area shape="poly" title=" " alt="" coords="1031,746,1120,740,1120,746,1032,752"/>
+<area shape="poly" title=" " alt="" coords="948,1976,978,2002,1022,2035,1074,2067,1132,2091,1204,2113,1264,2127,1292,2128,1321,2123,1351,2111,1384,2091,1428,2051,1463,2002,1489,1948,1509,1890,1522,1834,1530,1782,1536,1701,1541,1702,1535,1782,1527,1835,1514,1892,1494,1950,1467,2005,1432,2055,1387,2095,1353,2116,1322,2128,1293,2133,1264,2132,1203,2119,1130,2096,1072,2072,1019,2040,975,2007,944,1980"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="1149,1849,1367,1889"/>
+<area shape="poly" title=" " alt="" coords="969,1950,1130,1899,1161,1890,1162,1895,1131,1904,970,1955"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="1149,1913,1367,1953"/>
+<area shape="poly" title=" " alt="" coords="1021,1954,1134,1943,1135,1948,1022,1959"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="1168,1977,1348,2017"/>
+<area shape="poly" title=" " alt="" coords="1022,1971,1155,1985,1154,1990,1021,1977"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="1157,2041,1359,2081"/>
+<area shape="poly" title=" " alt="" coords="970,1976,1131,2027,1162,2035,1161,2040,1130,2032,969,1981"/>
+<area shape="poly" title=" " alt="" coords="966,1209,1040,1171,1130,1133,1168,1123,1202,1117,1260,1114,1317,1107,1348,1098,1384,1083,1422,1060,1457,1032,1512,976,1516,979,1461,1036,1425,1064,1387,1088,1350,1103,1318,1113,1261,1119,1202,1123,1169,1128,1132,1139,1042,1176,969,1214"/>
+<area shape="poly" title=" " alt="" coords="952,1251,1016,1333,1053,1389,1085,1448,1094,1474,1099,1499,1100,1542,1101,1562,1105,1581,1115,1599,1132,1618,1152,1630,1180,1641,1252,1656,1336,1665,1419,1670,1419,1676,1336,1671,1251,1661,1178,1646,1150,1635,1129,1622,1111,1602,1100,1583,1096,1562,1094,1542,1093,1499,1089,1476,1080,1450,1048,1392,1012,1337,948,1254"/>
+<area shape="poly" title=" " alt="" coords="946,1251,974,1294,1016,1350,1069,1407,1100,1432,1132,1454,1148,1461,1145,1466,1129,1458,1096,1436,1065,1410,1011,1353,970,1297,942,1253"/>
+<area shape="poly" title=" " alt="" coords="934,1211,951,1138,987,1034,1013,978,1045,923,1084,872,1129,827,1136,822,1139,827,1132,831,1088,875,1050,926,1018,981,992,1036,957,1140,939,1213"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a2b44dbeda9845c18d2d97b834ce0cc71" title=" " alt="" coords="1158,1212,1358,1252"/>
+<area shape="poly" title=" " alt="" coords="1032,1229,1144,1229,1144,1235,1032,1235"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a32f14062e953a7eae2006343a18b755a" title="Only the SpacetreeSet should call this operation." alt="" coords="1173,1276,1343,1316"/>
+<area shape="poly" title=" " alt="" coords="1032,1249,1160,1274,1159,1279,1031,1254"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a254a9bee212d754ee5d8c976fcf5afb3" title=" " alt="" coords="1134,1340,1382,1380"/>
+<area shape="poly" title=" " alt="" coords="970,1250,1043,1288,1132,1326,1156,1334,1154,1339,1130,1330,1041,1292,967,1255"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a49e92b919a5d722323f191e6328af9fc" title=" " alt="" coords="1158,1148,1358,1188"/>
+<area shape="poly" title=" " alt="" coords="1031,1210,1144,1188,1145,1193,1032,1215"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#ada7c6605e8c2ee65cae97acac03b1048" title=" " alt="" coords="1145,1404,1371,1444"/>
+<area shape="poly" title=" " alt="" coords="954,1251,1028,1319,1078,1357,1132,1390,1148,1397,1145,1402,1129,1394,1075,1362,1024,1323,950,1254"/>
+<area shape="rect" href="../../df/df6/classpeano4_1_1grid_1_1Spacetree.html#a1a92ee6f9a9b343569d57077f921cb25" title=" " alt="" coords="1170,1519,1346,1559"/>
+<area shape="poly" title=" " alt="" coords="948,1251,1046,1393,1099,1465,1132,1503,1158,1517,1156,1522,1129,1507,1095,1469,1042,1396,944,1254"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="1163,1583,1353,1609"/>
+<area shape="poly" title=" " alt="" coords="951,1251,1014,1335,1051,1390,1085,1448,1098,1484,1103,1515,1111,1542,1119,1555,1132,1569,1151,1581,1148,1585,1129,1573,1115,1559,1106,1544,1098,1516,1093,1485,1080,1450,1046,1393,1010,1338,947,1254"/>
+<area shape="rect" href="../../d8/dde/classpeano4_1_1parallel_1_1Node.html#a47bc7f10fa1fa287bf94138032e9716b" title="You hand in a tree number and the node tells you on which rank such a tree is hosted." alt="" coords="1173,1033,1343,1073"/>
+<area shape="poly" title=" " alt="" coords="954,1210,1029,1151,1078,1118,1129,1090,1164,1075,1166,1080,1132,1094,1081,1123,1033,1155,958,1214"/>
+<area shape="rect" href="../../da/d58/classpeano4_1_1parallel_1_1SpacetreeSet.html#a255dea5ec5043a45b96c5bd8b4979551" title=" " alt="" coords="1158,1684,1358,1724"/>
+<area shape="poly" title=" " alt="" coords="953,1251,1018,1333,1054,1389,1085,1448,1096,1481,1100,1511,1099,1564,1099,1589,1103,1613,1113,1638,1133,1664,1148,1676,1144,1680,1129,1667,1109,1640,1098,1615,1094,1589,1094,1564,1095,1511,1091,1482,1080,1450,1050,1392,1014,1336,949,1254"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#acc5c542271504672569e175debab8ac3" title=" " alt="" coords="1134,841,1382,881"/>
+<area shape="poly" title=" " alt="" coords="936,1211,957,1148,996,1062,1022,1015,1053,970,1088,927,1129,891,1137,886,1140,890,1132,895,1092,931,1057,973,1026,1018,1001,1064,962,1150,941,1213"/>
+<area shape="rect" href="../../df/df3/structpeano4_1_1grid_1_1GridStatistics.html#af7c05762262cb60344edb50f23fe00c7" title=" " alt="" coords="1156,905,1360,945"/>
+<area shape="poly" title=" " alt="" coords="939,1211,964,1159,1005,1089,1060,1017,1093,984,1129,955,1142,948,1144,952,1132,960,1097,988,1064,1020,1009,1092,969,1161,944,1213"/>
+<area shape="rect" href="../../d4/dec/structpeano4_1_1parallel_1_1TreeManagementMessage.html#a6de11550a424b8f79da95ecf81596246" title=" " alt="" coords="1134,969,1382,1009"/>
+<area shape="poly" title=" " alt="" coords="944,1210,973,1169,1015,1118,1068,1064,1129,1019,1142,1012,1144,1017,1132,1024,1072,1068,1019,1121,977,1173,948,1213"/>
+<area shape="poly" title=" " alt="" coords="1357,1213,1384,1198,1411,1174,1435,1147,1476,1088,1506,1028,1526,979,1530,981,1511,1030,1481,1090,1440,1151,1415,1178,1387,1202,1360,1217"/>
+<area shape="poly" title=" " alt="" coords="1360,1245,1387,1262,1428,1306,1460,1357,1486,1412,1506,1468,1530,1572,1540,1648,1534,1649,1525,1573,1501,1470,1481,1414,1456,1360,1423,1310,1384,1266,1357,1249"/>
+<area shape="poly" title=" " alt="" coords="1347,1145,1384,1127,1426,1093,1464,1053,1518,977,1522,980,1468,1056,1430,1097,1387,1132,1350,1150"/>
+<area shape="poly" title=" " alt="" coords="1307,1071,1350,1097,1370,1115,1387,1134,1429,1201,1463,1274,1489,1349,1508,1423,1532,1557,1540,1648,1535,1649,1526,1557,1503,1424,1484,1350,1458,1276,1425,1204,1383,1138,1366,1118,1346,1102,1304,1076"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="1435,697,1645,737"/>
+<area shape="poly" title=" " alt="" coords="1342,1041,1364,1032,1384,1019,1404,996,1413,972,1419,946,1431,914,1518,749,1523,751,1436,916,1424,947,1418,974,1409,999,1387,1023,1367,1037,1344,1046"/>
+<area shape="poly" title=" " alt="" coords="1358,1691,1420,1684,1420,1690,1358,1696"/>
+<area shape="poly" title=" " alt="" coords="1289,344,1342,391,1367,423,1388,458,1403,506,1414,568,1425,715,1429,864,1436,978,1492,1377,1537,1648,1531,1649,1487,1378,1431,979,1424,864,1419,715,1408,569,1398,507,1383,460,1363,426,1338,395,1286,348"/>
+<area shape="poly" title=" " alt="" coords="1344,338,1367,348,1387,362,1421,398,1450,440,1475,484,1494,530,1522,616,1536,683,1531,684,1517,617,1489,531,1470,486,1446,443,1417,402,1384,366,1364,352,1342,342"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a194b41337a4aa4f320877ec69a9d0f0b" title="Get the global master." alt="" coords="1440,305,1640,345"/>
+<area shape="poly" title=" " alt="" coords="1343,323,1426,323,1426,328,1343,328"/>
+<area shape="poly" title=" " alt="" coords="943,1500,968,1551,1007,1618,1033,1651,1062,1683,1095,1711,1132,1734,1180,1751,1232,1758,1284,1756,1336,1749,1385,1736,1430,1721,1501,1691,1503,1696,1432,1726,1386,1741,1337,1754,1284,1762,1231,1763,1179,1756,1130,1738,1092,1716,1059,1687,1029,1655,1003,1621,963,1554,938,1503"/>
+<area shape="poly" title=" " alt="" coords="1045,1479,1117,1479,1117,1484,1045,1484"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a99bbfdeddcab0d71aea7c7720656a314" name="a99bbfdeddcab0d71aea7c7720656a314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bbfdeddcab0d71aea7c7720656a314">&#9670;&#160;</a></span>firstFutureStepThatHasToBeCleared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> swift2::dependencychecks::internal::firstFutureStepThatHasToBeCleared </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a></td>          <td class="paramname"><span class="paramname"><em>policy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfSteps</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Which future steps should be checked. </p>
+<p>This routine returns the relative step in the future which has to be cleared at this point (so no updated or masked out marker set). Invoked in the Nth step and return n, we check all steps starting from N+n if they are cleared.</p>
+<p>If you return 0, then this implies that all future steps have to be cleared. If you return numberOfSteps, we don't check any future step. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html">DependencyChecks.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00132">checkFutureStages()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a99bbfdeddcab0d71aea7c7720656a314_icgraph.png" border="0" usemap="#ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a99bbfdeddcab0d71aea7c7720656a314_icgraph" alt=""/></div>
+<map name="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a99bbfdeddcab0d71aea7c7720656a314_icgraph" id="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a99bbfdeddcab0d71aea7c7720656a314_icgraph">
+<area shape="rect" title="Which future steps should be checked." alt="" coords="264,5,476,60"/>
+<area shape="rect" href="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html#a7ce7577a5b2d7c793b1538d8857c6d5c" title="Check that all steps and stages after the current one have not been done yet." alt="" coords="5,13,216,53"/>
+<area shape="poly" title=" " alt="" coords="250,35,216,35,216,30,250,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a296a36ba8395d34275d40afb8533821d" name="a296a36ba8395d34275d40afb8533821d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296a36ba8395d34275d40afb8533821d">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> swift2::dependencychecks::internal::isValid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a></td>          <td class="paramname"><span class="paramname"><em>policy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>workOnParticle</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>particleIsLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfUpdates</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfMaskOuts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is current state that's to be updated valid. </p>
+<p>This routine is called by the mark operations after(!) it has altered the two counters numberOfUpdates and numberOfMaskOuts. The actual validation usually is enforced by assertions, but this has to happen outside. The routine here only determines if a state is valid or not. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html">DependencyChecks.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9113d96b7854fe2104add768b058ed8" name="ac9113d96b7854fe2104add768b058ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9113d96b7854fe2104add768b058ed8">&#9670;&#160;</a></span>outputParticle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Particle &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string swift2::dependencychecks::internal::outputParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> Particle *</td>          <td class="paramname"><span class="paramname"><em>particle</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a9f0e347a63061f27b38d9e2104a7defa">PAlgorithmStepEnum</a>&lt; Particle &gt;</td>          <td class="paramname"><span class="paramname"><em>algorithmStep</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a2741efc13e0ea177c41b4bcf3badbbe3">PSweepStageEnum</a>&lt; Particle &gt;</td>          <td class="paramname"><span class="paramname"><em>sweepStageMarkerEnum</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>errors</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is meant to be called on a particle on which dependency issues in the main algorithm steps have been detected. </p>
+<p>If the consistency checks fail, this routine should be used to write the full current state of a problematic particle to screen. After that, the routine aborts.</p>
+<p>It is important that we use the log functionality of <a class="el" href="../../d5/d43/namespacetarch_1_1logging.html">tarch::logging</a>, as it allows us to distinguish from which rank messages come from. It also enables us to integrate the messages into mainstream performance analysis workflows.</p>
+<p>Even though it might seem to be appealing, the output routine may not contain any assertion: We use it within assertions, so if there's another assertion in there, we won't get the full output.</p>
+<h2><a class="anchor" id="autotoc_md179"></a>
+Realisation</h2>
+<p>I originally inserted some assertions of the type</p>
+<div class="fragment"><div class="line"><a class="code hl_define" href="../../dc/d46/Assertions_8h.html#a9dbc4cb7842b714e4a6d6a55459aa2be">assertion3</a>(particle-&gt;getDependencyChecksAlgorithmStepUpdates(i) &gt;= 0,</div>
+<div class="line">particle-&gt;getDependencyChecksAlgorithmStepUpdates(i), i,</div>
+<div class="line">particle-&gt;toString() );</div>
+<div class="ttc" id="aAssertions_8h_html_a9dbc4cb7842b714e4a6d6a55459aa2be"><div class="ttname"><a href="../../dc/d46/Assertions_8h.html#a9dbc4cb7842b714e4a6d6a55459aa2be">assertion3</a></div><div class="ttdeci">#define assertion3(expr, param0, param1, param2)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d46/Assertions_8h_source.html#l01020">Assertions.h:1020</a></div></div>
+</div><!-- fragment --><p>into the source code. While this seems to be convenient (check that there's no garbage here), it is the wrong place to add these assertions: If an assertion fails due to garbage somewhere and wants to plot the particle status, then the plotting itself should not raise yet another assertion. Therefore, I now dump the value as "invalid" and outsource the actual consistency check ensuring that a value is not invalid to <a class="el" href="#a7ce7577a5b2d7c793b1538d8857c6d5c" title="Check that all steps and stages after the current one have not been done yet.">checkFutureStages()</a> and <a class="el" href="#a59e7b6803b5fd991bccf805cebc614f6" title="Check that all previous steps and stages.">checkPastStages()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particle</td><td>the problematic particle </td></tr>
+    <tr><td class="paramname">algorithmStepMarkerEnum</td><td>Enum representing algorithm step particle is currently in </td></tr>
+    <tr><td class="paramname">sweepStageMarkerEnum</td><td>Enum representing traversal sweep stage particle is currently in </td></tr>
+    <tr><td class="paramname">errors</td><td>Number of errors that have been detected. If errors == 0, this function can be used to just print out the current state, and won't abort when finished. </td></tr>
+    <tr><td class="paramname">call_identifier</td><td>Additional information on which dependency check failed to be printed to screen before exiting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a396b17b4010ccc36cdc0f277ccb3ea5a" name="a396b17b4010ccc36cdc0f277ccb3ea5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396b17b4010ccc36cdc0f277ccb3ea5a">&#9670;&#160;</a></span>outputParticle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Particle &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string swift2::dependencychecks::internal::outputParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> Particle *</td>          <td class="paramname"><span class="paramname"><em>particle</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#afee509a5be75a73081213ac2152480ae">PInitStepEnum</a>&lt; Particle &gt;</td>          <td class="paramname"><span class="paramname"><em>algorithmStep</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#a2741efc13e0ea177c41b4bcf3badbbe3">PSweepStageEnum</a>&lt; Particle &gt;</td>          <td class="paramname"><span class="paramname"><em>sweepStageMarkerEnum</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>errors</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b3a6b705381972594ee0a7e5d23e674" name="a9b3a6b705381972594ee0a7e5d23e674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3a6b705381972594ee0a7e5d23e674">&#9670;&#160;</a></span>previousStepsAllHaveToAccessAtLeastOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> swift2::dependencychecks::internal::previousStepsAllHaveToAccessAtLeastOnce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html#abd9701938bcdee395bc13c0a999a66fe">Invariant</a></td>          <td class="paramname"><span class="paramname"><em>policy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do all previous steps have to alter state at least once. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html">DependencyChecks.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d41/DependencyChecks_8cpp_source.html#l00190">checkPastStages()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a9b3a6b705381972594ee0a7e5d23e674_icgraph.png" border="0" usemap="#ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a9b3a6b705381972594ee0a7e5d23e674_icgraph" alt=""/></div>
+<map name="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a9b3a6b705381972594ee0a7e5d23e674_icgraph" id="ad3/db4/namespaceswift2_1_1dependencychecks_1_1internal_a9b3a6b705381972594ee0a7e5d23e674_icgraph">
+<area shape="rect" title="Do all previous steps have to alter state at least once." alt="" coords="251,5,481,60"/>
+<area shape="rect" href="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html#a59e7b6803b5fd991bccf805cebc614f6" title="Check that all previous steps and stages." alt="" coords="5,13,203,53"/>
+<area shape="poly" title=" " alt="" coords="237,35,203,35,203,30,237,30"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/dac/namespaceswift2.html">swift2</a></li><li class="navelem"><a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html">dependencychecks</a></li><li class="navelem"><a class="el" href="../../d3/db4/namespaceswift2_1_1dependencychecks_1_1internal.html">internal</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:41 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('db/d9e/Loop_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Loop.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d29/Compare_8h_source.html">Compare.h</a>&quot;</code><br />
+<code>#include &quot;config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d6e/Decrement_8h_source.html">Decrement.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/df1/Globals_8h_source.html">Globals.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d51/Increment_8h_source.html">Increment.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dac/Linearised_8h_source.html">Linearised.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/db1/LoopDirection_8h_source.html">LoopDirection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d46/accelerator_8h_source.html">tarch/accelerator/accelerator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d5d/CompilerSpecificSettings_8h_source.html">tarch/CompilerSpecificSettings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dbe/Vector_8h_source.html">tarch/la/Vector.h</a>&quot;</code><br />
+<code>#include &lt;bitset&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d0a/Loop_8cpph_source.html">Loop.cpph</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Loop.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d53/Loop_8h__incl.png" border="0" usemap="#asrc_2peano4_2utils_2Loop_8h" alt=""/></div>
+<map name="asrc_2peano4_2utils_2Loop_8h" id="asrc_2peano4_2utils_2Loop_8h">
+<area shape="rect" title=" " alt="" coords="1926,5,2098,31"/>
+<area shape="rect" href="../../d2/d29/Compare_8h.html" title=" " alt="" coords="1069,79,1163,104"/>
+<area shape="poly" title=" " alt="" coords="1926,29,1177,88,1176,83,1925,23"/>
+<area shape="rect" href="../../db/d46/accelerator_8h.html" title=" " alt="" coords="789,372,1009,397"/>
+<area shape="poly" title=" " alt="" coords="1926,21,1579,24,1354,30,1123,41,906,59,725,85,655,101,602,120,568,141,560,152,557,164,557,239,563,272,577,300,600,322,629,341,663,355,699,365,775,377,774,383,698,370,661,360,626,345,597,327,573,303,558,274,552,240,552,163,555,150,565,137,600,115,654,96,724,79,906,54,1123,36,1354,25,1579,19,1926,16"/>
+<area shape="rect" title=" " alt="" coords="1027,665,1101,691"/>
+<area shape="poly" title=" " alt="" coords="1926,24,1474,36,849,62,548,81,295,105,197,118,121,133,74,149,62,156,59,164,59,239,61,273,66,300,84,347,101,394,107,423,109,457,109,533,111,552,117,566,126,578,138,586,170,601,209,615,257,626,341,636,574,653,1014,672,1014,678,574,658,341,641,257,631,207,620,168,606,136,591,123,581,113,569,106,553,104,533,104,457,102,423,96,396,79,349,61,302,56,273,53,239,53,163,58,153,72,144,120,128,196,113,295,99,547,76,849,57,1474,31,1925,18"/>
+<area shape="rect" href="../../da/d5d/CompilerSpecificSettings_8h.html" title=" " alt="" coords="1487,665,1721,691"/>
+<area shape="poly" title=" " alt="" coords="2098,16,2282,20,2390,27,2498,39,2596,57,2677,83,2709,99,2733,117,2748,139,2753,163,2753,533,2745,553,2721,570,2683,585,2635,599,2509,622,2355,641,2188,655,2020,665,1734,676,1734,671,2020,660,2188,649,2355,635,2508,617,2634,594,2682,580,2718,565,2740,549,2748,532,2748,164,2743,141,2729,121,2706,103,2675,88,2595,62,2497,44,2390,32,2282,25,2098,21"/>
+<area shape="rect" href="../../d6/dbe/Vector_8h.html" title=" " alt="" coords="1373,152,1499,177"/>
+<area shape="poly" title=" " alt="" coords="1926,24,1850,29,1762,39,1669,56,1578,81,1515,112,1463,146,1460,141,1512,107,1576,76,1668,50,1761,33,1850,23,1926,18"/>
+<area shape="rect" title=" " alt="" coords="2161,225,2220,251"/>
+<area shape="poly" title=" " alt="" coords="2043,28,2080,46,2123,72,2163,107,2180,128,2193,151,2200,182,2199,212,2193,211,2195,182,2188,153,2175,131,2159,111,2120,77,2078,51,2041,33"/>
+<area shape="rect" href="../../d3/d6e/Decrement_8h.html" title=" " alt="" coords="1984,79,2091,104"/>
+<area shape="poly" title=" " alt="" coords="2019,30,2031,65,2026,67,2014,32"/>
+<area shape="rect" href="../../d9/df1/Globals_8h.html" title=" " alt="" coords="2631,152,2713,177"/>
+<area shape="poly" title=" " alt="" coords="2099,22,2266,40,2362,55,2457,76,2555,109,2636,143,2634,148,2553,114,2455,81,2361,61,2265,45,2098,27"/>
+<area shape="rect" href="../../da/d51/Increment_8h.html" title=" " alt="" coords="1589,79,1689,104"/>
+<area shape="poly" title=" " alt="" coords="1953,33,1703,81,1702,75,1952,28"/>
+<area shape="rect" href="../../dc/db1/LoopDirection_8h.html" title=" " alt="" coords="1823,152,1947,177"/>
+<area shape="poly" title=" " alt="" coords="2004,33,1906,143,1902,140,2000,29"/>
+<area shape="rect" href="../../d4/dac/Linearised_8h.html" title=" " alt="" coords="2343,79,2444,104"/>
+<area shape="poly" title=" " alt="" coords="2074,28,2330,76,2329,81,2073,33"/>
+<area shape="rect" href="../../d2/d0a/Loop_8cpph.html" title=" " alt="" coords="2788,79,2876,104"/>
+<area shape="poly" title=" " alt="" coords="2098,21,2396,39,2582,55,2770,76,2775,77,2774,82,2769,81,2582,60,2395,45,2098,26"/>
+<area shape="poly" title=" " alt="" coords="1069,98,1005,104,933,115,870,131,847,142,831,154,816,175,807,195,802,215,802,234,812,275,832,323,847,345,868,362,864,366,843,348,827,325,807,277,797,234,797,214,802,193,812,172,827,150,844,137,868,126,932,109,1004,99,1069,93"/>
+<area shape="poly" title=" " alt="" coords="1070,103,950,124,807,155,765,168,722,180,677,186,620,188,488,192,359,201,305,211,265,228,241,244,224,261,214,282,211,310,211,533,212,580,219,598,235,615,280,622,390,630,736,646,1474,670,1473,676,736,651,390,635,279,627,232,620,214,601,206,581,205,533,205,310,209,280,219,258,237,240,263,223,304,206,358,196,488,186,620,183,676,180,721,175,763,163,806,149,949,119,1069,98"/>
+<area shape="poly" title=" " alt="" coords="1163,100,1372,146,1371,152,1162,106"/>
+<area shape="poly" title=" " alt="" coords="1163,96,1512,149,1642,175,1768,192,1867,202,2092,223,2148,229,2147,234,2092,228,1866,207,1767,197,1641,180,1512,155,1163,102"/>
+<area shape="rect" href="../../d7/d4a/Compare_8cpph.html" title=" " alt="" coords="593,152,709,177"/>
+<area shape="poly" title=" " alt="" coords="1070,102,723,155,722,150,1069,97"/>
+<area shape="rect" href="../../de/d05/Device_8h.html" title=" " alt="" coords="859,445,938,471"/>
+<area shape="poly" title=" " alt="" coords="901,398,901,432,896,432,896,398"/>
+<area shape="poly" title=" " alt="" coords="919,395,1124,516,1237,580,1304,615,1398,643,1491,661,1490,666,1397,648,1302,620,1234,585,1121,521,917,400"/>
+<area shape="rect" href="../../d6/d7b/MemoryLocation_8h.html" title=" " alt="" coords="521,445,663,471"/>
+<area shape="poly" title=" " alt="" coords="850,400,656,445,654,440,849,395"/>
+<area shape="rect" title=" " alt="" coords="713,665,756,691"/>
+<area shape="poly" title=" " alt="" coords="939,457,975,462,1015,472,1055,489,1087,517,1105,542,1114,568,1112,593,1097,619,1073,636,1039,650,948,667,849,676,770,679,769,674,849,671,947,662,1037,644,1071,632,1093,616,1107,592,1109,568,1100,545,1083,520,1052,494,1014,477,974,467,938,463"/>
+<area shape="rect" title=" " alt="" coords="1023,519,1073,544"/>
+<area shape="poly" title=" " alt="" coords="924,468,1012,510,1010,515,922,473"/>
+<area shape="rect" title=" " alt="" coords="331,665,389,691"/>
+<area shape="poly" title=" " alt="" coords="860,465,626,488,510,504,469,512,447,521,428,543,407,578,372,654,367,651,402,576,424,539,444,516,468,507,509,499,626,482,859,460"/>
+<area shape="rect" title=" " alt="" coords="935,519,999,544"/>
+<area shape="poly" title=" " alt="" coords="912,469,948,507,944,510,908,473"/>
+<area shape="rect" href="../../d1/d45/Log_8h.html" title=" " alt="" coords="764,519,911,544"/>
+<area shape="poly" title=" " alt="" coords="891,473,858,510,854,506,887,469"/>
+<area shape="rect" href="../../d1/d3a/multicore_2BooleanSemaphore_8h.html" title=" " alt="" coords="457,519,721,544"/>
+<area shape="poly" title=" " alt="" coords="859,471,653,518,652,513,858,466"/>
+<area shape="rect" href="../../d1/dd8/mpi_8h.html" title=" " alt="" coords="1157,592,1216,617"/>
+<area shape="poly" title=" " alt="" coords="894,541,1144,592,1143,597,893,547"/>
+<area shape="poly" title=" " alt="" coords="789,547,752,559,719,575,708,584,702,594,701,604,707,616,727,631,758,643,841,660,933,670,1014,673,1014,679,933,675,840,666,757,648,725,635,703,619,696,605,697,592,704,581,716,571,750,554,788,542"/>
+<area shape="rect" title=" " alt="" coords="717,592,797,617"/>
+<area shape="poly" title=" " alt="" coords="826,546,782,585,779,581,823,542"/>
+<area shape="rect" title=" " alt="" coords="245,592,320,617"/>
+<area shape="poly" title=" " alt="" coords="764,545,334,599,334,594,763,539"/>
+<area shape="rect" title=" " alt="" coords="822,592,909,617"/>
+<area shape="poly" title=" " alt="" coords="844,543,858,578,853,580,839,545"/>
+<area shape="rect" title=" " alt="" coords="933,592,992,617"/>
+<area shape="poly" title=" " alt="" coords="859,542,932,583,929,587,856,546"/>
+<area shape="rect" title=" " alt="" coords="1016,592,1083,617"/>
+<area shape="poly" title=" " alt="" coords="872,541,1004,585,1002,590,871,547"/>
+<area shape="poly" title=" " alt="" coords="1212,589,1232,591,1240,596,1243,605,1238,615,1226,620,1224,615,1234,612,1237,605,1236,599,1231,596,1212,595"/>
+<area shape="poly" title=" " alt="" coords="1168,620,1097,661,1094,656,1166,615"/>
+<area shape="poly" title=" " alt="" coords="1216,608,1524,660,1523,666,1216,614"/>
+<area shape="rect" href="../../d5/d52/multicore_8h.html" title=" " alt="" coords="445,592,643,617"/>
+<area shape="poly" title=" " alt="" coords="584,546,561,582,556,579,580,543"/>
+<area shape="poly" title=" " alt="" coords="576,615,701,661,699,666,574,620"/>
+<area shape="poly" title=" " alt="" coords="515,620,403,663,401,658,513,615"/>
+<area shape="poly" title=" " alt="" coords="628,615,1014,667,1013,672,627,620"/>
+<area shape="poly" title=" " alt="" coords="644,610,706,615,1474,666,1474,671,705,620,643,616"/>
+<area shape="rect" title=" " alt="" coords="507,665,565,691"/>
+<area shape="poly" title=" " alt="" coords="545,618,541,652,536,652,540,617"/>
+<area shape="rect" title=" " alt="" coords="418,665,481,691"/>
+<area shape="poly" title=" " alt="" coords="530,619,477,659,474,655,527,615"/>
+<area shape="poly" title=" " alt="" coords="521,465,487,471,453,482,421,498,394,520,375,551,364,587,360,622,360,652,355,652,355,621,359,585,370,549,390,517,418,494,451,477,486,466,520,460"/>
+<area shape="poly" title=" " alt="" coords="1372,169,1269,172,1149,181,1039,199,996,212,966,227,939,256,921,292,910,328,904,359,899,358,905,327,916,290,935,253,962,223,994,207,1038,194,1149,176,1269,167,1372,164"/>
+<area shape="poly" title=" " alt="" coords="1373,169,1140,171,819,179,497,197,364,210,264,228,169,247,125,257,87,268,54,285,29,308,14,340,8,384,8,533,11,561,21,581,38,598,63,615,109,634,178,649,317,670,316,675,177,655,108,639,60,620,35,602,17,584,6,562,3,533,3,383,9,338,25,305,51,280,85,263,124,251,168,242,264,223,364,205,497,191,818,174,1140,166,1373,163"/>
+<area shape="poly" title=" " alt="" coords="1500,174,1507,175,1589,182,1660,185,1781,183,1839,184,1900,190,1969,202,2049,223,2118,257,2160,280,2183,297,2198,318,2206,337,2209,383,2209,533,2206,551,2196,568,2180,582,2159,596,2105,619,2038,637,1962,651,1883,662,1735,674,1734,669,1883,656,1961,646,2036,632,2103,614,2157,591,2177,578,2192,564,2201,549,2204,532,2204,383,2201,338,2193,321,2179,301,2157,285,2116,261,2047,228,1968,207,1899,195,1838,190,1781,189,1660,190,1589,188,1506,180,1499,179"/>
+<area shape="poly" title=" " alt="" coords="1373,170,763,189,449,207,345,217,296,228,277,244,267,262,262,283,261,310,261,459,267,524,279,578,273,579,262,525,256,459,256,310,257,282,262,260,273,241,293,223,344,212,449,201,763,184,1372,165"/>
+<area shape="rect" href="../../de/dc7/la_8h.html" title=" " alt="" coords="1359,519,1406,544"/>
+<area shape="poly" title=" " alt="" coords="1415,180,1317,236,1270,270,1253,286,1242,300,1234,330,1236,360,1247,390,1265,419,1311,471,1356,508,1353,513,1307,474,1260,422,1242,393,1231,361,1228,329,1238,297,1249,282,1267,266,1315,231,1413,175"/>
+<area shape="rect" href="../../dc/d46/Assertions_8h.html" title=" " alt="" coords="1252,299,1391,324"/>
+<area shape="poly" title=" " alt="" coords="1373,172,1139,192,1033,208,997,217,978,227,973,238,978,249,989,256,1011,263,1078,277,1239,299,1238,304,1077,282,1010,268,987,261,974,252,968,238,974,224,995,212,1031,203,1139,187,1372,167"/>
+<area shape="poly" title=" " alt="" coords="1500,172,1519,175,1680,190,1805,200,2092,223,2148,229,2147,234,2092,228,1805,205,1679,196,1518,180,1499,178"/>
+<area shape="rect" title=" " alt="" coords="987,225,1098,251"/>
+<area shape="poly" title=" " alt="" coords="1373,180,1112,227,1111,222,1372,175"/>
+<area shape="rect" href="../../d5/d35/Vector_8cpph.html" title=" " alt="" coords="1122,225,1273,251"/>
+<area shape="poly" title=" " alt="" coords="1398,180,1250,224,1248,219,1397,175"/>
+<area shape="rect" href="../../d7/d32/VectorOperations_8h.html" title=" " alt="" coords="307,225,506,251"/>
+<area shape="poly" title=" " alt="" coords="1373,173,520,232,520,226,1372,168"/>
+<area shape="rect" href="../../dd/d02/VectorScalarOperations_8h.html" title=" " alt="" coords="1349,225,1587,251"/>
+<area shape="poly" title=" " alt="" coords="1444,177,1460,212,1455,214,1439,179"/>
+<area shape="rect" href="../../d8/dac/VectorVectorOperations_8h.html" title=" " alt="" coords="1612,225,1852,251"/>
+<area shape="poly" title=" " alt="" coords="1477,175,1665,220,1664,225,1476,180"/>
+<area shape="rect" href="../../db/d9a/VectorSlice_8h.html" title=" " alt="" coords="1877,225,2035,251"/>
+<area shape="poly" title=" " alt="" coords="1500,174,1507,175,1863,223,1862,228,1506,180,1499,179"/>
+<area shape="poly" title=" " alt="" coords="1402,542,1576,655,1573,660,1399,546"/>
+<area shape="rect" href="../../d0/d9a/tarch_8h.html" title=" " alt="" coords="1315,592,1419,617"/>
+<area shape="poly" title=" " alt="" coords="1383,545,1375,579,1370,578,1377,544"/>
+<area shape="poly" title=" " alt="" coords="1319,620,1115,668,1114,662,1317,615"/>
+<area shape="poly" title=" " alt="" coords="1406,615,1553,659,1552,664,1404,620"/>
+<area shape="poly" title=" " alt="" coords="1318,325,1200,580,1195,578,1314,323"/>
+<area shape="poly" title=" " alt="" coords="1335,322,1379,373,1405,410,1429,451,1448,494,1457,538,1454,580,1446,600,1433,619,1411,636,1378,649,1292,666,1197,675,1115,679,1115,674,1197,670,1291,661,1376,644,1408,631,1429,615,1441,598,1448,579,1452,538,1443,496,1425,453,1400,413,1374,377,1331,326"/>
+<area shape="poly" title=" " alt="" coords="1342,322,1372,343,1403,370,1466,446,1521,525,1565,598,1594,652,1590,654,1560,601,1517,528,1462,449,1399,374,1369,347,1339,326"/>
+<area shape="rect" title=" " alt="" coords="1460,372,1529,397"/>
+<area shape="poly" title=" " alt="" coords="1350,322,1455,364,1453,369,1348,326"/>
+<area shape="rect" title=" " alt="" coords="1553,372,1615,397"/>
+<area shape="poly" title=" " alt="" coords="1364,321,1541,369,1539,374,1363,327"/>
+<area shape="poly" title=" " alt="" coords="388,253,361,273,337,300,316,339,312,383,312,459,305,525,293,580,287,578,300,524,307,459,307,383,311,338,332,297,358,269,385,249"/>
+<area shape="poly" title=" " alt="" coords="331,253,273,269,217,295,194,312,176,332,164,356,160,384,160,533,161,559,164,580,173,597,191,615,228,641,263,655,297,660,330,661,403,656,445,656,492,663,493,663,492,668,492,668,445,662,403,661,330,666,296,666,262,660,226,645,188,619,169,601,159,581,155,560,155,533,155,383,159,354,172,329,191,308,215,290,271,264,329,248"/>
+<area shape="poly" title=" " alt="" coords="307,244,265,250,221,261,179,277,140,301,101,334,76,367,63,406,59,457,59,533,59,559,63,580,72,598,90,615,128,641,164,656,199,662,234,662,309,656,353,657,402,663,405,663,404,669,401,668,352,662,310,662,234,667,199,667,163,661,126,646,86,619,68,601,58,581,54,560,53,533,53,457,57,405,71,365,97,331,137,297,176,273,220,256,264,245,307,239"/>
+<area shape="rect" href="../../d9/df8/ScalarOperations_8h.html" title=" " alt="" coords="983,299,1129,324"/>
+<area shape="poly" title=" " alt="" coords="507,248,970,298,969,303,506,253"/>
+<area shape="rect" href="../../d8/d88/VectorOperations_8cpph.html" title=" " alt="" coords="347,299,517,324"/>
+<area shape="poly" title=" " alt="" coords="413,250,426,285,421,287,408,252"/>
+<area shape="poly" title=" " alt="" coords="1032,326,938,369,936,364,1030,322"/>
+<area shape="poly" title=" " alt="" coords="1070,322,1346,581,1343,585,1066,326"/>
+<area shape="poly" title=" " alt="" coords="1464,252,1451,287,1450,306,1457,323,1475,340,1494,348,1515,350,1537,348,1583,347,1606,354,1628,370,1645,390,1652,409,1655,457,1655,533,1651,567,1642,600,1619,654,1615,652,1637,598,1646,566,1649,533,1649,457,1647,410,1640,393,1625,374,1604,359,1582,353,1538,354,1515,355,1493,353,1472,344,1452,325,1445,306,1446,286,1459,250"/>
+<area shape="poly" title=" " alt="" coords="1446,253,1359,295,1356,290,1443,248"/>
+<area shape="poly" title=" " alt="" coords="1402,253,1136,299,1135,294,1401,248"/>
+<area shape="rect" href="../../d3/db1/VectorScalarOperations_8cpph.html" title=" " alt="" coords="1466,299,1675,324"/>
+<area shape="poly" title=" " alt="" coords="1486,248,1544,288,1541,293,1483,253"/>
+<area shape="poly" title=" " alt="" coords="1830,248,1880,266,1904,280,1925,297,1941,317,1948,336,1951,383,1951,533,1945,567,1930,595,1908,619,1879,637,1846,652,1810,662,1735,675,1734,670,1808,657,1844,647,1877,632,1904,614,1926,592,1940,565,1945,532,1945,383,1943,337,1936,319,1921,301,1901,284,1878,271,1829,253"/>
+<area shape="poly" title=" " alt="" coords="1690,228,1503,183,1504,178,1692,223"/>
+<area shape="poly" title=" " alt="" coords="1666,253,1401,299,1401,294,1666,248"/>
+<area shape="rect" href="../../da/d48/VectorVectorOperations_8cpph.html" title=" " alt="" coords="1700,299,1911,324"/>
+<area shape="poly" title=" " alt="" coords="1746,249,1785,287,1782,291,1742,253"/>
+<area shape="poly" title=" " alt="" coords="1881,228,1530,180,1512,178,1513,172,1531,175,1881,223"/>
+<area shape="rect" href="../../d8/d8f/VectorSlice_8cpph.html" title=" " alt="" coords="1986,299,2169,324"/>
+<area shape="poly" title=" " alt="" coords="1977,248,2047,289,2045,294,1974,253"/>
+<area shape="poly" title=" " alt="" coords="2030,106,2011,140,2008,159,2014,176,2038,196,2064,204,2092,204,2122,199,2151,194,2180,193,2208,202,2234,224,2242,239,2244,254,2241,269,2233,284,2209,308,2182,326,2130,337,2023,346,1700,363,1023,383,1022,378,1700,357,2023,341,2130,331,2180,322,2206,304,2228,280,2236,267,2239,254,2237,240,2230,227,2206,206,2180,199,2152,199,2122,204,2093,209,2064,209,2036,201,2010,179,2003,159,2006,138,2025,103"/>
+<area shape="poly" title=" " alt="" coords="2081,102,2174,134,2229,159,2283,190,2333,228,2374,272,2390,297,2402,324,2409,353,2412,383,2412,533,2408,559,2398,577,2382,590,2361,598,2312,608,2257,620,2158,639,2021,655,1734,674,1734,669,2020,649,2157,634,2255,615,2311,603,2360,593,2379,585,2394,574,2403,557,2407,532,2407,383,2404,354,2397,326,2385,300,2370,276,2329,232,2280,195,2226,164,2172,139,2079,107"/>
+<area shape="poly" title=" " alt="" coords="1984,102,1513,157,1513,152,1984,96"/>
+<area shape="poly" title=" " alt="" coords="2086,102,2129,120,2149,134,2167,150,2184,180,2191,210,2186,212,2179,182,2163,154,2146,138,2126,125,2084,107"/>
+<area shape="rect" href="../../de/dc2/Decrement_8cpph.html" title=" " alt="" coords="2023,152,2153,177"/>
+<area shape="poly" title=" " alt="" coords="2048,103,2074,139,2070,142,2044,106"/>
+<area shape="poly" title=" " alt="" coords="1588,99,1440,112,1247,137,1150,155,1062,175,989,200,960,213,938,227,925,240,915,255,903,291,898,327,899,358,893,358,893,327,898,289,910,253,921,237,934,223,957,208,987,195,1060,170,1149,149,1246,132,1440,107,1588,94"/>
+<area shape="poly" title=" " alt="" coords="1637,105,1632,140,1634,159,1643,176,1658,187,1677,197,1728,209,1789,214,1857,214,1991,212,2048,215,2093,223,2149,247,2239,293,2323,343,2351,365,2361,383,2361,533,2356,565,2341,587,2319,600,2290,606,2222,611,2185,613,2149,620,2041,642,1931,658,1735,675,1734,670,1931,653,2040,637,2147,615,2185,608,2222,605,2290,601,2317,595,2338,583,2351,563,2356,532,2356,384,2347,369,2320,348,2236,298,2146,252,2091,228,2048,220,1991,217,1857,220,1789,219,1727,214,1676,202,1655,192,1639,179,1629,161,1627,140,1632,104"/>
+<area shape="poly" title=" " alt="" coords="1607,107,1482,150,1481,145,1605,102"/>
+<area shape="poly" title=" " alt="" coords="1641,104,1646,140,1653,160,1666,175,1683,187,1705,196,1759,208,1824,215,1895,218,2035,217,2095,218,2143,223,2148,224,2147,229,2142,228,2095,224,2035,223,1895,223,1824,220,1758,214,1703,201,1681,191,1662,179,1648,162,1640,142,1636,104"/>
+<area shape="poly" title=" " alt="" coords="1679,101,1833,146,1832,151,1678,107"/>
+<area shape="rect" href="../../d0/dfb/Increment_8cpph.html" title=" " alt="" coords="1676,152,1799,177"/>
+<area shape="poly" title=" " alt="" coords="1656,102,1712,142,1709,146,1653,106"/>
+<area shape="poly" title=" " alt="" coords="1936,175,2143,223,2148,224,2147,229,2142,228,1935,180"/>
+<area shape="poly" title=" " alt="" coords="2391,105,2371,150,2336,213,2312,246,2284,277,2253,305,2217,326,2163,336,2052,345,1718,362,1022,383,1022,378,1718,356,2052,340,2162,331,2215,322,2249,300,2280,273,2308,243,2331,210,2367,148,2386,103"/>
+<area shape="poly" title=" " alt="" coords="2444,102,2517,123,2549,136,2570,150,2586,170,2593,190,2596,237,2596,533,2589,550,2569,565,2538,579,2498,591,2393,613,2265,632,1982,658,1734,674,1734,668,1982,653,2264,626,2392,608,2496,586,2536,574,2566,560,2585,547,2591,532,2591,237,2588,191,2581,173,2566,154,2546,141,2515,128,2442,107"/>
+<area shape="poly" title=" " alt="" coords="2343,99,1513,160,1513,155,2342,94"/>
+<area shape="poly" title=" " alt="" coords="2386,106,2355,141,2312,179,2273,204,2234,222,2232,218,2271,199,2309,175,2352,137,2382,103"/>
+<area shape="poly" title=" " alt="" coords="2439,101,2618,147,2617,152,2437,107"/>
+<area shape="rect" href="../../d1/dc2/Linearised_8cpph.html" title=" " alt="" coords="2431,152,2555,177"/>
+<area shape="poly" title=" " alt="" coords="2411,102,2467,142,2464,146,2408,106"/>
+</map>
+</div>
+</div>
+<p><a href="../../db/d9e/Loop_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d8/d8f/namespacepeano4" id="r_d8/d8f/namespacepeano4"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d8e/namespacepeano4_1_1utils" id="r_d9/d8e/namespacepeano4_1_1utils"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8e/namespacepeano4_1_1utils.html">peano4::utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac7b10c2c23f49623c2fc21a9d48b636d" id="r_ac7b10c2c23f49623c2fc21a9d48b636d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7b10c2c23f49623c2fc21a9d48b636d">dfor</a>(counter,  max)</td></tr>
+<tr class="separator:ac7b10c2c23f49623c2fc21a9d48b636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fabbb193194cdbfa4975ba6da87672" id="r_af1fabbb193194cdbfa4975ba6da87672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1fabbb193194cdbfa4975ba6da87672">d2for</a>(counter,  max)</td></tr>
+<tr class="separator:af1fabbb193194cdbfa4975ba6da87672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6899b91bfcbbbff72a4ff20481a22c7" id="r_ae6899b91bfcbbbff72a4ff20481a22c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6899b91bfcbbbff72a4ff20481a22c7">d3for</a>(counter,  max)</td></tr>
+<tr class="separator:ae6899b91bfcbbbff72a4ff20481a22c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a140c73cce0b66f89c25806d2dfc75f" id="r_a5a140c73cce0b66f89c25806d2dfc75f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a140c73cce0b66f89c25806d2dfc75f">dfor2</a>(counter)</td></tr>
+<tr class="separator:a5a140c73cce0b66f89c25806d2dfc75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46434787daa5d3d9327c72451a470e4" id="r_aa46434787daa5d3d9327c72451a470e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46434787daa5d3d9327c72451a470e4">dfor3</a>(counter)</td></tr>
+<tr class="separator:aa46434787daa5d3d9327c72451a470e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc16e98fa8d582ff84c90f41b8067405" id="r_afc16e98fa8d582ff84c90f41b8067405"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc16e98fa8d582ff84c90f41b8067405">enddforx</a>&#160;&#160;&#160;}</td></tr>
+<tr class="memdesc:afc16e98fa8d582ff84c90f41b8067405"><td class="mdescLeft">&#160;</td><td class="mdescRight">I prefer to use this macro for dforx instead of a closing bracket as many syntax parser fail otherwise.  <br /></td></tr>
+<tr class="separator:afc16e98fa8d582ff84c90f41b8067405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59d86d8ac9a71ef9f9d2553b3928745" id="r_ac59d86d8ac9a71ef9f9d2553b3928745"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59d86d8ac9a71ef9f9d2553b3928745">dfore</a>(counter,  max,  dim,  value)</td></tr>
+<tr class="memdesc:ac59d86d8ac9a71ef9f9d2553b3928745"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an exclusive d-dimensional for loop.  <br /></td></tr>
+<tr class="separator:ac59d86d8ac9a71ef9f9d2553b3928745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c5ac04e0512a5d2f9e182f8eca1f21" id="r_a74c5ac04e0512a5d2f9e182f8eca1f21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a>(counter,  max,  direction)</td></tr>
+<tr class="memdesc:a74c5ac04e0512a5d2f9e182f8eca1f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a d-dimensional z-loop.  <br /></td></tr>
+<tr class="separator:a74c5ac04e0512a5d2f9e182f8eca1f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a51ccf0fc440853b837053804b4fd3" id="r_af1a51ccf0fc440853b837053804b4fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a51ccf0fc440853b837053804b4fd3">zfor3</a>(counter,  direction)&#160;&#160;&#160;<a class="el" href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a>(counter, 3, direction)</td></tr>
+<tr class="separator:af1a51ccf0fc440853b837053804b4fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228ab8a1c359dadb10ce92729601564e" id="r_a228ab8a1c359dadb10ce92729601564e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a228ab8a1c359dadb10ce92729601564e">endzfor</a></td></tr>
+<tr class="separator:a228ab8a1c359dadb10ce92729601564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6c861d4cc0ba9f69d4fa9b8f80e7cd71" id="r_a6c861d4cc0ba9f69d4fa9b8f80e7cd71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8e/namespacepeano4_1_1utils.html#a6c861d4cc0ba9f69d4fa9b8f80e7cd71">peano4::utils::dStartVector</a> ()</td></tr>
+<tr class="memdesc:a6c861d4cc0ba9f69d4fa9b8f80e7cd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct start vector (0,0,....) for d-dimensional loop.  <br /></td></tr>
+<tr class="separator:a6c861d4cc0ba9f69d4fa9b8f80e7cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0903776e56d0ff0698f31a47482ac402" id="r_a0903776e56d0ff0698f31a47482ac402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8e/namespacepeano4_1_1utils.html#a0903776e56d0ff0698f31a47482ac402">peano4::utils::dStartVector</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dim, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> value)</td></tr>
+<tr class="separator:a0903776e56d0ff0698f31a47482ac402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d9c299527fa5cb7348e3e6e1287a61" id="r_a38d9c299527fa5cb7348e3e6e1287a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8e/namespacepeano4_1_1utils.html#a38d9c299527fa5cb7348e3e6e1287a61">peano4::utils::dStartVector</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> max, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d9/d8e/namespacepeano4_1_1utils.html#a2beae9a8f466841d3fd7ffd8c4777811">LoopDirection</a> &amp;direction)</td></tr>
+<tr class="memdesc:a38d9c299527fa5cb7348e3e6e1287a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a start vector.  <br /></td></tr>
+<tr class="separator:a38d9c299527fa5cb7348e3e6e1287a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af1fabbb193194cdbfa4975ba6da87672" name="af1fabbb193194cdbfa4975ba6da87672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1fabbb193194cdbfa4975ba6da87672">&#9670;&#160;</a></span>d2for</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define d2for</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">max</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> counter##Scalar = 0; counter##Scalar &lt; <a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#aa720f9cfb5b8cec88b7494ae40ce2fba">tarch::la::aPowI</a>(2, max); counter##Scalar++) { \</div>
+<div class="line">    <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;2, int&gt;</a> counter; \</div>
+<div class="line">    { \</div>
+<div class="line">      <span class="keywordtype">int</span> copy##counter##Scalar = counter##Scalar; \</div>
+<div class="line">      for (<span class="keywordtype">int</span> counter##ddd = 2 - 1; counter##ddd &gt;= 0; counter##ddd--) { \</div>
+<div class="line">        <span class="keywordtype">int</span> counter##aPowI = 1; \</div>
+<div class="line">        for (<span class="keywordtype">int</span> counter##jjj = 0; counter##jjj &lt; counter##ddd; counter##jjj++) { \</div>
+<div class="line">          counter##aPowI *= max; \</div>
+<div class="line">        } \</div>
+<div class="line">        counter(counter##ddd) = copy##counter##Scalar / counter##aPowI; \</div>
+<div class="line">        copy##counter##Scalar -= counter(counter##ddd) * counter##aPowI; \</div>
+<div class="line">      } \</div>
+<div class="line">    }</div>
+<div class="ttc" id="anamespacetarch_1_1la_html_aa720f9cfb5b8cec88b7494ae40ce2fba"><div class="ttname"><a href="../../d2/d45/namespacetarch_1_1la.html#aa720f9cfb5b8cec88b7494ae40ce2fba">tarch::la::aPowI</a></div><div class="ttdeci">GPUCallableMethod int aPowI(int i, int a) InlineMethod</div><div class="ttdoc">Computes the i-th power of a in integer arithmetic.</div><div class="ttdef"><b>Definition</b> <a href="../../da/dfd/ScalarOperations_8cpph_source.html#l00020">ScalarOperations.cpph:20</a></div></div>
+<div class="ttc" id="astructtarch_1_1la_1_1Vector_html"><div class="ttname"><a href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a></div><div class="ttdoc">Simple vector class.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbe/Vector_8h_source.html#l00084">Vector.h:84</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00047">47</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1f/BSplinesStencilFactory_8cpph_source.html#l00006">toolbox::finiteelements::BSplinesStencilFactory::getElementWiseAssemblyMatrix()</a>.</p>
+
+</div>
+</div>
+<a id="ae6899b91bfcbbbff72a4ff20481a22c7" name="ae6899b91bfcbbbff72a4ff20481a22c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6899b91bfcbbbff72a4ff20481a22c7">&#9670;&#160;</a></span>d3for</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define d3for</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">max</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> counter##Scalar = 0; counter##Scalar &lt; <a class="code hl_function" href="../../d2/d45/namespacetarch_1_1la.html#aa720f9cfb5b8cec88b7494ae40ce2fba">tarch::la::aPowI</a>(3, max); counter##Scalar++) { \</div>
+<div class="line">    <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;3, int&gt;</a> counter; \</div>
+<div class="line">    { \</div>
+<div class="line">      <span class="keywordtype">int</span> copy##counter##Scalar = counter##Scalar; \</div>
+<div class="line">      for (<span class="keywordtype">int</span> counter##ddd = 3 - 1; counter##ddd &gt;= 0; counter##ddd--) { \</div>
+<div class="line">        <span class="keywordtype">int</span> counter##aPowI = 1; \</div>
+<div class="line">        for (<span class="keywordtype">int</span> counter##jjj = 0; counter##jjj &lt; counter##ddd; counter##jjj++) { \</div>
+<div class="line">          counter##aPowI *= max; \</div>
+<div class="line">        } \</div>
+<div class="line">        counter(counter##ddd) = copy##counter##Scalar / counter##aPowI; \</div>
+<div class="line">        copy##counter##Scalar -= counter(counter##ddd) * counter##aPowI; \</div>
+<div class="line">      } \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00062">62</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d1f/BSplinesStencilFactory_8cpph_source.html#l00031">toolbox::finiteelements::BSplinesStencilFactory::getElementWiseAssemblyMatrix()</a>.</p>
+
+</div>
+</div>
+<a id="ac7b10c2c23f49623c2fc21a9d48b636d" name="ac7b10c2c23f49623c2fc21a9d48b636d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b10c2c23f49623c2fc21a9d48b636d">&#9670;&#160;</a></span>dfor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dfor</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">max</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions, int&gt;</a> counter = <a class="code hl_function" href="../../d9/d8e/namespacepeano4_1_1utils.html#a6c861d4cc0ba9f69d4fa9b8f80e7cd71">peano4::utils::dStartVector</a>(); <a class="code hl_function" href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f29b6ab98ecf7d4d4151820cc6e6d63">peano4::utils::dCmp</a>(counter, max); \</div>
+<div class="line">       peano4::utils::dInc(counter, max))</div>
+<div class="ttc" id="anamespacepeano4_1_1utils_html_a4f29b6ab98ecf7d4d4151820cc6e6d63"><div class="ttname"><a href="../../d9/d8e/namespacepeano4_1_1utils.html#a4f29b6ab98ecf7d4d4151820cc6e6d63">peano4::utils::dCmp</a></div><div class="ttdeci">GPUCallableMethod int dCmp(const tarch::la::Vector&lt; Dimensions, int &gt; &amp;counter, int max)</div><div class="ttdoc">Element-wise comparison for the for d-dimensional for loops.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d4a/Compare_8cpph_source.html#l00019">Compare.cpph:19</a></div></div>
+<div class="ttc" id="anamespacepeano4_1_1utils_html_a6c861d4cc0ba9f69d4fa9b8f80e7cd71"><div class="ttname"><a href="../../d9/d8e/namespacepeano4_1_1utils.html#a6c861d4cc0ba9f69d4fa9b8f80e7cd71">peano4::utils::dStartVector</a></div><div class="ttdeci">GPUCallableMethod tarch::la::Vector&lt; Dimensions, int &gt; dStartVector()</div><div class="ttdoc">Construct start vector (0,0,....) for d-dimensional loop.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d0a/Loop_8cpph_source.html#l00004">Loop.cpph:4</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00043">43</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/db1/CellIntegral_8cpph_source.html#l00011">exahype2::dg::cellIntegral_patchwise_in_situ_GaussLegendre()</a>, <a class="el" href="../../dd/dfb/CellIntegral_8cpp_source.html#l00007">exahype2::dg::cellIntegral_patchwise_in_situ_GaussLegendre_functors()</a>, <a class="el" href="../../d0/dc8/Derivative_8cpp_source.html#l00007">toolbox::blockstructured::computeGradient()</a>, <a class="el" href="../../d0/dc8/Derivative_8cpp_source.html#l00044">toolbox::blockstructured::computeGradientAndReturnMaxDifference()</a>, <a class="el" href="../../d1/d03/ParticleFactory_8cpph_source.html#l00028">toolbox::particles::createEquallySpacedParticles()</a>, <a class="el" href="../../d1/d03/ParticleFactory_8cpph_source.html#l00071">toolbox::particles::createParticlesAlignedWithGlobalCartesianMesh()</a>, <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00009">toolbox::blockstructured::internal::createPiecewiseConstantInterpolationMatrix()</a>, <a class="el" href="../../d9/d45/DGUtils_8cpph_source.html#l00003">exahype2::dg::evaluatePolynomial()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00848">toolbox::finiteelements::getPoissonMatrixWithJumpingCoefficient()</a>, <a class="el" href="../../d5/d03/aderdg_2KernelBenchmarks-main_8cpp_source.html#l00095">initInputData()</a>, <a class="el" href="../../da/d20/benchmarks_2exahype2_2kernel-benchmarks_2aderdg-fused_2Utils_8h_source.html#l00030">benchmarks::exahype2::kernelbenchmarks::initInputData()</a>, <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00389">exahype2::dg::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre()</a>, <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00332">exahype2::dg::integrateOverRiemannSolutionsAndAddToVolume_GaussLegendre()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l01313">toolbox::blockstructured::interpolateCellDataAssociatedToVolumesIntoOverlappingCell_fourthOrder()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l00987">toolbox::blockstructured::interpolateCellDataAssociatedToVolumesIntoOverlappingCell_linear()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l01096">toolbox::blockstructured::interpolateCellDataAssociatedToVolumesIntoOverlappingCell_secondOrder()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l01945">toolbox::blockstructured::interpolateHaloLayer_AoS_matrix()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l01407">toolbox::blockstructured::interpolateHaloLayer_AoS_second_order()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l01658">toolbox::blockstructured::interpolateHaloLayer_AoS_third_order()</a>, <a class="el" href="../../dd/dfb/CellIntegral_8cpp_source.html#l00258">exahype2::dg::multiplyWithInvertedMassMatrix_GaussLegendre()</a>, <a class="el" href="../../d4/d21/fv_2PatchUtils_8cpp_source.html#l00076">exahype2::fv::plotPatch()</a>, <a class="el" href="../../dd/de0/Restriction_8cpp_source.html#l00009">toolbox::blockstructured::internal::projectCells_AoS()</a>, <a class="el" href="../../dd/dfb/CellIntegral_8cpp_source.html#l00197">exahype2::dg::reduceMaxEigenvalue_patchwise_functors()</a>, <a class="el" href="../../d8/deb/LoopBody_8cpp_source.html#l00005">exahype2::fd::reduceMaxEigenvalue_patchwise_functors()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00939">toolbox::blockstructured::restrictCell_AoS_inject()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00856">toolbox::blockstructured::restrictCellIntoOverlappingCell_inject()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00895">toolbox::blockstructured::restrictCellIntoOverlappingCell_inject_and_average()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00540">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_matrix()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00190">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_second_order()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00338">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_third_order()</a>, <a class="el" href="../../d6/def/CellIntegralTest_8cpp_source.html#l00048">exahype2::dg::tests::CellIntegralTest::runEulerOrder2OnStationarySetup()</a>, <a class="el" href="../../dc/d9f/Linearised_8cpp_source.html#l00010">peano4::utils::setupLookupTableForDLinearised()</a>, <a class="el" href="../../d3/d7f/CopyPatchTest_8cpp_source.html#l00015">exahype2::fv::tests::CopyPatchTest::testCopyPatch()</a>, and <a class="el" href="../../d2/d23/PatchUtils_8cpph_source.html#l00028">exahype2::fv::validatePatch()</a>.</p>
+
+</div>
+</div>
+<a id="a5a140c73cce0b66f89c25806d2dfc75f" name="a5a140c73cce0b66f89c25806d2dfc75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a140c73cce0b66f89c25806d2dfc75f">&#9670;&#160;</a></span>dfor2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dfor2</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> counter##Scalar = 0, AA##counter = 0, BB##counter = 0, CC##counter = 0; counter##Scalar &lt; <a class="code hl_define" href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a>; \</div>
+<div class="line">       counter##Scalar++) { \</div>
+<div class="line">    <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions, int&gt;</a> counter; \</div>
+<div class="line">    counter(0)  = AA##counter; \</div>
+<div class="line">    counter(1)  = BB##counter; \</div>
+<div class="line">    counter(2)  = CC##counter; \</div>
+<div class="line">    AA##counter = !AA##counter; \</div>
+<div class="line">    BB##counter = !(AA##counter ^ BB##counter); \</div>
+<div class="line">    CC##counter = CC##counter || (!AA##counter &amp;&amp; !BB##counter &amp;&amp; !CC##counter);</div>
+<div class="ttc" id="aGlobals_8h_html_ae7c038f02be8703e671d700496803857"><div class="ttname"><a href="../../d9/df1/Globals_8h.html#ae7c038f02be8703e671d700496803857">TwoPowerD</a></div><div class="ttdeci">#define TwoPowerD</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df1/Globals_8h_source.html#l00021">Globals.h:21</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00086">86</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00188">peano4::datamanagement::VertexMarker::areAdjacentCellsLocal()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00096">peano4::grid::Spacetree::areAllVerticesNonHanging()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00102">peano4::grid::Spacetree::areAllVerticesRefined()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00108">peano4::grid::Spacetree::areAllVerticesUnrefined()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00201">peano4::grid::GridTraversalEventGenerator::createGenericCellTraversalEvent()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00831">toolbox::finiteelements::extractElementStencil()</a>, <a class="el" href="../../dc/d93/MultiscaleTransitions_8cpp_source.html#l00129">toolbox::particles::getAdjacentCellsOwningParticle()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00581">peano4::grid::Spacetree::getAdjacentRanksForNewVertex()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00035">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00010">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00100">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00151">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00196">peano4::parallel::Node::getPeriodicBoundaryNumber()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00848">toolbox::finiteelements::getPoissonMatrixWithJumpingCoefficient()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00788">peano4::grid::GridTraversalEventGenerator::getTreeOwningSpacetreeNode()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01101">peano4::grid::Spacetree::incrementNumberOfAdjacentRefinedLocalCells()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01607">peano4::grid::Spacetree::isCellSplitCandidate()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00107">peano4::grid::GridTraversalEventGenerator::isSpacetreeNodeLocal()</a>, <a class="el" href="../../d7/d70/grid_8cpp_source.html#l00241">peano4::grid::isSpacetreeNodeRefined()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01764">peano4::grid::Spacetree::markVerticesAroundForkedCell()</a>, <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00109">peano4::grid::TraversalVTKPlotter::plotCell()</a>, <a class="el" href="../../d9/d46/fv_2Tracer_8cpp_source.html#l00066">exahype2::fv::internal::projectValueOntoParticle_piecewiseLinear()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01000">peano4::grid::Spacetree::receiveAndMergeGridVertexAtHorizontalBoundary()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00084">toolbox::finiteelements::reconstructStencilFragments()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00070">toolbox::finiteelements::reconstructUniformStencilFragments()</a>, <a class="el" href="../../d0/d31/GridTraversalEventGeneratorTest_8cpp_source.html#l00132">peano4::grid::tests::GridTraversalEventGeneratorTest::testCreateLeaveCellTraversalEvent1()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00122">peano4::grid::Spacetree::traverse()</a>, <a class="el" href="../../d7/dfd/particles_8cpph_source.html#l00071">toolbox::particles::updateContainedInAdjacentCellProperty()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00466">peano4::grid::Spacetree::updateVertexBeforeStore()</a>, and <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01111">peano4::grid::Spacetree::updateVertexRanksWithinCell()</a>.</p>
+
+</div>
+</div>
+<a id="aa46434787daa5d3d9327c72451a470e4" name="aa46434787daa5d3d9327c72451a470e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46434787daa5d3d9327c72451a470e4">&#9670;&#160;</a></span>dfor3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dfor3</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> counter##Scalar = 0; counter##Scalar &lt; <a class="code hl_define" href="../../d9/df1/Globals_8h.html#ab318547449d48a539d5ee3949b7f5ace">ThreePowerD</a>; counter##Scalar++) { \</div>
+<div class="line">    <a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions, int&gt;</a> counter; \</div>
+<div class="line">    { \</div>
+<div class="line">      <span class="keywordtype">int</span> copy##counter##Scalar = counter##Scalar; \</div>
+<div class="line">      for (<span class="keywordtype">int</span> counter##ddd = Dimensions - 1; counter##ddd &gt;= 0; counter##ddd--) { \</div>
+<div class="line">        <span class="keywordtype">int</span> counter##aPowI = 1; \</div>
+<div class="line">        for (<span class="keywordtype">int</span> counter##jjj = 0; counter##jjj &lt; counter##ddd; counter##jjj++) { \</div>
+<div class="line">          counter##aPowI *= 3; \</div>
+<div class="line">        } \</div>
+<div class="line">        counter(counter##ddd) = copy##counter##Scalar / counter##aPowI; \</div>
+<div class="line">        copy##counter##Scalar -= counter(counter##ddd) * counter##aPowI; \</div>
+<div class="line">      } \</div>
+<div class="line">    }</div>
+<div class="ttc" id="aGlobals_8h_html_ab318547449d48a539d5ee3949b7f5ace"><div class="ttname"><a href="../../d9/df1/Globals_8h.html#ab318547449d48a539d5ee3949b7f5ace">ThreePowerD</a></div><div class="ttdeci">#define ThreePowerD</div><div class="ttdef"><b>Definition</b> <a href="../../d9/df1/Globals_8h_source.html#l00027">Globals.h:27</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00098">98</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00009">toolbox::blockstructured::internal::createPiecewiseConstantInterpolationMatrix()</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00244">peano4::parallel::Node::getOutputStacksForPeriodicBoundaryExchange()</a>.</p>
+
+</div>
+</div>
+<a id="ac59d86d8ac9a71ef9f9d2553b3928745" name="ac59d86d8ac9a71ef9f9d2553b3928745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59d86d8ac9a71ef9f9d2553b3928745">&#9670;&#160;</a></span>dfore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dfore</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">max, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">dim, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">value</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions, int&gt;</a> counter = <a class="code hl_function" href="../../d9/d8e/namespacepeano4_1_1utils.html#a6c861d4cc0ba9f69d4fa9b8f80e7cd71">peano4::utils::dStartVector</a>(dim, value); \</div>
+<div class="line">       peano4::utils::dCmp(counter, max); \</div>
+<div class="line">       peano4::utils::dInc(counter, max, dim))</div>
+</div><!-- fragment -->
+<p>This is an exclusive d-dimensional for loop. </p>
+<p>Exclusive means, there is one dimension that is not manipulated during the for loop. This dimension (entry of the counter) is specified by dim and has the value value throughout the for-loop. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00125">125</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d34/fd_2BoundaryConditions_8cpp_source.html#l00015">exahype2::fd::applyBoundaryConditions()</a>, <a class="el" href="../../d7/d87/dg_2BoundaryConditions_8cpp_source.html#l00012">exahype2::dg::applyBoundaryConditions()</a>, <a class="el" href="../../d6/da0/BoundaryConditions_8cpph_source.html#l00005">exahype2::fv::applyBoundaryConditions()</a>, <a class="el" href="../../df/d34/fd_2BoundaryConditions_8cpp_source.html#l00086">exahype2::fd::applySommerfeldConditions()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l01319">toolbox::blockstructured::internal::clearHalfOfHaloLayerAoS()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l01059">toolbox::blockstructured::clearHaloLayerAoS()</a>, <a class="el" href="../../d2/d23/PatchUtils_8cpph_source.html#l00005">exahype2::fv::copyHalfOfHalo()</a>, <a class="el" href="../../d0/d29/Projection_8cpp_source.html#l00246">toolbox::blockstructured::extrapolatePatchSolutionAndProjectExtrapolatedHaloOntoFaces()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00842">peano4::grid::GridTraversalEventGenerator::getAdjacentRanksOfFace()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l02039">toolbox::blockstructured::interpolateHaloLayer_AoS_tensor_product()</a>, <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00010">exahype2::dg::interpolateRiemannSolution()</a>, <a class="el" href="../../df/d7e/PostprocessingKernels_8cpp_source.html#l00008">exahype2::fv::mapInnerNeighbourVoxelAlongBoundayOntoAuxiliaryVariable()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00008">toolbox::finiteelements::preprocessBoundaryStencil()</a>, <a class="el" href="../../d6/dac/Interpolation_8cpph_source.html#l00006">toolbox::blockstructured::internal::projectInterpolatedFineCellsOnHaloLayer_AoS()</a>, <a class="el" href="../../d0/d29/Projection_8cpp_source.html#l00152">toolbox::blockstructured::projectPatchHaloOntoFaces()</a>, <a class="el" href="../../d0/d29/Projection_8cpp_source.html#l00058">toolbox::blockstructured::projectPatchSolutionOntoFaces()</a>, <a class="el" href="../../df/da6/Riemann_8cpp_source.html#l00069">exahype2::dg::restrictAndAccumulateProjectedFacePolynomial()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l01109">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_averaging()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l01226">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_inject()</a>, <a class="el" href="../../d2/da5/Restriction_8cpph_source.html#l00652">toolbox::blockstructured::restrictInnerHalfOfHaloLayer_AoS_tensor_product()</a>, <a class="el" href="../../d9/d77/FluxAverage_8cpp_source.html#l00006">exahype2::dg::fluxaverage::solveRiemannProblem_pointwise_in_situ()</a>, <a class="el" href="../../d7/dff/Rusanov_8cpp_source.html#l00006">exahype2::dg::rusanov::solveRiemannProblem_pointwise_in_situ()</a>, <a class="el" href="../../d4/de3/LaxFriedrichs_8cpp_source.html#l00007">exahype2::dg::laxfriedrichs::solveRiemannProblem_pointwise_in_situ()</a>, and <a class="el" href="../../d3/d24/Average_8cpp_source.html#l00006">exahype2::dg::average::solveRiemannProblem_pointwise_in_situ()</a>.</p>
+
+</div>
+</div>
+<a id="afc16e98fa8d582ff84c90f41b8067405" name="afc16e98fa8d582ff84c90f41b8067405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc16e98fa8d582ff84c90f41b8067405">&#9670;&#160;</a></span>enddforx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define enddforx&#160;&#160;&#160;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I prefer to use this macro for dforx instead of a closing bracket as many syntax parser fail otherwise. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00117">117</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d52/VertexMarker_8cpp_source.html#l00188">peano4::datamanagement::VertexMarker::areAdjacentCellsLocal()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00096">peano4::grid::Spacetree::areAllVerticesNonHanging()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00102">peano4::grid::Spacetree::areAllVerticesRefined()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00108">peano4::grid::Spacetree::areAllVerticesUnrefined()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00201">peano4::grid::GridTraversalEventGenerator::createGenericCellTraversalEvent()</a>, <a class="el" href="../../d7/d68/Interpolation_8cpp_source.html#l00009">toolbox::blockstructured::internal::createPiecewiseConstantInterpolationMatrix()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00022">toolbox::finiteelements::exchangeCoordinates()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00831">toolbox::finiteelements::extractElementStencil()</a>, <a class="el" href="../../dc/d93/MultiscaleTransitions_8cpp_source.html#l00129">toolbox::particles::getAdjacentCellsOwningParticle()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00581">peano4::grid::Spacetree::getAdjacentRanksForNewVertex()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00035">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00010">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00100">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00151">toolbox::finiteelements::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../d0/d1f/BSplinesStencilFactory_8cpph_source.html#l00006">toolbox::finiteelements::BSplinesStencilFactory::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../d0/d1f/BSplinesStencilFactory_8cpph_source.html#l00031">toolbox::finiteelements::BSplinesStencilFactory::getElementWiseAssemblyMatrix()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00244">peano4::parallel::Node::getOutputStacksForPeriodicBoundaryExchange()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00196">peano4::parallel::Node::getPeriodicBoundaryNumber()</a>, <a class="el" href="../../d8/d3a/StencilFactory_8cpp_source.html#l00848">toolbox::finiteelements::getPoissonMatrixWithJumpingCoefficient()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00788">peano4::grid::GridTraversalEventGenerator::getTreeOwningSpacetreeNode()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01101">peano4::grid::Spacetree::incrementNumberOfAdjacentRefinedLocalCells()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01607">peano4::grid::Spacetree::isCellSplitCandidate()</a>, <a class="el" href="../../d0/da0/GridTraversalEventGenerator_8cpp_source.html#l00107">peano4::grid::GridTraversalEventGenerator::isSpacetreeNodeLocal()</a>, <a class="el" href="../../d7/d70/grid_8cpp_source.html#l00241">peano4::grid::isSpacetreeNodeRefined()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01764">peano4::grid::Spacetree::markVerticesAroundForkedCell()</a>, <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00109">peano4::grid::TraversalVTKPlotter::plotCell()</a>, <a class="el" href="../../d9/d46/fv_2Tracer_8cpp_source.html#l00066">exahype2::fv::internal::projectValueOntoParticle_piecewiseLinear()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01000">peano4::grid::Spacetree::receiveAndMergeGridVertexAtHorizontalBoundary()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00084">toolbox::finiteelements::reconstructStencilFragments()</a>, <a class="el" href="../../db/d55/ElementMatrix_8cpp_source.html#l00070">toolbox::finiteelements::reconstructUniformStencilFragments()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00122">peano4::grid::Spacetree::traverse()</a>, <a class="el" href="../../d7/dfd/particles_8cpph_source.html#l00071">toolbox::particles::updateContainedInAdjacentCellProperty()</a>, <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l00466">peano4::grid::Spacetree::updateVertexBeforeStore()</a>, and <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01111">peano4::grid::Spacetree::updateVertexRanksWithinCell()</a>.</p>
+
+</div>
+</div>
+<a id="a228ab8a1c359dadb10ce92729601564e" name="a228ab8a1c359dadb10ce92729601564e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228ab8a1c359dadb10ce92729601564e">&#9670;&#160;</a></span>endzfor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define endzfor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  } \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00228">228</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01192">peano4::grid::Spacetree::descend()</a>.</p>
+
+</div>
+</div>
+<a id="a74c5ac04e0512a5d2f9e182f8eca1f21" name="a74c5ac04e0512a5d2f9e182f8eca1f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c5ac04e0512a5d2f9e182f8eca1f21">&#9670;&#160;</a></span>zfor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define zfor</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">max, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">direction</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  { \</div>
+<div class="line">    for (<a class="code hl_struct" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector&lt;Dimensions, int&gt;</a> counter = <a class="code hl_function" href="../../d9/d8e/namespacepeano4_1_1utils.html#a6c861d4cc0ba9f69d4fa9b8f80e7cd71">peano4::utils::dStartVector</a>(max, direction); \</div>
+<div class="line">         peano4::utils::dCmp(counter, max); \</div>
+<div class="line">         peano4::utils::dInc(counter, max, direction)) {</div>
+</div><!-- fragment -->
+<p>This is a d-dimensional z-loop. </p>
+<p>A z-loop is a d-dimensional loop the counter direction changes every time an inner loop direction has changed. So this is the loop corresponding to a Peano curve. The for loop is passed a counter name, the number of steps to perform in each direction and a direction flag that identifies the initial direction. Note that this argument has to be a real variable, it might not be a constant. The direction flag array identifies for each direction, whether the initial loop goes along the axis or not. The type of direction is LoopDirection.</p>
+<p>Here are some examples for two dimensions: </p><div class="fragment"><div class="line">LoopDirection d(3);  <span class="comment">// equals {true,true} and identifies the standard</span></div>
+<div class="line">                     <span class="comment">// Peano Leitmotiv</span></div>
+<div class="line"><a class="code hl_define" href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a>( <a class="code hl_variable" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a>, 3, d ) {</div>
+<div class="line">  std::cout &lt;&lt; <a class="code hl_variable" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="aLoop_8h_html_a74c5ac04e0512a5d2f9e182f8eca1f21"><div class="ttname"><a href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a></div><div class="ttdeci">#define zfor(counter, max, direction)</div><div class="ttdoc">This is a d-dimensional z-loop.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d9e/Loop_8h_source.html#l00159">Loop.h:159</a></div></div>
+<div class="ttc" id="ahydro__iact_8h_html_a8cbb00f59bca2c48d4560b23f07a4de2"><div class="ttname"><a href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a></div><div class="ttdeci">const float const float const float struct part *restrict struct part *restrict const float a</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de2/hydro__iact_8h_source.html#l00055">hydro_iact.h:55</a></div></div>
+</div><!-- fragment --><p> yields in [0,0],[1,0],[2,0],[2,1],[1,1],[0,1],[0,2],[1,2],[2,2].</p>
+<div class="fragment"><div class="line">LoopDirection d(1);  <span class="comment">// equals {true, false} and specifies a Peano curve</span></div>
+<div class="line">                     <span class="comment">// from the left top to right bottom</span></div>
+<div class="line"><a class="code hl_define" href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a>( <a class="code hl_variable" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a>, 3, d ) {</div>
+<div class="line">  std::cout &lt;&lt; <a class="code hl_variable" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> yields in [0,2],[1,2],[2,2],[2,1],[1,1],[0,1],[0,0],[1,0],[2,0]. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00159">159</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+</div>
+</div>
+<a id="af1a51ccf0fc440853b837053804b4fd3" name="af1a51ccf0fc440853b837053804b4fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a51ccf0fc440853b837053804b4fd3">&#9670;&#160;</a></span>zfor3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define zfor3</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">counter, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">direction</span>&#160;)&#160;&#160;&#160;<a class="el" href="#a74c5ac04e0512a5d2f9e182f8eca1f21">zfor</a>(counter, 3, direction)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/Loop_8h_source.html#l00225">225</a> of file <a class="el" href="../../db/d9e/Loop_8h_source.html">Loop.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d23/Spacetree_8cpp_source.html#l01192">peano4::grid::Spacetree::descend()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_87e640b167fa083904edd5652fd19e67.html">peano4</a></li><li class="navelem"><a class="el" href="../../dir_ebb8ef2f0533fa3c8211f01f7c6b0b2b.html">utils</a></li><li class="navelem"><a class="el" href="../../db/d9e/Loop_8h.html">Loop.h</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:28:14 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

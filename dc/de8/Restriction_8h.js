@@ -1,0 +1,27 @@
+var Restriction_8h =
+[
+    [ "clearCell", "dc/de8/Restriction_8h.html#aa37b8135e53cd043c24922032e63bb44", null ],
+    [ "clearHalfOfHaloLayerAoS", "dc/de8/Restriction_8h.html#a188bc1f07e4fa6cd7c694847dce7a8dc", null ],
+    [ "clearHaloLayerAoS", "dc/de8/Restriction_8h.html#a5758bc58db187e095617f33ea606f54a", null ],
+    [ "projectCells_AoS", "dc/de8/Restriction_8h.html#aaf01d9311cfbf021be3a01f59bee9a30", null ],
+    [ "restrictCell_AoS_averaging", "dc/de8/Restriction_8h.html#a1d5aa3c9460d340944de3485b9c4bdfd", null ],
+    [ "restrictCell_AoS_inject", "dc/de8/Restriction_8h.html#a1c9df71fbaf4e85b34a9ee0bde37ef58", null ],
+    [ "restrictCell_AoS_matrix", "dc/de8/Restriction_8h.html#a02b8382b31973a2be3bd4c495c5219c1", null ],
+    [ "restrictCell_AoS_second_order", "dc/de8/Restriction_8h.html#a14433068e5cfe3f416cd84c2c8ecb9cb", null ],
+    [ "restrictCell_AoS_tensor_product", "dc/de8/Restriction_8h.html#ab2581b92ed4707f39c302fbbdb8ebcc2", null ],
+    [ "restrictCell_AoS_third_order", "dc/de8/Restriction_8h.html#a6a24c565bff82ad4c2aa9b4e080644e7", null ],
+    [ "restrictCellIntoOverlappingCell_inject", "dc/de8/Restriction_8h.html#a542ce918ed013ad8ea8b8cf5d12bec63", null ],
+    [ "restrictCellIntoOverlappingCell_inject_and_average", "dc/de8/Restriction_8h.html#a4e1026ebdef78b655aa5849adc61dc08", null ],
+    [ "restrictHaloLayer_AoS_averaging", "dc/de8/Restriction_8h.html#a242dd27e73282801154ce658e52d8ad2", null ],
+    [ "restrictHaloLayer_AoS_inject", "dc/de8/Restriction_8h.html#a671fca9aa0e6bbe43d193679fc2f364c", null ],
+    [ "restrictHaloLayer_AoS_matrix", "dc/de8/Restriction_8h.html#a738cf07b16309d896d02eb74ec6d2aee", null ],
+    [ "restrictHaloLayer_AoS_second_order", "dc/de8/Restriction_8h.html#aebcef026bcfa9e9df1b4bc1ab9735142", null ],
+    [ "restrictHaloLayer_AoS_tensor_product", "dc/de8/Restriction_8h.html#a5fbef7888b254ceb85017981aa69dc41", null ],
+    [ "restrictHaloLayer_AoS_third_order", "dc/de8/Restriction_8h.html#ae3a8de30d31e76e55f4f623f011e006a", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_averaging", "dc/de8/Restriction_8h.html#af489d814b548cb6b5fbe4fea918dd95b", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_inject", "dc/de8/Restriction_8h.html#a58dc4cbde13811599fef7de9c13b5155", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_matrix", "dc/de8/Restriction_8h.html#a12fa0cce7279e913ff59d268c62efa5b", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_second_order", "dc/de8/Restriction_8h.html#a79be8dcee89749c03cd6ae2364d852f3", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_tensor_product", "dc/de8/Restriction_8h.html#abcf3564f55976ece1b3d81a3403b80ac", null ],
+    [ "restrictInnerHalfOfHaloLayer_AoS_third_order", "dc/de8/Restriction_8h.html#a8238512a92d7ac94d16b77a36ace2c91", null ]
+];

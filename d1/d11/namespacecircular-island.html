@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d11/namespacecircular-island.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">circular-island Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1ca27390e74a8e7470f0b5b07e556f5" id="r_ab1ca27390e74a8e7470f0b5b07e556f5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ca27390e74a8e7470f0b5b07e556f5">initial_conditions</a></td></tr>
+<tr class="separator:ab1ca27390e74a8e7470f0b5b07e556f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f90cd4ebeecea72fddf026f9adbf3d" id="r_a17f90cd4ebeecea72fddf026f9adbf3d"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17f90cd4ebeecea72fddf026f9adbf3d">boundary_conditions</a></td></tr>
+<tr class="separator:a17f90cd4ebeecea72fddf026f9adbf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6928bb38d834f50c459a38065d235825" id="r_a6928bb38d834f50c459a38065d235825"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6928bb38d834f50c459a38065d235825">refinement_criterion</a></td></tr>
+<tr class="separator:a6928bb38d834f50c459a38065d235825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bae945cf972cf3b8bdd4493dd9fffe8" id="r_a1bae945cf972cf3b8bdd4493dd9fffe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bae945cf972cf3b8bdd4493dd9fffe8">parser</a> = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td></tr>
+<tr class="separator:a1bae945cf972cf3b8bdd4493dd9fffe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57be7e68a0b2369083f8df670b35f7ba" id="r_a57be7e68a0b2369083f8df670b35f7ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57be7e68a0b2369083f8df670b35f7ba">min_depth</a></td></tr>
+<tr class="separator:a57be7e68a0b2369083f8df670b35f7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc1f9e318a348ca3d63460b37c8a992" id="r_a5cc1f9e318a348ca3d63460b37c8a992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cc1f9e318a348ca3d63460b37c8a992">end_time</a></td></tr>
+<tr class="separator:a5cc1f9e318a348ca3d63460b37c8a992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9438563fdc0072b9778cf0c83efd7c3" id="r_ac9438563fdc0072b9778cf0c83efd7c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9438563fdc0072b9778cf0c83efd7c3">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:ac9438563fdc0072b9778cf0c83efd7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2c166f44057867a248d0f2fcfc6b57" id="r_abf2c166f44057867a248d0f2fcfc6b57"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf2c166f44057867a248d0f2fcfc6b57">constants</a></td></tr>
+<tr class="separator:abf2c166f44057867a248d0f2fcfc6b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ac6b23b43af1ca164323f9e7a7f2ca" id="r_a25ac6b23b43af1ca164323f9e7a7f2ca"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ac6b23b43af1ca164323f9e7a7f2ca">size</a> = [30.0, 30.0]</td></tr>
+<tr class="separator:a25ac6b23b43af1ca164323f9e7a7f2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bb0a2fca18575f35e61f099dfe6e8a" id="r_a04bb0a2fca18575f35e61f099dfe6e8a"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bb0a2fca18575f35e61f099dfe6e8a">max_h</a> = (1.1 * min(<a class="el" href="#a25ac6b23b43af1ca164323f9e7a7f2ca">size</a>) / (3.0**args.min_depth))</td></tr>
+<tr class="separator:a04bb0a2fca18575f35e61f099dfe6e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59642b813db2923a44c3dc819c0c919" id="r_ac59642b813db2923a44c3dc819c0c919"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59642b813db2923a44c3dc819c0c919">min_h</a> = <a class="el" href="#a04bb0a2fca18575f35e61f099dfe6e8a">max_h</a> * 3.0 ** (-args.amr_levels)</td></tr>
+<tr class="separator:ac59642b813db2923a44c3dc819c0c919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1826f234d11fcd4130bdc790642251" id="r_a3b1826f234d11fcd4130bdc790642251"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1826f234d11fcd4130bdc790642251">aderdg_solver</a></td></tr>
+<tr class="separator:a3b1826f234d11fcd4130bdc790642251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79d0289243fb0f144d2b9d52eaef086" id="r_ad79d0289243fb0f144d2b9d52eaef086"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad79d0289243fb0f144d2b9d52eaef086">flux</a></td></tr>
+<tr class="separator:ad79d0289243fb0f144d2b9d52eaef086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa45abac2dd19218e12f8664dd86ad89" id="r_aaa45abac2dd19218e12f8664dd86ad89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa45abac2dd19218e12f8664dd86ad89">ncp</a></td></tr>
+<tr class="separator:aaa45abac2dd19218e12f8664dd86ad89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f846c03c0f3bd52fccb93bc0365f28a" id="r_a1f846c03c0f3bd52fccb93bc0365f28a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f846c03c0f3bd52fccb93bc0365f28a">max_eigenvalue</a></td></tr>
+<tr class="separator:a1f846c03c0f3bd52fccb93bc0365f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c90fa29153a04b57107c21b4b1b74d9" id="r_a7c90fa29153a04b57107c21b4b1b74d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c90fa29153a04b57107c21b4b1b74d9">is_linear</a></td></tr>
+<tr class="separator:a7c90fa29153a04b57107c21b4b1b74d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c649274d34c614898f4b0bf0345cd9f" id="r_a5c649274d34c614898f4b0bf0345cd9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c649274d34c614898f4b0bf0345cd9f">False</a></td></tr>
+<tr class="separator:a5c649274d34c614898f4b0bf0345cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5200061010b733ec1de826747a27241b" id="r_a5200061010b733ec1de826747a27241b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5200061010b733ec1de826747a27241b">polynomials</a></td></tr>
+<tr class="separator:a5200061010b733ec1de826747a27241b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296c9573747ba44be063fbf93c663760" id="r_a296c9573747ba44be063fbf93c663760"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296c9573747ba44be063fbf93c663760">project</a></td></tr>
+<tr class="separator:a296c9573747ba44be063fbf93c663760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9051c7c3eb18daffdf8ce43fcce65cab" id="r_a9051c7c3eb18daffdf8ce43fcce65cab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9051c7c3eb18daffdf8ce43fcce65cab">time_in_between_plots</a> = 0.0</td></tr>
+<tr class="separator:a9051c7c3eb18daffdf8ce43fcce65cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfbb0ceb0c779ecd67c746819021ac9" id="r_a3cfbb0ceb0c779ecd67c746819021ac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cfbb0ceb0c779ecd67c746819021ac9">dimensions</a></td></tr>
+<tr class="separator:a3cfbb0ceb0c779ecd67c746819021ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329d6f4c76514607e9a2492971912633" id="r_a329d6f4c76514607e9a2492971912633"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a329d6f4c76514607e9a2492971912633">offset</a></td></tr>
+<tr class="separator:a329d6f4c76514607e9a2492971912633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e5e1d78da3814bf26315d79c791978" id="r_a06e5e1d78da3814bf26315d79c791978"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06e5e1d78da3814bf26315d79c791978">min_end_time</a></td></tr>
+<tr class="separator:a06e5e1d78da3814bf26315d79c791978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2997f14637f471bbc180faa493b7021" id="r_ad2997f14637f471bbc180faa493b7021"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2997f14637f471bbc180faa493b7021">max_end_time</a></td></tr>
+<tr class="separator:ad2997f14637f471bbc180faa493b7021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421a302e374ffe034a49862c80d969c4" id="r_a421a302e374ffe034a49862c80d969c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a421a302e374ffe034a49862c80d969c4">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a421a302e374ffe034a49862c80d969c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e47a62c8c9a461c763f088b1b402fd5" id="r_a7e47a62c8c9a461c763f088b1b402fd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e47a62c8c9a461c763f088b1b402fd5">periodic_BC</a></td></tr>
+<tr class="separator:a7e47a62c8c9a461c763f088b1b402fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ce8090a5929dea08a826d861cd73a7" id="r_ac0ce8090a5929dea08a826d861cd73a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ce8090a5929dea08a826d861cd73a7">mode</a></td></tr>
+<tr class="separator:ac0ce8090a5929dea08a826d861cd73a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d17d3c652506cd5ae933ebf03b1857a" id="r_a1d17d3c652506cd5ae933ebf03b1857a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d17d3c652506cd5ae933ebf03b1857a">const_val</a></td></tr>
+<tr class="separator:a1d17d3c652506cd5ae933ebf03b1857a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991ef764c10e51047c23235660d12e42" id="r_a991ef764c10e51047c23235660d12e42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a991ef764c10e51047c23235660d12e42">const_type</a></td></tr>
+<tr class="separator:a991ef764c10e51047c23235660d12e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4c346e885ff1e9885a2a839bcb6727" id="r_a2d4c346e885ff1e9885a2a839bcb6727"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d4c346e885ff1e9885a2a839bcb6727">make</a></td></tr>
+<tr class="separator:a2d4c346e885ff1e9885a2a839bcb6727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f2e665acb3b66f9aca6d5518d7b6da" id="r_ae2f2e665acb3b66f9aca6d5518d7b6da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f2e665acb3b66f9aca6d5518d7b6da">True</a></td></tr>
+<tr class="separator:ae2f2e665acb3b66f9aca6d5518d7b6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62b4d6fd8882c01aeb7e26477edef89" id="r_ab62b4d6fd8882c01aeb7e26477edef89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab62b4d6fd8882c01aeb7e26477edef89">make_clean_first</a></td></tr>
+<tr class="separator:ab62b4d6fd8882c01aeb7e26477edef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4a192cb3981c343a3ca6bf8e114b97" id="r_a8c4a192cb3981c343a3ca6bf8e114b97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c4a192cb3981c343a3ca6bf8e114b97">throw_away_data_after_build</a></td></tr>
+<tr class="separator:a8c4a192cb3981c343a3ca6bf8e114b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3b1826f234d11fcd4130bdc790642251" name="a3b1826f234d11fcd4130bdc790642251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1826f234d11fcd4130bdc790642251">&#9670;&#160;</a></span>aderdg_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.aderdg_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ADERDGSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=args.degrees_of_freedom,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1, <span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=0,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=args.time_step_relaxation,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00069">69</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ac9438563fdc0072b9778cf0c83efd7c3" name="ac9438563fdc0072b9778cf0c83efd7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9438563fdc0072b9778cf0c83efd7c3">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00058">58</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a17f90cd4ebeecea72fddf026f9adbf3d" name="a17f90cd4ebeecea72fddf026f9adbf3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f90cd4ebeecea72fddf026f9adbf3d">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  Qoutside[s::h]  = Qinside[s::h];</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  Qoutside[s::hu] = -Qinside[s::hu];</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  Qoutside[s::hv] = -Qinside[s::hv];</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  Qoutside[s::z]  = Qinside[s::z];</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00032">32</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a991ef764c10e51047c23235660d12e42" name="a991ef764c10e51047c23235660d12e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a991ef764c10e51047c23235660d12e42">&#9670;&#160;</a></span>const_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.const_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00125">125</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a1d17d3c652506cd5ae933ebf03b1857a" name="a1d17d3c652506cd5ae933ebf03b1857a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d17d3c652506cd5ae933ebf03b1857a">&#9670;&#160;</a></span>const_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.const_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00125">125</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="abf2c166f44057867a248d0f2fcfc6b57" name="abf2c166f44057867a248d0f2fcfc6b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2c166f44057867a248d0f2fcfc6b57">&#9670;&#160;</a></span>constants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict circular-island.constants</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;g&quot;</span>: [9.81, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;hThreshold&quot;</span>: [1e-5, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    4</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00060">60</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a3cfbb0ceb0c779ecd67c746819021ac9" name="a3cfbb0ceb0c779ecd67c746819021ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfbb0ceb0c779ecd67c746819021ac9">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00108">108</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a5cc1f9e318a348ca3d63460b37c8a992" name="a5cc1f9e318a348ca3d63460b37c8a992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc1f9e318a348ca3d63460b37c8a992">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00056">56</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a5c649274d34c614898f4b0bf0345cd9f" name="a5c649274d34c614898f4b0bf0345cd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c649274d34c614898f4b0bf0345cd9f">&#9670;&#160;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00091">91</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a421a302e374ffe034a49862c80d969c4" name="a421a302e374ffe034a49862c80d969c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421a302e374ffe034a49862c80d969c4">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00113">113</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ad79d0289243fb0f144d2b9d52eaef086" name="ad79d0289243fb0f144d2b9d52eaef086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79d0289243fb0f144d2b9d52eaef086">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00083">83</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ab1ca27390e74a8e7470f0b5b07e556f5" name="ab1ca27390e74a8e7470f0b5b07e556f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ca27390e74a8e7470f0b5b07e556f5">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  for (int i = 0; i &lt; NumberOfUnknowns + NumberOfAuxiliaryVariables; i++) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[i] = 0.0;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  static constexpr double h0    = 0.32;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  static constexpr double A     = 0.064;</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  static constexpr double xc    = 12.5;</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">  static constexpr double yc    = 15.0;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">  static constexpr double rc    = 3.6;</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">  const double gamma            = std::sqrt((3.0 * A) / (4.0 * h0));</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  auto r = [](double x, double y) {</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">    return std::sqrt(std::pow(x - xc, 2) + std::pow(y - yc, 2));</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">  };</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">  Q[s::h] = h0 + (A / h0 * std::pow(1.0 / (std::cosh(gamma * (x(0) - 2.5))), 2));</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">  Q[s::z] = r(x(0), x(1)) &lt;= rc ? 0.93 * (1.0 - r(x(0), x(1)) / rc) : 0.0;</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00012">12</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a7c90fa29153a04b57107c21b4b1b74d9" name="a7c90fa29153a04b57107c21b4b1b74d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c90fa29153a04b57107c21b4b1b74d9">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00091">91</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a2d4c346e885ff1e9885a2a839bcb6727" name="a2d4c346e885ff1e9885a2a839bcb6727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4c346e885ff1e9885a2a839bcb6727">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00130">130</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ab62b4d6fd8882c01aeb7e26477edef89" name="ab62b4d6fd8882c01aeb7e26477edef89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62b4d6fd8882c01aeb7e26477edef89">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00130">130</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a1f846c03c0f3bd52fccb93bc0365f28a" name="a1f846c03c0f3bd52fccb93bc0365f28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f846c03c0f3bd52fccb93bc0365f28a">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00085">85</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ad2997f14637f471bbc180faa493b7021" name="ad2997f14637f471bbc180faa493b7021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2997f14637f471bbc180faa493b7021">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00112">112</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a04bb0a2fca18575f35e61f099dfe6e8a" name="a04bb0a2fca18575f35e61f099dfe6e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bb0a2fca18575f35e61f099dfe6e8a">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple circular-island.max_h = (1.1 * min(<a class="el" href="#a25ac6b23b43af1ca164323f9e7a7f2ca">size</a>) / (3.0**args.min_depth))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00066">66</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a57be7e68a0b2369083f8df670b35f7ba" name="a57be7e68a0b2369083f8df670b35f7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57be7e68a0b2369083f8df670b35f7ba">&#9670;&#160;</a></span>min_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.min_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00055">55</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a06e5e1d78da3814bf26315d79c791978" name="a06e5e1d78da3814bf26315d79c791978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e5e1d78da3814bf26315d79c791978">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00111">111</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ac59642b813db2923a44c3dc819c0c919" name="ac59642b813db2923a44c3dc819c0c919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59642b813db2923a44c3dc819c0c919">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple circular-island.min_h = <a class="el" href="#a04bb0a2fca18575f35e61f099dfe6e8a">max_h</a> * 3.0 ** (-args.amr_levels)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00067">67</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ac0ce8090a5929dea08a826d861cd73a7" name="ac0ce8090a5929dea08a826d861cd73a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ce8090a5929dea08a826d861cd73a7">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00122">122</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="aaa45abac2dd19218e12f8664dd86ad89" name="aaa45abac2dd19218e12f8664dd86ad89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa45abac2dd19218e12f8664dd86ad89">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00084">84</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a329d6f4c76514607e9a2492971912633" name="a329d6f4c76514607e9a2492971912633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329d6f4c76514607e9a2492971912633">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00110">110</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a1bae945cf972cf3b8bdd4493dd9fffe8" name="a1bae945cf972cf3b8bdd4493dd9fffe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bae945cf972cf3b8bdd4493dd9fffe8">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.parser = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00053">53</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e47a62c8c9a461c763f088b1b402fd5" name="a7e47a62c8c9a461c763f088b1b402fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e47a62c8c9a461c763f088b1b402fd5">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00115">115</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a5200061010b733ec1de826747a27241b" name="a5200061010b733ec1de826747a27241b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5200061010b733ec1de826747a27241b">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00091">91</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a296c9573747ba44be063fbf93c663760" name="a296c9573747ba44be063fbf93c663760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296c9573747ba44be063fbf93c663760">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;applications&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;swe&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;CircularIsland&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;CircularIsland.{args.build_mode}&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00093">93</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a6928bb38d834f50c459a38065d235825" name="a6928bb38d834f50c459a38065d235825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6928bb38d834f50c459a38065d235825">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  static constexpr double xc = 12.5;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  static constexpr double yc = 15.0;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  static constexpr double rc = 3.6;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  auto r = [](double x, double y) {</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">    return std::sqrt(std::pow(x - xc, 2) + std::pow(y - yc, 2));</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  };</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">  return r(x(0), x(1)) &lt;= rc</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">           ? ::exahype2::RefinementCommand::Refine</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">           : ::exahype2::RefinementCommand::Keep;</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00039">39</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a25ac6b23b43af1ca164323f9e7a7f2ca" name="a25ac6b23b43af1ca164323f9e7a7f2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ac6b23b43af1ca164323f9e7a7f2ca">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.size = [30.0, 30.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00065">65</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a8c4a192cb3981c343a3ca6bf8e114b97" name="a8c4a192cb3981c343a3ca6bf8e114b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4a192cb3981c343a3ca6bf8e114b97">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00130">130</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="a9051c7c3eb18daffdf8ce43fcce65cab" name="a9051c7c3eb18daffdf8ce43fcce65cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9051c7c3eb18daffdf8ce43fcce65cab">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.time_in_between_plots = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00102">102</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+<a id="ae2f2e665acb3b66f9aca6d5518d7b6da" name="ae2f2e665acb3b66f9aca6d5518d7b6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f2e665acb3b66f9aca6d5518d7b6da">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">circular-island.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/da4/circular-island_8py_source.html#l00130">130</a> of file <a class="el" href="../../d5/da4/circular-island_8py_source.html">circular-island.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d11/namespacecircular-island.html">circular-island</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:22 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

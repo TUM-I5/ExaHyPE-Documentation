@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['machines_0',['Reference Configurations for Some Machines',['../d6/d5c/page_machines.html',1,'page_compiler_specific_settings_home']]],
+  ['main_20cpp_20in_20a_20peano_20code_1',['The typical main.cpp in a Peano code',['../d7/d01/peano_main.html',1,'page_peano4_home']]],
+  ['matrix_20free_20dg_20with_20jumping_20coefficients_20or_20precomputed_20cell_20operators_2',['Matrix-free DG with jumping coefficients or precomputed cell operators',['../d9/d7f/tutorials_multigrid_matrixfree_jumping_coefficients_and_optimisation.html',1,'page_mghype_tutorials']]],
+  ['matrix_20free_20discontinuous_20galerkin_20for_20the_20poisson_20equation_3',['Matrix-free Discontinuous Galerkin for the Poisson equation',['../d5/d36/tutorials_multigrid_matrixfree_discontinuous_galerkin_poisson.html',1,'page_mghype_tutorials']]],
+  ['matrix_20free_20mixed_20dg_20for_20the_20poisson_20equation_4',['Matrix-free mixed DG for the Poisson equation',['../d0/d2c/tutorials_multigrid_matrixfree_mixed_DG_poisson.html',1,'page_mghype_tutorials']]],
+  ['memory_20pools_5',['Particle memory pools',['../db/d9c/toolbox_particles_memorypool.html',1,'page_toolbox_particles_realisation']]],
+  ['merging_20coupling_20various_20applications_6',['Merging/coupling various applications',['../df/db4/page_peano_merging_applications.html',1,'page_peano4_home']]],
+  ['mesh_7',['Multiscale particle storage within mesh',['../d0/d45/page_toolbox_particles_mesh_storage.html',1,'toolbox_particles']]],
+  ['mesh_20construction_8',['Initial conditions, particle insertion and initial mesh construction',['../d4/d9b/swift_initial_conditions.html',1,'page_swift2_home']]],
+  ['mesh_20entities_9',['mesh entities',['../d6/dd6/tutorials_peano4_assign_data_to_mesh.html',1,'Assigning data to mesh entities'],['../dd/d88/page_multigrid_unfolding.html',1,'Design principle: Unfolding the linear algebra steps over the mesh entities']]],
+  ['mesh_20particle_20data_20consistency_10',['Sorting: Preserving the mesh-particle data consistency',['../db/d91/page_toolbox_particles_mesh_consistency.html',1,'toolbox_particles']]],
+  ['mesh_20refinement_11',['mesh refinement',['../d7/dbe/page_exahype_amr.html',1,'Adaptive mesh refinement'],['../d6/d39/exahype2_dg_DG_AMD.html',1,'Discontinuous Galerkin adaptive mesh refinement']]],
+  ['mesh_20refinement_20amr_12',['Adaptive Mesh Refinement (AMR)',['../da/dbb/page_peano_amr.html',1,'page_peano4_home']]],
+  ['mesh_20sweeps_13',['mesh sweeps',['../d2/dee/page_exahype2_coupling.html',1,'Coupling ExaHyPE to other codes and adding additional mesh sweeps'],['../da/dd4/tutorials_exahype2_additional_mesh_sweeps.html',1,'Introducing additional mesh sweeps']]],
+  ['mesh_20traversal_14',['Mesh traversal',['../d6/de2/page_toolbox_particles_mesh_traversal.html',1,'toolbox_particles']]],
+  ['mesh_20traversals_15',['Coupling of various solvers and additional mesh traversals',['../da/d8c/tutorials_exahype2_coupling.html',1,'page_exahype2_tutorials']]],
+  ['mghype_16',['MGHyPE',['../d3/da3/page_multigrid_home.html',1,'index']]],
+  ['mixed_20dg_20for_20the_20poisson_20equation_17',['Matrix-free mixed DG for the Poisson equation',['../d0/d2c/tutorials_multigrid_matrixfree_mixed_DG_poisson.html',1,'page_mghype_tutorials']]],
+  ['mixed_20galerkin_20for_20the_20poisson_20equation_20with_20petsc_18',['Mixed Galerkin for the Poisson equation with PETSc',['../d5/d6b/tutorials_documentation_multigrid_petsc_mixed_galerkin_poisson.html',1,'page_mghype_tutorials']]],
+  ['mounds_19',['Flooding problem in a channel with three mounds',['../d1/db6/applications_exahype2_shallow_water_three_mounds_channel.html',1,'applications_exahype2_shallow_water']]],
+  ['mpi_20programming_20',['MPI programming',['../dd/d83/page_tarch_mpi.html',1,'page_tarch_home']]],
+  ['multicore_20configuration_21',['Multicore configuration',['../d3/d21/page_exahype_multicore.html',1,'page_exahype2_home']]],
+  ['multicore_20programming_22',['Multicore programming',['../d1/d24/page_tarch_multicore.html',1,'page_tarch_home']]],
+  ['multiscale_20particle_20storage_20within_20mesh_23',['Multiscale particle storage within mesh',['../d0/d45/page_toolbox_particles_mesh_storage.html',1,'toolbox_particles']]]
+];

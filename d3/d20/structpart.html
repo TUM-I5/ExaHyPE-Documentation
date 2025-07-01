@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/d20/structpart.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">part Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Particle fields for the SPH particles.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for part:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/da8/structpart__coll__graph.png" border="0" usemap="#apart_coll__map" alt="Collaboration graph"/></div>
+<map name="apart_coll__map" id="apart_coll__map">
+<area shape="rect" title="Particle fields for the SPH particles." alt="" coords="9,93,57,119"/>
+<area shape="rect" href="../../df/d18/structxpart.html" title="Particle fields not needed during the SPH loops over neighbours." alt="" coords="5,5,61,31"/>
+<area shape="poly" title=" " alt="" coords="36,45,36,93,31,93,31,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ab7e40a44736f986c93975948242736fa" id="r_ab7e40a44736f986c93975948242736fa"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e40a44736f986c93975948242736fa">id</a></td></tr>
+<tr class="separator:ab7e40a44736f986c93975948242736fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605ed1157582774917f15fe09cbcb4ab" id="r_a605ed1157582774917f15fe09cbcb4ab"><td class="memItemLeft" align="right" valign="top">struct gpart *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a605ed1157582774917f15fe09cbcb4ab">gpart</a></td></tr>
+<tr class="separator:a605ed1157582774917f15fe09cbcb4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0720a5f01deccb2080862c39575dac0" id="r_ac0720a5f01deccb2080862c39575dac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#ad6e39abad7bc59f558dee50b28f332d6">Geo::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0720a5f01deccb2080862c39575dac0">_x</a></td></tr>
+<tr class="separator:ac0720a5f01deccb2080862c39575dac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3823ce8fba5ccce197af87a7cc9b5e6" id="r_ad3823ce8fba5ccce197af87a7cc9b5e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3823ce8fba5ccce197af87a7cc9b5e6">v</a> [3]</td></tr>
+<tr class="separator:ad3823ce8fba5ccce197af87a7cc9b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cea26d428f228bb35f3655857787653" id="r_a6cea26d428f228bb35f3655857787653"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cea26d428f228bb35f3655857787653">a_hydro</a> [3]</td></tr>
+<tr class="separator:a6cea26d428f228bb35f3655857787653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23142973507e0896e070f5f01a31ea5a" id="r_a23142973507e0896e070f5f01a31ea5a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23142973507e0896e070f5f01a31ea5a">mass</a></td></tr>
+<tr class="separator:a23142973507e0896e070f5f01a31ea5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d29f77ec98a11d2f81ccaa7ecc00bea" id="r_a6d29f77ec98a11d2f81ccaa7ecc00bea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d29f77ec98a11d2f81ccaa7ecc00bea">h</a></td></tr>
+<tr class="separator:a6d29f77ec98a11d2f81ccaa7ecc00bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155af5f23538f880884783760e553b2d" id="r_a155af5f23538f880884783760e553b2d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a155af5f23538f880884783760e553b2d">u</a></td></tr>
+<tr class="separator:a155af5f23538f880884783760e553b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1c608adcecfd3b8d491fd174ef8829" id="r_a7b1c608adcecfd3b8d491fd174ef8829"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b1c608adcecfd3b8d491fd174ef8829">u_dt</a></td></tr>
+<tr class="separator:a7b1c608adcecfd3b8d491fd174ef8829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a76f3ef2f00958a6aca1741e710a4b4" id="r_a3a76f3ef2f00958a6aca1741e710a4b4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a76f3ef2f00958a6aca1741e710a4b4">rho</a></td></tr>
+<tr class="separator:a3a76f3ef2f00958a6aca1741e710a4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8952a81dd13efa081fc5cafe51c94796" id="r_a8952a81dd13efa081fc5cafe51c94796"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59b22b86fc31b8df5d989f7aaae8ade" id="r_af59b22b86fc31b8df5d989f7aaae8ade"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a9788947d8b7fda851cae6a79efe3688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927e5d311010ecc8a7fb5f207d658998" id="r_a927e5d311010ecc8a7fb5f207d658998"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a0e42638efe0045edc345ef54d9d4f3cd">wcount</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a927e5d311010ecc8a7fb5f207d658998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fff1a1a82fd199ef8046bf626748128" id="r_a0fff1a1a82fd199ef8046bf626748128"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a51505d4a9416424f5241993a4be67d8e">wcount_dh</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0fff1a1a82fd199ef8046bf626748128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb038499d1aa8f849e6debf3c38db2cd" id="r_abb038499d1aa8f849e6debf3c38db2cd"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a6dfb01b37606421c43a60b41cc12fa7b">rho_dh</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:abb038499d1aa8f849e6debf3c38db2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1d692e95769657c7e835e95e259646" id="r_a3e1d692e95769657c7e835e95e259646"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#af111069ab9a48ea6723eb019cf1dd88a">div_v</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3e1d692e95769657c7e835e95e259646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd72e7fe7d5e655106f954edda761c8a" id="r_acd72e7fe7d5e655106f954edda761c8a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a2d08a8a2bab5fbd639415e01f0f2ea16">rot_v</a> [3]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:acd72e7fe7d5e655106f954edda761c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59b22b86fc31b8df5d989f7aaae8ade" id="r_af59b22b86fc31b8df5d989f7aaae8ade"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="#a9788947d8b7fda851cae6a79efe3688b">density</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:af59b22b86fc31b8df5d989f7aaae8ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the variables only used in the density loop over neighbours.  <a href="#a9788947d8b7fda851cae6a79efe3688b">More...</a><br /></td></tr>
+<tr class="separator:af59b22b86fc31b8df5d989f7aaae8ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efd5651b81591f5899bc180b163f4ce" id="r_a8efd5651b81591f5899bc180b163f4ce"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a788dc8fa997ecf1ca3a8a47fc44f0074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c39f494c9811707995884dd35f57ae9" id="r_a2c39f494c9811707995884dd35f57ae9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#ad3512c68d00c748e1a160afb522c5297">f</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2c39f494c9811707995884dd35f57ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab54119193317c4aa06c8fbb32102ef" id="r_adab54119193317c4aa06c8fbb32102ef"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a7583e8903c75863fea45df2b085989c9">pressure</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:adab54119193317c4aa06c8fbb32102ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83435d4c00f93a5ddfd8edda003cf13f" id="r_a83435d4c00f93a5ddfd8edda003cf13f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#aeeb41ba296312fe0dcd404ccb7472d92">soundspeed</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a83435d4c00f93a5ddfd8edda003cf13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e68746c23c6d38a3e8170d87ba79e2a" id="r_a1e68746c23c6d38a3e8170d87ba79e2a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#affec01527e7bc5eb8aae58ff3306b480">v_sig</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a1e68746c23c6d38a3e8170d87ba79e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693acd6cd0f8d78b247bf9793e5e409b" id="r_a693acd6cd0f8d78b247bf9793e5e409b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#a337b59af635a8e23dd8219449e424b36">h_dt</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a693acd6cd0f8d78b247bf9793e5e409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf54855b92985604cee2a992bf082bb9" id="r_aaf54855b92985604cee2a992bf082bb9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="#ae7787f246f975dad131de532fc2195cd">balsara</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aaf54855b92985604cee2a992bf082bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efd5651b81591f5899bc180b163f4ce" id="r_a8efd5651b81591f5899bc180b163f4ce"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="#a788dc8fa997ecf1ca3a8a47fc44f0074">force</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a8efd5651b81591f5899bc180b163f4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the variables only used in the force loop over neighbours.  <a href="#a788dc8fa997ecf1ca3a8a47fc44f0074">More...</a><br /></td></tr>
+<tr class="separator:a8efd5651b81591f5899bc180b163f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8952a81dd13efa081fc5cafe51c94796" id="r_a8952a81dd13efa081fc5cafe51c94796"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a8952a81dd13efa081fc5cafe51c94796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b768a99e60888b9576e21ef6259577d" id="r_a3b768a99e60888b9576e21ef6259577d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d18/structxpart.html">xpart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b768a99e60888b9576e21ef6259577d">xpart</a></td></tr>
+<tr class="separator:a3b768a99e60888b9576e21ef6259577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Particle fields for the SPH particles. </p>
+<p>The density and force substructures are used to contain variables only used within the density and force loops over neighbours. All more permanent variables should be declared in the main part of the part structure, </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00099">99</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a8952a81dd13efa081fc5cafe51c94796" name="a8952a81dd13efa081fc5cafe51c94796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8952a81dd13efa081fc5cafe51c94796">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="../../d3/d20/structpart.html">part</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0720a5f01deccb2080862c39575dac0" name="ac0720a5f01deccb2080862c39575dac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0720a5f01deccb2080862c39575dac0">&#9670;&#160;</a></span>_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#ad6e39abad7bc59f558dee50b28f332d6">Geo::Point</a> part::_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle position. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00108">108</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00005">do_density()</a>, and <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00050">do_density()</a>.</p>
+
+</div>
+</div>
+<a id="a6cea26d428f228bb35f3655857787653" name="a6cea26d428f228bb35f3655857787653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cea26d428f228bb35f3655857787653">&#9670;&#160;</a></span>a_hydro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::a_hydro[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle acceleration. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00114">114</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7787f246f975dad131de532fc2195cd" name="ae7787f246f975dad131de532fc2195cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7787f246f975dad131de532fc2195cd">&#9670;&#160;</a></span>balsara</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::balsara</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Balsara switch </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00185">185</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a9788947d8b7fda851cae6a79efe3688b" name="a9788947d8b7fda851cae6a79efe3688b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9788947d8b7fda851cae6a79efe3688b">&#9670;&#160;</a></span>[struct]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  part::density</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure for the variables only used in the density loop over neighbours. </p>
+<p>Quantities in this sub-structure should only be accessed in the density loop over neighbours and the ghost task. </p>
+
+</div>
+</div>
+<a id="af111069ab9a48ea6723eb019cf1dd88a" name="af111069ab9a48ea6723eb019cf1dd88a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af111069ab9a48ea6723eb019cf1dd88a">&#9670;&#160;</a></span>div_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::div_v</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Velocity divergence </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00153">153</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="ad3512c68d00c748e1a160afb522c5297" name="ad3512c68d00c748e1a160afb522c5297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3512c68d00c748e1a160afb522c5297">&#9670;&#160;</a></span>f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"Grad h" term </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00170">170</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d2f/riemann_8py_source.html#l00755">swift2.sphtools.riemann.RiemannSolver::solve()</a>, <a class="el" href="../../df/d2f/riemann_8py_source.html#l00210">swift2.sphtools.riemann.RiemannSolver::solve_brent()</a>, and <a class="el" href="../../df/d2f/riemann_8py_source.html#l00854">swift2.sphtools.riemann.RiemannSolver::solve_middle_state()</a>.</p>
+
+</div>
+</div>
+<a id="a788dc8fa997ecf1ca3a8a47fc44f0074" name="a788dc8fa997ecf1ca3a8a47fc44f0074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788dc8fa997ecf1ca3a8a47fc44f0074">&#9670;&#160;</a></span>[struct]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  part::force</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure for the variables only used in the force loop over neighbours. </p>
+<p>Quantities in this sub-structure should only be accessed in the force loop over neighbours and the ghost, drift and kick tasks. </p>
+
+</div>
+</div>
+<a id="a605ed1157582774917f15fe09cbcb4ab" name="a605ed1157582774917f15fe09cbcb4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605ed1157582774917f15fe09cbcb4ab">&#9670;&#160;</a></span>gpart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct gpart* part::gpart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to corresponding gravity part. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00105">105</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d29f77ec98a11d2f81ccaa7ecc00bea" name="a6d29f77ec98a11d2f81ccaa7ecc00bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d29f77ec98a11d2f81ccaa7ecc00bea">&#9670;&#160;</a></span>h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle smoothing length. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00120">120</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00005">do_density()</a>, <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00050">do_density()</a>, and <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00095">runner_do_ghost()</a>.</p>
+
+</div>
+</div>
+<a id="a337b59af635a8e23dd8219449e424b36" name="a337b59af635a8e23dd8219449e424b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337b59af635a8e23dd8219449e424b36">&#9670;&#160;</a></span>h_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::h_dt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Time derivative of smoothing length <br  />
+ </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00182">182</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="ab7e40a44736f986c93975948242736fa" name="ab7e40a44736f986c93975948242736fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e40a44736f986c93975948242736fa">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long part::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle unique ID. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00102">102</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a23142973507e0896e070f5f01a31ea5a" name="a23142973507e0896e070f5f01a31ea5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23142973507e0896e070f5f01a31ea5a">&#9670;&#160;</a></span>mass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::mass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle mass. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00117">117</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a7583e8903c75863fea45df2b085989c9" name="a7583e8903c75863fea45df2b085989c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7583e8903c75863fea45df2b085989c9">&#9670;&#160;</a></span>pressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::pressure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle pressure. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00173">173</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a3a76f3ef2f00958a6aca1741e710a4b4" name="a3a76f3ef2f00958a6aca1741e710a4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a76f3ef2f00958a6aca1741e710a4b4">&#9670;&#160;</a></span>rho</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::rho</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle density. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00129">129</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00015">equations.acoustic.Acoustic::eigenvalues()</a>, and <a class="el" href="../../d1/d8f/tests_2exahype2_2aderdg_2equations_2acoustic_8py_source.html#l00027">equations.acoustic.Acoustic::flux()</a>.</p>
+
+</div>
+</div>
+<a id="a6dfb01b37606421c43a60b41cc12fa7b" name="a6dfb01b37606421c43a60b41cc12fa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfb01b37606421c43a60b41cc12fa7b">&#9670;&#160;</a></span>rho_dh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::rho_dh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derivative of density with respect to h </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00150">150</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d08a8a2bab5fbd639415e01f0f2ea16" name="a2d08a8a2bab5fbd639415e01f0f2ea16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d08a8a2bab5fbd639415e01f0f2ea16">&#9670;&#160;</a></span>rot_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::rot_v[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Velocity curl </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00156">156</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="aeeb41ba296312fe0dcd404ccb7472d92" name="aeeb41ba296312fe0dcd404ccb7472d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb41ba296312fe0dcd404ccb7472d92">&#9670;&#160;</a></span>soundspeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::soundspeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle soundspeed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00176">176</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a155af5f23538f880884783760e553b2d" name="a155af5f23538f880884783760e553b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155af5f23538f880884783760e553b2d">&#9670;&#160;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle internal energy. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00123">123</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a7b1c608adcecfd3b8d491fd174ef8829" name="a7b1c608adcecfd3b8d491fd174ef8829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1c608adcecfd3b8d491fd174ef8829">&#9670;&#160;</a></span>u_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::u_dt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Time derivative of the internal energy. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00126">126</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="ad3823ce8fba5ccce197af87a7cc9b5e6" name="ad3823ce8fba5ccce197af87a7cc9b5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3823ce8fba5ccce197af87a7cc9b5e6">&#9670;&#160;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::v[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle predicted velocity. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00111">111</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="affec01527e7bc5eb8aae58ff3306b480" name="affec01527e7bc5eb8aae58ff3306b480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affec01527e7bc5eb8aae58ff3306b480">&#9670;&#160;</a></span>v_sig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::v_sig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Particle signal velocity </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00179">179</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a0e42638efe0045edc345ef54d9d4f3cd" name="a0e42638efe0045edc345ef54d9d4f3cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e42638efe0045edc345ef54d9d4f3cd">&#9670;&#160;</a></span>wcount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::wcount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Neighbour number count. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a51505d4a9416424f5241993a4be67d8e" name="a51505d4a9416424f5241993a4be67d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51505d4a9416424f5241993a4be67d8e">&#9670;&#160;</a></span>wcount_dh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float part::wcount_dh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derivative of the neighbour number with respect to h. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b768a99e60888b9576e21ef6259577d" name="a3b768a99e60888b9576e21ef6259577d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b768a99e60888b9576e21ef6259577d">&#9670;&#160;</a></span>xpart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d18/structxpart.html">xpart</a> part::xpart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d86/hydro__part_8h_source.html#l00191">191</a> of file <a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>benchmarks/other/noh2d-common/swift/<a class="el" href="../../d8/d86/hydro__part_8h_source.html">hydro_part.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d20/structpart.html">part</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:12 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

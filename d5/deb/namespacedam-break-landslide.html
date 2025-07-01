@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/deb/namespacedam-break-landslide.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">dam-break-landslide Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abc36262a9c47a3252eec09c82ad6753b" id="r_abc36262a9c47a3252eec09c82ad6753b"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc36262a9c47a3252eec09c82ad6753b">initial_conditions</a></td></tr>
+<tr class="separator:abc36262a9c47a3252eec09c82ad6753b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1e7991b1c24e3bcb5e3f733ada0b28" id="r_a8b1e7991b1c24e3bcb5e3f733ada0b28"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1e7991b1c24e3bcb5e3f733ada0b28">boundary_conditions</a></td></tr>
+<tr class="separator:a8b1e7991b1c24e3bcb5e3f733ada0b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97605206b889c7c07396f64054cbae5a" id="r_a97605206b889c7c07396f64054cbae5a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97605206b889c7c07396f64054cbae5a">refinement_criterion</a></td></tr>
+<tr class="separator:a97605206b889c7c07396f64054cbae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dec23bb4f4a842e6900b7b667bd7fa" id="r_a82dec23bb4f4a842e6900b7b667bd7fa"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82dec23bb4f4a842e6900b7b667bd7fa">limiting_criterion</a></td></tr>
+<tr class="separator:a82dec23bb4f4a842e6900b7b667bd7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f359dae904c26c47206d34bf39b0d9" id="r_a71f359dae904c26c47206d34bf39b0d9"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f359dae904c26c47206d34bf39b0d9">adjust_solution</a></td></tr>
+<tr class="separator:a71f359dae904c26c47206d34bf39b0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3621e670fcbfb4b65c17d8570b2bf218" id="r_a3621e670fcbfb4b65c17d8570b2bf218"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3621e670fcbfb4b65c17d8570b2bf218">parser</a> = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td></tr>
+<tr class="separator:a3621e670fcbfb4b65c17d8570b2bf218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0217419d34e2673059d097ffa7b362" id="r_acd0217419d34e2673059d097ffa7b362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd0217419d34e2673059d097ffa7b362">min_depth</a></td></tr>
+<tr class="separator:acd0217419d34e2673059d097ffa7b362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7663491818b07983553c69ea06a304db" id="r_a7663491818b07983553c69ea06a304db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7663491818b07983553c69ea06a304db">end_time</a></td></tr>
+<tr class="separator:a7663491818b07983553c69ea06a304db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe81fc919c7351eb267f2e742565efeb" id="r_afe81fc919c7351eb267f2e742565efeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe81fc919c7351eb267f2e742565efeb">time_step_relaxation</a></td></tr>
+<tr class="separator:afe81fc919c7351eb267f2e742565efeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c8a54622d5be56f6560d77dfb9a431" id="r_ac8c8a54622d5be56f6560d77dfb9a431"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8c8a54622d5be56f6560d77dfb9a431">degrees_of_freedom</a></td></tr>
+<tr class="separator:ac8c8a54622d5be56f6560d77dfb9a431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54eb249e2114220452b0828b97df00b6" id="r_a54eb249e2114220452b0828b97df00b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54eb249e2114220452b0828b97df00b6">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a54eb249e2114220452b0828b97df00b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd036b13fae5388cb3d5f5fd558325c" id="r_a8dd036b13fae5388cb3d5f5fd558325c"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd036b13fae5388cb3d5f5fd558325c">problem_constants</a></td></tr>
+<tr class="separator:a8dd036b13fae5388cb3d5f5fd558325c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0bf45a1c96e3b3d4c7b39e32a0cabe" id="r_a0c0bf45a1c96e3b3d4c7b39e32a0cabe"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c0bf45a1c96e3b3d4c7b39e32a0cabe">size</a> = [1.58, 1.58]</td></tr>
+<tr class="separator:a0c0bf45a1c96e3b3d4c7b39e32a0cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b216d259d89d9506ffd1661441115df" id="r_a9b216d259d89d9506ffd1661441115df"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b216d259d89d9506ffd1661441115df">max_h</a> = (1.1 * min(<a class="el" href="#a0c0bf45a1c96e3b3d4c7b39e32a0cabe">size</a>) / (3.0**args.min_depth))</td></tr>
+<tr class="separator:a9b216d259d89d9506ffd1661441115df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a5478f3dd9984985e826b0e4e7f7a1" id="r_ad1a5478f3dd9984985e826b0e4e7f7a1"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a5478f3dd9984985e826b0e4e7f7a1">min_h</a> = <a class="el" href="#a9b216d259d89d9506ffd1661441115df">max_h</a> * 3.0 ** (-args.amr_levels)</td></tr>
+<tr class="separator:ad1a5478f3dd9984985e826b0e4e7f7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634038ba4dde564ca9032f5c3d6d9afe" id="r_a634038ba4dde564ca9032f5c3d6d9afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a634038ba4dde564ca9032f5c3d6d9afe">dg_order</a> = args.degrees_of_freedom - 1</td></tr>
+<tr class="separator:a634038ba4dde564ca9032f5c3d6d9afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccc4420b9aec645ed4abe3c16075ac5" id="r_a5ccc4420b9aec645ed4abe3c16075ac5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ccc4420b9aec645ed4abe3c16075ac5">regular_solver</a></td></tr>
+<tr class="separator:a5ccc4420b9aec645ed4abe3c16075ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916d476e6f37544fe581d8286324671b" id="r_a916d476e6f37544fe581d8286324671b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a916d476e6f37544fe581d8286324671b">flux</a></td></tr>
+<tr class="separator:a916d476e6f37544fe581d8286324671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fb111db698ab7f522cdb7a149ff207" id="r_a69fb111db698ab7f522cdb7a149ff207"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69fb111db698ab7f522cdb7a149ff207">ncp</a></td></tr>
+<tr class="separator:a69fb111db698ab7f522cdb7a149ff207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94eebb58f1c003bc34f5a94b2d35a21" id="r_ad94eebb58f1c003bc34f5a94b2d35a21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad94eebb58f1c003bc34f5a94b2d35a21">max_eigenvalue</a></td></tr>
+<tr class="separator:ad94eebb58f1c003bc34f5a94b2d35a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecaa433dab00808a54f6bc34afb2df6" id="r_a5ecaa433dab00808a54f6bc34afb2df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ecaa433dab00808a54f6bc34afb2df6">diffusive_source_term</a></td></tr>
+<tr class="separator:a5ecaa433dab00808a54f6bc34afb2df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dde71f87a429c65658a8dceb15b1c7" id="r_a32dde71f87a429c65658a8dceb15b1c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32dde71f87a429c65658a8dceb15b1c7">riemann_solver</a></td></tr>
+<tr class="separator:a32dde71f87a429c65658a8dceb15b1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cbd3c475e8da28eeaa02c882c1dbf2" id="r_a03cbd3c475e8da28eeaa02c882c1dbf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cbd3c475e8da28eeaa02c882c1dbf2">is_linear</a></td></tr>
+<tr class="separator:a03cbd3c475e8da28eeaa02c882c1dbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfd066034af778e1bdef46a2690953e" id="r_a6dfd066034af778e1bdef46a2690953e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dfd066034af778e1bdef46a2690953e">polynomials</a></td></tr>
+<tr class="separator:a6dfd066034af778e1bdef46a2690953e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698b78c96226567e5694fabf08c197eb" id="r_a698b78c96226567e5694fabf08c197eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a698b78c96226567e5694fabf08c197eb">limiting_solver</a></td></tr>
+<tr class="separator:a698b78c96226567e5694fabf08c197eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6fbd92de00b706b7e124aadd54ebf2" id="r_a4a6fbd92de00b706b7e124aadd54ebf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6fbd92de00b706b7e124aadd54ebf2">limiter_solver</a></td></tr>
+<tr class="separator:a4a6fbd92de00b706b7e124aadd54ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae0a1bda62eb292949ef89392d40f11" id="r_a3ae0a1bda62eb292949ef89392d40f11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae0a1bda62eb292949ef89392d40f11">project</a></td></tr>
+<tr class="separator:a3ae0a1bda62eb292949ef89392d40f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6246fcf37f87607c149236a5528a7a0" id="r_af6246fcf37f87607c149236a5528a7a0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6246fcf37f87607c149236a5528a7a0">time_in_between_plots</a> = 0.0</td></tr>
+<tr class="separator:af6246fcf37f87607c149236a5528a7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350c04d0e4bb9f79b6cb29e27bfa239a" id="r_a350c04d0e4bb9f79b6cb29e27bfa239a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a350c04d0e4bb9f79b6cb29e27bfa239a">dimensions</a></td></tr>
+<tr class="separator:a350c04d0e4bb9f79b6cb29e27bfa239a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b5785092cedbb3d04b7eb3dd25d637" id="r_a83b5785092cedbb3d04b7eb3dd25d637"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83b5785092cedbb3d04b7eb3dd25d637">offset</a></td></tr>
+<tr class="separator:a83b5785092cedbb3d04b7eb3dd25d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad522d907382939f9a59573db5c62b85f" id="r_ad522d907382939f9a59573db5c62b85f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad522d907382939f9a59573db5c62b85f">min_end_time</a></td></tr>
+<tr class="separator:ad522d907382939f9a59573db5c62b85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33356f9358c6b335a0e8b1c4aacf1d5" id="r_ab33356f9358c6b335a0e8b1c4aacf1d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33356f9358c6b335a0e8b1c4aacf1d5">max_end_time</a></td></tr>
+<tr class="separator:ab33356f9358c6b335a0e8b1c4aacf1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adccf5e71f75fd67e2163d1885ea739" id="r_a4adccf5e71f75fd67e2163d1885ea739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4adccf5e71f75fd67e2163d1885ea739">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a4adccf5e71f75fd67e2163d1885ea739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e988192d4c5962a06c2ba4ea4fc197" id="r_a54e988192d4c5962a06c2ba4ea4fc197"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54e988192d4c5962a06c2ba4ea4fc197">periodic_BC</a></td></tr>
+<tr class="separator:a54e988192d4c5962a06c2ba4ea4fc197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd2458a5dcca4e7ed4bfd89401fdf3b" id="r_acbd2458a5dcca4e7ed4bfd89401fdf3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd2458a5dcca4e7ed4bfd89401fdf3b">mode</a></td></tr>
+<tr class="separator:acbd2458a5dcca4e7ed4bfd89401fdf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf162f7fe03d7fa7972c83d5b27eb34c" id="r_acf162f7fe03d7fa7972c83d5b27eb34c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf162f7fe03d7fa7972c83d5b27eb34c">const_val</a></td></tr>
+<tr class="separator:acf162f7fe03d7fa7972c83d5b27eb34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add679f676a49784e82440eabd175f729" id="r_add679f676a49784e82440eabd175f729"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add679f676a49784e82440eabd175f729">const_type</a></td></tr>
+<tr class="separator:add679f676a49784e82440eabd175f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1887fe9ee51e7c321efd511861adaaa6" id="r_a1887fe9ee51e7c321efd511861adaaa6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1887fe9ee51e7c321efd511861adaaa6">make</a></td></tr>
+<tr class="separator:a1887fe9ee51e7c321efd511861adaaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae927dae87a8140d5f33d7f1594324862" id="r_ae927dae87a8140d5f33d7f1594324862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae927dae87a8140d5f33d7f1594324862">True</a></td></tr>
+<tr class="separator:ae927dae87a8140d5f33d7f1594324862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9d1c1c7663b4da9751a2b8770dcfef" id="r_a0c9d1c1c7663b4da9751a2b8770dcfef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c9d1c1c7663b4da9751a2b8770dcfef">make_clean_first</a></td></tr>
+<tr class="separator:a0c9d1c1c7663b4da9751a2b8770dcfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d69dbb425b8e59c932c9440f9adf9ce" id="r_a6d69dbb425b8e59c932c9440f9adf9ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d69dbb425b8e59c932c9440f9adf9ce">throw_away_data_after_build</a></td></tr>
+<tr class="separator:a6d69dbb425b8e59c932c9440f9adf9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a71f359dae904c26c47206d34bf39b0d9" name="a71f359dae904c26c47206d34bf39b0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f359dae904c26c47206d34bf39b0d9">&#9670;&#160;</a></span>adjust_solution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.adjust_solution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">r&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  if (Q[s::h] &lt; hThreshold) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[s::h]  = std::fmax(0.0, Q[s::h]);</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    Q[s::hu] = 0.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">    Q[s::hv] = 0.0;</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00072">72</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a54eb249e2114220452b0828b97df00b6" name="a54eb249e2114220452b0828b97df00b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54eb249e2114220452b0828b97df00b6">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00087">87</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a8b1e7991b1c24e3bcb5e3f733ada0b28" name="a8b1e7991b1c24e3bcb5e3f733ada0b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1e7991b1c24e3bcb5e3f733ada0b28">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  Qoutside[s::h]  = Qinside[s::h];</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  Qoutside[s::hu] = -Qinside[s::hu];</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  Qoutside[s::hv] = -Qinside[s::hv];</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  Qoutside[s::z]  = Qinside[s::z];</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00031">31</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="add679f676a49784e82440eabd175f729" name="add679f676a49784e82440eabd175f729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add679f676a49784e82440eabd175f729">&#9670;&#160;</a></span>const_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.const_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00207">207</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="acf162f7fe03d7fa7972c83d5b27eb34c" name="acf162f7fe03d7fa7972c83d5b27eb34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf162f7fe03d7fa7972c83d5b27eb34c">&#9670;&#160;</a></span>const_val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.const_val</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00207">207</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ac8c8a54622d5be56f6560d77dfb9a431" name="ac8c8a54622d5be56f6560d77dfb9a431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c8a54622d5be56f6560d77dfb9a431">&#9670;&#160;</a></span>degrees_of_freedom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.degrees_of_freedom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00085">85</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a634038ba4dde564ca9032f5c3d6d9afe" name="a634038ba4dde564ca9032f5c3d6d9afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634038ba4dde564ca9032f5c3d6d9afe">&#9670;&#160;</a></span>dg_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dam-break-landslide.dg_order = args.degrees_of_freedom - 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00105">105</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a5ecaa433dab00808a54f6bc34afb2df6" name="a5ecaa433dab00808a54f6bc34afb2df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ecaa433dab00808a54f6bc34afb2df6">&#9670;&#160;</a></span>diffusive_source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.diffusive_source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00126">126</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a350c04d0e4bb9f79b6cb29e27bfa239a" name="a350c04d0e4bb9f79b6cb29e27bfa239a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350c04d0e4bb9f79b6cb29e27bfa239a">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00190">190</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a7663491818b07983553c69ea06a304db" name="a7663491818b07983553c69ea06a304db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7663491818b07983553c69ea06a304db">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00083">83</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a4adccf5e71f75fd67e2163d1885ea739" name="a4adccf5e71f75fd67e2163d1885ea739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adccf5e71f75fd67e2163d1885ea739">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00195">195</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a916d476e6f37544fe581d8286324671b" name="a916d476e6f37544fe581d8286324671b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916d476e6f37544fe581d8286324671b">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00121">121</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="abc36262a9c47a3252eec09c82ad6753b" name="abc36262a9c47a3252eec09c82ad6753b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc36262a9c47a3252eec09c82ad6753b">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  // Determine the position of the material region</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  bool insideTheSquare{true};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  insideTheSquare &amp;= (x[0] &gt;= (initCenterX - squareSide * 0.5));</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  insideTheSquare &amp;= (x[0] &lt;= (initCenterX + squareSide * 0.5));</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  insideTheSquare &amp;= (x[1] &gt;= (initCenterY - squareSide * 0.5));</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  insideTheSquare &amp;= (x[1] &lt;= (initCenterY + squareSide * 0.5));</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">  // Assign initial conditions based on the position of the material region</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">  Q[s::h]       = (insideTheSquare ? initHeight : 0.0);</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">  Q[s::hu]      = 0.0;</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  Q[s::hu + 1]  = 0.0;</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  Q[s::z]       = (DomainSize[0] - x[0]) * slopeAngleTan;</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a03cbd3c475e8da28eeaa02c882c1dbf2" name="a03cbd3c475e8da28eeaa02c882c1dbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cbd3c475e8da28eeaa02c882c1dbf2">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00132">132</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a4a6fbd92de00b706b7e124aadd54ebf2" name="a4a6fbd92de00b706b7e124aadd54ebf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6fbd92de00b706b7e124aadd54ebf2">&#9670;&#160;</a></span>limiter_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.limiter_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;LimiterSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    regular_solver=regular_solver,</div>
+<div class="line"><span class="lineno">    4</span>    limiting_solver=limiting_solver,</div>
+<div class="line"><span class="lineno">    5</span>    number_of_dmp_observables=3,</div>
+<div class="line"><span class="lineno">    6</span>    dmp_relaxation_parameter=0.20,  <span class="comment"># MD 3: BOTH FRICTIONS: 0.2, ONLY ONE FRICTION TERM OR ZERO: 0.1,</span></div>
+<div class="line"><span class="lineno">    7</span>    dmp_differences_scaling=1e-3,  <span class="comment"># MD 3: BOTH FRICTIONS: 1e-3, ONLY ONE FRICTION TERM OR ZERO: 5e-4</span></div>
+<div class="line"><span class="lineno">    8</span>    physical_admissibility_criterion=limiting_criterion,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting_html"><div class="ttname"><a href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d03/PosterioriLimiting_8py_source.html#l00021">PosterioriLimiting.py:21</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00162">162</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a82dec23bb4f4a842e6900b7b667bd7fa" name="a82dec23bb4f4a842e6900b7b667bd7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dec23bb4f4a842e6900b7b667bd7fa">&#9670;&#160;</a></span>limiting_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str dam-break-landslide.limiting_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  const double Qh{Q[0]};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  if (!std::isfinite(Qh)) {</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  // Try not to limit untouched cells initialised with 0.0</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  if ((Qh &lt; hThreshold) and (Qh &gt; -hThreshold)) {</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    return true;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  // Low values of h are resolved on FV layer</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  if (Qh &lt;= -hThreshold) {</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">  // Limit close to boundaries</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">  // x - 0</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">  if (std::abs(x[0] - DomainOffset[0]) &lt; h[0] or std::abs(x[0] - DomainOffset[0] - DomainSize[0]) &lt; h[0]) {</span></div>
+<div class="line"><span class="lineno">   20</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">  // y - 1</span></div>
+<div class="line"><span class="lineno">   23</span><span class="stringliteral">  if (std::abs(x[1] - DomainOffset[1]) &lt; h[1] or std::abs(x[1] - DomainOffset[1] - DomainSize[1]) &lt; h[1]) {</span></div>
+<div class="line"><span class="lineno">   24</span><span class="stringliteral">    return false;</span></div>
+<div class="line"><span class="lineno">   25</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">   26</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   27</span><span class="stringliteral">  return true;</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00043">43</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a698b78c96226567e5694fabf08c197eb" name="a698b78c96226567e5694fabf08c197eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698b78c96226567e5694fabf08c197eb">&#9670;&#160;</a></span>limiting_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.limiting_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;FVSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    patch_size=dg_order * 2 + 1,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables={<span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    6</span>    min_volume_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_volume_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=args.time_step_relaxation,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/de2/fv_2godunov_2GlobalAdaptiveTimeStep_8py_source.html#l00011">GlobalAdaptiveTimeStep.py:11</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00136">136</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a1887fe9ee51e7c321efd511861adaaa6" name="a1887fe9ee51e7c321efd511861adaaa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1887fe9ee51e7c321efd511861adaaa6">&#9670;&#160;</a></span>make</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.make</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00213">213</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a0c9d1c1c7663b4da9751a2b8770dcfef" name="a0c9d1c1c7663b4da9751a2b8770dcfef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9d1c1c7663b4da9751a2b8770dcfef">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00213">213</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ad94eebb58f1c003bc34f5a94b2d35a21" name="ad94eebb58f1c003bc34f5a94b2d35a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94eebb58f1c003bc34f5a94b2d35a21">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00123">123</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ab33356f9358c6b335a0e8b1c4aacf1d5" name="ab33356f9358c6b335a0e8b1c4aacf1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33356f9358c6b335a0e8b1c4aacf1d5">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00194">194</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a9b216d259d89d9506ffd1661441115df" name="a9b216d259d89d9506ffd1661441115df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b216d259d89d9506ffd1661441115df">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple dam-break-landslide.max_h = (1.1 * min(<a class="el" href="#a0c0bf45a1c96e3b3d4c7b39e32a0cabe">size</a>) / (3.0**args.min_depth))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00103">103</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="acd0217419d34e2673059d097ffa7b362" name="acd0217419d34e2673059d097ffa7b362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0217419d34e2673059d097ffa7b362">&#9670;&#160;</a></span>min_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.min_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00082">82</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ad522d907382939f9a59573db5c62b85f" name="ad522d907382939f9a59573db5c62b85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad522d907382939f9a59573db5c62b85f">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00193">193</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ad1a5478f3dd9984985e826b0e4e7f7a1" name="ad1a5478f3dd9984985e826b0e4e7f7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a5478f3dd9984985e826b0e4e7f7a1">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple dam-break-landslide.min_h = <a class="el" href="#a9b216d259d89d9506ffd1661441115df">max_h</a> * 3.0 ** (-args.amr_levels)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00104">104</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="acbd2458a5dcca4e7ed4bfd89401fdf3b" name="acbd2458a5dcca4e7ed4bfd89401fdf3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd2458a5dcca4e7ed4bfd89401fdf3b">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00204">204</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a69fb111db698ab7f522cdb7a149ff207" name="a69fb111db698ab7f522cdb7a149ff207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fb111db698ab7f522cdb7a149ff207">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00122">122</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a83b5785092cedbb3d04b7eb3dd25d637" name="a83b5785092cedbb3d04b7eb3dd25d637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b5785092cedbb3d04b7eb3dd25d637">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00192">192</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a3621e670fcbfb4b65c17d8570b2bf218" name="a3621e670fcbfb4b65c17d8570b2bf218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3621e670fcbfb4b65c17d8570b2bf218">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.parser = <a class="el" href="../../d2/d79/classexahype2_1_1ArgumentParser_1_1ArgumentParser.html">exahype2.ArgumentParser</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00080">80</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a54e988192d4c5962a06c2ba4ea4fc197" name="a54e988192d4c5962a06c2ba4ea4fc197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e988192d4c5962a06c2ba4ea4fc197">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00197">197</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a6dfd066034af778e1bdef46a2690953e" name="a6dfd066034af778e1bdef46a2690953e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfd066034af778e1bdef46a2690953e">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00133">133</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a8dd036b13fae5388cb3d5f5fd558325c" name="a8dd036b13fae5388cb3d5f5fd558325c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd036b13fae5388cb3d5f5fd558325c">&#9670;&#160;</a></span>problem_constants</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dam-break-landslide.problem_constants</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;g&quot;</span>             : [9.81, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;phi&quot;</span>           : [25.0, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;invXi&quot;</span>         : [1.0 / 200.0, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;slopeAngleTan&quot;</span> : [math.tan(math.pi / 180.0 * 35.0), <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    6</span>    <span class="stringliteral">&quot;initCenterX&quot;</span>   : [0.15, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    7</span>    <span class="stringliteral">&quot;initCenterY&quot;</span>   : [0.79, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    8</span>    <span class="stringliteral">&quot;squareSide&quot;</span>    : [0.1, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">    9</span>    <span class="stringliteral">&quot;initHeight&quot;</span>    : [0.1, <span class="stringliteral">&quot;double&quot;</span>],</div>
+<div class="line"><span class="lineno">   10</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00089">89</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a3ae0a1bda62eb292949ef89392d40f11" name="a3ae0a1bda62eb292949ef89392d40f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae0a1bda62eb292949ef89392d40f11">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;applications&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;swe&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;DamBreakLandslide&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    directory=<span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    executable=f<span class="stringliteral">&quot;DamBreakLandslide.{args.build_mode}&quot;</span>,</div>
+<div class="line"><span class="lineno">    6</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00172">172</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a97605206b889c7c07396f64054cbae5a" name="a97605206b889c7c07396f64054cbae5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97605206b889c7c07396f64054cbae5a">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  auto result = ::exahype2::RefinementCommand::Keep;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  return result;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00038">38</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a5ccc4420b9aec645ed4abe3c16075ac5" name="a5ccc4420b9aec645ed4abe3c16075ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccc4420b9aec645ed4abe3c16075ac5">&#9670;&#160;</a></span>regular_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.regular_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ADERDGSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=dg_order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns={<span class="stringliteral">&quot;h&quot;</span>: 1, <span class="stringliteral">&quot;hu&quot;</span>: 1, <span class="stringliteral">&quot;hv&quot;</span>: 1, <span class="stringliteral">&quot;z&quot;</span>: 1},</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=0,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=args.time_step_relaxation,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00107">107</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a32dde71f87a429c65658a8dceb15b1c7" name="a32dde71f87a429c65658a8dceb15b1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dde71f87a429c65658a8dceb15b1c7">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00127">127</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a0c0bf45a1c96e3b3d4c7b39e32a0cabe" name="a0c0bf45a1c96e3b3d4c7b39e32a0cabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0bf45a1c96e3b3d4c7b39e32a0cabe">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.size = [1.58, 1.58]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00102">102</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="a6d69dbb425b8e59c932c9440f9adf9ce" name="a6d69dbb425b8e59c932c9440f9adf9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d69dbb425b8e59c932c9440f9adf9ce">&#9670;&#160;</a></span>throw_away_data_after_build</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.throw_away_data_after_build</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00213">213</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="af6246fcf37f87607c149236a5528a7a0" name="af6246fcf37f87607c149236a5528a7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6246fcf37f87607c149236a5528a7a0">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.time_in_between_plots = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00184">184</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="afe81fc919c7351eb267f2e742565efeb" name="afe81fc919c7351eb267f2e742565efeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe81fc919c7351eb267f2e742565efeb">&#9670;&#160;</a></span>time_step_relaxation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.time_step_relaxation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00084">84</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+<a id="ae927dae87a8140d5f33d7f1594324862" name="ae927dae87a8140d5f33d7f1594324862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae927dae87a8140d5f33d7f1594324862">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dam-break-landslide.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html#l00213">213</a> of file <a class="el" href="../../d4/dd7/dam-break-landslide_8py_source.html">dam-break-landslide.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/deb/namespacedam-break-landslide.html">dam-break-landslide</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:23 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

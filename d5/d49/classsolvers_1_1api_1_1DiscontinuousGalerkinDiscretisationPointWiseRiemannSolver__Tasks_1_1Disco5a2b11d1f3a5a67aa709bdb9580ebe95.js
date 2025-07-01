@@ -1,0 +1,12 @@
+var classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95 =
+[
+    [ "__init__", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#a529af46a445aafd89426011006446ea3", null ],
+    [ "add_to_init_solution", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#a7fcedbde77b52cba9cf29f08eaf96e63", null ],
+    [ "add_to_Peano4_datamodel", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#ab0e6f6a418cd173f7df190b1a82cb354", null ],
+    [ "add_to_solve", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#ad2a3c32f5d7ac8b17b8e7c0e2b6058da", null ],
+    [ "add_use_statements", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#a739166fe131f6746be3e253818c7dfc2", null ],
+    [ "_action_set_project_into_cell_and_update_cell_solution", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#afd532664697b77b6bd94ac41b8a65056", null ],
+    [ "_action_set_update_residual", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#ad3b108e68c3874d18559428b67064b12", null ],
+    [ "_cell_marker_for_tasks", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#a86d17d5d33e0acdab4982d8cf99d9ecc", null ],
+    [ "_task_name", "d5/d49/classsolvers_1_1api_1_1DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver__Tasks_1_1Disco5a2b11d1f3a5a67aa709bdb9580ebe95.html#a83cabab5f3f790dbba7c761892c8b87f", null ]
+];

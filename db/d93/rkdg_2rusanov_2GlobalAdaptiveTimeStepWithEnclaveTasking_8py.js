@@ -1,0 +1,4 @@
+var rkdg_2rusanov_2GlobalAdaptiveTimeStepWithEnclaveTasking_8py =
+[
+    [ "exahype2.solvers.rkdg.rusanov.GlobalAdaptiveTimeStepWithEnclaveTasking.GlobalAdaptiveTimeStepWithEnclaveTasking", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030.html", "db/d22/classexahype2_1_1solvers_1_1rkdg_1_1rusanov_1_1GlobalAdaptiveTimeStepWithEnclaveTasking_1_1Globa9a0f26a8e0bc02073fbe3d4e6abf5030" ]
+];

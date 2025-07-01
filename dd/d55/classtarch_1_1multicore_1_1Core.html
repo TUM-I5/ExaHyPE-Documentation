@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d55/classtarch_1_1multicore_1_1Core.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::multicore::Core Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html" title="Core.">Core</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/dd7/Core_8h_source.html">Core.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::multicore::Core:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d50/classtarch_1_1multicore_1_1Core__coll__graph.png" border="0" usemap="#atarch_1_1multicore_1_1Core_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1multicore_1_1Core_coll__map" id="atarch_1_1multicore_1_1Core_coll__map">
+<area shape="rect" title="Core." alt="" coords="5,271,168,296"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="15,183,158,208"/>
+<area shape="poly" title=" " alt="" coords="89,222,89,270,84,270,84,222"/>
+<area shape="rect" title=" " alt="" coords="43,95,130,120"/>
+<area shape="poly" title=" " alt="" coords="89,134,89,182,84,182,84,134"/>
+<area shape="rect" title=" " alt="" coords="17,5,156,45"/>
+<area shape="poly" title=" " alt="" coords="89,59,89,94,84,94,84,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae48f06b6a6a42dd1320ee0ad6ecc008b" id="r_ae48f06b6a6a42dd1320ee0ad6ecc008b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48f06b6a6a42dd1320ee0ad6ecc008b">~Core</a> ()=default</td></tr>
+<tr class="separator:ae48f06b6a6a42dd1320ee0ad6ecc008b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d205eb9ef68cf43b7247841172b2ac1" id="r_a3d205eb9ef68cf43b7247841172b2ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d205eb9ef68cf43b7247841172b2ac1">init</a> ()</td></tr>
+<tr class="separator:a3d205eb9ef68cf43b7247841172b2ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa74e678c7c3c10a2ae002a22968d41" id="r_aeaa74e678c7c3c10a2ae002a22968d41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaa74e678c7c3c10a2ae002a22968d41">shutdown</a> ()</td></tr>
+<tr class="memdesc:aeaa74e678c7c3c10a2ae002a22968d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown parallel environment.  <br /></td></tr>
+<tr class="separator:aeaa74e678c7c3c10a2ae002a22968d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332f7d4d01f8f8aea35ac9fa39063d27" id="r_a332f7d4d01f8f8aea35ac9fa39063d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a332f7d4d01f8f8aea35ac9fa39063d27">isInitialised</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a332f7d4d01f8f8aea35ac9fa39063d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5bd53fa4d7e8150827ddd9d2a0730f" id="r_a7d5bd53fa4d7e8150827ddd9d2a0730f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d5bd53fa4d7e8150827ddd9d2a0730f">getNumberOfThreads</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a7d5bd53fa4d7e8150827ddd9d2a0730f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of threads that is used.  <br /></td></tr>
+<tr class="separator:a7d5bd53fa4d7e8150827ddd9d2a0730f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e426ce800f20105e448391b53be39d" id="r_a47e426ce800f20105e448391b53be39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e426ce800f20105e448391b53be39d">getCoreNumber</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a47e426ce800f20105e448391b53be39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed15b95f383800eaa3b7edc28c513696" id="r_aed15b95f383800eaa3b7edc28c513696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed15b95f383800eaa3b7edc28c513696">getThreadNumber</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aed15b95f383800eaa3b7edc28c513696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d158484f601f44d73069db32aea2b8" id="r_af1d158484f601f44d73069db32aea2b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d158484f601f44d73069db32aea2b8">yield</a> ()</td></tr>
+<tr class="memdesc:af1d158484f601f44d73069db32aea2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around backend-specific yield.  <br /></td></tr>
+<tr class="separator:af1d158484f601f44d73069db32aea2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a63d1b190fb9981c5f7d72f247bc4bd22" id="r_a63d1b190fb9981c5f7d72f247bc4bd22"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html">Core</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63d1b190fb9981c5f7d72f247bc4bd22">getInstance</a> ()</td></tr>
+<tr class="separator:a63d1b190fb9981c5f7d72f247bc4bd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a08a747ae70d0b69f279df1d91fe96388" id="r_a08a747ae70d0b69f279df1d91fe96388"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08a747ae70d0b69f279df1d91fe96388">Core</a> ()=default</td></tr>
+<tr class="separator:a08a747ae70d0b69f279df1d91fe96388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e0f724f9473899bbfbad6750fbb8f01" id="r_a3e0f724f9473899bbfbad6750fbb8f01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e0f724f9473899bbfbad6750fbb8f01">_numberOfThreads</a></td></tr>
+<tr class="separator:a3e0f724f9473899bbfbad6750fbb8f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a8e2c727c5a0d54fd61579e2ca4801a46" id="r_a8e2c727c5a0d54fd61579e2ca4801a46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2c727c5a0d54fd61579e2ca4801a46">_log</a></td></tr>
+<tr class="separator:a8e2c727c5a0d54fd61579e2ca4801a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html" title="Core.">Core</a>. </p>
+<p><a class="el" href="../../db/d37/structAny.html">Any</a> shared memory implementation has to provide a singleton <a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html" title="Core.">Core</a>. Its full qualified name is <a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html" title="Core.">tarch::multicore::Core</a>. If no shared memory variant is switched on, Peano provides a default <a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html" title="Core.">Core</a> implementation that does nothing.</p>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dd7/Core_8h_source.html#l00046">46</a> of file <a class="el" href="../../d6/dd7/Core_8h_source.html">Core.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a08a747ae70d0b69f279df1d91fe96388" name="a08a747ae70d0b69f279df1d91fe96388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a747ae70d0b69f279df1d91fe96388">&#9670;&#160;</a></span>Core()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::multicore::Core::Core </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d31/tbb_2Core_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../dc/d31/tbb_2Core_8cpp_source.html">Core.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae48f06b6a6a42dd1320ee0ad6ecc008b" name="ae48f06b6a6a42dd1320ee0ad6ecc008b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48f06b6a6a42dd1320ee0ad6ecc008b">&#9670;&#160;</a></span>~Core()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::multicore::Core::~Core </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d31/tbb_2Core_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../dc/d31/tbb_2Core_8cpp_source.html">Core.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a47e426ce800f20105e448391b53be39d" name="a47e426ce800f20105e448391b53be39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e426ce800f20105e448391b53be39d">&#9670;&#160;</a></span>getCoreNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::multicore::Core::getCoreNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Physical core the process is running on </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a63d1b190fb9981c5f7d72f247bc4bd22" name="a63d1b190fb9981c5f7d72f247bc4bd22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d1b190fb9981c5f7d72f247bc4bd22">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html">tarch::multicore::Core</a> &amp; tarch::multicore::Core::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Singleton instance </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00050">examples::regulargridupscaling::MyObserver::enterCell()</a>, <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00074">tarch::logging::Log::error()</a>, <a class="el" href="../../d5/d0c/Configuration_8cpp_source.html#l00007">toolbox::loadbalancing::DefaultConfiguration::getMaxLocalTreesPerRank()</a>, <a class="el" href="../../d5/d12/CommandLineLogger_8cpp_source.html#l00286">tarch::logging::CommandLineLogger::indent()</a>, <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00062">tarch::logging::Log::info()</a>, <a class="el" href="../../d3/d38/peano4_8cpp_source.html#l00099">peano4::init()</a>, <a class="el" href="../../d6/d37/TaskEnumerator_8cpp_source.html#l00068">swift2::TaskEnumerator::lockResources()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, <a class="el" href="../../d7/d73/swift2_2UserInterface_8cpp_source.html#l00169">swift2::parseCommandLineArguments()</a>, <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00109">peano4::grid::TraversalVTKPlotter::plotCell()</a>, <a class="el" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp_source.html#l00047">runParallel()</a>, <a class="el" href="../../d3/d38/peano4_8cpp_source.html#l00138">peano4::shutdown()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00112">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00159">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSends()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00207">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSendsAndReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00135">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00183">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSends()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00231">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSendsAndReceives()</a>, <a class="el" href="../../d7/d29/LoadBalancingConfiguration_8cpp_source.html#l00028">exahype2::LoadBalancingConfiguration::translateSetMaxNumberOfTreesIntoRealNumberOfTrees()</a>, <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00115">toolbox::loadbalancing::LoadBalancer::updateIntraRankLoadBalancing()</a>, <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00068">tarch::logging::Log::warning()</a>, and <a class="el" href="../../d3/d38/peano4_8cpp_source.html#l00031">writeCopyrightMessage()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d55/classtarch_1_1multicore_1_1Core_a63d1b190fb9981c5f7d72f247bc4bd22_icgraph.png" border="0" usemap="#add/d55/classtarch_1_1multicore_1_1Core_a63d1b190fb9981c5f7d72f247bc4bd22_icgraph" alt=""/></div>
+<map name="add/d55/classtarch_1_1multicore_1_1Core_a63d1b190fb9981c5f7d72f247bc4bd22_icgraph" id="add/d55/classtarch_1_1multicore_1_1Core_a63d1b190fb9981c5f7d72f247bc4bd22_icgraph">
+<area shape="rect" title=" " alt="" coords="661,679,824,719"/>
+<area shape="rect" href="../../d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver.html#a1175c2a7c0e757eb344bbd14967d7494" title="Event is invoked per cell." alt="" coords="342,5,569,45"/>
+<area shape="poly" title=" " alt="" coords="737,665,726,532,703,349,687,257,666,173,641,105,627,79,611,59,591,44,568,34,570,29,594,39,615,55,631,76,646,102,671,171,692,256,709,348,731,531,742,664"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html#a3d1681686f236bc3d7f77d54cbd9f0e5" title="Log an Error." alt="" coords="384,69,527,109"/>
+<area shape="poly" title=" " alt="" coords="736,665,723,544,699,381,682,298,662,224,638,163,625,140,611,123,593,109,572,100,526,90,528,85,574,95,596,105,615,119,630,137,643,161,667,222,688,297,704,380,729,543,741,664"/>
+<area shape="rect" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1DefaultConfiguration.html#a1a7fd27bea36de64fa53fefd92160fbb" title="Constraint on the number of trees per rank." alt="" coords="355,134,556,189"/>
+<area shape="poly" title=" " alt="" coords="735,665,719,560,693,421,676,351,656,289,635,238,611,203,586,184,555,173,557,168,588,180,615,199,640,235,661,287,681,350,698,420,724,559,740,665"/>
+<area shape="rect" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html#a68d88ebfe53687cede1de7f54cb2559a" title="Tells the logger to increment/decrement the indent." alt="" coords="349,213,562,253"/>
+<area shape="poly" title=" " alt="" coords="740,665,736,583,730,531,719,475,703,418,681,363,650,312,612,267,588,251,561,241,563,236,591,247,615,263,655,309,685,361,708,417,725,474,735,531,741,583,745,665"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html#a8ec261c464482e9221605d73cab432b1" title="Log Information." alt="" coords="384,277,527,317"/>
+<area shape="poly" title=" " alt="" coords="738,665,730,595,711,504,694,456,673,410,646,368,612,331,593,318,572,309,526,299,528,294,573,304,595,314,615,327,650,365,678,408,699,454,716,502,735,594,743,665"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a0b8a3fe9fa636df52267407ff6a67cf7" title=" " alt="" coords="129,759,228,785"/>
+<area shape="poly" title=" " alt="" coords="744,733,739,891,733,1000,722,1115,706,1229,684,1332,670,1377,654,1415,636,1447,615,1470,575,1500,535,1522,495,1534,455,1539,416,1534,376,1521,336,1500,296,1470,276,1448,259,1417,230,1335,210,1235,195,1125,181,916,177,785,183,785,186,916,201,1124,215,1234,236,1334,263,1415,280,1445,299,1466,339,1496,378,1517,417,1529,455,1533,494,1529,533,1517,572,1496,612,1466,631,1444,649,1413,665,1375,679,1331,701,1228,717,1115,728,999,734,891,739,732"/>
+<area shape="rect" href="../../dd/d63/classswift2_1_1TaskEnumerator.html#af9aa06213462370209434afab1b21bf2" title="Lock resources." alt="" coords="368,405,543,445"/>
+<area shape="poly" title=" " alt="" coords="731,666,716,619,692,563,657,507,636,482,612,461,579,443,542,433,544,427,581,438,615,456,640,479,662,504,696,561,721,617,736,664"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="151,495,206,521"/>
+<area shape="poly" title=" " alt="" coords="720,669,676,611,646,583,612,561,578,549,531,538,414,524,295,515,206,511,207,506,295,510,414,518,532,533,579,544,615,556,649,579,680,608,724,665"/>
+<area shape="rect" href="../../de/dac/namespaceswift2.html#aab30171add0529c3c21714b934f98f25" title=" " alt="" coords="356,341,555,381"/>
+<area shape="poly" title=" " alt="" coords="735,666,724,606,702,533,685,495,665,458,641,424,612,395,585,379,554,369,556,364,587,374,615,391,645,421,670,455,690,492,707,531,729,605,740,665"/>
+<area shape="rect" href="../../d3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter.html#afeb4077591b6c0ed229d789ce22a16aa" title="Does the actual plotting, i.e." alt="" coords="336,571,575,611"/>
+<area shape="poly" title=" " alt="" coords="700,673,659,648,612,626,571,613,573,608,614,622,661,644,703,669"/>
+<area shape="rect" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp.html#a716631ca95d6176da3ed3886635e801e" title=" " alt="" coords="410,635,501,661"/>
+<area shape="poly" title=" " alt="" coords="647,685,500,658,501,653,648,679"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a74f6dc3de6405111f5219bd65789f395" title=" " alt="" coords="108,686,249,711"/>
+<area shape="poly" title=" " alt="" coords="647,701,250,701,250,696,647,696"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="430,470,481,495"/>
+<area shape="poly" title=" " alt="" coords="725,667,708,631,682,590,651,550,612,517,579,501,544,491,481,485,481,480,545,486,581,496,615,512,654,546,687,587,712,628,730,665"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#a09846df14938f90f8bc166a76c11a7e9" title=" " alt="" coords="335,786,575,841"/>
+<area shape="poly" title=" " alt="" coords="703,729,661,754,614,777,576,790,575,785,612,772,659,749,700,724"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#aca988437bc69060f4654b54dd65679fc" title=" " alt="" coords="335,865,575,919"/>
+<area shape="poly" title=" " alt="" coords="726,732,681,795,650,828,615,856,577,874,574,869,612,851,647,824,677,792,721,729"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#abeebca6944632aa016092b19098ba236" title=" " alt="" coords="310,943,601,998"/>
+<area shape="poly" title=" " alt="" coords="735,733,719,779,695,833,660,888,639,913,615,934,597,945,595,941,612,930,635,909,656,885,690,831,714,777,730,731"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#ad5951267eec15e0cbaf0769bf7ec820b" title=" " alt="" coords="329,1022,581,1077"/>
+<area shape="poly" title=" " alt="" coords="740,733,729,793,707,869,690,908,670,946,645,982,615,1013,583,1033,580,1028,612,1009,641,978,665,944,685,906,702,867,724,792,735,732"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#a0bcdd8fe96ef2977a8efac1ddea738a9" title=" " alt="" coords="335,1101,575,1155"/>
+<area shape="poly" title=" " alt="" coords="743,733,737,807,718,903,701,955,679,1004,651,1051,615,1091,597,1105,577,1115,574,1110,594,1100,612,1087,647,1048,675,1002,696,953,712,902,731,806,738,732"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#aea9d5eca35f9f169ef4319cbb32ef0d0" title=" " alt="" coords="297,1179,613,1234"/>
+<area shape="poly" title=" " alt="" coords="739,733,723,833,696,964,679,1029,660,1088,639,1137,615,1170,601,1181,598,1177,611,1166,634,1134,655,1086,674,1028,691,963,718,832,734,732"/>
+<area shape="rect" href="../../d0/d0e/classexahype2_1_1LoadBalancingConfiguration.html#a4d21457984b8e6bec997ff520110d7d9" title="Return how many trees to use if value is picked by user." alt="" coords="309,1258,601,1313"/>
+<area shape="poly" title=" " alt="" coords="741,733,727,849,702,1003,685,1081,665,1151,642,1209,615,1248,602,1260,598,1256,611,1245,637,1206,660,1149,679,1079,696,1002,721,848,735,733"/>
+<area shape="rect" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer.html#a41019ac50e52dd04f884e26f2ca272b8" title=" " alt="" coords="338,1337,573,1391"/>
+<area shape="poly" title=" " alt="" coords="742,732,730,862,707,1041,690,1131,670,1213,645,1281,631,1307,615,1327,596,1343,574,1354,572,1349,593,1338,611,1323,626,1304,640,1279,664,1212,685,1130,702,1040,725,862,736,732"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html#ac615127b2580d1e0a648c69fff13c2ad" title="Log a Warning." alt="" coords="384,1416,527,1456"/>
+<area shape="poly" title=" " alt="" coords="743,733,734,877,713,1080,696,1183,675,1277,648,1353,633,1383,615,1406,596,1421,574,1431,528,1441,526,1436,572,1426,593,1416,611,1402,628,1380,643,1351,670,1275,691,1182,708,1079,729,877,737,732"/>
+<area shape="rect" href="../../d3/d38/peano4_8cpp.html#ac5f616341725fc7382d84d19b1cea29a" title=" " alt="" coords="367,737,543,762"/>
+<area shape="poly" title=" " alt="" coords="648,718,528,739,527,734,647,713"/>
+<area shape="poly" title=" " alt="" coords="203,748,196,741,179,738,164,740,156,745,154,750,159,758,154,760,149,751,152,741,162,735,179,733,199,736,207,745"/>
+<area shape="rect" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,723,60,749"/>
+<area shape="poly" title=" " alt="" coords="115,759,59,745,61,740,117,754"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="151,349,206,374"/>
+<area shape="poly" title=" " alt="" coords="342,364,206,364,206,359,342,359"/>
+<area shape="poly" title=" " alt="" coords="116,717,61,732,60,727,115,712"/>
+<area shape="poly" title=" " alt="" coords="416,489,207,508,206,503,416,484"/>
+<area shape="poly" title=" " alt="" coords="354,760,228,771,228,765,353,755"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7d5bd53fa4d7e8150827ddd9d2a0730f" name="a7d5bd53fa4d7e8150827ddd9d2a0730f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5bd53fa4d7e8150827ddd9d2a0730f">&#9670;&#160;</a></span>getNumberOfThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::multicore::Core::getNumberOfThreads </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of threads that is used. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of threads available. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/dd9/regulargridupscaling_2MyObserver_8cpp_source.html#l00050">examples::regulargridupscaling::MyObserver::enterCell()</a>, <a class="el" href="../../d5/d0c/Configuration_8cpp_source.html#l00007">toolbox::loadbalancing::DefaultConfiguration::getMaxLocalTreesPerRank()</a>, <a class="el" href="../../de/d66/BenchmarkDriver_8cpp_source.html#l00475">main()</a>, <a class="el" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp_source.html#l00047">runParallel()</a>, <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00112">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00159">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSends()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00207">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithBlockingSendsAndReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00135">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingReceives()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00183">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSends()</a>, <a class="el" href="../../d0/d0d/PingPongTest_8cpp_source.html#l00231">peano4::parallel::tests::PingPongTest::testMultithreadedPingPongWithNonblockingSendsAndReceives()</a>, <a class="el" href="../../d7/d29/LoadBalancingConfiguration_8cpp_source.html#l00028">exahype2::LoadBalancingConfiguration::translateSetMaxNumberOfTreesIntoRealNumberOfTrees()</a>, and <a class="el" href="../../d3/d03/LoadBalancer_8cpp_source.html#l00115">toolbox::loadbalancing::LoadBalancer::updateIntraRankLoadBalancing()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d55/classtarch_1_1multicore_1_1Core_a7d5bd53fa4d7e8150827ddd9d2a0730f_icgraph.png" border="0" usemap="#add/d55/classtarch_1_1multicore_1_1Core_a7d5bd53fa4d7e8150827ddd9d2a0730f_icgraph" alt=""/></div>
+<map name="add/d55/classtarch_1_1multicore_1_1Core_a7d5bd53fa4d7e8150827ddd9d2a0730f_icgraph" id="add/d55/classtarch_1_1multicore_1_1Core_a7d5bd53fa4d7e8150827ddd9d2a0730f_icgraph">
+<area shape="rect" title="Returns the number of threads that is used." alt="" coords="472,383,643,423"/>
+<area shape="rect" href="../../d9/dac/classexamples_1_1regulargridupscaling_1_1MyObserver.html#a1175c2a7c0e757eb344bbd14967d7494" title="Event is invoked per cell." alt="" coords="153,5,379,45"/>
+<area shape="poly" title=" " alt="" coords="551,369,541,303,520,219,503,175,482,132,455,93,422,59,402,46,378,36,380,31,404,41,426,55,459,90,486,129,508,173,525,217,547,302,556,369"/>
+<area shape="rect" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1DefaultConfiguration.html#a1a7fd27bea36de64fa53fefd92160fbb" title="Constraint on the number of trees per rank." alt="" coords="165,70,367,125"/>
+<area shape="poly" title=" " alt="" coords="547,370,532,319,508,255,471,192,449,163,422,138,396,122,366,111,368,106,398,117,426,134,453,159,476,189,512,253,537,317,552,369"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="239,149,293,174"/>
+<area shape="poly" title=" " alt="" coords="543,370,527,327,501,277,467,228,446,206,423,188,391,172,356,164,293,162,294,156,357,159,392,167,425,183,449,202,471,224,506,274,531,325,548,368"/>
+<area shape="rect" href="../../d6/d10/benchmarks_2peano4_2regulargridupscaling_2main_8cpp.html#a716631ca95d6176da3ed3886635e801e" title=" " alt="" coords="221,198,311,223"/>
+<area shape="poly" title=" " alt="" coords="538,372,519,339,493,302,461,266,423,237,396,225,367,217,311,212,312,206,368,212,398,220,425,232,464,262,497,298,523,336,543,369"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#ac6bf1a12c5c98ddec5b65e07fe74cabe" title=" " alt="" coords="241,247,291,273"/>
+<area shape="poly" title=" " alt="" coords="529,374,483,327,454,305,423,286,389,274,353,267,291,262,292,257,354,261,390,269,425,282,457,300,487,323,533,370"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#a09846df14938f90f8bc166a76c11a7e9" title=" " alt="" coords="146,297,386,351"/>
+<area shape="poly" title=" " alt="" coords="479,381,423,365,381,354,382,349,425,360,480,376"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#aca988437bc69060f4654b54dd65679fc" title=" " alt="" coords="146,375,386,430"/>
+<area shape="poly" title=" " alt="" coords="458,405,386,405,386,400,458,400"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#abeebca6944632aa016092b19098ba236" title=" " alt="" coords="121,454,411,509"/>
+<area shape="poly" title=" " alt="" coords="477,429,425,444,377,457,376,451,423,439,476,424"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#ad5951267eec15e0cbaf0769bf7ec820b" title=" " alt="" coords="140,533,392,587"/>
+<area shape="poly" title=" " alt="" coords="532,435,485,480,456,503,425,522,393,536,391,532,423,518,453,499,482,476,528,431"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#a0bcdd8fe96ef2977a8efac1ddea738a9" title=" " alt="" coords="146,611,386,666"/>
+<area shape="poly" title=" " alt="" coords="545,437,527,475,501,519,467,564,426,601,387,621,385,616,422,596,463,560,496,516,522,472,541,434"/>
+<area shape="rect" href="../../d8/da0/classpeano4_1_1parallel_1_1tests_1_1PingPongTest.html#aea9d5eca35f9f169ef4319cbb32ef0d0" title=" " alt="" coords="108,690,424,745"/>
+<area shape="poly" title=" " alt="" coords="552,437,538,490,513,556,477,622,453,653,426,679,407,692,404,688,422,675,449,649,472,620,509,553,533,488,547,435"/>
+<area shape="rect" href="../../d0/d0e/classexahype2_1_1LoadBalancingConfiguration.html#a4d21457984b8e6bec997ff520110d7d9" title="Return how many trees to use if value is picked by user." alt="" coords="120,769,412,823"/>
+<area shape="poly" title=" " alt="" coords="556,437,546,505,525,591,508,637,486,681,459,722,426,758,409,771,405,766,422,754,455,719,481,678,503,635,520,590,541,504,551,436"/>
+<area shape="rect" href="../../d2/d15/classtoolbox_1_1loadbalancing_1_1LoadBalancer.html#a41019ac50e52dd04f884e26f2ca272b8" title=" " alt="" coords="149,847,383,902"/>
+<area shape="poly" title=" " alt="" coords="559,437,554,518,547,570,535,626,519,683,495,739,465,791,426,837,406,851,385,862,382,857,404,847,422,833,460,788,491,736,513,681,530,624,541,569,548,517,554,436"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,247,60,273"/>
+<area shape="poly" title=" " alt="" coords="227,263,60,263,60,257,227,257"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed15b95f383800eaa3b7edc28c513696" name="aed15b95f383800eaa3b7edc28c513696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed15b95f383800eaa3b7edc28c513696">&#9670;&#160;</a></span>getThreadNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::multicore::Core::getThreadNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Logical thread number </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d205eb9ef68cf43b7247841172b2ac1" name="a3d205eb9ef68cf43b7247841172b2ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d205eb9ef68cf43b7247841172b2ac1">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::multicore::Core::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d73/swift2_2UserInterface_8cpp_source.html#l00169">swift2::parseCommandLineArguments()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d55/classtarch_1_1multicore_1_1Core_a3d205eb9ef68cf43b7247841172b2ac1_icgraph.png" border="0" usemap="#add/d55/classtarch_1_1multicore_1_1Core_a3d205eb9ef68cf43b7247841172b2ac1_icgraph" alt=""/></div>
+<map name="add/d55/classtarch_1_1multicore_1_1Core_a3d205eb9ef68cf43b7247841172b2ac1_icgraph" id="add/d55/classtarch_1_1multicore_1_1Core_a3d205eb9ef68cf43b7247841172b2ac1_icgraph">
+<area shape="rect" title=" " alt="" coords="355,5,517,45"/>
+<area shape="rect" href="../../de/dac/namespaceswift2.html#aab30171add0529c3c21714b934f98f25" title=" " alt="" coords="108,5,307,45"/>
+<area shape="poly" title=" " alt="" coords="341,28,307,28,307,23,341,23"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a332f7d4d01f8f8aea35ac9fa39063d27" name="a332f7d4d01f8f8aea35ac9fa39063d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332f7d4d01f8f8aea35ac9fa39063d27">&#9670;&#160;</a></span>isInitialised()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tarch::multicore::Core::isInitialised </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Shared memory environment is up and running. Most shared memory implementations work properly with the defaults. They just return true always. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeaa74e678c7c3c10a2ae002a22968d41" name="aeaa74e678c7c3c10a2ae002a22968d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa74e678c7c3c10a2ae002a22968d41">&#9670;&#160;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::multicore::Core::shutdown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shutdown parallel environment. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d38/peano4_8cpp_source.html#l00138">peano4::shutdown()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d55/classtarch_1_1multicore_1_1Core_aeaa74e678c7c3c10a2ae002a22968d41_icgraph.png" border="0" usemap="#add/d55/classtarch_1_1multicore_1_1Core_aeaa74e678c7c3c10a2ae002a22968d41_icgraph" alt=""/></div>
+<map name="add/d55/classtarch_1_1multicore_1_1Core_aeaa74e678c7c3c10a2ae002a22968d41_icgraph" id="add/d55/classtarch_1_1multicore_1_1Core_aeaa74e678c7c3c10a2ae002a22968d41_icgraph">
+<area shape="rect" title="Shutdown parallel environment." alt="" coords="297,5,460,45"/>
+<area shape="rect" href="../../d8/d8f/namespacepeano4.html#a74f6dc3de6405111f5219bd65789f395" title=" " alt="" coords="108,13,249,38"/>
+<area shape="poly" title=" " alt="" coords="284,28,249,28,249,23,284,23"/>
+<area shape="rect" href="../../df/dc4/aderdg-fused_2KernelBenchmarks-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="5,13,60,38"/>
+<area shape="poly" title=" " alt="" coords="94,28,60,28,60,23,94,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1d158484f601f44d73069db32aea2b8" name="af1d158484f601f44d73069db32aea2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d158484f601f44d73069db32aea2b8">&#9670;&#160;</a></span>yield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::multicore::Core::yield </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper around backend-specific yield. </p>
+<p>For most backends, this should not really be a <a class="el" href="#af1d158484f601f44d73069db32aea2b8" title="Wrapper around backend-specific yield.">yield()</a>. It should interrupt the current task, not the current thread, and tell the runtime to continue with another task. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d37/TaskEnumerator_8cpp_source.html#l00068">swift2::TaskEnumerator::lockResources()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d55/classtarch_1_1multicore_1_1Core_af1d158484f601f44d73069db32aea2b8_icgraph.png" border="0" usemap="#add/d55/classtarch_1_1multicore_1_1Core_af1d158484f601f44d73069db32aea2b8_icgraph" alt=""/></div>
+<map name="add/d55/classtarch_1_1multicore_1_1Core_af1d158484f601f44d73069db32aea2b8_icgraph" id="add/d55/classtarch_1_1multicore_1_1Core_af1d158484f601f44d73069db32aea2b8_icgraph">
+<area shape="rect" title="Wrapper around backend&#45;specific yield." alt="" coords="228,5,391,45"/>
+<area shape="rect" href="../../dd/d63/classswift2_1_1TaskEnumerator.html#af9aa06213462370209434afab1b21bf2" title="Lock resources." alt="" coords="5,5,180,45"/>
+<area shape="poly" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a8e2c727c5a0d54fd61579e2ca4801a46" name="a8e2c727c5a0d54fd61579e2ca4801a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2c727c5a0d54fd61579e2ca4801a46">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> tarch::multicore::Core::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dd7/Core_8h_source.html#l00048">48</a> of file <a class="el" href="../../d6/dd7/Core_8h_source.html">Core.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e0f724f9473899bbfbad6750fbb8f01" name="a3e0f724f9473899bbfbad6750fbb8f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0f724f9473899bbfbad6750fbb8f01">&#9670;&#160;</a></span>_numberOfThreads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::multicore::Core::_numberOfThreads</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dd7/Core_8h_source.html#l00052">52</a> of file <a class="el" href="../../d6/dd7/Core_8h_source.html">Core.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/multicore/<a class="el" href="../../d6/dd7/Core_8h_source.html">Core.h</a></li>
+<li>src/tarch/multicore/<a class="el" href="../../d6/d27/Core_8cpp_source.html">Core.cpp</a></li>
+<li>src/tarch/multicore/tbb/<a class="el" href="../../dc/d31/tbb_2Core_8cpp_source.html">Core.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d6/d43/namespacetarch_1_1multicore.html">multicore</a></li><li class="navelem"><a class="el" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html">Core</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:54 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

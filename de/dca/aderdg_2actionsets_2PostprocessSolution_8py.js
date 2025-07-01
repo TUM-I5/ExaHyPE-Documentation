@@ -1,0 +1,6 @@
+var aderdg_2actionsets_2PostprocessSolution_8py =
+[
+    [ "exahype2.solvers.aderdg.actionsets.PostprocessSolution.EmptyPostprocessSolution", "d3/d04/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1EmptyPostprocessSolution.html", "d3/d04/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1EmptyPostprocessSolution" ],
+    [ "exahype2.solvers.aderdg.actionsets.PostprocessSolution.DoFWisePostprocessSolution", "d1/d9c/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1DoFWisePostprocessSolution.html", "d1/d9c/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1DoFWisePostprocessSolution" ],
+    [ "exahype2.solvers.aderdg.actionsets.PostprocessSolution.CellWisePostprocessSolution", "d0/d0a/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1CellWisePostprocessSolution.html", "d0/d0a/classexahype2_1_1solvers_1_1aderdg_1_1actionsets_1_1PostprocessSolution_1_1CellWisePostprocessSolution" ]
+];

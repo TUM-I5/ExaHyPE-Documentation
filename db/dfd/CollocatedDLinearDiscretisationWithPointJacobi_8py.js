@@ -1,0 +1,4 @@
+var CollocatedDLinearDiscretisationWithPointJacobi_8py =
+[
+    [ "solvers.api.CollocatedDLinearDiscretisationWithPointJacobi.CollocatedDLinearDiscretisationWithPointJacobi", "d6/d20/classsolvers_1_1api_1_1CollocatedDLinearDiscretisationWithPointJacobi_1_1CollocatedDLinearDiscretisationWithPointJacobi.html", "d6/d20/classsolvers_1_1api_1_1CollocatedDLinearDiscretisationWithPointJacobi_1_1CollocatedDLinearDiscretisationWithPointJacobi" ]
+];

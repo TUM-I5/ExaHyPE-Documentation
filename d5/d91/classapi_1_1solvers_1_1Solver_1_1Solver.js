@@ -1,0 +1,27 @@
+var classapi_1_1solvers_1_1Solver_1_1Solver =
+[
+    [ "__init__", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a47cfa46f431729797f11c46274c021e7", null ],
+    [ "add_implementation_files_to_project", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#aa0ab54030a3b379b8da812478ba6fa08", null ],
+    [ "add_to_assemble", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a81421d56c791a54c0bc0f3d5fa45c154", null ],
+    [ "add_to_create_grid", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#abd0df526a8233e7b6cdf4bb6e9a87b09", null ],
+    [ "add_to_enumerate_and_init_solution", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a7ac114125d2b6069dc46a7872778925f", null ],
+    [ "add_to_init_petsc", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a6b3d5c2e1e783570b2c3a84f32ee32a6", null ],
+    [ "add_to_map_solution_onto_mesh", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#ae4d97298bc50a537d8e389ac37dacc75", null ],
+    [ "add_to_Peano4_datamodel", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a9c68b3897c9416e62e2b82d8f52fbc46", null ],
+    [ "add_to_plot", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a2bffc08c3e090c240e4f193d092642e1", null ],
+    [ "add_to_plot", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a2bffc08c3e090c240e4f193d092642e1", null ],
+    [ "add_use_statements", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a08123cd44fe558f2a7340f6e6b07850a", null ],
+    [ "create_readme_descriptor", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a87bca83735be26866772989b338589a6", null ],
+    [ "instance_name", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a404bc819f89a6ff53412ae8088f7025c", null ],
+    [ "name", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a5804b616921da557d2d217e32c57c564", null ],
+    [ "number_of_matrix_entries_per_cell", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a102d230dd6037bcc0ca66c11175219ff", null ],
+    [ "number_of_matrix_entries_per_face", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a7c40daf10cecbb885a1511fe9139afff", null ],
+    [ "number_of_matrix_entries_per_vertex", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#aed41cdc9580ebffd4bdea1e548522f3d", null ],
+    [ "typename", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a3d73a8b60d0ec6e4e56edfca34bf63c2", null ],
+    [ "_cell_petsc_data", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a71fbf4dd231c90f895e2ce928f33f5bc", null ],
+    [ "_face_petsc_data", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#aa759f561a7980f1c02a6692e442bc5b9", null ],
+    [ "_name", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a8458476acdea8817977509fbdb7c3688", null ],
+    [ "_vertex_petsc_data", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#a3e38613b9c70f24db217dcdabbd37e0a", null ],
+    [ "max_h", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#afaaf246dde0b7dd47b6e40745a9b4ce0", null ],
+    [ "min_h", "d5/d91/classapi_1_1solvers_1_1Solver_1_1Solver.html#ac37554dbb6c68201ef2e44ba164d413a", null ]
+];

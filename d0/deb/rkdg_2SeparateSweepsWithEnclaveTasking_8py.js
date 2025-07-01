@@ -1,0 +1,5 @@
+var rkdg_2SeparateSweepsWithEnclaveTasking_8py =
+[
+    [ "exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.MergeEnclaveTaskOutcome", "d0/d1c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1MergeEnclaveTaskOutcome.html", "d0/d1c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1MergeEnclaveTaskOutcome" ],
+    [ "exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking", "db/d7c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking.html", "db/d7c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking" ]
+];

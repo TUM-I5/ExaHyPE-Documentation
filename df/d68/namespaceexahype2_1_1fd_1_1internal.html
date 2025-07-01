@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('df/d68/namespaceexahype2_1_1fd_1_1internal.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">exahype2::fd::internal Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0fd64da9833c1b3847869828dc90583c" id="r_a0fd64da9833c1b3847869828dc90583c"><td class="memTemplParams" colspan="2">template&lt;class QInEnumeratorType , class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:a0fd64da9833c1b3847869828dc90583c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0fd64da9833c1b3847869828dc90583c">copySolution_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QIn, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;QInEnumerator, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknown, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="separator:a0fd64da9833c1b3847869828dc90583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d2c96f17a4b3ad7e4d2eddb533610b" id="r_aa8d2c96f17a4b3ad7e4d2eddb533610b"><td class="memTemplParams" colspan="2">template&lt;class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:aa8d2c96f17a4b3ad7e4d2eddb533610b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa8d2c96f17a4b3ad7e4d2eddb533610b">clearSolution_LoopBody</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> unknown, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:aa8d2c96f17a4b3ad7e4d2eddb533610b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The complicated way to write =0.  <br /></td></tr>
+<tr class="separator:aa8d2c96f17a4b3ad7e4d2eddb533610b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edbf6f18d6b0846cd052162033011c1" id="r_a7edbf6f18d6b0846cd052162033011c1"><td class="memTemplParams" colspan="2">template&lt;class QInEnumeratorType , class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:a7edbf6f18d6b0846cd052162033011c1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7edbf6f18d6b0846cd052162033011c1">addAlgebraicSourceTerm_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QIn, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;QInEnumerator, <a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#a082bfe7d9f9a396325dc470ffff0fa7f">exahype2::fd::Source</a> AlgebraicSource, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:a7edbf6f18d6b0846cd052162033011c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy previous solution over into new time step and add source term.  <br /></td></tr>
+<tr class="separator:a7edbf6f18d6b0846cd052162033011c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49d5e6c2f8f298b5bde5a5fd907ec50" id="r_af49d5e6c2f8f298b5bde5a5fd907ec50"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , class QInEnumeratorType , class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:af49d5e6c2f8f298b5bde5a5fd907ec50"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af49d5e6c2f8f298b5bde5a5fd907ec50">addAlgebraicSourceTerm_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QIn, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;QInEnumerator, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:af49d5e6c2f8f298b5bde5a5fd907ec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded version which uses static invocation instead of a functor.  <br /></td></tr>
+<tr class="separator:af49d5e6c2f8f298b5bde5a5fd907ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544f8e7c6e57ff6986c4b2db7e687cd2" id="r_a544f8e7c6e57ff6986c4b2db7e687cd2"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> &gt; </td></tr>
+<tr class="memitem:a544f8e7c6e57ff6986c4b2db7e687cd2"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a544f8e7c6e57ff6986c4b2db7e687cd2">addAlgebraicSourceTerm_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QIn, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;QInEnumerator, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;QOutEnumerator) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:a544f8e7c6e57ff6986c4b2db7e687cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialised version.  <br /></td></tr>
+<tr class="separator:a544f8e7c6e57ff6986c4b2db7e687cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52d064d7af4551c7d6186783360e6a7" id="r_af52d064d7af4551c7d6186783360e6a7"><td class="memTemplParams" colspan="2">template&lt;class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:af52d064d7af4551c7d6186783360e6a7"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af52d064d7af4551c7d6186783360e6a7">reduceMaxEigenvalue_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator, <a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#acbcb7f141f07682b091acb91869fbdfb">exahype2::fd::MaxEigenvalue</a> <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h.html#afc5396d2f2be5abdf232294422c19c62">maxEigenvalue</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="separator:af52d064d7af4551c7d6186783360e6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259769d2c84b6373588fff91fe8f3958" id="r_a259769d2c84b6373588fff91fe8f3958"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a259769d2c84b6373588fff91fe8f3958"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a259769d2c84b6373588fff91fe8f3958">reduceMaxEigenvalue_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;QOutEnumerator, <a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#acbcb7f141f07682b091acb91869fbdfb">exahype2::fd::MaxEigenvalue</a> <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h.html#afc5396d2f2be5abdf232294422c19c62">maxEigenvalue</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:a259769d2c84b6373588fff91fe8f3958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation without the gather.  <br /></td></tr>
+<tr class="separator:a259769d2c84b6373588fff91fe8f3958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842845444c2ef8f3100f5d2dda671313" id="r_a842845444c2ef8f3100f5d2dda671313"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , class QOutEnumeratorType &gt; </td></tr>
+<tr class="memitem:a842845444c2ef8f3100f5d2dda671313"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a842845444c2ef8f3100f5d2dda671313">reduceMaxEigenvalue_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;QOutEnumerator, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:a842845444c2ef8f3100f5d2dda671313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded version with static function calls.  <br /></td></tr>
+<tr class="separator:a842845444c2ef8f3100f5d2dda671313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83684144dd4b9463f7e66a57cf0add1" id="r_ad83684144dd4b9463f7e66a57cf0add1"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> &gt; </td></tr>
+<tr class="memitem:ad83684144dd4b9463f7e66a57cf0add1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad83684144dd4b9463f7e66a57cf0add1">reduceMaxEigenvalue_LoopBody</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__ QOut, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;QOutEnumerator, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchCentre, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;patchSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> patchIndex, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;<a class="el" href="../../dd/d6c/namespaceexahype2.html#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> t, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> dt) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="memdesc:ad83684144dd4b9463f7e66a57cf0add1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded version with static function calls.  <br /></td></tr>
+<tr class="separator:ad83684144dd4b9463f7e66a57cf0add1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a544f8e7c6e57ff6986c4b2db7e687cd2" name="a544f8e7c6e57ff6986c4b2db7e687cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544f8e7c6e57ff6986c4b2db7e687cd2">&#9670;&#160;</a></span>addAlgebraicSourceTerm_LoopBody() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::fd::internal::addAlgebraicSourceTerm_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QIn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>QInEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specialised version. </p>
+
+</div>
+</div>
+<a id="af49d5e6c2f8f298b5bde5a5fd907ec50" name="af49d5e6c2f8f298b5bde5a5fd907ec50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49d5e6c2f8f298b5bde5a5fd907ec50">&#9670;&#160;</a></span>addAlgebraicSourceTerm_LoopBody() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , class QInEnumeratorType , class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::fd::internal::addAlgebraicSourceTerm_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QIn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QInEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded version which uses static invocation instead of a functor. </p>
+
+</div>
+</div>
+<a id="a7edbf6f18d6b0846cd052162033011c1" name="a7edbf6f18d6b0846cd052162033011c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edbf6f18d6b0846cd052162033011c1">&#9670;&#160;</a></span>addAlgebraicSourceTerm_LoopBody() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QInEnumeratorType , class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::fd::internal::addAlgebraicSourceTerm_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QIn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QInEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#a082bfe7d9f9a396325dc470ffff0fa7f">exahype2::fd::Source</a></td>          <td class="paramname"><span class="paramname"><em>AlgebraicSource</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy previous solution over into new time step and add source term. </p>
+<p>This is the first step of the method of line, where we basically copy \( Q^{(old)} \) into \( Q^{(new)} \). In the same sweep, we also add the algebraic source term subject to the time step size:</p>
+<p>\( Q^{(new)} = Q^{(old)} + \Delta t \cdot S(Q^{(old)}) \)</p>
+<p>We reiterate that Q holds two types of entries: The actual data subject to the <a class="el" href="../../da/db8/namespacePDE.html">PDE</a> (and algebraic and differential source terms) and arbitrary auxiliary variables per volume that the user has specified. Auxiliary parameters are coupling terms, material parameters, helper variables that you use to compute some metrics, ... They are not evolved as part of the <a class="el" href="../../da/db8/namespacePDE.html">PDE</a>. As the source term affects only the <a class="el" href="../../da/db8/namespacePDE.html">PDE</a> variables, we copy these entries in Q over and add the source term contribution, while the auxilibary parameters remain plain copies.</p>
+<p>No SIMD declaration here, as we can't SIMDise over functors anyway.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a0fd64da9833c1b3847869828dc90583c">copySolution_LoopBody()</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> vectorisation details. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/db8/FD4__patchwise__functors_8cpp_source.html#l00009">exahype2::fd::fd4::timeStep_patchwise_heap_functors()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d68/namespaceexahype2_1_1fd_1_1internal_a7edbf6f18d6b0846cd052162033011c1_icgraph.png" border="0" usemap="#adf/d68/namespaceexahype2_1_1fd_1_1internal_a7edbf6f18d6b0846cd052162033011c1_icgraph" alt=""/></div>
+<map name="adf/d68/namespaceexahype2_1_1fd_1_1internal_a7edbf6f18d6b0846cd052162033011c1_icgraph" id="adf/d68/namespaceexahype2_1_1fd_1_1internal_a7edbf6f18d6b0846cd052162033011c1_icgraph">
+<area shape="rect" title="Copy previous solution over into new time step and add source term." alt="" coords="501,5,692,60"/>
+<area shape="rect" href="../../db/d32/namespaceexahype2_1_1fd_1_1fd4.html#ad4c3323ae9e4f3a07afd4d8f4b3476af" title="Fourth&#45;order Finite Differences." alt="" coords="260,5,453,60"/>
+<area shape="poly" title=" " alt="" coords="487,35,454,35,454,30,487,30"/>
+<area shape="rect" href="../../df/de4/classexahype2_1_1fd_1_1tests_1_1CCZ4KernelTest.html#ab2b7f6c7f1896f153c037789f32b90f6" title=" " alt="" coords="5,5,212,60"/>
+<area shape="poly" title=" " alt="" coords="246,35,212,35,212,30,246,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8d2c96f17a4b3ad7e4d2eddb533610b" name="aa8d2c96f17a4b3ad7e4d2eddb533610b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d2c96f17a4b3ad7e4d2eddb533610b">&#9670;&#160;</a></span>clearSolution_LoopBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::fd::internal::clearSolution_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknown</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The complicated way to write =0. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dce/omp_2FD4__batched__static__calls_8cpph_source.html#l00022">exahype2::fd::fd4::omp::internal::timeStep_batched_heap_multicore_static_calls()</a>, <a class="el" href="../../d6/d6f/FD4__batched__static__calls_8cpph_source.html#l00020">exahype2::fd::fd4::internal::timeStep_batched_static_calls()</a>, <a class="el" href="../../d4/db8/FD4__patchwise__functors_8cpp_source.html#l00009">exahype2::fd::fd4::timeStep_patchwise_heap_functors()</a>, and <a class="el" href="../../d7/d3e/FD4__patchwise__static__calls_8cpph_source.html#l00020">exahype2::fd::fd4::internal::timeStep_patchwise_static_calls()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d68/namespaceexahype2_1_1fd_1_1internal_aa8d2c96f17a4b3ad7e4d2eddb533610b_icgraph.png" border="0" usemap="#adf/d68/namespaceexahype2_1_1fd_1_1internal_aa8d2c96f17a4b3ad7e4d2eddb533610b_icgraph" alt=""/></div>
+<map name="adf/d68/namespaceexahype2_1_1fd_1_1internal_aa8d2c96f17a4b3ad7e4d2eddb533610b_icgraph" id="adf/d68/namespaceexahype2_1_1fd_1_1internal_aa8d2c96f17a4b3ad7e4d2eddb533610b_icgraph">
+<area shape="rect" title="The complicated way to write =0." alt="" coords="520,147,707,187"/>
+<area shape="rect" href="../../d7/dec/namespaceexahype2_1_1fd_1_1fd4_1_1omp_1_1internal.html#a89c41eee1e2a9d00c7a64fd583a31756" title=" " alt="" coords="271,5,461,75"/>
+<area shape="poly" title=" " alt="" coords="566,142,471,89,447,77,449,72,473,84,569,137"/>
+<area shape="rect" href="../../de/d7c/namespaceexahype2_1_1fd_1_1fd4_1_1internal.html#afa70f840c1057b76124d110119870eb8" title=" " alt="" coords="267,99,465,154"/>
+<area shape="poly" title=" " alt="" coords="506,152,465,145,466,140,507,147"/>
+<area shape="rect" href="../../db/d32/namespaceexahype2_1_1fd_1_1fd4.html#ad4c3323ae9e4f3a07afd4d8f4b3476af" title="Fourth&#45;order Finite Differences." alt="" coords="269,178,463,233"/>
+<area shape="poly" title=" " alt="" coords="507,186,463,193,463,188,506,181"/>
+<area shape="rect" href="../../de/d7c/namespaceexahype2_1_1fd_1_1fd4_1_1internal.html#aecc2d1e1398b73454e7847216495f7f5" title=" " alt="" coords="260,257,472,311"/>
+<area shape="poly" title=" " alt="" coords="568,196,473,246,444,259,442,254,471,242,566,191"/>
+<area shape="rect" href="../../df/de4/classexahype2_1_1fd_1_1tests_1_1CCZ4KernelTest.html#ab2b7f6c7f1896f153c037789f32b90f6" title=" " alt="" coords="5,178,212,233"/>
+<area shape="poly" title=" " alt="" coords="255,208,212,208,212,203,255,203"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0fd64da9833c1b3847869828dc90583c" name="a0fd64da9833c1b3847869828dc90583c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd64da9833c1b3847869828dc90583c">&#9670;&#160;</a></span>copySolution_LoopBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QInEnumeratorType , class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::fd::internal::copySolution_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QIn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QInEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QInEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>unknown</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d4/db8/FD4__patchwise__functors_8cpp_source.html#l00629">exahype2::fd::fd4::reconstruct_first_derivatives()</a>, <a class="el" href="../../d7/dce/omp_2FD4__batched__static__calls_8cpph_source.html#l00022">exahype2::fd::fd4::omp::internal::timeStep_batched_heap_multicore_static_calls()</a>, <a class="el" href="../../d6/d6f/FD4__batched__static__calls_8cpph_source.html#l00020">exahype2::fd::fd4::internal::timeStep_batched_static_calls()</a>, <a class="el" href="../../d4/db8/FD4__patchwise__functors_8cpp_source.html#l00009">exahype2::fd::fd4::timeStep_patchwise_heap_functors()</a>, and <a class="el" href="../../d7/d3e/FD4__patchwise__static__calls_8cpph_source.html#l00020">exahype2::fd::fd4::internal::timeStep_patchwise_static_calls()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d68/namespaceexahype2_1_1fd_1_1internal_a0fd64da9833c1b3847869828dc90583c_icgraph.png" border="0" usemap="#adf/d68/namespaceexahype2_1_1fd_1_1internal_a0fd64da9833c1b3847869828dc90583c_icgraph" alt=""/></div>
+<map name="adf/d68/namespaceexahype2_1_1fd_1_1internal_a0fd64da9833c1b3847869828dc90583c_icgraph" id="adf/d68/namespaceexahype2_1_1fd_1_1internal_a0fd64da9833c1b3847869828dc90583c_icgraph">
+<area shape="rect" title=" " alt="" coords="520,171,705,211"/>
+<area shape="rect" href="../../db/d32/namespaceexahype2_1_1fd_1_1fd4.html#abfef00e76cf5aaf5e781052a65ebdbb7" title="Helper routine to reconstruct the first derivatives." alt="" coords="263,5,469,45"/>
+<area shape="poly" title=" " alt="" coords="585,162,535,109,504,83,471,60,446,48,448,43,473,55,508,78,539,106,589,158"/>
+<area shape="rect" href="../../d7/dec/namespaceexahype2_1_1fd_1_1fd4_1_1omp_1_1internal.html#a89c41eee1e2a9d00c7a64fd583a31756" title=" " alt="" coords="271,69,461,139"/>
+<area shape="poly" title=" " alt="" coords="541,169,460,140,462,135,543,164"/>
+<area shape="rect" href="../../de/d7c/namespaceexahype2_1_1fd_1_1fd4_1_1internal.html#afa70f840c1057b76124d110119870eb8" title=" " alt="" coords="267,163,465,218"/>
+<area shape="poly" title=" " alt="" coords="506,193,466,193,466,188,506,188"/>
+<area shape="rect" href="../../db/d32/namespaceexahype2_1_1fd_1_1fd4.html#ad4c3323ae9e4f3a07afd4d8f4b3476af" title="Fourth&#45;order Finite Differences." alt="" coords="269,242,463,297"/>
+<area shape="poly" title=" " alt="" coords="537,217,453,244,452,239,536,212"/>
+<area shape="rect" href="../../de/d7c/namespaceexahype2_1_1fd_1_1fd4_1_1internal.html#aecc2d1e1398b73454e7847216495f7f5" title=" " alt="" coords="260,321,472,375"/>
+<area shape="poly" title=" " alt="" coords="584,223,534,267,473,310,449,323,446,318,471,306,531,263,580,219"/>
+<area shape="rect" href="../../df/de4/classexahype2_1_1fd_1_1tests_1_1CCZ4KernelTest.html#ab2b7f6c7f1896f153c037789f32b90f6" title=" " alt="" coords="5,121,212,175"/>
+<area shape="poly" title=" " alt="" coords="279,52,261,60,202,91,151,123,148,118,200,86,259,55,277,48"/>
+<area shape="poly" title=" " alt="" coords="276,239,259,232,156,178,158,173,261,227,278,234"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad83684144dd4b9463f7e66a57cf0add1" name="ad83684144dd4b9463f7e66a57cf0add1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83684144dd4b9463f7e66a57cf0add1">&#9670;&#160;</a></span>reduceMaxEigenvalue_LoopBody() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::fd::internal::reduceMaxEigenvalue_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded version with static function calls. </p>
+
+</div>
+</div>
+<a id="a259769d2c84b6373588fff91fe8f3958" name="a259769d2c84b6373588fff91fe8f3958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259769d2c84b6373588fff91fe8f3958">&#9670;&#160;</a></span>reduceMaxEigenvalue_LoopBody() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::fd::internal::reduceMaxEigenvalue_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/da8/structexahype2_1_1enumerator_1_1AoSLexicographicEnumerator.html">exahype2::enumerator::AoSLexicographicEnumerator</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#acbcb7f141f07682b091acb91869fbdfb">exahype2::fd::MaxEigenvalue</a></td>          <td class="paramname"><span class="paramname"><em>maxEigenvalue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specialisation without the gather. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/deb/LoopBody_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d8/deb/LoopBody_8cpp_source.html">LoopBody.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/dc8/AoSLexicographicEnumerator_8h_source.html#l00101">exahype2::enumerator::AoSLexicographicEnumerator::_numberOfDoFsPerAxisInCell</a>, <a class="el" href="../../df/dc2/fd_2PatchUtils_8h_source.html#l00077">exahype2::fd::getGridCellCentre()</a>, <a class="el" href="../../df/dc2/fd_2PatchUtils_8h_source.html#l00022">exahype2::fd::getGridCellSize()</a>, and <a class="el" href="../../d9/d6d/exahype2_2solvers_2fv_2godunov_2kernels_2sycl_2Loop_8template_8h_source.html#l00067">maxEigenvalue</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d68/namespaceexahype2_1_1fd_1_1internal_a259769d2c84b6373588fff91fe8f3958_cgraph.png" border="0" usemap="#adf/d68/namespaceexahype2_1_1fd_1_1internal_a259769d2c84b6373588fff91fe8f3958_cgraph" alt=""/></div>
+<map name="adf/d68/namespaceexahype2_1_1fd_1_1internal_a259769d2c84b6373588fff91fe8f3958_cgraph" id="adf/d68/namespaceexahype2_1_1fd_1_1internal_a259769d2c84b6373588fff91fe8f3958_cgraph">
+<area shape="rect" title="Specialisation without the gather." alt="" coords="5,27,180,82"/>
+<area shape="rect" href="../../df/d52/namespaceexahype2_1_1fd.html#a0c907b0493e61565e1197292cf7e6edc" title="In ExaHyPE&#39;s Finite Volume setup, a cell hosts a patch of Finite Volumes." alt="" coords="241,5,429,45"/>
+<area shape="poly" title=" " alt="" coords="180,41,228,36,228,41,181,47"/>
+<area shape="rect" href="../../df/d52/namespaceexahype2_1_1fd.html#abffb1b63542f3ac8790c877cf2b07418" title=" " alt="" coords="228,70,443,95"/>
+<area shape="poly" title=" " alt="" coords="181,62,215,66,214,71,180,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a842845444c2ef8f3100f5d2dda671313" name="a842845444c2ef8f3100f5d2dda671313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842845444c2ef8f3100f5d2dda671313">&#9670;&#160;</a></span>reduceMaxEigenvalue_LoopBody() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a> , class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::fd::internal::reduceMaxEigenvalue_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded version with static function calls. </p>
+
+</div>
+</div>
+<a id="af52d064d7af4551c7d6186783360e6a7" name="af52d064d7af4551c7d6186783360e6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52d064d7af4551c7d6186783360e6a7">&#9670;&#160;</a></span>reduceMaxEigenvalue_LoopBody() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class QOutEnumeratorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::fd::internal::reduceMaxEigenvalue_LoopBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> *__restrict__</td>          <td class="paramname"><span class="paramname"><em>QOut</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> QOutEnumeratorType &amp;</td>          <td class="paramname"><span class="paramname"><em>QOutEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html#acbcb7f141f07682b091acb91869fbdfb">exahype2::fd::MaxEigenvalue</a></td>          <td class="paramname"><span class="paramname"><em>maxEigenvalue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchCentre</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>patchSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>patchIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>volumeIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>t</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d8/deb/LoopBody_8cpp_source.html#l00005">exahype2::fd::reduceMaxEigenvalue_patchwise_functors()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d68/namespaceexahype2_1_1fd_1_1internal_af52d064d7af4551c7d6186783360e6a7_icgraph.png" border="0" usemap="#adf/d68/namespaceexahype2_1_1fd_1_1internal_af52d064d7af4551c7d6186783360e6a7_icgraph" alt=""/></div>
+<map name="adf/d68/namespaceexahype2_1_1fd_1_1internal_af52d064d7af4551c7d6186783360e6a7_icgraph" id="adf/d68/namespaceexahype2_1_1fd_1_1internal_af52d064d7af4551c7d6186783360e6a7_icgraph">
+<area shape="rect" title=" " alt="" coords="312,5,487,60"/>
+<area shape="rect" href="../../df/d52/namespaceexahype2_1_1fd.html#a2f8724e2e5067c4521cc24351d7360aa" title=" " alt="" coords="5,13,264,53"/>
+<area shape="poly" title=" " alt="" coords="298,35,264,35,264,30,298,30"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li><li class="navelem"><a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html">fd</a></li><li class="navelem"><a class="el" href="../../df/d68/namespaceexahype2_1_1fd_1_1internal.html">internal</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:31 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

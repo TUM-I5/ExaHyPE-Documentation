@@ -1,0 +1,888 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('df/d01/namespacedynamic-rupture.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">dynamic-rupture Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abc97093a0e624f4a5d7d240d365a53e5" id="r_abc97093a0e624f4a5d7d240d365a53e5"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc97093a0e624f4a5d7d240d365a53e5">available_scenarios</a></td></tr>
+<tr class="separator:abc97093a0e624f4a5d7d240d365a53e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af671d9c2019ce4339890dc3dc3080be3" id="r_af671d9c2019ce4339890dc3dc3080be3"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af671d9c2019ce4339890dc3dc3080be3">scenario</a> = &quot;TPV5&quot;</td></tr>
+<tr class="separator:af671d9c2019ce4339890dc3dc3080be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9455a9a82a15aab0ee02021e67383b" id="r_a5d9455a9a82a15aab0ee02021e67383b"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d9455a9a82a15aab0ee02021e67383b">scenario_string</a> = scenario.lower()</td></tr>
+<tr class="separator:a5d9455a9a82a15aab0ee02021e67383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4d389621de87864565ff491876ee21" id="r_a5a4d389621de87864565ff491876ee21"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a4d389621de87864565ff491876ee21">my_scenario</a> = <a class="el" href="#abc97093a0e624f4a5d7d240d365a53e5">available_scenarios</a>[<a class="el" href="#af671d9c2019ce4339890dc3dc3080be3">scenario</a>]</td></tr>
+<tr class="separator:a5a4d389621de87864565ff491876ee21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4d48266121d92d26d61ed5f25902c3" id="r_a2c4d48266121d92d26d61ed5f25902c3"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c4d48266121d92d26d61ed5f25902c3">unknowns</a> = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;u&quot;: 3}</td></tr>
+<tr class="separator:a2c4d48266121d92d26d61ed5f25902c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d6a478503b32b3a4949923af51a2f4" id="r_af5d6a478503b32b3a4949923af51a2f4"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5d6a478503b32b3a4949923af51a2f4">auxiliary_variables</a></td></tr>
+<tr class="separator:af5d6a478503b32b3a4949923af51a2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5968851153689863841d6d801a47d3c5" id="r_a5968851153689863841d6d801a47d3c5"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5968851153689863841d6d801a47d3c5">offset</a> = my_scenario.domain_offset</td></tr>
+<tr class="separator:a5968851153689863841d6d801a47d3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e340ebe714eebdbe74556e4c1689e42" id="r_a3e340ebe714eebdbe74556e4c1689e42"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e340ebe714eebdbe74556e4c1689e42">size</a> = my_scenario.domain_size</td></tr>
+<tr class="separator:a3e340ebe714eebdbe74556e4c1689e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ece443a94857bc4da6d930396a7758e" id="r_a9ece443a94857bc4da6d930396a7758e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ece443a94857bc4da6d930396a7758e">plot_dt</a> = 0.0</td></tr>
+<tr class="separator:a9ece443a94857bc4da6d930396a7758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7624e3440f0296a3f28f7b1cc4bb9a1" id="r_ae7624e3440f0296a3f28f7b1cc4bb9a1"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7624e3440f0296a3f28f7b1cc4bb9a1">end_time</a> = my_scenario.end_time</td></tr>
+<tr class="separator:ae7624e3440f0296a3f28f7b1cc4bb9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e61c779dcf1319bc9cad52704a44768" id="r_a3e61c779dcf1319bc9cad52704a44768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e61c779dcf1319bc9cad52704a44768">order</a> = 5</td></tr>
+<tr class="separator:a3e61c779dcf1319bc9cad52704a44768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60812bf61af64a91118a57ac5d59723" id="r_ad60812bf61af64a91118a57ac5d59723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad60812bf61af64a91118a57ac5d59723">min_level</a> = 3</td></tr>
+<tr class="separator:ad60812bf61af64a91118a57ac5d59723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924f01cc98e20bea48553ac79d96a17b" id="r_a924f01cc98e20bea48553ac79d96a17b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a924f01cc98e20bea48553ac79d96a17b">max_depth</a> = 0</td></tr>
+<tr class="separator:a924f01cc98e20bea48553ac79d96a17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fda74f17dea12b0203353285eca9eeb" id="r_a4fda74f17dea12b0203353285eca9eeb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fda74f17dea12b0203353285eca9eeb">max_h</a> = 1.1 * min(<a class="el" href="#a3e340ebe714eebdbe74556e4c1689e42">size</a>) / (3.0**<a class="el" href="#ad60812bf61af64a91118a57ac5d59723">min_level</a>)</td></tr>
+<tr class="separator:a4fda74f17dea12b0203353285eca9eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a2e867794553abacd9d9cafd7c0432" id="r_aa1a2e867794553abacd9d9cafd7c0432"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a2e867794553abacd9d9cafd7c0432">min_h</a> = <a class="el" href="#a4fda74f17dea12b0203353285eca9eeb">max_h</a> / (3.0**<a class="el" href="#a924f01cc98e20bea48553ac79d96a17b">max_depth</a>)</td></tr>
+<tr class="separator:aa1a2e867794553abacd9d9cafd7c0432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bb5ad9baeeffca6384700d1a7331cb" id="r_aa6bb5ad9baeeffca6384700d1a7331cb"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6bb5ad9baeeffca6384700d1a7331cb">precision</a> = &quot;fp32&quot;</td></tr>
+<tr class="separator:aa6bb5ad9baeeffca6384700d1a7331cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196d913359a7fab3d30eea4b7d844dcb" id="r_a196d913359a7fab3d30eea4b7d844dcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a196d913359a7fab3d30eea4b7d844dcb">theSolver</a></td></tr>
+<tr class="separator:a196d913359a7fab3d30eea4b7d844dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bd496c837190a7ac9a797a0c929c00" id="r_af2bd496c837190a7ac9a797a0c929c00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2bd496c837190a7ac9a797a0c929c00">is_linear</a></td></tr>
+<tr class="separator:af2bd496c837190a7ac9a797a0c929c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388c3222bb618b1b25d053cef520c0e8" id="r_a388c3222bb618b1b25d053cef520c0e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388c3222bb618b1b25d053cef520c0e8">polynomials</a></td></tr>
+<tr class="separator:a388c3222bb618b1b25d053cef520c0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fc0c4e876a8bcc0f05a75c05f0aac3" id="r_ab5fc0c4e876a8bcc0f05a75c05f0aac3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5fc0c4e876a8bcc0f05a75c05f0aac3">initialise_patches</a></td></tr>
+<tr class="separator:ab5fc0c4e876a8bcc0f05a75c05f0aac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0a0ae3b41a08f7f69720a24fee4d03" id="r_afc0a0ae3b41a08f7f69720a24fee4d03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc0a0ae3b41a08f7f69720a24fee4d03">initial_conditions</a></td></tr>
+<tr class="separator:afc0a0ae3b41a08f7f69720a24fee4d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6dfbc1a887680a895e010059d0487e3" id="r_ad6dfbc1a887680a895e010059d0487e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6dfbc1a887680a895e010059d0487e3">boundary_conditions</a></td></tr>
+<tr class="separator:ad6dfbc1a887680a895e010059d0487e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f86d77609a2e1908ff7492b4f05ddb2" id="r_a1f86d77609a2e1908ff7492b4f05ddb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f86d77609a2e1908ff7492b4f05ddb2">max_eigenvalue</a></td></tr>
+<tr class="separator:a1f86d77609a2e1908ff7492b4f05ddb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4bfd494754c4745a1024b447c1c83a" id="r_aad4bfd494754c4745a1024b447c1c83a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4bfd494754c4745a1024b447c1c83a">flux</a></td></tr>
+<tr class="separator:aad4bfd494754c4745a1024b447c1c83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a0f4ca0c3b727da892da1dcd5b359e" id="r_a18a0f4ca0c3b727da892da1dcd5b359e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18a0f4ca0c3b727da892da1dcd5b359e">ncp</a></td></tr>
+<tr class="separator:a18a0f4ca0c3b727da892da1dcd5b359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453580188852fb91b723f1788255f8b3" id="r_a453580188852fb91b723f1788255f8b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453580188852fb91b723f1788255f8b3">material_parameters</a></td></tr>
+<tr class="separator:a453580188852fb91b723f1788255f8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470716f82a27ec65523fd47079a52135" id="r_a470716f82a27ec65523fd47079a52135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a470716f82a27ec65523fd47079a52135">source_term</a></td></tr>
+<tr class="separator:a470716f82a27ec65523fd47079a52135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2965d90fb2bfd9a1381d2fbf2a12d678" id="r_a2965d90fb2bfd9a1381d2fbf2a12d678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2965d90fb2bfd9a1381d2fbf2a12d678">riemann_solver</a></td></tr>
+<tr class="separator:a2965d90fb2bfd9a1381d2fbf2a12d678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525fe83a824b04393f262eedfba05b1f" id="r_a525fe83a824b04393f262eedfba05b1f"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a525fe83a824b04393f262eedfba05b1f">filename</a> = <a class="el" href="#af671d9c2019ce4339890dc3dc3080be3">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#ad60812bf61af64a91118a57ac5d59723">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#a3e61c779dcf1319bc9cad52704a44768">order</a>)+&quot;_pr_&quot;+str(<a class="el" href="#aa6bb5ad9baeeffca6384700d1a7331cb">precision</a>)</td></tr>
+<tr class="separator:a525fe83a824b04393f262eedfba05b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a8b33113b711806b5e012680bb5079" id="r_ab5a8b33113b711806b5e012680bb5079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5a8b33113b711806b5e012680bb5079">project</a> = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;dynamicRupture&quot;, executable=<a class="el" href="#a525fe83a824b04393f262eedfba05b1f">filename</a>)</td></tr>
+<tr class="separator:ab5a8b33113b711806b5e012680bb5079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2924d64b9436370c4d728ebd68cab96b" id="r_a2924d64b9436370c4d728ebd68cab96b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2924d64b9436370c4d728ebd68cab96b">dimensions</a></td></tr>
+<tr class="separator:a2924d64b9436370c4d728ebd68cab96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e34b265d85b88392ee57dbe1f26e74" id="r_a24e34b265d85b88392ee57dbe1f26e74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24e34b265d85b88392ee57dbe1f26e74">min_end_time</a></td></tr>
+<tr class="separator:a24e34b265d85b88392ee57dbe1f26e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739f62c5c36f2963ec13475e97c92e3e" id="r_a739f62c5c36f2963ec13475e97c92e3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a739f62c5c36f2963ec13475e97c92e3e">max_end_time</a></td></tr>
+<tr class="separator:a739f62c5c36f2963ec13475e97c92e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0b1c521c3124b5be240b27e5f5e703" id="r_a5e0b1c521c3124b5be240b27e5f5e703"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e0b1c521c3124b5be240b27e5f5e703">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a5e0b1c521c3124b5be240b27e5f5e703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59f34b25a29476182c7ef4a70b16889" id="r_ad59f34b25a29476182c7ef4a70b16889"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59f34b25a29476182c7ef4a70b16889">time_in_between_plots</a></td></tr>
+<tr class="separator:ad59f34b25a29476182c7ef4a70b16889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce8d6c1470c13da64cab0562e2be6b2" id="r_acce8d6c1470c13da64cab0562e2be6b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acce8d6c1470c13da64cab0562e2be6b2">periodic_BC</a></td></tr>
+<tr class="separator:acce8d6c1470c13da64cab0562e2be6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0da036332e90533b2befda416bdc8e" id="r_a2a0da036332e90533b2befda416bdc8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a0da036332e90533b2befda416bdc8e">peano4_project</a> = project.generate_Peano4_project(&quot;False&quot;)</td></tr>
+<tr class="separator:a2a0da036332e90533b2befda416bdc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98ca0f08925aac0e5246e1a9649ea16" id="r_ad98ca0f08925aac0e5246e1a9649ea16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad98ca0f08925aac0e5246e1a9649ea16">make_clean_first</a></td></tr>
+<tr class="separator:ad98ca0f08925aac0e5246e1a9649ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca1bd38de42440a9996a0b6e6f55c42" id="r_a9ca1bd38de42440a9996a0b6e6f55c42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ca1bd38de42440a9996a0b6e6f55c42">True</a></td></tr>
+<tr class="separator:a9ca1bd38de42440a9996a0b6e6f55c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec71c8be0f1ec4000dd5ee05a86edb7" id="r_a5ec71c8be0f1ec4000dd5ee05a86edb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ec71c8be0f1ec4000dd5ee05a86edb7">number_of_parallel_builds</a></td></tr>
+<tr class="separator:a5ec71c8be0f1ec4000dd5ee05a86edb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af5d6a478503b32b3a4949923af51a2f4" name="af5d6a478503b32b3a4949923af51a2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d6a478503b32b3a4949923af51a2f4">&#9670;&#160;</a></span>auxiliary_variables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dynamic-rupture.auxiliary_variables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;rho&quot;</span>: 1, <span class="stringliteral">&quot;cp&quot;</span>: 1, <span class="stringliteral">&quot;cs&quot;</span>: 1, <span class="stringliteral">&quot;jacobian&quot;</span>: 1, </div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;metric_derivative&quot;</span>: 9,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;curve_grid&quot;</span>: 3,</div>
+<div class="line"><span class="lineno">    5</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00030">30</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="abc97093a0e624f4a5d7d240d365a53e5" name="abc97093a0e624f4a5d7d240d365a53e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc97093a0e624f4a5d7d240d365a53e5">&#9670;&#160;</a></span>available_scenarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dynamic-rupture.available_scenarios</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;TPV5&quot;</span>: <a class="code hl_class" href="../../d3/d3d/classScenario_1_1TPV5_1_1TPV5.html">Scenario.TPV5</a>(),</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;TPV26&quot;</span>: <a class="code hl_class" href="../../d7/db3/classScenario_1_1TPV26_1_1TPV26.html">Scenario.TPV26</a>(), </div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;TPV28&quot;</span>: <a class="code hl_class" href="../../d6/df3/classScenario_1_1TPV28_1_1TPV28.html">Scenario.TPV28</a>(),</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;TPV29&quot;</span>: <a class="code hl_class" href="../../d9/d35/classScenario_1_1TPV29_1_1TPV29.html">Scenario.TPV29</a>()</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+<div class="ttc" id="aclassScenario_1_1TPV26_1_1TPV26_html"><div class="ttname"><a href="../../d7/db3/classScenario_1_1TPV26_1_1TPV26.html">Scenario.TPV26.TPV26</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d2f/TPV26_8py_source.html#l00007">TPV26.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV28_1_1TPV28_html"><div class="ttname"><a href="../../d6/df3/classScenario_1_1TPV28_1_1TPV28.html">Scenario.TPV28.TPV28</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d68/TPV28_8py_source.html#l00007">TPV28.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV29_1_1TPV29_html"><div class="ttname"><a href="../../d9/d35/classScenario_1_1TPV29_1_1TPV29.html">Scenario.TPV29.TPV29</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../db/dab/TPV29_8py_source.html#l00007">TPV29.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1TPV5_1_1TPV5_html"><div class="ttname"><a href="../../d3/d3d/classScenario_1_1TPV5_1_1TPV5.html">Scenario.TPV5.TPV5</a></div><div class="ttdoc">Part of a series of benchmarks by the Statewide California Earthquake Center (SCEC)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2b/TPV5_8py_source.html#l00007">TPV5.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00017">17</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad6dfbc1a887680a895e010059d0487e3" name="ad6dfbc1a887680a895e010059d0487e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6dfbc1a887680a895e010059d0487e3">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00071">71</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2924d64b9436370c4d728ebd68cab96b" name="a2924d64b9436370c4d728ebd68cab96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2924d64b9436370c4d728ebd68cab96b">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00104">104</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ae7624e3440f0296a3f28f7b1cc4bb9a1" name="ae7624e3440f0296a3f28f7b1cc4bb9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7624e3440f0296a3f28f7b1cc4bb9a1">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dynamic-rupture.end_time = my_scenario.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00040">40</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a525fe83a824b04393f262eedfba05b1f" name="a525fe83a824b04393f262eedfba05b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525fe83a824b04393f262eedfba05b1f">&#9670;&#160;</a></span>filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str dynamic-rupture.filename = <a class="el" href="#af671d9c2019ce4339890dc3dc3080be3">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#ad60812bf61af64a91118a57ac5d59723">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#a3e61c779dcf1319bc9cad52704a44768">order</a>)+&quot;_pr_&quot;+str(<a class="el" href="#aa6bb5ad9baeeffca6384700d1a7331cb">precision</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00087">87</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5e0b1c521c3124b5be240b27e5f5e703" name="a5e0b1c521c3124b5be240b27e5f5e703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0b1c521c3124b5be240b27e5f5e703">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00109">109</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="aad4bfd494754c4745a1024b447c1c83a" name="aad4bfd494754c4745a1024b447c1c83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4bfd494754c4745a1024b447c1c83a">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00073">73</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="afc0a0ae3b41a08f7f69720a24fee4d03" name="afc0a0ae3b41a08f7f69720a24fee4d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0a0ae3b41a08f7f69720a24fee4d03">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00070">70</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ab5fc0c4e876a8bcc0f05a75c05f0aac3" name="ab5fc0c4e876a8bcc0f05a75c05f0aac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5fc0c4e876a8bcc0f05a75c05f0aac3">&#9670;&#160;</a></span>initialise_patches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.initialise_patches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00065">65</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="af2bd496c837190a7ac9a797a0c929c00" name="af2bd496c837190a7ac9a797a0c929c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2bd496c837190a7ac9a797a0c929c00">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00063">63</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad98ca0f08925aac0e5246e1a9649ea16" name="ad98ca0f08925aac0e5246e1a9649ea16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98ca0f08925aac0e5246e1a9649ea16">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00126">126</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a453580188852fb91b723f1788255f8b3" name="a453580188852fb91b723f1788255f8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453580188852fb91b723f1788255f8b3">&#9670;&#160;</a></span>material_parameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.material_parameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00075">75</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a924f01cc98e20bea48553ac79d96a17b" name="a924f01cc98e20bea48553ac79d96a17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924f01cc98e20bea48553ac79d96a17b">&#9670;&#160;</a></span>max_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dynamic-rupture.max_depth = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00044">44</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a1f86d77609a2e1908ff7492b4f05ddb2" name="a1f86d77609a2e1908ff7492b4f05ddb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f86d77609a2e1908ff7492b4f05ddb2">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00072">72</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a739f62c5c36f2963ec13475e97c92e3e" name="a739f62c5c36f2963ec13475e97c92e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739f62c5c36f2963ec13475e97c92e3e">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00108">108</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a4fda74f17dea12b0203353285eca9eeb" name="a4fda74f17dea12b0203353285eca9eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fda74f17dea12b0203353285eca9eeb">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dynamic-rupture.max_h = 1.1 * min(<a class="el" href="#a3e340ebe714eebdbe74556e4c1689e42">size</a>) / (3.0**<a class="el" href="#ad60812bf61af64a91118a57ac5d59723">min_level</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00045">45</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a24e34b265d85b88392ee57dbe1f26e74" name="a24e34b265d85b88392ee57dbe1f26e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e34b265d85b88392ee57dbe1f26e74">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00107">107</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="aa1a2e867794553abacd9d9cafd7c0432" name="aa1a2e867794553abacd9d9cafd7c0432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a2e867794553abacd9d9cafd7c0432">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dynamic-rupture.min_h = <a class="el" href="#a4fda74f17dea12b0203353285eca9eeb">max_h</a> / (3.0**<a class="el" href="#a924f01cc98e20bea48553ac79d96a17b">max_depth</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00046">46</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad60812bf61af64a91118a57ac5d59723" name="ad60812bf61af64a91118a57ac5d59723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60812bf61af64a91118a57ac5d59723">&#9670;&#160;</a></span>min_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dynamic-rupture.min_level = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00043">43</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5a4d389621de87864565ff491876ee21" name="a5a4d389621de87864565ff491876ee21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4d389621de87864565ff491876ee21">&#9670;&#160;</a></span>my_scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dynamic-rupture.my_scenario = <a class="el" href="#abc97093a0e624f4a5d7d240d365a53e5">available_scenarios</a>[<a class="el" href="#af671d9c2019ce4339890dc3dc3080be3">scenario</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00027">27</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a18a0f4ca0c3b727da892da1dcd5b359e" name="a18a0f4ca0c3b727da892da1dcd5b359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a0f4ca0c3b727da892da1dcd5b359e">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00074">74</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5ec71c8be0f1ec4000dd5ee05a86edb7" name="a5ec71c8be0f1ec4000dd5ee05a86edb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec71c8be0f1ec4000dd5ee05a86edb7">&#9670;&#160;</a></span>number_of_parallel_builds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.number_of_parallel_builds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00126">126</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5968851153689863841d6d801a47d3c5" name="a5968851153689863841d6d801a47d3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5968851153689863841d6d801a47d3c5">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.offset = my_scenario.domain_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00036">36</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a3e61c779dcf1319bc9cad52704a44768" name="a3e61c779dcf1319bc9cad52704a44768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e61c779dcf1319bc9cad52704a44768">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dynamic-rupture.order = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00042">42</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2a0da036332e90533b2befda416bdc8e" name="a2a0da036332e90533b2befda416bdc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0da036332e90533b2befda416bdc8e">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.peano4_project = project.generate_Peano4_project(&quot;False&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00116">116</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="acce8d6c1470c13da64cab0562e2be6b2" name="acce8d6c1470c13da64cab0562e2be6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce8d6c1470c13da64cab0562e2be6b2">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00111">111</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a9ece443a94857bc4da6d930396a7758e" name="a9ece443a94857bc4da6d930396a7758e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ece443a94857bc4da6d930396a7758e">&#9670;&#160;</a></span>plot_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dynamic-rupture.plot_dt = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00039">39</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a388c3222bb618b1b25d053cef520c0e8" name="a388c3222bb618b1b25d053cef520c0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388c3222bb618b1b25d053cef520c0e8">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00064">64</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="aa6bb5ad9baeeffca6384700d1a7331cb" name="aa6bb5ad9baeeffca6384700d1a7331cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6bb5ad9baeeffca6384700d1a7331cb">&#9670;&#160;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.precision = &quot;fp32&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00048">48</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ab5a8b33113b711806b5e012680bb5079" name="ab5a8b33113b711806b5e012680bb5079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a8b33113b711806b5e012680bb5079">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.project = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;dynamicRupture&quot;, executable=<a class="el" href="#a525fe83a824b04393f262eedfba05b1f">filename</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00088">88</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2965d90fb2bfd9a1381d2fbf2a12d678" name="a2965d90fb2bfd9a1381d2fbf2a12d678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2965d90fb2bfd9a1381d2fbf2a12d678">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00077">77</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="af671d9c2019ce4339890dc3dc3080be3" name="af671d9c2019ce4339890dc3dc3080be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af671d9c2019ce4339890dc3dc3080be3">&#9670;&#160;</a></span>scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str dynamic-rupture.scenario = &quot;TPV5&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00025">25</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a5d9455a9a82a15aab0ee02021e67383b" name="a5d9455a9a82a15aab0ee02021e67383b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9455a9a82a15aab0ee02021e67383b">&#9670;&#160;</a></span>scenario_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str dynamic-rupture.scenario_string = scenario.lower()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00026">26</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a3e340ebe714eebdbe74556e4c1689e42" name="a3e340ebe714eebdbe74556e4c1689e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e340ebe714eebdbe74556e4c1689e42">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.size = my_scenario.domain_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00037">37</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a470716f82a27ec65523fd47079a52135" name="a470716f82a27ec65523fd47079a52135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470716f82a27ec65523fd47079a52135">&#9670;&#160;</a></span>source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00076">76</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a196d913359a7fab3d30eea4b7d844dcb" name="a196d913359a7fab3d30eea4b7d844dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196d913359a7fab3d30eea4b7d844dcb">&#9670;&#160;</a></span>theSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.theSolver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ElasticSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns=unknowns,</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=auxiliary_variables,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.9</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00052">52</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="ad59f34b25a29476182c7ef4a70b16889" name="ad59f34b25a29476182c7ef4a70b16889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59f34b25a29476182c7ef4a70b16889">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00110">110</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a9ca1bd38de42440a9996a0b6e6f55c42" name="a9ca1bd38de42440a9996a0b6e6f55c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca1bd38de42440a9996a0b6e6f55c42">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dynamic-rupture.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00126">126</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+<a id="a2c4d48266121d92d26d61ed5f25902c3" name="a2c4d48266121d92d26d61ed5f25902c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4d48266121d92d26d61ed5f25902c3">&#9670;&#160;</a></span>unknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict dynamic-rupture.unknowns = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;u&quot;: 3}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html#l00029">29</a> of file <a class="el" href="../../d4/db4/dynamic-rupture_8py_source.html">dynamic-rupture.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d01/namespacedynamic-rupture.html">dynamic-rupture</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:26 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

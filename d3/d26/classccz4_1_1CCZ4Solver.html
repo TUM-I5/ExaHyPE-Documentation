@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/d26/classccz4_1_1CCZ4Solver.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
+  <div class="headertitle"><div class="title">ccz4.CCZ4Solver Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for ccz4.CCZ4Solver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/de5/classccz4_1_1CCZ4Solver__inherit__graph.png" border="0" usemap="#accz4_8CCZ4Solver_inherit__map" alt="Inheritance graph"/></div>
+<map name="accz4_8CCZ4Solver_inherit__map" id="accz4_8CCZ4Solver_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,79,136,104"/>
+<area shape="rect" title=" " alt="" coords="23,5,118,31"/>
+<area shape="poly" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for ccz4.CCZ4Solver:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d05/classccz4_1_1CCZ4Solver__coll__graph.png" border="0" usemap="#accz4_8CCZ4Solver_coll__map" alt="Collaboration graph"/></div>
+<map name="accz4_8CCZ4Solver_coll__map" id="accz4_8CCZ4Solver_coll__map">
+<area shape="rect" title=" " alt="" coords="5,79,136,104"/>
+<area shape="rect" title=" " alt="" coords="23,5,118,31"/>
+<area shape="poly" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a347984b24b6f071eda5b28ddbfa672eb" id="r_a347984b24b6f071eda5b28ddbfa672eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a347984b24b6f071eda5b28ddbfa672eb">__init__</a> (self, name, patch_size, min_mesh_unit_h, max_mesh_unit_h, cfl, domain_r, KOSig)</td></tr>
+<tr class="separator:a347984b24b6f071eda5b28ddbfa672eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb3ab836ba19fca04cd863334ea1fd0" id="r_a2bb3ab836ba19fca04cd863334ea1fd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bb3ab836ba19fca04cd863334ea1fd0">create_action_sets</a> (self)</td></tr>
+<tr class="separator:a2bb3ab836ba19fca04cd863334ea1fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae1f344c1c175e85d3211c9fbe0db83" id="r_a1ae1f344c1c175e85d3211c9fbe0db83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ae1f344c1c175e85d3211c9fbe0db83">get_user_action_set_includes</a> (self)</td></tr>
+<tr class="memdesc:a1ae1f344c1c175e85d3211c9fbe0db83"><td class="mdescLeft">&#160;</td><td class="mdescRight">We take this routine to add a few additional include statements.  <br /></td></tr>
+<tr class="separator:a1ae1f344c1c175e85d3211c9fbe0db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285b6620db1993f11373aa2e843c98fc" id="r_a285b6620db1993f11373aa2e843c98fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a285b6620db1993f11373aa2e843c98fc">add_adm_constriants</a> (self)</td></tr>
+<tr class="memdesc:a285b6620db1993f11373aa2e843c98fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">@add adm constriants (Hamilton and Momentum)  <br /></td></tr>
+<tr class="separator:a285b6620db1993f11373aa2e843c98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad005fe3a55e9495c5fd634867c28e4db" id="r_ad005fe3a55e9495c5fd634867c28e4db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad005fe3a55e9495c5fd634867c28e4db">add_Psi4W</a> (self)</td></tr>
+<tr class="memdesc:ad005fe3a55e9495c5fd634867c28e4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">add psi4 writer  <br /></td></tr>
+<tr class="separator:ad005fe3a55e9495c5fd634867c28e4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae53c958a9ba5e12a10a31e8b3c744e23" id="r_ae53c958a9ba5e12a10a31e8b3c744e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae53c958a9ba5e12a10a31e8b3c744e23">_my_user_includes</a></td></tr>
+<tr class="separator:ae53c958a9ba5e12a10a31e8b3c744e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1775b7b0f6b42f0a5456a3e0568179" id="r_aec1775b7b0f6b42f0a5456a3e0568179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec1775b7b0f6b42f0a5456a3e0568179">_patch_size</a></td></tr>
+<tr class="separator:aec1775b7b0f6b42f0a5456a3e0568179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f019b4fea8640ca328cc2728edcdf8" id="r_af9f019b4fea8640ca328cc2728edcdf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9f019b4fea8640ca328cc2728edcdf8">_domain_r</a></td></tr>
+<tr class="separator:af9f019b4fea8640ca328cc2728edcdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d4cd5a97821e8486e2be4c165bdbd0" id="r_ad0d4cd5a97821e8486e2be4c165bdbd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d4cd5a97821e8486e2be4c165bdbd0">_fused_compute_kernel_call_cpu</a></td></tr>
+<tr class="separator:ad0d4cd5a97821e8486e2be4c165bdbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac424b541c0bc38c6d48ef6531dbe0934" id="r_ac424b541c0bc38c6d48ef6531dbe0934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac424b541c0bc38c6d48ef6531dbe0934">_flux_implementation</a></td></tr>
+<tr class="separator:ac424b541c0bc38c6d48ef6531dbe0934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579c408520a502b318b69d7c4f9a140c" id="r_a579c408520a502b318b69d7c4f9a140c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a579c408520a502b318b69d7c4f9a140c">_ncp_implementation</a></td></tr>
+<tr class="separator:a579c408520a502b318b69d7c4f9a140c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c660d98ff36a28f39668331d043f8c5" id="r_a1c660d98ff36a28f39668331d043f8c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c660d98ff36a28f39668331d043f8c5">_source_term_implementation</a></td></tr>
+<tr class="separator:a1c660d98ff36a28f39668331d043f8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973f260b655a159bd47f857fc4fd0b66" id="r_a973f260b655a159bd47f857fc4fd0b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a973f260b655a159bd47f857fc4fd0b66">_auxiliary_variables</a></td></tr>
+<tr class="separator:a973f260b655a159bd47f857fc4fd0b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff7fc94ce0cde9827a5ce274db47202" id="r_a4ff7fc94ce0cde9827a5ce274db47202"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ff7fc94ce0cde9827a5ce274db47202">_preprocess_reconstructed_patch</a></td></tr>
+<tr class="separator:a4ff7fc94ce0cde9827a5ce274db47202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00087">87</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a347984b24b6f071eda5b28ddbfa672eb" name="a347984b24b6f071eda5b28ddbfa672eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347984b24b6f071eda5b28ddbfa672eb">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>patch_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>min_mesh_unit_h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>max_mesh_unit_h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cfl</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>domain_r</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>KOSig</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00088">88</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a285b6620db1993f11373aa2e843c98fc" name="a285b6620db1993f11373aa2e843c98fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285b6620db1993f11373aa2e843c98fc">&#9670;&#160;</a></span>add_adm_constriants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver.add_adm_constriants </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@add adm constriants (Hamilton and Momentum) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00240">240</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+</div>
+</div>
+<a id="ad005fe3a55e9495c5fd634867c28e4db" name="ad005fe3a55e9495c5fd634867c28e4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad005fe3a55e9495c5fd634867c28e4db">&#9670;&#160;</a></span>add_Psi4W()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver.add_Psi4W </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add psi4 writer </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00256">256</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00244">ccz4.CCZ4Solver._auxiliary_variables</a>, <a class="el" href="../../d7/d30/mgccz4_8py_source.html#l00141">mgccz4.MGCCZ4Solver._auxiliary_variables</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00346">SBH.FD4SolverWithLimiter._auxiliary_variables</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00667">SBH.FD4SolverWithoutLimiter._auxiliary_variables</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00123">exahype2.solvers.aderdg.ADERDG.ADERDG._auxiliary_variables</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00238">exahype2.solvers.fv.FV.FV._auxiliary_variables</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00307">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._auxiliary_variables</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00164">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._auxiliary_variables</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00112">ccz4.CCZ4Solver._my_user_includes</a>, <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00122">gauge-wave-fv.CCZ4Solver._my_user_includes</a>, <a class="el" href="../../db/d00/performance__testbed_8py_source.html#l00312">performance_testbed.CCZ4Solver._my_user_includes</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00611">exahype2.solvers.fv.FV.FV._patch</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00485">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._patch</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00250">ccz4.CCZ4Solver._preprocess_reconstructed_patch</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00281">exahype2.solvers.aderdg.ADERDG.ADERDG._preprocess_reconstructed_patch</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00284">exahype2.solvers.fv.FV.FV._preprocess_reconstructed_patch</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00213">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._preprocess_reconstructed_patch</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00228">ccz4.CCZ4Solver.create_action_sets()</a>, <a class="el" href="../../db/d00/performance__testbed_8py_source.html#l00466">performance_testbed.CCZ4Solver.create_action_sets()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00179">SBH.Limiter.create_action_sets()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00291">SBH.FD4SolverWithLimiter.create_action_sets()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00612">SBH.FD4SolverWithoutLimiter.create_action_sets()</a>, <a class="el" href="../../df/d96/SBH_8py_source.html#l00753">SBH.FVSolver.create_action_sets()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00557">exahype2.solvers.aderdg.ADERDG.ADERDG.create_action_sets()</a>, <a class="el" href="../../db/d03/aderdg_2SingleSweep_8py_source.html#l00125">exahype2.solvers.aderdg.SingleSweep.SingleSweep.create_action_sets()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00188">exahype2.solvers.elliptic.AMRMarker.AMRMarker.create_action_sets()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00172">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.create_action_sets()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00784">exahype2.solvers.fv.FV.FV.create_action_sets()</a>, <a class="el" href="../../d2/dd3/fv_2SingleSweep_8py_source.html#l00106">exahype2.solvers.fv.SingleSweep.SingleSweep.create_action_sets()</a>, <a class="el" href="../../d5/d03/PosterioriLimiting_8py_source.html#l00157">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting.create_action_sets()</a>, <a class="el" href="../../d3/d0f/StaticLimiting_8py_source.html#l00109">exahype2.solvers.limiting.StaticLimiting.StaticLimiting.create_action_sets()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00858">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.create_action_sets()</a>, <a class="el" href="../../da/db8/rkdg_2SeparateSweeps_8py_source.html#l00110">exahype2.solvers.rkdg.SeparateSweeps.SeparateSweeps.create_action_sets()</a>, <a class="el" href="../../d0/deb/rkdg_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00156">exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.create_action_sets()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00682">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.create_action_sets()</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00265">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.OneSweepPerRungeKuttaStep.create_action_sets()</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00431">exahype2.solvers.rkfd.SeparateSweeps.SeparateSweeps.create_action_sets()</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00571">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.create_action_sets()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00387">exahype2.solvers.aderdg.ADERDG.ADERDG.create_data_structures()</a>, <a class="el" href="../../db/d03/aderdg_2SingleSweep_8py_source.html#l00042">exahype2.solvers.aderdg.SingleSweep.SingleSweep.create_data_structures()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00166">exahype2.solvers.elliptic.AMRMarker.AMRMarker.create_data_structures()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00154">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.create_data_structures()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00565">exahype2.solvers.fv.FV.FV.create_data_structures()</a>, <a class="el" href="../../d2/dd3/fv_2SingleSweep_8py_source.html#l00059">exahype2.solvers.fv.SingleSweep.SingleSweep.create_data_structures()</a>, <a class="el" href="../../d5/d03/PosterioriLimiting_8py_source.html#l00091">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting.create_data_structures()</a>, <a class="el" href="../../d3/d0f/StaticLimiting_8py_source.html#l00074">exahype2.solvers.limiting.StaticLimiting.StaticLimiting.create_data_structures()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00538">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.create_data_structures()</a>, <a class="el" href="../../da/db8/rkdg_2SeparateSweeps_8py_source.html#l00087">exahype2.solvers.rkdg.SeparateSweeps.SeparateSweeps.create_data_structures()</a>, <a class="el" href="../../d0/deb/rkdg_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00146">exahype2.solvers.rkdg.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.create_data_structures()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00440">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.create_data_structures()</a>, <a class="el" href="../../d2/d64/OneSweepPerRungeKuttaStep_8py_source.html#l00233">exahype2.solvers.rkfd.OneSweepPerRungeKuttaStep.OneSweepPerRungeKuttaStep.create_data_structures()</a>, <a class="el" href="../../d2/dfa/rkfd_2SeparateSweeps_8py_source.html#l00333">exahype2.solvers.rkfd.SeparateSweeps.SeparateSweeps.create_data_structures()</a>, <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00452">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.create_data_structures()</a>, and <a class="el" href="../../de/d6d/CCZ4Helper_8py_source.html#l00080">CCZ4Helper.get_body_of_Psi_Calc()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d26/classccz4_1_1CCZ4Solver_ad005fe3a55e9495c5fd634867c28e4db_cgraph.png" border="0" usemap="#ad3/d26/classccz4_1_1CCZ4Solver_ad005fe3a55e9495c5fd634867c28e4db_cgraph" alt=""/></div>
+<map name="ad3/d26/classccz4_1_1CCZ4Solver_ad005fe3a55e9495c5fd634867c28e4db_cgraph" id="ad3/d26/classccz4_1_1CCZ4Solver_ad005fe3a55e9495c5fd634867c28e4db_cgraph">
+<area shape="rect" title="add psi4 writer" alt="" coords="5,1481,164,1521"/>
+<area shape="rect" href="../../d3/d26/classccz4_1_1CCZ4Solver.html#a2bb3ab836ba19fca04cd863334ea1fd0" title=" " alt="" coords="288,5,463,45"/>
+<area shape="poly" title=" " alt="" coords="84,1481,90,1204,110,748,127,512,148,303,161,215,176,143,192,89,210,56,239,34,273,23,275,28,241,39,214,59,197,91,181,144,166,216,153,303,132,513,116,748,96,1204,89,1481"/>
+<area shape="rect" href="../../d8/d02/classperformance__testbed_1_1CCZ4Solver.html#ac986ea915d8d638cd8ce3d2eb36fdb28" title=" " alt="" coords="275,69,475,109"/>
+<area shape="poly" title=" " alt="" coords="84,1481,91,1214,112,779,129,555,150,355,163,272,177,203,192,151,210,120,233,101,261,90,263,95,236,106,214,123,197,153,182,204,168,273,155,356,134,555,117,780,97,1215,89,1481"/>
+<area shape="rect" href="../../d9/d2b/classSBH_1_1Limiter.html#a047c44d499607d33f41f51ca323cbda7" title="Not really a lot of things to do here." alt="" coords="304,157,447,197"/>
+<area shape="poly" title=" " alt="" coords="84,1481,93,1230,115,823,132,614,153,427,179,285,193,237,210,208,227,193,247,183,290,172,291,177,249,188,230,197,214,211,198,239,184,287,158,428,137,614,120,824,98,1231,89,1481"/>
+<area shape="rect" href="../../de/d47/classSBH_1_1FD4SolverWithLimiter.html#a96eec45b50fb0d8c207bc621036c2798" title="Tailor action set behaviour." alt="" coords="255,245,495,285"/>
+<area shape="poly" title=" " alt="" coords="84,1481,94,1245,117,867,134,672,155,499,180,368,194,323,210,296,225,283,242,273,244,278,228,287,214,299,199,325,185,369,161,500,140,673,123,867,99,1246,89,1481"/>
+<area shape="rect" href="../../d4/d57/classSBH_1_1FD4SolverWithoutLimiter.html#a1a087680a2bb54c40da418954416f120" title="Tailor action set behaviour." alt="" coords="245,333,506,373"/>
+<area shape="poly" title=" " alt="" coords="84,1481,96,1261,120,911,137,731,158,571,182,450,195,409,210,384,231,367,234,371,214,387,200,411,187,451,163,572,143,732,125,911,101,1261,90,1481"/>
+<area shape="rect" href="../../d1/de2/classSBH_1_1FVSolver.html#a388b84bb28a9b24428c427a86cdf8e73" title="Tailor action set behaviour." alt="" coords="298,421,453,461"/>
+<area shape="poly" title=" " alt="" coords="84,1481,97,1276,123,954,140,789,161,643,184,532,196,495,210,472,226,458,244,448,284,437,285,442,246,453,229,462,214,475,201,497,189,534,166,644,146,790,128,955,102,1277,90,1481"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#aec023147e8b9a0eaaef91b5a7ed328c2" title=" " alt="" coords="243,485,507,525"/>
+<area shape="poly" title=" " alt="" coords="83,1481,84,1302,88,1167,97,1019,112,871,135,733,149,673,167,620,187,576,210,542,230,526,233,530,214,546,191,578,172,622,154,674,140,734,117,871,102,1020,93,1168,89,1302,88,1481"/>
+<area shape="rect" href="../../df/dbf/classexahype2_1_1solvers_1_1aderdg_1_1SingleSweep_1_1SingleSweep.html#a9eec4b12215faa0dc8f0bd9a118dee7f" title=" " alt="" coords="257,3027,494,3082"/>
+<area shape="poly" title=" " alt="" coords="89,1522,97,1805,119,2273,136,2516,157,2732,183,2898,198,2955,214,2989,229,3005,247,3019,244,3023,226,3009,210,2992,193,2957,178,2900,151,2733,130,2516,114,2273,92,1805,84,1522"/>
+<area shape="rect" href="../../db/d1c/classexahype2_1_1solvers_1_1elliptic_1_1AMRMarker_1_1AMRMarker.html#a64d938c38a29d6ae71245dc0ec815269" title="Overwrite in subclasses if you wanna create different action sets." alt="" coords="266,601,485,655"/>
+<area shape="poly" title=" " alt="" coords="83,1481,88,1323,94,1206,104,1078,120,949,142,831,172,733,190,695,210,666,229,650,252,638,254,643,232,654,214,670,194,698,177,735,147,832,125,950,110,1078,99,1206,93,1323,89,1481"/>
+<area shape="rect" href="../../d8/d15/classexahype2_1_1solvers_1_1elliptic_1_1ConstrainedPoissonEquationForMarkerOnCells_1_1Constrained4b89f4e66e44519ddbf9dd31e73bb64.html#a84bf37bc21a35751d0374275f94f4e1b" title="Overwrite in subclasses if you wanna create different action sets." alt="" coords="212,680,539,749"/>
+<area shape="poly" title=" " alt="" coords="84,1481,92,1341,112,1126,129,1014,150,911,177,825,192,792,210,766,220,756,224,760,214,770,197,795,182,827,155,912,134,1015,118,1127,97,1341,89,1481"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a31166db995372e175a0989aaa7b6aa9b" title="Create all the action sets." alt="" coords="257,2939,493,2979"/>
+<area shape="poly" title=" " alt="" coords="89,1521,96,1795,116,2245,132,2477,154,2684,167,2770,181,2841,197,2894,214,2925,229,2938,246,2947,243,2952,226,2942,210,2928,192,2896,176,2842,161,2771,149,2684,127,2478,111,2245,91,1795,84,1521"/>
+<area shape="rect" href="../../d1/d4a/classexahype2_1_1solvers_1_1fv_1_1SingleSweep_1_1SingleSweep.html#aea6207a1ca96fdd52da1995f2f75633c" title="Call superclass routine and then reconfigure the update cell call." alt="" coords="277,849,474,903"/>
+<area shape="poly" title=" " alt="" coords="85,1481,96,1365,119,1194,136,1106,156,1025,181,958,195,932,210,913,234,894,262,883,264,887,237,899,214,917,199,935,186,960,162,1026,141,1107,124,1195,101,1366,90,1482"/>
+<area shape="rect" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html#a3de6f9eb35d4082172ef6288a068d064" title=" " alt="" coords="225,927,526,982"/>
+<area shape="poly" title=" " alt="" coords="86,1481,99,1378,124,1231,141,1156,161,1087,184,1030,210,992,213,989,217,993,214,995,189,1032,166,1088,146,1157,129,1232,104,1379,91,1482"/>
+<area shape="rect" href="../../d8/d18/classexahype2_1_1solvers_1_1limiting_1_1StaticLimiting_1_1StaticLimiting.html#a329acc8c52f18e9cecb0cb3ef0ab4f24" title=" " alt="" coords="250,1006,501,1061"/>
+<area shape="poly" title=" " alt="" coords="83,1481,85,1404,90,1352,100,1294,116,1233,138,1174,169,1118,210,1070,236,1052,239,1056,214,1074,174,1121,143,1176,121,1235,105,1295,96,1352,90,1405,88,1481"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a8683a5d7ef91a49bdef03cc672e2c858" title="Overwrite in subclasses if you wanna create different action sets." alt="" coords="265,1085,485,1139"/>
+<area shape="poly" title=" " alt="" coords="85,1481,92,1418,112,1331,128,1284,150,1238,177,1195,210,1157,230,1142,251,1131,254,1135,232,1146,214,1161,181,1198,154,1240,133,1286,117,1333,98,1419,90,1482"/>
+<area shape="rect" href="../../dd/dd2/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweeps_1_1SeparateSweeps.html#ad81ea419bf35d96f780f87607a3982f1" title="We invoke the superclass which creates all the action sets, and then we set the appropriate guards." alt="" coords="259,2217,491,2271"/>
+<area shape="poly" title=" " alt="" coords="90,1521,100,1652,122,1849,139,1952,159,2046,185,2125,199,2155,214,2178,231,2195,250,2208,247,2213,227,2199,210,2182,194,2158,180,2127,154,2048,134,1953,117,1850,94,1653,84,1522"/>
+<area shape="rect" href="../../db/d7c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking.html#ae8f2d026eaa5e0c78c4038ecb5759995" title="Call superclass routine and then reconfigure the update cell call." alt="" coords="243,1239,507,1308"/>
+<area shape="poly" title=" " alt="" coords="92,1480,109,1445,135,1401,169,1356,210,1318,229,1306,232,1311,214,1322,173,1360,139,1404,114,1447,97,1482"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#ad413aafb12c08d9d6edd855ec41a710e" title="Create required action sets." alt="" coords="257,2845,493,2915"/>
+<area shape="poly" title=" " alt="" coords="89,1521,98,1779,121,2197,138,2413,159,2606,184,2753,199,2802,214,2832,229,2846,246,2857,243,2861,225,2850,210,2835,194,2804,179,2754,153,2606,132,2414,115,2198,93,1779,84,1522"/>
+<area shape="rect" href="../../db/d18/classexahype2_1_1solvers_1_1rkfd_1_1OneSweepPerRungeKuttaStep_1_1OneSweepPerRungeKuttaStep.html#a0635ee70413c7f8c7fd3923df2818bae" title="Call superclass routine and then reconfigure the update cell call." alt="" coords="239,1474,512,1529"/>
+<area shape="poly" title=" " alt="" coords="164,1499,225,1499,225,1504,164,1504"/>
+<area shape="rect" href="../../d5/d06/classexahype2_1_1solvers_1_1rkfd_1_1SeparateSweeps_1_1SeparateSweeps.html#acc93d1a4a68ca9581d4fa1cd54b7a8c4" title="Create required action sets." alt="" coords="261,1577,490,1631"/>
+<area shape="poly" title=" " alt="" coords="143,1519,285,1570,283,1575,141,1524"/>
+<area shape="rect" href="../../d5/d8d/classexahype2_1_1solvers_1_1rkfd_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking.html#ae849edfbfa19b2fdb0d1a462fbbbb7db" title="Call superclass routine and then reconfigure the update cell call." alt="" coords="243,1680,507,1749"/>
+<area shape="poly" title=" " alt="" coords="102,1520,148,1578,179,1611,214,1640,267,1672,264,1676,210,1645,175,1615,144,1582,98,1523"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#a313dd5f8217fe79e0cec690387305ed3" title=" " alt="" coords="266,1774,485,1829"/>
+<area shape="poly" title=" " alt="" coords="92,1521,104,1570,127,1635,163,1702,186,1733,214,1759,233,1772,254,1782,252,1787,230,1777,210,1763,182,1736,159,1705,122,1637,99,1571,87,1522"/>
+<area shape="rect" href="../../df/dbf/classexahype2_1_1solvers_1_1aderdg_1_1SingleSweep_1_1SingleSweep.html#a9378adbeaf541a13ce5bb49973593010" title=" " alt="" coords="257,1877,494,1931"/>
+<area shape="poly" title=" " alt="" coords="90,1521,100,1582,120,1666,136,1712,157,1757,183,1800,214,1838,234,1855,256,1868,254,1873,231,1859,210,1842,178,1803,152,1760,131,1714,115,1668,94,1583,85,1522"/>
+<area shape="rect" href="../../db/d1c/classexahype2_1_1solvers_1_1elliptic_1_1AMRMarker_1_1AMRMarker.html#a8c0433de8ca936e3992e6280a6f82571" title=" " alt="" coords="266,1955,485,2010"/>
+<area shape="poly" title=" " alt="" coords="88,1521,90,1600,95,1654,104,1713,120,1774,142,1835,173,1892,214,1941,232,1955,254,1966,252,1970,230,1960,210,1945,169,1895,137,1837,114,1776,99,1714,89,1654,84,1600,83,1522"/>
+<area shape="rect" href="../../d8/d15/classexahype2_1_1solvers_1_1elliptic_1_1ConstrainedPoissonEquationForMarkerOnCells_1_1Constrained4b89f4e66e44519ddbf9dd31e73bb64.html#aa93d68f2b3bf3bdbb2de5125f45a480a" title="Create cell and face data structures required." alt="" coords="212,2035,539,2104"/>
+<area shape="poly" title=" " alt="" coords="91,1522,104,1626,130,1776,147,1853,167,1923,189,1981,214,2020,218,2024,215,2028,210,2023,184,1983,161,1925,142,1854,125,1777,99,1626,86,1522"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a175d848aeb1134af1bb47d8f726e3d33" title="Create data structures required by all Finite Volume solvers." alt="" coords="257,2128,493,2168"/>
+<area shape="poly" title=" " alt="" coords="90,1522,100,1643,122,1822,138,1915,159,1999,184,2068,199,2095,214,2114,246,2135,243,2140,210,2118,194,2098,179,2071,154,2001,133,1916,117,1823,94,1643,85,1522"/>
+<area shape="rect" href="../../d1/d4a/classexahype2_1_1solvers_1_1fv_1_1SingleSweep_1_1SingleSweep.html#a01b690b5961db27ab57c1452a8bece60" title="Call the superclass&#39; create_data_structures() to ensure that all the data structures are in place,..." alt="" coords="619,1867,817,1922"/>
+<area shape="poly" title=" " alt="" coords="84,1481,89,1345,108,1141,124,1035,145,939,174,861,191,831,210,810,239,794,279,783,326,776,377,773,427,775,474,782,513,793,541,810,555,834,564,874,575,991,576,1144,573,1315,567,1642,573,1763,579,1804,589,1829,602,1845,618,1858,615,1862,598,1849,584,1832,574,1805,567,1763,562,1643,567,1315,571,1144,569,991,559,875,550,836,537,814,511,798,473,787,427,780,377,778,326,781,280,788,241,799,214,814,195,835,179,863,150,940,129,1036,113,1141,95,1345,89,1481"/>
+<area shape="rect" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html#a96c235abe5ba1870f368eb90e4961260" title="This will serve as a face marker to communicate with neighbouring cells whether a given cell is troub..." alt="" coords="225,2295,526,2350"/>
+<area shape="poly" title=" " alt="" coords="89,1521,95,1670,113,1900,129,2020,150,2130,179,2220,195,2255,214,2281,218,2285,214,2288,210,2284,191,2258,174,2222,145,2131,123,2020,107,1900,89,1671,84,1521"/>
+<area shape="rect" href="../../d8/d18/classexahype2_1_1solvers_1_1limiting_1_1StaticLimiting_1_1StaticLimiting.html#a08d9f3f89f7f4fe9d1aadfa460011a76" title="This will serve as a face marker to communicate with neighbouring cells whether a given cell is troub..." alt="" coords="250,2374,501,2429"/>
+<area shape="poly" title=" " alt="" coords="89,1521,92,1684,98,1804,108,1937,124,2069,146,2192,160,2245,176,2292,194,2331,214,2359,239,2379,236,2383,210,2363,189,2333,171,2294,154,2247,140,2193,118,2070,103,1937,93,1805,87,1684,83,1521"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a72f2a9d1949f7bcc8c705602b6758711" title="Recall in subclasses if you wanna change the number of unknowns or auxiliary variables." alt="" coords="265,2453,485,2507"/>
+<area shape="poly" title=" " alt="" coords="88,1522,90,1697,94,1829,103,1974,119,2119,141,2254,156,2312,173,2364,192,2406,214,2438,232,2454,254,2465,251,2470,229,2458,210,2442,187,2409,168,2366,151,2314,136,2255,113,2120,98,1974,89,1829,84,1697,83,1522"/>
+<area shape="rect" href="../../dd/dd2/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweeps_1_1SeparateSweeps.html#ab8f7c15fa6b70fcf87d5ea44225e4407" title="First, call the superclass&#39; create_data_structures() to ensure that all the data structures are in pl..." alt="" coords="259,2555,491,2610"/>
+<area shape="poly" title=" " alt="" coords="88,1521,90,1708,95,1850,104,2007,119,2165,141,2311,156,2376,173,2433,192,2481,214,2517,230,2533,248,2547,245,2551,226,2537,210,2520,187,2483,168,2435,151,2378,136,2312,113,2165,98,2007,89,1850,85,1708,83,1521"/>
+<area shape="rect" href="../../db/d7c/classexahype2_1_1solvers_1_1rkdg_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking.html#add95a2d382f2425911917a0855acb327" title="First, call the superclass&#39; create_data_structures() to ensure that all the data structures are in pl..." alt="" coords="243,2659,507,2728"/>
+<area shape="poly" title=" " alt="" coords="88,1521,88,1725,92,1880,100,2053,115,2228,138,2390,153,2462,170,2526,191,2579,214,2620,246,2649,242,2653,210,2623,186,2581,165,2528,147,2464,132,2391,109,2228,95,2053,86,1881,83,1725,83,1521"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#aabdc4b48dfcb0f7d15aae740a54135bd" title="Recall in subclasses if you wanna change the number of unknowns or auxiliary variables." alt="" coords="257,2752,493,2821"/>
+<area shape="poly" title=" " alt="" coords="89,1521,100,1762,123,2151,141,2351,161,2529,186,2665,200,2711,214,2738,229,2752,246,2763,243,2768,225,2757,210,2742,195,2713,181,2666,156,2530,135,2352,118,2151,94,1763,84,1522"/>
+<area shape="rect" href="../../db/d18/classexahype2_1_1solvers_1_1rkfd_1_1OneSweepPerRungeKuttaStep_1_1OneSweepPerRungeKuttaStep.html#a18f628af76408c10e931494bac5e1a06" title="Call the superclass&#39; create_data_structures() to ensure that all the data structures are in place,..." alt="" coords="587,1971,849,2040"/>
+<area shape="poly" title=" " alt="" coords="85,1481,92,1422,112,1344,128,1303,150,1264,177,1229,211,1200,240,1187,281,1176,328,1169,378,1166,428,1168,474,1173,513,1184,540,1201,560,1226,574,1260,582,1299,587,1344,586,1447,577,1558,567,1671,562,1777,563,1824,567,1867,576,1903,589,1932,616,1961,612,1964,584,1935,571,1905,562,1867,557,1825,556,1777,562,1671,572,1558,580,1446,581,1345,577,1300,569,1261,556,1229,537,1205,511,1189,473,1179,428,1173,378,1172,328,1175,282,1181,242,1192,213,1205,181,1233,154,1267,133,1306,117,1346,98,1423,90,1481"/>
+<area shape="rect" href="../../d5/d06/classexahype2_1_1solvers_1_1rkfd_1_1SeparateSweeps_1_1SeparateSweeps.html#acb84d68c6ad0adcab30606a84eef4784" title="Call the superclass&#39; create_data_structures() to ensure that all the data structures are in place,..." alt="" coords="603,1765,833,1819"/>
+<area shape="poly" title=" " alt="" coords="85,1481,98,1296,124,1009,141,863,161,735,184,638,197,605,210,586,238,570,278,559,325,552,375,550,426,552,473,559,512,570,540,586,573,623,601,673,625,736,645,807,663,887,678,973,699,1155,712,1338,718,1509,720,1750,715,1751,713,1509,707,1339,694,1155,672,973,658,888,640,809,620,737,596,676,568,626,537,590,510,575,472,564,425,557,375,555,325,557,279,564,241,575,214,590,201,608,189,639,167,736,146,864,129,1010,103,1296,90,1481"/>
+<area shape="rect" href="../../d5/d8d/classexahype2_1_1solvers_1_1rkfd_1_1SeparateSweepsWithEnclaveTasking_1_1SeparateSweepsWithEnclaveTasking.html#a64bdf8d0de9db1e1ec0121fb6e5a16b9" title="Call the superclass&#39; create_data_structures() to ensure that all the data structures are in place,..." alt="" coords="243,1356,507,1425"/>
+<area shape="poly" title=" " alt="" coords="120,1479,211,1435,231,1427,233,1432,213,1440,122,1484"/>
+<area shape="rect" href="../../d6/d69/namespaceCCZ4Helper.html#a8d65411214f158c65621706cab6cf771" title=" " alt="" coords="294,3107,457,3147"/>
+<area shape="poly" title=" " alt="" coords="89,1521,94,1824,111,2328,127,2589,149,2821,162,2918,178,2998,195,3058,214,3093,228,3105,244,3115,281,3126,280,3131,242,3120,225,3110,210,3096,190,3060,173,2999,157,2919,144,2822,122,2589,106,2328,88,1824,83,1522"/>
+<area shape="poly" title=" " alt="" coords="322,158,318,148,327,138,346,133,375,131,409,133,427,141,425,146,408,139,375,136,347,138,330,143,324,149,327,156"/>
+<area shape="poly" title=" " alt="" coords="322,246,318,236,327,226,346,221,375,219,409,221,427,229,425,234,408,227,375,224,347,226,330,231,324,237,327,244"/>
+<area shape="poly" title=" " alt="" coords="322,334,318,324,327,314,346,309,375,307,409,309,427,317,425,322,408,315,375,312,347,314,330,319,324,325,327,332"/>
+<area shape="poly" title=" " alt="" coords="322,422,318,412,327,402,346,397,375,395,409,397,427,405,425,410,408,403,375,400,347,402,330,407,324,413,327,420"/>
+<area shape="poly" title=" " alt="" coords="319,3027,320,3017,330,3008,348,3003,375,3001,408,3004,426,3012,424,3017,407,3009,375,3006,349,3008,332,3013,324,3019,325,3027"/>
+<area shape="rect" href="../../d9/d2b/classSBH_1_1Limiter.html#a4206926ccbbd33e8bbfe1ce2dfd7b9c3" title="Mask out exterior cells." alt="" coords="625,2867,811,2907"/>
+<area shape="poly" title=" " alt="" coords="471,3025,505,3009,537,2989,552,2973,560,2956,569,2940,585,2923,611,2909,614,2913,588,2927,573,2943,565,2959,556,2976,540,2993,508,3014,473,3030"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#ad5ced8cca213d4ab0606900fc288fd10" title=" " alt="" coords="612,2295,824,2350"/>
+<area shape="poly" title=" " alt="" coords="492,3025,517,3009,537,2989,549,2965,558,2935,566,2860,565,2771,558,2676,552,2580,551,2491,560,2416,570,2385,585,2361,598,2348,602,2352,589,2364,575,2388,566,2417,557,2491,558,2580,564,2675,570,2771,572,2861,564,2936,554,2967,541,2992,520,3014,495,3029"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#a3c55dd9e339ada82b2af70d22a0b7197" title=" " alt="" coords="957,2175,1164,2230"/>
+<area shape="poly" title=" " alt="" coords="494,3058,595,3059,700,3054,748,3048,790,3039,824,3027,847,3011,866,2986,878,2952,886,2912,889,2866,887,2762,878,2648,868,2534,863,2427,865,2379,870,2336,880,2299,895,2269,917,2246,943,2229,946,2234,920,2250,900,2272,885,2301,875,2337,870,2379,868,2427,873,2533,883,2648,893,2762,895,2866,891,2913,883,2954,870,2988,851,3015,827,3032,792,3044,749,3054,701,3060,595,3065,494,3064"/>
+<area shape="rect" href="../../db/d1c/classexahype2_1_1solvers_1_1elliptic_1_1AMRMarker_1_1AMRMarker.html#a8677dd05452df9cd26ba1027af9d8ac0" title=" " alt="" coords="961,2074,1160,2129"/>
+<area shape="poly" title=" " alt="" coords="494,3031,721,2989,848,2960,866,2932,878,2895,886,2851,889,2801,886,2689,875,2566,864,2444,859,2329,861,2278,867,2232,878,2193,895,2161,919,2138,947,2121,950,2126,922,2142,899,2164,883,2195,872,2233,866,2279,864,2329,869,2443,880,2566,891,2688,894,2801,891,2852,883,2896,870,2934,851,2965,722,2994,495,3036"/>
+<area shape="rect" href="../../d8/d15/classexahype2_1_1solvers_1_1elliptic_1_1ConstrainedPoissonEquationForMarkerOnCells_1_1Constrained4b89f4e66e44519ddbf9dd31e73bb64.html#abd6bf1efa04d2ad4ee17801f69c62817" title=" " alt="" coords="897,2283,1224,2352"/>
+<area shape="poly" title=" " alt="" coords="494,3072,595,3085,699,3091,747,3090,790,3085,824,3076,848,3062,865,3039,877,3008,885,2971,888,2928,886,2830,877,2722,867,2614,863,2513,864,2468,870,2428,880,2394,895,2366,901,2360,905,2363,900,2370,885,2396,875,2429,870,2469,868,2513,872,2614,882,2722,892,2829,894,2928,890,2971,883,3009,870,3041,851,3066,826,3081,791,3090,748,3095,699,3096,594,3090,494,3077"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a7e26a4ec9f7d405fb284f6b28a805bb3" title=" " alt="" coords="953,2380,1169,2420"/>
+<area shape="poly" title=" " alt="" coords="495,3079,540,3092,563,3103,587,3112,664,3132,726,3147,755,3149,784,3145,815,3133,848,3113,868,3093,888,3065,924,2990,957,2895,985,2790,1028,2583,1052,2433,1057,2434,1033,2584,990,2792,962,2897,929,2992,892,3068,872,3096,851,3117,817,3138,786,3150,755,3154,725,3152,662,3137,586,3117,561,3108,538,3097,493,3084"/>
+<area shape="rect" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html#ac1233be42cee9a97c9245518dd68282c" title=" " alt="" coords="920,1985,1201,2039"/>
+<area shape="poly" title=" " alt="" coords="447,3025,538,2988,586,2967,627,2958,665,2956,731,2962,762,2962,790,2957,819,2943,847,2917,867,2886,880,2846,888,2799,891,2745,886,2624,874,2493,861,2361,855,2238,857,2184,864,2135,876,2093,895,2060,909,2046,912,2050,899,2063,881,2095,869,2136,863,2184,860,2238,866,2360,879,2492,891,2624,896,2745,893,2799,885,2847,872,2888,851,2920,822,2947,792,2962,762,2967,731,2967,665,2962,628,2963,587,2972,540,2993,449,3030"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a660157c8d2cf77d03a96ab024c7a4472" title="Extend the guard via ands only." alt="" coords="605,2519,831,2559"/>
+<area shape="poly" title=" " alt="" coords="490,3025,515,3009,537,2989,561,2949,572,2911,574,2874,570,2838,564,2800,562,2760,567,2717,584,2671,604,2639,627,2611,676,2565,680,2569,631,2614,608,2643,589,2673,573,2719,567,2760,570,2799,575,2837,579,2874,577,2912,566,2951,541,2992,519,3014,492,3030"/>
+<area shape="rect" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html#a3c2d282df071626f7f4e17c998c3d882" title=" " alt="" coords="588,2685,848,2739"/>
+<area shape="poly" title=" " alt="" coords="488,3025,515,3009,537,2989,555,2959,563,2929,563,2899,559,2870,555,2840,555,2810,564,2780,585,2749,587,2747,591,2750,589,2752,569,2782,561,2811,560,2840,564,2869,568,2899,568,2930,560,2961,541,2992,518,3014,491,3029"/>
+<area shape="rect" href="../../d8/d18/classexahype2_1_1solvers_1_1limiting_1_1StaticLimiting_1_1StaticLimiting.html#ac6e6e3331b3f4eb2b635eb0a27f33a0e" title=" " alt="" coords="605,2763,831,2818"/>
+<area shape="poly" title=" " alt="" coords="485,3025,513,3009,537,2989,551,2969,557,2950,559,2910,562,2870,569,2849,585,2829,592,2822,595,2826,589,2832,574,2852,567,2871,565,2910,563,2951,555,2971,541,2992,516,3014,487,3030"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a217b46f3fff496d8c74e6a06ff0e892c" title="Extend the guard via ands only." alt="" coords="609,2217,827,2271"/>
+<area shape="poly" title=" " alt="" coords="492,3025,517,3009,537,2989,551,2962,561,2928,567,2888,569,2844,566,2743,558,2635,550,2527,548,2427,551,2383,558,2343,568,2308,585,2281,595,2270,599,2274,589,2284,573,2311,563,2344,556,2383,553,2427,555,2527,563,2635,571,2743,574,2844,572,2889,566,2929,556,2964,541,2992,520,3014,495,3029"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a187cdc5a9879831ee48f77fdf036fd52" title="Extend the guard via ands only." alt="" coords="605,2375,831,2444"/>
+<area shape="poly" title=" " alt="" coords="491,3025,516,3009,537,2989,557,2958,571,2927,580,2898,584,2869,580,2812,569,2755,557,2697,550,2638,551,2606,557,2574,568,2540,584,2505,608,2475,637,2450,640,2454,612,2478,589,2508,573,2542,562,2575,557,2607,555,2637,562,2697,574,2754,586,2811,589,2869,585,2899,576,2929,562,2960,541,2992,520,3014,494,3029"/>
+<area shape="poly" title=" " alt="" coords="656,2867,652,2857,662,2848,684,2842,718,2840,757,2843,779,2850,777,2855,756,2848,718,2845,685,2847,664,2852,657,2858,660,2865"/>
+<area shape="poly" title=" " alt="" coords="810,2293,848,2280,977,2233,979,2238,850,2285,812,2298"/>
+<area shape="poly" title=" " alt="" coords="823,2298,848,2281,860,2267,866,2252,871,2223,876,2192,883,2176,895,2161,920,2142,947,2127,950,2131,923,2146,899,2165,888,2179,881,2194,876,2224,871,2254,864,2269,851,2285,826,2302"/>
+<area shape="poly" title=" " alt="" coords="824,2318,883,2317,883,2323,824,2324"/>
+<area shape="poly" title=" " alt="" coords="825,2345,898,2361,956,2374,955,2380,897,2367,824,2350"/>
+<area shape="poly" title=" " alt="" coords="822,2300,847,2281,866,2254,873,2227,874,2200,871,2172,867,2144,868,2116,876,2088,895,2060,912,2045,916,2049,899,2063,881,2090,873,2117,873,2144,876,2172,879,2199,879,2228,871,2256,851,2285,826,2304"/>
+<area shape="poly" title=" " alt="" coords="767,2516,810,2490,830,2474,847,2454,861,2430,867,2407,869,2362,871,2317,879,2293,895,2269,918,2249,943,2233,946,2237,921,2253,899,2272,884,2295,876,2318,874,2362,873,2407,866,2432,852,2458,834,2478,813,2495,770,2521"/>
+<area shape="poly" title=" " alt="" coords="769,2516,812,2491,831,2474,847,2455,866,2415,873,2378,872,2342,867,2307,862,2272,862,2236,872,2199,895,2161,919,2139,947,2123,950,2128,922,2143,899,2164,877,2201,867,2236,867,2271,872,2306,877,2341,878,2378,871,2417,852,2457,835,2478,815,2495,772,2521"/>
+<area shape="poly" title=" " alt="" coords="820,2516,848,2498,860,2482,867,2467,871,2434,875,2400,882,2383,895,2366,905,2358,908,2362,899,2370,886,2386,880,2401,876,2434,872,2468,865,2485,851,2502,823,2521"/>
+<area shape="poly" title=" " alt="" coords="793,2516,848,2498,934,2461,1008,2424,1011,2429,936,2466,850,2502,795,2521"/>
+<area shape="poly" title=" " alt="" coords="771,2516,813,2491,832,2474,847,2455,862,2427,871,2401,878,2350,873,2302,863,2254,854,2207,853,2159,856,2135,864,2110,877,2085,895,2060,910,2045,914,2049,899,2063,881,2088,869,2112,861,2136,858,2159,860,2206,869,2253,879,2301,883,2350,876,2402,867,2430,852,2457,835,2478,816,2495,773,2521"/>
+<area shape="poly" title=" " alt="" coords="827,2228,943,2214,943,2219,828,2234"/>
+<area shape="poly" title=" " alt="" coords="776,2214,896,2160,970,2131,972,2136,898,2165,778,2219"/>
+<area shape="poly" title=" " alt="" coords="828,2265,885,2277,884,2282,827,2270"/>
+<area shape="poly" title=" " alt="" coords="829,2267,851,2281,868,2302,876,2323,882,2343,899,2362,941,2383,938,2388,896,2366,878,2346,870,2325,864,2304,848,2285,826,2271"/>
+<area shape="poly" title=" " alt="" coords="737,2215,802,2138,846,2095,896,2059,929,2042,932,2047,899,2064,850,2099,806,2141,741,2218"/>
+<area shape="poly" title=" " alt="" coords="829,2373,847,2359,864,2338,871,2315,878,2292,895,2269,922,2249,950,2233,953,2238,924,2253,899,2273,883,2295,876,2317,869,2340,851,2363,833,2377"/>
+<area shape="poly" title=" " alt="" coords="829,2375,847,2360,864,2335,871,2311,873,2287,871,2262,869,2238,870,2212,878,2187,895,2161,919,2140,947,2124,950,2129,922,2144,899,2164,883,2189,876,2213,874,2238,876,2262,878,2287,876,2312,869,2337,851,2363,833,2379"/>
+<area shape="poly" title=" " alt="" coords="830,2377,917,2353,918,2358,832,2382"/>
+<area shape="poly" title=" " alt="" coords="831,2404,939,2401,939,2406,831,2409"/>
+<area shape="poly" title=" " alt="" coords="829,2376,847,2360,870,2322,878,2285,876,2248,870,2211,863,2174,862,2136,871,2098,895,2060,911,2045,915,2049,899,2063,876,2100,867,2137,868,2173,875,2210,881,2247,883,2285,875,2324,851,2363,833,2380"/>
+<area shape="poly" title=" " alt="" coords="480,2936,538,2924,616,2907,617,2912,539,2929,481,2941"/>
+<area shape="poly" title=" " alt="" coords="492,2952,517,2941,537,2925,550,2905,559,2879,568,2813,567,2733,562,2646,556,2560,555,2479,563,2411,572,2383,585,2361,598,2348,602,2352,589,2364,576,2385,568,2412,560,2479,562,2559,567,2646,573,2733,573,2813,564,2880,555,2907,541,2928,519,2946,495,2957"/>
+<area shape="poly" title=" " alt="" coords="493,2951,516,2940,537,2925,559,2895,570,2866,573,2837,570,2807,565,2743,570,2708,584,2671,604,2640,628,2611,677,2565,680,2569,632,2615,608,2643,589,2673,575,2710,571,2743,576,2807,578,2837,576,2867,564,2898,541,2929,519,2945,495,2955"/>
+<area shape="poly" title=" " alt="" coords="493,2949,516,2939,537,2925,553,2904,561,2883,562,2862,561,2840,561,2794,568,2771,585,2749,588,2746,591,2750,589,2752,573,2774,566,2795,566,2840,568,2862,566,2885,558,2907,541,2929,519,2944,495,2954"/>
+<area shape="poly" title=" " alt="" coords="492,2947,516,2937,537,2925,548,2914,555,2903,561,2879,567,2854,574,2841,585,2829,592,2823,595,2828,588,2833,578,2844,572,2856,566,2880,560,2905,552,2917,540,2929,518,2942,494,2952"/>
+<area shape="poly" title=" " alt="" coords="493,2952,517,2941,537,2925,552,2902,562,2872,568,2837,571,2796,569,2705,562,2607,554,2507,552,2415,554,2374,560,2337,570,2306,585,2281,596,2270,599,2274,589,2284,575,2308,565,2339,560,2375,557,2415,560,2507,567,2606,575,2705,576,2797,573,2837,567,2873,556,2904,541,2928,520,2946,495,2957"/>
+<area shape="poly" title=" " alt="" coords="493,2952,517,2941,537,2925,547,2910,555,2891,564,2843,567,2785,566,2721,566,2597,571,2545,584,2505,608,2475,637,2450,640,2454,612,2479,589,2508,576,2546,571,2597,572,2721,572,2785,569,2844,560,2893,552,2913,541,2928,519,2945,495,2956"/>
+<area shape="poly" title=" " alt="" coords="319,849,320,838,330,829,348,824,375,822,408,825,426,833,424,838,407,830,375,827,349,829,332,834,324,841,325,849"/>
+<area shape="poly" title=" " alt="" coords="493,2250,519,2262,541,2281,554,2302,563,2328,572,2393,573,2470,569,2554,564,2637,563,2715,570,2781,578,2807,589,2828,605,2845,625,2858,622,2863,602,2849,584,2831,573,2809,565,2782,558,2715,559,2637,563,2553,567,2470,567,2393,558,2329,549,2304,537,2284,516,2267,491,2255"/>
+<area shape="poly" title=" " alt="" coords="492,2268,599,2293,598,2298,491,2273"/>
+<area shape="poly" title=" " alt="" coords="491,2215,586,2201,680,2195,775,2192,943,2194,943,2200,775,2198,680,2200,587,2207,492,2221"/>
+<area shape="poly" title=" " alt="" coords="490,2215,516,2199,537,2178,546,2161,553,2140,559,2085,558,2020,555,1949,552,1880,553,1816,563,1763,572,1742,585,1726,608,1713,639,1704,677,1698,718,1696,796,1704,828,1713,851,1726,869,1744,881,1763,889,1783,893,1803,891,1843,882,1884,872,1926,868,1967,875,2008,885,2029,899,2049,922,2069,950,2082,947,2087,919,2073,895,2052,880,2031,870,2010,863,1967,867,1925,877,1883,885,1842,887,1803,884,1784,877,1766,865,1748,848,1730,826,1718,795,1709,718,1702,677,1703,640,1709,610,1718,588,1730,577,1745,568,1764,559,1816,557,1879,560,1949,564,2019,564,2085,558,2141,551,2163,541,2182,519,2203,493,2219"/>
+<area shape="poly" title=" " alt="" coords="493,2253,518,2264,541,2281,557,2303,564,2326,563,2372,561,2395,563,2416,571,2435,588,2454,622,2476,654,2492,685,2500,715,2502,746,2498,778,2489,848,2454,859,2445,866,2435,872,2413,878,2390,885,2377,896,2366,908,2357,911,2361,899,2370,889,2381,883,2391,877,2415,871,2438,863,2449,851,2458,780,2494,747,2503,715,2508,684,2505,652,2497,619,2481,585,2458,566,2438,558,2417,556,2395,558,2372,559,2327,552,2305,537,2285,515,2269,491,2258"/>
+<area shape="poly" title=" " alt="" coords="493,2251,518,2263,541,2281,557,2302,567,2324,573,2345,575,2367,571,2411,561,2454,551,2496,548,2537,552,2557,559,2576,571,2594,588,2613,620,2636,651,2651,680,2658,711,2658,742,2652,774,2642,848,2612,880,2596,910,2575,964,2526,1007,2475,1038,2430,1042,2433,1012,2478,968,2530,914,2579,883,2600,850,2617,776,2647,743,2657,711,2663,680,2663,649,2656,618,2641,585,2617,567,2598,554,2578,546,2558,543,2537,546,2495,556,2453,566,2410,570,2367,568,2346,562,2325,552,2305,537,2285,516,2267,490,2256"/>
+<area shape="poly" title=" " alt="" coords="490,2215,516,2199,537,2178,547,2160,554,2137,560,2078,559,2008,554,1933,551,1858,552,1790,562,1733,571,1711,585,1694,617,1669,649,1653,680,1644,712,1643,744,1649,778,1659,851,1694,890,1720,925,1752,956,1789,982,1828,1023,1906,1049,1971,1044,1973,1019,1908,978,1831,952,1792,921,1756,887,1724,848,1698,776,1664,743,1654,712,1649,681,1650,651,1658,620,1673,589,1698,576,1714,567,1735,557,1790,556,1858,560,1933,564,2008,565,2078,559,2138,552,2162,541,2182,519,2203,493,2219"/>
+<area shape="poly" title=" " alt="" coords="493,2252,518,2264,541,2281,560,2308,569,2336,569,2363,566,2391,563,2418,563,2445,571,2472,589,2498,602,2509,598,2513,585,2502,566,2474,558,2446,557,2418,561,2390,564,2363,563,2337,555,2310,537,2285,515,2268,490,2257"/>
+<area shape="poly" title=" " alt="" coords="493,2251,519,2263,541,2281,559,2305,572,2329,579,2353,582,2377,579,2425,568,2472,557,2520,553,2567,555,2591,561,2615,572,2639,589,2664,599,2674,595,2678,585,2667,567,2642,556,2617,550,2592,547,2567,552,2519,563,2471,573,2424,577,2378,574,2354,567,2331,555,2308,537,2285,516,2267,491,2255"/>
+<area shape="poly" title=" " alt="" coords="493,2250,519,2262,541,2281,563,2311,577,2340,586,2370,588,2399,582,2458,567,2516,552,2574,545,2632,547,2661,555,2690,568,2719,589,2749,596,2757,592,2760,585,2752,563,2722,550,2691,542,2661,540,2631,547,2573,562,2514,577,2457,583,2399,580,2371,572,2342,558,2313,537,2284,516,2267,490,2255"/>
+<area shape="poly" title=" " alt="" coords="492,2241,595,2241,595,2247,492,2247"/>
+<area shape="poly" title=" " alt="" coords="492,2257,517,2267,540,2281,558,2300,566,2320,573,2340,589,2359,596,2365,593,2369,585,2363,568,2343,561,2322,553,2303,537,2285,515,2272,490,2262"/>
+<area shape="poly" title=" " alt="" coords="319,2217,320,2206,330,2197,348,2192,375,2190,408,2193,426,2201,424,2206,407,2198,375,2195,349,2197,332,2202,324,2209,325,2217"/>
+<area shape="poly" title=" " alt="" coords="318,1238,321,1228,332,1219,350,1214,375,1212,406,1215,425,1223,423,1228,405,1220,375,1217,351,1219,334,1224,326,1231,324,1239"/>
+<area shape="poly" title=" " alt="" coords="494,2880,612,2882,612,2887,494,2885"/>
+<area shape="poly" title=" " alt="" coords="492,2862,517,2850,537,2832,558,2802,571,2773,579,2743,582,2715,575,2657,561,2599,546,2541,539,2482,542,2452,549,2422,563,2392,585,2361,598,2348,602,2352,589,2364,568,2394,554,2424,547,2453,545,2482,551,2540,566,2598,581,2656,587,2715,584,2744,576,2774,562,2805,541,2835,520,2854,495,2867"/>
+<area shape="poly" title=" " alt="" coords="492,2860,516,2848,537,2831,552,2813,561,2794,566,2757,568,2717,573,2694,584,2671,605,2640,629,2612,678,2566,682,2570,633,2616,609,2643,589,2673,578,2696,573,2717,571,2757,566,2796,557,2815,541,2835,519,2852,495,2864"/>
+<area shape="poly" title=" " alt="" coords="492,2856,516,2845,537,2831,553,2812,560,2791,567,2770,585,2749,590,2745,593,2749,589,2753,572,2772,565,2793,558,2814,540,2835,518,2850,495,2861"/>
+<area shape="poly" title=" " alt="" coords="493,2847,599,2819,600,2824,494,2852"/>
+<area shape="poly" title=" " alt="" coords="492,2863,517,2850,537,2832,549,2811,557,2786,566,2721,565,2643,560,2558,555,2474,555,2395,563,2329,572,2302,585,2281,596,2270,599,2274,589,2284,577,2305,568,2330,560,2396,561,2474,565,2558,570,2642,571,2721,563,2787,554,2814,541,2835,520,2854,495,2867"/>
+<area shape="poly" title=" " alt="" coords="492,2862,516,2849,537,2832,563,2792,574,2753,574,2715,568,2676,561,2637,558,2595,564,2552,584,2505,608,2475,638,2450,641,2454,612,2479,589,2508,570,2553,564,2595,567,2636,573,2675,579,2714,579,2754,568,2794,541,2835,519,2854,495,2866"/>
+<area shape="poly" title=" " alt="" coords="319,1474,320,1464,330,1455,348,1449,375,1447,408,1450,426,1458,424,1463,407,1456,375,1453,349,1455,332,1460,324,1466,325,1474"/>
+<area shape="poly" title=" " alt="" coords="319,1577,320,1566,330,1557,348,1552,375,1550,408,1553,426,1561,424,1566,407,1558,375,1555,349,1557,332,1562,324,1569,325,1577"/>
+<area shape="poly" title=" " alt="" coords="318,1679,321,1669,332,1661,350,1655,375,1653,406,1656,425,1665,423,1669,405,1662,375,1659,351,1661,334,1665,326,1672,324,1680"/>
+<area shape="poly" title=" " alt="" coords="319,1877,320,1866,330,1857,348,1852,375,1850,408,1853,426,1861,424,1866,407,1858,375,1855,349,1857,332,1862,324,1869,325,1877"/>
+<area shape="poly" title=" " alt="" coords="818,1910,836,1920,851,1933,870,1959,878,1985,879,2011,877,2037,875,2062,876,2087,883,2113,899,2138,921,2157,946,2172,943,2177,917,2162,895,2142,878,2115,870,2088,869,2062,872,2036,874,2011,873,1986,865,1961,847,1936,833,1924,816,1914"/>
+<area shape="poly" title=" " alt="" coords="818,1912,851,1933,864,1947,871,1963,876,1992,881,2021,887,2035,899,2049,923,2066,949,2079,947,2083,920,2070,896,2053,883,2038,876,2023,871,1993,866,1964,859,1950,848,1937,815,1916"/>
+<area shape="poly" title=" " alt="" coords="818,1909,836,1919,851,1933,876,1972,886,2011,885,2049,879,2086,872,2124,870,2161,878,2200,899,2240,917,2258,937,2273,934,2278,913,2262,895,2243,873,2202,865,2162,867,2123,874,2085,880,2048,881,2011,871,1974,847,1936,833,1923,816,1913"/>
+<area shape="poly" title=" " alt="" coords="819,1909,836,1919,851,1933,871,1961,884,1989,891,2017,893,2044,887,2098,874,2152,861,2205,856,2257,858,2283,866,2310,879,2336,899,2362,918,2378,941,2389,938,2394,915,2382,895,2366,875,2339,861,2312,853,2285,850,2257,855,2204,869,2151,882,2097,888,2044,886,2017,879,1991,866,1964,847,1936,833,1923,816,1913"/>
+<area shape="poly" title=" " alt="" coords="811,1919,850,1932,976,1977,974,1982,848,1937,810,1925"/>
+<area shape="poly" title=" " alt="" coords="653,1867,653,1857,665,1848,686,1843,718,1841,756,1844,778,1852,776,1857,755,1849,718,1846,687,1848,667,1853,658,1859,658,1867"/>
+<area shape="poly" title=" " alt="" coords="319,2555,320,2545,330,2536,348,2531,375,2529,408,2532,426,2540,424,2545,407,2537,375,2534,349,2536,332,2541,324,2547,325,2555"/>
+<area shape="poly" title=" " alt="" coords="318,2658,321,2648,332,2639,350,2634,375,2632,406,2635,425,2643,423,2648,405,2640,375,2637,351,2639,334,2644,326,2651,324,2659"/>
+<area shape="poly" title=" " alt="" coords="824,2038,851,2057,868,2078,876,2099,883,2118,899,2138,921,2154,946,2167,944,2172,919,2159,896,2142,878,2121,871,2100,863,2080,848,2061,821,2042"/>
+<area shape="poly" title=" " alt="" coords="843,2038,950,2068,949,2073,842,2043"/>
+<area shape="poly" title=" " alt="" coords="778,2038,817,2069,851,2108,863,2127,869,2144,874,2177,880,2208,887,2223,899,2240,920,2258,943,2274,940,2278,917,2262,895,2243,882,2226,875,2209,869,2178,864,2146,858,2129,847,2111,813,2073,774,2042"/>
+<area shape="poly" title=" " alt="" coords="749,2039,800,2112,828,2157,852,2203,861,2227,865,2250,867,2290,874,2326,883,2344,899,2362,919,2376,941,2386,939,2391,916,2381,896,2366,879,2347,869,2328,862,2291,860,2251,856,2229,847,2205,823,2159,796,2115,744,2042"/>
+<area shape="poly" title=" " alt="" coords="850,2005,906,2006,906,2012,850,2011"/>
+<area shape="poly" title=" " alt="" coords="652,1970,655,1960,667,1951,688,1946,718,1944,755,1947,777,1956,775,1961,754,1952,718,1949,689,1951,670,1956,659,1963,657,1971"/>
+<area shape="poly" title=" " alt="" coords="835,1814,851,1829,877,1869,886,1908,884,1946,878,1984,871,2022,869,2060,876,2099,899,2138,920,2158,946,2174,943,2178,917,2163,895,2142,871,2101,863,2061,865,2022,872,1984,879,1946,881,1908,872,1871,847,1832,831,1818"/>
+<area shape="poly" title=" " alt="" coords="835,1815,851,1829,871,1857,879,1885,879,1913,876,1941,873,1968,874,1995,881,2022,899,2049,922,2068,950,2081,947,2086,919,2072,895,2052,876,2024,868,1996,868,1968,871,1940,874,1913,873,1886,866,1859,847,1832,831,1819"/>
+<area shape="poly" title=" " alt="" coords="835,1814,851,1829,870,1855,883,1882,891,1907,894,1933,891,1983,880,2033,869,2083,864,2134,866,2160,872,2186,883,2212,899,2240,916,2258,936,2273,933,2278,912,2262,895,2243,878,2215,867,2187,861,2161,858,2134,863,2083,875,2032,886,1983,889,1933,886,1909,878,1884,866,1858,847,1832,831,1818"/>
+<area shape="poly" title=" " alt="" coords="835,1814,851,1829,864,1850,872,1876,880,1940,880,2016,875,2099,870,2180,870,2256,878,2319,887,2343,899,2362,918,2378,940,2389,938,2394,915,2383,895,2366,882,2345,873,2320,865,2256,865,2180,869,2098,874,2016,875,1940,867,1877,859,1852,847,1832,831,1818"/>
+<area shape="poly" title=" " alt="" coords="827,1817,851,1828,903,1861,951,1900,1028,1973,1024,1977,948,1904,899,1866,848,1833,824,1822"/>
+<area shape="poly" title=" " alt="" coords="653,1765,653,1754,665,1745,686,1740,718,1738,756,1741,778,1749,776,1754,755,1746,718,1743,687,1745,667,1750,658,1757,658,1765"/>
+<area shape="poly" title=" " alt="" coords="509,1409,526,1421,541,1436,556,1471,567,1527,574,1600,577,1688,575,1898,568,2131,561,2365,559,2575,561,2664,566,2737,575,2793,589,2828,604,2845,624,2858,621,2863,601,2849,584,2831,570,2795,561,2738,556,2664,553,2575,556,2365,563,2131,570,1898,571,1688,568,1600,562,1527,551,1472,536,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,560,1468,572,1509,579,1557,582,1611,577,1731,566,1860,554,1989,549,2109,552,2162,559,2209,571,2249,589,2281,603,2294,599,2298,585,2284,566,2251,554,2210,547,2163,544,2109,549,1989,561,1859,572,1730,577,1611,574,1558,567,1510,555,1471,537,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,555,1460,565,1489,573,1564,571,1651,564,1746,557,1840,556,1927,565,2000,575,2028,589,2050,617,2076,646,2090,675,2095,706,2095,773,2091,810,2095,850,2107,875,2122,899,2138,968,2168,966,2173,896,2142,872,2126,848,2112,809,2100,773,2096,706,2100,675,2100,644,2095,614,2081,585,2054,570,2030,560,2001,551,1927,552,1840,559,1746,566,1651,567,1564,559,1491,550,1462,537,1439,523,1425,506,1415"/>
+<area shape="poly" title=" " alt="" coords="509,1412,541,1435,558,1461,566,1486,567,1511,565,1536,563,1561,564,1585,571,1608,589,1631,620,1654,653,1664,686,1664,719,1660,753,1657,787,1658,820,1669,851,1694,869,1717,880,1739,887,1762,890,1784,887,1828,877,1873,868,1917,864,1961,867,1982,873,2004,883,2027,899,2049,922,2069,949,2083,947,2087,919,2073,895,2052,879,2029,868,2006,861,1983,859,1961,863,1916,872,1871,882,1828,885,1784,882,1763,875,1741,864,1720,847,1698,817,1674,786,1663,753,1662,720,1666,686,1670,652,1669,618,1659,585,1635,567,1611,558,1586,557,1561,559,1536,562,1511,561,1487,554,1463,537,1439,506,1417"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,556,1462,567,1494,573,1532,576,1575,574,1670,567,1772,559,1875,557,1970,559,2013,565,2050,575,2082,589,2108,617,2137,645,2155,675,2164,706,2169,773,2175,811,2184,851,2202,875,2220,899,2239,965,2274,962,2279,896,2244,872,2224,848,2206,809,2189,773,2180,705,2174,673,2170,643,2160,613,2141,585,2111,570,2084,560,2052,554,2013,552,1970,554,1875,561,1772,569,1669,571,1575,568,1533,561,1495,551,1464,537,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,554,1465,562,1511,569,1644,567,1817,560,2009,555,2200,554,2371,558,2442,564,2501,574,2544,589,2569,619,2593,649,2608,678,2614,708,2613,739,2607,773,2596,848,2568,905,2541,956,2504,999,2464,1032,2429,1036,2432,1003,2468,959,2508,908,2545,850,2573,775,2601,741,2612,709,2618,678,2619,647,2613,616,2598,585,2572,570,2546,559,2501,552,2442,549,2371,549,2200,555,2008,561,1816,564,1644,557,1511,548,1466,536,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1422,540,1435,636,1482,710,1524,776,1576,851,1652,916,1734,972,1822,1015,1905,1045,1970,1040,1973,1010,1907,967,1825,912,1737,847,1655,772,1580,707,1528,634,1487,538,1440,507,1427"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,553,1462,561,1502,570,1620,572,1773,570,1943,568,2268,574,2387,580,2429,589,2455,616,2486,652,2510,649,2514,613,2490,584,2457,575,2430,569,2388,562,2268,565,1943,567,1773,565,1620,556,1503,548,1463,536,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,554,1465,564,1512,574,1648,576,1825,573,2021,567,2396,573,2535,580,2583,589,2613,615,2648,650,2675,646,2679,612,2652,584,2616,574,2584,568,2535,562,2396,567,2021,571,1825,569,1649,559,1513,549,1467,536,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1409,526,1421,541,1436,556,1469,566,1522,572,1591,574,1675,573,1873,566,2094,559,2315,557,2513,560,2596,565,2665,575,2717,589,2749,597,2758,593,2761,584,2752,570,2719,560,2666,554,2596,552,2513,553,2314,560,2094,567,1873,569,1675,566,1591,560,1522,551,1471,536,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,557,1463,569,1497,576,1536,580,1580,580,1679,574,1786,567,1894,564,1995,570,2081,577,2116,589,2145,616,2180,650,2207,647,2211,612,2184,584,2148,572,2118,564,2082,559,1995,562,1894,569,1786,575,1679,575,1581,571,1537,564,1498,552,1465,537,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="509,1410,526,1421,541,1436,561,1471,575,1516,583,1568,586,1626,581,1757,568,1898,554,2039,548,2170,551,2228,557,2280,570,2324,589,2360,597,2369,593,2372,584,2363,565,2326,552,2281,545,2229,543,2170,549,2038,562,1897,575,1757,580,1626,577,1568,570,1517,556,1473,537,1439,523,1425,506,1414"/>
+<area shape="poly" title=" " alt="" coords="318,1355,321,1345,332,1337,350,1331,375,1329,406,1332,425,1341,423,1345,405,1338,375,1335,351,1337,334,1341,326,1348,324,1356"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bb3ab836ba19fca04cd863334ea1fd0" name="a2bb3ab836ba19fca04cd863334ea1fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb3ab836ba19fca04cd863334ea1fd0">&#9670;&#160;</a></span>create_action_sets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver.create_action_sets </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00228">228</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00574">exahype2.solvers.aderdg.ADERDG.ADERDG._action_set_couple_resolution_transitions_and_handle_dynamic_mesh_refinement</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00276">exahype2.solvers.fv.FV.FV._action_set_couple_resolution_transitions_and_handle_dynamic_mesh_refinement</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00948">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._action_set_couple_resolution_transitions_and_handle_dynamic_mesh_refinement</a>, and <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00205">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._action_set_couple_resolution_transitions_and_handle_dynamic_mesh_refinement</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d30/mgccz4_8py_source.html#l00191">mgccz4.MGCCZ4Solver.add_derivative_calculation()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01335">exahype2.solvers.aderdg.ADERDG.ADERDG.add_kernel_optimisations()</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00256">ccz4.CCZ4Solver.add_Psi4W()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01654">exahype2.solvers.fv.FV.FV.auxiliary_variables()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01606">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.auxiliary_variables()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01517">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.auxiliary_variables()</a>, <a class="el" href="../../df/d8c/AMRMarker_8py_source.html#l00249">exahype2.solvers.elliptic.AMRMarker.AMRMarker.couple_with_FV_solver()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01809">exahype2.solvers.fv.FV.FV.interpolation()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01606">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.interpolation()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01791">exahype2.solvers.fv.FV.FV.overlap()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01590">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.overlap()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01640">exahype2.solvers.fv.FV.FV.patch_size()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01505">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.patch_size()</a>, <a class="el" href="../../dc/de1/ConstrainedPoissonEquationForMarkerOnCells_8py_source.html#l00403">exahype2.solvers.elliptic.ConstrainedPoissonEquationForMarkerOnCells.ConstrainedPoissonEquationForMarkerOnCells.postprocess_updated_cell()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01727">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.postprocess_updated_cell_after_final_linear_combination()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01677">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.postprocess_updated_cell_after_Runge_Kutta_step()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01031">exahype2.solvers.aderdg.ADERDG.ADERDG.postprocess_updated_patch()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01727">exahype2.solvers.fv.FV.FV.postprocess_updated_patch()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01547">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.postprocess_updated_patch()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01021">exahype2.solvers.aderdg.ADERDG.ADERDG.preprocess_reconstructed_patch()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01666">exahype2.solvers.fv.FV.FV.preprocess_reconstructed_patch()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01527">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.preprocess_reconstructed_patch()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01821">exahype2.solvers.fv.FV.FV.restriction()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01635">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.restriction()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01628">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.set_implementation()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01412">exahype2.solvers.aderdg.ADERDG.ADERDG.switch_storage_scheme()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01778">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.switch_storage_scheme()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01645">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.switch_storage_scheme()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01647">exahype2.solvers.fv.FV.FV.unknowns()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01599">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.unknowns()</a>, and <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01511">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.unknowns()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d26/classccz4_1_1CCZ4Solver_a2bb3ab836ba19fca04cd863334ea1fd0_icgraph.png" border="0" usemap="#ad3/d26/classccz4_1_1CCZ4Solver_a2bb3ab836ba19fca04cd863334ea1fd0_icgraph" alt=""/></div>
+<map name="ad3/d26/classccz4_1_1CCZ4Solver_a2bb3ab836ba19fca04cd863334ea1fd0_icgraph" id="ad3/d26/classccz4_1_1CCZ4Solver_a2bb3ab836ba19fca04cd863334ea1fd0_icgraph">
+<area shape="rect" title=" " alt="" coords="1201,1499,1376,1539"/>
+<area shape="rect" href="../../d3/d5a/classmgccz4_1_1MGCCZ4Solver.html#a845684186d1ccd5f40492ba265335f3b" title="Add the constraint verification code." alt="" coords="889,112,1091,152"/>
+<area shape="poly" title=" " alt="" coords="1284,1485,1273,1209,1249,788,1231,574,1209,385,1183,242,1167,194,1151,166,1124,145,1090,134,1092,129,1126,141,1155,162,1172,192,1188,241,1215,385,1237,574,1255,788,1279,1209,1289,1485"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#a8b61df2db3372857d0a1cf6324b75eee" title=" " alt="" coords="883,177,1097,231"/>
+<area shape="poly" title=" " alt="" coords="1283,1485,1271,1223,1246,829,1228,628,1206,452,1180,318,1166,273,1151,246,1126,226,1096,213,1098,208,1129,221,1155,242,1171,271,1185,316,1211,451,1233,628,1251,828,1277,1223,1289,1485"/>
+<area shape="rect" href="../../d3/d26/classccz4_1_1CCZ4Solver.html#ad005fe3a55e9495c5fd634867c28e4db" title="add psi4 writer" alt="" coords="911,256,1069,296"/>
+<area shape="poly" title=" " alt="" coords="1283,1485,1271,1235,1245,860,1227,670,1205,504,1180,377,1166,335,1151,310,1134,295,1114,285,1069,275,1070,270,1116,280,1137,291,1155,306,1171,333,1185,376,1210,503,1232,670,1250,859,1276,1234,1289,1485"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a78a399c84ec3282ef3c8c3bc32cabee2" title=" " alt="" coords="864,320,1116,360"/>
+<area shape="poly" title=" " alt="" coords="1283,1485,1270,1247,1243,892,1224,714,1203,556,1178,437,1165,397,1151,374,1135,360,1115,350,1118,345,1138,355,1155,370,1170,395,1184,436,1208,555,1230,713,1248,892,1275,1246,1288,1485"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a3ef62334f62feabf9347e1287ef2c3a4" title=" " alt="" coords="872,385,1108,439"/>
+<area shape="poly" title=" " alt="" coords="1283,1485,1268,1262,1239,934,1221,769,1200,623,1176,513,1164,476,1151,454,1131,437,1107,425,1109,420,1134,432,1155,450,1169,474,1181,511,1205,622,1226,768,1245,933,1273,1262,1288,1485"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a6f3374cb77cd1369a8498dc77a1870b4" title=" " alt="" coords="864,464,1116,533"/>
+<area shape="poly" title=" " alt="" coords="1283,1485,1275,1363,1254,1180,1237,1075,1215,967,1186,859,1151,756,1121,692,1086,631,1018,535,1022,532,1090,628,1126,689,1156,754,1191,858,1220,966,1242,1074,1259,1179,1280,1362,1289,1485"/>
+<area shape="rect" href="../../db/d1c/classexahype2_1_1solvers_1_1elliptic_1_1AMRMarker_1_1AMRMarker.html#a21cce2f74b900ee30b6504dbf2fcde2d" title="FV_solver: exahype2.solver.fv.Solver Instance of the solver you want to couple this marker to." alt="" coords="879,1107,1101,1162"/>
+<area shape="poly" title=" " alt="" coords="1282,1485,1271,1419,1249,1335,1232,1291,1211,1249,1184,1209,1152,1175,1127,1159,1100,1148,1102,1143,1130,1154,1155,1171,1188,1206,1215,1246,1237,1289,1254,1333,1277,1418,1287,1484"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#ae9a93c386058126441bbcde34f41ab9e" title=" " alt="" coords="851,1186,1129,1211"/>
+<area shape="poly" title=" " alt="" coords="1280,1486,1268,1427,1244,1356,1227,1319,1206,1284,1181,1252,1152,1225,1128,1211,1131,1207,1155,1220,1185,1248,1211,1281,1232,1317,1249,1354,1273,1426,1285,1484"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a0baa9d7ce2841cebadc5afe5acf6c0d2" title="Set the interpolation scheme." alt="" coords="851,1235,1129,1290"/>
+<area shape="poly" title=" " alt="" coords="1274,1486,1256,1444,1230,1394,1195,1345,1152,1303,1128,1290,1131,1285,1155,1299,1199,1341,1234,1391,1261,1441,1279,1484"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a2e0b2eee93464898de9b72130f823ee2" title=" " alt="" coords="868,1314,1112,1339"/>
+<area shape="poly" title=" " alt="" coords="1269,1488,1250,1454,1223,1417,1190,1382,1152,1353,1111,1337,1113,1332,1155,1348,1194,1378,1227,1414,1254,1452,1274,1485"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a6df35dc6f5205863fd789c3768616852" title=" " alt="" coords="868,1363,1112,1418"/>
+<area shape="poly" title=" " alt="" coords="1250,1492,1205,1460,1152,1432,1111,1417,1113,1412,1154,1427,1208,1456,1253,1488"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a84722f0178a4270cbfa3ce4172fca43d" title=" " alt="" coords="858,1442,1122,1467"/>
+<area shape="poly" title=" " alt="" coords="1213,1497,1153,1481,1092,1470,1093,1465,1154,1476,1214,1492"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#ab478dd9bc31ff43444d6eaac57af25c7" title=" " alt="" coords="858,1491,1122,1546"/>
+<area shape="poly" title=" " alt="" coords="1188,1521,1122,1521,1122,1516,1188,1516"/>
+<area shape="rect" href="../../d8/d15/classexahype2_1_1solvers_1_1elliptic_1_1ConstrainedPoissonEquationForMarkerOnCells_1_1Constrained4b89f4e66e44519ddbf9dd31e73bb64.html#abdebba39d4404f0fc577f5793a646ec0" title="Define a postprocessing routine over the data." alt="" coords="827,1571,1153,1640"/>
+<area shape="poly" title=" " alt="" coords="1207,1545,1111,1573,1109,1568,1205,1540"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a61f15a3ce50c9c58299c23551da687e4" title="Define a postprocessing routine over the data." alt="" coords="861,1664,1119,1733"/>
+<area shape="poly" title=" " alt="" coords="1266,1551,1218,1604,1188,1631,1155,1654,1120,1671,1118,1666,1152,1650,1185,1627,1214,1600,1262,1548"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a23f5ef7308dc90ffe1b5771b029b9890" title="Define a postprocessing routine over the data." alt="" coords="853,2074,1127,2129"/>
+<area shape="poly" title=" " alt="" coords="1286,1553,1271,1667,1244,1820,1226,1897,1205,1967,1182,2024,1155,2063,1128,2083,1125,2078,1151,2059,1177,2021,1200,1965,1221,1896,1239,1819,1265,1666,1281,1552"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#abe19751dc699da0ef0af90759f0857fe" title=" " alt="" coords="880,1837,1100,1891"/>
+<area shape="poly" title=" " alt="" coords="1285,1553,1272,1612,1248,1686,1231,1724,1210,1762,1185,1796,1155,1826,1130,1843,1101,1854,1099,1849,1127,1838,1152,1822,1181,1792,1206,1759,1226,1722,1243,1684,1267,1611,1280,1552"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#afd67519142d7b86addc821e97ea36f36" title="Define a postprocessing routine over the data." alt="" coords="853,1916,1127,1956"/>
+<area shape="poly" title=" " alt="" coords="1289,1552,1281,1626,1261,1721,1243,1772,1221,1820,1191,1865,1155,1905,1128,1922,1126,1917,1152,1900,1187,1862,1216,1818,1238,1770,1255,1720,1276,1625,1284,1552"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a3dabc04ef556e693b0a1e962166a8627" title="Define a postprocessing routine over the data." alt="" coords="853,1980,1127,2049"/>
+<area shape="poly" title=" " alt="" coords="1290,1553,1285,1636,1278,1690,1267,1748,1250,1808,1226,1867,1195,1921,1155,1970,1128,1990,1125,1985,1151,1966,1191,1918,1221,1864,1245,1806,1262,1747,1273,1689,1280,1636,1285,1552"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#a64b540be00a29525d2908f3a9e1bbd30" title=" " alt="" coords="883,2153,1097,2207"/>
+<area shape="poly" title=" " alt="" coords="1287,1553,1274,1683,1249,1859,1232,1949,1210,2031,1185,2097,1171,2123,1155,2143,1129,2163,1098,2175,1096,2170,1126,2158,1151,2139,1166,2120,1180,2095,1205,2029,1226,1948,1244,1859,1269,1682,1282,1552"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a30c048f609292d6701e724e555f1fe19" title="Set a new processing kernel." alt="" coords="857,2232,1123,2272"/>
+<area shape="poly" title=" " alt="" coords="1288,1552,1278,1696,1256,1898,1238,2000,1216,2093,1189,2170,1173,2199,1155,2222,1125,2242,1122,2238,1152,2218,1168,2196,1184,2168,1211,2092,1233,1999,1250,1897,1273,1696,1283,1552"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#ad47601ad8b44adedd79809c9c2381d66" title="Please consult exahype2.solvers.fv.FV.preprocess_reconstructed_patch() for a documentation on this ro..." alt="" coords="857,2296,1123,2365"/>
+<area shape="poly" title=" " alt="" coords="1289,1552,1280,1707,1257,1927,1240,2039,1218,2142,1190,2227,1173,2260,1155,2286,1125,2309,1122,2305,1151,2282,1169,2258,1185,2225,1213,2141,1235,2038,1252,1926,1274,1707,1283,1552"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a32b1fe19e9106a740b9de0ea78658f25" title=" " alt="" coords="859,2390,1121,2415"/>
+<area shape="poly" title=" " alt="" coords="1290,1553,1285,1726,1278,1846,1267,1975,1250,2103,1227,2219,1212,2270,1196,2315,1177,2351,1155,2379,1140,2392,1122,2400,1120,2396,1137,2387,1151,2375,1172,2349,1191,2313,1207,2269,1222,2218,1245,2102,1262,1974,1273,1845,1280,1725,1284,1552"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a770c858fd3dfbb029392a2449ac499ed" title=" " alt="" coords="859,2439,1121,2494"/>
+<area shape="poly" title=" " alt="" coords="1290,1552,1285,1733,1279,1860,1268,1997,1251,2133,1228,2257,1213,2312,1196,2360,1177,2399,1155,2430,1140,2443,1122,2453,1120,2449,1137,2439,1151,2426,1172,2397,1191,2358,1208,2310,1222,2256,1246,2132,1262,1996,1273,1860,1280,1733,1285,1552"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a8c4dd7b63e00feffb84ffa7fb3fbf797" title="If you pass in User_Defined, then the generator will create C++ stubs that you have to befill manuall..." alt="" coords="883,1758,1097,1813"/>
+<area shape="poly" title=" " alt="" coords="1280,1553,1262,1597,1236,1650,1201,1703,1179,1727,1155,1747,1128,1763,1098,1774,1096,1769,1126,1758,1152,1743,1175,1723,1196,1699,1232,1647,1257,1595,1275,1551"/>
+<area shape="rect" href="../../d6/dc7/classexahype2_1_1solvers_1_1aderdg_1_1ADERDG_1_1ADERDG.html#a8fbdbc28d87a36148f5107977529d968" title="By default, we hold all data on the heap using smart pointers." alt="" coords="870,2518,1110,2573"/>
+<area shape="poly" title=" " alt="" coords="1290,1552,1288,1747,1283,1885,1272,2034,1256,2183,1232,2319,1217,2379,1199,2431,1179,2475,1155,2508,1135,2525,1112,2537,1109,2532,1132,2521,1151,2505,1174,2472,1194,2429,1212,2377,1227,2318,1251,2182,1267,2034,1277,1885,1283,1747,1285,1552"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#a99feeb3a693b2baca356d40079f4d792" title="By default, we hold all data on the call stacks." alt="" coords="879,2597,1101,2651"/>
+<area shape="poly" title=" " alt="" coords="1288,1552,1273,1775,1245,2104,1226,2269,1205,2415,1182,2526,1169,2564,1155,2587,1131,2607,1102,2619,1100,2614,1128,2602,1151,2583,1164,2561,1176,2524,1200,2414,1221,2269,1239,2103,1268,1775,1283,1552"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a73805fa78f379844d6255d74f3b8017a" title="By default, we hold all data on the call stacks." alt="" coords="871,2676,1109,2745"/>
+<area shape="poly" title=" " alt="" coords="1288,1552,1274,1790,1246,2143,1228,2322,1206,2479,1182,2599,1169,2640,1155,2666,1135,2684,1110,2697,1108,2692,1131,2680,1151,2662,1164,2638,1177,2598,1201,2478,1223,2321,1241,2143,1269,1789,1283,1552"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a5f4d29039c6edd43fd4bbb8ee0881fb4" title=" " alt="" coords="859,767,1121,793"/>
+<area shape="poly" title=" " alt="" coords="1282,1485,1267,1351,1240,1167,1222,1073,1202,987,1178,915,1151,865,1127,841,1099,821,1039,795,1041,790,1101,817,1131,837,1155,862,1183,913,1207,986,1228,1072,1246,1166,1272,1351,1287,1484"/>
+<area shape="rect" href="../../df/df2/classexahype2_1_1solvers_1_1rkdg_1_1RungeKuttaDG_1_1RungeKuttaDG.html#ac94b2270fbef61202eef6a8813068d75" title=" " alt="" coords="867,876,1113,916"/>
+<area shape="poly" title=" " alt="" coords="1284,1485,1276,1396,1256,1272,1239,1204,1217,1136,1188,1070,1151,1009,1126,980,1096,955,1035,918,1038,914,1099,951,1130,977,1155,1006,1192,1068,1222,1134,1244,1203,1262,1271,1282,1395,1289,1485"/>
+<area shape="rect" href="../../d5/db2/classexahype2_1_1solvers_1_1rkfd_1_1CellCenteredFiniteDifferences_1_1CellCenteredFiniteDifferences.html#a9beaf1efb2b944b5a7bd5bb8ddd64a89" title=" " alt="" coords="859,1021,1121,1075"/>
+<area shape="poly" title=" " alt="" coords="1284,1485,1278,1406,1258,1301,1241,1246,1219,1192,1189,1141,1152,1097,1119,1074,1122,1070,1155,1093,1193,1138,1223,1189,1246,1244,1264,1300,1283,1405,1290,1485"/>
+<area shape="rect" href="../../d2/dd6/classexahype2_1_1symhype_1_1PDE_1_1PDE.html#a0cb5c94886c78e71e202bb01ccce9f51" title="Return the C code that maps the quantities from Q onto properly labelled quantities." alt="" coords="511,753,728,807"/>
+<area shape="poly" title=" " alt="" coords="852,360,828,374,812,393,790,431,734,540,635,753,631,751,729,537,785,428,808,390,825,370,850,355"/>
+<area shape="rect" href="../../d2/dd6/classexahype2_1_1symhype_1_1PDE_1_1PDE.html#a6dbc23bd4ca8f85be2d9ae2e49c7d5ba" title="invoke_evalf_before_output: boolean If your expression is a symbolic expression (default) then we use..." alt="" coords="49,499,368,539"/>
+<area shape="poly" title=" " alt="" coords="850,324,825,310,807,289,801,267,794,246,788,237,777,229,691,187,652,174,614,169,577,171,539,181,501,200,462,228,438,257,429,288,430,320,436,353,443,388,445,422,437,456,414,488,393,505,369,516,367,511,390,500,410,485,432,454,440,422,438,388,431,354,425,320,424,287,433,255,458,225,499,195,537,176,576,166,614,164,653,169,693,182,780,224,792,233,799,243,806,265,812,287,828,306,852,319"/>
+<area shape="rect" href="../../d2/dd6/classexahype2_1_1symhype_1_1PDE_1_1PDE.html#ad14971d869f1c4bc5e948b02e7ccd5a9" title="invoke_evalf_before_output: boolean If your expression is a symbolic expression (default) then we use..." alt="" coords="49,435,368,475"/>
+<area shape="poly" title=" " alt="" coords="850,328,825,310,803,279,796,247,797,215,803,183,808,152,808,122,800,94,777,67,737,39,699,20,662,10,625,9,587,14,548,26,461,68,408,104,363,150,323,202,291,257,264,311,243,360,218,435,213,433,238,359,259,308,286,254,319,199,359,146,405,100,459,63,546,21,586,9,625,3,663,5,701,15,740,34,780,63,804,91,814,121,813,152,808,184,802,216,801,247,808,277,829,306,853,323"/>
+<area shape="rect" href="../../d2/dd6/classexahype2_1_1symhype_1_1PDE_1_1PDE.html#af05e3c6553af407c8a3078aa925e9e83" title=" " alt="" coords="460,384,779,424"/>
+<area shape="poly" title=" " alt="" coords="860,365,736,386,735,381,859,360"/>
+<area shape="rect" href="../../d2/dd6/classexahype2_1_1symhype_1_1PDE_1_1PDE.html#a7324229e27a4f1493760030e1dd26d41" title="Returns identifier for the unknowns." alt="" coords="483,320,756,360"/>
+<area shape="poly" title=" " alt="" coords="850,343,756,343,756,337,850,337"/>
+<area shape="poly" title=" " alt="" coords="560,748,459,685,239,541,242,537,461,680,563,743"/>
+<area shape="rect" href="../../d3/d48/classexahype2_1_1symhype_1_1FirstOrderConservativePDEFormulation_1_1FirstOrderConservativePDEFormulation.html#a3fad122c03b99170ed678d103fe96179" title="Return eigenvalues." alt="" coords="31,1089,387,1159"/>
+<area shape="poly" title=" " alt="" coords="594,821,518,917,468,971,414,1021,355,1060,295,1091,292,1087,352,1055,410,1016,465,968,514,914,589,817"/>
+<area shape="rect" href="../../d3/d48/classexahype2_1_1symhype_1_1FirstOrderConservativePDEFormulation_1_1FirstOrderConservativePDEFormulation.html#a755282f0a1700f524711875ec5d328b3" title="Return implementation for flux along one coordinate axis (d) as C code." alt="" coords="5,1299,412,1354"/>
+<area shape="poly" title=" " alt="" coords="606,821,577,892,535,983,480,1080,448,1128,414,1172,377,1211,335,1246,258,1301,255,1297,332,1242,373,1207,410,1169,444,1125,476,1078,530,980,572,890,601,819"/>
+<area shape="poly" title=" " alt="" coords="566,746,510,696,482,666,458,633,447,612,442,592,439,555,434,521,425,505,410,489,390,475,367,464,369,459,393,470,414,485,430,502,439,519,444,554,447,591,452,610,462,630,486,663,514,693,570,742"/>
+<area shape="rect" href="../../d3/d48/classexahype2_1_1symhype_1_1FirstOrderConservativePDEFormulation_1_1FirstOrderConservativePDEFormulation.html#a514eb5415ebc5ecbbe34fbe91f6625b5" title="Return maximum eigenvalue." alt="" coords="31,1444,387,1513"/>
+<area shape="poly" title=" " alt="" coords="616,822,599,926,584,995,564,1069,537,1147,504,1225,463,1299,414,1367,390,1391,362,1413,304,1446,302,1441,359,1408,386,1387,410,1363,459,1296,499,1222,532,1145,558,1068,579,993,594,925,611,821"/>
+<area shape="rect" href="../../d3/d48/classexahype2_1_1symhype_1_1FirstOrderConservativePDEFormulation_1_1FirstOrderConservativePDEFormulation.html#a50e67d1fb1ffa4b75267546bc161c4df" title="Return implementation for nonconservative product (ncp) along one coordinate axis (d) as C code." alt="" coords="5,811,412,866"/>
+<area shape="poly" title=" " alt="" coords="497,800,401,814,400,809,497,795"/>
+<area shape="rect" href="../../d3/d48/classexahype2_1_1symhype_1_1FirstOrderConservativePDEFormulation_1_1FirstOrderConservativePDEFormulation.html#a872963731d76bf8e2fad5ad73eafde98" title="Return implementation for sources as C code." alt="" coords="31,937,387,1007"/>
+<area shape="poly" title=" " alt="" coords="548,816,413,880,286,939,283,935,411,875,546,811"/>
+<area shape="poly" title=" " alt="" coords="860,436,828,454,789,487,755,525,724,567,698,609,657,691,632,753,627,751,652,689,693,607,720,564,751,522,786,483,825,450,858,432"/>
+<area shape="poly" title=" " alt="" coords="858,394,825,374,813,362,807,348,801,322,796,297,789,287,777,277,734,252,693,233,654,221,616,216,578,219,541,229,502,248,462,277,441,300,433,324,433,351,437,378,441,406,441,434,434,462,414,488,393,504,369,515,367,510,390,500,410,485,429,460,436,434,436,407,431,379,428,351,428,323,437,297,458,273,499,244,539,224,577,213,616,211,655,216,695,228,736,247,780,272,793,283,801,295,807,321,812,347,818,359,828,370,861,389"/>
+<area shape="poly" title=" " alt="" coords="858,397,825,374,803,340,795,306,797,272,804,237,810,204,810,173,801,142,777,114,738,86,700,67,663,58,626,56,588,62,549,75,461,114,412,146,368,185,330,230,297,278,248,369,220,435,215,433,243,367,293,275,326,227,365,182,409,141,459,110,547,70,587,57,626,51,664,52,702,62,740,81,780,110,806,140,816,172,815,205,809,238,803,272,801,306,808,338,829,370,861,393"/>
+<area shape="poly" title=" " alt="" coords="858,412,779,410,779,405,858,406"/>
+<area shape="poly" title=" " alt="" coords="858,389,723,363,724,357,859,384"/>
+<area shape="poly" title=" " alt="" coords="934,544,658,754,655,750,931,539"/>
+<area shape="poly" title=" " alt="" coords="850,471,825,452,811,434,804,415,802,377,800,341,792,325,777,310,750,297,712,287,667,281,619,279,571,281,526,286,488,296,462,310,444,329,436,350,435,372,437,395,440,419,439,443,431,466,414,488,393,504,369,514,367,510,390,499,410,485,427,464,433,442,434,419,432,396,430,372,431,349,439,326,458,306,487,291,525,281,570,275,619,274,668,276,713,282,752,292,780,306,797,322,805,339,808,376,809,414,815,431,829,449,853,467"/>
+<area shape="poly" title=" " alt="" coords="850,472,825,452,809,430,802,406,803,359,805,337,803,315,795,295,777,277,737,250,700,235,664,228,628,229,591,235,552,247,461,277,424,291,389,310,323,354,269,399,231,436,227,432,266,395,320,349,386,305,422,287,459,272,550,242,590,230,627,223,664,223,701,230,739,246,780,272,799,292,808,314,810,337,808,359,807,405,813,427,829,449,854,468"/>
+<area shape="poly" title=" " alt="" coords="850,464,778,445,703,427,705,421,779,440,851,459"/>
+<area shape="poly" title=" " alt="" coords="850,468,825,453,808,432,801,412,793,392,777,374,755,362,758,357,780,370,798,389,806,410,813,430,828,449,853,464"/>
+<area shape="rect" href="../../da/db6/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a212b8e90728d84b7d0c272d038d2032f" title="Construct solver with enclave tasking." alt="" coords="501,1593,737,1647"/>
+<area shape="poly" title=" " alt="" coords="847,1671,737,1647,738,1642,848,1666"/>
+<area shape="rect" href="../../d5/dfd/classCCZ4Solver_1_1CCZ4Solver__RKDG__GlobalAdaptiveTimeStep.html#a52dc350912ef996c777eb632f7854120" title="Construct solver with enclave tasking." alt="" coords="499,1671,739,1726"/>
+<area shape="poly" title=" " alt="" coords="847,1701,739,1701,739,1696,847,1696"/>
+<area shape="rect" href="../../d2/dff/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStep.html#aca56bc3b5e5e913434288fab74537d16" title="Constructor." alt="" coords="510,1889,729,1943"/>
+<area shape="poly" title=" " alt="" coords="867,1884,729,1903,728,1898,866,1879"/>
+<area shape="rect" href="../../d1/d1b/classCCZ4Solver_1_1CCZ4Solver__FV__GlobalAdaptiveTimeStepWithEnclaveTasking.html#a60655ea819d4f0dab0cda8584ece8328" title="Construct solver with enclave tasking and adaptive time stepping." alt="" coords="497,1967,742,2022"/>
+<area shape="poly" title=" " alt="" coords="868,1888,828,1906,814,1918,805,1931,796,1944,780,1957,743,1974,741,1969,777,1952,792,1940,800,1928,810,1914,825,1902,866,1883"/>
+<area shape="rect" href="../../d1/dcf/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStepWithEnclaveTasking.html#adfc428645c7771b8980116a82e9b03dc" title="Constructor." alt="" coords="507,2046,731,2101"/>
+<area shape="poly" title=" " alt="" coords="868,1882,847,1892,828,1906,816,1921,809,1936,805,1969,802,2002,794,2019,780,2035,758,2051,733,2062,731,2057,755,2046,777,2031,790,2016,796,2001,800,1968,804,1935,811,1918,825,1902,844,1888,866,1877"/>
+<area shape="rect" href="../../d6/d2a/classCCZ4Solver_1_1CCZ4Solver__FD4__GlobalAdaptiveTimeStep.html#a25fc857d7d9d89a98ff3ba5856ec93f3" title="Constructor." alt="" coords="505,2125,733,2179"/>
+<area shape="poly" title=" " alt="" coords="868,1880,847,1891,829,1906,811,1931,803,1956,802,1982,805,2008,808,2035,808,2062,800,2089,781,2115,759,2132,734,2143,732,2138,756,2127,777,2111,795,2086,802,2061,803,2035,800,2009,797,1982,798,1955,806,1928,825,1902,844,1887,866,1876"/>
+<area shape="poly" title=" " alt="" coords="839,1930,729,1924,729,1919,840,1925"/>
+<area shape="poly" title=" " alt="" coords="850,1961,743,1978,742,1972,849,1955"/>
+<area shape="poly" title=" " alt="" coords="842,1962,828,1970,813,1985,805,2001,797,2019,780,2035,733,2058,730,2053,777,2031,792,2016,800,1999,808,1982,825,1966,839,1958"/>
+<area shape="poly" title=" " alt="" coords="843,1959,828,1970,814,1987,807,2004,805,2040,803,2078,795,2097,780,2115,759,2131,735,2142,733,2137,756,2126,777,2111,791,2094,797,2077,800,2040,802,2002,810,1984,825,1966,840,1955"/>
+<area shape="poly" title=" " alt="" coords="854,1979,778,1957,728,1944,729,1939,779,1952,856,1974"/>
+<area shape="poly" title=" " alt="" coords="839,2009,742,2004,743,1998,840,2004"/>
+<area shape="poly" title=" " alt="" coords="840,2041,732,2058,731,2053,840,2036"/>
+<area shape="poly" title=" " alt="" coords="842,2056,828,2063,814,2076,805,2089,796,2102,780,2115,735,2135,732,2130,777,2111,792,2099,801,2086,810,2072,825,2059,840,2051"/>
+<area shape="poly" title=" " alt="" coords="868,1770,825,1747,807,1725,800,1703,794,1681,777,1661,736,1639,739,1634,780,1656,798,1678,805,1701,812,1723,828,1743,871,1766"/>
+<area shape="poly" title=" " alt="" coords="868,1760,737,1729,738,1723,869,1754"/>
+<area shape="poly" title=" " alt="" coords="870,1808,828,1826,814,1838,805,1851,796,1865,780,1878,730,1900,728,1895,777,1874,792,1861,800,1848,810,1835,825,1822,868,1803"/>
+<area shape="poly" title=" " alt="" coords="871,1801,848,1812,828,1826,815,1841,809,1856,805,1889,802,1923,794,1940,780,1957,744,1979,741,1975,777,1953,790,1937,796,1922,800,1889,804,1855,811,1838,825,1822,846,1807,869,1797"/>
+<area shape="poly" title=" " alt="" coords="871,1800,848,1811,829,1826,810,1851,803,1876,802,1902,805,1928,808,1955,808,1982,800,2009,781,2035,758,2052,733,2064,730,2059,755,2048,777,2031,795,2006,802,1981,803,1955,800,1929,797,1902,798,1875,806,1848,825,1822,845,1806,868,1795"/>
+<area shape="poly" title=" " alt="" coords="871,1799,848,1810,829,1826,805,1861,797,1896,798,1932,805,1968,812,2004,814,2041,805,2078,781,2115,759,2132,735,2144,733,2139,757,2128,777,2111,800,2076,808,2041,807,2005,800,1969,793,1932,791,1896,800,1859,825,1822,845,1806,868,1794"/>
+<area shape="rect" href="../../d1/de2/classSBH_1_1FVSolver.html#a1d7f349b2a29057e927152b939e9753f" title="Construct the Finite Volume solver." alt="" coords="538,1774,701,1799"/>
+<area shape="poly" title=" " alt="" coords="869,1788,701,1789,701,1784,869,1783"/>
+<area shape="rect" href="../../de/d1e/classexahype2_1_1solvers_1_1fv_1_1FV_1_1FV.html#a6d2d2da08b2aa2edf9ea41361a64ccb2" title=" " alt="" coords="512,1824,727,1864"/>
+<area shape="poly" title=" " alt="" coords="869,1807,727,1830,726,1824,868,1802"/>
+<area shape="poly" title=" " alt="" coords="685,1767,685,1762,674,1757,619,1753,579,1755,557,1760,553,1765,564,1772,561,1776,548,1766,554,1755,578,1749,619,1747,676,1752,689,1758,691,1766"/>
+<area shape="poly" title=" " alt="" coords="845,783,729,783,729,777,845,777"/>
+<area shape="poly" title=" " alt="" coords="961,761,881,704,831,674,778,648,674,610,567,581,463,558,368,541,369,536,464,553,568,575,676,605,780,643,833,669,884,700,964,756"/>
+<area shape="poly" title=" " alt="" coords="945,800,888,828,828,866,814,879,805,892,796,905,780,918,678,977,569,1025,461,1063,364,1092,362,1087,460,1058,567,1020,675,972,777,914,792,901,801,889,810,876,825,862,885,824,943,796"/>
+<area shape="poly" title=" " alt="" coords="929,800,875,825,850,844,829,865,813,891,806,916,806,964,805,1013,797,1039,781,1066,736,1113,685,1154,630,1190,572,1221,514,1248,456,1270,348,1302,347,1297,454,1265,512,1243,570,1217,627,1186,682,1150,732,1109,777,1062,793,1037,800,1013,801,964,801,915,808,889,825,862,847,840,873,821,927,795"/>
+<area shape="poly" title=" " alt="" coords="968,758,936,720,891,673,837,625,777,585,728,560,677,539,570,506,464,483,368,469,368,463,465,478,571,501,678,534,730,555,780,580,840,621,895,669,940,716,972,754"/>
+<area shape="poly" title=" " alt="" coords="926,799,873,825,849,843,829,865,813,892,802,919,796,944,794,969,798,1019,809,1067,818,1116,821,1165,818,1190,811,1216,799,1242,781,1268,742,1310,698,1346,649,1377,597,1402,544,1423,490,1440,387,1464,386,1458,489,1435,542,1418,595,1398,646,1372,694,1342,738,1306,777,1265,794,1239,806,1214,813,1189,816,1165,813,1116,803,1068,793,1019,789,969,791,943,797,917,808,890,825,862,845,839,870,821,923,795"/>
+<area shape="poly" title=" " alt="" coords="924,767,832,749,716,735,588,730,524,734,461,742,407,756,354,774,263,814,261,809,352,769,405,751,459,737,523,728,588,725,717,729,833,744,925,762"/>
+<area shape="poly" title=" " alt="" coords="925,798,351,940,350,935,923,793"/>
+<area shape="poly" title=" " alt="" coords="968,758,902,667,824,546,812,516,805,490,797,467,777,445,747,426,749,422,780,440,801,465,810,489,817,514,829,544,906,664,973,755"/>
+<area shape="poly" title=" " alt="" coords="966,758,897,669,858,609,824,546,815,520,810,495,809,452,804,413,794,393,777,374,755,358,758,354,780,370,798,391,809,411,815,452,816,495,820,519,829,544,863,607,902,666,971,755"/>
+<area shape="poly" title=" " alt="" coords="916,874,778,829,714,810,716,805,779,824,918,869"/>
+<area shape="poly" title=" " alt="" coords="929,872,876,843,825,806,810,788,801,772,792,757,777,742,720,703,659,668,596,638,532,611,409,569,305,541,306,536,410,564,533,606,598,633,661,663,723,698,780,738,796,754,806,770,814,785,828,802,879,839,931,868"/>
+<area shape="poly" title=" " alt="" coords="937,925,881,961,853,984,829,1010,819,1024,814,1039,809,1067,803,1095,794,1108,780,1119,728,1147,672,1167,613,1178,554,1183,495,1183,437,1178,334,1161,335,1156,438,1173,495,1177,554,1178,613,1173,670,1162,726,1143,777,1115,790,1104,798,1092,804,1066,809,1037,814,1022,825,1006,850,980,878,957,934,920"/>
+<area shape="poly" title=" " alt="" coords="930,924,875,960,850,983,829,1009,810,1052,805,1094,809,1134,817,1173,823,1212,823,1249,810,1286,798,1304,780,1322,754,1337,719,1349,677,1356,628,1360,521,1360,412,1353,412,1348,522,1355,628,1355,676,1351,718,1343,752,1333,777,1318,794,1301,806,1284,818,1249,818,1212,812,1174,804,1135,800,1094,805,1051,824,1007,846,979,872,956,927,920"/>
+<area shape="poly" title=" " alt="" coords="915,873,866,845,844,827,824,805,809,777,802,748,805,695,807,669,805,645,796,620,777,596,739,570,702,558,665,557,627,562,588,568,548,571,505,565,459,546,442,532,434,516,426,502,411,489,367,471,369,466,413,484,430,498,438,514,446,529,461,542,506,560,548,565,588,563,626,556,665,551,703,553,741,565,780,593,801,618,810,643,812,669,810,695,808,748,814,775,829,802,847,823,869,841,917,868"/>
+<area shape="poly" title=" " alt="" coords="929,924,874,960,849,983,829,1009,821,1028,815,1051,810,1108,814,1247,816,1318,814,1383,803,1436,794,1458,780,1474,753,1491,715,1502,669,1510,617,1513,501,1512,387,1504,387,1498,502,1507,616,1508,668,1504,714,1497,751,1486,777,1470,789,1455,798,1435,808,1382,811,1318,809,1247,805,1108,810,1050,816,1026,824,1007,845,979,871,955,926,920"/>
+<area shape="poly" title=" " alt="" coords="853,889,412,856,412,851,854,883"/>
+<area shape="poly" title=" " alt="" coords="930,924,859,948,779,968,679,980,576,987,387,986,387,981,576,981,678,975,778,963,857,943,928,919"/>
+<area shape="poly" title=" " alt="" coords="913,873,865,845,843,827,824,805,805,770,796,738,794,706,796,676,798,614,792,581,776,545,750,508,717,475,653,426,656,422,721,471,754,504,781,543,797,580,804,614,801,676,799,707,801,737,810,768,829,802,847,823,868,841,916,868"/>
+<area shape="poly" title=" " alt="" coords="911,873,864,845,842,827,824,805,808,775,797,746,791,717,790,688,797,633,809,580,820,528,824,477,820,451,811,426,797,400,777,374,755,356,758,352,781,370,802,397,816,424,825,450,829,477,826,529,814,581,802,634,795,688,797,716,802,744,812,773,829,802,846,823,867,841,914,868"/>
+<area shape="poly" title=" " alt="" coords="927,1016,874,978,825,929,809,901,802,876,795,852,777,828,753,813,727,801,729,796,756,808,780,825,800,849,808,874,814,899,829,926,877,973,930,1011"/>
+<area shape="poly" title=" " alt="" coords="933,1015,860,972,778,930,730,911,688,899,614,885,542,865,502,847,458,821,416,788,376,751,307,670,253,595,219,540,224,537,258,592,311,667,380,747,420,784,462,816,505,843,544,860,615,879,689,894,732,906,780,925,863,968,936,1011"/>
+<area shape="poly" title=" " alt="" coords="849,1081,829,1096,816,1111,810,1127,807,1159,803,1191,795,1207,780,1221,749,1239,716,1252,683,1261,648,1266,576,1266,505,1255,435,1235,371,1211,267,1161,269,1156,373,1206,437,1230,506,1249,577,1261,647,1261,681,1256,715,1247,747,1234,777,1216,791,1204,798,1190,802,1159,805,1125,812,1109,825,1093,846,1077"/>
+<area shape="poly" title=" " alt="" coords="849,1079,829,1096,807,1131,800,1166,803,1201,810,1237,816,1272,817,1307,807,1341,796,1357,780,1373,751,1394,720,1410,687,1422,652,1430,581,1436,509,1430,438,1417,372,1398,265,1356,267,1352,374,1393,439,1411,509,1425,581,1431,652,1425,685,1417,718,1405,748,1389,777,1369,792,1354,802,1338,812,1306,811,1273,805,1238,797,1202,795,1165,802,1129,825,1093,846,1075"/>
+<area shape="poly" title=" " alt="" coords="921,1016,869,978,845,955,824,929,811,903,804,878,803,832,800,788,792,765,777,742,739,706,701,685,662,673,623,667,582,660,541,650,500,630,458,596,447,582,440,567,435,539,429,513,422,500,410,489,390,476,367,466,369,461,392,471,414,484,427,497,434,511,440,538,445,566,451,579,462,593,502,625,543,645,583,655,623,661,663,668,703,680,742,702,781,738,797,763,805,787,808,832,809,877,816,901,829,926,849,952,873,974,924,1011"/>
+<area shape="poly" title=" " alt="" coords="849,1078,829,1096,819,1112,812,1132,806,1183,806,1245,809,1312,812,1378,810,1439,801,1490,793,1509,780,1525,750,1541,709,1551,658,1554,601,1552,477,1538,357,1516,358,1511,478,1533,601,1547,658,1549,708,1545,748,1536,777,1520,788,1507,796,1488,805,1439,806,1378,804,1312,800,1245,800,1183,807,1131,814,1110,825,1093,846,1074"/>
+<area shape="poly" title=" " alt="" coords="873,1020,311,868,313,863,875,1014"/>
+<area shape="poly" title=" " alt="" coords="846,1072,758,1080,661,1084,559,1081,460,1069,412,1058,364,1043,280,1009,282,1004,366,1038,413,1053,460,1064,560,1076,661,1079,758,1075,845,1067"/>
+<area shape="poly" title=" " alt="" coords="918,1016,867,979,844,956,824,929,803,883,793,841,791,802,794,764,798,726,798,686,792,643,776,596,747,544,711,496,674,456,642,426,646,422,678,452,715,493,751,541,781,593,798,642,804,686,803,726,799,765,796,802,798,840,808,881,829,927,848,952,871,975,921,1011"/>
+<area shape="poly" title=" " alt="" coords="917,1016,866,979,843,956,824,929,815,906,808,877,803,808,808,644,812,560,810,483,799,419,790,393,777,374,754,356,758,352,781,370,795,391,805,417,815,482,817,560,814,644,808,808,813,876,820,904,829,927,847,952,869,975,920,1012"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1ae1f344c1c175e85d3211c9fbe0db83" name="a1ae1f344c1c175e85d3211c9fbe0db83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae1f344c1c175e85d3211c9fbe0db83">&#9670;&#160;</a></span>get_user_action_set_includes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver.get_user_action_set_includes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We take this routine to add a few additional include statements. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00234">234</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00112">ccz4.CCZ4Solver._my_user_includes</a>, <a class="el" href="../../d1/d38/gauge-wave-fv_8py_source.html#l00122">gauge-wave-fv.CCZ4Solver._my_user_includes</a>, and <a class="el" href="../../db/d00/performance__testbed_8py_source.html#l00312">performance_testbed.CCZ4Solver._my_user_includes</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a973f260b655a159bd47f857fc4fd0b66" name="a973f260b655a159bd47f857fc4fd0b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973f260b655a159bd47f857fc4fd0b66">&#9670;&#160;</a></span>_auxiliary_variables</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._auxiliary_variables</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00244">244</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00245">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01453">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01393">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d7/d30/mgccz4_8py_source.html#l00191">mgccz4.MGCCZ4Solver.add_derivative_calculation()</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00256">ccz4.CCZ4Solver.add_Psi4W()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01013">exahype2.solvers.aderdg.ADERDG.ADERDG.auxiliary_variables()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01635">exahype2.solvers.fv.FV.FV.auxiliary_variables()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01594">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.auxiliary_variables()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01501">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.auxiliary_variables()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01654">exahype2.solvers.fv.FV.FV.auxiliary_variables()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01606">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.auxiliary_variables()</a>, and <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01517">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.auxiliary_variables()</a>.</p>
+
+</div>
+</div>
+<a id="af9f019b4fea8640ca328cc2728edcdf8" name="af9f019b4fea8640ca328cc2728edcdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f019b4fea8640ca328cc2728edcdf8">&#9670;&#160;</a></span>_domain_r</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._domain_r</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00170">170</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+</div>
+</div>
+<a id="ac424b541c0bc38c6d48ef6531dbe0934" name="ac424b541c0bc38c6d48ef6531dbe0934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac424b541c0bc38c6d48ef6531dbe0934">&#9670;&#160;</a></span>_flux_implementation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._flux_implementation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00194">194</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01453">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../dd/da7/fv_2musclhancock_2GlobalAdaptiveTimeStep_8py_source.html#l00057">exahype2.solvers.fv.musclhancock.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep.set_implementation()</a>, <a class="el" href="../../d7/def/fv_2musclhancock_2GlobalFixedTimeStep_8py_source.html#l00068">exahype2.solvers.fv.musclhancock.GlobalFixedTimeStep.GlobalFixedTimeStep.set_implementation()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01628">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.set_implementation()</a>, and <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01222">exahype2.solvers.aderdg.ADERDG.ADERDG.set_implementation()</a>.</p>
+
+</div>
+</div>
+<a id="ad0d4cd5a97821e8486e2be4c165bdbd0" name="ad0d4cd5a97821e8486e2be4c165bdbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d4cd5a97821e8486e2be4c165bdbd0">&#9670;&#160;</a></span>_fused_compute_kernel_call_cpu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._fused_compute_kernel_call_cpu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00193">193</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/df7/rkfd_2SeparateSweepsWithEnclaveTasking_8py_source.html#l00705">exahype2.solvers.rkfd.SeparateSweepsWithEnclaveTasking.SeparateSweepsWithEnclaveTasking.add_entries_to_text_replacement_dictionary()</a>.</p>
+
+</div>
+</div>
+<a id="ae53c958a9ba5e12a10a31e8b3c744e23" name="ae53c958a9ba5e12a10a31e8b3c744e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53c958a9ba5e12a10a31e8b3c744e23">&#9670;&#160;</a></span>_my_user_includes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._my_user_includes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00112">112</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00256">ccz4.CCZ4Solver.add_Psi4W()</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00234">ccz4.CCZ4Solver.get_user_action_set_includes()</a>, and <a class="el" href="../../db/d00/performance__testbed_8py_source.html#l00472">performance_testbed.CCZ4Solver.get_user_action_set_includes()</a>.</p>
+
+</div>
+</div>
+<a id="a579c408520a502b318b69d7c4f9a140c" name="a579c408520a502b318b69d7c4f9a140c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579c408520a502b318b69d7c4f9a140c">&#9670;&#160;</a></span>_ncp_implementation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._ncp_implementation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00195">195</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01453">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../dd/da7/fv_2musclhancock_2GlobalAdaptiveTimeStep_8py_source.html#l00057">exahype2.solvers.fv.musclhancock.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep.set_implementation()</a>, <a class="el" href="../../d7/def/fv_2musclhancock_2GlobalFixedTimeStep_8py_source.html#l00068">exahype2.solvers.fv.musclhancock.GlobalFixedTimeStep.GlobalFixedTimeStep.set_implementation()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01628">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.set_implementation()</a>, and <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01222">exahype2.solvers.aderdg.ADERDG.ADERDG.set_implementation()</a>.</p>
+
+</div>
+</div>
+<a id="aec1775b7b0f6b42f0a5456a3e0568179" name="aec1775b7b0f6b42f0a5456a3e0568179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1775b7b0f6b42f0a5456a3e0568179">&#9670;&#160;</a></span>_patch_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._patch_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00169">169</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00245">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00469">exahype2.solvers.fv.FV.FV.create_readme_descriptor()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00321">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.create_readme_descriptor()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00309">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.get_coarsest_number_of_compute_grid_cells()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00453">exahype2.solvers.fv.FV.FV.get_coarsest_number_of_finite_volumes()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00312">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.get_finest_number_of_compute_grid_cells()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00457">exahype2.solvers.fv.FV.FV.get_finest_number_of_finite_volumes()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00432">exahype2.solvers.fv.FV.FV.get_max_number_of_spacetree_levels()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00290">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.get_max_number_of_spacetree_levels()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00422">exahype2.solvers.fv.FV.FV.get_min_number_of_spacetree_levels()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l00281">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.get_min_number_of_spacetree_levels()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01630">exahype2.solvers.fv.FV.FV.patch_size()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01497">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.patch_size()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01640">exahype2.solvers.fv.FV.FV.patch_size()</a>, and <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01505">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.patch_size()</a>.</p>
+
+</div>
+</div>
+<a id="a4ff7fc94ce0cde9827a5ce274db47202" name="a4ff7fc94ce0cde9827a5ce274db47202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff7fc94ce0cde9827a5ce274db47202">&#9670;&#160;</a></span>_preprocess_reconstructed_patch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._preprocess_reconstructed_patch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00250">250</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01393">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00256">ccz4.CCZ4Solver.add_Psi4W()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01017">exahype2.solvers.aderdg.ADERDG.ADERDG.preprocess_reconstructed_patch()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01661">exahype2.solvers.fv.FV.FV.preprocess_reconstructed_patch()</a>, <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01523">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.preprocess_reconstructed_patch()</a>, <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01021">exahype2.solvers.aderdg.ADERDG.ADERDG.preprocess_reconstructed_patch()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01666">exahype2.solvers.fv.FV.FV.preprocess_reconstructed_patch()</a>, and <a class="el" href="../../db/d09/CellCenteredFiniteDifferences_8py_source.html#l01527">exahype2.solvers.rkfd.CellCenteredFiniteDifferences.CellCenteredFiniteDifferences.preprocess_reconstructed_patch()</a>.</p>
+
+</div>
+</div>
+<a id="a1c660d98ff36a28f39668331d043f8c5" name="a1c660d98ff36a28f39668331d043f8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c660d98ff36a28f39668331d043f8c5">&#9670;&#160;</a></span>_source_term_implementation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ccz4.CCZ4Solver._source_term_implementation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/db6/ccz4_8py_source.html#l00196">196</a> of file <a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l00291">exahype2.solvers.aderdg.ADERDG.ADERDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l00346">exahype2.solvers.fv.FV.FV.__str__()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l00382">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.__str__()</a>, <a class="el" href="../../d3/d44/FV_8py_source.html#l01474">exahype2.solvers.fv.FV.FV._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01453">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG._init_dictionary_with_default_parameters()</a>, <a class="el" href="../../dd/da7/fv_2musclhancock_2GlobalAdaptiveTimeStep_8py_source.html#l00057">exahype2.solvers.fv.musclhancock.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep.set_implementation()</a>, <a class="el" href="../../d7/def/fv_2musclhancock_2GlobalFixedTimeStep_8py_source.html#l00068">exahype2.solvers.fv.musclhancock.GlobalFixedTimeStep.GlobalFixedTimeStep.set_implementation()</a>, <a class="el" href="../../d6/df9/RungeKuttaDG_8py_source.html#l01628">exahype2.solvers.rkdg.RungeKuttaDG.RungeKuttaDG.set_implementation()</a>, and <a class="el" href="../../d5/df6/ADERDG_8py_source.html#l01222">exahype2.solvers.aderdg.ADERDG.ADERDG.set_implementation()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>applications/exahype2/ccz4/<a class="el" href="../../dc/db6/ccz4_8py_source.html">ccz4.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/db2/namespaceccz4.html">ccz4</a></li><li class="navelem"><a class="el" href="../../d3/d26/classccz4_1_1CCZ4Solver.html">CCZ4Solver</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:21 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

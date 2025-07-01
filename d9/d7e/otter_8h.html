@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/d7e/otter_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">otter.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for otter.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d8e/otter_8h__incl.png" border="0" usemap="#asrc_2tarch_2multicore_2otter_8h" alt=""/></div>
+<map name="asrc_2tarch_2multicore_2otter_8h" id="asrc_2tarch_2multicore_2otter_8h">
+<area shape="rect" title=" " alt="" coords="5,5,149,45"/>
+<area shape="rect" title=" " alt="" coords="41,93,114,119"/>
+<area shape="poly" title=" " alt="" coords="80,46,80,79,75,79,75,46"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dc7/otter_8h__dep__incl.png" border="0" usemap="#asrc_2tarch_2multicore_2otter_8hdep" alt=""/></div>
+<map name="asrc_2tarch_2multicore_2otter_8hdep" id="asrc_2tarch_2multicore_2otter_8hdep">
+<area shape="rect" title=" " alt="" coords="1610,5,1754,45"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html" title=" " alt="" coords="5,101,175,141"/>
+<area shape="poly" title=" " alt="" coords="1596,31,1298,37,891,49,484,68,314,81,186,96,152,103,150,98,186,91,314,76,483,63,891,44,1298,32,1596,25"/>
+<area shape="rect" href="../../d7/dda/benchmarks_2exahype2_2ccz4_2gauge-wave_2ccz4-main_8cpp.html" title=" " alt="" coords="199,93,371,148"/>
+<area shape="poly" title=" " alt="" coords="1596,31,983,52,636,71,492,83,382,96,371,98,371,93,382,91,491,78,635,66,983,47,1596,26"/>
+<area shape="rect" href="../../de/d66/BenchmarkDriver_8cpp.html" title=" " alt="" coords="395,93,615,148"/>
+<area shape="poly" title=" " alt="" coords="1596,30,1419,35,1178,46,904,65,626,96,615,98,615,92,626,91,903,60,1178,41,1419,30,1596,25"/>
+<area shape="rect" href="../../db/dd2/SolveVolumeIntegral_8EnclaveTask_8template_8cpp.html" title=" " alt="" coords="639,93,888,148"/>
+<area shape="poly" title=" " alt="" coords="1596,34,1289,55,1095,73,901,96,889,98,888,92,900,91,1095,68,1288,50,1596,28"/>
+<area shape="rect" href="../../de/df6/SeparateSweeps_8EnclaveTask_8template_8cpp.html" title=" " alt="" coords="913,93,1131,148"/>
+<area shape="poly" title=" " alt="" coords="1596,38,1390,61,1144,96,1132,98,1131,93,1143,91,1389,56,1596,32"/>
+<area shape="rect" href="../../d1/d8b/SWIFTMain_8template_8cpp.html" title=" " alt="" coords="1156,101,1344,141"/>
+<area shape="poly" title=" " alt="" coords="1597,47,1364,96,1332,103,1330,98,1363,91,1596,41"/>
+<area shape="rect" href="../../dd/d82/fd_2LoopBody_8cpph.html" title=" " alt="" coords="1494,108,1721,133"/>
+<area shape="poly" title=" " alt="" coords="1660,58,1619,109,1615,106,1656,55"/>
+<area shape="rect" href="../../d6/d6f/FD4__batched__static__calls_8cpph.html" title=" " alt="" coords="1742,284,1897,339"/>
+<area shape="poly" title=" " alt="" coords="1709,54,1735,92,1811,283,1806,285,1730,95,1705,58"/>
+<area shape="rect" href="../../d4/db8/FD4__patchwise__functors_8cpp.html" title=" " alt="" coords="1305,482,1517,522"/>
+<area shape="poly" title=" " alt="" coords="1597,43,1506,65,1468,79,1445,95,1415,142,1397,195,1387,251,1385,308,1387,362,1394,410,1409,481,1403,482,1389,411,1382,362,1379,308,1382,251,1391,194,1411,140,1441,91,1466,74,1504,59,1596,37"/>
+<area shape="rect" href="../../d7/d3e/FD4__patchwise__static__calls_8cpph.html" title=" " alt="" coords="1583,475,1751,529"/>
+<area shape="poly" title=" " alt="" coords="1597,39,1536,58,1508,74,1484,95,1466,118,1454,139,1444,181,1442,227,1439,284,1434,313,1434,324,1439,337,1471,382,1512,420,1558,450,1602,472,1599,477,1555,454,1509,424,1467,386,1434,340,1429,325,1429,312,1434,284,1437,227,1438,180,1449,137,1461,115,1480,91,1505,70,1534,53,1596,33"/>
+<area shape="rect" href="../../d5/d54/SOCCZ4__ver_2FD4__patchwise__functors_8cpp.html" title=" " alt="" coords="1962,475,2173,529"/>
+<area shape="poly" title=" " alt="" coords="1737,49,1770,68,1801,91,1822,111,1837,131,1858,167,1880,202,1897,218,1919,234,1955,249,1989,253,2021,251,2053,246,2084,243,2114,245,2144,257,2172,282,2177,296,2178,315,2172,362,2155,428,2134,455,2110,476,2106,472,2130,451,2150,425,2167,361,2173,315,2172,297,2168,286,2141,261,2113,250,2084,248,2054,251,2022,256,1989,258,1953,254,1917,238,1893,222,1876,205,1853,170,1832,134,1818,115,1798,95,1767,73,1734,54"/>
+<area shape="rect" href="../../d7/dce/omp_2FD4__batched__static__calls_8cpph.html" title=" " alt="" coords="1971,284,2158,339"/>
+<area shape="poly" title=" " alt="" coords="1722,52,1765,92,1793,132,1809,167,1826,200,1840,217,1858,234,1906,258,1974,281,1973,286,1904,263,1855,238,1836,221,1822,203,1804,169,1789,134,1761,95,1718,56"/>
+<area shape="rect" href="../../d1/da8/MusclHancock__patchwise__functors_8cpph.html" title=" " alt="" coords="1897,101,2185,141"/>
+<area shape="poly" title=" " alt="" coords="1768,46,1969,98,1967,103,1767,51"/>
+<area shape="rect" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html" title=" " alt="" coords="2209,101,2451,141"/>
+<area shape="poly" title=" " alt="" coords="1768,33,1964,57,2197,91,2239,98,2238,103,2196,96,1964,63,1767,39"/>
+<area shape="rect" href="../../d5/d93/PETScMain_8template_8cpp.html" title=" " alt="" coords="2475,101,2662,141"/>
+<area shape="poly" title=" " alt="" coords="1768,27,2076,45,2269,64,2464,91,2500,98,2499,103,2463,96,2269,69,2075,51,1767,32"/>
+<area shape="rect" href="../../d0/d24/tbb_2Tasks_8cpp.html" title=" " alt="" coords="2686,101,2830,141"/>
+<area shape="poly" title=" " alt="" coords="1768,23,1936,25,2162,34,2417,54,2548,70,2675,91,2704,98,2703,103,2673,96,2547,75,2417,59,2162,39,1936,30,1768,28"/>
+<area shape="rect" href="../../d4/da9/Tutorial01-main_8cpp.html" title=" " alt="" coords="2855,101,3056,141"/>
+<area shape="poly" title=" " alt="" coords="1767,24,1961,27,2227,36,2533,56,2689,72,2842,91,2882,98,2881,103,2842,96,2689,77,2533,62,2227,42,1960,32,1767,29"/>
+<area shape="rect" href="../../df/d88/Tutorial02-main_8cpp.html" title=" " alt="" coords="3080,101,3281,141"/>
+<area shape="poly" title=" " alt="" coords="1768,26,2421,48,2795,67,2951,78,3069,91,3109,98,3108,103,3068,96,2951,83,2795,72,2421,53,1768,31"/>
+<area shape="rect" href="../../d0/d63/fd_2LoopBody_8h.html" title=" " alt="" coords="1516,203,1720,229"/>
+<area shape="poly" title=" " alt="" coords="1613,147,1619,203,1614,204,1608,147"/>
+<area shape="rect" href="../../d8/deb/LoopBody_8cpp.html" title=" " alt="" coords="1449,299,1667,324"/>
+<area shape="poly" title=" " alt="" coords="1605,242,1568,300,1563,297,1601,239"/>
+<area shape="poly" title=" " alt="" coords="1656,232,1764,282,1762,286,1654,237"/>
+<area shape="poly" title=" " alt="" coords="1521,235,1476,254,1456,268,1439,286,1424,309,1414,335,1405,390,1405,441,1410,481,1405,482,1400,442,1399,389,1409,333,1419,307,1435,282,1452,264,1473,250,1519,230"/>
+<area shape="poly" title=" " alt="" coords="1647,236,1666,257,1682,283,1694,335,1694,388,1687,437,1678,475,1673,474,1682,436,1689,388,1688,336,1677,285,1662,260,1643,240"/>
+<area shape="poly" title=" " alt="" coords="1734,218,1779,226,1825,238,1870,256,1910,282,1928,299,1939,316,1950,350,1959,386,1967,405,1980,425,2004,451,2031,473,2027,477,2001,455,1976,428,1962,408,1954,388,1945,352,1934,318,1924,302,1907,286,1867,261,1823,243,1778,231,1733,223"/>
+<area shape="poly" title=" " alt="" coords="1692,229,1953,281,1972,285,1971,291,1952,287,1691,234"/>
+<area shape="rect" href="../../d1/de4/FD4_8h.html" title=" " alt="" coords="1744,387,1895,427"/>
+<area shape="poly" title=" " alt="" coords="1813,352,1815,386,1809,387,1808,353"/>
+<area shape="poly" title=" " alt="" coords="1825,373,1825,339,1830,339,1831,373"/>
+<area shape="poly" title=" " alt="" coords="1731,431,1494,485,1493,479,1730,426"/>
+<area shape="poly" title=" " alt="" coords="1771,436,1703,477,1701,472,1768,431"/>
+<area shape="poly" title=" " alt="" coords="1883,429,1998,472,1997,477,1881,434"/>
+<area shape="rect" href="../../dd/dd3/CCZ4KernelTest_8cpp.html" title=" " alt="" coords="1775,482,1938,522"/>
+<area shape="poly" title=" " alt="" coords="1834,438,1852,481,1847,483,1830,440"/>
+<area shape="poly" title=" " alt="" coords="1729,465,1795,424,1797,429,1732,470"/>
+<area shape="rect" href="../../d5/d36/omp_2FD4_8h.html" title=" " alt="" coords="1989,387,2140,427"/>
+<area shape="poly" title=" " alt="" coords="2058,352,2060,386,2055,387,2053,353"/>
+<area shape="poly" title=" " alt="" coords="2071,373,2070,339,2076,339,2076,373"/>
+<area shape="rect" href="../../d9/dbc/MusclHancock_8h.html" title=" " alt="" coords="1929,196,2152,236"/>
+<area shape="poly" title=" " alt="" coords="2035,154,2036,196,2031,196,2029,154"/>
+<area shape="poly" title=" " alt="" coords="2047,182,2045,141,2051,141,2052,182"/>
+</map>
+</div>
+</div>
+<p><a href="../../d9/d7e/otter_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d8/da8/namespaceotter" id="r_d8/da8/namespaceotter"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da8/namespaceotter.html">otter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d7f/namespaceotter_1_1label" id="r_d0/d7f/namespaceotter_1_1label"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/namespaceotter_1_1label.html">otter::label</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dc/da1/namespaceotter_1_1phase" id="r_dc/da1/namespaceotter_1_1phase"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html">otter::phase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab1a83055e73185fdf1b52ea7f6607662" id="r_ab1a83055e73185fdf1b52ea7f6607662"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1a83055e73185fdf1b52ea7f6607662">OTTER_UTIL_ASSERT</a>(...)</td></tr>
+<tr class="separator:ab1a83055e73185fdf1b52ea7f6607662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835d72dacecdac3e9fd297bf06599528" id="r_a835d72dacecdac3e9fd297bf06599528"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835d72dacecdac3e9fd297bf06599528">OTTER_INITIALISE</a>()</td></tr>
+<tr class="separator:a835d72dacecdac3e9fd297bf06599528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ac7fc3faef154e7c4e468dc8e771f0" id="r_a09ac7fc3faef154e7c4e468dc8e771f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ac7fc3faef154e7c4e468dc8e771f0">OTTER_FINALISE</a>()</td></tr>
+<tr class="separator:a09ac7fc3faef154e7c4e468dc8e771f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da424030a5de14313668244ca0783d1" id="r_a7da424030a5de14313668244ca0783d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7da424030a5de14313668244ca0783d1">OTTER_DECLARE_HANDLE</a>(...)</td></tr>
+<tr class="separator:a7da424030a5de14313668244ca0783d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76b508b252d5bd8c3896c5f211a7489" id="r_af76b508b252d5bd8c3896c5f211a7489"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af76b508b252d5bd8c3896c5f211a7489">OTTER_INIT_TASK</a>(...)</td></tr>
+<tr class="separator:af76b508b252d5bd8c3896c5f211a7489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1472052e2baa2480b1b1c3ecce2044" id="r_acf1472052e2baa2480b1b1c3ecce2044"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf1472052e2baa2480b1b1c3ecce2044">OTTER_DEFINE_TASK</a>(...)</td></tr>
+<tr class="separator:acf1472052e2baa2480b1b1c3ecce2044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1143adc0567ac7a23010f1a1faaee499" id="r_a1143adc0567ac7a23010f1a1faaee499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1143adc0567ac7a23010f1a1faaee499">OTTER_POOL_ADD</a>(...)</td></tr>
+<tr class="separator:a1143adc0567ac7a23010f1a1faaee499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5516db8d962b61c32a46129d2ae3d819" id="r_a5516db8d962b61c32a46129d2ae3d819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5516db8d962b61c32a46129d2ae3d819">OTTER_POOL_POP</a>(...)</td></tr>
+<tr class="separator:a5516db8d962b61c32a46129d2ae3d819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5faa01efac476be1b229cebfe102e5c0" id="r_a5faa01efac476be1b229cebfe102e5c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5faa01efac476be1b229cebfe102e5c0">OTTER_POOL_DECL_POP</a>(...)</td></tr>
+<tr class="separator:a5faa01efac476be1b229cebfe102e5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a7208fda0a3097f8a6b81578a490a4" id="r_ac3a7208fda0a3097f8a6b81578a490a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3a7208fda0a3097f8a6b81578a490a4">OTTER_POOL_BORROW</a>(...)</td></tr>
+<tr class="separator:ac3a7208fda0a3097f8a6b81578a490a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ea8fa50609e7a90c645307e1b4851" id="r_ab02ea8fa50609e7a90c645307e1b4851"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab02ea8fa50609e7a90c645307e1b4851">OTTER_POOL_DECL_BORROW</a>(...)</td></tr>
+<tr class="separator:ab02ea8fa50609e7a90c645307e1b4851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba92973732eb37603ef23a5cd84d1e62" id="r_aba92973732eb37603ef23a5cd84d1e62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba92973732eb37603ef23a5cd84d1e62">OTTER_POOL_SIZE</a>(...)</td></tr>
+<tr class="separator:aba92973732eb37603ef23a5cd84d1e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10a800c11a205dc819b3864f631ac1b" id="r_ab10a800c11a205dc819b3864f631ac1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10a800c11a205dc819b3864f631ac1b">OTTER_TASK_START</a>(...)</td></tr>
+<tr class="separator:ab10a800c11a205dc819b3864f631ac1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5b885b868a97b098e6c40beb35a183" id="r_a6a5b885b868a97b098e6c40beb35a183"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a5b885b868a97b098e6c40beb35a183">OTTER_TASK_END</a>(...)</td></tr>
+<tr class="separator:a6a5b885b868a97b098e6c40beb35a183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0cf9d291cd5b3c58b38d7b71132e8e" id="r_a7d0cf9d291cd5b3c58b38d7b71132e8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d0cf9d291cd5b3c58b38d7b71132e8e">OTTER_TASK_WAIT_START</a>(...)</td></tr>
+<tr class="separator:a7d0cf9d291cd5b3c58b38d7b71132e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0f76c23ed902b50d8dd73d83ca699e" id="r_afd0f76c23ed902b50d8dd73d83ca699e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0f76c23ed902b50d8dd73d83ca699e">OTTER_TASK_WAIT_END</a>(...)</td></tr>
+<tr class="separator:afd0f76c23ed902b50d8dd73d83ca699e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea44f9596931ae586da349f49f8b21dc" id="r_aea44f9596931ae586da349f49f8b21dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea44f9596931ae586da349f49f8b21dc">OTTER_TASK_YIELD_START</a>(...)</td></tr>
+<tr class="separator:aea44f9596931ae586da349f49f8b21dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f834cd972a186b689e88e9b96df1c9" id="r_ad0f834cd972a186b689e88e9b96df1c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0f834cd972a186b689e88e9b96df1c9">OTTER_TASK_YIELD_END</a>(...)</td></tr>
+<tr class="separator:ad0f834cd972a186b689e88e9b96df1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08db659b05aedc07f3f2fffc6ce55b17" id="r_a08db659b05aedc07f3f2fffc6ce55b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08db659b05aedc07f3f2fffc6ce55b17">OTTER_TASK_WAIT_IMPLICIT</a>(...)</td></tr>
+<tr class="separator:a08db659b05aedc07f3f2fffc6ce55b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b94bee0b8a7f06b0ae01bfe5d25a72" id="r_a90b94bee0b8a7f06b0ae01bfe5d25a72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b94bee0b8a7f06b0ae01bfe5d25a72">OTTER_PHASE_BEGIN</a>(...)</td></tr>
+<tr class="separator:a90b94bee0b8a7f06b0ae01bfe5d25a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473bd83ba4a884b28d80ba68510df9da" id="r_a473bd83ba4a884b28d80ba68510df9da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a473bd83ba4a884b28d80ba68510df9da">OTTER_PHASE_END</a>(...)</td></tr>
+<tr class="separator:a473bd83ba4a884b28d80ba68510df9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d8624fd3b232c2a5bd5570cb400468" id="r_a96d8624fd3b232c2a5bd5570cb400468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d8624fd3b232c2a5bd5570cb400468">OTTER_PHASE_SWITCH</a>(...)</td></tr>
+<tr class="separator:a96d8624fd3b232c2a5bd5570cb400468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afb989684e1238a1d4821e91c381ca0f2" id="r_afb989684e1238a1d4821e91c381ca0f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/namespaceotter_1_1label.html#afb989684e1238a1d4821e91c381ca0f2">otter::label::step</a> = &quot;[STEP TASK]&quot;</td></tr>
+<tr class="separator:afb989684e1238a1d4821e91c381ca0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb8219b7e0d596770780ba97aeb811a" id="r_a1eb8219b7e0d596770780ba97aeb811a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#a1eb8219b7e0d596770780ba97aeb811a">otter::phase::init</a> = &quot;init&quot;</td></tr>
+<tr class="separator:a1eb8219b7e0d596770780ba97aeb811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6396a68c8f5d6f236dc0690464ee31" id="r_a4e6396a68c8f5d6f236dc0690464ee31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#a4e6396a68c8f5d6f236dc0690464ee31">otter::phase::plot</a> = &quot;plot&quot;</td></tr>
+<tr class="separator:a4e6396a68c8f5d6f236dc0690464ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cda092415ae732c49aae222399e34ef" id="r_a6cda092415ae732c49aae222399e34ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#a6cda092415ae732c49aae222399e34ef">otter::phase::timestep</a> = &quot;time-step&quot;</td></tr>
+<tr class="separator:a6cda092415ae732c49aae222399e34ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f2c81b2c9dc4cb10ccca2e151d4507" id="r_a02f2c81b2c9dc4cb10ccca2e151d4507"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#a02f2c81b2c9dc4cb10ccca2e151d4507">otter::phase::create_grid</a> = &quot;create-grid&quot;</td></tr>
+<tr class="separator:a02f2c81b2c9dc4cb10ccca2e151d4507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac615f9f2d17550360b37cddd849eeeaa" id="r_ac615f9f2d17550360b37cddd849eeeaa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#ac615f9f2d17550360b37cddd849eeeaa">otter::phase::create_grid_no_refine</a> = &quot;create-grid-but-postpone-refinement&quot;</td></tr>
+<tr class="separator:ac615f9f2d17550360b37cddd849eeeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cb81860ebde40c4cdbe7212e524d55" id="r_ab2cb81860ebde40c4cdbe7212e524d55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da1/namespaceotter_1_1phase.html#ab2cb81860ebde40c4cdbe7212e524d55">otter::phase::create_grid_converge</a> = &quot;create-grid-and-converge-load-balancing&quot;</td></tr>
+<tr class="separator:ab2cb81860ebde40c4cdbe7212e524d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a7da424030a5de14313668244ca0783d1" name="a7da424030a5de14313668244ca0783d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da424030a5de14313668244ca0783d1">&#9670;&#160;</a></span>OTTER_DECLARE_HANDLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_DECLARE_HANDLE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00126">126</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="acf1472052e2baa2480b1b1c3ecce2044" name="acf1472052e2baa2480b1b1c3ecce2044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1472052e2baa2480b1b1c3ecce2044">&#9670;&#160;</a></span>OTTER_DEFINE_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_DEFINE_TASK</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00128">128</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="a09ac7fc3faef154e7c4e468dc8e771f0" name="a09ac7fc3faef154e7c4e468dc8e771f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ac7fc3faef154e7c4e468dc8e771f0">&#9670;&#160;</a></span>OTTER_FINALISE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_FINALISE</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00125">125</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+
+</div>
+</div>
+<a id="af76b508b252d5bd8c3896c5f211a7489" name="af76b508b252d5bd8c3896c5f211a7489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76b508b252d5bd8c3896c5f211a7489">&#9670;&#160;</a></span>OTTER_INIT_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_INIT_TASK</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00127">127</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a835d72dacecdac3e9fd297bf06599528" name="a835d72dacecdac3e9fd297bf06599528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835d72dacecdac3e9fd297bf06599528">&#9670;&#160;</a></span>OTTER_INITIALISE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_INITIALISE</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00124">124</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>.</p>
+
+</div>
+</div>
+<a id="a90b94bee0b8a7f06b0ae01bfe5d25a72" name="a90b94bee0b8a7f06b0ae01bfe5d25a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b94bee0b8a7f06b0ae01bfe5d25a72">&#9670;&#160;</a></span>OTTER_PHASE_BEGIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_PHASE_BEGIN</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00142">142</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a473bd83ba4a884b28d80ba68510df9da" name="a473bd83ba4a884b28d80ba68510df9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473bd83ba4a884b28d80ba68510df9da">&#9670;&#160;</a></span>OTTER_PHASE_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_PHASE_END</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00143">143</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a96d8624fd3b232c2a5bd5570cb400468" name="a96d8624fd3b232c2a5bd5570cb400468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d8624fd3b232c2a5bd5570cb400468">&#9670;&#160;</a></span>OTTER_PHASE_SWITCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_PHASE_SWITCH</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00144">144</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="a1143adc0567ac7a23010f1a1faaee499" name="a1143adc0567ac7a23010f1a1faaee499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1143adc0567ac7a23010f1a1faaee499">&#9670;&#160;</a></span>OTTER_POOL_ADD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_ADD</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00129">129</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac3a7208fda0a3097f8a6b81578a490a4" name="ac3a7208fda0a3097f8a6b81578a490a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a7208fda0a3097f8a6b81578a490a4">&#9670;&#160;</a></span>OTTER_POOL_BORROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_BORROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00132">132</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab02ea8fa50609e7a90c645307e1b4851" name="ab02ea8fa50609e7a90c645307e1b4851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02ea8fa50609e7a90c645307e1b4851">&#9670;&#160;</a></span>OTTER_POOL_DECL_BORROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_DECL_BORROW</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00133">133</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5faa01efac476be1b229cebfe102e5c0" name="a5faa01efac476be1b229cebfe102e5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5faa01efac476be1b229cebfe102e5c0">&#9670;&#160;</a></span>OTTER_POOL_DECL_POP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_DECL_POP</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00131">131</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5516db8d962b61c32a46129d2ae3d819" name="a5516db8d962b61c32a46129d2ae3d819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5516db8d962b61c32a46129d2ae3d819">&#9670;&#160;</a></span>OTTER_POOL_POP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_POP</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00130">130</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="aba92973732eb37603ef23a5cd84d1e62" name="aba92973732eb37603ef23a5cd84d1e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba92973732eb37603ef23a5cd84d1e62">&#9670;&#160;</a></span>OTTER_POOL_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_POOL_SIZE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00134">134</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a5b885b868a97b098e6c40beb35a183" name="a6a5b885b868a97b098e6c40beb35a183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5b885b868a97b098e6c40beb35a183">&#9670;&#160;</a></span>OTTER_TASK_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_END</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00136">136</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="ab10a800c11a205dc819b3864f631ac1b" name="ab10a800c11a205dc819b3864f631ac1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10a800c11a205dc819b3864f631ac1b">&#9670;&#160;</a></span>OTTER_TASK_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_START</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00135">135</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="afd0f76c23ed902b50d8dd73d83ca699e" name="afd0f76c23ed902b50d8dd73d83ca699e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0f76c23ed902b50d8dd73d83ca699e">&#9670;&#160;</a></span>OTTER_TASK_WAIT_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_WAIT_END</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00138">138</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="a08db659b05aedc07f3f2fffc6ce55b17" name="a08db659b05aedc07f3f2fffc6ce55b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08db659b05aedc07f3f2fffc6ce55b17">&#9670;&#160;</a></span>OTTER_TASK_WAIT_IMPLICIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_WAIT_IMPLICIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00141">141</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00254">step()</a>.</p>
+
+</div>
+</div>
+<a id="a7d0cf9d291cd5b3c58b38d7b71132e8e" name="a7d0cf9d291cd5b3c58b38d7b71132e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0cf9d291cd5b3c58b38d7b71132e8e">&#9670;&#160;</a></span>OTTER_TASK_WAIT_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_WAIT_START</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00137">137</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0f834cd972a186b689e88e9b96df1c9" name="ad0f834cd972a186b689e88e9b96df1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f834cd972a186b689e88e9b96df1c9">&#9670;&#160;</a></span>OTTER_TASK_YIELD_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_YIELD_END</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00140">140</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="aea44f9596931ae586da349f49f8b21dc" name="aea44f9596931ae586da349f49f8b21dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea44f9596931ae586da349f49f8b21dc">&#9670;&#160;</a></span>OTTER_TASK_YIELD_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_TASK_YIELD_START</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00139">139</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab1a83055e73185fdf1b52ea7f6607662" name="ab1a83055e73185fdf1b52ea7f6607662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a83055e73185fdf1b52ea7f6607662">&#9670;&#160;</a></span>OTTER_UTIL_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OTTER_UTIL_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d7e/otter_8h_source.html#l00123">123</a> of file <a class="el" href="../../d9/d7e/otter_8h_source.html">otter.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_525d306779bda057570c053f37c3526a.html">tarch</a></li><li class="navelem"><a class="el" href="../../dir_d31714f86e8099ded04bf814bc2ff527.html">multicore</a></li><li class="navelem"><a class="el" href="../../d9/d7e/otter_8h.html">otter.h</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:28:38 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

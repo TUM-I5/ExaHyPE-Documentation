@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/d46/namespaceconvergence-study.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">convergence-study Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aec932cc35d86a7ebcecf8cf9d943a40f" id="r_aec932cc35d86a7ebcecf8cf9d943a40f"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec932cc35d86a7ebcecf8cf9d943a40f">storage_types</a></td></tr>
+<tr class="separator:aec932cc35d86a7ebcecf8cf9d943a40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f15f22ba95790b60883c769968a2d7" id="r_a29f15f22ba95790b60883c769968a2d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f15f22ba95790b60883c769968a2d7">parser</a></td></tr>
+<tr class="separator:a29f15f22ba95790b60883c769968a2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18d0e211a98e7074553772616bca31f" id="r_ad18d0e211a98e7074553772616bca31f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad18d0e211a98e7074553772616bca31f">dest</a></td></tr>
+<tr class="separator:ad18d0e211a98e7074553772616bca31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523e5ffef401f76c2c4ee9c5bc632466" id="r_a523e5ffef401f76c2c4ee9c5bc632466"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a523e5ffef401f76c2c4ee9c5bc632466">type</a></td></tr>
+<tr class="separator:a523e5ffef401f76c2c4ee9c5bc632466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a38ab4b665eefc352e6a6cfc9a3a56" id="r_a69a38ab4b665eefc352e6a6cfc9a3a56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a></td></tr>
+<tr class="separator:a69a38ab4b665eefc352e6a6cfc9a3a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92caa9ffa8a6841a20dbbad2e0c959a2" id="r_a92caa9ffa8a6841a20dbbad2e0c959a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92caa9ffa8a6841a20dbbad2e0c959a2">default</a></td></tr>
+<tr class="separator:a92caa9ffa8a6841a20dbbad2e0c959a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02b2f9536c18afc0f9fad4173041dc9" id="r_af02b2f9536c18afc0f9fad4173041dc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af02b2f9536c18afc0f9fad4173041dc9">help</a></td></tr>
+<tr class="separator:af02b2f9536c18afc0f9fad4173041dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82c503e981941f02762d17da58fe52e" id="r_aa82c503e981941f02762d17da58fe52e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa82c503e981941f02762d17da58fe52e">choices</a></td></tr>
+<tr class="separator:aa82c503e981941f02762d17da58fe52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2377b51c4a851cd46788f608e7fcf7a4" id="r_a2377b51c4a851cd46788f608e7fcf7a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2377b51c4a851cd46788f608e7fcf7a4">required</a></td></tr>
+<tr class="separator:a2377b51c4a851cd46788f608e7fcf7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf77e17e391b9181815cc4ba14dabefb" id="r_abf77e17e391b9181815cc4ba14dabefb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf77e17e391b9181815cc4ba14dabefb">action</a></td></tr>
+<tr class="separator:abf77e17e391b9181815cc4ba14dabefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd1b3ef6fd1f67dee139b819ad2ce5d" id="r_a3fd1b3ef6fd1f67dee139b819ad2ce5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fd1b3ef6fd1f67dee139b819ad2ce5d">CompileModes</a></td></tr>
+<tr class="separator:a3fd1b3ef6fd1f67dee139b819ad2ce5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fe218e812959fedc4703f3c5afe1ef" id="r_a13fe218e812959fedc4703f3c5afe1ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13fe218e812959fedc4703f3c5afe1ef">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a13fe218e812959fedc4703f3c5afe1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e8a2713c1b25f7c6d25f0e73d0ee2" id="r_a631e8a2713c1b25f7c6d25f0e73d0ee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631e8a2713c1b25f7c6d25f0e73d0ee2">project</a></td></tr>
+<tr class="separator:a631e8a2713c1b25f7c6d25f0e73d0ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2fd09c0658bd075a3dd3c47f87f4df" id="r_a8e2fd09c0658bd075a3dd3c47f87f4df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2fd09c0658bd075a3dd3c47f87f4df">my_solver</a> = None</td></tr>
+<tr class="separator:a8e2fd09c0658bd075a3dd3c47f87f4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fde1ed27ec20abe06089ff0fd0c410" id="r_a38fde1ed27ec20abe06089ff0fd0c410"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fde1ed27ec20abe06089ff0fd0c410">initial_conditions</a></td></tr>
+<tr class="separator:a38fde1ed27ec20abe06089ff0fd0c410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc18051feca74057e3efc1bcb2ff3511" id="r_afc18051feca74057e3efc1bcb2ff3511"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc18051feca74057e3efc1bcb2ff3511">order</a> = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[-1])</td></tr>
+<tr class="separator:afc18051feca74057e3efc1bcb2ff3511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41612aa38f3d06cf8b9cda874702a4ff" id="r_a41612aa38f3d06cf8b9cda874702a4ff"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41612aa38f3d06cf8b9cda874702a4ff">second_order_formulation</a> = &quot;sofd4&quot; in args.solver</td></tr>
+<tr class="separator:a41612aa38f3d06cf8b9cda874702a4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ad2db0b1480e81bfff048d2c00de6d" id="r_ad0ad2db0b1480e81bfff048d2c00de6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0ad2db0b1480e81bfff048d2c00de6d">space_order</a> = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[2])</td></tr>
+<tr class="separator:ad0ad2db0b1480e81bfff048d2c00de6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f6daf95fb7e59cd1970a6ba12b5478" id="r_a83f6daf95fb7e59cd1970a6ba12b5478"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83f6daf95fb7e59cd1970a6ba12b5478">time_order</a> = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[6])</td></tr>
+<tr class="separator:a83f6daf95fb7e59cd1970a6ba12b5478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d1f0c8756b4a9722357717d40d50ae" id="r_a56d1f0c8756b4a9722357717d40d50ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56d1f0c8756b4a9722357717d40d50ae">cell_data_storage</a></td></tr>
+<tr class="separator:a56d1f0c8756b4a9722357717d40d50ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218cd24f7eb9950f47978defe28a418f" id="r_a218cd24f7eb9950f47978defe28a418f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218cd24f7eb9950f47978defe28a418f">face_data_storage</a></td></tr>
+<tr class="separator:a218cd24f7eb9950f47978defe28a418f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802fac232360a3a3c1e9c05c8c79e770" id="r_a802fac232360a3a3c1e9c05c8c79e770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a802fac232360a3a3c1e9c05c8c79e770">time_delta_between_two_snapsots</a> = 1e-4</td></tr>
+<tr class="separator:a802fac232360a3a3c1e9c05c8c79e770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a42d0dd202c8bb7d8f841871337574e" id="r_a8a42d0dd202c8bb7d8f841871337574e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a42d0dd202c8bb7d8f841871337574e">name</a></td></tr>
+<tr class="separator:a8a42d0dd202c8bb7d8f841871337574e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b989c3adfa641f42dbf7543457b012" id="r_a45b989c3adfa641f42dbf7543457b012"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45b989c3adfa641f42dbf7543457b012">coordinates</a></td></tr>
+<tr class="separator:a45b989c3adfa641f42dbf7543457b012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3ab5b4559018971721f1e9f7dcb514" id="r_a5b3ab5b4559018971721f1e9f7dcb514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b3ab5b4559018971721f1e9f7dcb514">number_of_entries_between_two_db_flushes</a></td></tr>
+<tr class="separator:a5b3ab5b4559018971721f1e9f7dcb514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad74829ca1a901f4ce80d78f876ae79" id="r_aaad74829ca1a901f4ce80d78f876ae79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaad74829ca1a901f4ce80d78f876ae79">data_delta_between_two_snapsots</a></td></tr>
+<tr class="separator:aaad74829ca1a901f4ce80d78f876ae79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8425260055f6df861ad45b527bd2ea4" id="r_ae8425260055f6df861ad45b527bd2ea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8425260055f6df861ad45b527bd2ea4">clear_database_after_flush</a></td></tr>
+<tr class="separator:ae8425260055f6df861ad45b527bd2ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e96049360d78e608951b3ed43a7fd20" id="r_a4e96049360d78e608951b3ed43a7fd20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e96049360d78e608951b3ed43a7fd20">tracer_unknowns</a></td></tr>
+<tr class="separator:a4e96049360d78e608951b3ed43a7fd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcd04b682a0a031c15a4e7cd32bb61e" id="r_a2dcd04b682a0a031c15a4e7cd32bb61e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dcd04b682a0a031c15a4e7cd32bb61e">delta_plot</a> = 1.0 / 100</td></tr>
+<tr class="separator:a2dcd04b682a0a031c15a4e7cd32bb61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f51b751f103666b0a2f511f626f0107" id="r_a5f51b751f103666b0a2f511f626f0107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f51b751f103666b0a2f511f626f0107">dimensions</a> = 3</td></tr>
+<tr class="separator:a5f51b751f103666b0a2f511f626f0107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb282c4ede98686c8476d6f77c37324" id="r_aebb282c4ede98686c8476d6f77c37324"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebb282c4ede98686c8476d6f77c37324">offset</a> = [-0.5, -0.5, -0.5]</td></tr>
+<tr class="separator:aebb282c4ede98686c8476d6f77c37324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8d43ecd3540542e7d35df5e40da49f" id="r_a7b8d43ecd3540542e7d35df5e40da49f"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b8d43ecd3540542e7d35df5e40da49f">domain_size</a> = [1, 1, 1]</td></tr>
+<tr class="separator:a7b8d43ecd3540542e7d35df5e40da49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe2a43f346e004aab7c1c8c9d806243" id="r_a8fe2a43f346e004aab7c1c8c9d806243"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fe2a43f346e004aab7c1c8c9d806243">periodic_boundary_conditions</a> = [<a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>, <a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>, <a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>]</td></tr>
+<tr class="separator:a8fe2a43f346e004aab7c1c8c9d806243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29958689e352e29a4c6970c54b8ce3c7" id="r_a29958689e352e29a4c6970c54b8ce3c7"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29958689e352e29a4c6970c54b8ce3c7">probe_point</a> = [-12,-12,0.0]</td></tr>
+<tr class="separator:a29958689e352e29a4c6970c54b8ce3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af716d7da0ee8df74c81e31bcaa9a0473" id="r_af716d7da0ee8df74c81e31bcaa9a0473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af716d7da0ee8df74c81e31bcaa9a0473">peano4_project</a> = project.generate_Peano4_project(verbose=args.verbose)</td></tr>
+<tr class="separator:af716d7da0ee8df74c81e31bcaa9a0473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1b31a68f3ed9dae1ed126bfe3b0ff7" id="r_a7a1b31a68f3ed9dae1ed126bfe3b0ff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a1b31a68f3ed9dae1ed126bfe3b0ff7">additional_mesh_traversal</a></td></tr>
+<tr class="separator:a7a1b31a68f3ed9dae1ed126bfe3b0ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad735a5f30f4365a8a06814e34b41997d" id="r_ad735a5f30f4365a8a06814e34b41997d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad735a5f30f4365a8a06814e34b41997d">project_patch_onto_faces</a> = <a class="el" href="../../dc/d9b/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html">exahype2.solvers.rkfd.actionsets.ProjectPatchOntoFaces</a>(<a class="el" href="#a8e2fd09c0658bd075a3dd3c47f87f4df">my_solver</a>)</td></tr>
+<tr class="separator:ad735a5f30f4365a8a06814e34b41997d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7d7b078dee02f210b8e92699b6c084" id="r_a5c7d7b078dee02f210b8e92699b6c084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c7d7b078dee02f210b8e92699b6c084">guards</a></td></tr>
+<tr class="separator:a5c7d7b078dee02f210b8e92699b6c084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30158dcf3d62a522af7b5b7be61fc32" id="r_ac30158dcf3d62a522af7b5b7be61fc32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30158dcf3d62a522af7b5b7be61fc32">roll_over_projected_faces</a></td></tr>
+<tr class="separator:ac30158dcf3d62a522af7b5b7be61fc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32376e3da38eca1457fb160dda4403fc" id="r_a32376e3da38eca1457fb160dda4403fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32376e3da38eca1457fb160dda4403fc">throw_away_data_after_generation</a></td></tr>
+<tr class="separator:a32376e3da38eca1457fb160dda4403fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192c57e09cd86141af7eac0cf2253e95" id="r_a192c57e09cd86141af7eac0cf2253e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a192c57e09cd86141af7eac0cf2253e95">make_clean_first</a></td></tr>
+<tr class="separator:a192c57e09cd86141af7eac0cf2253e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca4d9845d2e8394483f5e1a65aa2738" id="r_abca4d9845d2e8394483f5e1a65aa2738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a></td></tr>
+<tr class="separator:abca4d9845d2e8394483f5e1a65aa2738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79e794f56752ca4b0d2c237015ada25" id="r_aa79e794f56752ca4b0d2c237015ada25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa79e794f56752ca4b0d2c237015ada25">number_of_parallel_builds</a></td></tr>
+<tr class="separator:aa79e794f56752ca4b0d2c237015ada25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abf77e17e391b9181815cc4ba14dabefb" name="abf77e17e391b9181815cc4ba14dabefb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf77e17e391b9181815cc4ba14dabefb">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00056">56</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a7a1b31a68f3ed9dae1ed126bfe3b0ff7" name="a7a1b31a68f3ed9dae1ed126bfe3b0ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1b31a68f3ed9dae1ed126bfe3b0ff7">&#9670;&#160;</a></span>additional_mesh_traversal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.additional_mesh_traversal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d1/de4/classpeano4_1_1solversteps_1_1Step_1_1Step.html">peano4.solversteps.Step</a>( name = <span class="stringliteral">&quot;AdditionalMeshTraversal&quot;</span>,</div>
+<div class="line"><span class="lineno">    2</span>                                                           add_user_defined_actions=<span class="keyword">False</span>,</div>
+<div class="line"><span class="lineno">    3</span>                                                           )</div>
+<div class="ttc" id="aclasspeano4_1_1solversteps_1_1Step_1_1Step_html"><div class="ttname"><a href="../../d1/de4/classpeano4_1_1solversteps_1_1Step_1_1Step.html">peano4.solversteps.Step.Step</a></div><div class="ttdoc">One step.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d32/Step_8py_source.html#l00015">Step.py:15</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00290">290</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a13fe218e812959fedc4703f3c5afe1ef" name="a13fe218e812959fedc4703f3c5afe1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fe218e812959fedc4703f3c5afe1ef">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00121">121</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a56d1f0c8756b4a9722357717d40d50ae" name="a56d1f0c8756b4a9722357717d40d50ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d1f0c8756b4a9722357717d40d50ae">&#9670;&#160;</a></span>cell_data_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.cell_data_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00225">225</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="aa82c503e981941f02762d17da58fe52e" name="aa82c503e981941f02762d17da58fe52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82c503e981941f02762d17da58fe52e">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00041">41</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="ae8425260055f6df861ad45b527bd2ea4" name="ae8425260055f6df861ad45b527bd2ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8425260055f6df861ad45b527bd2ea4">&#9670;&#160;</a></span>clear_database_after_flush</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.clear_database_after_flush</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00250">250</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a3fd1b3ef6fd1f67dee139b819ad2ce5d" name="a3fd1b3ef6fd1f67dee139b819ad2ce5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd1b3ef6fd1f67dee139b819ad2ce5d">&#9670;&#160;</a></span>CompileModes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.CompileModes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00111">111</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a45b989c3adfa641f42dbf7543457b012" name="a45b989c3adfa641f42dbf7543457b012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b989c3adfa641f42dbf7543457b012">&#9670;&#160;</a></span>coordinates</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.coordinates</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00245">245</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="aaad74829ca1a901f4ce80d78f876ae79" name="aaad74829ca1a901f4ce80d78f876ae79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad74829ca1a901f4ce80d78f876ae79">&#9670;&#160;</a></span>data_delta_between_two_snapsots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.data_delta_between_two_snapsots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00248">248</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a92caa9ffa8a6841a20dbbad2e0c959a2" name="a92caa9ffa8a6841a20dbbad2e0c959a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92caa9ffa8a6841a20dbbad2e0c959a2">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00035">35</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a2dcd04b682a0a031c15a4e7cd32bb61e" name="a2dcd04b682a0a031c15a4e7cd32bb61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dcd04b682a0a031c15a4e7cd32bb61e">&#9670;&#160;</a></span>delta_plot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float convergence-study.delta_plot = 1.0 / 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00261">261</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="ad18d0e211a98e7074553772616bca31f" name="ad18d0e211a98e7074553772616bca31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18d0e211a98e7074553772616bca31f">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00035">35</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a5f51b751f103666b0a2f511f626f0107" name="a5f51b751f103666b0a2f511f626f0107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f51b751f103666b0a2f511f626f0107">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a> convergence-study.dimensions = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00265">265</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a7b8d43ecd3540542e7d35df5e40da49f" name="a7b8d43ecd3540542e7d35df5e40da49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8d43ecd3540542e7d35df5e40da49f">&#9670;&#160;</a></span>domain_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list convergence-study.domain_size = [1, 1, 1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00267">267</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a218cd24f7eb9950f47978defe28a418f" name="a218cd24f7eb9950f47978defe28a418f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218cd24f7eb9950f47978defe28a418f">&#9670;&#160;</a></span>face_data_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.face_data_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00226">226</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a5c7d7b078dee02f210b8e92699b6c084" name="a5c7d7b078dee02f210b8e92699b6c084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7d7b078dee02f210b8e92699b6c084">&#9670;&#160;</a></span>guards</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.guards</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00298">298</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="af02b2f9536c18afc0f9fad4173041dc9" name="af02b2f9536c18afc0f9fad4173041dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02b2f9536c18afc0f9fad4173041dc9">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00035">35</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a38fde1ed27ec20abe06089ff0fd0c410" name="a38fde1ed27ec20abe06089ff0fd0c410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fde1ed27ec20abe06089ff0fd0c410">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00147">147</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a69a38ab4b665eefc352e6a6cfc9a3a56" name="a69a38ab4b665eefc352e6a6cfc9a3a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a38ab4b665eefc352e6a6cfc9a3a56">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00035">35</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a192c57e09cd86141af7eac0cf2253e95" name="a192c57e09cd86141af7eac0cf2253e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192c57e09cd86141af7eac0cf2253e95">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00326">326</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a8e2fd09c0658bd075a3dd3c47f87f4df" name="a8e2fd09c0658bd075a3dd3c47f87f4df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2fd09c0658bd075a3dd3c47f87f4df">&#9670;&#160;</a></span>my_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.my_solver = None</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00136">136</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a8a42d0dd202c8bb7d8f841871337574e" name="a8a42d0dd202c8bb7d8f841871337574e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a42d0dd202c8bb7d8f841871337574e">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00244">244</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a5b3ab5b4559018971721f1e9f7dcb514" name="a5b3ab5b4559018971721f1e9f7dcb514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3ab5b4559018971721f1e9f7dcb514">&#9670;&#160;</a></span>number_of_entries_between_two_db_flushes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.number_of_entries_between_two_db_flushes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00247">247</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="aa79e794f56752ca4b0d2c237015ada25" name="aa79e794f56752ca4b0d2c237015ada25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79e794f56752ca4b0d2c237015ada25">&#9670;&#160;</a></span>number_of_parallel_builds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.number_of_parallel_builds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00326">326</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="aebb282c4ede98686c8476d6f77c37324" name="aebb282c4ede98686c8476d6f77c37324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb282c4ede98686c8476d6f77c37324">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list convergence-study.offset = [-0.5, -0.5, -0.5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00266">266</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="afc18051feca74057e3efc1bcb2ff3511" name="afc18051feca74057e3efc1bcb2ff3511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc18051feca74057e3efc1bcb2ff3511">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.order = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[-1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00167">167</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a29f15f22ba95790b60883c769968a2d7" name="a29f15f22ba95790b60883c769968a2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f15f22ba95790b60883c769968a2d7">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.parser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  argparse.ArgumentParser(</div>
+<div class="line"><span class="lineno">    2</span>    description=<span class="stringliteral">&quot;ExaHyPE 2 - CCZ4-GaugeWave benchmarking script&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00031">31</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="af716d7da0ee8df74c81e31bcaa9a0473" name="af716d7da0ee8df74c81e31bcaa9a0473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af716d7da0ee8df74c81e31bcaa9a0473">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.peano4_project = project.generate_Peano4_project(verbose=args.verbose)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00287">287</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a8fe2a43f346e004aab7c1c8c9d806243" name="a8fe2a43f346e004aab7c1c8c9d806243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe2a43f346e004aab7c1c8c9d806243">&#9670;&#160;</a></span>periodic_boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list convergence-study.periodic_boundary_conditions = [<a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>, <a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>, <a class="el" href="#abca4d9845d2e8394483f5e1a65aa2738">True</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00269">269</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a29958689e352e29a4c6970c54b8ce3c7" name="a29958689e352e29a4c6970c54b8ce3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29958689e352e29a4c6970c54b8ce3c7">&#9670;&#160;</a></span>probe_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list convergence-study.probe_point = [-12,-12,0.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00282">282</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a631e8a2713c1b25f7c6d25f0e73d0ee2" name="a631e8a2713c1b25f7c6d25f0e73d0ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631e8a2713c1b25f7c6d25f0e73d0ee2">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    [<span class="stringliteral">&quot;benchmarks&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;ccz4&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;ccz4&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    executable=args.solver + <span class="stringliteral">&quot;-&quot;</span> + str(args.cell_size),</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00123">123</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="ad735a5f30f4365a8a06814e34b41997d" name="ad735a5f30f4365a8a06814e34b41997d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad735a5f30f4365a8a06814e34b41997d">&#9670;&#160;</a></span>project_patch_onto_faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.project_patch_onto_faces = <a class="el" href="../../dc/d9b/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1ProjectPatchOntoFaces_1_1ProjectPatchOntoFaces.html">exahype2.solvers.rkfd.actionsets.ProjectPatchOntoFaces</a>(<a class="el" href="#a8e2fd09c0658bd075a3dd3c47f87f4df">my_solver</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00297">297</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a2377b51c4a851cd46788f608e7fcf7a4" name="a2377b51c4a851cd46788f608e7fcf7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2377b51c4a851cd46788f608e7fcf7a4">&#9670;&#160;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00042">42</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="ac30158dcf3d62a522af7b5b7be61fc32" name="ac30158dcf3d62a522af7b5b7be61fc32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30158dcf3d62a522af7b5b7be61fc32">&#9670;&#160;</a></span>roll_over_projected_faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.roll_over_projected_faces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d7/db4/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1RollOverUpdatedFace_1_1RollOverUpdatedFace.html">exahype2.solvers.rkfd.actionsets.RollOverUpdatedFace</a>(my_solver, </div>
+<div class="line"><span class="lineno">    2</span>                                                                                    my_solver._store_face_data_default_guard(),</div>
+<div class="line"><span class="lineno">    3</span>                                                                                    )</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1RollOverUpdatedFace_1_1RollOverUpdatedFace_html"><div class="ttname"><a href="../../d7/db4/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1RollOverUpdatedFace_1_1RollOverUpdatedFace.html">exahype2.solvers.rkfd.actionsets.RollOverUpdatedFace.RollOverUpdatedFace</a></div><div class="ttdoc">Roll over QUpdate data on face into QNew.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d91/rkfd_2actionsets_2RollOverUpdatedFace_8py_source.html#l00009">RollOverUpdatedFace.py:9</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00301">301</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a41612aa38f3d06cf8b9cda874702a4ff" name="a41612aa38f3d06cf8b9cda874702a4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41612aa38f3d06cf8b9cda874702a4ff">&#9670;&#160;</a></span>second_order_formulation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str convergence-study.second_order_formulation = &quot;sofd4&quot; in args.solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00168">168</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="ad0ad2db0b1480e81bfff048d2c00de6d" name="ad0ad2db0b1480e81bfff048d2c00de6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ad2db0b1480e81bfff048d2c00de6d">&#9670;&#160;</a></span>space_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.space_order = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[2])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00196">196</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="aec932cc35d86a7ebcecf8cf9d943a40f" name="aec932cc35d86a7ebcecf8cf9d943a40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec932cc35d86a7ebcecf8cf9d943a40f">&#9670;&#160;</a></span>storage_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict convergence-study.storage_types</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;CallStack&quot;</span>:     exahype2.solvers.Storage.CallStack,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;Heap&quot;</span>:          exahype2.solvers.Storage.Heap,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;SmartPointers&quot;</span>: exahype2.solvers.Storage.SmartPointers,</div>
+<div class="line"><span class="lineno">    5</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00024">24</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a32376e3da38eca1457fb160dda4403fc" name="a32376e3da38eca1457fb160dda4403fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32376e3da38eca1457fb160dda4403fc">&#9670;&#160;</a></span>throw_away_data_after_generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.throw_away_data_after_generation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00325">325</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a802fac232360a3a3c1e9c05c8c79e770" name="a802fac232360a3a3c1e9c05c8c79e770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802fac232360a3a3c1e9c05c8c79e770">&#9670;&#160;</a></span>time_delta_between_two_snapsots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float convergence-study.time_delta_between_two_snapsots = 1e-4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00240">240</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a83f6daf95fb7e59cd1970a6ba12b5478" name="a83f6daf95fb7e59cd1970a6ba12b5478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f6daf95fb7e59cd1970a6ba12b5478">&#9670;&#160;</a></span>time_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.time_order = <a class="el" href="#a69a38ab4b665eefc352e6a6cfc9a3a56">int</a>(args.solver[6])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00197">197</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a4e96049360d78e608951b3ed43a7fd20" name="a4e96049360d78e608951b3ed43a7fd20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e96049360d78e608951b3ed43a7fd20">&#9670;&#160;</a></span>tracer_unknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.tracer_unknowns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00251">251</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="abca4d9845d2e8394483f5e1a65aa2738" name="abca4d9845d2e8394483f5e1a65aa2738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca4d9845d2e8394483f5e1a65aa2738">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00326">326</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+<a id="a523e5ffef401f76c2c4ee9c5bc632466" name="a523e5ffef401f76c2c4ee9c5bc632466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a523e5ffef401f76c2c4ee9c5bc632466">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convergence-study.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/convergence-study_8py_source.html#l00035">35</a> of file <a class="el" href="../../d6/d20/convergence-study_8py_source.html">convergence-study.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d46/namespaceconvergence-study.html">convergence-study</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:22 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

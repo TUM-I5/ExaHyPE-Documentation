@@ -1,0 +1,4 @@
+var rkdg_2actionsets_2LinearCombinationOfEstimates_8py =
+[
+    [ "exahype2.solvers.rkdg.actionsets.LinearCombinationOfEstimates.LinearCombinationOfEstimates", "de/df3/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1LinearCombinationOfEstimates_1_1LinearCombinationOfEstimates.html", "de/df3/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1LinearCombinationOfEstimates_1_1LinearCombinationOfEstimates" ]
+];

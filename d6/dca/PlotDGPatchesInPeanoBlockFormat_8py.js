@@ -1,0 +1,4 @@
+var PlotDGPatchesInPeanoBlockFormat_8py =
+[
+    [ "solvers.api.actionsets.PlotDGPatchesInPeanoBlockFormat.PlotDGPatchesInPeanoBlockFormat", "dd/d9e/classsolvers_1_1api_1_1actionsets_1_1PlotDGPatchesInPeanoBlockFormat_1_1PlotDGPatchesInPeanoBlockFormat.html", "dd/d9e/classsolvers_1_1api_1_1actionsets_1_1PlotDGPatchesInPeanoBlockFormat_1_1PlotDGPatchesInPeanoBlockFormat" ]
+];

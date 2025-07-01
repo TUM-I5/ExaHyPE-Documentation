@@ -1,0 +1,785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d5c/classLinkedGrid.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
+  <div class="headertitle"><div class="title">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db3/classLinkedGrid__inherit__graph.png" border="0" usemap="#aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_inherit__map" id="aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,91,188,131"/>
+<area shape="rect" href="../../da/d67/structSpacetree.html" title=" " alt="" coords="259,5,473,60"/>
+<area shape="poly" title=" " alt="" coords="178,85,271,58,272,63,180,90"/>
+<area shape="rect" href="../../da/d67/structSpacetree.html" title=" " alt="" coords="236,84,496,139"/>
+<area shape="poly" title=" " alt="" coords="202,109,236,109,236,114,202,114"/>
+<area shape="rect" href="../../da/d67/structSpacetree.html" title=" " alt="" coords="269,163,463,217"/>
+<area shape="poly" title=" " alt="" coords="180,133,272,160,271,165,178,138"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d7f/classLinkedGrid__coll__graph.png" border="0" usemap="#aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_coll__map" id="aLinkedGrid_3_01__Geo_00_01SPLIT__FACTOR_00_01Derived_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,93,188,133"/>
+<area shape="rect" href="../../da/deb/classNumVec.html" title=" " alt="" coords="9,5,184,31"/>
+<area shape="poly" title=" " alt="" coords="99,44,99,93,94,93,94,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa7d304b785e344c9be544ad76a4284b7" id="r_aa7d304b785e344c9be544ad76a4284b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7d304b785e344c9be544ad76a4284b7">Geo</a> = _Geo</td></tr>
+<tr class="separator:aa7d304b785e344c9be544ad76a4284b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7cde153d6659c46ad02882db9ff55c33" id="r_a7cde153d6659c46ad02882db9ff55c33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cde153d6659c46ad02882db9ff55c33">LinkedGrid</a> ()=default</td></tr>
+<tr class="separator:a7cde153d6659c46ad02882db9ff55c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c802cf8645754810b141f75a9680fb7" id="r_a1c802cf8645754810b141f75a9680fb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c802cf8645754810b141f75a9680fb7">LinkedGrid</a> (<a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="#a56cd73351845a728d6dfc717d54181ad">range</a>, Derived *<a class="el" href="#aeb53f9c8d46683daa9027d72e4b32609">parent</a>=nullptr, <a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a> <a class="el" href="#ac940e1e37f72359765cdc0ce5314f257">idx</a>=typename <a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a>(0), <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="#a3df93e9e537271a0a2e8df7a858f398c">level</a>=0)</td></tr>
+<tr class="separator:a1c802cf8645754810b141f75a9680fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6bed9ce907d8a9b60517d8aef2e820" id="r_a0a6bed9ce907d8a9b60517d8aef2e820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6bed9ce907d8a9b60517d8aef2e820">LinkedGrid</a> (<a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a0a6bed9ce907d8a9b60517d8aef2e820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c5c12614766f82439b45f7871aefeb" id="r_a74c5c12614766f82439b45f7871aefeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c5c12614766f82439b45f7871aefeb">operator=</a> (<a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a74c5c12614766f82439b45f7871aefeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea0f45bdf27b61debe066f263573ca5" id="r_afea0f45bdf27b61debe066f263573ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea0f45bdf27b61debe066f263573ca5">split</a> (<a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> splitLevel=1)</td></tr>
+<tr class="separator:afea0f45bdf27b61debe066f263573ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560fc1f8d9d8cdf8d36984b19010cc10" id="r_a560fc1f8d9d8cdf8d36984b19010cc10"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a560fc1f8d9d8cdf8d36984b19010cc10">getRoot</a> ()</td></tr>
+<tr class="separator:a560fc1f8d9d8cdf8d36984b19010cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af763e3a0a470884df5ee732569629dcc" id="r_af763e3a0a470884df5ee732569629dcc"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af763e3a0a470884df5ee732569629dcc">getChild</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d15/structGeometry.html#ad6e39abad7bc59f558dee50b28f332d6">Geo::Point</a> &amp;p)</td></tr>
+<tr class="separator:af763e3a0a470884df5ee732569629dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f66e5fcc772e993f1f2a507723f927c" id="r_a2f66e5fcc772e993f1f2a507723f927c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f66e5fcc772e993f1f2a507723f927c">getSiblingIdx</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a2f66e5fcc772e993f1f2a507723f927c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4323456404fc991608cd2f28b042adf" id="r_ab4323456404fc991608cd2f28b042adf"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4323456404fc991608cd2f28b042adf">getNextSibling</a> ()</td></tr>
+<tr class="separator:ab4323456404fc991608cd2f28b042adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae3e0399d6584b06e03cb915ab7f647b1" id="r_ae3e0399d6584b06e03cb915ab7f647b1"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3e0399d6584b06e03cb915ab7f647b1">getMaxChildren</a> ()</td></tr>
+<tr class="separator:ae3e0399d6584b06e03cb915ab7f647b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aeb53f9c8d46683daa9027d72e4b32609" id="r_aeb53f9c8d46683daa9027d72e4b32609"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb53f9c8d46683daa9027d72e4b32609">parent</a> = nullptr</td></tr>
+<tr class="separator:aeb53f9c8d46683daa9027d72e4b32609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9e17ab7b679f26638dd7b889f283a6" id="r_adf9e17ab7b679f26638dd7b889f283a6"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9e17ab7b679f26638dd7b889f283a6">subtrees</a> = nullptr</td></tr>
+<tr class="separator:adf9e17ab7b679f26638dd7b889f283a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56cd73351845a728d6dfc717d54181ad" id="r_a56cd73351845a728d6dfc717d54181ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56cd73351845a728d6dfc717d54181ad">range</a> = typename <a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>()</td></tr>
+<tr class="separator:a56cd73351845a728d6dfc717d54181ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac940e1e37f72359765cdc0ce5314f257" id="r_ac940e1e37f72359765cdc0ce5314f257"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac940e1e37f72359765cdc0ce5314f257">idx</a> = typename <a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a>(0)</td></tr>
+<tr class="separator:ac940e1e37f72359765cdc0ce5314f257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df93e9e537271a0a2e8df7a858f398c" id="r_a3df93e9e537271a0a2e8df7a858f398c"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3df93e9e537271a0a2e8df7a858f398c">level</a> = 0</td></tr>
+<tr class="separator:a3df93e9e537271a0a2e8df7a858f398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aaa083479601ef6feaa92c36f5bce6b67" id="r_aaa083479601ef6feaa92c36f5bce6b67"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa083479601ef6feaa92c36f5bce6b67">SplitFactor</a> = SPLIT_FACTOR</td></tr>
+<tr class="separator:aaa083479601ef6feaa92c36f5bce6b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa0dea7c11ca87b89c535a176693364f9" id="r_aa0dea7c11ca87b89c535a176693364f9"><td class="memItemLeft" align="right" valign="top">_Geo::RowMajorIdx&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0dea7c11ca87b89c535a176693364f9">getChildIdx</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> linearSpaceChildIdx) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aa0dea7c11ca87b89c535a176693364f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c92ddd23155419b7cf5b08795465ae8" id="r_a1c92ddd23155419b7cf5b08795465ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c92ddd23155419b7cf5b08795465ae8">moveOp</a> (<a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a1c92ddd23155419b7cf5b08795465ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a35b4194cbb89251a8c18f4cf77d02308" id="r_a35b4194cbb89251a8c18f4cf77d02308"><td class="memItemLeft" align="right" valign="top">static _Geo::RowMajorIdx&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35b4194cbb89251a8c18f4cf77d02308">getIdxForLinearSpaceIdx</a> (<a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> linearSpaceIdx)</td></tr>
+<tr class="separator:a35b4194cbb89251a8c18f4cf77d02308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename _Geo, <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived&gt;<br />
+requires (SPLIT_FACTOR &gt; 1)<br />
+class LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00008">8</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa7d304b785e344c9be544ad76a4284b7" name="aa7d304b785e344c9be544ad76a4284b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d304b785e344c9be544ad76a4284b7">&#9670;&#160;</a></span>Geo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;<a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">::Geo</a> = _Geo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7cde153d6659c46ad02882db9ff55c33" name="a7cde153d6659c46ad02882db9ff55c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cde153d6659c46ad02882db9ff55c33">&#9670;&#160;</a></span>LinkedGrid() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;<a class="el" href="../../dd/d5c/classLinkedGrid.html">::LinkedGrid</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c802cf8645754810b141f75a9680fb7" name="a1c802cf8645754810b141f75a9680fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c802cf8645754810b141f75a9680fb7">&#9670;&#160;</a></span>LinkedGrid() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;<a class="el" href="../../dd/d5c/classLinkedGrid.html">::LinkedGrid</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a></td>          <td class="paramname"><span class="paramname"><em>range</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Derived *</td>          <td class="paramname"><span class="paramname"><em>parent</em><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a></td>          <td class="paramname"><span class="paramname"><em>idx</em><span class="paramdefsep"> = </span><span class="paramdefval">typename&#160;<a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a>(0)</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>level</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a6bed9ce907d8a9b60517d8aef2e820" name="a0a6bed9ce907d8a9b60517d8aef2e820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6bed9ce907d8a9b60517d8aef2e820">&#9670;&#160;</a></span>LinkedGrid() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;<a class="el" href="../../dd/d5c/classLinkedGrid.html">::LinkedGrid</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00067">67</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af763e3a0a470884df5ee732569629dcc" name="af763e3a0a470884df5ee732569629dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af763e3a0a470884df5ee732569629dcc">&#9670;&#160;</a></span>getChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived * <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d15/structGeometry.html#ad6e39abad7bc59f558dee50b28f332d6">Geo::Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00102">102</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0dea7c11ca87b89c535a176693364f9" name="aa0dea7c11ca87b89c535a176693364f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dea7c11ca87b89c535a176693364f9">&#9670;&#160;</a></span>getChildIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Geo::RowMajorIdx <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getChildIdx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>linearSpaceChildIdx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00019">19</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a35b4194cbb89251a8c18f4cf77d02308" name="a35b4194cbb89251a8c18f4cf77d02308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b4194cbb89251a8c18f4cf77d02308">&#9670;&#160;</a></span>getIdxForLinearSpaceIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static _Geo::RowMajorIdx <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getIdxForLinearSpaceIdx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a></td>          <td class="paramname"><span class="paramname"><em>linearSpaceIdx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00009">9</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3e0399d6584b06e03cb915ab7f647b1" name="ae3e0399d6584b06e03cb915ab7f647b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e0399d6584b06e03cb915ab7f647b1">&#9670;&#160;</a></span>getMaxChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getMaxChildren </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00025">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;::moveOp()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5c/classLinkedGrid_ae3e0399d6584b06e03cb915ab7f647b1_icgraph.png" border="0" usemap="#add/d5c/classLinkedGrid_ae3e0399d6584b06e03cb915ab7f647b1_icgraph" alt=""/></div>
+<map name="add/d5c/classLinkedGrid_ae3e0399d6584b06e03cb915ab7f647b1_icgraph" id="add/d5c/classLinkedGrid_ae3e0399d6584b06e03cb915ab7f647b1_icgraph">
+<area shape="rect" title=" " alt="" coords="208,5,411,31"/>
+<area shape="rect" href="../../dd/d5c/classLinkedGrid.html#a1c92ddd23155419b7cf5b08795465ae8" title=" " alt="" coords="5,5,160,31"/>
+<area shape="poly" title=" " alt="" coords="194,21,160,21,160,15,194,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4323456404fc991608cd2f28b042adf" name="ab4323456404fc991608cd2f28b042adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4323456404fc991608cd2f28b042adf">&#9670;&#160;</a></span>getNextSibling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived * <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getNextSibling </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00113">113</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a560fc1f8d9d8cdf8d36984b19010cc10" name="a560fc1f8d9d8cdf8d36984b19010cc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560fc1f8d9d8cdf8d36984b19010cc10">&#9670;&#160;</a></span>getRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived * <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00096">96</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a2f66e5fcc772e993f1f2a507723f927c" name="a2f66e5fcc772e993f1f2a507723f927c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f66e5fcc772e993f1f2a507723f927c">&#9670;&#160;</a></span>getSiblingIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getSiblingIdx </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00108">108</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>.</p>
+
+</div>
+</div>
+<a id="a1c92ddd23155419b7cf5b08795465ae8" name="a1c92ddd23155419b7cf5b08795465ae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c92ddd23155419b7cf5b08795465ae8">&#9670;&#160;</a></span>moveOp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::moveOp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00025">25</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, and <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00063">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;::getMaxChildren()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5c/classLinkedGrid_a1c92ddd23155419b7cf5b08795465ae8_cgraph.png" border="0" usemap="#add/d5c/classLinkedGrid_a1c92ddd23155419b7cf5b08795465ae8_cgraph" alt=""/></div>
+<map name="add/d5c/classLinkedGrid_a1c92ddd23155419b7cf5b08795465ae8_cgraph" id="add/d5c/classLinkedGrid_a1c92ddd23155419b7cf5b08795465ae8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../dd/d5c/classLinkedGrid.html#ae3e0399d6584b06e03cb915ab7f647b1" title=" " alt="" coords="208,5,411,31"/>
+<area shape="poly" title=" " alt="" coords="160,15,194,15,194,21,160,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74c5c12614766f82439b45f7871aefeb" name="a74c5c12614766f82439b45f7871aefeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c5c12614766f82439b45f7871aefeb">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a> &amp; <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00071">71</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00086">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::operator=()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5c/classLinkedGrid_a74c5c12614766f82439b45f7871aefeb_icgraph.png" border="0" usemap="#add/d5c/classLinkedGrid_a74c5c12614766f82439b45f7871aefeb_icgraph" alt=""/></div>
+<map name="add/d5c/classLinkedGrid_a74c5c12614766f82439b45f7871aefeb_icgraph" id="add/d5c/classLinkedGrid_a74c5c12614766f82439b45f7871aefeb_icgraph">
+<area shape="rect" title=" " alt="" coords="423,5,588,31"/>
+<area shape="rect" href="../../da/d67/structSpacetree.html#acadd70b1e299618f9877448a3303076a" title=" " alt="" coords="213,5,375,31"/>
+<area shape="poly" title=" " alt="" coords="409,21,375,21,375,15,409,15"/>
+<area shape="rect" href="../../da/d67/structSpacetree.html#aff368fac5e243da1e1ff8da7fc8108ab" title=" " alt="" coords="5,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="199,21,165,21,165,15,199,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afea0f45bdf27b61debe066f263573ca5" name="afea0f45bdf27b61debe066f263573ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea0f45bdf27b61debe066f263573ca5">&#9670;&#160;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::split </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a></td>          <td class="paramname"><span class="paramname"><em>splitLevel</em><span class="paramdefsep"> = </span><span class="paramdefval">1</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00076">76</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00054">DomainDecomposition&lt; Geo &gt;::DomainDecomposition()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5c/classLinkedGrid_afea0f45bdf27b61debe066f263573ca5_icgraph.png" border="0" usemap="#add/d5c/classLinkedGrid_afea0f45bdf27b61debe066f263573ca5_icgraph" alt=""/></div>
+<map name="add/d5c/classLinkedGrid_afea0f45bdf27b61debe066f263573ca5_icgraph" id="add/d5c/classLinkedGrid_afea0f45bdf27b61debe066f263573ca5_icgraph">
+<area shape="rect" title=" " alt="" coords="232,13,359,38"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a7ca97331012fc65a4e980ec227825fa5" title=" " alt="" coords="5,5,184,45"/>
+<area shape="poly" title=" " alt="" coords="219,28,184,28,184,23,219,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ac940e1e37f72359765cdc0ce5314f257" name="ac940e1e37f72359765cdc0ce5314f257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac940e1e37f72359765cdc0ce5314f257">&#9670;&#160;</a></span>idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::idx = typename <a class="el" href="../../d7/d15/structGeometry.html#ab9cc9e58de7dcf4aece636919d28a05d">Geo::RowMajorIdx</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00031">DomainDecomposition&lt; Geo &gt;::getLeafRankId()</a>.</p>
+
+</div>
+</div>
+<a id="a3df93e9e537271a0a2e8df7a858f398c" name="a3df93e9e537271a0a2e8df7a858f398c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df93e9e537271a0a2e8df7a858f398c">&#9670;&#160;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::level = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00054">54</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="aeb53f9c8d46683daa9027d72e4b32609" name="aeb53f9c8d46683daa9027d72e4b32609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb53f9c8d46683daa9027d72e4b32609">&#9670;&#160;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived* <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::parent = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00048">48</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a56cd73351845a728d6dfc717d54181ad" name="a56cd73351845a728d6dfc717d54181ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56cd73351845a728d6dfc717d54181ad">&#9670;&#160;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::range = typename <a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00005">do_density()</a>, <a class="el" href="../../d9/d8d/runner__do__ghost_8h_source.html#l00050">do_density()</a>, <a class="el" href="../../df/d7c/linked__grid__iterator_8h_source.html#l00194">BoundaryLeafsIteratorCRTP&lt; Spacetree, Derived, TIterationOrder &gt;::enter()</a>, <a class="el" href="../../df/d7c/linked__grid__iterator_8h_source.html#l00245">InsideRegionLeafsIteratorCRTP&lt; Spacetree, Derived, TIterationOrder &gt;::enter()</a>, <a class="el" href="../../df/d7c/linked__grid__iterator_8h_source.html#l00290">OutsideRegionLeafsIteratorCRTP&lt; Spacetree, Derived, TIterationOrder &gt;::enter()</a>, <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00104">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::findChildNode()</a>, <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00093">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::findLeaf()</a>, <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00180">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::getRegionParent()</a>, and <a class="el" href="../../d7/d50/sort_8h_source.html#l00022">SpacetreeSorter&lt; Spacetree, PreSortCallback &gt;::run()</a>.</p>
+
+</div>
+</div>
+<a id="aaa083479601ef6feaa92c36f5bce6b67" name="aaa083479601ef6feaa92c36f5bce6b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa083479601ef6feaa92c36f5bce6b67">&#9670;&#160;</a></span>SplitFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::SplitFactor = SPLIT_FACTOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00046">46</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="adf9e17ab7b679f26638dd7b889f283a6" name="adf9e17ab7b679f26638dd7b889f283a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9e17ab7b679f26638dd7b889f283a6">&#9670;&#160;</a></span>subtrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Geo , <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> SPLIT_FACTOR, typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived* <a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a>&lt; _Geo, SPLIT_FACTOR, Derived &gt;::subtrees = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00049">49</a> of file <a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00256">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::clear()</a>, <a class="el" href="../../db/d22/prune_8h_source.html#l00009">SpacetreePruner&lt; Spacetree, SPLIT &gt;::countChildrenItems()</a>, <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00249">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::destroySubtrees()</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00031">DomainDecomposition&lt; Geo &gt;::getLeafRankId()</a>, <a class="el" href="../../db/d22/prune_8h_source.html#l00031">SpacetreePruner&lt; Spacetree, SPLIT &gt;::mergeChildren()</a>, <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00140">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::pushItem()</a>, and <a class="el" href="../../d3/db2/spacetree_8h_source.html#l00146">Spacetree&lt; _Geometry, _Item, THRESHOLD, SPLIT_FACTOR, _TaskBackend &gt;::splitIntoSubtrees()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>benchmarks/other/noh2d-common/spacetree/grid/<a class="el" href="../../d4/dc8/linked__grid_8h_source.html">linked_grid.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d5c/classLinkedGrid.html">LinkedGrid</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:11 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

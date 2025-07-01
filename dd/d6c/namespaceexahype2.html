@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d6c/namespaceexahype2.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">exahype2 Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>For the generic kernels that I use here most of the time.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:db/d3e/namespaceexahype2_1_1ArgumentParser" id="r_db/d3e/namespaceexahype2_1_1ArgumentParser"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3e/namespaceexahype2_1_1ArgumentParser.html">ArgumentParser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:da/d24/namespaceexahype2_1_1dg" id="r_da/d24/namespaceexahype2_1_1dg"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d24/namespaceexahype2_1_1dg.html">dg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/def/namespaceexahype2_1_1enumerator" id="r_d0/def/namespaceexahype2_1_1enumerator"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/def/namespaceexahype2_1_1enumerator.html">enumerator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dc/de8/namespaceexahype2_1_1ExaHyPEMain" id="r_dc/de8/namespaceexahype2_1_1ExaHyPEMain"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de8/namespaceexahype2_1_1ExaHyPEMain.html">ExaHyPEMain</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/d52/namespaceexahype2_1_1fd" id="r_df/d52/namespaceexahype2_1_1fd"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d52/namespaceexahype2_1_1fd.html">fd</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/dd9/namespaceexahype2_1_1fv" id="r_d5/dd9/namespaceexahype2_1_1fv"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/namespaceexahype2_1_1fv.html">fv</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/d7f/namespaceexahype2_1_1grid" id="r_dd/d7f/namespaceexahype2_1_1grid"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7f/namespaceexahype2_1_1grid.html">grid</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/d39/namespaceexahype2_1_1internal" id="r_d5/d39/namespaceexahype2_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d39/namespaceexahype2_1_1internal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/d71/namespaceexahype2_1_1postprocessing" id="r_df/d71/namespaceexahype2_1_1postprocessing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d71/namespaceexahype2_1_1postprocessing.html">postprocessing</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d8/df9/namespaceexahype2_1_1Project" id="r_d8/df9/namespaceexahype2_1_1Project"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df9/namespaceexahype2_1_1Project.html">Project</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d4e/namespaceexahype2_1_1solvers" id="r_d0/d4e/namespaceexahype2_1_1solvers"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4e/namespaceexahype2_1_1solvers.html">solvers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dc/d0b/namespaceexahype2_1_1symhype" id="r_dc/d0b/namespaceexahype2_1_1symhype"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0b/namespaceexahype2_1_1symhype.html">symhype</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/dce/namespaceexahype2_1_1tests" id="r_d2/dce/namespaceexahype2_1_1tests"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dce/namespaceexahype2_1_1tests.html">tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/d49/namespaceexahype2_1_1tracer" id="r_d6/d49/namespaceexahype2_1_1tracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d49/namespaceexahype2_1_1tracer.html">tracer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d34/classexahype2_1_1CellAccess.html">CellAccess</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell access class.  <a href="../../d0/d34/classexahype2_1_1CellAccess.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/structexahype2_1_1CellData.html">CellData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a number of cells which contains all information that's required to process the stored patches or polynomial shape functions (given you know the semantics of the data).  <a href="../../d4/d3a/structexahype2_1_1CellData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d36/structexahype2_1_1CellFaceData.html">CellFaceData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the faces of one cell, with a total of 2*Dim faces per cell For ADER QIn will contain the values, QOut would contain the fluxes The faces can still each be made to contain either only the values for the given cell, or those and the neighbours' values.  <a href="../../d4/d36/structexahype2_1_1CellFaceData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/classexahype2_1_1EnclaveBookkeeping.html">EnclaveBookkeeping</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dfe/classexahype2_1_1EnclaveTask.html">EnclaveTask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all enclave tasks.  <a href="../../de/dfe/classexahype2_1_1EnclaveTask.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8f/structexahype2_1_1FaceData.html">FaceData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the sides of one face, with 2 sides (left and right) to a face For ADER QIn will contain the values, QOut would contain the fluxes QIn[faceId][0][...] will contain the values of the left side relative to the face QIn[faceId][1][...] will contain the values of the right side relative to the face.  <a href="../../d0/d8f/structexahype2_1_1FaceData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0e/classexahype2_1_1LoadBalancingConfiguration.html">LoadBalancingConfiguration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ExaHyPE 2-specific load balancing configuration.  <a href="../../d0/d0e/classexahype2_1_1LoadBalancingConfiguration.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df1/classexahype2_1_1PlotFilter.html">PlotFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d48/classexahype2_1_1RefinementControl.html">RefinementControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage refine/erase requests within ExaHyPE 2.  <a href="../../d7/d48/classexahype2_1_1RefinementControl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/classexahype2_1_1RefinementControlService.html">RefinementControlService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db1/classexahype2_1_1Solver.html">Solver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/structexahype2_1_1VolumeIndex.html">VolumeIndex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A lot of the loop routines expect a voxel (or face) index which is a vector over integers.  <a href="../../d9/d75/structexahype2_1_1VolumeIndex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd7/structexahype2_1_1VolumeIndex_3_010_00_01Args_8_8_8_01_4.html">VolumeIndex&lt; 0, Args... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae2c2b103ee6a9c14800293ffa75fc0f1" id="r_ae2c2b103ee6a9c14800293ffa75fc0f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1">PrecisionCommand</a> { <br />
+&#160;&#160;<a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a238acb92c3157e54b0ba2821d8481871">Long_double</a> = sizeof(long double)
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1ad909d38d705ce75386dd86e611a82f5b">Double</a> = sizeof(double)
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a66ba162102bbf6ae31b522aec561735e">Single</a> = sizeof(float)
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a22ae0e2b89e5e3d477f988cc36d3272b">Float</a> = Single
+, <br />
+&#160;&#160;<a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1ac48615a1bc4197056d522af276aa5a85">Half</a> = sizeof(float) / 2
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1ae044c537b9beab8bb53c14f2494e1069">Float16_t</a> = Half
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1aa4bf99d6945c25077fd6660d536af8a0">FP16</a> = Half
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a429b049c13dc36ffcc18ad102b00fc61">Bfloat</a> = -1
+, <br />
+&#160;&#160;<a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a7f844f3efce6c313f8c2814e0740571e">Bfloat16_t</a> = Bfloat
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1af656bbf613964dcf710b771b0918ab30">BF16</a> = Bfloat
+, <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1a90589c47f06eb971d548591f23c285af">Custom</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae2c2b103ee6a9c14800293ffa75fc0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1fdc194836a25ea6e3954a6cb8f998" id="r_afe1fdc194836a25ea6e3954a6cb8f998"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998">RefinementCommand</a> { <a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998a02bce93bff905887ad2233110bf9c49e">Keep</a>
+, <a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998a9f79b65055f2201292e5f79666bf2579">Refine</a>
+, <a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998aedc187bdea52d6e32b9c0f84e0849ec5">Erase</a>
+ }</td></tr>
+<tr class="separator:afe1fdc194836a25ea6e3954a6cb8f998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a148b216ac8ca1cd1fbcb23ac66c30e49" id="r_a148b216ac8ca1cd1fbcb23ac66c30e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1">PrecisionCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148b216ac8ca1cd1fbcb23ac66c30e49">getDefaultPrecisionCommand</a> ()</td></tr>
+<tr class="memdesc:a148b216ac8ca1cd1fbcb23ac66c30e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default is double as this is the highest precision available per default.  <br /></td></tr>
+<tr class="separator:a148b216ac8ca1cd1fbcb23ac66c30e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b3c4921b4e54e9ad58e52df768f65c" id="r_a45b3c4921b4e54e9ad58e52df768f65c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998">RefinementCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45b3c4921b4e54e9ad58e52df768f65c">getDefaultRefinementCommand</a> ()</td></tr>
+<tr class="memdesc:a45b3c4921b4e54e9ad58e52df768f65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default is coarsen as this is the lowest priority command.  <br /></td></tr>
+<tr class="separator:a45b3c4921b4e54e9ad58e52df768f65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7959e01f44819b74c0904855982ffd30" id="r_a7959e01f44819b74c0904855982ffd30"><td class="memTemplParams" colspan="2">template&lt;typename CellLabel , typename FaceLabel &gt; </td></tr>
+<tr class="memitem:a7959e01f44819b74c0904855982ffd30"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7959e01f44819b74c0904855982ffd30">getMinTimeStampOfNeighboursAhead</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;cellLabel, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;faceLabelEnumerator)</td></tr>
+<tr class="memdesc:a7959e01f44819b74c0904855982ffd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to getMinTimeStampOfNeighbours(), but we minimise only over those neighbours that are actually ahead.  <br /></td></tr>
+<tr class="separator:a7959e01f44819b74c0904855982ffd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02b2490d3160549be998a9acedb346d" id="r_aa02b2490d3160549be998a9acedb346d"><td class="memTemplParams" colspan="2">template&lt;typename CellLabel , typename FaceLabel &gt; </td></tr>
+<tr class="memitem:aa02b2490d3160549be998a9acedb346d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa02b2490d3160549be998a9acedb346d">runTimeStepOnCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;cellLabel, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;faceLabelEnumerator, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> globalMinTimeStamp)</td></tr>
+<tr class="memdesc:aa02b2490d3160549be998a9acedb346d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether to run a time step on a cell by analysing the neighbouring cells' timestamp.  <br /></td></tr>
+<tr class="separator:aa02b2490d3160549be998a9acedb346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0688456062b8c4282ce61a7535a1d1f2" id="r_a0688456062b8c4282ce61a7535a1d1f2"><td class="memTemplParams" colspan="2">template&lt;typename CellLabel , typename FaceLabel &gt; </td></tr>
+<tr class="memitem:a0688456062b8c4282ce61a7535a1d1f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0688456062b8c4282ce61a7535a1d1f2">removeTimeStepAccumulationErrorsFromCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;cellLabel, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;faceLabelEnumerator, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> <a class="el" href="../../d8/d7e/exahype2_2solvers_2fv_2godunov_2kernels_2kokkos_2Loop_8template_8h.html#acecd8d5f5f51cdecc27bbd970eeeacb5">timeStepSize</a>)</td></tr>
+<tr class="memdesc:a0688456062b8c4282ce61a7535a1d1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove accumulation errors from cell time stamps.  <br /></td></tr>
+<tr class="separator:a0688456062b8c4282ce61a7535a1d1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87937e227522ee186dd062ff993073fe" id="r_a87937e227522ee186dd062ff993073fe"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87937e227522ee186dd062ff993073fe">getInterpolationWeights</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> oldTimeStampOnFace, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> newTimeStampOnFace, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> cellTimeStamp)</td></tr>
+<tr class="separator:a87937e227522ee186dd062ff993073fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59007f6446983445259b535e5cebefe" id="r_ab59007f6446983445259b535e5cebefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59007f6446983445259b535e5cebefe">discretiseAndTruncateTimeStepSizes</a> (<a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> cellTimeStepSize, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> maxGlobalTimeStepSize, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> discretisationStepsSize)</td></tr>
+<tr class="memdesc:ab59007f6446983445259b535e5cebefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretise (bucket) time step sizes and truncate it.  <br /></td></tr>
+<tr class="separator:ab59007f6446983445259b535e5cebefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f7575f22b7e7469896e386fafbf1f9" id="r_ab7f7575f22b7e7469896e386fafbf1f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7f7575f22b7e7469896e386fafbf1f9">getUnitTests</a> ()</td></tr>
+<tr class="memdesc:ab7f7575f22b7e7469896e386fafbf1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Please destroy after usage.  <br /></td></tr>
+<tr class="separator:ab7f7575f22b7e7469896e386fafbf1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f3ec4c8757d8683cfeae53ce7d9b42" id="r_af9f3ec4c8757d8683cfeae53ce7d9b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9f3ec4c8757d8683cfeae53ce7d9b42">setDefaultLogStatements</a> ()</td></tr>
+<tr class="separator:af9f3ec4c8757d8683cfeae53ce7d9b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62a65e1dd6c633eee9a9b5aba6e14bc" id="r_ae62a65e1dd6c633eee9a9b5aba6e14bc"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:ae62a65e1dd6c633eee9a9b5aba6e14bc"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae62a65e1dd6c633eee9a9b5aba6e14bc">volumeIndex</a> (Args... args) <a class="el" href="../../d0/d9a/tarch_8h.html#accf1374417e551d2653b508e840cdf9f">InlineMethod</a></td></tr>
+<tr class="separator:ae62a65e1dd6c633eee9a9b5aba6e14bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac87f457ff949f3fcc6390d3e2694f7b8" id="r_ac87f457ff949f3fcc6390d3e2694f7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac87f457ff949f3fcc6390d3e2694f7b8">havenumpy</a> = False</td></tr>
+<tr class="separator:ac87f457ff949f3fcc6390d3e2694f7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28752549c840b5681ade5abb81de9f02" id="r_a28752549c840b5681ade5abb81de9f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28752549c840b5681ade5abb81de9f02">havempmath</a> = False</td></tr>
+<tr class="separator:a28752549c840b5681ade5abb81de9f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5f087224ddc778189cbfbfb2d1597f" id="r_afd5f087224ddc778189cbfbfb2d1597f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd5f087224ddc778189cbfbfb2d1597f">havesympy</a> = False</td></tr>
+<tr class="separator:afd5f087224ddc778189cbfbfb2d1597f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92b5e9101f61d963fb8de9780a652c8" id="r_ae92b5e9101f61d963fb8de9780a652c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae92b5e9101f61d963fb8de9780a652c8">havematplotlib</a> = False</td></tr>
+<tr class="separator:ae92b5e9101f61d963fb8de9780a652c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For the generic kernels that I use here most of the time. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae2c2b103ee6a9c14800293ffa75fc0f1" name="ae2c2b103ee6a9c14800293ffa75fc0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c2b103ee6a9c14800293ffa75fc0f1">&#9670;&#160;</a></span>PrecisionCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1">exahype2::PrecisionCommand</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a238acb92c3157e54b0ba2821d8481871" name="ae2c2b103ee6a9c14800293ffa75fc0f1a238acb92c3157e54b0ba2821d8481871"></a>Long_double&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1ad909d38d705ce75386dd86e611a82f5b" name="ae2c2b103ee6a9c14800293ffa75fc0f1ad909d38d705ce75386dd86e611a82f5b"></a>Double&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a66ba162102bbf6ae31b522aec561735e" name="ae2c2b103ee6a9c14800293ffa75fc0f1a66ba162102bbf6ae31b522aec561735e"></a>Single&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a22ae0e2b89e5e3d477f988cc36d3272b" name="ae2c2b103ee6a9c14800293ffa75fc0f1a22ae0e2b89e5e3d477f988cc36d3272b"></a>Float&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1ac48615a1bc4197056d522af276aa5a85" name="ae2c2b103ee6a9c14800293ffa75fc0f1ac48615a1bc4197056d522af276aa5a85"></a>Half&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1ae044c537b9beab8bb53c14f2494e1069" name="ae2c2b103ee6a9c14800293ffa75fc0f1ae044c537b9beab8bb53c14f2494e1069"></a>Float16_t&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1aa4bf99d6945c25077fd6660d536af8a0" name="ae2c2b103ee6a9c14800293ffa75fc0f1aa4bf99d6945c25077fd6660d536af8a0"></a>FP16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a429b049c13dc36ffcc18ad102b00fc61" name="ae2c2b103ee6a9c14800293ffa75fc0f1a429b049c13dc36ffcc18ad102b00fc61"></a>Bfloat&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a7f844f3efce6c313f8c2814e0740571e" name="ae2c2b103ee6a9c14800293ffa75fc0f1a7f844f3efce6c313f8c2814e0740571e"></a>Bfloat16_t&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1af656bbf613964dcf710b771b0918ab30" name="ae2c2b103ee6a9c14800293ffa75fc0f1af656bbf613964dcf710b771b0918ab30"></a>BF16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae2c2b103ee6a9c14800293ffa75fc0f1a90589c47f06eb971d548591f23c285af" name="ae2c2b103ee6a9c14800293ffa75fc0f1a90589c47f06eb971d548591f23c285af"></a>Custom&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d2f/PrecisionControl_8h_source.html#l00006">6</a> of file <a class="el" href="../../d1/d2f/PrecisionControl_8h_source.html">PrecisionControl.h</a>.</p>
+
+</div>
+</div>
+<a id="afe1fdc194836a25ea6e3954a6cb8f998" name="afe1fdc194836a25ea6e3954a6cb8f998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1fdc194836a25ea6e3954a6cb8f998">&#9670;&#160;</a></span>RefinementCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998">exahype2::RefinementCommand</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afe1fdc194836a25ea6e3954a6cb8f998a02bce93bff905887ad2233110bf9c49e" name="afe1fdc194836a25ea6e3954a6cb8f998a02bce93bff905887ad2233110bf9c49e"></a>Keep&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afe1fdc194836a25ea6e3954a6cb8f998a9f79b65055f2201292e5f79666bf2579" name="afe1fdc194836a25ea6e3954a6cb8f998a9f79b65055f2201292e5f79666bf2579"></a>Refine&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afe1fdc194836a25ea6e3954a6cb8f998aedc187bdea52d6e32b9c0f84e0849ec5" name="afe1fdc194836a25ea6e3954a6cb8f998aedc187bdea52d6e32b9c0f84e0849ec5"></a>Erase&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d99/RefinementControl_8h_source.html#l00012">12</a> of file <a class="el" href="../../dc/d99/RefinementControl_8h_source.html">RefinementControl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab59007f6446983445259b535e5cebefe" name="ab59007f6446983445259b535e5cebefe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59007f6446983445259b535e5cebefe">&#9670;&#160;</a></span>discretiseAndTruncateTimeStepSizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::discretiseAndTruncateTimeStepSizes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>cellTimeStepSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>maxGlobalTimeStepSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>discretisationStepsSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Discretise (bucket) time step sizes and truncate it. </p>
+<p>This routine is used by any local time stepping. The idea is that we first mimick subcycling: Let there be a global max time step size. We assume this one arises on the coarsest mesh level. So patches either do this time step or they do a time step that is \( 3^{-k} \) that size.</p>
+<h2><a class="anchor" id="autotoc_md63"></a>
+Pitfalls</h2>
+<p>We expect a min time step size that we use globally. We find the biggest \( discretisationSteps^k \cdot minGlobalTimeStepSize &lt; cellTimeStepSize \) value through k which still meets the stability of cellTimeStepSize. We then return this value.</p>
+<h2><a class="anchor" id="autotoc_md64"></a>
+Truncation</h2>
+<p>If the eigenvalues become very small within a cell, we end up with huge time step sizes. This should not happen. So I expect the global time step size (largest value) and truncate the time step size in any case by this one.</p>
+<h2><a class="anchor" id="autotoc_md65"></a>
+Decreasing time step sizes</h2>
+<p>I use the global minimal time step size to kick off the analysis. This fails if the admissible global time step size shrinks over time. Therefore, the cell's time step size can be smaller than the globally admissible time step size. It simply means that the global time step size is shrinking and that the argument we get is lagging behind as we haven't finished the current time step yet.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">discretisationSteps</td><td>Pass in zero to allow a totally anarchic time stepping. Use one to construct subcycling without a re-adoption of the time step sizes or something negative to switch the bucketing off.</td></tr>
+    <tr><td class="paramname">maxGlobalTimeStepSize</td><td>Maximum global time step size (of previous time step). I use this one to truncate too big time step sizes. Overall, I expect the time step size not to grow by more than 10 percent.</td></tr>
+    <tr><td class="paramname">cellTimeStepSize</td><td>Time step size the patch would like to pick. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d46/exahype2_2TimeStepping_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../de/d46/exahype2_2TimeStepping_8cpp_source.html">TimeStepping.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html#a5e0c560fe19fd1cf2f94b84de758afc3">_log</a>, <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00029">tarch::la::greater()</a>, and <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_ab59007f6446983445259b535e5cebefe_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_ab59007f6446983445259b535e5cebefe_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_ab59007f6446983445259b535e5cebefe_cgraph" id="add/d6c/namespaceexahype2_ab59007f6446983445259b535e5cebefe_cgraph">
+<area shape="rect" title="Discretise (bucket) time step sizes and truncate it." alt="" coords="5,5,243,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ac6589b2a6a88998920a591807cb5dc31" title=" " alt="" coords="291,13,421,38"/>
+<area shape="poly" title=" " alt="" coords="243,23,277,23,277,28,243,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a148b216ac8ca1cd1fbcb23ac66c30e49" name="a148b216ac8ca1cd1fbcb23ac66c30e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148b216ac8ca1cd1fbcb23ac66c30e49">&#9670;&#160;</a></span>getDefaultPrecisionCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1">exahype2::PrecisionCommand</a> exahype2::getDefaultPrecisionCommand </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default is double as this is the highest precision available per default. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/deb/PrecisionControl_8cpp_source.html#l00003">3</a> of file <a class="el" href="../../d7/deb/PrecisionControl_8cpp_source.html">PrecisionControl.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="#ae2c2b103ee6a9c14800293ffa75fc0f1ad909d38d705ce75386dd86e611a82f5b">Double</a>.</p>
+
+</div>
+</div>
+<a id="a45b3c4921b4e54e9ad58e52df768f65c" name="a45b3c4921b4e54e9ad58e52df768f65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b3c4921b4e54e9ad58e52df768f65c">&#9670;&#160;</a></span>getDefaultRefinementCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998">exahype2::RefinementCommand</a> exahype2::getDefaultRefinementCommand </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default is coarsen as this is the lowest priority command. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html">RefinementControl.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="#afe1fdc194836a25ea6e3954a6cb8f998aedc187bdea52d6e32b9c0f84e0849ec5">Erase</a>.</p>
+
+</div>
+</div>
+<a id="a87937e227522ee186dd062ff993073fe" name="a87937e227522ee186dd062ff993073fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87937e227522ee186dd062ff993073fe">&#9670;&#160;</a></span>getInterpolationWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; exahype2::getInterpolationWeights </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>oldTimeStampOnFace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>newTimeStampOnFace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>cellTimeStamp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h2>A posteriori fixes of time stamps </h2>
+<p>I'm afraid of accumulation errors in the time stamps for the small cells which might end up lacking behind or running ahead. I can recognise such situations by very small weights for the old time snapshot. However, I don't fix it here. For fixing such a divergence, I rely on an explicit cleanup later on.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cellTimeStamp</td><td>This is an in-out parameter, as we can adopt the stamp size to avoid the accummulation of rounding errors. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Weight of (old,new) data. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d46/exahype2_2TimeStepping_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../de/d46/exahype2_2TimeStepping_8cpp_source.html">TimeStepping.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html#a5e0c560fe19fd1cf2f94b84de758afc3">_log</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01021">assertion4</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01022">assertion5</a>, <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>, <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00038">tarch::la::greaterEquals()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, and <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00056">tarch::la::smallerEquals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_a87937e227522ee186dd062ff993073fe_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_a87937e227522ee186dd062ff993073fe_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_a87937e227522ee186dd062ff993073fe_cgraph" id="add/d6c/namespaceexahype2_a87937e227522ee186dd062ff993073fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,204,87"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="276,5,403,31"/>
+<area shape="poly" title=" " alt="" coords="200,45,265,31,266,36,201,50"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a5e951ee2e1896bb641af43b495dc1e4a" title=" " alt="" coords="253,55,426,80"/>
+<area shape="poly" title=" " alt="" coords="204,65,239,65,239,70,204,70"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a92121dc012abf37d9346be03fa866bbc" title=" " alt="" coords="252,104,427,129"/>
+<area shape="poly" title=" " alt="" coords="201,85,266,99,265,104,200,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7959e01f44819b74c0904855982ffd30" name="a7959e01f44819b74c0904855982ffd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7959e01f44819b74c0904855982ffd30">&#9670;&#160;</a></span>getMinTimeStampOfNeighboursAhead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CellLabel , typename FaceLabel &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::getMinTimeStampOfNeighboursAhead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;</td>          <td class="paramname"><span class="paramname"><em>cellLabel</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceLabelEnumerator</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Similar to getMinTimeStampOfNeighbours(), but we minimise only over those neighbours that are actually ahead. </p>
+<p>If no neighbour is ahead or one lags behind, we return the time stamp of cellLabel.</p>
+<h2><a class="anchor" id="autotoc_md59"></a>
+Using code/algorithms</h2>
+<p>Local timestepping codes can run into situations where the eigenvalue per cell is zero. This means that nothing happens in such cell. Therefore, the cell cannot advance in time. We don't know how far we can/should march. In this case, ExaHyPE offers two strategies: We can use the global admissible time step size, i.e. the global maximum eigenvalue, to determine a time step size; or we can see whether one of the neighbours is ahead and catch up.</p>
+<p>The former method leads to a staircase pattern, as some cells where nothing happens race forward in time. A description of this behaviour is found in the Python routine referenced below.</p>
+<h2><a class="anchor" id="autotoc_md60"></a>
+Deadlocks</h2>
+<p>I've seen multiple cases where</p>
+<dl class="section see"><dt>See also</dt><dd>exahype2.solvers.fv.kernels.create_compute_new_time_step_size_kernel_for_local_time_stepping </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html#l00061">61</a> of file <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html">TimeStepping.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00029">tarch::la::greater()</a>, and <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00047">tarch::la::smaller()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_a7959e01f44819b74c0904855982ffd30_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_a7959e01f44819b74c0904855982ffd30_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_a7959e01f44819b74c0904855982ffd30_cgraph" id="add/d6c/namespaceexahype2_a7959e01f44819b74c0904855982ffd30_cgraph">
+<area shape="rect" title="Similar to getMinTimeStampOfNeighbours(), but we minimise only over those neighbours that are actuall..." alt="" coords="5,23,220,63"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ac6589b2a6a88998920a591807cb5dc31" title=" " alt="" coords="269,5,399,31"/>
+<area shape="poly" title=" " alt="" coords="220,28,255,24,255,30,220,34"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ab3cd3664dd66aa6062b2e3feab03171e" title=" " alt="" coords="268,55,400,80"/>
+<area shape="poly" title=" " alt="" coords="220,52,255,56,254,61,220,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab7f7575f22b7e7469896e386fafbf1f9" name="ab7f7575f22b7e7469896e386fafbf1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f7575f22b7e7469896e386fafbf1f9">&#9670;&#160;</a></span>getUnitTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a> * exahype2::getUnitTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Please destroy after usage. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d7c/exahype2_2UnitTests_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d6/d7c/exahype2_2UnitTests_8cpp_source.html">UnitTests.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00126">tarch::tests::TreeTestCaseCollection::addTestCase()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp_source.html#l00530">main()</a>, and <a class="el" href="../../d0/d12/src_2unittests_2main_8cpp_source.html#l00047">runTests()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_cgraph" id="add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_cgraph">
+<area shape="rect" title="Please destroy after usage." alt="" coords="5,13,180,38"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a221ed543b82f7c82d46b5368cf99b040" title="Adds a new test case." alt="" coords="228,5,416,45"/>
+<area shape="poly" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_icgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_icgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_icgraph" id="add/d6c/namespaceexahype2_ab7f7575f22b7e7469896e386fafbf1f9_icgraph">
+<area shape="rect" title="Please destroy after usage." alt="" coords="129,31,304,56"/>
+<area shape="rect" href="../../d7/dbd/applications_2exahype2_2ccz4_2ccz4-main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main routine of the SPH code." alt="" coords="16,5,71,31"/>
+<area shape="poly" title=" " alt="" coords="116,31,70,25,71,19,116,26"/>
+<area shape="rect" href="../../d0/d12/src_2unittests_2main_8cpp.html#a2dcdccc8a8ededb7804d00ba921edb73" title=" " alt="" coords="5,55,81,80"/>
+<area shape="poly" title=" " alt="" coords="116,60,82,65,81,59,115,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0688456062b8c4282ce61a7535a1d1f2" name="a0688456062b8c4282ce61a7535a1d1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0688456062b8c4282ce61a7535a1d1f2">&#9670;&#160;</a></span>removeTimeStepAccumulationErrorsFromCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CellLabel , typename FaceLabel &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> exahype2::removeTimeStepAccumulationErrorsFromCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;</td>          <td class="paramname"><span class="paramname"><em>cellLabel</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceLabelEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>timeStepSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove accumulation errors from cell time stamps. </p>
+<p>If we add time step sizes to the time stamp over and over again, it is very likely that the time stamps at resolution boundaries do not match at one point. If we use subcycling, 3xdt/3 usually does not equal the dt of a big cell. So it makes sense to amend the time step sizes slightly to help us to synchronise time stamps between cells, i.e. to avoid that they are off by a tiny bit and hence mess up the time stepping.</p>
+<p>So what I do first of all is to check if the current (update) cell time stamp does equal a neighbour. If there are multiple of matching neighbours, I pick the one with the biggest time stamp. This check for equality is a double precision check which should use relative quantities, as time stamps can be arbitrarily large. So once I find a matching time stamp, I return this time stamp rather than the current time step size and, hence, sync the current time step size with the neighbours. This can mean that I reduce or increase the time step size slightly, i.e. I assume that enough slack is built into the chosen time step size such that a tiny increase does not blow up the result.</p>
+<h2><a class="anchor" id="autotoc_md61"></a>
+Relative accuracy</h2>
+<p>If two time stamps are equal depends on the magnutide of the time step size. It does not matter what the time stamps are, as any "rounding" decision should be time translation invariant. However, if I have a large time step size, then I'd be happy to alter it more rigorously than for a stiff problem with tiny time step sizes. Overall, I accept around one percent of the time step sizes as acceptable alteration of the outcome.</p>
+<h2><a class="anchor" id="autotoc_md62"></a>
+Usage of routine within local time stepping</h2>
+<p>If we have subcycling, then we know that timeStepSize is never zero, as we use the largest (original) eigenvalue within the system and derive the levels' time step sizes from there. Things are different with local time stepping, where each cell can have its own time step size. If a cell has a size of zero, then we always should derive the admissible dt from the neighbours.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7959e01f44819b74c0904855982ffd30" title="Similar to getMinTimeStampOfNeighbours(), but we minimise only over those neighbours that are actuall...">getMinTimeStampOfNeighboursAhead()</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> <a class="el" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a> discussion how to make zero eigenvalue patches catch up over time.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeStepSize</td><td>Time step size the code would wish to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Time step size the code should use eventually </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html#l00200">200</a> of file <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html">TimeStepping.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/db2/MatrixFreeMain_8template_8cpp.html#a5e0c560fe19fd1cf2f94b84de758afc3">_log</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>, <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>, <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00038">tarch::la::greaterEquals()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../d0/d10/Scalar_8h_source.html#l00017">tarch::la::NUMERICAL_ZERO_DIFFERENCE</a>, and <a class="el" href="../../d8/d7e/exahype2_2solvers_2fv_2godunov_2kernels_2kokkos_2Loop_8template_8h_source.html#l00017">timeStepSize</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_a0688456062b8c4282ce61a7535a1d1f2_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_a0688456062b8c4282ce61a7535a1d1f2_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_a0688456062b8c4282ce61a7535a1d1f2_cgraph" id="add/d6c/namespaceexahype2_a0688456062b8c4282ce61a7535a1d1f2_cgraph">
+<area shape="rect" title="Remove accumulation errors from cell time stamps." alt="" coords="5,23,212,63"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="283,5,410,31"/>
+<area shape="poly" title=" " alt="" coords="212,30,269,24,270,29,212,35"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a5e951ee2e1896bb641af43b495dc1e4a" title=" " alt="" coords="260,55,433,80"/>
+<area shape="poly" title=" " alt="" coords="212,51,246,55,246,60,212,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa02b2490d3160549be998a9acedb346d" name="aa02b2490d3160549be998a9acedb346d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02b2490d3160549be998a9acedb346d">&#9670;&#160;</a></span>runTimeStepOnCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CellLabel , typename FaceLabel &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2::runTimeStepOnCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> CellLabel &amp;</td>          <td class="paramname"><span class="paramname"><em>cellLabel</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dc/da6/classpeano4_1_1datamanagement_1_1FaceEnumerator.html">peano4::datamanagement::FaceEnumerator</a>&lt; FaceLabel &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>faceLabelEnumerator</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a></td>          <td class="paramname"><span class="paramname"><em>globalMinTimeStamp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether to run a time step on a cell by analysing the neighbouring cells' timestamp. </p>
+<p>These timestamps are stored within the face labels. We update a cell if all the neighbours are at the same time stamp or ahead.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a0688456062b8c4282ce61a7535a1d1f2" title="Remove accumulation errors from cell time stamps.">removeTimeStepAccumulationErrorsFromCell()</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> <a class="el" href="../../d0/de2/hydro__iact_8h.html#a8cbb00f59bca2c48d4560b23f07a4de2">a</a> discussion of precisions we use <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> the checks above</dd></dl>
+<p>For some reason that I haven't understood completely yet, the above decision pattern can still lead to a deadlock where no cell in the global domain does advance in time. Which is really weird, as there always should be a global minimum. My guess is that something along the AMR boundaries does not work properly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cellLabel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html#l00132">132</a> of file <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html">TimeStepping.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/d0e/MatrixMatrixOperations_8cpph_source.html#l00100">tarch::la::equals()</a>, <a class="el" href="../../d2/df8/exahype2_2TimeStepping_8h_source.html#l00021">exahype2::internal::getMinTimeStampOfNeighbours()</a>, and <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00038">tarch::la::greaterEquals()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_aa02b2490d3160549be998a9acedb346d_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_aa02b2490d3160549be998a9acedb346d_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_aa02b2490d3160549be998a9acedb346d_cgraph" id="add/d6c/namespaceexahype2_aa02b2490d3160549be998a9acedb346d_cgraph">
+<area shape="rect" title="Determine whether to run a time step on a cell by analysing the neighbouring cells&#39; timestamp." alt="" coords="5,63,225,88"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#acc43ad318304ffefe5710bc3deec2800" title="Compares to matrices on equality by means of a numerical accuracy." alt="" coords="329,5,456,31"/>
+<area shape="poly" title=" " alt="" coords="177,60,317,31,318,36,178,65"/>
+<area shape="rect" href="../../d5/d39/namespaceexahype2_1_1internal.html#a7c01d30f177e6f90f15426d6553fba99" title="Run over all neighbours and analyse their time stamp." alt="" coords="273,55,512,95"/>
+<area shape="poly" title=" " alt="" coords="226,73,260,73,260,78,226,78"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a5e951ee2e1896bb641af43b495dc1e4a" title=" " alt="" coords="306,120,479,145"/>
+<area shape="poly" title=" " alt="" coords="178,85,318,115,317,120,177,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9f3ec4c8757d8683cfeae53ce7d9b42" name="af9f3ec4c8757d8683cfeae53ce7d9b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f3ec4c8757d8683cfeae53ce7d9b42">&#9670;&#160;</a></span>setDefaultLogStatements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> exahype2::setDefaultLogStatements </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d91/exahype2_2UserInterface_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d9/d91/exahype2_2UserInterface_8cpp_source.html">UserInterface.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00196">tarch::logging::LogFilter::addFilterListEntry()</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00039">tarch::logging::LogFilter::FilterListEntry::AlwaysOn</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00031">tarch::logging::LogFilter::FilterListEntry::AnyRank</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00041">tarch::logging::LogFilter::FilterListEntry::BlackListEntry</a>, <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00158">tarch::logging::LogFilter::clearFilterList()</a>, <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00109">tarch::logging::LogFilter::getInstance()</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00035">tarch::logging::LogFilter::FilterListEntry::TargetDebug</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00034">tarch::logging::LogFilter::FilterListEntry::TargetInfo</a>, <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00036">tarch::logging::LogFilter::FilterListEntry::TargetTrace</a>, and <a class="el" href="../../da/d31/LogFilter_8h_source.html#l00042">tarch::logging::LogFilter::FilterListEntry::WhiteListEntry</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_af9f3ec4c8757d8683cfeae53ce7d9b42_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_af9f3ec4c8757d8683cfeae53ce7d9b42_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_af9f3ec4c8757d8683cfeae53ce7d9b42_cgraph" id="add/d6c/namespaceexahype2_af9f3ec4c8757d8683cfeae53ce7d9b42_cgraph">
+<area shape="rect" title=" " alt="" coords="5,77,265,102"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#a00f4cd70fe095444bb001605b2d88c10" title="Add one filter list entry." alt="" coords="313,5,488,45"/>
+<area shape="poly" title=" " alt="" coords="189,74,303,46,304,51,190,79"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#af182e20a1987fa7fda72e4bfd15cbe69" title=" " alt="" coords="313,69,488,109"/>
+<area shape="poly" title=" " alt="" coords="266,87,300,87,300,92,266,92"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="313,133,488,173"/>
+<area shape="poly" title=" " alt="" coords="190,100,304,127,303,133,189,105"/>
+<area shape="rect" href="../../df/d4f/structtarch_1_1logging_1_1LogFilter_1_1FilterListEntry.html#a69adda0d32ea8a74575721cd7b82330c" title=" " alt="" coords="536,5,715,45"/>
+<area shape="poly" title=" " alt="" coords="488,23,522,23,522,28,488,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae62a65e1dd6c633eee9a9b5aba6e14bc" name="ae62a65e1dd6c633eee9a9b5aba6e14bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62a65e1dd6c633eee9a9b5aba6e14bc">&#9670;&#160;</a></span>volumeIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/d46/accelerator_8h.html#a2874ed6d96b6ad2b5fa218c79ed553b3">GPUCallableMethod</a> auto exahype2::volumeIndex </td>
+          <td>(</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dcf/VolumeIndex_8h_source.html#l00078">78</a> of file <a class="el" href="../../d5/dcf/VolumeIndex_8h_source.html">VolumeIndex.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcf/VolumeIndex_8h_source.html#l00036">exahype2::VolumeIndex&lt; N, Args &gt;::generate()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/dd3/CCZ4KernelTest_8cpp_source.html#l00035">exahype2::fd::tests::CCZ4KernelTest::AppleWithAppleTest()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_cgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_cgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_cgraph" id="add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,184,38"/>
+<area shape="rect" href="../../d9/d75/structexahype2_1_1VolumeIndex.html#a7f1855551bc3d48a71b5525918385762" title=" " alt="" coords="232,5,411,45"/>
+<area shape="poly" title=" " alt="" coords="185,23,218,23,218,28,185,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_icgraph.png" border="0" usemap="#add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_icgraph" alt=""/></div>
+<map name="add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_icgraph" id="add/d6c/namespaceexahype2_ae62a65e1dd6c633eee9a9b5aba6e14bc_icgraph">
+<area shape="rect" title=" " alt="" coords="260,20,439,45"/>
+<area shape="rect" href="../../df/de4/classexahype2_1_1fd_1_1tests_1_1CCZ4KernelTest.html#ab2b7f6c7f1896f153c037789f32b90f6" title=" " alt="" coords="5,5,212,60"/>
+<area shape="poly" title=" " alt="" coords="246,35,212,35,212,30,246,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae92b5e9101f61d963fb8de9780a652c8" name="ae92b5e9101f61d963fb8de9780a652c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92b5e9101f61d963fb8de9780a652c8">&#9670;&#160;</a></span>havematplotlib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2.havematplotlib = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html#l00042">42</a> of file <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html">__init__.py</a>.</p>
+
+</div>
+</div>
+<a id="a28752549c840b5681ade5abb81de9f02" name="a28752549c840b5681ade5abb81de9f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28752549c840b5681ade5abb81de9f02">&#9670;&#160;</a></span>havempmath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2.havempmath = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html#l00019">19</a> of file <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html">__init__.py</a>.</p>
+
+</div>
+</div>
+<a id="ac87f457ff949f3fcc6390d3e2694f7b8" name="ac87f457ff949f3fcc6390d3e2694f7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87f457ff949f3fcc6390d3e2694f7b8">&#9670;&#160;</a></span>havenumpy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2.havenumpy = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html#l00010">10</a> of file <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html">__init__.py</a>.</p>
+
+</div>
+</div>
+<a id="afd5f087224ddc778189cbfbfb2d1597f" name="afd5f087224ddc778189cbfbfb2d1597f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5f087224ddc778189cbfbfb2d1597f">&#9670;&#160;</a></span>havesympy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> exahype2.havesympy = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html#l00032">32</a> of file <a class="el" href="../../d7/df6/python_2exahype2_2____init_____8py_source.html">__init__.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6c/namespaceexahype2.html">exahype2</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:27 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

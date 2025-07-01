@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d4/d9c/namespaceparticles-explicit-euler-integration.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">particles-explicit-euler-integration Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1c458ba256a9dca58a8268763379ca78" id="r_a1c458ba256a9dca58a8268763379ca78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c458ba256a9dca58a8268763379ca78">project</a></td></tr>
+<tr class="separator:a1c458ba256a9dca58a8268763379ca78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e4a8f92b7cf730614dd59a89f4fa91" id="r_a86e4a8f92b7cf730614dd59a89f4fa91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e4a8f92b7cf730614dd59a89f4fa91">dimensions_</a> = 2</td></tr>
+<tr class="separator:a86e4a8f92b7cf730614dd59a89f4fa91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20258a869de204d3c1822d41eecabad7" id="r_a20258a869de204d3c1822d41eecabad7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20258a869de204d3c1822d41eecabad7">end_time_</a> = 0.5</td></tr>
+<tr class="separator:a20258a869de204d3c1822d41eecabad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c6202871802d264d34c9f3c4980c66" id="r_a87c6202871802d264d34c9f3c4980c66"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c6202871802d264d34c9f3c4980c66">width_</a> = [1.0, 1.0, 1.0]</td></tr>
+<tr class="separator:a87c6202871802d264d34c9f3c4980c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5178f3f0a26600951b277f51bd106cde" id="r_a5178f3f0a26600951b277f51bd106cde"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5178f3f0a26600951b277f51bd106cde">offset_</a> = [0.0, 0.0, 0.0]</td></tr>
+<tr class="separator:a5178f3f0a26600951b277f51bd106cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb7a7aba21e880b53e0740efdf46031" id="r_acfb7a7aba21e880b53e0740efdf46031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb7a7aba21e880b53e0740efdf46031">pbc_X</a> = True</td></tr>
+<tr class="separator:acfb7a7aba21e880b53e0740efdf46031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb30c6d56a3eed8526efbeffee73bfe5" id="r_adb30c6d56a3eed8526efbeffee73bfe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb30c6d56a3eed8526efbeffee73bfe5">pbc_Y</a> = False</td></tr>
+<tr class="separator:adb30c6d56a3eed8526efbeffee73bfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7870edaec93d18701edd8accf698c976" id="r_a7870edaec93d18701edd8accf698c976"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7870edaec93d18701edd8accf698c976">pbc_Z</a> = False</td></tr>
+<tr class="separator:a7870edaec93d18701edd8accf698c976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecb4c7cdd7f2904e7ef449cbcc2c55f" id="r_a0ecb4c7cdd7f2904e7ef449cbcc2c55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ecb4c7cdd7f2904e7ef449cbcc2c55f">min_depth_</a> = 3</td></tr>
+<tr class="separator:a0ecb4c7cdd7f2904e7ef449cbcc2c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abb03ee7c879a3a0cacb761dbc1e028" id="r_a1abb03ee7c879a3a0cacb761dbc1e028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1abb03ee7c879a3a0cacb761dbc1e028">amr_levels_</a> = 0</td></tr>
+<tr class="separator:a1abb03ee7c879a3a0cacb761dbc1e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3560d1f7c0ed6c97d5d341c893d59e1" id="r_af3560d1f7c0ed6c97d5d341c893d59e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3560d1f7c0ed6c97d5d341c893d59e1">patch_size_</a> = 64</td></tr>
+<tr class="separator:af3560d1f7c0ed6c97d5d341c893d59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2d9e25ac40244488f036c4912c2280" id="r_abb2d9e25ac40244488f036c4912c2280"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb2d9e25ac40244488f036c4912c2280">number_of_snapshots_</a> = 20</td></tr>
+<tr class="separator:abb2d9e25ac40244488f036c4912c2280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219c0e8e9a635f1e424ba563c78c7191" id="r_a219c0e8e9a635f1e424ba563c78c7191"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a219c0e8e9a635f1e424ba563c78c7191">time_step_relaxation_</a> = 0.5</td></tr>
+<tr class="separator:a219c0e8e9a635f1e424ba563c78c7191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cf365a3d7b332a45b658218b86cd02" id="r_ab8cf365a3d7b332a45b658218b86cd02"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8cf365a3d7b332a45b658218b86cd02">output_dir_</a> = &quot;solutions&quot;</td></tr>
+<tr class="separator:ab8cf365a3d7b332a45b658218b86cd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94800dd21a6fce5d9124bfc99259c219" id="r_a94800dd21a6fce5d9124bfc99259c219"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94800dd21a6fce5d9124bfc99259c219">peano_dir_</a> = &quot;../../..&quot;</td></tr>
+<tr class="separator:a94800dd21a6fce5d9124bfc99259c219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f6255b01bfbed43add1b6826d55d9f" id="r_ac8f6255b01bfbed43add1b6826d55d9f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f6255b01bfbed43add1b6826d55d9f">max_h_</a> = 1.1 * min(<a class="el" href="#a87c6202871802d264d34c9f3c4980c66">width_</a>[0:<a class="el" href="#a86e4a8f92b7cf730614dd59a89f4fa91">dimensions_</a>]) / (3.0**<a class="el" href="#a0ecb4c7cdd7f2904e7ef449cbcc2c55f">min_depth_</a>)</td></tr>
+<tr class="separator:ac8f6255b01bfbed43add1b6826d55d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80799f1b4548f5e5c2fbb6b0d5821b5e" id="r_a80799f1b4548f5e5c2fbb6b0d5821b5e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80799f1b4548f5e5c2fbb6b0d5821b5e">min_h_</a> = <a class="el" href="#ac8f6255b01bfbed43add1b6826d55d9f">max_h_</a> * 3.0**<a class="el" href="#a1abb03ee7c879a3a0cacb761dbc1e028">amr_levels_</a></td></tr>
+<tr class="separator:a80799f1b4548f5e5c2fbb6b0d5821b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49892d5ad9cb23be94f8e0089a2c9fe1" id="r_a49892d5ad9cb23be94f8e0089a2c9fe1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49892d5ad9cb23be94f8e0089a2c9fe1">time_in_between_plots</a> = <a class="el" href="#a20258a869de204d3c1822d41eecabad7">end_time_</a> / <a class="el" href="#abb2d9e25ac40244488f036c4912c2280">number_of_snapshots_</a></td></tr>
+<tr class="separator:a49892d5ad9cb23be94f8e0089a2c9fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb74477972c29605506be87ba59a9e7" id="r_aedb74477972c29605506be87ba59a9e7"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb74477972c29605506be87ba59a9e7">initial_conditions_</a></td></tr>
+<tr class="separator:aedb74477972c29605506be87ba59a9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615b3d79320a1e77d75ef17114479862" id="r_a615b3d79320a1e77d75ef17114479862"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a615b3d79320a1e77d75ef17114479862">boundary_conditions_</a></td></tr>
+<tr class="separator:a615b3d79320a1e77d75ef17114479862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d3faa565ee1f21d54d0a0d2fab6fdb" id="r_a51d3faa565ee1f21d54d0a0d2fab6fdb"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51d3faa565ee1f21d54d0a0d2fab6fdb">flux_</a></td></tr>
+<tr class="separator:a51d3faa565ee1f21d54d0a0d2fab6fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7453dd8bb0c73d645636b9c88c5890" id="r_aeb7453dd8bb0c73d645636b9c88c5890"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7453dd8bb0c73d645636b9c88c5890">refinement_criteria_</a></td></tr>
+<tr class="separator:aeb7453dd8bb0c73d645636b9c88c5890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be7f690e7142f5701e9c3fa0c19db18" id="r_a4be7f690e7142f5701e9c3fa0c19db18"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be7f690e7142f5701e9c3fa0c19db18">eigenvalues_</a></td></tr>
+<tr class="separator:a4be7f690e7142f5701e9c3fa0c19db18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff3a0629a3648e95760cb308a5657c6" id="r_afff3a0629a3648e95760cb308a5657c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afff3a0629a3648e95760cb308a5657c6">fvSolver</a></td></tr>
+<tr class="separator:afff3a0629a3648e95760cb308a5657c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57b5d7ed735bef061c721cbc7b37f88" id="r_aa57b5d7ed735bef061c721cbc7b37f88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57b5d7ed735bef061c721cbc7b37f88">initial_conditions</a></td></tr>
+<tr class="separator:aa57b5d7ed735bef061c721cbc7b37f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15dafa87f6bab6d4c0f2482c674a6613" id="r_a15dafa87f6bab6d4c0f2482c674a6613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15dafa87f6bab6d4c0f2482c674a6613">boundary_conditions</a></td></tr>
+<tr class="separator:a15dafa87f6bab6d4c0f2482c674a6613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b175cb7a32ceb1d982d29bd869f0c8c" id="r_a8b175cb7a32ceb1d982d29bd869f0c8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b175cb7a32ceb1d982d29bd869f0c8c">max_eigenvalue</a></td></tr>
+<tr class="separator:a8b175cb7a32ceb1d982d29bd869f0c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304f556ec3aa2f83307c41640effc5d0" id="r_a304f556ec3aa2f83307c41640effc5d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a304f556ec3aa2f83307c41640effc5d0">flux</a></td></tr>
+<tr class="separator:a304f556ec3aa2f83307c41640effc5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147c93651b32a685ba4d4b16edb6c2cf" id="r_a147c93651b32a685ba4d4b16edb6c2cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147c93651b32a685ba4d4b16edb6c2cf">dimensions</a></td></tr>
+<tr class="separator:a147c93651b32a685ba4d4b16edb6c2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3538d6bab80979fc35cb97c6cd2a47f7" id="r_a3538d6bab80979fc35cb97c6cd2a47f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3538d6bab80979fc35cb97c6cd2a47f7">size</a></td></tr>
+<tr class="separator:a3538d6bab80979fc35cb97c6cd2a47f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb819710ea65423b36962792b8ead2c6" id="r_abb819710ea65423b36962792b8ead2c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb819710ea65423b36962792b8ead2c6">offset</a></td></tr>
+<tr class="separator:abb819710ea65423b36962792b8ead2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7f367f904acceae6a235d663404b8b" id="r_a8b7f367f904acceae6a235d663404b8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b7f367f904acceae6a235d663404b8b">min_end_time</a></td></tr>
+<tr class="separator:a8b7f367f904acceae6a235d663404b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866fca2b12d60ff1b2c664b8045d3e6a" id="r_a866fca2b12d60ff1b2c664b8045d3e6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866fca2b12d60ff1b2c664b8045d3e6a">max_end_time</a></td></tr>
+<tr class="separator:a866fca2b12d60ff1b2c664b8045d3e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285da42b491f6a18112fa2392a78fa42" id="r_a285da42b491f6a18112fa2392a78fa42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a285da42b491f6a18112fa2392a78fa42">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a285da42b491f6a18112fa2392a78fa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787eba2191d30da5b78d10c5df88f49f" id="r_a787eba2191d30da5b78d10c5df88f49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a787eba2191d30da5b78d10c5df88f49f">periodic_BC</a></td></tr>
+<tr class="separator:a787eba2191d30da5b78d10c5df88f49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e405b18c6c83f33137f617416610bea" id="r_a8e405b18c6c83f33137f617416610bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e405b18c6c83f33137f617416610bea">build_mode</a> = peano4.output.CompileMode.Release</td></tr>
+<tr class="separator:a8e405b18c6c83f33137f617416610bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac824b73d4f8d6a45e0595c0140b5428e" id="r_ac824b73d4f8d6a45e0595c0140b5428e"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac824b73d4f8d6a45e0595c0140b5428e">particle_attributes_</a></td></tr>
+<tr class="separator:ac824b73d4f8d6a45e0595c0140b5428e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1a6e60630a19a4756bc7ac5909d553" id="r_a4e1a6e60630a19a4756bc7ac5909d553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1a6e60630a19a4756bc7ac5909d553">tracer_particles</a></td></tr>
+<tr class="separator:a4e1a6e60630a19a4756bc7ac5909d553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69dbffaaea810ee7edfb6892fa31942d" id="r_a69dbffaaea810ee7edfb6892fa31942d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69dbffaaea810ee7edfb6892fa31942d">init_action_set</a></td></tr>
+<tr class="separator:a69dbffaaea810ee7edfb6892fa31942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb3f8bcd691442368f9783037fb0758" id="r_afeb3f8bcd691442368f9783037fb0758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeb3f8bcd691442368f9783037fb0758">descend_invocation_order</a></td></tr>
+<tr class="separator:afeb3f8bcd691442368f9783037fb0758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06dbfc42d1184db326361af278a182ab" id="r_a06dbfc42d1184db326361af278a182ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06dbfc42d1184db326361af278a182ab">tracing_action_set</a></td></tr>
+<tr class="separator:a06dbfc42d1184db326361af278a182ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4169ea378aa2b807399eeb9419775a" id="r_aca4169ea378aa2b807399eeb9419775a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca4169ea378aa2b807399eeb9419775a">make_clean_first</a></td></tr>
+<tr class="separator:aca4169ea378aa2b807399eeb9419775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a1abb03ee7c879a3a0cacb761dbc1e028" name="a1abb03ee7c879a3a0cacb761dbc1e028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abb03ee7c879a3a0cacb761dbc1e028">&#9670;&#160;</a></span>amr_levels_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particles-explicit-euler-integration.amr_levels_ = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00019">19</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a15dafa87f6bab6d4c0f2482c674a6613" name="a15dafa87f6bab6d4c0f2482c674a6613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15dafa87f6bab6d4c0f2482c674a6613">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00082">82</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a615b3d79320a1e77d75ef17114479862" name="a615b3d79320a1e77d75ef17114479862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615b3d79320a1e77d75ef17114479862">&#9670;&#160;</a></span>boundary_conditions_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.boundary_conditions_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">for (int i = 0; i &lt; NumberOfUnknowns + NumberOfAuxiliaryVariables; i++) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Qoutside[i] = Qinside[i];</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  }&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00040">40</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a8e405b18c6c83f33137f617416610bea" name="a8e405b18c6c83f33137f617416610bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e405b18c6c83f33137f617416610bea">&#9670;&#160;</a></span>build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.build_mode = peano4.output.CompileMode.Release</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00105">105</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="afeb3f8bcd691442368f9783037fb0758" name="afeb3f8bcd691442368f9783037fb0758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb3f8bcd691442368f9783037fb0758">&#9670;&#160;</a></span>descend_invocation_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.descend_invocation_order</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00145">145</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a147c93651b32a685ba4d4b16edb6c2cf" name="a147c93651b32a685ba4d4b16edb6c2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147c93651b32a685ba4d4b16edb6c2cf">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00088">88</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a86e4a8f92b7cf730614dd59a89f4fa91" name="a86e4a8f92b7cf730614dd59a89f4fa91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e4a8f92b7cf730614dd59a89f4fa91">&#9670;&#160;</a></span>dimensions_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particles-explicit-euler-integration.dimensions_ = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00011">11</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a4be7f690e7142f5701e9c3fa0c19db18" name="a4be7f690e7142f5701e9c3fa0c19db18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be7f690e7142f5701e9c3fa0c19db18">&#9670;&#160;</a></span>eigenvalues_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.eigenvalues_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">return 1.0;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00065">65</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a20258a869de204d3c1822d41eecabad7" name="a20258a869de204d3c1822d41eecabad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20258a869de204d3c1822d41eecabad7">&#9670;&#160;</a></span>end_time_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particles-explicit-euler-integration.end_time_ = 0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00012">12</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a285da42b491f6a18112fa2392a78fa42" name="a285da42b491f6a18112fa2392a78fa42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285da42b491f6a18112fa2392a78fa42">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00093">93</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a304f556ec3aa2f83307c41640effc5d0" name="a304f556ec3aa2f83307c41640effc5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304f556ec3aa2f83307c41640effc5d0">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00084">84</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a51d3faa565ee1f21d54d0a0d2fab6fdb" name="a51d3faa565ee1f21d54d0a0d2fab6fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d3faa565ee1f21d54d0a0d2fab6fdb">&#9670;&#160;</a></span>flux_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.flux_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  F[0] = 0.0;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  F[1] = 0.0;</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  #if Dimensions == 3</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  F[2] = 0.0;</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  #endif</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  F[normal] = Q[normal];&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00046">46</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="afff3a0629a3648e95760cb308a5657c6" name="afff3a0629a3648e95760cb308a5657c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff3a0629a3648e95760cb308a5657c6">&#9670;&#160;</a></span>fvSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.fvSolver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;Advection&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    patch_size=patch_size_,</div>
+<div class="line"><span class="lineno">    4</span>    min_volume_h=min_h_,</div>
+<div class="line"><span class="lineno">    5</span>    max_volume_h=max_h_,</div>
+<div class="line"><span class="lineno">    6</span>    time_step_relaxation=time_step_relaxation_,</div>
+<div class="line"><span class="lineno">    7</span>    unknowns=dimensions_,</div>
+<div class="line"><span class="lineno">    8</span>    auxiliary_variables=0,</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/de2/fv_2godunov_2GlobalAdaptiveTimeStep_8py_source.html#l00011">GlobalAdaptiveTimeStep.py:11</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00070">70</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a69dbffaaea810ee7edfb6892fa31942d" name="a69dbffaaea810ee7edfb6892fa31942d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69dbffaaea810ee7edfb6892fa31942d">&#9670;&#160;</a></span>init_action_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.init_action_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d2/dca/classexahype2_1_1tracer_1_1InsertParticlesFromFile_1_1InsertParticlesFromFile.html">exahype2.tracer.InsertParticlesFromFile</a>(</div>
+<div class="line"><span class="lineno">    2</span>    particle_set=tracer_particles,</div>
+<div class="line"><span class="lineno">    3</span>    filename=<span class="stringliteral">&quot;particles_2d.dat&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    scale_factor=1.0,</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1tracer_1_1InsertParticlesFromFile_1_1InsertParticlesFromFile_html"><div class="ttname"><a href="../../d2/dca/classexahype2_1_1tracer_1_1InsertParticlesFromFile_1_1InsertParticlesFromFile.html">exahype2.tracer.InsertParticlesFromFile.InsertParticlesFromFile</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d45/InsertParticlesFromFile_8py_source.html#l00008">InsertParticlesFromFile.py:8</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00140">140</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="aa57b5d7ed735bef061c721cbc7b37f88" name="aa57b5d7ed735bef061c721cbc7b37f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57b5d7ed735bef061c721cbc7b37f88">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00081">81</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="aedb74477972c29605506be87ba59a9e7" name="aedb74477972c29605506be87ba59a9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb74477972c29605506be87ba59a9e7">&#9670;&#160;</a></span>initial_conditions_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.initial_conditions_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">for (int i = 0; i &lt; NumberOfUnknowns + NumberOfAuxiliaryVariables; i++) {</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">    Q[i] = std::sin(x(0) * tarch::la::PI) * std::sin(x(1) * tarch::la::PI)</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    #if Dimensions == 3</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">      * std::sin(x(2) * tarch::la::PI)</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">    #endif</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">    ;</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  }&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00030">30</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="aca4169ea378aa2b807399eeb9419775a" name="aca4169ea378aa2b807399eeb9419775a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4169ea378aa2b807399eeb9419775a">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00171">171</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a8b175cb7a32ceb1d982d29bd869f0c8c" name="a8b175cb7a32ceb1d982d29bd869f0c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b175cb7a32ceb1d982d29bd869f0c8c">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00083">83</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a866fca2b12d60ff1b2c664b8045d3e6a" name="a866fca2b12d60ff1b2c664b8045d3e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866fca2b12d60ff1b2c664b8045d3e6a">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00092">92</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="ac8f6255b01bfbed43add1b6826d55d9f" name="ac8f6255b01bfbed43add1b6826d55d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f6255b01bfbed43add1b6826d55d9f">&#9670;&#160;</a></span>max_h_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particles-explicit-euler-integration.max_h_ = 1.1 * min(<a class="el" href="#a87c6202871802d264d34c9f3c4980c66">width_</a>[0:<a class="el" href="#a86e4a8f92b7cf730614dd59a89f4fa91">dimensions_</a>]) / (3.0**<a class="el" href="#a0ecb4c7cdd7f2904e7ef449cbcc2c55f">min_depth_</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00026">26</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a0ecb4c7cdd7f2904e7ef449cbcc2c55f" name="a0ecb4c7cdd7f2904e7ef449cbcc2c55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecb4c7cdd7f2904e7ef449cbcc2c55f">&#9670;&#160;</a></span>min_depth_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particles-explicit-euler-integration.min_depth_ = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00018">18</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a8b7f367f904acceae6a235d663404b8b" name="a8b7f367f904acceae6a235d663404b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7f367f904acceae6a235d663404b8b">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00091">91</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a80799f1b4548f5e5c2fbb6b0d5821b5e" name="a80799f1b4548f5e5c2fbb6b0d5821b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80799f1b4548f5e5c2fbb6b0d5821b5e">&#9670;&#160;</a></span>min_h_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particles-explicit-euler-integration.min_h_ = <a class="el" href="#ac8f6255b01bfbed43add1b6826d55d9f">max_h_</a> * 3.0**<a class="el" href="#a1abb03ee7c879a3a0cacb761dbc1e028">amr_levels_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00027">27</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="abb2d9e25ac40244488f036c4912c2280" name="abb2d9e25ac40244488f036c4912c2280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2d9e25ac40244488f036c4912c2280">&#9670;&#160;</a></span>number_of_snapshots_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particles-explicit-euler-integration.number_of_snapshots_ = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00021">21</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="abb819710ea65423b36962792b8ead2c6" name="abb819710ea65423b36962792b8ead2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb819710ea65423b36962792b8ead2c6">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00090">90</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a5178f3f0a26600951b277f51bd106cde" name="a5178f3f0a26600951b277f51bd106cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5178f3f0a26600951b277f51bd106cde">&#9670;&#160;</a></span>offset_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list particles-explicit-euler-integration.offset_ = [0.0, 0.0, 0.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00014">14</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="ab8cf365a3d7b332a45b658218b86cd02" name="ab8cf365a3d7b332a45b658218b86cd02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cf365a3d7b332a45b658218b86cd02">&#9670;&#160;</a></span>output_dir_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.output_dir_ = &quot;solutions&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00023">23</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="ac824b73d4f8d6a45e0595c0140b5428e" name="ac824b73d4f8d6a45e0595c0140b5428e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac824b73d4f8d6a45e0595c0140b5428e">&#9670;&#160;</a></span>particle_attributes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict particles-explicit-euler-integration.particle_attributes_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;unknowns&quot;</span>: {</div>
+<div class="line"><span class="lineno">    3</span>        <span class="stringliteral">&quot;rho&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    4</span>        <span class="stringliteral">&quot;fluid_u&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    5</span>        <span class="stringliteral">&quot;fluid_v&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    6</span>        <span class="stringliteral">&quot;fluid_w&quot;</span>: 1,  <span class="comment"># Interpolated fluid velocity</span></div>
+<div class="line"><span class="lineno">    7</span>        <span class="stringliteral">&quot;u&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    8</span>        <span class="stringliteral">&quot;v&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    9</span>        <span class="stringliteral">&quot;w&quot;</span>: 1,  <span class="comment"># Particle&#39;s own velocity        &quot;a_x&quot;: 1,        &quot;a_y&quot;: 1,        &quot;a_z&quot;: 1,        &quot;d&quot;: 1,    }    if dimensions_ == 3    else {        &quot;rho&quot;: 1,        &quot;fluid_u&quot;: 1,        &quot;fluid_v&quot;: 1,  # Interpolated fluid velocity        &quot;u&quot;: 1,        &quot;v&quot;: 1,  # Particle&#39;s own velocity</span></div>
+<div class="line"><span class="lineno">   10</span>        <span class="stringliteral">&quot;a_x&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">   11</span>        <span class="stringliteral">&quot;a_y&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">   12</span>        <span class="stringliteral">&quot;d&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">   13</span>    }</div>
+<div class="line"><span class="lineno">   14</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00109">109</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="af3560d1f7c0ed6c97d5d341c893d59e1" name="af3560d1f7c0ed6c97d5d341c893d59e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3560d1f7c0ed6c97d5d341c893d59e1">&#9670;&#160;</a></span>patch_size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particles-explicit-euler-integration.patch_size_ = 64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00020">20</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="acfb7a7aba21e880b53e0740efdf46031" name="acfb7a7aba21e880b53e0740efdf46031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb7a7aba21e880b53e0740efdf46031">&#9670;&#160;</a></span>pbc_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> particles-explicit-euler-integration.pbc_X = True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00015">15</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="adb30c6d56a3eed8526efbeffee73bfe5" name="adb30c6d56a3eed8526efbeffee73bfe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb30c6d56a3eed8526efbeffee73bfe5">&#9670;&#160;</a></span>pbc_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> particles-explicit-euler-integration.pbc_Y = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00016">16</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a7870edaec93d18701edd8accf698c976" name="a7870edaec93d18701edd8accf698c976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7870edaec93d18701edd8accf698c976">&#9670;&#160;</a></span>pbc_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> particles-explicit-euler-integration.pbc_Z = False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00017">17</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a94800dd21a6fce5d9124bfc99259c219" name="a94800dd21a6fce5d9124bfc99259c219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94800dd21a6fce5d9124bfc99259c219">&#9670;&#160;</a></span>peano_dir_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.peano_dir_ = &quot;../../..&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00024">24</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a787eba2191d30da5b78d10c5df88f49f" name="a787eba2191d30da5b78d10c5df88f49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787eba2191d30da5b78d10c5df88f49f">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00095">95</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a1c458ba256a9dca58a8268763379ca78" name="a1c458ba256a9dca58a8268763379ca78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c458ba256a9dca58a8268763379ca78">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    [<span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;particles&quot;</span>], <span class="stringliteral">&quot;.&quot;</span>, executable=<span class="stringliteral">&quot;FV-Particles&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00006">6</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="aeb7453dd8bb0c73d645636b9c88c5890" name="aeb7453dd8bb0c73d645636b9c88c5890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7453dd8bb0c73d645636b9c88c5890">&#9670;&#160;</a></span>refinement_criteria_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str particles-explicit-euler-integration.refinement_criteria_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  auto result = ::exahype2::RefinementCommand::Keep;</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  if (x(0) &gt; 0.5) {</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">    result = ::exahype2::RefinementCommand::Refine;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  } else {</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">    result = ::exahype2::RefinementCommand::Erase;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  }</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  return result;&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00055">55</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a3538d6bab80979fc35cb97c6cd2a47f7" name="a3538d6bab80979fc35cb97c6cd2a47f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3538d6bab80979fc35cb97c6cd2a47f7">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00089">89</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a49892d5ad9cb23be94f8e0089a2c9fe1" name="a49892d5ad9cb23be94f8e0089a2c9fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49892d5ad9cb23be94f8e0089a2c9fe1">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.time_in_between_plots = <a class="el" href="#a20258a869de204d3c1822d41eecabad7">end_time_</a> / <a class="el" href="#abb2d9e25ac40244488f036c4912c2280">number_of_snapshots_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00028">28</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a219c0e8e9a635f1e424ba563c78c7191" name="a219c0e8e9a635f1e424ba563c78c7191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a219c0e8e9a635f1e424ba563c78c7191">&#9670;&#160;</a></span>time_step_relaxation_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float particles-explicit-euler-integration.time_step_relaxation_ = 0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00022">22</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a4e1a6e60630a19a4756bc7ac5909d553" name="a4e1a6e60630a19a4756bc7ac5909d553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1a6e60630a19a4756bc7ac5909d553">&#9670;&#160;</a></span>tracer_particles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.tracer_particles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  project.add_tracer(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;Tracers&quot;</span>, particle_attributes=particle_attributes_</div>
+<div class="line"><span class="lineno">    3</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00136">136</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a06dbfc42d1184db326361af278a182ab" name="a06dbfc42d1184db326361af278a182ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06dbfc42d1184db326361af278a182ab">&#9670;&#160;</a></span>tracing_action_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">particles-explicit-euler-integration.tracing_action_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../db/d20/classexahype2_1_1tracer_1_1FiniteVolumesTracing_1_1FiniteVolumesTracing.html">exahype2.tracer.FiniteVolumesTracing</a>(</div>
+<div class="line"><span class="lineno">    2</span>    tracer_particles,</div>
+<div class="line"><span class="lineno">    3</span>    fvSolver,</div>
+<div class="line"><span class="lineno">    4</span>    project_on_tracer_properties_kernel=<span class="stringliteral">&quot;::exahype2::fv::updateParticleState&lt;0, 1, 2&gt;&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    projection_kernel_arguments=,)</div>
+<div class="ttc" id="aclassexahype2_1_1tracer_1_1FiniteVolumesTracing_1_1FiniteVolumesTracing_html"><div class="ttname"><a href="../../db/d20/classexahype2_1_1tracer_1_1FiniteVolumesTracing_1_1FiniteVolumesTracing.html">exahype2.tracer.FiniteVolumesTracing.FiniteVolumesTracing</a></div><div class="ttdoc">Particle tracing over the Finite Volumes solver.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d97/FiniteVolumesTracing_8py_source.html#l00010">FiniteVolumesTracing.py:12</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00148">148</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+<a id="a87c6202871802d264d34c9f3c4980c66" name="a87c6202871802d264d34c9f3c4980c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c6202871802d264d34c9f3c4980c66">&#9670;&#160;</a></span>width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list particles-explicit-euler-integration.width_ = [1.0, 1.0, 1.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html#l00013">13</a> of file <a class="el" href="../../d9/d00/particles-explicit-euler-integration_8py_source.html">particles-explicit-euler-integration.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d4/d9c/namespaceparticles-explicit-euler-integration.html">particles-explicit-euler-integration</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:05 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

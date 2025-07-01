@@ -1,0 +1,4 @@
+var rkfd_2actionsets_2ComputeFinalLinearCombination_8py =
+[
+    [ "exahype2.solvers.rkfd.actionsets.ComputeFinalLinearCombination.ComputeFinalLinearCombination", "d5/d67/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1ComputeFinalLinearCombination_1_1ComputeFinalLinearCombination.html", "d5/d67/classexahype2_1_1solvers_1_1rkfd_1_1actionsets_1_1ComputeFinalLinearCombination_1_1ComputeFinalLinearCombination" ]
+];

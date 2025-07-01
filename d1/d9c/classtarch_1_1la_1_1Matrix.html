@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d9c/classtarch_1_1la_1_1Matrix.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Static (i.e.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8317aada4bc6abe1399dca650ddc8881" id="r_a8317aada4bc6abe1399dca650ddc8881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8317aada4bc6abe1399dca650ddc8881">Matrix</a> ()</td></tr>
+<tr class="memdesc:a8317aada4bc6abe1399dca650ddc8881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a non-initialized matrix.  <br /></td></tr>
+<tr class="separator:a8317aada4bc6abe1399dca650ddc8881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccd1db0f9130af363489eae043f7b00" id="r_aeccd1db0f9130af363489eae043f7b00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeccd1db0f9130af363489eae043f7b00">Matrix</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp;value)</td></tr>
+<tr class="memdesc:aeccd1db0f9130af363489eae043f7b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an initialized matrix.  <br /></td></tr>
+<tr class="separator:aeccd1db0f9130af363489eae043f7b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d6bdf967a482a2f192219bbd1cf6a1" id="r_a98d6bdf967a482a2f192219bbd1cf6a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98d6bdf967a482a2f192219bbd1cf6a1">Matrix</a> (std::initializer_list&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; values)</td></tr>
+<tr class="separator:a98d6bdf967a482a2f192219bbd1cf6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c8f1ad1053638942b54304b1a68d32" id="r_ab6c8f1ad1053638942b54304b1a68d32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6c8f1ad1053638942b54304b1a68d32">rows</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:ab6c8f1ad1053638942b54304b1a68d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of rows in the matrix.  <br /></td></tr>
+<tr class="separator:ab6c8f1ad1053638942b54304b1a68d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4efe92000969ce9a20aaee628cda52" id="r_a7f4efe92000969ce9a20aaee628cda52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4efe92000969ce9a20aaee628cda52">cols</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a7f4efe92000969ce9a20aaee628cda52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of columns in the matrix.  <br /></td></tr>
+<tr class="separator:a7f4efe92000969ce9a20aaee628cda52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadde77340f47b59cd1a28127cacc851f" id="r_aadde77340f47b59cd1a28127cacc851f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadde77340f47b59cd1a28127cacc851f">size</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aadde77340f47b59cd1a28127cacc851f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of total elements in the matrix.  <br /></td></tr>
+<tr class="separator:aadde77340f47b59cd1a28127cacc851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c060369a7425283d4a929924b04b7ce" id="r_a8c060369a7425283d4a929924b04b7ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c060369a7425283d4a929924b04b7ce">operator()</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">rowIndex</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">colIndex</a>)</td></tr>
+<tr class="memdesc:a8c060369a7425283d4a929924b04b7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element at given row and column index (from 0..size-1).  <br /></td></tr>
+<tr class="separator:a8c060369a7425283d4a929924b04b7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bcb43abcb0a520abf26b22d02c93841" id="r_a6bcb43abcb0a520abf26b22d02c93841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bcb43abcb0a520abf26b22d02c93841">operator()</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">rowIndex</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">colIndex</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a6bcb43abcb0a520abf26b22d02c93841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns const element at given row and column index (from 0..size-1).  <br /></td></tr>
+<tr class="separator:a6bcb43abcb0a520abf26b22d02c93841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1776bcfb726f1d01dfa1a7a80dc22831" id="r_a1776bcfb726f1d01dfa1a7a80dc22831"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1776bcfb726f1d01dfa1a7a80dc22831">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a1776bcfb726f1d01dfa1a7a80dc22831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276468afc5c258db75a800da5716a35c" id="r_a276468afc5c258db75a800da5716a35c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a276468afc5c258db75a800da5716a35c">toPrettyString</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">numberOfDigits</a>=4) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a276468afc5c258db75a800da5716a35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00c509d9d66cfd27b05e6c7093ba125" id="r_ab00c509d9d66cfd27b05e6c7093ba125"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">NewScalarType</a> &gt; </td></tr>
+<tr class="memitem:ab00c509d9d66cfd27b05e6c7093ba125"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">NewScalarType</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab00c509d9d66cfd27b05e6c7093ba125">convertScalar</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ab00c509d9d66cfd27b05e6c7093ba125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac695d1ad359479a8a69f4459df78f1fb" id="r_ac695d1ad359479a8a69f4459df78f1fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac695d1ad359479a8a69f4459df78f1fb">data</a> ()</td></tr>
+<tr class="memdesc:ac695d1ad359479a8a69f4459df78f1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine returns a pointer to the first data element.  <br /></td></tr>
+<tr class="separator:ac695d1ad359479a8a69f4459df78f1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25418617a83cd080abec457d6809d77" id="r_ab25418617a83cd080abec457d6809d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab25418617a83cd080abec457d6809d77">data</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ab25418617a83cd080abec457d6809d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a39dd6af3508fd4dee0d53f2f20c00c2b" id="r_a39dd6af3508fd4dee0d53f2f20c00c2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39dd6af3508fd4dee0d53f2f20c00c2b">_values</a> [<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a> *<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>]</td></tr>
+<tr class="memdesc:a39dd6af3508fd4dee0d53f2f20c00c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the matrix components.  <br /></td></tr>
+<tr class="separator:a39dd6af3508fd4dee0d53f2f20c00c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a7d078a990c3df79bf1f1f0b61322a229" id="r_a7d078a990c3df79bf1f1f0b61322a229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d078a990c3df79bf1f1f0b61322a229">buildMatrix</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> *values)</td></tr>
+<tr class="memdesc:a7d078a990c3df79bf1f1f0b61322a229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Become friend of builder mechanism.  <br /></td></tr>
+<tr class="separator:a7d078a990c3df79bf1f1f0b61322a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a>&gt;<br />
+class tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;</div><p>Static (i.e. </p>
+<p>compiletime) sized matrix type. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00042">42</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8317aada4bc6abe1399dca650ddc8881" name="a8317aada4bc6abe1399dca650ddc8881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8317aada4bc6abe1399dca650ddc8881">&#9670;&#160;</a></span>Matrix() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a non-initialized matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00021">21</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+</div>
+</div>
+<a id="aeccd1db0f9130af363489eae043f7b00" name="aeccd1db0f9130af363489eae043f7b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccd1db0f9130af363489eae043f7b00">&#9670;&#160;</a></span>Matrix() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an initialized matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00027">27</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_aeccd1db0f9130af363489eae043f7b00_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_aeccd1db0f9130af363489eae043f7b00_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_aeccd1db0f9130af363489eae043f7b00_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_aeccd1db0f9130af363489eae043f7b00_cgraph">
+<area shape="rect" title="Constructs an initialized matrix." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="187,13,299,38"/>
+<area shape="poly" title=" " alt="" coords="139,23,173,23,173,28,139,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98d6bdf967a482a2f192219bbd1cf6a1" name="a98d6bdf967a482a2f192219bbd1cf6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d6bdf967a482a2f192219bbd1cf6a1">&#9670;&#160;</a></span>Matrix() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00036">36</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f4efe92000969ce9a20aaee628cda52" name="a7f4efe92000969ce9a20aaee628cda52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4efe92000969ce9a20aaee628cda52">&#9670;&#160;</a></span>cols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::cols </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of columns in the matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00052">52</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d08/GramSchmidtTest_8cpp_source.html#l00020">tarch::la::tests::GramSchmidtTest::testModifiedGramSchmidt()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_cgraph">
+<area shape="rect" title="Returns the number of columns in the matrix." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="212,5,324,31"/>
+<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_icgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_icgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_icgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a7f4efe92000969ce9a20aaee628cda52_icgraph">
+<area shape="rect" title="Returns the number of columns in the matrix." alt="" coords="280,13,439,38"/>
+<area shape="rect" href="../../dd/d7e/classtarch_1_1la_1_1tests_1_1GramSchmidtTest.html#afa792ec147e60b571747779744a6c4b0" title="Tests constructors." alt="" coords="5,5,232,45"/>
+<area shape="poly" title=" " alt="" coords="266,28,232,28,232,23,266,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab00c509d9d66cfd27b05e6c7093ba125" name="ab00c509d9d66cfd27b05e6c7093ba125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00c509d9d66cfd27b05e6c7093ba125">&#9670;&#160;</a></span>convertScalar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">NewScalarType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">NewScalarType</a> &gt; <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::convertScalar </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00113">113</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_ab00c509d9d66cfd27b05e6c7093ba125_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_ab00c509d9d66cfd27b05e6c7093ba125_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_ab00c509d9d66cfd27b05e6c7093ba125_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_ab00c509d9d66cfd27b05e6c7093ba125_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="187,13,299,38"/>
+<area shape="poly" title=" " alt="" coords="139,23,173,23,173,28,139,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac695d1ad359479a8a69f4459df78f1fb" name="ac695d1ad359479a8a69f4459df78f1fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac695d1ad359479a8a69f4459df78f1fb">&#9670;&#160;</a></span>data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> * <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This routine returns a pointer to the first data element. </p>
+<p>Not a beautiful one as it harms the OO idea, but in many cases it is convenient to have this operation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00130">130</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00047">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::_values</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00060">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__generate_dastgen_input_file()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00043">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__get_file_name()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00046">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__get_full_qualified_file_name()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00080">swift2.particle.Particle.Particle::__init__()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00482">swift2.particle.Particle.Particle::_add_dependency_checks()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00193">swift2.particle.Particle.Particle::_dependency_checks_modify_steps()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00496">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_boolean_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00108">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_boolean_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00580">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_double_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00186">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_double_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00283">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_enum_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00534">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_integer_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00312">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_integer_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00668">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_peano_double_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00623">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_peano_integer_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00418">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_string_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00088">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_user_defined_attributes()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00106">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::_get_dictionary_for_output()</a>, <a class="el" href="../../de/de0/CompressedLinearAlgebra_8cpph_source.html#l00030">toolbox::multiprecision::compress()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00102">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::construct_output()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00025">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::construct_output()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00127">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::construct_output()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00038">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::construct_output()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00034">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::construct_output()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00029">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::get_header_file_include()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00020">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::get_header_file_include()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00093">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::get_header_file_include()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00060">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::get_header_file_include()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00056">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::get_header_file_include()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00025">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::get_stack_container()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00089">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::get_stack_container()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00031">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::get_stack_container()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00027">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::get_stack_container()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00348">peano4.datamodel.DaStGen2.DaStGen2::hosts_smart_pointer_attribute()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle::readme_descriptor()</a>, <a class="el" href="../../d6/d2e/SPHLeapfrogFixedSearchRadius_8py_source.html#l00248">swift2.particle.SPHLeapfrogFixedSearchRadius.SPHLeapfrogFixedSearchRadius::set_parameters()</a>, <a class="el" href="../../de/df6/SPHParticle_8py_source.html#l00216">swift2.particle.SPHParticle.SPHParticle::set_parameters()</a>, and <a class="el" href="../../d9/d34/testLeapfrogFixedTimeStepSize_8py_source.html#l00131">swift2.particle.tests.testLeapfrogFixedTimeStepSize.testLeapfrogFixedTimeStepSize::set_parameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_ac695d1ad359479a8a69f4459df78f1fb_icgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_ac695d1ad359479a8a69f4459df78f1fb_icgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_ac695d1ad359479a8a69f4459df78f1fb_icgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_ac695d1ad359479a8a69f4459df78f1fb_icgraph">
+<area shape="rect" title="This routine returns a pointer to the first data element." alt="" coords="1456,1480,1619,1505"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a2f87dc23879602745e9f62df3214ab77" title=" " alt="" coords="283,117,533,172"/>
+<area shape="poly" title=" " alt="" coords="1533,1466,1526,1195,1506,769,1489,551,1468,359,1454,279,1440,214,1424,166,1406,138,1379,119,1344,104,1301,92,1253,83,1140,75,1014,76,883,83,754,96,534,126,533,121,754,91,883,78,1014,70,1140,69,1253,78,1303,87,1346,99,1382,115,1410,135,1428,164,1445,213,1460,278,1473,358,1495,551,1511,769,1531,1195,1538,1466"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a4a011c48a29e5a29206d9aa9babeacb4" title="Pass in a version of output." alt="" coords="5,117,235,172"/>
+<area shape="poly" title=" " alt="" coords="1533,1466,1527,1187,1508,744,1491,517,1469,317,1456,234,1441,167,1424,117,1406,88,1367,60,1316,39,1257,23,1189,14,1116,9,1037,9,869,18,699,38,537,63,283,107,223,120,221,115,282,102,536,57,699,33,869,13,1036,3,1116,4,1190,8,1258,18,1318,34,1369,55,1410,84,1429,114,1446,165,1461,233,1475,317,1497,517,1513,744,1532,1187,1538,1466"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a85157f611880f21c3b746a35da18b3ef" title=" " alt="" coords="1093,189,1323,244"/>
+<area shape="poly" title=" " alt="" coords="1532,1466,1522,1218,1498,832,1481,635,1460,461,1435,329,1421,285,1406,258,1389,243,1368,232,1322,218,1324,213,1370,227,1392,239,1410,255,1426,283,1440,328,1465,460,1486,635,1504,832,1527,1218,1538,1466"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a758ba32d0e283b944345a5a2068f6f6f" title=" " alt="" coords="656,138,885,207"/>
+<area shape="poly" title=" " alt="" coords="1533,1466,1525,1202,1505,788,1488,577,1467,391,1454,314,1439,251,1423,205,1406,178,1390,167,1370,158,1318,145,1253,138,1180,136,1025,144,886,159,885,153,1025,138,1180,131,1253,132,1319,139,1372,153,1393,163,1410,175,1428,203,1444,250,1459,313,1472,391,1494,577,1510,788,1531,1202,1538,1466"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a7243cff3570ca637ed4a29f4b1e79ac0" title="Initialise the particle." alt="" coords="1123,293,1293,333"/>
+<area shape="poly" title=" " alt="" coords="1532,1466,1520,1235,1495,880,1478,699,1457,539,1433,418,1420,377,1406,353,1382,334,1354,321,1324,314,1293,310,1294,305,1325,308,1356,316,1385,329,1410,350,1425,375,1438,416,1463,538,1483,698,1501,879,1526,1235,1538,1466"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a2819ff075b7b7f56f670e2a8232f4d9a" title="Add dependency (particle consistency) checks." alt="" coords="649,383,892,423"/>
+<area shape="poly" title=" " alt="" coords="1532,1466,1521,1241,1497,898,1480,724,1459,572,1434,457,1421,419,1406,397,1391,386,1371,378,1319,365,1255,359,1184,358,1031,369,892,386,892,381,1031,363,1183,353,1256,354,1320,360,1372,372,1393,382,1410,393,1425,416,1440,455,1465,571,1486,724,1503,898,1527,1241,1538,1466"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab55fdf4abe6b8d6e130e332cc00adddd" title="Add dependency checks as well as mesh consistency checks to the algorithm steps." alt="" coords="1102,408,1314,463"/>
+<area shape="poly" title=" " alt="" coords="1532,1466,1518,1258,1491,942,1474,782,1453,641,1431,534,1418,498,1406,477,1387,461,1364,449,1313,436,1315,430,1366,444,1390,456,1410,474,1423,496,1436,532,1459,640,1479,781,1497,942,1523,1258,1537,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#aa67164347063cd6fd4b93df58738a509" title="Generate boolean&#45;array attributes." alt="" coords="1066,847,1350,917"/>
+<area shape="poly" title=" " alt="" coords="1531,1467,1518,1352,1494,1190,1477,1107,1457,1032,1433,971,1420,948,1406,931,1380,910,1349,897,1351,892,1382,906,1410,927,1424,945,1438,969,1462,1031,1482,1106,1499,1189,1524,1351,1536,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a712d1355111beadc6432a26867864975" title="Generate boolean attributes." alt="" coords="1066,941,1350,996"/>
+<area shape="poly" title=" " alt="" coords="1530,1467,1515,1366,1489,1228,1472,1158,1452,1095,1430,1044,1406,1010,1380,992,1349,979,1351,974,1382,987,1410,1007,1435,1042,1457,1094,1477,1157,1494,1227,1520,1365,1535,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a649b2058c5f77e92cfb005540894b5e2" title="Generate double&#45;array attributes." alt="" coords="1066,1021,1350,1090"/>
+<area shape="poly" title=" " alt="" coords="1533,1467,1527,1394,1509,1296,1493,1244,1471,1192,1443,1145,1406,1104,1380,1085,1349,1072,1351,1067,1382,1080,1410,1100,1447,1142,1476,1190,1498,1242,1514,1295,1533,1394,1538,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#ab51dc753959333c594f64a4ce11d26a7" title="Generate double attributes." alt="" coords="1066,1115,1350,1169"/>
+<area shape="poly" title=" " alt="" coords="1531,1466,1521,1407,1500,1329,1483,1289,1463,1249,1437,1214,1406,1183,1379,1166,1349,1154,1351,1149,1382,1161,1410,1179,1441,1210,1467,1247,1488,1286,1505,1328,1526,1406,1536,1465"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a9c9eeb71e5cb006b18d6ec5ef7b090ad" title="Generate enum attributes." alt="" coords="1066,1193,1350,1248"/>
+<area shape="poly" title=" " alt="" coords="1527,1467,1512,1422,1488,1366,1453,1309,1431,1284,1406,1263,1379,1247,1349,1236,1351,1231,1382,1242,1410,1258,1435,1281,1457,1306,1493,1363,1517,1420,1532,1465"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a84b1dc2c14ad0166c393f4f1029cfaec" title="Generate integer&#45;array attributes." alt="" coords="1066,1273,1350,1342"/>
+<area shape="poly" title=" " alt="" coords="1519,1470,1473,1412,1442,1382,1407,1356,1349,1332,1351,1327,1409,1352,1445,1378,1477,1409,1523,1467"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a3051e4ce42693d76027b131f8b667008" title="Generate integer attributes." alt="" coords="1066,1367,1350,1421"/>
+<area shape="poly" title=" " alt="" coords="1495,1477,1407,1443,1338,1424,1340,1419,1409,1438,1497,1472"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a17b7f6f6bd414039dc8f36184971b1bb" title="Generate peano4 double&#45;array attributes." alt="" coords="1066,487,1350,557"/>
+<area shape="poly" title=" " alt="" coords="1534,1466,1531,1288,1526,1158,1516,1018,1501,877,1478,748,1463,691,1447,642,1428,601,1406,570,1380,549,1349,535,1351,530,1383,545,1410,567,1432,598,1452,640,1469,690,1483,747,1506,876,1522,1017,1531,1158,1537,1288,1539,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a29f778ee04b473ca406714d79bffe47d" title="Generate peano4 integer&#45;array attributes." alt="" coords="1066,581,1350,650"/>
+<area shape="poly" title=" " alt="" coords="1533,1467,1528,1304,1521,1188,1511,1062,1495,937,1472,822,1443,727,1426,691,1406,664,1380,643,1349,629,1352,624,1383,638,1410,660,1430,688,1448,725,1478,820,1500,936,1516,1062,1527,1188,1534,1304,1538,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a383d7f95b324c96dfa5404522a1b1ce2" title="Generate string attributes." alt="" coords="1066,675,1350,729"/>
+<area shape="poly" title=" " alt="" coords="1533,1466,1526,1317,1506,1099,1490,986,1468,884,1441,800,1424,768,1406,744,1380,724,1349,711,1352,706,1383,719,1410,740,1429,765,1445,798,1474,882,1495,985,1512,1098,1531,1317,1538,1466"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a9fd5509c4695f5244e9a5be2fb3a6e62" title=" " alt="" coords="1066,754,1350,823"/>
+<area shape="poly" title=" " alt="" coords="1532,1466,1522,1334,1500,1144,1483,1047,1462,958,1436,886,1422,858,1406,837,1380,817,1349,803,1352,798,1383,812,1410,833,1426,855,1441,883,1467,957,1488,1046,1505,1143,1527,1333,1537,1466"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a35a815f34deecba7f06f13cc16e92056" title=" " alt="" coords="1089,1497,1327,1552"/>
+<area shape="poly" title=" " alt="" coords="1442,1504,1327,1516,1327,1510,1442,1499"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a9bc39c1863257fde2909e1dd7d452104" title=" " alt="" coords="622,1437,919,1492"/>
+<area shape="poly" title=" " alt="" coords="1442,1489,1408,1487,920,1471,920,1465,1408,1482,1442,1484"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a635cacf3d6faf2ecaabf9efa5e37e4f3" title=" " alt="" coords="643,1528,898,1583"/>
+<area shape="poly" title=" " alt="" coords="1510,1516,1464,1544,1409,1566,1342,1580,1274,1589,1137,1595,1008,1590,898,1579,898,1573,1008,1585,1137,1590,1274,1584,1341,1575,1407,1561,1462,1539,1507,1511"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a59b1bced666db218a080d9763cac413c" title=" " alt="" coords="581,1611,960,1665"/>
+<area shape="poly" title=" " alt="" coords="1519,1518,1472,1562,1442,1585,1409,1602,1354,1621,1297,1636,1180,1654,1065,1661,960,1659,960,1654,1065,1655,1179,1649,1296,1630,1352,1616,1407,1597,1439,1580,1469,1558,1515,1514"/>
+<area shape="rect" href="../../da/d65/namespacetoolbox_1_1multiprecision.html#a24b69517b61eacc4d8c4a442e968d710" title=" " alt="" coords="1122,1678,1294,1718"/>
+<area shape="poly" title=" " alt="" coords="1526,1519,1508,1552,1482,1591,1449,1630,1409,1662,1382,1675,1353,1686,1295,1697,1294,1692,1352,1681,1380,1671,1407,1657,1445,1626,1478,1588,1504,1549,1522,1516"/>
+<area shape="rect" href="../../de/d24/classpeano4_1_1datamodel_1_1DynamicArrayOverPrimitivesToStdVector_1_1DynamicArrayOverPrimitivesToStdVector.html#a37124d21587d3c8bf7475b8cd901f274" title="Pass in a version of output." alt="" coords="1008,1743,1408,1797"/>
+<area shape="poly" title=" " alt="" coords="1532,1520,1518,1566,1494,1624,1458,1683,1435,1709,1410,1732,1389,1745,1386,1740,1406,1728,1432,1706,1454,1680,1489,1622,1513,1564,1527,1518"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#af56f3938513dd697c29783bdd1103679" title=" " alt="" coords="1093,1821,1323,1876"/>
+<area shape="poly" title=" " alt="" coords="1536,1519,1527,1580,1505,1659,1489,1701,1468,1741,1442,1778,1410,1811,1369,1835,1324,1848,1322,1843,1367,1830,1406,1807,1437,1775,1463,1738,1484,1698,1500,1657,1521,1579,1531,1518"/>
+<area shape="rect" href="../../de/d24/classpeano4_1_1datamodel_1_1DynamicArrayOverPrimitivesToStdVector_1_1DynamicArrayOverPrimitivesToStdVector.html#a8584a2a4c5bf894d904c39cae90ab2d4" title=" " alt="" coords="1052,1901,1364,1970"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1533,1593,1515,1692,1499,1746,1476,1798,1447,1847,1410,1889,1389,1905,1366,1917,1363,1912,1386,1901,1406,1885,1443,1844,1471,1796,1493,1744,1510,1691,1528,1592,1533,1519"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a83e5597af0c934f15d2e72e13664d594" title="This is the include statement for the data container." alt="" coords="1079,1995,1337,2049"/>
+<area shape="poly" title=" " alt="" coords="1535,1519,1521,1621,1495,1761,1477,1832,1458,1896,1435,1948,1410,1984,1376,2007,1338,2020,1337,2015,1374,2002,1406,1980,1430,1946,1453,1894,1472,1830,1489,1760,1515,1620,1530,1518"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a5d0e75bdc593482a77e5fbbec5bec556" title="This is the include statement for the data container." alt="" coords="1075,2073,1341,2128"/>
+<area shape="poly" title=" " alt="" coords="1536,1519,1524,1636,1500,1799,1483,1882,1462,1958,1438,2020,1425,2044,1410,2063,1378,2085,1343,2098,1341,2093,1376,2080,1406,2059,1420,2041,1433,2018,1457,1957,1478,1881,1495,1798,1519,1635,1531,1519"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a34e694d33ac268fac4539d2c8a8a8e61" title="This is the include statement for the data container." alt="" coords="1063,2153,1353,2222"/>
+<area shape="poly" title=" " alt="" coords="1537,1519,1527,1649,1504,1836,1487,1932,1466,2020,1441,2092,1426,2120,1410,2141,1384,2162,1355,2176,1352,2171,1381,2157,1406,2137,1422,2117,1436,2090,1461,2018,1482,1931,1499,1835,1522,1649,1532,1519"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a9a8e4543bcad239f27f2de24e5e95f12" title=" " alt="" coords="1093,2247,1323,2301"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1531,1667,1511,1883,1495,1994,1473,2096,1445,2179,1428,2211,1410,2236,1391,2251,1370,2263,1323,2277,1322,2272,1368,2258,1388,2247,1406,2232,1424,2209,1440,2177,1468,2094,1490,1993,1506,1882,1526,1667,1533,1519"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#affd0336a4b8a10e955c2cd7c242d8b06" title=" " alt="" coords="1079,2325,1337,2380"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1534,1681,1527,1796,1516,1920,1500,2044,1478,2158,1448,2251,1430,2287,1410,2315,1377,2339,1338,2353,1337,2347,1374,2334,1406,2311,1426,2284,1443,2249,1473,2156,1495,2043,1511,1919,1522,1795,1528,1680,1533,1519"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a892666a8253fcb3e7adb635cc547b449" title=" " alt="" coords="1081,2404,1335,2459"/>
+<area shape="poly" title=" " alt="" coords="1539,1519,1536,1694,1531,1820,1521,1957,1505,2094,1483,2220,1468,2275,1451,2323,1432,2363,1410,2393,1376,2418,1336,2432,1335,2427,1374,2413,1406,2389,1427,2360,1446,2321,1463,2273,1477,2218,1500,2093,1516,1957,1526,1820,1531,1694,1534,1519"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a31a5600e280ca033b5eca9f238f93ba2" title=" " alt="" coords="1063,2483,1353,2553"/>
+<area shape="poly" title=" " alt="" coords="1539,1519,1538,1707,1534,1844,1524,1993,1509,2143,1486,2280,1471,2341,1454,2394,1433,2438,1410,2472,1384,2493,1355,2508,1352,2503,1381,2489,1406,2468,1429,2436,1449,2392,1466,2340,1481,2279,1504,2142,1519,1993,1528,1844,1533,1707,1534,1519"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a1a67122e6b742a8771dbbebe01e1f696" title="Does class host a smart pointer attribute." alt="" coords="1096,2577,1320,2632"/>
+<area shape="poly" title=" " alt="" coords="1537,1519,1524,1737,1499,2071,1481,2240,1460,2390,1437,2504,1424,2543,1410,2566,1391,2583,1369,2595,1321,2609,1320,2603,1367,2590,1388,2578,1406,2563,1419,2540,1432,2503,1455,2389,1476,2240,1493,2071,1519,1737,1532,1519"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab8fb6db184c812c743573426faf75ac2" title="Create default readme descriptor." alt="" coords="1110,2657,1306,2697"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1526,1753,1502,2112,1484,2295,1463,2457,1439,2579,1425,2621,1410,2646,1388,2664,1362,2676,1334,2683,1307,2687,1306,2682,1333,2678,1360,2671,1385,2660,1406,2643,1420,2619,1434,2578,1458,2456,1479,2295,1496,2112,1521,1753,1532,1519"/>
+<area shape="rect" href="../../d3/dca/classswift2_1_1particle_1_1SPHLeapfrogFixedSearchRadius_1_1SPHLeapfrogFixedSearchRadius.html#ae978b9e1532b6012fdb02ed902140b71" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1075,2745,1341,2800"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1526,1763,1501,2142,1483,2335,1462,2507,1438,2638,1425,2682,1410,2710,1379,2738,1342,2756,1340,2751,1376,2733,1406,2707,1420,2680,1433,2636,1457,2506,1478,2334,1495,2141,1520,1763,1532,1519"/>
+<area shape="rect" href="../../da/dfe/classswift2_1_1particle_1_1SPHParticle_1_1SPHParticle.html#ad0535cf704f890a38578893dab45baa9" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1107,2825,1309,2865"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1529,1783,1507,2196,1490,2408,1469,2595,1442,2737,1427,2785,1410,2814,1389,2832,1364,2844,1337,2851,1310,2855,1309,2850,1336,2846,1362,2839,1386,2827,1406,2811,1422,2783,1437,2736,1463,2594,1485,2407,1502,2196,1524,1783,1533,1519"/>
+<area shape="rect" href="../../d0/dc3/classswift2_1_1particle_1_1tests_1_1testLeapfrogFixedTimeStepSize_1_1testLeapfrogFixedTimeStepSize.html#a1f3376db68b5fca5b4d1cd32d2595293" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1093,2889,1323,2958"/>
+<area shape="poly" title=" " alt="" coords="1538,1519,1529,1794,1507,2227,1490,2449,1469,2646,1442,2796,1427,2847,1410,2878,1392,2895,1371,2908,1324,2923,1323,2918,1369,2903,1389,2891,1406,2875,1422,2845,1437,2795,1464,2645,1485,2448,1502,2227,1524,1794,1533,1519"/>
+<area shape="poly" title=" " alt="" coords="269,147,235,147,235,142,269,142"/>
+<area shape="poly" title=" " alt="" coords="1080,221,960,222,769,224,619,225,471,214,282,186,228,175,229,169,283,181,472,209,620,219,769,219,960,217,1080,216"/>
+<area shape="poly" title=" " alt="" coords="1079,206,885,187,886,181,1080,201"/>
+<area shape="poly" title=" " alt="" coords="642,165,533,157,534,152,643,160"/>
+<area shape="poly" title=" " alt="" coords="1265,281,1245,274,1208,271,1176,273,1156,278,1149,284,1153,291,1148,293,1144,283,1154,274,1175,268,1208,266,1246,269,1266,276"/>
+<area shape="poly" title=" " alt="" coords="1088,429,892,415,893,409,1088,424"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#af1ee8762f19d6c6b9ea6c11e1828e188" title="Initialise the particle." alt="" coords="629,941,913,996"/>
+<area shape="poly" title=" " alt="" coords="1052,915,910,944,909,939,1051,910"/>
+<area shape="poly" title=" " alt="" coords="832,931,810,923,771,920,738,922,716,927,706,933,707,941,701,941,702,931,714,922,737,917,771,915,811,918,834,925"/>
+<area shape="poly" title=" " alt="" coords="1052,971,913,971,913,966,1052,966"/>
+<area shape="poly" title=" " alt="" coords="1051,1027,909,999,910,993,1052,1022"/>
+<area shape="poly" title=" " alt="" coords="1051,1118,1007,1104,952,1081,898,1052,810,998,813,994,901,1048,954,1076,1009,1099,1053,1113"/>
+<area shape="poly" title=" " alt="" coords="1052,1201,1007,1183,939,1141,879,1090,828,1040,792,998,796,994,832,1036,882,1086,943,1137,1009,1178,1054,1196"/>
+<area shape="poly" title=" " alt="" coords="1052,1283,1007,1262,967,1233,930,1199,866,1125,816,1054,784,997,788,995,821,1051,870,1122,934,1195,970,1229,1009,1257,1054,1279"/>
+<area shape="poly" title=" " alt="" coords="1051,1379,1007,1356,959,1317,918,1271,882,1221,851,1169,805,1071,778,997,783,995,809,1069,856,1166,886,1218,922,1267,963,1313,1009,1352,1054,1374"/>
+<area shape="poly" title=" " alt="" coords="1054,547,1010,571,962,612,921,660,885,712,854,766,809,867,782,942,777,940,804,865,850,763,880,709,917,657,959,608,1006,566,1052,542"/>
+<area shape="poly" title=" " alt="" coords="1054,642,1009,664,969,694,932,729,868,808,819,883,787,942,783,940,814,881,863,804,928,726,966,690,1007,660,1052,638"/>
+<area shape="poly" title=" " alt="" coords="1054,726,1009,744,974,765,941,789,880,844,830,898,794,943,790,939,826,895,876,840,937,785,971,761,1007,740,1052,721"/>
+<area shape="poly" title=" " alt="" coords="1054,823,1009,838,954,862,901,890,814,943,811,939,899,885,952,857,1007,833,1052,818"/>
+<area shape="poly" title=" " alt="" coords="1075,1509,919,1488,920,1482,1076,1504"/>
+<area shape="poly" title=" " alt="" coords="1076,1537,898,1549,898,1544,1075,1531"/>
+<area shape="poly" title=" " alt="" coords="1100,1558,961,1597,893,1613,892,1608,959,1591,1099,1553"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a4487b3006f621904bb33520a817219c8" title="Configure output." alt="" coords="662,2585,879,2625"/>
+<area shape="poly" title=" " alt="" coords="1082,2607,880,2607,880,2602,1082,2602"/>
+<area shape="poly" title=" " alt="" coords="833,2573,811,2566,771,2563,735,2565,713,2570,706,2576,709,2583,704,2585,700,2575,711,2565,734,2560,771,2558,812,2561,835,2568"/>
+<area shape="poly" title=" " alt="" coords="1263,2734,1243,2727,1208,2724,1178,2726,1159,2731,1150,2737,1150,2745,1145,2745,1145,2735,1157,2726,1178,2721,1208,2719,1245,2722,1265,2730"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab25418617a83cd080abec457d6809d77" name="ab25418617a83cd080abec457d6809d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25418617a83cd080abec457d6809d77">&#9670;&#160;</a></span>data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> * <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00134">134</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00047">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::_values</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00060">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__generate_dastgen_input_file()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00043">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__get_file_name()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00046">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::__get_full_qualified_file_name()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00080">swift2.particle.Particle.Particle::__init__()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00482">swift2.particle.Particle.Particle::_add_dependency_checks()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00193">swift2.particle.Particle.Particle::_dependency_checks_modify_steps()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00496">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_boolean_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00108">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_boolean_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00580">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_double_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00186">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_double_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00283">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_enum_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00534">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_integer_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00312">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_integer_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00668">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_peano_double_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00623">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_peano_integer_array_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00418">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_string_attributes()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00088">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle::_generate_user_defined_attributes()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00106">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::_get_dictionary_for_output()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00102">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::construct_output()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00025">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::construct_output()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00127">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::construct_output()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00038">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::construct_output()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00034">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::construct_output()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00029">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::get_header_file_include()</a>, <a class="el" href="../../da/dc0/DynamicArrayOverPrimitivesToStdVector_8py_source.html#l00020">peano4.datamodel.DynamicArrayOverPrimitivesToStdVector.DynamicArrayOverPrimitivesToStdVector::get_header_file_include()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00093">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::get_header_file_include()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00060">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::get_header_file_include()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00056">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::get_header_file_include()</a>, <a class="el" href="../../da/d6c/DaStGenToLegacyTool_8py_source.html#l00025">peano4.datamodel.DaStGenToLegacyTool.DaStGenToLegacyTool::get_stack_container()</a>, <a class="el" href="../../d2/d27/PatchToDoubleArray_8py_source.html#l00089">peano4.datamodel.PatchToDoubleArray.PatchToDoubleArray::get_stack_container()</a>, <a class="el" href="../../d7/dc5/PatchToDoubleArrayOnHeap_8py_source.html#l00031">peano4.datamodel.PatchToDoubleArrayOnHeap.PatchToDoubleArrayOnHeap::get_stack_container()</a>, <a class="el" href="../../d5/d3c/PatchToDoubleArrayWithSmartPointer_8py_source.html#l00027">peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer::get_stack_container()</a>, <a class="el" href="../../d3/deb/DaStGen2_8py_source.html#l00348">peano4.datamodel.DaStGen2.DaStGen2::hosts_smart_pointer_attribute()</a>, <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle::readme_descriptor()</a>, <a class="el" href="../../d6/d2e/SPHLeapfrogFixedSearchRadius_8py_source.html#l00248">swift2.particle.SPHLeapfrogFixedSearchRadius.SPHLeapfrogFixedSearchRadius::set_parameters()</a>, <a class="el" href="../../de/df6/SPHParticle_8py_source.html#l00216">swift2.particle.SPHParticle.SPHParticle::set_parameters()</a>, and <a class="el" href="../../d9/d34/testLeapfrogFixedTimeStepSize_8py_source.html#l00131">swift2.particle.tests.testLeapfrogFixedTimeStepSize.testLeapfrogFixedTimeStepSize::set_parameters()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_ab25418617a83cd080abec457d6809d77_icgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_ab25418617a83cd080abec457d6809d77_icgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_ab25418617a83cd080abec457d6809d77_icgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_ab25418617a83cd080abec457d6809d77_icgraph">
+<area shape="rect" title=" " alt="" coords="1456,1446,1619,1472"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a2f87dc23879602745e9f62df3214ab77" title=" " alt="" coords="283,117,533,172"/>
+<area shape="poly" title=" " alt="" coords="1533,1433,1525,1168,1505,752,1488,540,1466,353,1453,275,1439,212,1423,165,1406,138,1379,119,1344,104,1301,92,1253,83,1140,74,1014,75,883,83,754,96,534,126,533,121,754,91,883,78,1014,70,1140,69,1253,78,1303,87,1346,99,1382,114,1410,134,1428,163,1444,210,1459,274,1472,352,1493,540,1510,752,1531,1168,1538,1433"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a4a011c48a29e5a29206d9aa9babeacb4" title="Pass in a version of output." alt="" coords="5,117,235,172"/>
+<area shape="poly" title=" " alt="" coords="1533,1432,1526,1158,1507,726,1490,505,1468,311,1455,230,1440,164,1424,116,1406,87,1367,60,1316,38,1257,23,1189,14,1115,9,1036,9,869,18,699,38,537,63,283,107,222,120,221,114,282,102,536,57,698,33,869,13,1036,3,1116,4,1190,8,1258,18,1318,33,1369,55,1410,84,1429,113,1445,163,1460,229,1473,310,1495,505,1512,726,1531,1158,1538,1432"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a85157f611880f21c3b746a35da18b3ef" title=" " alt="" coords="1093,189,1323,244"/>
+<area shape="poly" title=" " alt="" coords="1532,1433,1521,1191,1497,816,1480,624,1459,455,1434,326,1420,284,1406,258,1388,243,1368,231,1322,218,1324,213,1370,226,1392,238,1410,255,1425,281,1439,325,1464,454,1485,624,1503,815,1527,1191,1538,1433"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a758ba32d0e283b944345a5a2068f6f6f" title=" " alt="" coords="656,138,885,207"/>
+<area shape="poly" title=" " alt="" coords="1533,1432,1525,1174,1504,771,1487,566,1465,385,1453,310,1438,249,1423,204,1406,178,1390,167,1370,158,1318,144,1253,137,1180,136,1025,143,886,158,885,153,1025,138,1180,130,1253,132,1319,139,1372,153,1393,162,1410,174,1428,202,1444,248,1458,309,1471,384,1492,566,1509,771,1530,1174,1538,1432"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a7243cff3570ca637ed4a29f4b1e79ac0" title="Initialise the particle." alt="" coords="1123,292,1293,332"/>
+<area shape="poly" title=" " alt="" coords="1532,1433,1520,1206,1495,859,1478,682,1457,527,1433,409,1420,369,1406,346,1382,328,1354,316,1324,309,1293,307,1294,301,1325,304,1356,311,1385,323,1410,343,1425,367,1438,407,1462,526,1483,682,1501,858,1526,1206,1538,1432"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a2819ff075b7b7f56f670e2a8232f4d9a" title="Add dependency (particle consistency) checks." alt="" coords="649,398,892,438"/>
+<area shape="poly" title=" " alt="" coords="1532,1433,1518,1229,1492,923,1474,769,1454,633,1431,530,1419,497,1406,477,1382,465,1336,455,1202,439,1041,429,892,423,892,418,1041,424,1202,434,1337,450,1383,460,1410,473,1423,494,1436,529,1459,632,1480,768,1497,923,1524,1229,1537,1432"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab55fdf4abe6b8d6e130e332cc00adddd" title="Add dependency checks as well as mesh consistency checks to the algorithm steps." alt="" coords="1102,357,1314,412"/>
+<area shape="poly" title=" " alt="" coords="1532,1433,1518,1222,1491,903,1473,741,1453,599,1430,490,1418,454,1406,433,1387,416,1364,403,1314,388,1315,383,1366,398,1390,411,1410,429,1423,452,1436,489,1458,598,1479,741,1496,903,1523,1222,1537,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#aa67164347063cd6fd4b93df58738a509" title="Generate boolean&#45;array attributes." alt="" coords="1066,580,1350,650"/>
+<area shape="poly" title=" " alt="" coords="1533,1433,1527,1276,1509,1044,1492,924,1470,814,1442,724,1425,689,1406,663,1380,643,1349,629,1351,624,1383,638,1410,660,1429,687,1447,722,1476,813,1498,923,1514,1044,1532,1276,1538,1433"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a712d1355111beadc6432a26867864975" title="Generate boolean attributes." alt="" coords="1066,674,1350,729"/>
+<area shape="poly" title=" " alt="" coords="1532,1433,1525,1289,1504,1081,1488,974,1466,876,1439,797,1423,766,1406,743,1380,724,1349,711,1351,706,1383,719,1410,740,1428,763,1444,794,1472,875,1493,973,1510,1081,1530,1289,1538,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a649b2058c5f77e92cfb005540894b5e2" title="Generate double&#45;array attributes." alt="" coords="1066,754,1350,823"/>
+<area shape="poly" title=" " alt="" coords="1532,1432,1521,1306,1498,1126,1481,1035,1460,951,1435,882,1421,856,1406,837,1380,817,1349,803,1351,798,1383,812,1410,833,1426,853,1440,880,1465,949,1486,1033,1503,1126,1526,1305,1537,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#ab51dc753959333c594f64a4ce11d26a7" title="Generate double attributes." alt="" coords="1066,848,1350,902"/>
+<area shape="poly" title=" " alt="" coords="1531,1433,1518,1320,1493,1164,1476,1085,1456,1013,1433,954,1420,932,1406,916,1380,896,1349,884,1351,879,1382,892,1410,912,1424,929,1437,952,1461,1011,1481,1083,1498,1163,1523,1320,1536,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a9c9eeb71e5cb006b18d6ec5ef7b090ad" title="Generate enum attributes." alt="" coords="1066,926,1350,981"/>
+<area shape="poly" title=" " alt="" coords="1530,1433,1514,1336,1488,1204,1471,1137,1451,1077,1430,1028,1406,995,1380,977,1349,964,1351,959,1382,972,1410,992,1434,1025,1456,1075,1476,1136,1493,1203,1520,1335,1535,1433"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a84b1dc2c14ad0166c393f4f1029cfaec" title="Generate integer&#45;array attributes." alt="" coords="1066,1006,1350,1075"/>
+<area shape="poly" title=" " alt="" coords="1533,1433,1526,1364,1507,1270,1491,1221,1469,1172,1441,1128,1406,1089,1380,1070,1349,1057,1351,1052,1382,1066,1410,1085,1445,1124,1474,1170,1496,1219,1512,1269,1531,1363,1538,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a3051e4ce42693d76027b131f8b667008" title="Generate integer attributes." alt="" coords="1066,1100,1350,1154"/>
+<area shape="poly" title=" " alt="" coords="1530,1433,1519,1377,1497,1305,1480,1267,1460,1231,1436,1198,1406,1169,1380,1152,1349,1140,1351,1135,1382,1147,1410,1165,1440,1194,1465,1228,1485,1265,1502,1303,1524,1376,1535,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a17b7f6f6bd414039dc8f36184971b1bb" title="Generate peano4 double&#45;array attributes." alt="" coords="1066,1179,1350,1248"/>
+<area shape="poly" title=" " alt="" coords="1524,1434,1508,1395,1482,1349,1449,1302,1406,1262,1379,1247,1349,1235,1351,1230,1382,1242,1410,1258,1453,1298,1487,1346,1512,1393,1529,1432"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a29f778ee04b473ca406714d79bffe47d" title="Generate peano4 integer&#45;array attributes." alt="" coords="1066,1272,1350,1342"/>
+<area shape="poly" title=" " alt="" coords="1513,1438,1467,1396,1438,1374,1407,1356,1349,1334,1351,1329,1409,1351,1441,1370,1470,1392,1516,1434"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a383d7f95b324c96dfa5404522a1b1ce2" title="Generate string attributes." alt="" coords="1066,1366,1350,1421"/>
+<area shape="poly" title=" " alt="" coords="1459,1446,1346,1424,1347,1418,1460,1441"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#a9fd5509c4695f5244e9a5be2fb3a6e62" title=" " alt="" coords="1066,487,1350,556"/>
+<area shape="poly" title=" " alt="" coords="1533,1432,1530,1259,1524,1135,1514,999,1498,864,1476,740,1462,686,1445,638,1427,599,1406,570,1380,549,1349,535,1351,530,1383,545,1410,566,1431,597,1450,636,1467,684,1481,739,1504,863,1519,999,1530,1134,1535,1259,1539,1432"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a35a815f34deecba7f06f13cc16e92056" title=" " alt="" coords="1089,1548,1327,1602"/>
+<area shape="poly" title=" " alt="" coords="1506,1481,1461,1507,1409,1531,1328,1555,1326,1550,1407,1526,1459,1502,1504,1476"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a9bc39c1863257fde2909e1dd7d452104" title=" " alt="" coords="622,1437,919,1492"/>
+<area shape="poly" title=" " alt="" coords="1442,1462,920,1466,920,1461,1442,1457"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a635cacf3d6faf2ecaabf9efa5e37e4f3" title=" " alt="" coords="643,1528,898,1582"/>
+<area shape="poly" title=" " alt="" coords="1443,1473,899,1542,898,1536,1442,1468"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a59b1bced666db218a080d9763cac413c" title=" " alt="" coords="581,1610,960,1665"/>
+<area shape="poly" title=" " alt="" coords="1526,1486,1508,1517,1482,1554,1449,1589,1409,1616,1374,1629,1329,1638,1215,1649,1086,1652,960,1650,960,1645,1086,1647,1215,1644,1328,1633,1373,1623,1407,1611,1445,1585,1478,1550,1503,1515,1521,1483"/>
+<area shape="rect" href="../../de/d24/classpeano4_1_1datamodel_1_1DynamicArrayOverPrimitivesToStdVector_1_1DynamicArrayOverPrimitivesToStdVector.html#a37124d21587d3c8bf7475b8cd901f274" title="Pass in a version of output." alt="" coords="1008,1678,1408,1733"/>
+<area shape="poly" title=" " alt="" coords="1529,1485,1513,1525,1487,1572,1453,1621,1410,1661,1375,1681,1372,1676,1406,1657,1449,1617,1483,1570,1508,1522,1525,1483"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#af56f3938513dd697c29783bdd1103679" title=" " alt="" coords="1093,1757,1323,1812"/>
+<area shape="poly" title=" " alt="" coords="1535,1485,1523,1541,1501,1611,1484,1649,1464,1685,1439,1718,1410,1746,1369,1770,1324,1783,1322,1778,1367,1765,1406,1742,1435,1714,1460,1682,1480,1646,1496,1610,1518,1539,1530,1484"/>
+<area shape="rect" href="../../de/d24/classpeano4_1_1datamodel_1_1DynamicArrayOverPrimitivesToStdVector_1_1DynamicArrayOverPrimitivesToStdVector.html#a8584a2a4c5bf894d904c39cae90ab2d4" title=" " alt="" coords="1052,1836,1364,1906"/>
+<area shape="poly" title=" " alt="" coords="1538,1486,1530,1554,1511,1646,1494,1694,1473,1742,1445,1786,1410,1825,1389,1841,1365,1853,1363,1848,1386,1836,1406,1821,1440,1783,1468,1740,1489,1692,1506,1644,1525,1553,1532,1485"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#a83e5597af0c934f15d2e72e13664d594" title="This is the include statement for the data container." alt="" coords="1079,1930,1337,1985"/>
+<area shape="poly" title=" " alt="" coords="1535,1486,1519,1582,1492,1712,1475,1778,1456,1838,1434,1887,1410,1920,1377,1942,1339,1955,1337,1950,1374,1937,1406,1916,1429,1884,1451,1836,1470,1777,1487,1711,1514,1581,1530,1485"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a5d0e75bdc593482a77e5fbbec5bec556" title="This is the include statement for the data container." alt="" coords="1075,2009,1341,2064"/>
+<area shape="poly" title=" " alt="" coords="1536,1486,1523,1597,1498,1751,1481,1829,1460,1901,1437,1959,1410,1998,1378,2020,1342,2034,1341,2029,1376,2016,1406,1994,1432,1956,1455,1899,1476,1828,1493,1750,1517,1596,1531,1485"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a34e694d33ac268fac4539d2c8a8a8e61" title="This is the include statement for the data container." alt="" coords="1063,2088,1353,2158"/>
+<area shape="poly" title=" " alt="" coords="1537,1486,1526,1610,1502,1788,1485,1879,1465,1962,1440,2030,1425,2057,1410,2077,1384,2097,1355,2111,1353,2106,1382,2093,1406,2073,1421,2054,1435,2028,1460,1960,1480,1878,1497,1787,1520,1610,1532,1485"/>
+<area shape="rect" href="../../df/d6f/classpeano4_1_1datamodel_1_1DaStGenToLegacyTool_1_1DaStGenToLegacyTool.html#a9a8e4543bcad239f27f2de24e5e95f12" title=" " alt="" coords="1093,2182,1323,2237"/>
+<area shape="poly" title=" " alt="" coords="1538,1486,1530,1628,1509,1834,1493,1941,1471,2038,1444,2117,1428,2148,1410,2171,1391,2187,1370,2198,1324,2212,1322,2207,1368,2194,1388,2182,1406,2168,1423,2145,1439,2115,1466,2036,1487,1940,1504,1834,1524,1628,1532,1485"/>
+<area shape="rect" href="../../d4/d51/classpeano4_1_1datamodel_1_1PatchToDoubleArray_1_1PatchToDoubleArray.html#affd0336a4b8a10e955c2cd7c242d8b06" title=" " alt="" coords="1079,2261,1337,2316"/>
+<area shape="poly" title=" " alt="" coords="1538,1485,1533,1641,1514,1871,1498,1991,1476,2100,1447,2189,1430,2224,1410,2250,1377,2274,1338,2288,1336,2283,1374,2269,1406,2246,1425,2221,1442,2187,1471,2098,1493,1990,1509,1871,1527,1641,1533,1485"/>
+<area shape="rect" href="../../d5/ddd/classpeano4_1_1datamodel_1_1PatchToDoubleArrayOnHeap_1_1PatchToDoubleArrayOnHeap.html#a892666a8253fcb3e7adb635cc547b449" title=" " alt="" coords="1081,2340,1335,2394"/>
+<area shape="poly" title=" " alt="" coords="1539,1485,1535,1654,1529,1776,1519,1908,1503,2040,1481,2161,1467,2215,1450,2261,1431,2300,1410,2329,1376,2353,1336,2367,1335,2362,1374,2349,1406,2325,1427,2297,1445,2259,1461,2213,1476,2160,1498,2040,1514,1908,1524,1776,1530,1654,1533,1485"/>
+<area shape="rect" href="../../d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html#a31a5600e280ca033b5eca9f238f93ba2" title=" " alt="" coords="1063,2419,1353,2488"/>
+<area shape="poly" title=" " alt="" coords="1539,1486,1537,1668,1532,1801,1523,1945,1507,2090,1484,2223,1470,2281,1452,2332,1433,2375,1410,2407,1385,2429,1355,2443,1353,2438,1382,2424,1406,2404,1428,2372,1447,2330,1464,2280,1479,2222,1502,2089,1517,1945,1527,1800,1532,1668,1534,1485"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a1a67122e6b742a8771dbbebe01e1f696" title="Does class host a smart pointer attribute." alt="" coords="1096,2513,1320,2568"/>
+<area shape="poly" title=" " alt="" coords="1537,1486,1524,1699,1497,2022,1480,2186,1459,2331,1436,2442,1424,2479,1410,2502,1391,2518,1369,2531,1321,2544,1320,2539,1367,2526,1388,2514,1406,2499,1419,2477,1431,2440,1454,2331,1475,2186,1492,2022,1519,1698,1532,1485"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab8fb6db184c812c743573426faf75ac2" title="Create default readme descriptor." alt="" coords="1110,2592,1306,2632"/>
+<area shape="poly" title=" " alt="" coords="1538,1485,1526,1712,1501,2062,1483,2240,1463,2398,1438,2517,1425,2557,1410,2582,1388,2600,1362,2612,1334,2619,1306,2623,1306,2617,1333,2614,1360,2607,1385,2595,1406,2579,1420,2555,1433,2516,1457,2397,1478,2240,1496,2062,1520,1712,1532,1485"/>
+<area shape="rect" href="../../d3/dca/classswift2_1_1particle_1_1SPHLeapfrogFixedSearchRadius_1_1SPHLeapfrogFixedSearchRadius.html#ae978b9e1532b6012fdb02ed902140b71" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1075,2681,1341,2736"/>
+<area shape="poly" title=" " alt="" coords="1538,1485,1525,1723,1500,2092,1482,2281,1461,2448,1438,2575,1424,2619,1410,2646,1379,2673,1342,2692,1340,2687,1376,2669,1406,2643,1419,2617,1432,2574,1456,2447,1477,2280,1494,2092,1520,1723,1532,1485"/>
+<area shape="rect" href="../../da/dfe/classswift2_1_1particle_1_1SPHParticle_1_1SPHParticle.html#ad0535cf704f890a38578893dab45baa9" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1107,2760,1309,2800"/>
+<area shape="poly" title=" " alt="" coords="1538,1486,1529,1744,1506,2147,1489,2353,1468,2536,1442,2674,1427,2721,1410,2750,1389,2768,1364,2779,1337,2787,1310,2790,1309,2785,1336,2782,1362,2774,1386,2763,1406,2747,1422,2719,1436,2673,1462,2535,1484,2353,1501,2147,1523,1743,1533,1485"/>
+<area shape="rect" href="../../d0/dc3/classswift2_1_1particle_1_1tests_1_1testLeapfrogFixedTimeStepSize_1_1testLeapfrogFixedTimeStepSize.html#a1f3376db68b5fca5b4d1cd32d2595293" title="This function translates &quot;global&quot; particle parameters which are constant throughout the simulation (l..." alt="" coords="1093,2824,1323,2894"/>
+<area shape="poly" title=" " alt="" coords="1538,1485,1529,1754,1507,2177,1490,2394,1468,2587,1442,2733,1427,2783,1410,2814,1392,2831,1371,2843,1324,2859,1323,2854,1369,2839,1389,2826,1406,2811,1422,2781,1437,2732,1463,2586,1484,2394,1501,2177,1524,1753,1533,1485"/>
+<area shape="poly" title=" " alt="" coords="269,147,235,147,235,142,269,142"/>
+<area shape="poly" title=" " alt="" coords="1080,221,960,222,769,224,619,224,471,214,282,186,228,174,229,169,283,180,472,209,620,219,769,219,960,216,1080,215"/>
+<area shape="poly" title=" " alt="" coords="1079,206,885,186,886,181,1080,201"/>
+<area shape="poly" title=" " alt="" coords="642,165,533,157,534,151,643,160"/>
+<area shape="poly" title=" " alt="" coords="1265,281,1245,274,1208,271,1176,273,1156,278,1149,284,1153,291,1148,293,1144,282,1154,273,1175,268,1208,266,1246,268,1266,276"/>
+<area shape="poly" title=" " alt="" coords="1088,396,893,411,892,406,1088,391"/>
+<area shape="rect" href="../../dc/dcd/classswift2_1_1particle_1_1tests_1_1DastgenTestDummyParticle_1_1DastgenTestDummyParticle.html#af1ee8762f19d6c6b9ea6c11e1828e188" title="Initialise the particle." alt="" coords="629,926,913,981"/>
+<area shape="poly" title=" " alt="" coords="1054,642,1009,664,970,692,934,725,870,799,821,871,788,927,784,925,816,868,866,796,930,722,967,688,1007,659,1052,638"/>
+<area shape="poly" title=" " alt="" coords="832,916,810,908,771,905,738,907,716,912,706,918,707,926,701,926,702,916,714,907,737,902,771,900,811,903,834,910"/>
+<area shape="poly" title=" " alt="" coords="1054,726,1009,744,943,786,882,836,832,886,796,928,792,924,828,883,879,832,939,781,1007,739,1052,722"/>
+<area shape="poly" title=" " alt="" coords="1054,823,1009,837,906,882,820,928,817,924,904,878,1007,832,1052,818"/>
+<area shape="poly" title=" " alt="" coords="1053,906,913,931,912,925,1052,900"/>
+<area shape="poly" title=" " alt="" coords="1052,956,913,956,913,951,1052,951"/>
+<area shape="poly" title=" " alt="" coords="1051,1012,909,984,910,978,1052,1007"/>
+<area shape="poly" title=" " alt="" coords="1051,1103,1007,1089,952,1066,898,1037,810,983,813,979,901,1033,954,1061,1009,1084,1053,1098"/>
+<area shape="poly" title=" " alt="" coords="1052,1187,1007,1168,940,1125,880,1074,829,1024,792,983,796,979,833,1021,883,1070,943,1121,1009,1163,1054,1182"/>
+<area shape="poly" title=" " alt="" coords="1052,1285,1007,1263,966,1232,928,1196,863,1118,814,1042,783,982,787,980,819,1039,868,1115,932,1193,969,1228,1009,1258,1054,1280"/>
+<area shape="poly" title=" " alt="" coords="1052,1379,1007,1356,958,1315,916,1267,880,1214,849,1160,803,1058,777,982,782,980,808,1056,853,1158,884,1211,920,1263,962,1311,1009,1351,1054,1374"/>
+<area shape="poly" title=" " alt="" coords="1054,547,1009,570,963,610,923,656,887,706,856,757,810,854,783,927,778,925,805,852,852,755,882,703,918,652,960,606,1007,566,1052,542"/>
+<area shape="poly" title=" " alt="" coords="1085,1547,879,1494,880,1489,1087,1542"/>
+<area shape="poly" title=" " alt="" coords="1076,1572,898,1563,898,1558,1076,1566"/>
+<area shape="poly" title=" " alt="" coords="1076,1596,961,1613,960,1608,1075,1591"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a4487b3006f621904bb33520a817219c8" title="Configure output." alt="" coords="662,2520,879,2560"/>
+<area shape="poly" title=" " alt="" coords="1082,2543,880,2543,880,2538,1082,2538"/>
+<area shape="poly" title=" " alt="" coords="833,2509,811,2502,771,2499,735,2501,713,2506,706,2512,709,2519,704,2521,700,2510,711,2501,734,2496,771,2494,812,2496,835,2504"/>
+<area shape="poly" title=" " alt="" coords="1263,2670,1243,2663,1208,2660,1178,2662,1159,2666,1150,2673,1150,2681,1145,2681,1145,2671,1157,2662,1178,2656,1208,2654,1245,2657,1265,2665"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c060369a7425283d4a929924b04b7ce" name="a8c060369a7425283d4a929924b04b7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c060369a7425283d4a929924b04b7ce">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp; <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">::operator</a>() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rowIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>colIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns element at given row and column index (from 0..size-1). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html#a0ef26694fd2c12687a5bcc89078e5e6c" title="Returns read-only ref.">Vector::operator[]</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this.">remarks</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this.">on</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this.">SSE</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this.">efficiency</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00085">85</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00047">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::_values</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01022">assertion5</a>, <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>, and <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00064">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a8c060369a7425283d4a929924b04b7ce_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a8c060369a7425283d4a929924b04b7ce_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a8c060369a7425283d4a929924b04b7ce_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a8c060369a7425283d4a929924b04b7ce_cgraph">
+<area shape="rect" title="Returns element at given row and column index (from 0..size&#45;1)." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="368,13,480,38"/>
+<area shape="poly" title=" " alt="" coords="139,20,187,19,320,19,354,20,354,25,320,24,187,24,139,25"/>
+<area shape="rect" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html#a1776bcfb726f1d01dfa1a7a80dc22831" title=" " alt="" coords="187,33,320,73"/>
+<area shape="poly" title=" " alt="" coords="139,33,174,38,173,44,138,38"/>
+<area shape="poly" title=" " alt="" coords="320,40,354,34,354,39,321,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6bcb43abcb0a520abf26b22d02c93841" name="a6bcb43abcb0a520abf26b22d02c93841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bcb43abcb0a520abf26b22d02c93841">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &amp; <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">::operator</a>() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>rowIndex</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>colIndex</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns const element at given row and column index (from 0..size-1). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00103">103</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00047">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::_values</a>, <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01022">assertion5</a>, <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>, and <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00064">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a6bcb43abcb0a520abf26b22d02c93841_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a6bcb43abcb0a520abf26b22d02c93841_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a6bcb43abcb0a520abf26b22d02c93841_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a6bcb43abcb0a520abf26b22d02c93841_cgraph">
+<area shape="rect" title="Returns const element at given row and column index (from 0..size&#45;1)." alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="368,13,480,38"/>
+<area shape="poly" title=" " alt="" coords="139,20,187,19,320,19,354,20,354,25,320,24,187,24,139,25"/>
+<area shape="rect" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html#a1776bcfb726f1d01dfa1a7a80dc22831" title=" " alt="" coords="187,33,320,73"/>
+<area shape="poly" title=" " alt="" coords="139,33,174,38,173,44,138,38"/>
+<area shape="poly" title=" " alt="" coords="320,40,354,34,354,39,321,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6c8f1ad1053638942b54304b1a68d32" name="ab6c8f1ad1053638942b54304b1a68d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c8f1ad1053638942b54304b1a68d32">&#9670;&#160;</a></span>rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::rows </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of rows in the matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00046">46</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_ab6c8f1ad1053638942b54304b1a68d32_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_ab6c8f1ad1053638942b54304b1a68d32_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_ab6c8f1ad1053638942b54304b1a68d32_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_ab6c8f1ad1053638942b54304b1a68d32_cgraph">
+<area shape="rect" title="Returns the number of rows in the matrix." alt="" coords="5,5,169,31"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="217,5,329,31"/>
+<area shape="poly" title=" " alt="" coords="170,15,204,15,204,21,170,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aadde77340f47b59cd1a28127cacc851f" name="aadde77340f47b59cd1a28127cacc851f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadde77340f47b59cd1a28127cacc851f">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of total elements in the matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00058">58</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dec/visualisation_2input_2Patch_8py_source.html#l00038">peano4.visualisation.input.Patch.Patch::__repr__()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_cgraph">
+<area shape="rect" title="Returns the number of total elements in the matrix." alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="212,5,324,31"/>
+<area shape="poly" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_icgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_icgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_icgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_aadde77340f47b59cd1a28127cacc851f_icgraph">
+<area shape="rect" title="Returns the number of total elements in the matrix." alt="" coords="252,13,411,38"/>
+<area shape="rect" href="../../d6/dc5/classpeano4_1_1visualisation_1_1input_1_1Patch_1_1Patch.html#aea86eb2c8b96861b65ac9192a9f24972" title=" " alt="" coords="5,5,204,45"/>
+<area shape="poly" title=" " alt="" coords="238,28,204,28,204,23,238,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a276468afc5c258db75a800da5716a35c" name="a276468afc5c258db75a800da5716a35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276468afc5c258db75a800da5716a35c">&#9670;&#160;</a></span>toPrettyString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::toPrettyString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>numberOfDigits</em><span class="paramdefsep"> = </span><span class="paramdefval">4</span></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00086">86</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/dfd/ScalarOperations_8cpph_source.html#l00015">tarch::la::abs()</a>, and <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a276468afc5c258db75a800da5716a35c_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a276468afc5c258db75a800da5716a35c_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a276468afc5c258db75a800da5716a35c_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a276468afc5c258db75a800da5716a35c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,23,139,63"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a429fdf3a84e551ee1023ef7ec3abb631" title="Returns the absolute value of a type by redirecting to std::abs." alt="" coords="189,5,296,31"/>
+<area shape="poly" title=" " alt="" coords="138,31,175,25,176,31,139,36"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="187,55,299,80"/>
+<area shape="poly" title=" " alt="" coords="139,50,173,55,172,60,138,55"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="347,5,420,31"/>
+<area shape="poly" title=" " alt="" coords="296,15,333,15,333,21,296,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1776bcfb726f1d01dfa1a7a80dc22831" name="a1776bcfb726f1d01dfa1a7a80dc22831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1776bcfb726f1d01dfa1a7a80dc22831">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html#l00064">64</a> of file <a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/d34/DGCGCoupling_8cpph_source.html#l00088">mghype::matrixfree::solvers::dgcgcoupling::injectSolution()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00085">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::operator()()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00103">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::operator()()</a>, and <a class="el" href="../../d1/dc8/MatrixOperations_8cpph_source.html#l00114">operator&lt;&lt;()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_cgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_cgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_cgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="187,13,299,38"/>
+<area shape="poly" title=" " alt="" coords="139,23,173,23,173,28,139,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_icgraph.png" border="0" usemap="#ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_icgraph" alt=""/></div>
+<map name="ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_icgraph" id="ad1/d9c/classtarch_1_1la_1_1Matrix_a1776bcfb726f1d01dfa1a7a80dc22831_icgraph">
+<area shape="rect" title=" " alt="" coords="224,117,357,157"/>
+<area shape="rect" href="../../d3/dfa/namespacemghype_1_1matrixfree_1_1solvers_1_1dgcgcoupling.html#a8e6a469d19febf9416e9997142446c7d" title=" " alt="" coords="5,5,176,60"/>
+<area shape="poly" title=" " alt="" coords="242,112,175,75,150,63,152,58,177,70,244,107"/>
+<area shape="rect" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html#a8c060369a7425283d4a929924b04b7ce" title="Returns element at given row and column index (from 0..size&#45;1)." alt="" coords="24,85,157,125"/>
+<area shape="poly" title=" " alt="" coords="210,126,157,118,158,113,211,121"/>
+<area shape="rect" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html#a6bcb43abcb0a520abf26b22d02c93841" title="Returns const element at given row and column index (from 0..size&#45;1)." alt="" coords="24,149,157,189"/>
+<area shape="poly" title=" " alt="" coords="211,152,158,161,157,155,210,147"/>
+<area shape="rect" href="../../d1/dc8/MatrixOperations_8cpph.html#a3300fdadc02053ac64c5755bf6690aaf" title=" " alt="" coords="41,213,140,239"/>
+<area shape="poly" title=" " alt="" coords="248,166,177,203,141,216,139,211,175,198,245,161"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a7d078a990c3df79bf1f1f0b61322a229" name="a7d078a990c3df79bf1f1f0b61322a229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d078a990c3df79bf1f1f0b61322a229">&#9670;&#160;</a></span>buildMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; buildMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> *</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Become friend of builder mechanism. </p>
+<p>We faced issues with some compiler versions with offering a constructor that simply takes a pointer to scalars. Further to that, it is not clear if such a constructor would create a deep copy or a shallow copy. Therefore, I decided to introduce an explicit builder function. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a39dd6af3508fd4dee0d53f2f20c00c2b" name="a39dd6af3508fd4dee0d53f2f20c00c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dd6af3508fd4dee0d53f2f20c00c2b">&#9670;&#160;</a></span>_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Rows, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> Cols, typename <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> <a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">tarch::la::Matrix</a>&lt; <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Scalar</a> &gt;::_values[<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Rows</a> *<a class="el" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a">Cols</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Values of the matrix components. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00047">47</a> of file <a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00130">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::data()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00134">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::data()</a>, <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00085">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::operator()()</a>, and <a class="el" href="../../d3/db1/Matrix_8h_source.html#l00103">tarch::la::Matrix&lt; Rows, Cols, Scalar &gt;::operator()()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/la/<a class="el" href="../../d3/db1/Matrix_8h_source.html">Matrix.h</a></li>
+<li>src/tarch/la/<a class="el" href="../../dc/d7a/Matrix_8cpph_source.html">Matrix.cpph</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d2/d45/namespacetarch_1_1la.html">la</a></li><li class="navelem"><a class="el" href="../../d1/d9c/classtarch_1_1la_1_1Matrix.html">Matrix</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:50 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

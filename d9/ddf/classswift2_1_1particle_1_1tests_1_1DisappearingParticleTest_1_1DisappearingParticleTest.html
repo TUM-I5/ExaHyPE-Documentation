@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Simple particle with a fixed interaction radius h which moves according to leapfrog KDK scheme.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d25/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest__inherit__graph.png" border="0" usemap="#aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_inherit__map" alt="Inheritance graph"/></div>
+<map name="aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_inherit__map" id="aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_inherit__map">
+<area shape="rect" title="Simple particle with a fixed interaction radius h which moves according to leapfrog KDK scheme." alt="" coords="5,416,265,456"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html" title="Base class for any particle in the project." alt="" coords="50,328,221,368"/>
+<area shape="poly" title=" " alt="" coords="138,382,138,416,133,416,133,382"/>
+<area shape="rect" href="../../d5/d3d/classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle.html" title="Single particle." alt="" coords="42,240,229,280"/>
+<area shape="poly" title=" " alt="" coords="138,294,138,328,133,328,133,294"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html" title="Default superclass for any data model in Peano which is stored within the grid." alt="" coords="27,152,244,192"/>
+<area shape="poly" title=" " alt="" coords="138,206,138,240,133,240,133,206"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html" title=" " alt="" coords="34,79,237,104"/>
+<area shape="poly" title=" " alt="" coords="138,118,138,152,133,152,133,118"/>
+<area shape="rect" title=" " alt="" coords="104,5,167,31"/>
+<area shape="poly" title=" " alt="" coords="138,44,138,79,133,79,133,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d5a/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest__coll__graph.png" border="0" usemap="#aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_coll__map" alt="Collaboration graph"/></div>
+<map name="aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_coll__map" id="aswift2_8particle_8tests_8DisappearingParticleTest_8DisappearingParticleTest_coll__map">
+<area shape="rect" title="Simple particle with a fixed interaction radius h which moves according to leapfrog KDK scheme." alt="" coords="5,416,265,456"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html" title="Base class for any particle in the project." alt="" coords="50,328,221,368"/>
+<area shape="poly" title=" " alt="" coords="138,382,138,416,133,416,133,382"/>
+<area shape="rect" href="../../d5/d3d/classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle.html" title="Single particle." alt="" coords="42,240,229,280"/>
+<area shape="poly" title=" " alt="" coords="138,294,138,328,133,328,133,294"/>
+<area shape="rect" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html" title="Default superclass for any data model in Peano which is stored within the grid." alt="" coords="27,152,244,192"/>
+<area shape="poly" title=" " alt="" coords="138,206,138,240,133,240,133,206"/>
+<area shape="rect" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html" title=" " alt="" coords="34,79,237,104"/>
+<area shape="poly" title=" " alt="" coords="138,118,138,152,133,152,133,118"/>
+<area shape="rect" title=" " alt="" coords="104,5,167,31"/>
+<area shape="poly" title=" " alt="" coords="138,44,138,79,133,79,133,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a60bc0f7398cda2a9a368706ecab04927" id="r_a60bc0f7398cda2a9a368706ecab04927"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60bc0f7398cda2a9a368706ecab04927">__init__</a> (self, <a class="el" href="#a0d21ad8d7794931b3a94ad67d67287c8">name</a>, <a class="el" href="#a47880b0f839b422ca902e925faae31ba">cfl_factor</a>, <a class="el" href="#a3fe4749dd08e9d7e27747624d401fca8">initial_time_step_size</a>, <a class="el" href="#a1d61367bb5f307050e987bf8a508c1a4">particle_particle_interaction_over_particle_sets_kernel</a>=&quot;&quot;, <a class="el" href="#a92551a23071ab0ab5cb5b2270eb17ca9">touch_particles_of_set_first_time_kernel</a>=&quot;&quot;, <a class="el" href="#a7f44f181860aa32c0076ac34922fcdb0">touch_particles_of_set_last_time_kernel</a>=&quot;&quot;)</td></tr>
+<tr class="memdesc:a60bc0f7398cda2a9a368706ecab04927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the particle.  <br /></td></tr>
+<tr class="separator:a60bc0f7398cda2a9a368706ecab04927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453da091633381d1ffbe0517024f8f42" id="r_a453da091633381d1ffbe0517024f8f42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453da091633381d1ffbe0517024f8f42">algorithm_steps</a> (self)</td></tr>
+<tr class="memdesc:a453da091633381d1ffbe0517024f8f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leapfrog consists basically of four steps per particle.  <br /></td></tr>
+<tr class="separator:a453da091633381d1ffbe0517024f8f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f718086973bbdeb884b5694d4fb773" id="r_a82f718086973bbdeb884b5694d4fb773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f718086973bbdeb884b5694d4fb773">initialisation_steps</a> (self)</td></tr>
+<tr class="memdesc:a82f718086973bbdeb884b5694d4fb773"><td class="mdescLeft">&#160;</td><td class="mdescRight">No particular initialisation required.  <br /></td></tr>
+<tr class="separator:a82f718086973bbdeb884b5694d4fb773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classswift2_1_1particle_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html">swift2.particle.Particle.Particle</a></td></tr>
+<tr class="memitem:ab8fb6db184c812c743573426faf75ac2 inherit pub_methods_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_ab8fb6db184c812c743573426faf75ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab8fb6db184c812c743573426faf75ac2">readme_descriptor</a> (self)</td></tr>
+<tr class="memdesc:ab8fb6db184c812c743573426faf75ac2 inherit pub_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create default readme descriptor.  <br /></td></tr>
+<tr class="separator:ab8fb6db184c812c743573426faf75ac2 inherit pub_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html">peano4.datamodel.DaStGen2.DaStGen2</a></td></tr>
+<tr class="memitem:a4487b3006f621904bb33520a817219c8 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a4487b3006f621904bb33520a817219c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a4487b3006f621904bb33520a817219c8">configure</a> (self, <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a662c02e021754cd485528797ac401f11">namespace</a>, <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#af305e6e3402635d854016d83e06af8b7">association</a>, <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ab74a7555f364cb150ee9c97547f8ac55">subdirectory</a>=&quot;&quot;)</td></tr>
+<tr class="memdesc:a4487b3006f621904bb33520a817219c8 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure output.  <br /></td></tr>
+<tr class="separator:a4487b3006f621904bb33520a817219c8 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaaebfa71ee0160401a89820cda23ca9 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_adaaebfa71ee0160401a89820cda23ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#adaaebfa71ee0160401a89820cda23ca9">additional_load_and_store_arguments</a> (self)</td></tr>
+<tr class="separator:adaaebfa71ee0160401a89820cda23ca9 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b031c3b917045a0c14e0be4e61e66 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_ab96b031c3b917045a0c14e0be4e61e66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#ab96b031c3b917045a0c14e0be4e61e66">additional_load_and_store_arguments</a> (self, new_arguments)</td></tr>
+<tr class="separator:ab96b031c3b917045a0c14e0be4e61e66 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a67122e6b742a8771dbbebe01e1f696 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a1a67122e6b742a8771dbbebe01e1f696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a1a67122e6b742a8771dbbebe01e1f696">hosts_smart_pointer_attribute</a> (self)</td></tr>
+<tr class="memdesc:a1a67122e6b742a8771dbbebe01e1f696 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does class host a smart pointer attribute.  <br /></td></tr>
+<tr class="separator:a1a67122e6b742a8771dbbebe01e1f696 inherit pub_methods_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html">peano4.datamodel.DoF.DoF</a></td></tr>
+<tr class="memitem:a458da0ff83b4488ea8e598907c86db56 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_a458da0ff83b4488ea8e598907c86db56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a458da0ff83b4488ea8e598907c86db56">get_full_qualified_type</a> (self)</td></tr>
+<tr class="separator:a458da0ff83b4488ea8e598907c86db56 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae991fc6dbdeb7301cf2a4f244e36f995 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_ae991fc6dbdeb7301cf2a4f244e36f995"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ae991fc6dbdeb7301cf2a4f244e36f995">get_logical_type_name</a> (self)</td></tr>
+<tr class="memdesc:ae991fc6dbdeb7301cf2a4f244e36f995 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="mdescLeft">&#160;</td><td class="mdescRight">What should the data type be called within the data repository, or within action sets.  <br /></td></tr>
+<tr class="separator:ae991fc6dbdeb7301cf2a4f244e36f995 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75757c1fcb3d5916611fd6b0e525801 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_af75757c1fcb3d5916611fd6b0e525801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#af75757c1fcb3d5916611fd6b0e525801">get_enumeration_type</a> (self)</td></tr>
+<tr class="memdesc:af75757c1fcb3d5916611fd6b0e525801 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="mdescLeft">&#160;</td><td class="mdescRight">What should the data type be called within the data repository.  <br /></td></tr>
+<tr class="separator:af75757c1fcb3d5916611fd6b0e525801 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9279b7d9399ff2d8fa69ac28bfbce2 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_a8a9279b7d9399ff2d8fa69ac28bfbce2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a8a9279b7d9399ff2d8fa69ac28bfbce2">additional_load_and_store_arguments_for_other_dof</a> (self, argument_name, use_dof_association=None)</td></tr>
+<tr class="memdesc:a8a9279b7d9399ff2d8fa69ac28bfbce2 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can make Peano's store and load arguments of any DoF depend on other DoFs that you have loaded before.  <br /></td></tr>
+<tr class="separator:a8a9279b7d9399ff2d8fa69ac28bfbce2 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ff34e98b0ddc41f7256f5c68060418 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_ac8ff34e98b0ddc41f7256f5c68060418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ac8ff34e98b0ddc41f7256f5c68060418">subnamespace</a> (self)</td></tr>
+<tr class="separator:ac8ff34e98b0ddc41f7256f5c68060418 inherit pub_methods_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a47880b0f839b422ca902e925faae31ba" id="r_a47880b0f839b422ca902e925faae31ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47880b0f839b422ca902e925faae31ba">cfl_factor</a></td></tr>
+<tr class="separator:a47880b0f839b422ca902e925faae31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe4749dd08e9d7e27747624d401fca8" id="r_a3fe4749dd08e9d7e27747624d401fca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fe4749dd08e9d7e27747624d401fca8">initial_time_step_size</a></td></tr>
+<tr class="separator:a3fe4749dd08e9d7e27747624d401fca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08bb204d305b4ac1b50cd0e688c817c" id="r_ae08bb204d305b4ac1b50cd0e688c817c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08bb204d305b4ac1b50cd0e688c817c">velocity</a></td></tr>
+<tr class="separator:ae08bb204d305b4ac1b50cd0e688c817c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171278995bbaa96c8f6197dd7aaf33d5" id="r_a171278995bbaa96c8f6197dd7aaf33d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171278995bbaa96c8f6197dd7aaf33d5">accelerator</a></td></tr>
+<tr class="separator:a171278995bbaa96c8f6197dd7aaf33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada52849afedcabe105483e8dc033379e" id="r_ada52849afedcabe105483e8dc033379e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada52849afedcabe105483e8dc033379e">v_full</a></td></tr>
+<tr class="separator:ada52849afedcabe105483e8dc033379e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c164f227c5988eced0abda574c5932" id="r_a09c164f227c5988eced0abda574c5932"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09c164f227c5988eced0abda574c5932">u_full</a></td></tr>
+<tr class="separator:a09c164f227c5988eced0abda574c5932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedabc923db993a3197408fe42a50e781" id="r_aedabc923db993a3197408fe42a50e781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedabc923db993a3197408fe42a50e781">u</a></td></tr>
+<tr class="separator:aedabc923db993a3197408fe42a50e781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb917e626441f6b52436c34d623335c" id="r_a1fb917e626441f6b52436c34d623335c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fb917e626441f6b52436c34d623335c">density</a></td></tr>
+<tr class="separator:a1fb917e626441f6b52436c34d623335c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b7f97a5d02f3bd9ac2fe0095023784" id="r_a99b7f97a5d02f3bd9ac2fe0095023784"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99b7f97a5d02f3bd9ac2fe0095023784">pressure</a></td></tr>
+<tr class="separator:a99b7f97a5d02f3bd9ac2fe0095023784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789f0efffa77f086736292ac50d2ed70" id="r_a789f0efffa77f086736292ac50d2ed70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a789f0efffa77f086736292ac50d2ed70">soundSpeed</a></td></tr>
+<tr class="separator:a789f0efffa77f086736292ac50d2ed70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830fa8c74a2f4946f2608cf9367cd4d8" id="r_a830fa8c74a2f4946f2608cf9367cd4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a830fa8c74a2f4946f2608cf9367cd4d8">v_sig_AV</a></td></tr>
+<tr class="separator:a830fa8c74a2f4946f2608cf9367cd4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d61367bb5f307050e987bf8a508c1a4" id="r_a1d61367bb5f307050e987bf8a508c1a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d61367bb5f307050e987bf8a508c1a4">particle_particle_interaction_over_particle_sets_kernel</a></td></tr>
+<tr class="separator:a1d61367bb5f307050e987bf8a508c1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92551a23071ab0ab5cb5b2270eb17ca9" id="r_a92551a23071ab0ab5cb5b2270eb17ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92551a23071ab0ab5cb5b2270eb17ca9">touch_particles_of_set_first_time_kernel</a></td></tr>
+<tr class="separator:a92551a23071ab0ab5cb5b2270eb17ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f44f181860aa32c0076ac34922fcdb0" id="r_a7f44f181860aa32c0076ac34922fcdb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f44f181860aa32c0076ac34922fcdb0">touch_particles_of_set_last_time_kernel</a></td></tr>
+<tr class="separator:a7f44f181860aa32c0076ac34922fcdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d21ad8d7794931b3a94ad67d67287c8" id="r_a0d21ad8d7794931b3a94ad67d67287c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d21ad8d7794931b3a94ad67d67287c8">name</a></td></tr>
+<tr class="separator:a0d21ad8d7794931b3a94ad67d67287c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html">swift2.particle.Particle.Particle</a></td></tr>
+<tr class="memitem:a825085b53821da180c7794d979de0855 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a825085b53821da180c7794d979de0855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a825085b53821da180c7794d979de0855">particles_per_cell</a></td></tr>
+<tr class="separator:a825085b53821da180c7794d979de0855 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84eee3968609ab902854bb87b3646376 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a84eee3968609ab902854bb87b3646376"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a84eee3968609ab902854bb87b3646376">min_h</a></td></tr>
+<tr class="separator:a84eee3968609ab902854bb87b3646376 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8ae663579fefca1686192de21e8f3a inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a0d8ae663579fefca1686192de21e8f3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a0d8ae663579fefca1686192de21e8f3a">max_h</a></td></tr>
+<tr class="separator:a0d8ae663579fefca1686192de21e8f3a inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5196aa49d682cfb802e23a949e7c7e83 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a5196aa49d682cfb802e23a949e7c7e83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a5196aa49d682cfb802e23a949e7c7e83">name</a></td></tr>
+<tr class="separator:a5196aa49d682cfb802e23a949e7c7e83 inherit pub_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="../../d5/d3d/classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle.html">peano4.toolbox.particles.Particle.Particle</a></td></tr>
+<tr class="memitem:a42dbee52de9fac17756cd3a80bf546f4 inherit pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle" id="r_a42dbee52de9fac17756cd3a80bf546f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3d/classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle.html#a42dbee52de9fac17756cd3a80bf546f4">name</a></td></tr>
+<tr class="separator:a42dbee52de9fac17756cd3a80bf546f4 inherit pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85b461e827416b1f04c26ca61ab4602 inherit pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle" id="r_ae85b461e827416b1f04c26ca61ab4602"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3d/classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle.html#ae85b461e827416b1f04c26ca61ab4602">partid</a></td></tr>
+<tr class="separator:ae85b461e827416b1f04c26ca61ab4602 inherit pub_attribs_classpeano4_1_1toolbox_1_1particles_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2')"><img src="../../closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html">peano4.datamodel.DaStGen2.DaStGen2</a></td></tr>
+<tr class="memitem:a16222a8ff4916791091c62abb23867b8 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a16222a8ff4916791091c62abb23867b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a16222a8ff4916791091c62abb23867b8">generator</a></td></tr>
+<tr class="separator:a16222a8ff4916791091c62abb23867b8 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cb201eff748967e36a0cdc5af234e3 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_aa3cb201eff748967e36a0cdc5af234e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#aa3cb201eff748967e36a0cdc5af234e3">data</a></td></tr>
+<tr class="separator:aa3cb201eff748967e36a0cdc5af234e3 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6ef91e060aad7fa0443afa8ccd2d40 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a9b6ef91e060aad7fa0443afa8ccd2d40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a9b6ef91e060aad7fa0443afa8ccd2d40">peano4_mpi_and_storage_aspect</a></td></tr>
+<tr class="separator:a9b6ef91e060aad7fa0443afa8ccd2d40 inherit pub_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF')"><img src="../../closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html">peano4.datamodel.DoF.DoF</a></td></tr>
+<tr class="memitem:af305e6e3402635d854016d83e06af8b7 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_af305e6e3402635d854016d83e06af8b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#af305e6e3402635d854016d83e06af8b7">association</a></td></tr>
+<tr class="separator:af305e6e3402635d854016d83e06af8b7 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57666793783d2c5dbc32d011b2d9f62 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_ab57666793783d2c5dbc32d011b2d9f62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ab57666793783d2c5dbc32d011b2d9f62">name</a></td></tr>
+<tr class="separator:ab57666793783d2c5dbc32d011b2d9f62 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662c02e021754cd485528797ac401f11 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_a662c02e021754cd485528797ac401f11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#a662c02e021754cd485528797ac401f11">namespace</a></td></tr>
+<tr class="separator:a662c02e021754cd485528797ac401f11 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74a7555f364cb150ee9c97547f8ac55 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_ab74a7555f364cb150ee9c97547f8ac55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ab74a7555f364cb150ee9c97547f8ac55">subdirectory</a></td></tr>
+<tr class="separator:ab74a7555f364cb150ee9c97547f8ac55 inherit pub_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html">swift2.particle.Particle.Particle</a></td></tr>
+<tr class="memitem:ab7e8ac09fe0297cc5fcc5d28657899ff inherit pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_ab7e8ac09fe0297cc5fcc5d28657899ff"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab7e8ac09fe0297cc5fcc5d28657899ff">DependencyChecks_Attribute_Prefix</a> = &quot;dependencyChecks&quot;</td></tr>
+<tr class="separator:ab7e8ac09fe0297cc5fcc5d28657899ff inherit pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdacf2831bee9ece65a39c4922616e1 inherit pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a4cdacf2831bee9ece65a39c4922616e1"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a4cdacf2831bee9ece65a39c4922616e1">DependencyChecks_Ifdefs</a> = [&quot;PeanoDebug &gt; 0&quot;]</td></tr>
+<tr class="separator:a4cdacf2831bee9ece65a39c4922616e1 inherit pub_static_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html">peano4.datamodel.DaStGen2.DaStGen2</a></td></tr>
+<tr class="memitem:a6e68decb671d599033a8e13f6e048816 inherit pub_static_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a6e68decb671d599033a8e13f6e048816"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a6e68decb671d599033a8e13f6e048816">readme_package_descriptor</a></td></tr>
+<tr class="separator:a6e68decb671d599033a8e13f6e048816 inherit pub_static_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html">swift2.particle.Particle.Particle</a></td></tr>
+<tr class="memitem:ab55fdf4abe6b8d6e130e332cc00adddd inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_ab55fdf4abe6b8d6e130e332cc00adddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ab55fdf4abe6b8d6e130e332cc00adddd">_dependency_checks_modify_steps</a> (self, steplist, step_type_name, peano4_event_enum)</td></tr>
+<tr class="memdesc:ab55fdf4abe6b8d6e130e332cc00adddd inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add dependency checks as well as mesh consistency checks to the algorithm steps.  <br /></td></tr>
+<tr class="separator:ab55fdf4abe6b8d6e130e332cc00adddd inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2819ff075b7b7f56f670e2a8232f4d9a inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_a2819ff075b7b7f56f670e2a8232f4d9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a2819ff075b7b7f56f670e2a8232f4d9a">_add_dependency_checks</a> (self)</td></tr>
+<tr class="memdesc:a2819ff075b7b7f56f670e2a8232f4d9a inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add dependency (particle consistency) checks.  <br /></td></tr>
+<tr class="separator:a2819ff075b7b7f56f670e2a8232f4d9a inherit pro_methods_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html">swift2.particle.Particle.Particle</a></td></tr>
+<tr class="memitem:ad853d90ceaa4b21c818b249499ce3f20 inherit pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_ad853d90ceaa4b21c818b249499ce3f20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ad853d90ceaa4b21c818b249499ce3f20">_algorithm_steps</a></td></tr>
+<tr class="separator:ad853d90ceaa4b21c818b249499ce3f20 inherit pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93906fe5f15a0d6ae74716263a56a4c inherit pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle" id="r_ad93906fe5f15a0d6ae74716263a56a4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#ad93906fe5f15a0d6ae74716263a56a4c">_initialisation_steps</a></td></tr>
+<tr class="separator:ad93906fe5f15a0d6ae74716263a56a4c inherit pro_attribs_classswift2_1_1particle_1_1Particle_1_1Particle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html">peano4.datamodel.DaStGen2.DaStGen2</a></td></tr>
+<tr class="memitem:a3599b2be4b701c50be17ceabc9f8a42a inherit pro_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2" id="r_a3599b2be4b701c50be17ceabc9f8a42a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2.html#a3599b2be4b701c50be17ceabc9f8a42a">_additional_load_and_store_arguments</a></td></tr>
+<tr class="separator:a3599b2be4b701c50be17ceabc9f8a42a inherit pro_attribs_classpeano4_1_1datamodel_1_1DaStGen2_1_1DaStGen2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html">peano4.datamodel.DoF.DoF</a></td></tr>
+<tr class="memitem:ae00c3895dd3f62f8883b6696b37fddb1 inherit pro_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF" id="r_ae00c3895dd3f62f8883b6696b37fddb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4b/classpeano4_1_1datamodel_1_1DoF_1_1DoF.html#ae00c3895dd3f62f8883b6696b37fddb1">_additional_load_and_store_arguments</a></td></tr>
+<tr class="separator:ae00c3895dd3f62f8883b6696b37fddb1 inherit pro_attribs_classpeano4_1_1datamodel_1_1DoF_1_1DoF"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simple particle with a fixed interaction radius h which moves according to leapfrog KDK scheme. </p>
+<p>By default, it uses global time stepping, i.e. the combination of maximum velocity and minimal mesh size determines the time step size of the subsequent time step. Besides the default variables x and h, the particle has the following properties:</p>
+<ul>
+<li>a vector a which is the acceleration;</li>
+<li>a vector v which is the velocity.</li>
+</ul>
+<p>You can add further properties via </p><pre class="fragment">   myparticle.data.add_attribute( peano4.dastgen2.Peano4DoubleArray("myFancyArray","Dimensions") )
+</pre><p> in your code. Or you can create a subclass which adds additional fields after it has called the baseline constructor.</p>
+<p>You will need to add further properties for any SPH project.</p>
+<h2><a class="anchor" id="autotoc_md501"></a>
+Force calculation</h2>
+<p>particle_particle_interaction_over_particle_sets_kernel is a C++ string which defines a force between two particles. It has access to three important objects:</p>
+<ul>
+<li>localParticles is a container (list) over pointers to local particles</li>
+<li>activeParticles is a container (list) over pointers to active particles</li>
+<li>marker is a cell marker which identifies the current cell.</li>
+</ul>
+<p>Please consult the guidebook for a definition of local and active particles but take into account that the local particles always are a subset of the active particles.</p>
+<p>Besides the actual particle-to-particle calculation, i.e. a force calculation, users can also provide kernels that kick in when you touch particles for the first time before you actually compute any particle-particle interaction, and there is a plug-in point what you do just once the particle-particle interaction has terminated. The latter point is reached before we do the actual time stepping. In both plug-in points, you have a vertex marker which gives you the position of the vertex to which a particular is associated, and you have the localParticles. This is a vector of pointers in this particular case.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html" title="Cell marker.">peano4::datamanagement::CellMarker</a> </dd>
+<dd>
+<a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html" title="Vertex marker to provide information about selected vertex.">peano4::datamanagement::VertexMarker</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00011">11</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a60bc0f7398cda2a9a368706ecab04927" name="a60bc0f7398cda2a9a368706ecab04927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60bc0f7398cda2a9a368706ecab04927">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>particles_per_cell</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>min_h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>max_h</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>touch_particles_of_set_first_time_kernel</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>touch_particles_of_set_last_time_kernel</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise the particle. </p>
+<p>This is the baseclass for a particle, i.e. we only add the absolute minimum of information to a particle. As we inherit from the toolbox particle, we already have some attributes defined. These are the guys which are not explicitly visible from the code snippet below, i.e. they are introduced by the superclass constructor.</p>
+<p>Here's an overview of pre-defined attributes that each and every particle hosts:</p>
+<ul>
+<li>A position which is a double vector with Dimension entries.</li>
+<li>A search radius which describes the range with which other particles a particle might theoretically interact. The effective interaction might be smaller if a code decides to ignore potential interaction partners, i.e. this is an absolute maximum. The search radius will decide on which resolution level within the tree a particle is held.</li>
+<li>A MoveState flag. This flag is essential. We use it later to label those particles that have been moved to avoid that we move particles multiple times.</li>
+<li>A flag that indicates if a particle has been updated within a cell. Consult our code release papers: In short, a particle does not uniquely belong to one cell but can belong to many cells. We nevertheless want to update them only once.</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d13/namespaceswift2_1_1actionsets_1_1UpdateParticleMarker.html">swift2.actionsets.UpdateParticleMarker</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a7243cff3570ca637ed4a29f4b1e79ac0">swift2.particle.Particle.Particle</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00061">61</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00069">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.__init__()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00069">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.__init__()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_cgraph.png" border="0" usemap="#ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_cgraph" alt=""/></div>
+<map name="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_cgraph" id="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_cgraph">
+<area shape="rect" title="Initialise the particle." alt="" coords="5,29,319,69"/>
+<area shape="poly" title=" " alt="" coords="105,30,101,20,110,10,131,5,162,3,198,5,218,13,216,18,197,11,162,8,132,10,113,15,106,21,110,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_icgraph.png" border="0" usemap="#ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_icgraph" alt=""/></div>
+<map name="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_icgraph" id="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a60bc0f7398cda2a9a368706ecab04927_icgraph">
+<area shape="rect" title="Initialise the particle." alt="" coords="5,29,319,69"/>
+<area shape="poly" title=" " alt="" coords="216,18,197,11,162,8,132,10,113,15,106,21,110,28,105,30,101,20,110,10,131,5,162,3,198,5,218,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a453da091633381d1ffbe0517024f8f42" name="a453da091633381d1ffbe0517024f8f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453da091633381d1ffbe0517024f8f42">&#9670;&#160;</a></span>algorithm_steps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.algorithm_steps </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Leapfrog consists basically of four steps per particle. </p>
+<p>We first determine the force. Then we update the velocity by half a timestep and move the particle by a full timestep. Then the force is re-computed and the second half of the velocity update is done. Some variations of this KDK form re-arrange the steps executed per timestep to avoid a second force loop. </p>
+
+<p>Reimplemented from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a153b3ccfa7092fbf60ae8611ce74902a">swift2.particle.Particle.Particle</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00111">111</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00061">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.touch_particles_of_set_first_time_kernel</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00125">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.touch_particles_of_set_first_time_kernel</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00134">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.touch_particles_of_set_first_time_kernel()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00099">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius.touch_particles_of_set_first_time_kernel()</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00138">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.touch_particles_of_set_first_time_kernel()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00086">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius.touch_particles_of_set_first_time_kernel</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00105">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius.touch_particles_of_set_first_time_kernel()</a>, <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00102">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.touch_particles_of_set_first_time_kernel</a>, and <a class="el" href="../../d9/d34/testLeapfrogFixedTimeStepSize_8py_source.html#l00119">swift2.particle.tests.testLeapfrogFixedTimeStepSize.testLeapfrogFixedTimeStepSize.touch_particles_of_set_first_time_kernel</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00482">swift2.particle.Particle.Particle._add_dependency_checks()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_cgraph.png" border="0" usemap="#ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_cgraph" alt=""/></div>
+<map name="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_cgraph" id="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_cgraph">
+<area shape="rect" title="Leapfrog consists basically of four steps per particle." alt="" coords="5,160,375,200"/>
+<area shape="rect" href="../../d6/d23/classswift2_1_1particle_1_1ExplicitEulerFixedSearchRadius_1_1ExplicitEulerFixedSearchRadius.html#a0b2dd33c64f9c90e9a4ad246f4e8a04a" title=" " alt="" coords="423,5,671,75"/>
+<area shape="poly" title=" " alt="" coords="239,157,422,84,440,77,442,82,424,89,241,162"/>
+<area shape="rect" href="../../d2/df7/classswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius.html#af9f51d67268a5a96ba66af12d42eaddc" title=" " alt="" coords="427,99,666,168"/>
+<area shape="poly" title=" " alt="" coords="343,157,413,148,414,153,344,163"/>
+<area shape="rect" href="../../d6/d23/classswift2_1_1particle_1_1ExplicitEulerFixedSearchRadius_1_1ExplicitEulerFixedSearchRadius.html#a704d873556eb3ee9bc089020b9af88e7" title=" " alt="" coords="423,192,671,261"/>
+<area shape="poly" title=" " alt="" coords="344,197,410,206,409,211,343,203"/>
+<area shape="rect" href="../../d2/df7/classswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius.html#a33f3ff6cca01f147271d5b608f53566b" title=" " alt="" coords="427,285,666,355"/>
+<area shape="poly" title=" " alt="" coords="241,198,424,271,442,278,440,283,422,276,239,203"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_icgraph.png" border="0" usemap="#ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_icgraph" alt=""/></div>
+<map name="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_icgraph" id="ad9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest_a453da091633381d1ffbe0517024f8f42_icgraph">
+<area shape="rect" title="Leapfrog consists basically of four steps per particle." alt="" coords="296,5,665,45"/>
+<area shape="rect" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#a2819ff075b7b7f56f670e2a8232f4d9a" title="Add dependency (particle consistency) checks." alt="" coords="5,5,248,45"/>
+<area shape="poly" title=" " alt="" coords="282,28,248,28,248,23,282,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a82f718086973bbdeb884b5694d4fb773" name="a82f718086973bbdeb884b5694d4fb773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82f718086973bbdeb884b5694d4fb773">&#9670;&#160;</a></span>initialisation_steps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.initialisation_steps </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No particular initialisation required. </p>
+
+<p>Reimplemented from <a class="el" href="../../de/de6/classswift2_1_1particle_1_1Particle_1_1Particle.html#acf1c6065ab4a8fa8b7d68d5752205d19">swift2.particle.Particle.Particle</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00247">247</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a171278995bbaa96c8f6197dd7aaf33d5" name="a171278995bbaa96c8f6197dd7aaf33d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171278995bbaa96c8f6197dd7aaf33d5">&#9670;&#160;</a></span>accelerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.accelerator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00077">77</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a47880b0f839b422ca902e925faae31ba" name="a47880b0f839b422ca902e925faae31ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47880b0f839b422ca902e925faae31ba">&#9670;&#160;</a></span>cfl_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.cfl_factor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00072">72</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00162">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.__setup_algorithm_steps()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00143">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius._setup_algorithm_steps_dict()</a>, <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00261">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.readme_descriptor()</a>, and <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00346">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius.readme_descriptor()</a>.</p>
+
+</div>
+</div>
+<a id="a1fb917e626441f6b52436c34d623335c" name="a1fb917e626441f6b52436c34d623335c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb917e626441f6b52436c34d623335c">&#9670;&#160;</a></span>density</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.density</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00087">87</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a3fe4749dd08e9d7e27747624d401fca8" name="a3fe4749dd08e9d7e27747624d401fca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe4749dd08e9d7e27747624d401fca8">&#9670;&#160;</a></span>initial_time_step_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.initial_time_step_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00073">73</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00162">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.__setup_algorithm_steps()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00143">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius._setup_algorithm_steps_dict()</a>, <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00261">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.readme_descriptor()</a>, and <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00346">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius.readme_descriptor()</a>.</p>
+
+</div>
+</div>
+<a id="a0d21ad8d7794931b3a94ad67d67287c8" name="a0d21ad8d7794931b3a94ad67d67287c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d21ad8d7794931b3a94ad67d67287c8">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00136">136</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d16/Gemms_8py_source.html#l00114">exahype2.solvers.aderdg.kernels.Gemms.Gemms.__repr__()</a>, <a class="el" href="../../d3/de7/ExplicitEulerFixedSearchRadius_8py_source.html#l00162">swift2.particle.ExplicitEulerFixedSearchRadius.ExplicitEulerFixedSearchRadius.__setup_algorithm_steps()</a>, <a class="el" href="../../d5/d48/AlgorithmStep_8py_source.html#l00232">swift2.particle.AlgorithmStep.AlgorithmStep.__str__()</a>, <a class="el" href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00143">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius._setup_algorithm_steps_dict()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00151">peano4.datamodel.DoF.DoF.additional_load_and_store_arguments_for_other_dof()</a>, <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>, <a class="el" href="../../d3/d47/DastgenTestDummyParticle_8py_source.html#l00710">swift2.particle.tests.DastgenTestDummyParticle.DastgenTestDummyParticle.algorithm_steps()</a>, <a class="el" href="../../db/d1a/UserActionSet_8py_source.html#l00039">peano4.solversteps.UserActionSet.UserActionSet.get_action_set_name()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00109">peano4.datamodel.DoF.DoF.get_full_qualified_type()</a>, <a class="el" href="../../d6/da4/DoF_8py_source.html#l00118">peano4.datamodel.DoF.DoF.get_logical_type_name()</a>, <a class="el" href="../../d9/de7/Enumeration_8py_source.html#l00141">dastgen2.attributes.Enumeration.Enumeration.get_to_string()</a>, and <a class="el" href="../../d9/d70/swift2_2particle_2Particle_8py_source.html#l00152">swift2.particle.Particle.Particle.readme_descriptor()</a>.</p>
+
+</div>
+</div>
+<a id="a1d61367bb5f307050e987bf8a508c1a4" name="a1d61367bb5f307050e987bf8a508c1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d61367bb5f307050e987bf8a508c1a4">&#9670;&#160;</a></span>particle_particle_interaction_over_particle_sets_kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.particle_particle_interaction_over_particle_sets_kernel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00099">99</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a99b7f97a5d02f3bd9ac2fe0095023784" name="a99b7f97a5d02f3bd9ac2fe0095023784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b7f97a5d02f3bd9ac2fe0095023784">&#9670;&#160;</a></span>pressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.pressure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00088">88</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a789f0efffa77f086736292ac50d2ed70" name="a789f0efffa77f086736292ac50d2ed70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789f0efffa77f086736292ac50d2ed70">&#9670;&#160;</a></span>soundSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.soundSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00089">89</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a92551a23071ab0ab5cb5b2270eb17ca9" name="a92551a23071ab0ab5cb5b2270eb17ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92551a23071ab0ab5cb5b2270eb17ca9">&#9670;&#160;</a></span>touch_particles_of_set_first_time_kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.touch_particles_of_set_first_time_kernel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00102">102</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>, <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00111">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.algorithm_steps()</a>, and <a class="el" href="../../d9/d34/testLeapfrogFixedTimeStepSize_8py_source.html#l00172">swift2.particle.tests.testLeapfrogFixedTimeStepSize.testLeapfrogFixedTimeStepSize.algorithm_steps()</a>.</p>
+
+</div>
+</div>
+<a id="a7f44f181860aa32c0076ac34922fcdb0" name="a7f44f181860aa32c0076ac34922fcdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f44f181860aa32c0076ac34922fcdb0">&#9670;&#160;</a></span>touch_particles_of_set_last_time_kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.touch_particles_of_set_last_time_kernel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00105">105</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d64/ExplicitEulerDynamicSearchRadius_8py_source.html#l00071">swift2.particle.ExplicitEulerDynamicSearchRadius.ExplicitEulerDynamicSearchRadius.algorithm_steps()</a>.</p>
+
+</div>
+</div>
+<a id="aedabc923db993a3197408fe42a50e781" name="aedabc923db993a3197408fe42a50e781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedabc923db993a3197408fe42a50e781">&#9670;&#160;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00086">86</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a09c164f227c5988eced0abda574c5932" name="a09c164f227c5988eced0abda574c5932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c164f227c5988eced0abda574c5932">&#9670;&#160;</a></span>u_full</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.u_full</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00085">85</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="ada52849afedcabe105483e8dc033379e" name="ada52849afedcabe105483e8dc033379e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada52849afedcabe105483e8dc033379e">&#9670;&#160;</a></span>v_full</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.v_full</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00084">84</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="a830fa8c74a2f4946f2608cf9367cd4d8" name="a830fa8c74a2f4946f2608cf9367cd4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830fa8c74a2f4946f2608cf9367cd4d8">&#9670;&#160;</a></span>v_sig_AV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.v_sig_AV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00090">90</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<a id="ae08bb204d305b4ac1b50cd0e688c817c" name="ae08bb204d305b4ac1b50cd0e688c817c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08bb204d305b4ac1b50cd0e688c817c">&#9670;&#160;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">swift2.particle.tests.DisappearingParticleTest.DisappearingParticleTest.velocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html#l00076">76</a> of file <a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>python/swift2/particle/tests/<a class="el" href="../../dd/d6f/DisappearingParticleTest_8py_source.html">DisappearingParticleTest.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/dac/namespaceswift2.html">swift2</a></li><li class="navelem"><a class="el" href="../../d2/d41/namespaceswift2_1_1particle.html">particle</a></li><li class="navelem"><a class="el" href="../../d4/d75/namespaceswift2_1_1particle_1_1tests.html">tests</a></li><li class="navelem"><a class="el" href="../../d2/dad/namespaceswift2_1_1particle_1_1tests_1_1DisappearingParticleTest.html">DisappearingParticleTest</a></li><li class="navelem"><a class="el" href="../../d9/ddf/classswift2_1_1particle_1_1tests_1_1DisappearingParticleTest_1_1DisappearingParticleTest.html">DisappearingParticleTest</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:45 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

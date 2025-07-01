@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d5b/namespacetest3.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">test3 Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This test checks that the CG solver converges to u_random for the RHS set as b_c = A_CG * u_random with some vector u_random.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab22e05004032c26d30917fc875d541c1" id="r_ab22e05004032c26d30917fc875d541c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22e05004032c26d30917fc875d541c1">parser</a> = argparse.ArgumentParser(description='Multigrid - Poisson <a class="el" href="#af8716f347924a640259d8c893a5e7181">solver</a>')</td></tr>
+<tr class="separator:ab22e05004032c26d30917fc875d541c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae336255bd6fbdb6ea8e08a0c7b7b4677" id="r_ae336255bd6fbdb6ea8e08a0c7b7b4677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae336255bd6fbdb6ea8e08a0c7b7b4677">dest</a></td></tr>
+<tr class="separator:ae336255bd6fbdb6ea8e08a0c7b7b4677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8628845d79219275d8283804b1510f77" id="r_a8628845d79219275d8283804b1510f77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8628845d79219275d8283804b1510f77">type</a></td></tr>
+<tr class="separator:a8628845d79219275d8283804b1510f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33dcbf1086d82ce31e95b26a7487f3e" id="r_af33dcbf1086d82ce31e95b26a7487f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af33dcbf1086d82ce31e95b26a7487f3e">int</a></td></tr>
+<tr class="separator:af33dcbf1086d82ce31e95b26a7487f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7beda7fa70503eac074368ff8cf66c74" id="r_a7beda7fa70503eac074368ff8cf66c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7beda7fa70503eac074368ff8cf66c74">default</a></td></tr>
+<tr class="separator:a7beda7fa70503eac074368ff8cf66c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12731b553383ae2da3d363290524c35" id="r_af12731b553383ae2da3d363290524c35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af12731b553383ae2da3d363290524c35">help</a></td></tr>
+<tr class="separator:af12731b553383ae2da3d363290524c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2477a06d6672d45af23c9f0c54ad83" id="r_afd2477a06d6672d45af23c9f0c54ad83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd2477a06d6672d45af23c9f0c54ad83">action</a></td></tr>
+<tr class="separator:afd2477a06d6672d45af23c9f0c54ad83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33d03c9736aca91356d02e17e2e2557" id="r_ab33d03c9736aca91356d02e17e2e2557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33d03c9736aca91356d02e17e2e2557">False</a></td></tr>
+<tr class="separator:ab33d03c9736aca91356d02e17e2e2557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f17c2e6fba0f6ff2150d3da1464d097" id="r_a3f17c2e6fba0f6ff2150d3da1464d097"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f17c2e6fba0f6ff2150d3da1464d097">choices</a></td></tr>
+<tr class="separator:a3f17c2e6fba0f6ff2150d3da1464d097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c931b221e38464dbac22a38eae686d" id="r_af3c931b221e38464dbac22a38eae686d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c931b221e38464dbac22a38eae686d">required</a></td></tr>
+<tr class="separator:af3c931b221e38464dbac22a38eae686d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d9f900697ea7cab10bdab2d5152ab9" id="r_a57d9f900697ea7cab10bdab2d5152ab9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d9f900697ea7cab10bdab2d5152ab9">True</a></td></tr>
+<tr class="separator:a57d9f900697ea7cab10bdab2d5152ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e04559a2649bae42b04bcf6b9f6a34" id="r_a80e04559a2649bae42b04bcf6b9f6a34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80e04559a2649bae42b04bcf6b9f6a34">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a80e04559a2649bae42b04bcf6b9f6a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ed9e7f9fe625b3864b648840d22223" id="r_a89ed9e7f9fe625b3864b648840d22223"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89ed9e7f9fe625b3864b648840d22223">project</a></td></tr>
+<tr class="separator:a89ed9e7f9fe625b3864b648840d22223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc218d74304286379d5c175a926720a" id="r_aadc218d74304286379d5c175a926720a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc218d74304286379d5c175a926720a">poisson_equation_matrices</a></td></tr>
+<tr class="separator:aadc218d74304286379d5c175a926720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5da49c93158c7ee401d0e2ffac15987" id="r_af5da49c93158c7ee401d0e2ffac15987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5da49c93158c7ee401d0e2ffac15987">system_matrix</a></td></tr>
+<tr class="separator:af5da49c93158c7ee401d0e2ffac15987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fccddf6fb69642338e3077f48aa3572" id="r_a4fccddf6fb69642338e3077f48aa3572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fccddf6fb69642338e3077f48aa3572">system_matrix_scaling</a></td></tr>
+<tr class="separator:a4fccddf6fb69642338e3077f48aa3572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c12749643b2a8d314c19d10ddfec14" id="r_ad6c12749643b2a8d314c19d10ddfec14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c12749643b2a8d314c19d10ddfec14">mass_matrix</a></td></tr>
+<tr class="separator:ad6c12749643b2a8d314c19d10ddfec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c8aad404ca913883288462bf815b0b" id="r_ac0c8aad404ca913883288462bf815b0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c8aad404ca913883288462bf815b0b">mass_matrix_scaling</a></td></tr>
+<tr class="separator:ac0c8aad404ca913883288462bf815b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8716f347924a640259d8c893a5e7181" id="r_af8716f347924a640259d8c893a5e7181"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8716f347924a640259d8c893a5e7181">solver</a></td></tr>
+<tr class="separator:af8716f347924a640259d8c893a5e7181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ee4c7c09e1769026a7dc531610d4b8" id="r_a81ee4c7c09e1769026a7dc531610d4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81ee4c7c09e1769026a7dc531610d4b8">build_mode</a> = peano4.output.CompileMode.Release</td></tr>
+<tr class="separator:a81ee4c7c09e1769026a7dc531610d4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e3939c9159a18c53a7bc48c0f5b84f" id="r_af6e3939c9159a18c53a7bc48c0f5b84f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e3939c9159a18c53a7bc48c0f5b84f">cube_size</a> = 1.0</td></tr>
+<tr class="separator:af6e3939c9159a18c53a7bc48c0f5b84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42321a44909671fa609590466ac23304" id="r_a42321a44909671fa609590466ac23304"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42321a44909671fa609590466ac23304">dimensions</a></td></tr>
+<tr class="separator:a42321a44909671fa609590466ac23304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739c07370b5c11e05cfd9b8104242264" id="r_a739c07370b5c11e05cfd9b8104242264"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a739c07370b5c11e05cfd9b8104242264">offset</a></td></tr>
+<tr class="separator:a739c07370b5c11e05cfd9b8104242264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bf76d979b8a5f0edd7f434c4415180" id="r_a75bf76d979b8a5f0edd7f434c4415180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75bf76d979b8a5f0edd7f434c4415180">domain_size</a></td></tr>
+<tr class="separator:a75bf76d979b8a5f0edd7f434c4415180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d49f7100e98bfecfb3a862c44420206" id="r_a1d49f7100e98bfecfb3a862c44420206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d49f7100e98bfecfb3a862c44420206">plot_after_each_mesh_sweep</a></td></tr>
+<tr class="separator:a1d49f7100e98bfecfb3a862c44420206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b016c6b0c96f51cd9e6cabcdc4b4d8c" id="r_a7b016c6b0c96f51cd9e6cabcdc4b4d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b016c6b0c96f51cd9e6cabcdc4b4d8c">max_iterations</a></td></tr>
+<tr class="separator:a7b016c6b0c96f51cd9e6cabcdc4b4d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d63ba11ac4f3fd875f4b3e88f5e238" id="r_a75d63ba11ac4f3fd875f4b3e88f5e238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75d63ba11ac4f3fd875f4b3e88f5e238">peano4_project</a> = project.generate_Peano4_project(args.verbose)</td></tr>
+<tr class="separator:a75d63ba11ac4f3fd875f4b3e88f5e238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This test checks that the CG solver converges to u_random for the RHS set as b_c = A_CG * u_random with some vector u_random. </p>
+<p>It shows that the solution u of the problem A * u = A * u_random approximates u_random. u_random has to satisfy the boundary conditions but can be random at the interior vertices.</p>
+<p>Algorithm:</p>
+<ol type="1">
+<li>Generate u_random by assigning a value from [0,1] to each vertex.</li>
+<li>Set u_random to 0 at the boundary vertices to satisfy the boundary conditions.</li>
+<li>Compute b_c = A_CG * u_random, where A_CG is the system matrix for CG.</li>
+<li>Solve A_CG * u = b_c with CollocatedSolver.</li>
+<li>Check |u - u_random| &lt; tol. </li>
+</ol>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="afd2477a06d6672d45af23c9f0c54ad83" name="afd2477a06d6672d45af23c9f0c54ad83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2477a06d6672d45af23c9f0c54ad83">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00037">37</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a80e04559a2649bae42b04bcf6b9f6a34" name="a80e04559a2649bae42b04bcf6b9f6a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e04559a2649bae42b04bcf6b9f6a34">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00043">43</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a81ee4c7c09e1769026a7dc531610d4b8" name="a81ee4c7c09e1769026a7dc531610d4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ee4c7c09e1769026a7dc531610d4b8">&#9670;&#160;</a></span>build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.build_mode = peano4.output.CompileMode.Release</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00088">88</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a3f17c2e6fba0f6ff2150d3da1464d097" name="a3f17c2e6fba0f6ff2150d3da1464d097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f17c2e6fba0f6ff2150d3da1464d097">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00042">42</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af6e3939c9159a18c53a7bc48c0f5b84f" name="af6e3939c9159a18c53a7bc48c0f5b84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e3939c9159a18c53a7bc48c0f5b84f">&#9670;&#160;</a></span>cube_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float test3.cube_size = 1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00096">96</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a7beda7fa70503eac074368ff8cf66c74" name="a7beda7fa70503eac074368ff8cf66c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7beda7fa70503eac074368ff8cf66c74">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="ae336255bd6fbdb6ea8e08a0c7b7b4677" name="ae336255bd6fbdb6ea8e08a0c7b7b4677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae336255bd6fbdb6ea8e08a0c7b7b4677">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a42321a44909671fa609590466ac23304" name="a42321a44909671fa609590466ac23304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42321a44909671fa609590466ac23304">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00098">98</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a75bf76d979b8a5f0edd7f434c4415180" name="a75bf76d979b8a5f0edd7f434c4415180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bf76d979b8a5f0edd7f434c4415180">&#9670;&#160;</a></span>domain_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.domain_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00100">100</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="ab33d03c9736aca91356d02e17e2e2557" name="ab33d03c9736aca91356d02e17e2e2557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33d03c9736aca91356d02e17e2e2557">&#9670;&#160;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00037">37</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af12731b553383ae2da3d363290524c35" name="af12731b553383ae2da3d363290524c35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12731b553383ae2da3d363290524c35">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af33dcbf1086d82ce31e95b26a7487f3e" name="af33dcbf1086d82ce31e95b26a7487f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33dcbf1086d82ce31e95b26a7487f3e">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="ad6c12749643b2a8d314c19d10ddfec14" name="ad6c12749643b2a8d314c19d10ddfec14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c12749643b2a8d314c19d10ddfec14">&#9670;&#160;</a></span>mass_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.mass_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00062">62</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="ac0c8aad404ca913883288462bf815b0b" name="ac0c8aad404ca913883288462bf815b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c8aad404ca913883288462bf815b0b">&#9670;&#160;</a></span>mass_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.mass_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00062">62</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a7b016c6b0c96f51cd9e6cabcdc4b4d8c" name="a7b016c6b0c96f51cd9e6cabcdc4b4d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b016c6b0c96f51cd9e6cabcdc4b4d8c">&#9670;&#160;</a></span>max_iterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.max_iterations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00102">102</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a739c07370b5c11e05cfd9b8104242264" name="a739c07370b5c11e05cfd9b8104242264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739c07370b5c11e05cfd9b8104242264">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00099">99</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="ab22e05004032c26d30917fc875d541c1" name="ab22e05004032c26d30917fc875d541c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22e05004032c26d30917fc875d541c1">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.parser = argparse.ArgumentParser(description='Multigrid - Poisson <a class="el" href="#af8716f347924a640259d8c893a5e7181">solver</a>')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00035">35</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a75d63ba11ac4f3fd875f4b3e88f5e238" name="a75d63ba11ac4f3fd875f4b3e88f5e238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d63ba11ac4f3fd875f4b3e88f5e238">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.peano4_project = project.generate_Peano4_project(args.verbose)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00106">106</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a1d49f7100e98bfecfb3a862c44420206" name="a1d49f7100e98bfecfb3a862c44420206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d49f7100e98bfecfb3a862c44420206">&#9670;&#160;</a></span>plot_after_each_mesh_sweep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.plot_after_each_mesh_sweep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00101">101</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="aadc218d74304286379d5c175a926720a" name="aadc218d74304286379d5c175a926720a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc218d74304286379d5c175a926720a">&#9670;&#160;</a></span>poisson_equation_matrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.poisson_equation_matrices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity</a>(</div>
+<div class="line"><span class="lineno">    2</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  poly_degree = 1,</div>
+<div class="line"><span class="lineno">    4</span>  unknowns_per_node = 1</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity_html"><div class="ttname"><a href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a></div><div class="ttdoc">Using normalised identity matrix instead of the mass matrix.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00010">DLinearMassIdentity.py:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00055">55</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a89ed9e7f9fe625b3864b648840d22223" name="a89ed9e7f9fe625b3864b648840d22223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ed9e7f9fe625b3864b648840d22223">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.api.Project( project_name = <span class="stringliteral">&quot;CollocatedFEM&quot;</span>, </div>
+<div class="line"><span class="lineno">    2</span>                              namespace = [ <span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;multigrid&quot;</span>, <span class="stringliteral">&quot;matrixfree&quot;</span>, <span class="stringliteral">&quot;verifyRandom&quot;</span> ]</div>
+<div class="line"><span class="lineno">    3</span>                                )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00045">45</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af3c931b221e38464dbac22a38eae686d" name="af3c931b221e38464dbac22a38eae686d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c931b221e38464dbac22a38eae686d">&#9670;&#160;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00042">42</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af8716f347924a640259d8c893a5e7181" name="af8716f347924a640259d8c893a5e7181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8716f347924a640259d8c893a5e7181">&#9670;&#160;</a></span>solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.solvers.api.CollocatedDLinearDiscretisationWithPointJacobi(<span class="stringliteral">&quot;CollocatedPoisson&quot;</span>,</div>
+<div class="line"><span class="lineno">    2</span>                                                              1, <span class="comment"># unknowns</span></div>
+<div class="line"><span class="lineno">    3</span>                                                              args.dimensions,</div>
+<div class="line"><span class="lineno">    4</span>                                                              args.meshsize,</div>
+<div class="line"><span class="lineno">    5</span>                                                              args.meshsize,</div>
+<div class="line"><span class="lineno">    6</span>                                                              local_assembly_matrix = system_matrix,</div>
+<div class="line"><span class="lineno">    7</span>                                                              local_assembly_matrix_scaling=system_matrix_scaling,</div>
+<div class="line"><span class="lineno">    8</span>                                                              mass_matrix = mass_matrix,</div>
+<div class="line"><span class="lineno">    9</span>                                                              mass_matrix_scaling = mass_matrix_scaling,</div>
+<div class="line"><span class="lineno">   10</span>                                                              solver_tolerance=1e-9,</div>
+<div class="line"><span class="lineno">   11</span>                                                              custom_init_actionset=InitDofsCollocatedRandomRhs,</div>
+<div class="line"><span class="lineno">   12</span>                                                              custom_plot_actionset=[(<span class="stringliteral">&quot;rand&quot;</span>,<span class="stringliteral">&quot;getRand&quot;</span>)]</div>
+<div class="line"><span class="lineno">   13</span>                                                            )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00065">65</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="af5da49c93158c7ee401d0e2ffac15987" name="af5da49c93158c7ee401d0e2ffac15987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5da49c93158c7ee401d0e2ffac15987">&#9670;&#160;</a></span>system_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.system_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00061">61</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a4fccddf6fb69642338e3077f48aa3572" name="a4fccddf6fb69642338e3077f48aa3572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fccddf6fb69642338e3077f48aa3572">&#9670;&#160;</a></span>system_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.system_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00061">61</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a57d9f900697ea7cab10bdab2d5152ab9" name="a57d9f900697ea7cab10bdab2d5152ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d9f900697ea7cab10bdab2d5152ab9">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00042">42</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+<a id="a8628845d79219275d8283804b1510f77" name="a8628845d79219275d8283804b1510f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8628845d79219275d8283804b1510f77">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test3.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/df3/test3_8py_source.html#l00036">36</a> of file <a class="el" href="../../df/df3/test3_8py_source.html">test3.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d5b/namespacetest3.html">test3</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:00 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

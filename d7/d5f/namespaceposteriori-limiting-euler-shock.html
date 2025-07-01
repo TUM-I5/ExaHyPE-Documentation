@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/d5f/namespaceposteriori-limiting-euler-shock.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">posteriori-limiting-euler-shock Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2d163d37de01e81fa1d0dc845a39dded" id="r_a2d163d37de01e81fa1d0dc845a39dded"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d163d37de01e81fa1d0dc845a39dded">project</a></td></tr>
+<tr class="separator:a2d163d37de01e81fa1d0dc845a39dded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6e2989757ed4d0ba52ed6a3d7e8eeb" id="r_aba6e2989757ed4d0ba52ed6a3d7e8eeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba6e2989757ed4d0ba52ed6a3d7e8eeb">use_aderdg</a> = True</td></tr>
+<tr class="separator:aba6e2989757ed4d0ba52ed6a3d7e8eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4810401dc6476fe6d8ec139f7b626031" id="r_a4810401dc6476fe6d8ec139f7b626031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4810401dc6476fe6d8ec139f7b626031">use_fv</a> = True</td></tr>
+<tr class="separator:a4810401dc6476fe6d8ec139f7b626031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10e133c5099e8ec1a3c9f9d0e2b9b5b" id="r_aa10e133c5099e8ec1a3c9f9d0e2b9b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa10e133c5099e8ec1a3c9f9d0e2b9b5b">use_limiting</a> = <a class="el" href="#aba6e2989757ed4d0ba52ed6a3d7e8eeb">use_aderdg</a> and <a class="el" href="#a4810401dc6476fe6d8ec139f7b626031">use_fv</a></td></tr>
+<tr class="separator:aa10e133c5099e8ec1a3c9f9d0e2b9b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31084119ddeddb68e84ff5205bc9059e" id="r_a31084119ddeddb68e84ff5205bc9059e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31084119ddeddb68e84ff5205bc9059e">with_limiting</a> = 1</td></tr>
+<tr class="separator:a31084119ddeddb68e84ff5205bc9059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808eb1528e767b7c57dab4c79a382bd0" id="r_a808eb1528e767b7c57dab4c79a382bd0"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a808eb1528e767b7c57dab4c79a382bd0">build_modes</a></td></tr>
+<tr class="separator:a808eb1528e767b7c57dab4c79a382bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69e977c6e2df0b84eecdc6e34cfc970" id="r_ad69e977c6e2df0b84eecdc6e34cfc970"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad69e977c6e2df0b84eecdc6e34cfc970">curr_build_mode</a> = &quot;Release&quot;</td></tr>
+<tr class="separator:ad69e977c6e2df0b84eecdc6e34cfc970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f7d8848b4bc144e74dd6b724d85513" id="r_a88f7d8848b4bc144e74dd6b724d85513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88f7d8848b4bc144e74dd6b724d85513">dimensions</a> = 2</td></tr>
+<tr class="separator:a88f7d8848b4bc144e74dd6b724d85513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9aecb44024ad8ac67d24215765c3e" id="r_a5ed9aecb44024ad8ac67d24215765c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ed9aecb44024ad8ac67d24215765c3e">min_level</a> = 3</td></tr>
+<tr class="separator:a5ed9aecb44024ad8ac67d24215765c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3321c665354ed8c25a4ac32e966a7e" id="r_aaf3321c665354ed8c25a4ac32e966a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf3321c665354ed8c25a4ac32e966a7e">max_depth</a> = 0</td></tr>
+<tr class="separator:aaf3321c665354ed8c25a4ac32e966a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563a733a1d9580983046cf9055d3a6e7" id="r_a563a733a1d9580983046cf9055d3a6e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a563a733a1d9580983046cf9055d3a6e7">ndof</a> = 6</td></tr>
+<tr class="separator:a563a733a1d9580983046cf9055d3a6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae835dbc116659dc3040c70cf8bbb24d7" id="r_ae835dbc116659dc3040c70cf8bbb24d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae835dbc116659dc3040c70cf8bbb24d7">order</a> = <a class="el" href="#a563a733a1d9580983046cf9055d3a6e7">ndof</a> - 1</td></tr>
+<tr class="separator:ae835dbc116659dc3040c70cf8bbb24d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08010f51610e07e4c84987960894cea9" id="r_a08010f51610e07e4c84987960894cea9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08010f51610e07e4c84987960894cea9">end_time</a> = 2.0</td></tr>
+<tr class="separator:a08010f51610e07e4c84987960894cea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb24ebe4157147520fd8e44b532f192" id="r_acfb24ebe4157147520fd8e44b532f192"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb24ebe4157147520fd8e44b532f192">CFL</a> = 0.5</td></tr>
+<tr class="separator:acfb24ebe4157147520fd8e44b532f192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f55325c0e323dc9b97d411b1656ab97" id="r_a3f55325c0e323dc9b97d411b1656ab97"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f55325c0e323dc9b97d411b1656ab97">unknowns</a> = {&quot;rho&quot;: 1, &quot;rhoU&quot;: 1, &quot;rhoV&quot;: 1, &quot;rhoE&quot;: 1}</td></tr>
+<tr class="separator:a3f55325c0e323dc9b97d411b1656ab97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125928339ac00355f964ffb58cdac157" id="r_a125928339ac00355f964ffb58cdac157"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a125928339ac00355f964ffb58cdac157">auxiliary</a> = {}</td></tr>
+<tr class="separator:a125928339ac00355f964ffb58cdac157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860ca92b73bbcb1a003eacf4a5e10891" id="r_a860ca92b73bbcb1a003eacf4a5e10891"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a860ca92b73bbcb1a003eacf4a5e10891">plot_interval</a> = 0.00</td></tr>
+<tr class="separator:a860ca92b73bbcb1a003eacf4a5e10891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9658afda4d0fc521e5e021f92e35e31d" id="r_a9658afda4d0fc521e5e021f92e35e31d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9658afda4d0fc521e5e021f92e35e31d">offset</a> = [-1.0, -1.0, -1.0][0:<a class="el" href="#a88f7d8848b4bc144e74dd6b724d85513">dimensions</a>]</td></tr>
+<tr class="separator:a9658afda4d0fc521e5e021f92e35e31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4327853a1ed2c983a007296846de300c" id="r_a4327853a1ed2c983a007296846de300c"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4327853a1ed2c983a007296846de300c">size</a> = [2.0, 2.0, 2.0][0:<a class="el" href="#a88f7d8848b4bc144e74dd6b724d85513">dimensions</a>]</td></tr>
+<tr class="separator:a4327853a1ed2c983a007296846de300c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46676ec5e4fa81f6a9a944fbb4a62eb7" id="r_a46676ec5e4fa81f6a9a944fbb4a62eb7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46676ec5e4fa81f6a9a944fbb4a62eb7">max_h</a> = 1.1 * min(<a class="el" href="#a4327853a1ed2c983a007296846de300c">size</a>) / (3.0**<a class="el" href="#a5ed9aecb44024ad8ac67d24215765c3e">min_level</a>)</td></tr>
+<tr class="separator:a46676ec5e4fa81f6a9a944fbb4a62eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ffe60281fc1d8e228d445539f9a51e" id="r_a65ffe60281fc1d8e228d445539f9a51e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ffe60281fc1d8e228d445539f9a51e">min_h</a> = <a class="el" href="#a46676ec5e4fa81f6a9a944fbb4a62eb7">max_h</a> / (3.0**<a class="el" href="#aaf3321c665354ed8c25a4ac32e966a7e">max_depth</a>)</td></tr>
+<tr class="separator:a65ffe60281fc1d8e228d445539f9a51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040e6657c745e03cc928c55ec8a19f01" id="r_a040e6657c745e03cc928c55ec8a19f01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a040e6657c745e03cc928c55ec8a19f01">Gamma</a> = 1.4</td></tr>
+<tr class="separator:a040e6657c745e03cc928c55ec8a19f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0919a2030fd413e7dbf18cf1da4c023b" id="r_a0919a2030fd413e7dbf18cf1da4c023b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0919a2030fd413e7dbf18cf1da4c023b">OriginalShockPosition</a> = 0.111</td></tr>
+<tr class="separator:a0919a2030fd413e7dbf18cf1da4c023b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86dc80a37c8cc7a725fe71ae5cdb9f7d" id="r_a86dc80a37c8cc7a725fe71ae5cdb9f7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86dc80a37c8cc7a725fe71ae5cdb9f7d">pZero</a> = 1e-4</td></tr>
+<tr class="separator:a86dc80a37c8cc7a725fe71ae5cdb9f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef81d7aa8f04f4939c0b65547861ba52" id="r_aef81d7aa8f04f4939c0b65547861ba52"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef81d7aa8f04f4939c0b65547861ba52">initial_conditions</a></td></tr>
+<tr class="separator:aef81d7aa8f04f4939c0b65547861ba52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2471443931f067c720d280f03c90224d" id="r_a2471443931f067c720d280f03c90224d"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2471443931f067c720d280f03c90224d">boundary_conditions</a></td></tr>
+<tr class="separator:a2471443931f067c720d280f03c90224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3da73c7b71da49a5787b9aec716825" id="r_a3c3da73c7b71da49a5787b9aec716825"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c3da73c7b71da49a5787b9aec716825">flux</a></td></tr>
+<tr class="separator:a3c3da73c7b71da49a5787b9aec716825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cb6ca717ab762b015c70dee3c83cc5" id="r_a37cb6ca717ab762b015c70dee3c83cc5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37cb6ca717ab762b015c70dee3c83cc5">max_eval</a></td></tr>
+<tr class="separator:a37cb6ca717ab762b015c70dee3c83cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a467b49d3d2c60df94949ccb3bcfa5" id="r_a71a467b49d3d2c60df94949ccb3bcfa5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a467b49d3d2c60df94949ccb3bcfa5">adjust_solution</a></td></tr>
+<tr class="separator:a71a467b49d3d2c60df94949ccb3bcfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450410a025f0df86c649108939d9d0f5" id="r_a450410a025f0df86c649108939d9d0f5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450410a025f0df86c649108939d9d0f5">isPhysicallyAdmissible</a> = &quot;return true;&quot;</td></tr>
+<tr class="separator:a450410a025f0df86c649108939d9d0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f55132f923d97eb86cd668617145494" id="r_a7f55132f923d97eb86cd668617145494"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f55132f923d97eb86cd668617145494">aderdg_solver</a></td></tr>
+<tr class="separator:a7f55132f923d97eb86cd668617145494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42b56a447a2655e22884f62104e9dea" id="r_ad42b56a447a2655e22884f62104e9dea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42b56a447a2655e22884f62104e9dea">max_eigenvalue</a></td></tr>
+<tr class="separator:ad42b56a447a2655e22884f62104e9dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0861dae3d6e5085d10c26cf28b453722" id="r_a0861dae3d6e5085d10c26cf28b453722"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0861dae3d6e5085d10c26cf28b453722">fv_solver</a></td></tr>
+<tr class="separator:a0861dae3d6e5085d10c26cf28b453722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaf120135f5d84a95c3223e9feaab85" id="r_acdaf120135f5d84a95c3223e9feaab85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdaf120135f5d84a95c3223e9feaab85">limiter</a></td></tr>
+<tr class="separator:acdaf120135f5d84a95c3223e9feaab85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf11c6ceec8c88e665eee645bf5994b1" id="r_adf11c6ceec8c88e665eee645bf5994b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf11c6ceec8c88e665eee645bf5994b1">min_end_time</a></td></tr>
+<tr class="separator:adf11c6ceec8c88e665eee645bf5994b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4739b968a001efec0494b1984f7d55f6" id="r_a4739b968a001efec0494b1984f7d55f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4739b968a001efec0494b1984f7d55f6">max_end_time</a></td></tr>
+<tr class="separator:a4739b968a001efec0494b1984f7d55f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f9d09410c803b264f2a93d9820d8a5" id="r_a26f9d09410c803b264f2a93d9820d8a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26f9d09410c803b264f2a93d9820d8a5">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a26f9d09410c803b264f2a93d9820d8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d2356e456a7eab5fb3a6e7430049a8" id="r_ae0d2356e456a7eab5fb3a6e7430049a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0d2356e456a7eab5fb3a6e7430049a8">time_in_between_plots</a></td></tr>
+<tr class="separator:ae0d2356e456a7eab5fb3a6e7430049a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f8836dc06cc494fc6fe2e686f20270" id="r_a20f8836dc06cc494fc6fe2e686f20270"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20f8836dc06cc494fc6fe2e686f20270">periodic_BC</a></td></tr>
+<tr class="separator:a20f8836dc06cc494fc6fe2e686f20270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b094a551d226546916941df2ab10da" id="r_a14b094a551d226546916941df2ab10da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14b094a551d226546916941df2ab10da">make_clean_first</a></td></tr>
+<tr class="separator:a14b094a551d226546916941df2ab10da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a7f55132f923d97eb86cd668617145494" name="a7f55132f923d97eb86cd668617145494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f55132f923d97eb86cd668617145494">&#9670;&#160;</a></span>aderdg_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.aderdg_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>        name=<span class="stringliteral">&quot;ADERDGSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>        order=order,</div>
+<div class="line"><span class="lineno">    4</span>        unknowns=unknowns,</div>
+<div class="line"><span class="lineno">    5</span>        auxiliary_variables=auxiliary,</div>
+<div class="line"><span class="lineno">    6</span>        min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>        max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>        time_step_relaxation=CFL,</div>
+<div class="line"><span class="lineno">    9</span> </div>
+<div class="line"><span class="lineno">   10</span>    )</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00143">143</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a71a467b49d3d2c60df94949ccb3bcfa5" name="a71a467b49d3d2c60df94949ccb3bcfa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a467b49d3d2c60df94949ccb3bcfa5">&#9670;&#160;</a></span>adjust_solution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.adjust_solution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  f<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  constexpr double pZero = {pZero};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  constexpr double Gamma = {Gamma};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  const double irho = Q[0] &gt; 0.0 ? 1.0 / Q[0] : 0.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  const double p = (Gamma - 1.0) * (Q[3] - 0.5 * irho * (Q[1]*Q[1]+Q[2]*Q[2]));</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  if (tarch::la::smaller(p, pZero)) {{</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">    Q[0] = 0.0;</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    Q[1] = 0.0;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">    Q[2] = 0.0;</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">    Q[3] = 0.0;</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  }}</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00096">96</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a125928339ac00355f964ffb58cdac157" name="a125928339ac00355f964ffb58cdac157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125928339ac00355f964ffb58cdac157">&#9670;&#160;</a></span>auxiliary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict posteriori-limiting-euler-shock.auxiliary = {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00028">28</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a2471443931f067c720d280f03c90224d" name="a2471443931f067c720d280f03c90224d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2471443931f067c720d280f03c90224d">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  f<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  constexpr double OriginalShockPosition = {OriginalShockPosition};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  constexpr double Gamma = {Gamma};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  const double p = (x[0] &lt; -OriginalShockPosition &amp;&amp; x[1] &lt; -OriginalShockPosition) ? 0.1 : 1.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  Qoutside[0] = (x[0] &lt; -OriginalShockPosition &amp;&amp; x[1] &lt; -OriginalShockPosition) ? 0.125 : 1.0;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  Qoutside[1] = 0.0;</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  Qoutside[2] = 0.0;</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">  Qoutside[3] = p / (Gamma - 1.0);</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00051">51</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a808eb1528e767b7c57dab4c79a382bd0" name="a808eb1528e767b7c57dab4c79a382bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808eb1528e767b7c57dab4c79a382bd0">&#9670;&#160;</a></span>build_modes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict posteriori-limiting-euler-shock.build_modes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;Release&quot;</span>: peano4.output.CompileMode.Release,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;Debug&quot;</span>: peano4.output.CompileMode.Debug,</div>
+<div class="line"><span class="lineno">    4</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00014">14</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="acfb24ebe4157147520fd8e44b532f192" name="acfb24ebe4157147520fd8e44b532f192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb24ebe4157147520fd8e44b532f192">&#9670;&#160;</a></span>CFL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.CFL = 0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00026">26</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="ad69e977c6e2df0b84eecdc6e34cfc970" name="ad69e977c6e2df0b84eecdc6e34cfc970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69e977c6e2df0b84eecdc6e34cfc970">&#9670;&#160;</a></span>curr_build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str posteriori-limiting-euler-shock.curr_build_mode = &quot;Release&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00018">18</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a88f7d8848b4bc144e74dd6b724d85513" name="a88f7d8848b4bc144e74dd6b724d85513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f7d8848b4bc144e74dd6b724d85513">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.dimensions = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00020">20</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a08010f51610e07e4c84987960894cea9" name="a08010f51610e07e4c84987960894cea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08010f51610e07e4c84987960894cea9">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.end_time = 2.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00025">25</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a26f9d09410c803b264f2a93d9820d8a5" name="a26f9d09410c803b264f2a93d9820d8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f9d09410c803b264f2a93d9820d8a5">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00200">200</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a3c3da73c7b71da49a5787b9aec716825" name="a3c3da73c7b71da49a5787b9aec716825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3da73c7b71da49a5787b9aec716825">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  f<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  constexpr double Gamma = {Gamma};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  constexpr double pZero = {pZero};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  const double irho = Q[0] &gt; 0.0 ? 1.0 / Q[0] : 0.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  const double p = (Gamma - 1.0) * (Q[3] - 0.5 * irho * (Q[1]*Q[1]+Q[2]*Q[2]));</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  if (tarch::la::greater(p, pZero)) {{</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">    F[0] = Q[normal + 1];</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    F[1] = Q[normal + 1] * Q[1] * irho;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">    F[2] = Q[normal + 1] * Q[2] * irho;</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">    F[3] = Q[normal + 1] * irho * (Q[3] + p);</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">    F[normal+1] += p;</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">  }} else {{</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">    F[0] = 0.0;</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">    F[1] = 0.0;</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral">    F[2] = 0.0;</span></div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">    F[3] = 0.0;</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">  }}</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00062">62</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a0861dae3d6e5085d10c26cf28b453722" name="a0861dae3d6e5085d10c26cf28b453722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0861dae3d6e5085d10c26cf28b453722">&#9670;&#160;</a></span>fv_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.fv_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>        name=<span class="stringliteral">&quot;FVSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>        patch_size=2 * order + 1,</div>
+<div class="line"><span class="lineno">    4</span>        unknowns=unknowns,</div>
+<div class="line"><span class="lineno">    5</span>        auxiliary_variables=auxiliary,</div>
+<div class="line"><span class="lineno">    6</span>        min_volume_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>        max_volume_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>        time_step_relaxation=CFL,</div>
+<div class="line"><span class="lineno">    9</span>    )</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d1/de3/classexahype2_1_1solvers_1_1fv_1_1godunov_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.fv.godunov.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/de2/fv_2godunov_2GlobalAdaptiveTimeStep_8py_source.html#l00011">GlobalAdaptiveTimeStep.py:11</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00162">162</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a040e6657c745e03cc928c55ec8a19f01" name="a040e6657c745e03cc928c55ec8a19f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040e6657c745e03cc928c55ec8a19f01">&#9670;&#160;</a></span>Gamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.Gamma = 1.4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00036">36</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="aef81d7aa8f04f4939c0b65547861ba52" name="aef81d7aa8f04f4939c0b65547861ba52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef81d7aa8f04f4939c0b65547861ba52">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  f<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  constexpr double OriginalShockPosition = {OriginalShockPosition};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  constexpr double Gamma = {Gamma};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  const double p = (x[0] &lt; -OriginalShockPosition &amp;&amp; x[1] &lt; -OriginalShockPosition) ? 0.1 : 1.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral">  Q[0] = (x[0] &lt; -OriginalShockPosition &amp;&amp; x[1] &lt; -OriginalShockPosition) ? 0.125 : 1.0;</span></div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  Q[1] = 0.0;</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">  Q[2] = 0.0;</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">  Q[3] = p / (Gamma - 1.0);</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00040">40</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a450410a025f0df86c649108939d9d0f5" name="a450410a025f0df86c649108939d9d0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450410a025f0df86c649108939d9d0f5">&#9670;&#160;</a></span>isPhysicallyAdmissible</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str posteriori-limiting-euler-shock.isPhysicallyAdmissible = &quot;return true;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00110">110</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="acdaf120135f5d84a95c3223e9feaab85" name="acdaf120135f5d84a95c3223e9feaab85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdaf120135f5d84a95c3223e9feaab85">&#9670;&#160;</a></span>limiter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.limiter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting</a>(</div>
+<div class="line"><span class="lineno">    2</span>        name=<span class="stringliteral">&quot;LimitingSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>        regular_solver=aderdg_solver,</div>
+<div class="line"><span class="lineno">    4</span>        limiting_solver=fv_solver,</div>
+<div class="line"><span class="lineno">    5</span>        number_of_dmp_observables=len(unknowns),</div>
+<div class="line"><span class="lineno">    6</span>        dmp_relaxation_parameter=0.01,  <span class="comment"># 0.02 works for depth 2, 0.01 works for depth 3</span></div>
+<div class="line"><span class="lineno">    7</span>        dmp_differences_scaling=0.03,  <span class="comment"># 0.04 works for depth 2, 0.02 works for depth 3</span></div>
+<div class="line"><span class="lineno">    8</span>        physical_admissibility_criterion=isPhysicallyAdmissible,</div>
+<div class="line"><span class="lineno">    9</span>    )</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting_html"><div class="ttname"><a href="../../db/da6/classexahype2_1_1solvers_1_1limiting_1_1PosterioriLimiting_1_1PosterioriLimiting.html">exahype2.solvers.limiting.PosterioriLimiting.PosterioriLimiting</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d03/PosterioriLimiting_8py_source.html#l00021">PosterioriLimiting.py:21</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00181">181</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a14b094a551d226546916941df2ab10da" name="a14b094a551d226546916941df2ab10da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b094a551d226546916941df2ab10da">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00209">209</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="aaf3321c665354ed8c25a4ac32e966a7e" name="aaf3321c665354ed8c25a4ac32e966a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3321c665354ed8c25a4ac32e966a7e">&#9670;&#160;</a></span>max_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.max_depth = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00022">22</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="ad42b56a447a2655e22884f62104e9dea" name="ad42b56a447a2655e22884f62104e9dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42b56a447a2655e22884f62104e9dea">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00155">155</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a4739b968a001efec0494b1984f7d55f6" name="a4739b968a001efec0494b1984f7d55f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4739b968a001efec0494b1984f7d55f6">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00199">199</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a37cb6ca717ab762b015c70dee3c83cc5" name="a37cb6ca717ab762b015c70dee3c83cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37cb6ca717ab762b015c70dee3c83cc5">&#9670;&#160;</a></span>max_eval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str posteriori-limiting-euler-shock.max_eval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  f<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">    2</span><span class="stringliteral">  constexpr double Gamma = {Gamma};</span></div>
+<div class="line"><span class="lineno">    3</span><span class="stringliteral">  constexpr double pZero = {pZero};</span></div>
+<div class="line"><span class="lineno">    4</span><span class="stringliteral">  const double irho = Q[0] &gt; 0.0 ? 1.0 / Q[0] : 0.0;</span></div>
+<div class="line"><span class="lineno">    5</span><span class="stringliteral">  const double p = (Gamma - 1.0) * (Q[3] - 0.5 * irho*(Q[1]*Q[1]+Q[2]*Q[2]));</span></div>
+<div class="line"><span class="lineno">    6</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">    7</span><span class="stringliteral">  if (tarch::la::greater(p, pZero)) {{</span></div>
+<div class="line"><span class="lineno">    8</span><span class="stringliteral">    const double c = std::sqrt(Gamma * p * irho);</span></div>
+<div class="line"><span class="lineno">    9</span><span class="stringliteral">    const double un = Q[normal + 1] * irho;</span></div>
+<div class="line"><span class="lineno">   10</span><span class="stringliteral">    return std::fmax(std::fabs(un - c), std::fabs(un + c));</span></div>
+<div class="line"><span class="lineno">   11</span><span class="stringliteral">  }}</span></div>
+<div class="line"><span class="lineno">   12</span><span class="stringliteral">  return 0.0;</span></div>
+<div class="line"><span class="lineno">   13</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00082">82</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a46676ec5e4fa81f6a9a944fbb4a62eb7" name="a46676ec5e4fa81f6a9a944fbb4a62eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46676ec5e4fa81f6a9a944fbb4a62eb7">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.max_h = 1.1 * min(<a class="el" href="#a4327853a1ed2c983a007296846de300c">size</a>) / (3.0**<a class="el" href="#a5ed9aecb44024ad8ac67d24215765c3e">min_level</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00033">33</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="adf11c6ceec8c88e665eee645bf5994b1" name="adf11c6ceec8c88e665eee645bf5994b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf11c6ceec8c88e665eee645bf5994b1">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00198">198</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a65ffe60281fc1d8e228d445539f9a51e" name="a65ffe60281fc1d8e228d445539f9a51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ffe60281fc1d8e228d445539f9a51e">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.min_h = <a class="el" href="#a46676ec5e4fa81f6a9a944fbb4a62eb7">max_h</a> / (3.0**<a class="el" href="#aaf3321c665354ed8c25a4ac32e966a7e">max_depth</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00034">34</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a5ed9aecb44024ad8ac67d24215765c3e" name="a5ed9aecb44024ad8ac67d24215765c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed9aecb44024ad8ac67d24215765c3e">&#9670;&#160;</a></span>min_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.min_level = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00021">21</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a563a733a1d9580983046cf9055d3a6e7" name="a563a733a1d9580983046cf9055d3a6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563a733a1d9580983046cf9055d3a6e7">&#9670;&#160;</a></span>ndof</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.ndof = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00023">23</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a9658afda4d0fc521e5e021f92e35e31d" name="a9658afda4d0fc521e5e021f92e35e31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9658afda4d0fc521e5e021f92e35e31d">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.offset = [-1.0, -1.0, -1.0][0:<a class="el" href="#a88f7d8848b4bc144e74dd6b724d85513">dimensions</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00031">31</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="ae835dbc116659dc3040c70cf8bbb24d7" name="ae835dbc116659dc3040c70cf8bbb24d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae835dbc116659dc3040c70cf8bbb24d7">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.order = <a class="el" href="#a563a733a1d9580983046cf9055d3a6e7">ndof</a> - 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00024">24</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a0919a2030fd413e7dbf18cf1da4c023b" name="a0919a2030fd413e7dbf18cf1da4c023b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0919a2030fd413e7dbf18cf1da4c023b">&#9670;&#160;</a></span>OriginalShockPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.OriginalShockPosition = 0.111</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00037">37</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a20f8836dc06cc494fc6fe2e686f20270" name="a20f8836dc06cc494fc6fe2e686f20270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f8836dc06cc494fc6fe2e686f20270">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00202">202</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a860ca92b73bbcb1a003eacf4a5e10891" name="a860ca92b73bbcb1a003eacf4a5e10891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860ca92b73bbcb1a003eacf4a5e10891">&#9670;&#160;</a></span>plot_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float posteriori-limiting-euler-shock.plot_interval = 0.00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00029">29</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a2d163d37de01e81fa1d0dc845a39dded" name="a2d163d37de01e81fa1d0dc845a39dded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d163d37de01e81fa1d0dc845a39dded">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    [<span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;exahype2&quot;</span>, <span class="stringliteral">&quot;aderdg&quot;</span>], <span class="stringliteral">&quot;.&quot;</span>, executable=<span class="stringliteral">&quot;ADERDG-Limiting&quot;</span></div>
+<div class="line"><span class="lineno">    3</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project.Project</a></div><div class="ttdoc">ExaHyPE 2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dcd/python_2exahype2_2Project_8py_source.html#l00014">Project.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00006">6</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a86dc80a37c8cc7a725fe71ae5cdb9f7d" name="a86dc80a37c8cc7a725fe71ae5cdb9f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86dc80a37c8cc7a725fe71ae5cdb9f7d">&#9670;&#160;</a></span>pZero</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.pZero = 1e-4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00038">38</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a4327853a1ed2c983a007296846de300c" name="a4327853a1ed2c983a007296846de300c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4327853a1ed2c983a007296846de300c">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.size = [2.0, 2.0, 2.0][0:<a class="el" href="#a88f7d8848b4bc144e74dd6b724d85513">dimensions</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00032">32</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="ae0d2356e456a7eab5fb3a6e7430049a8" name="ae0d2356e456a7eab5fb3a6e7430049a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d2356e456a7eab5fb3a6e7430049a8">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">posteriori-limiting-euler-shock.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00201">201</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a3f55325c0e323dc9b97d411b1656ab97" name="a3f55325c0e323dc9b97d411b1656ab97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f55325c0e323dc9b97d411b1656ab97">&#9670;&#160;</a></span>unknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict posteriori-limiting-euler-shock.unknowns = {&quot;rho&quot;: 1, &quot;rhoU&quot;: 1, &quot;rhoV&quot;: 1, &quot;rhoE&quot;: 1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00027">27</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="aba6e2989757ed4d0ba52ed6a3d7e8eeb" name="aba6e2989757ed4d0ba52ed6a3d7e8eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6e2989757ed4d0ba52ed6a3d7e8eeb">&#9670;&#160;</a></span>use_aderdg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> posteriori-limiting-euler-shock.use_aderdg = True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00010">10</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a4810401dc6476fe6d8ec139f7b626031" name="a4810401dc6476fe6d8ec139f7b626031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4810401dc6476fe6d8ec139f7b626031">&#9670;&#160;</a></span>use_fv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> posteriori-limiting-euler-shock.use_fv = True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00011">11</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="aa10e133c5099e8ec1a3c9f9d0e2b9b5b" name="aa10e133c5099e8ec1a3c9f9d0e2b9b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10e133c5099e8ec1a3c9f9d0e2b9b5b">&#9670;&#160;</a></span>use_limiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> posteriori-limiting-euler-shock.use_limiting = <a class="el" href="#aba6e2989757ed4d0ba52ed6a3d7e8eeb">use_aderdg</a> and <a class="el" href="#a4810401dc6476fe6d8ec139f7b626031">use_fv</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00012">12</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+<a id="a31084119ddeddb68e84ff5205bc9059e" name="a31084119ddeddb68e84ff5205bc9059e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31084119ddeddb68e84ff5205bc9059e">&#9670;&#160;</a></span>with_limiting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> posteriori-limiting-euler-shock.with_limiting = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html#l00013">13</a> of file <a class="el" href="../../d9/d00/posteriori-limiting-euler-shock_8py_source.html">posteriori-limiting-euler-shock.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/d5f/namespaceposteriori-limiting-euler-shock.html">posteriori-limiting-euler-shock</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:30 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

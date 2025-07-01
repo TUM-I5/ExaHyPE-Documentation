@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/de4/namespacepml.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">pml Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae0a7c95d428689998d333c20c07f8287" id="r_ae0a7c95d428689998d333c20c07f8287"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a7c95d428689998d333c20c07f8287">available_scenarios</a></td></tr>
+<tr class="separator:ae0a7c95d428689998d333c20c07f8287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867b359b169835f5ccd1d1cfc22ec283" id="r_a867b359b169835f5ccd1d1cfc22ec283"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a867b359b169835f5ccd1d1cfc22ec283">scenario</a> = &quot;LOH1&quot;</td></tr>
+<tr class="separator:a867b359b169835f5ccd1d1cfc22ec283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375999fc23587c9af0ba8aafb43c908a" id="r_a375999fc23587c9af0ba8aafb43c908a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a375999fc23587c9af0ba8aafb43c908a">scenario_string</a> = scenario.lower()</td></tr>
+<tr class="separator:a375999fc23587c9af0ba8aafb43c908a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d9732840e6921097fe334ab54604af" id="r_aa1d9732840e6921097fe334ab54604af"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1d9732840e6921097fe334ab54604af">my_scenario</a> = <a class="el" href="#ae0a7c95d428689998d333c20c07f8287">available_scenarios</a>[<a class="el" href="#a867b359b169835f5ccd1d1cfc22ec283">scenario</a>]</td></tr>
+<tr class="separator:aa1d9732840e6921097fe334ab54604af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1a1a8c9d45486a763a51fc1da3c011" id="r_a0f1a1a8c9d45486a763a51fc1da3c011"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1a1a8c9d45486a763a51fc1da3c011">unknowns</a> = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;pml&quot;: 27}</td></tr>
+<tr class="separator:a0f1a1a8c9d45486a763a51fc1da3c011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc1be07a251382c53366499d180b6d1" id="r_a9dc1be07a251382c53366499d180b6d1"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc1be07a251382c53366499d180b6d1">auxiliary_variables</a></td></tr>
+<tr class="separator:a9dc1be07a251382c53366499d180b6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8a9ad21183c7c7258a4c2fa19a03a6" id="r_a0b8a9ad21183c7c7258a4c2fa19a03a6"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8a9ad21183c7c7258a4c2fa19a03a6">offset</a> = my_scenario.domain_offset</td></tr>
+<tr class="separator:a0b8a9ad21183c7c7258a4c2fa19a03a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94335c81a2e2dce0dd4b9f607d040a5" id="r_ad94335c81a2e2dce0dd4b9f607d040a5"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad94335c81a2e2dce0dd4b9f607d040a5">size</a> = my_scenario.domain_size</td></tr>
+<tr class="separator:ad94335c81a2e2dce0dd4b9f607d040a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6d3d1cff2fd572b82969d1f6ff02af" id="r_aea6d3d1cff2fd572b82969d1f6ff02af"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea6d3d1cff2fd572b82969d1f6ff02af">end_time</a> = my_scenario.end_time</td></tr>
+<tr class="separator:aea6d3d1cff2fd572b82969d1f6ff02af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2a8e3da968032740b8dd15b1c3507c" id="r_aaa2a8e3da968032740b8dd15b1c3507c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2a8e3da968032740b8dd15b1c3507c">plot_dt</a> = 0.0</td></tr>
+<tr class="separator:aaa2a8e3da968032740b8dd15b1c3507c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6045be30939e7633acb54a89304e6c" id="r_a6e6045be30939e7633acb54a89304e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6045be30939e7633acb54a89304e6c">order</a> = 5</td></tr>
+<tr class="separator:a6e6045be30939e7633acb54a89304e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5ab4e37f3c81124fd3c9b3a0105a23" id="r_a5a5ab4e37f3c81124fd3c9b3a0105a23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">min_level</a> = 3</td></tr>
+<tr class="separator:a5a5ab4e37f3c81124fd3c9b3a0105a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239feb682ccf4c21e30d74a961782a4b" id="r_a239feb682ccf4c21e30d74a961782a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a239feb682ccf4c21e30d74a961782a4b">max_depth</a> = 0</td></tr>
+<tr class="separator:a239feb682ccf4c21e30d74a961782a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae843559f322afc16b96c1d8ee510a33" id="r_aae843559f322afc16b96c1d8ee510a33"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae843559f322afc16b96c1d8ee510a33">max_h</a> = 1.1 * min(<a class="el" href="#ad94335c81a2e2dce0dd4b9f607d040a5">size</a>) / (3.0**<a class="el" href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">min_level</a>)</td></tr>
+<tr class="separator:aae843559f322afc16b96c1d8ee510a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15880f7bcd485a1aadb7921e0067013f" id="r_a15880f7bcd485a1aadb7921e0067013f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15880f7bcd485a1aadb7921e0067013f">min_h</a> = <a class="el" href="#aae843559f322afc16b96c1d8ee510a33">max_h</a> / (3.0**<a class="el" href="#a239feb682ccf4c21e30d74a961782a4b">max_depth</a>)</td></tr>
+<tr class="separator:a15880f7bcd485a1aadb7921e0067013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137f3bfa883cd8928abec9b314eac759" id="r_a137f3bfa883cd8928abec9b314eac759"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137f3bfa883cd8928abec9b314eac759">precision</a> = &quot;fp64&quot;</td></tr>
+<tr class="separator:a137f3bfa883cd8928abec9b314eac759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfed0b442e20904e9b95a204d5942f4" id="r_a6cfed0b442e20904e9b95a204d5942f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cfed0b442e20904e9b95a204d5942f4">use_tracers</a> = True</td></tr>
+<tr class="separator:a6cfed0b442e20904e9b95a204d5942f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2bf7cb2c6add2a63fd9f2e4bad4944" id="r_a9f2bf7cb2c6add2a63fd9f2e4bad4944"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f2bf7cb2c6add2a63fd9f2e4bad4944">theSolver</a></td></tr>
+<tr class="separator:a9f2bf7cb2c6add2a63fd9f2e4bad4944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dfa3fa700110de74b5dc1cb8cc83bd" id="r_ac0dfa3fa700110de74b5dc1cb8cc83bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0dfa3fa700110de74b5dc1cb8cc83bd">is_linear</a></td></tr>
+<tr class="separator:ac0dfa3fa700110de74b5dc1cb8cc83bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ec7376e234b443099a0bfeb5d85b4c" id="r_a43ec7376e234b443099a0bfeb5d85b4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43ec7376e234b443099a0bfeb5d85b4c">polynomials</a></td></tr>
+<tr class="separator:a43ec7376e234b443099a0bfeb5d85b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4840d6e3145bcbe33505bafa0e9c8d8" id="r_af4840d6e3145bcbe33505bafa0e9c8d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4840d6e3145bcbe33505bafa0e9c8d8">initialise_patches</a></td></tr>
+<tr class="separator:af4840d6e3145bcbe33505bafa0e9c8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebb76b8e366917a3e6c8ca86ca6926c" id="r_a7ebb76b8e366917a3e6c8ca86ca6926c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebb76b8e366917a3e6c8ca86ca6926c">initial_conditions</a></td></tr>
+<tr class="separator:a7ebb76b8e366917a3e6c8ca86ca6926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d7c2da81ab4ebe9a80c2bc74597bd3" id="r_a23d7c2da81ab4ebe9a80c2bc74597bd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d7c2da81ab4ebe9a80c2bc74597bd3">boundary_conditions</a></td></tr>
+<tr class="separator:a23d7c2da81ab4ebe9a80c2bc74597bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0948ccfbbd774251f5b7878262a95f54" id="r_a0948ccfbbd774251f5b7878262a95f54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0948ccfbbd774251f5b7878262a95f54">max_eigenvalue</a></td></tr>
+<tr class="separator:a0948ccfbbd774251f5b7878262a95f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd5e21075f306081531ae70b3102d8c" id="r_adbd5e21075f306081531ae70b3102d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbd5e21075f306081531ae70b3102d8c">refinement_criterion</a></td></tr>
+<tr class="separator:adbd5e21075f306081531ae70b3102d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527461e4bce33d3bd109de18086403a1" id="r_a527461e4bce33d3bd109de18086403a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a527461e4bce33d3bd109de18086403a1">flux</a></td></tr>
+<tr class="separator:a527461e4bce33d3bd109de18086403a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c19ee9ef7962bbe1d826f24daac81a4" id="r_a1c19ee9ef7962bbe1d826f24daac81a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c19ee9ef7962bbe1d826f24daac81a4">ncp</a></td></tr>
+<tr class="separator:a1c19ee9ef7962bbe1d826f24daac81a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66fb00ef41e3c0c2fec1fdba6c8615e" id="r_aa66fb00ef41e3c0c2fec1fdba6c8615e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa66fb00ef41e3c0c2fec1fdba6c8615e">material_parameters</a></td></tr>
+<tr class="separator:aa66fb00ef41e3c0c2fec1fdba6c8615e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f95c5d470ebaeb47957ab53a6a43dd8" id="r_a2f95c5d470ebaeb47957ab53a6a43dd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f95c5d470ebaeb47957ab53a6a43dd8">riemann_solver</a></td></tr>
+<tr class="separator:a2f95c5d470ebaeb47957ab53a6a43dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3338bced80a8f64a037199ef8cd6e5" id="r_a0f3338bced80a8f64a037199ef8cd6e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f3338bced80a8f64a037199ef8cd6e5">source_term</a></td></tr>
+<tr class="separator:a0f3338bced80a8f64a037199ef8cd6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c85ed92dd00d7aba00646148dca245" id="r_a45c85ed92dd00d7aba00646148dca245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45c85ed92dd00d7aba00646148dca245">number_of_point_sources</a></td></tr>
+<tr class="separator:a45c85ed92dd00d7aba00646148dca245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fada5d94fa40911b0d054cbfad43f2e" id="r_a8fada5d94fa40911b0d054cbfad43f2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fada5d94fa40911b0d054cbfad43f2e">point_source</a></td></tr>
+<tr class="separator:a8fada5d94fa40911b0d054cbfad43f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab525c0df8c298376c912589614e248d4" id="r_ab525c0df8c298376c912589614e248d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab525c0df8c298376c912589614e248d4">init_point_source_location</a></td></tr>
+<tr class="separator:ab525c0df8c298376c912589614e248d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7ea652cea43f017ee300a288b5b45e" id="r_a0d7ea652cea43f017ee300a288b5b45e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7ea652cea43f017ee300a288b5b45e">project</a> = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;pml&quot;, executable=<a class="el" href="#a867b359b169835f5ccd1d1cfc22ec283">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#a6e6045be30939e7633acb54a89304e6c">order</a>)+&quot;_pr_&quot;+<a class="el" href="#a137f3bfa883cd8928abec9b314eac759">precision</a>)</td></tr>
+<tr class="separator:a0d7ea652cea43f017ee300a288b5b45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70005ed607ffe72c6b44f67e44a5dcc" id="r_ab70005ed607ffe72c6b44f67e44a5dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab70005ed607ffe72c6b44f67e44a5dcc">dimensions</a></td></tr>
+<tr class="separator:ab70005ed607ffe72c6b44f67e44a5dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6c67b9b55e3c119cb652e0a72d6342" id="r_a7e6c67b9b55e3c119cb652e0a72d6342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e6c67b9b55e3c119cb652e0a72d6342">min_end_time</a></td></tr>
+<tr class="separator:a7e6c67b9b55e3c119cb652e0a72d6342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25996d3b25cd63b78d74b64f82216367" id="r_a25996d3b25cd63b78d74b64f82216367"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25996d3b25cd63b78d74b64f82216367">max_end_time</a></td></tr>
+<tr class="separator:a25996d3b25cd63b78d74b64f82216367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf514cb55f55c19e94d1cb3c6e8cbea6" id="r_acf514cb55f55c19e94d1cb3c6e8cbea6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf514cb55f55c19e94d1cb3c6e8cbea6">first_plot_time_stamp</a></td></tr>
+<tr class="separator:acf514cb55f55c19e94d1cb3c6e8cbea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ce7742d2d64cf69f2101340ec3423d" id="r_af8ce7742d2d64cf69f2101340ec3423d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8ce7742d2d64cf69f2101340ec3423d">time_in_between_plots</a></td></tr>
+<tr class="separator:af8ce7742d2d64cf69f2101340ec3423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab844d76b8dc8d64caef71ce312c76bbf" id="r_ab844d76b8dc8d64caef71ce312c76bbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab844d76b8dc8d64caef71ce312c76bbf">periodic_BC</a></td></tr>
+<tr class="separator:ab844d76b8dc8d64caef71ce312c76bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4398f8a48835a0c4a13ce5db2b9fb7" id="r_adb4398f8a48835a0c4a13ce5db2b9fb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb4398f8a48835a0c4a13ce5db2b9fb7">peano4_project</a> = project.generate_Peano4_project(verbose=False)</td></tr>
+<tr class="separator:adb4398f8a48835a0c4a13ce5db2b9fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e79770cbd73606826f675fb82747b25" id="r_a7e79770cbd73606826f675fb82747b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e79770cbd73606826f675fb82747b25">make_clean_first</a></td></tr>
+<tr class="separator:a7e79770cbd73606826f675fb82747b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9dc1be07a251382c53366499d180b6d1" name="a9dc1be07a251382c53366499d180b6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc1be07a251382c53366499d180b6d1">&#9670;&#160;</a></span>auxiliary_variables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml.auxiliary_variables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;rho&quot;</span>: 1, <span class="stringliteral">&quot;cp&quot;</span>: 1, <span class="stringliteral">&quot;cs&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;dmp_pml&quot;</span>: 3, <span class="stringliteral">&quot;jacobian&quot;</span>: 1,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;metric_derivative&quot;</span>: 9,</div>
+<div class="line"><span class="lineno">    5</span>    <span class="stringliteral">&quot;curve_grid&quot;</span>: 3,</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00021">21</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ae0a7c95d428689998d333c20c07f8287" name="ae0a7c95d428689998d333c20c07f8287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a7c95d428689998d333c20c07f8287">&#9670;&#160;</a></span>available_scenarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml.available_scenarios</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;LOH1&quot;</span>: <a class="code hl_class" href="../../d1/df1/classScenario_1_1LOH1_1_1LOH1.html">Scenario.LOH1</a>(),</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&quot;Zugspitze&quot;</span>: <a class="code hl_class" href="../../de/dce/classScenario_1_1Zugspitze_1_1Zugspitze.html">Scenario.Zugspitze</a>()</div>
+<div class="line"><span class="lineno">    4</span>}</div>
+<div class="ttc" id="aclassScenario_1_1LOH1_1_1LOH1_html"><div class="ttname"><a href="../../d1/df1/classScenario_1_1LOH1_1_1LOH1.html">Scenario.LOH1.LOH1</a></div><div class="ttdoc">Part of a series of benchmarks by the SeISmic MOdeling Web INterfacE (Sismowine)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d58/LOH1_8py_source.html#l00007">LOH1.py:7</a></div></div>
+<div class="ttc" id="aclassScenario_1_1Zugspitze_1_1Zugspitze_html"><div class="ttname"><a href="../../de/dce/classScenario_1_1Zugspitze_1_1Zugspitze.html">Scenario.Zugspitze.Zugspitze</a></div><div class="ttdoc">Benchmark representing a rectangular area of 80x80km around the Zugspitze.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d2f/Zugspitze_8py_source.html#l00007">Zugspitze.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00010">10</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a23d7c2da81ab4ebe9a80c2bc74597bd3" name="a23d7c2da81ab4ebe9a80c2bc74597bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d7c2da81ab4ebe9a80c2bc74597bd3">&#9670;&#160;</a></span>boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.boundary_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00065">65</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ab70005ed607ffe72c6b44f67e44a5dcc" name="ab70005ed607ffe72c6b44f67e44a5dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70005ed607ffe72c6b44f67e44a5dcc">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00101">101</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="aea6d3d1cff2fd572b82969d1f6ff02af" name="aea6d3d1cff2fd572b82969d1f6ff02af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6d3d1cff2fd572b82969d1f6ff02af">&#9670;&#160;</a></span>end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml.end_time = my_scenario.end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00031">31</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="acf514cb55f55c19e94d1cb3c6e8cbea6" name="acf514cb55f55c19e94d1cb3c6e8cbea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf514cb55f55c19e94d1cb3c6e8cbea6">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00106">106</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a527461e4bce33d3bd109de18086403a1" name="a527461e4bce33d3bd109de18086403a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527461e4bce33d3bd109de18086403a1">&#9670;&#160;</a></span>flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00068">68</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ab525c0df8c298376c912589614e248d4" name="ab525c0df8c298376c912589614e248d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab525c0df8c298376c912589614e248d4">&#9670;&#160;</a></span>init_point_source_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.init_point_source_location</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00075">75</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a7ebb76b8e366917a3e6c8ca86ca6926c" name="a7ebb76b8e366917a3e6c8ca86ca6926c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebb76b8e366917a3e6c8ca86ca6926c">&#9670;&#160;</a></span>initial_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.initial_conditions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00064">64</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="af4840d6e3145bcbe33505bafa0e9c8d8" name="af4840d6e3145bcbe33505bafa0e9c8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4840d6e3145bcbe33505bafa0e9c8d8">&#9670;&#160;</a></span>initialise_patches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.initialise_patches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00059">59</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ac0dfa3fa700110de74b5dc1cb8cc83bd" name="ac0dfa3fa700110de74b5dc1cb8cc83bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0dfa3fa700110de74b5dc1cb8cc83bd">&#9670;&#160;</a></span>is_linear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.is_linear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00057">57</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e79770cbd73606826f675fb82747b25" name="a7e79770cbd73606826f675fb82747b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e79770cbd73606826f675fb82747b25">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00119">119</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="aa66fb00ef41e3c0c2fec1fdba6c8615e" name="aa66fb00ef41e3c0c2fec1fdba6c8615e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66fb00ef41e3c0c2fec1fdba6c8615e">&#9670;&#160;</a></span>material_parameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.material_parameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00070">70</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a239feb682ccf4c21e30d74a961782a4b" name="a239feb682ccf4c21e30d74a961782a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239feb682ccf4c21e30d74a961782a4b">&#9670;&#160;</a></span>max_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml.max_depth = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00037">37</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a0948ccfbbd774251f5b7878262a95f54" name="a0948ccfbbd774251f5b7878262a95f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0948ccfbbd774251f5b7878262a95f54">&#9670;&#160;</a></span>max_eigenvalue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.max_eigenvalue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00066">66</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a25996d3b25cd63b78d74b64f82216367" name="a25996d3b25cd63b78d74b64f82216367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25996d3b25cd63b78d74b64f82216367">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00105">105</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="aae843559f322afc16b96c1d8ee510a33" name="aae843559f322afc16b96c1d8ee510a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae843559f322afc16b96c1d8ee510a33">&#9670;&#160;</a></span>max_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml.max_h = 1.1 * min(<a class="el" href="#ad94335c81a2e2dce0dd4b9f607d040a5">size</a>) / (3.0**<a class="el" href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">min_level</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00038">38</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a7e6c67b9b55e3c119cb652e0a72d6342" name="a7e6c67b9b55e3c119cb652e0a72d6342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6c67b9b55e3c119cb652e0a72d6342">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00104">104</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a15880f7bcd485a1aadb7921e0067013f" name="a15880f7bcd485a1aadb7921e0067013f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15880f7bcd485a1aadb7921e0067013f">&#9670;&#160;</a></span>min_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml.min_h = <a class="el" href="#aae843559f322afc16b96c1d8ee510a33">max_h</a> / (3.0**<a class="el" href="#a239feb682ccf4c21e30d74a961782a4b">max_depth</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00039">39</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a5a5ab4e37f3c81124fd3c9b3a0105a23" name="a5a5ab4e37f3c81124fd3c9b3a0105a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">&#9670;&#160;</a></span>min_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml.min_level = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00036">36</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="aa1d9732840e6921097fe334ab54604af" name="aa1d9732840e6921097fe334ab54604af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d9732840e6921097fe334ab54604af">&#9670;&#160;</a></span>my_scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml.my_scenario = <a class="el" href="#ae0a7c95d428689998d333c20c07f8287">available_scenarios</a>[<a class="el" href="#a867b359b169835f5ccd1d1cfc22ec283">scenario</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00018">18</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a1c19ee9ef7962bbe1d826f24daac81a4" name="a1c19ee9ef7962bbe1d826f24daac81a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c19ee9ef7962bbe1d826f24daac81a4">&#9670;&#160;</a></span>ncp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.ncp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00069">69</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a45c85ed92dd00d7aba00646148dca245" name="a45c85ed92dd00d7aba00646148dca245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c85ed92dd00d7aba00646148dca245">&#9670;&#160;</a></span>number_of_point_sources</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.number_of_point_sources</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00073">73</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a0b8a9ad21183c7c7258a4c2fa19a03a6" name="a0b8a9ad21183c7c7258a4c2fa19a03a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8a9ad21183c7c7258a4c2fa19a03a6">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.offset = my_scenario.domain_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00028">28</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a6e6045be30939e7633acb54a89304e6c" name="a6e6045be30939e7633acb54a89304e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6045be30939e7633acb54a89304e6c">&#9670;&#160;</a></span>order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> pml.order = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00034">34</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="adb4398f8a48835a0c4a13ce5db2b9fb7" name="adb4398f8a48835a0c4a13ce5db2b9fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4398f8a48835a0c4a13ce5db2b9fb7">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.peano4_project = project.generate_Peano4_project(verbose=False)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00113">113</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ab844d76b8dc8d64caef71ce312c76bbf" name="ab844d76b8dc8d64caef71ce312c76bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab844d76b8dc8d64caef71ce312c76bbf">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00108">108</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="aaa2a8e3da968032740b8dd15b1c3507c" name="aaa2a8e3da968032740b8dd15b1c3507c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2a8e3da968032740b8dd15b1c3507c">&#9670;&#160;</a></span>plot_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pml.plot_dt = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00032">32</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a8fada5d94fa40911b0d054cbfad43f2e" name="a8fada5d94fa40911b0d054cbfad43f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fada5d94fa40911b0d054cbfad43f2e">&#9670;&#160;</a></span>point_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.point_source</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00074">74</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a43ec7376e234b443099a0bfeb5d85b4c" name="a43ec7376e234b443099a0bfeb5d85b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ec7376e234b443099a0bfeb5d85b4c">&#9670;&#160;</a></span>polynomials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.polynomials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00058">58</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a137f3bfa883cd8928abec9b314eac759" name="a137f3bfa883cd8928abec9b314eac759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137f3bfa883cd8928abec9b314eac759">&#9670;&#160;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.precision = &quot;fp64&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00041">41</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a0d7ea652cea43f017ee300a288b5b45e" name="a0d7ea652cea43f017ee300a288b5b45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7ea652cea43f017ee300a288b5b45e">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.project = <a class="el" href="../../dc/d48/classexahype2_1_1Project_1_1Project.html">exahype2.Project</a>([&quot;exahype2&quot;, &quot;elastic&quot;], &quot;pml&quot;, executable=<a class="el" href="#a867b359b169835f5ccd1d1cfc22ec283">scenario</a>+&quot;_l_&quot;+str(<a class="el" href="#a5a5ab4e37f3c81124fd3c9b3a0105a23">min_level</a>)+&quot;_o_&quot;+str(<a class="el" href="#a6e6045be30939e7633acb54a89304e6c">order</a>)+&quot;_pr_&quot;+<a class="el" href="#a137f3bfa883cd8928abec9b314eac759">precision</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00084">84</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="adbd5e21075f306081531ae70b3102d8c" name="adbd5e21075f306081531ae70b3102d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd5e21075f306081531ae70b3102d8c">&#9670;&#160;</a></span>refinement_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.refinement_criterion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00067">67</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a2f95c5d470ebaeb47957ab53a6a43dd8" name="a2f95c5d470ebaeb47957ab53a6a43dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f95c5d470ebaeb47957ab53a6a43dd8">&#9670;&#160;</a></span>riemann_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.riemann_solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00071">71</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a867b359b169835f5ccd1d1cfc22ec283" name="a867b359b169835f5ccd1d1cfc22ec283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867b359b169835f5ccd1d1cfc22ec283">&#9670;&#160;</a></span>scenario</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str pml.scenario = &quot;LOH1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00015">15</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a375999fc23587c9af0ba8aafb43c908a" name="a375999fc23587c9af0ba8aafb43c908a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375999fc23587c9af0ba8aafb43c908a">&#9670;&#160;</a></span>scenario_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str pml.scenario_string = scenario.lower()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00017">17</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="ad94335c81a2e2dce0dd4b9f607d040a5" name="ad94335c81a2e2dce0dd4b9f607d040a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94335c81a2e2dce0dd4b9f607d040a5">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.size = my_scenario.domain_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00029">29</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a0f3338bced80a8f64a037199ef8cd6e5" name="a0f3338bced80a8f64a037199ef8cd6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3338bced80a8f64a037199ef8cd6e5">&#9670;&#160;</a></span>source_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.source_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00072">72</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a9f2bf7cb2c6add2a63fd9f2e4bad4944" name="a9f2bf7cb2c6add2a63fd9f2e4bad4944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2bf7cb2c6add2a63fd9f2e4bad4944">&#9670;&#160;</a></span>theSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.theSolver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;ElasticSolver&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    order=order,</div>
+<div class="line"><span class="lineno">    4</span>    unknowns=unknowns,</div>
+<div class="line"><span class="lineno">    5</span>    auxiliary_variables=auxiliary_variables,</div>
+<div class="line"><span class="lineno">    6</span>    min_cell_h=min_h,</div>
+<div class="line"><span class="lineno">    7</span>    max_cell_h=max_h,</div>
+<div class="line"><span class="lineno">    8</span>    time_step_relaxation=0.9</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep_html"><div class="ttname"><a href="../../d0/db3/classexahype2_1_1solvers_1_1aderdg_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html">exahype2.solvers.aderdg.GlobalAdaptiveTimeStep.GlobalAdaptiveTimeStep</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/de3/aderdg_2GlobalAdaptiveTimeStep_8py_source.html#l00007">GlobalAdaptiveTimeStep.py:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00046">46</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="af8ce7742d2d64cf69f2101340ec3423d" name="af8ce7742d2d64cf69f2101340ec3423d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ce7742d2d64cf69f2101340ec3423d">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pml.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00107">107</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a0f1a1a8c9d45486a763a51fc1da3c011" name="a0f1a1a8c9d45486a763a51fc1da3c011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1a1a8c9d45486a763a51fc1da3c011">&#9670;&#160;</a></span>unknowns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict pml.unknowns = {&quot;v&quot;: 3, &quot;sigma&quot;: 6, &quot;pml&quot;: 27}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00020">20</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+<a id="a6cfed0b442e20904e9b95a204d5942f4" name="a6cfed0b442e20904e9b95a204d5942f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cfed0b442e20904e9b95a204d5942f4">&#9670;&#160;</a></span>use_tracers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> pml.use_tracers = True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d5c/pml_8py_source.html#l00042">42</a> of file <a class="el" href="../../d1/d5c/pml_8py_source.html">pml.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/de4/namespacepml.html">pml</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:29 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

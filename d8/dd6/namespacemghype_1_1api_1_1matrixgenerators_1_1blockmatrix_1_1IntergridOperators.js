@@ -1,0 +1,4 @@
+var namespacemghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators =
+[
+    [ "IntergridOperators", "dc/d76/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators_1_1IntergridOperators.html", "dc/d76/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperators_1_1IntergridOperators" ]
+];

@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d31/namespaceplot__load__distribution.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">plot_load_distribution Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2ee18f439a0fba0bed56ad8026ff5702" id="r_a2ee18f439a0fba0bed56ad8026ff5702"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee18f439a0fba0bed56ad8026ff5702">get_ranks_and_threads</a> (filename)</td></tr>
+<tr class="separator:a2ee18f439a0fba0bed56ad8026ff5702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8517d5ea7fc6032c90784ea9a718d89" id="r_ad8517d5ea7fc6032c90784ea9a718d89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8517d5ea7fc6032c90784ea9a718d89">parse_file</a> (filename, rank, verbose)</td></tr>
+<tr class="memdesc:ad8517d5ea7fc6032c90784ea9a718d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns tuple of (x_data,y_data_local,y_data_remote)  <br /></td></tr>
+<tr class="separator:ad8517d5ea7fc6032c90784ea9a718d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ec7c1799789c5ce8126fb0c77b2214" id="r_ad3ec7c1799789c5ce8126fb0c77b2214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ec7c1799789c5ce8126fb0c77b2214">flatten</a> (x_data, y_data)</td></tr>
+<tr class="memdesc:ad3ec7c1799789c5ce8126fb0c77b2214"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_data: [Float] Sequence of time stamps  <br /></td></tr>
+<tr class="separator:ad3ec7c1799789c5ce8126fb0c77b2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6586bf8629660e48f82158440f7a3f" id="r_a4d6586bf8629660e48f82158440f7a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6586bf8629660e48f82158440f7a3f">compute_sums</a> (x_data, y_data)</td></tr>
+<tr class="memdesc:a4d6586bf8629660e48f82158440f7a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">x_data: [Float] Sequence of time stamps  <br /></td></tr>
+<tr class="separator:a4d6586bf8629660e48f82158440f7a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9e19ed8fca7986fe21058eb42bc69c" id="r_a2e9e19ed8fca7986fe21058eb42bc69c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e9e19ed8fca7986fe21058eb42bc69c">remove_duplicates</a> (x_data, y_data)</td></tr>
+<tr class="separator:a2e9e19ed8fca7986fe21058eb42bc69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904d4f926e4f438860a226873bdf6776" id="r_a904d4f926e4f438860a226873bdf6776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a904d4f926e4f438860a226873bdf6776">plot_cells_per_rank</a> (filename, verbose, plot_remote_cells, sum_per_rank, show_optimum, plot_local_cells=<a class="el" href="#aa2f291b97b6af4a613171bbd85978141">True</a>)</td></tr>
+<tr class="separator:a904d4f926e4f438860a226873bdf6776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc46dea5520109dc80c1e274c144dc68" id="r_afc46dea5520109dc80c1e274c144dc68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc46dea5520109dc80c1e274c144dc68">plot_trees_per_rank</a> (filename, verbose)</td></tr>
+<tr class="separator:afc46dea5520109dc80c1e274c144dc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae1278cc93b35660e081e23a0da0c279d" id="r_ae1278cc93b35660e081e23a0da0c279d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1278cc93b35660e081e23a0da0c279d">parser</a> = argparse.ArgumentParser(description='Peano 4 load balancing plotter')</td></tr>
+<tr class="separator:ae1278cc93b35660e081e23a0da0c279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0610e64bb7fc38441e24d2092c35112f" id="r_a0610e64bb7fc38441e24d2092c35112f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0610e64bb7fc38441e24d2092c35112f">help</a></td></tr>
+<tr class="separator:a0610e64bb7fc38441e24d2092c35112f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6d2395233a6e2f7e84fa8d40c39ff7" id="r_a0b6d2395233a6e2f7e84fa8d40c39ff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b6d2395233a6e2f7e84fa8d40c39ff7">action</a></td></tr>
+<tr class="separator:a0b6d2395233a6e2f7e84fa8d40c39ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0585de5754405d17e0558577a09aef1" id="r_ac0585de5754405d17e0558577a09aef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0585de5754405d17e0558577a09aef1">default</a></td></tr>
+<tr class="separator:ac0585de5754405d17e0558577a09aef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c86188ac955c9a0ef9ecdcd7d8a5ccf" id="r_a2c86188ac955c9a0ef9ecdcd7d8a5ccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c86188ac955c9a0ef9ecdcd7d8a5ccf">dest</a></td></tr>
+<tr class="separator:a2c86188ac955c9a0ef9ecdcd7d8a5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cbde8c8d4f78643bd95845061f2764" id="r_a49cbde8c8d4f78643bd95845061f2764"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49cbde8c8d4f78643bd95845061f2764">False</a></td></tr>
+<tr class="separator:a49cbde8c8d4f78643bd95845061f2764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f291b97b6af4a613171bbd85978141" id="r_aa2f291b97b6af4a613171bbd85978141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2f291b97b6af4a613171bbd85978141">True</a></td></tr>
+<tr class="separator:aa2f291b97b6af4a613171bbd85978141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c373be2cd10c3298563291bb8c39cfa" id="r_a2c373be2cd10c3298563291bb8c39cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c373be2cd10c3298563291bb8c39cfa">choices</a></td></tr>
+<tr class="separator:a2c373be2cd10c3298563291bb8c39cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9cfe524d203f5f6b7f7a9014c68d86" id="r_a5d9cfe524d203f5f6b7f7a9014c68d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d9cfe524d203f5f6b7f7a9014c68d86">type</a></td></tr>
+<tr class="separator:a5d9cfe524d203f5f6b7f7a9014c68d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d5599fcf31b58fb9e989127cd8d8e4" id="r_a29d5599fcf31b58fb9e989127cd8d8e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29d5599fcf31b58fb9e989127cd8d8e4">int</a></td></tr>
+<tr class="separator:a29d5599fcf31b58fb9e989127cd8d8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702060f8e09d38ee8bc737f98bedb1a9" id="r_a702060f8e09d38ee8bc737f98bedb1a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702060f8e09d38ee8bc737f98bedb1a9">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a702060f8e09d38ee8bc737f98bedb1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e74a06cbebf7aeae95be7704f70770" id="r_a11e74a06cbebf7aeae95be7704f70770"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11e74a06cbebf7aeae95be7704f70770">base</a></td></tr>
+<tr class="separator:a11e74a06cbebf7aeae95be7704f70770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22b2616d17860fb9d0d851d564e9b2d" id="r_ac22b2616d17860fb9d0d851d564e9b2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac22b2616d17860fb9d0d851d564e9b2d">ncol</a></td></tr>
+<tr class="separator:ac22b2616d17860fb9d0d851d564e9b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51fa5ac73d4955d0c43a9ff28cbfa5c3" id="r_a51fa5ac73d4955d0c43a9ff28cbfa5c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51fa5ac73d4955d0c43a9ff28cbfa5c3">bottom</a></td></tr>
+<tr class="separator:a51fa5ac73d4955d0c43a9ff28cbfa5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f376da7945474edc0200746f93406a" id="r_aa0f376da7945474edc0200746f93406a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0f376da7945474edc0200746f93406a">output_filename</a> = args.file + &quot;-cells-per-rank&quot;</td></tr>
+<tr class="separator:aa0f376da7945474edc0200746f93406a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4d6586bf8629660e48f82158440f7a3f" name="a4d6586bf8629660e48f82158440f7a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6586bf8629660e48f82158440f7a3f">&#9670;&#160;</a></span>compute_sums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.compute_sums </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>x_data: [Float] Sequence of time stamps </p>
+<p>y_data: [[Float]] Multiple quantities per time stamp. There might be different numbers of quantities per time stamp.</p>
+<p>We return a sequence [Float] with the sum of all entries per time stamp. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00103">103</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00142">plot_cells_per_rank()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_a4d6586bf8629660e48f82158440f7a3f_icgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_a4d6586bf8629660e48f82158440f7a3f_icgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_a4d6586bf8629660e48f82158440f7a3f_icgraph" id="ad0/d31/namespaceplot__load__distribution_a4d6586bf8629660e48f82158440f7a3f_icgraph">
+<area shape="rect" title="x_data: [Float] Sequence of time stamps" alt="" coords="245,13,512,38"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a904d4f926e4f438860a226873bdf6776" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="232,28,198,28,198,23,232,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3ec7c1799789c5ce8126fb0c77b2214" name="ad3ec7c1799789c5ce8126fb0c77b2214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ec7c1799789c5ce8126fb0c77b2214">&#9670;&#160;</a></span>flatten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.flatten </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>x_data: [Float] Sequence of time stamps </p>
+<p>y_data: [[Float]] Multiple quantities per time stamp. There might be different numbers of quantities per time stamp.</p>
+<p>We return a tuple [Float],[Float]. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00078">78</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00142">plot_cells_per_rank()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_ad3ec7c1799789c5ce8126fb0c77b2214_icgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_ad3ec7c1799789c5ce8126fb0c77b2214_icgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_ad3ec7c1799789c5ce8126fb0c77b2214_icgraph" id="ad0/d31/namespaceplot__load__distribution_ad3ec7c1799789c5ce8126fb0c77b2214_icgraph">
+<area shape="rect" title="x_data: [Float] Sequence of time stamps" alt="" coords="245,13,455,38"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a904d4f926e4f438860a226873bdf6776" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="232,28,198,28,198,23,232,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ee18f439a0fba0bed56ad8026ff5702" name="a2ee18f439a0fba0bed56ad8026ff5702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee18f439a0fba0bed56ad8026ff5702">&#9670;&#160;</a></span>get_ranks_and_threads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.get_ranks_and_threads </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00010">10</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00252">int</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00142">plot_cells_per_rank()</a>, and <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00207">plot_trees_per_rank()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_a2ee18f439a0fba0bed56ad8026ff5702_icgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_a2ee18f439a0fba0bed56ad8026ff5702_icgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_a2ee18f439a0fba0bed56ad8026ff5702_icgraph" id="ad0/d31/namespaceplot__load__distribution_a2ee18f439a0fba0bed56ad8026ff5702_icgraph">
+<area shape="rect" title=" " alt="" coords="245,37,433,77"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a904d4f926e4f438860a226873bdf6776" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="232,46,197,41,198,36,232,40"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#afc46dea5520109dc80c1e274c144dc68" title=" " alt="" coords="5,69,197,109"/>
+<area shape="poly" title=" " alt="" coords="232,74,198,79,197,74,232,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8517d5ea7fc6032c90784ea9a718d89" name="ad8517d5ea7fc6032c90784ea9a718d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8517d5ea7fc6032c90784ea9a718d89">&#9670;&#160;</a></span>parse_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.parse_file </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>filename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>verbose</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns tuple of (x_data,y_data_local,y_data_remote) </p>
+<p>filename: String File to parse (what a surprise)</p>
+<p>rank: int Rank number of extract data for (can be -1 if you run serially)</p>
+<p>x_data: [Float] A series of time stamps</p>
+<p>y_data_local: [[Float]] A set of series of corresponding cell count entries. Each entry within the list is an array again as there might be many trees per rank. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00031">31</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00142">plot_cells_per_rank()</a>, and <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00207">plot_trees_per_rank()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_ad8517d5ea7fc6032c90784ea9a718d89_icgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_ad8517d5ea7fc6032c90784ea9a718d89_icgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_ad8517d5ea7fc6032c90784ea9a718d89_icgraph" id="ad0/d31/namespaceplot__load__distribution_ad8517d5ea7fc6032c90784ea9a718d89_icgraph">
+<area shape="rect" title="Returns tuple of (x_data,y_data_local,y_data_remote)" alt="" coords="245,45,476,70"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a904d4f926e4f438860a226873bdf6776" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="244,46,197,40,198,35,244,40"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#afc46dea5520109dc80c1e274c144dc68" title=" " alt="" coords="5,69,197,109"/>
+<area shape="poly" title=" " alt="" coords="244,74,198,80,197,75,244,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a904d4f926e4f438860a226873bdf6776" name="a904d4f926e4f438860a226873bdf6776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904d4f926e4f438860a226873bdf6776">&#9670;&#160;</a></span>plot_cells_per_rank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.plot_cells_per_rank </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>filename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>verbose</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>plot_remote_cells</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sum_per_rank</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>show_optimum</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>plot_local_cells</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#aa2f291b97b6af4a613171bbd85978141">True</a></span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00136">136</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00103">compute_sums()</a>, <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00078">flatten()</a>, <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00010">get_ranks_and_threads()</a>, <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00031">parse_file()</a>, and <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00125">remove_duplicates()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_a904d4f926e4f438860a226873bdf6776_cgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_a904d4f926e4f438860a226873bdf6776_cgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_a904d4f926e4f438860a226873bdf6776_cgraph" id="ad0/d31/namespaceplot__load__distribution_a904d4f926e4f438860a226873bdf6776_cgraph">
+<area shape="rect" title=" " alt="" coords="5,105,197,145"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a4d6586bf8629660e48f82158440f7a3f" title="x_data: [Float] Sequence of time stamps" alt="" coords="245,5,512,31"/>
+<area shape="poly" title=" " alt="" coords="129,102,181,70,244,40,270,31,272,36,246,44,184,74,132,107"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#ad3ec7c1799789c5ce8126fb0c77b2214" title="x_data: [Float] Sequence of time stamps" alt="" coords="274,55,483,80"/>
+<area shape="poly" title=" " alt="" coords="190,102,245,90,295,80,296,85,246,95,191,107"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a2ee18f439a0fba0bed56ad8026ff5702" title=" " alt="" coords="285,105,473,145"/>
+<area shape="poly" title=" " alt="" coords="198,122,271,122,271,127,198,127"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#ad8517d5ea7fc6032c90784ea9a718d89" title="Returns tuple of (x_data,y_data_local,y_data_remote)" alt="" coords="263,169,494,195"/>
+<area shape="poly" title=" " alt="" coords="191,142,246,154,296,164,295,169,245,159,190,147"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a2e9e19ed8fca7986fe21058eb42bc69c" title=" " alt="" coords="270,219,487,259"/>
+<area shape="poly" title=" " alt="" coords="134,143,185,174,246,204,272,213,270,218,244,208,183,178,131,147"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc46dea5520109dc80c1e274c144dc68" name="afc46dea5520109dc80c1e274c144dc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc46dea5520109dc80c1e274c144dc68">&#9670;&#160;</a></span>plot_trees_per_rank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.plot_trees_per_rank </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>filename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>verbose</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00207">207</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00010">get_ranks_and_threads()</a>, and <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00031">parse_file()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_afc46dea5520109dc80c1e274c144dc68_cgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_afc46dea5520109dc80c1e274c144dc68_cgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_afc46dea5520109dc80c1e274c144dc68_cgraph" id="ad0/d31/namespaceplot__load__distribution_afc46dea5520109dc80c1e274c144dc68_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,197,75"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a2ee18f439a0fba0bed56ad8026ff5702" title=" " alt="" coords="267,5,455,45"/>
+<area shape="poly" title=" " alt="" coords="197,41,253,35,254,40,198,46"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#ad8517d5ea7fc6032c90784ea9a718d89" title="Returns tuple of (x_data,y_data_local,y_data_remote)" alt="" coords="245,70,476,95"/>
+<area shape="poly" title=" " alt="" coords="198,62,232,66,232,71,197,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e9e19ed8fca7986fe21058eb42bc69c" name="a2e9e19ed8fca7986fe21058eb42bc69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9e19ed8fca7986fe21058eb42bc69c">&#9670;&#160;</a></span>remove_duplicates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.remove_duplicates </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x_data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00125">125</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00142">plot_cells_per_rank()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d31/namespaceplot__load__distribution_a2e9e19ed8fca7986fe21058eb42bc69c_icgraph.png" border="0" usemap="#ad0/d31/namespaceplot__load__distribution_a2e9e19ed8fca7986fe21058eb42bc69c_icgraph" alt=""/></div>
+<map name="ad0/d31/namespaceplot__load__distribution_a2e9e19ed8fca7986fe21058eb42bc69c_icgraph" id="ad0/d31/namespaceplot__load__distribution_a2e9e19ed8fca7986fe21058eb42bc69c_icgraph">
+<area shape="rect" title=" " alt="" coords="245,5,463,45"/>
+<area shape="rect" href="../../d0/d31/namespaceplot__load__distribution.html#a904d4f926e4f438860a226873bdf6776" title=" " alt="" coords="5,5,197,45"/>
+<area shape="poly" title=" " alt="" coords="232,28,197,28,197,23,232,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0b6d2395233a6e2f7e84fa8d40c39ff7" name="a0b6d2395233a6e2f7e84fa8d40c39ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6d2395233a6e2f7e84fa8d40c39ff7">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00247">247</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a702060f8e09d38ee8bc737f98bedb1a9" name="a702060f8e09d38ee8bc737f98bedb1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702060f8e09d38ee8bc737f98bedb1a9">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00253">253</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a11e74a06cbebf7aeae95be7704f70770" name="a11e74a06cbebf7aeae95be7704f70770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e74a06cbebf7aeae95be7704f70770">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00261">261</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a51fa5ac73d4955d0c43a9ff28cbfa5c3" name="a51fa5ac73d4955d0c43a9ff28cbfa5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51fa5ac73d4955d0c43a9ff28cbfa5c3">&#9670;&#160;</a></span>bottom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.bottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00279">279</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a2c373be2cd10c3298563291bb8c39cfa" name="a2c373be2cd10c3298563291bb8c39cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c373be2cd10c3298563291bb8c39cfa">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00251">251</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="ac0585de5754405d17e0558577a09aef1" name="ac0585de5754405d17e0558577a09aef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0585de5754405d17e0558577a09aef1">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00247">247</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a2c86188ac955c9a0ef9ecdcd7d8a5ccf" name="a2c86188ac955c9a0ef9ecdcd7d8a5ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c86188ac955c9a0ef9ecdcd7d8a5ccf">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00248">248</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a49cbde8c8d4f78643bd95845061f2764" name="a49cbde8c8d4f78643bd95845061f2764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cbde8c8d4f78643bd95845061f2764">&#9670;&#160;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00248">248</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a0610e64bb7fc38441e24d2092c35112f" name="a0610e64bb7fc38441e24d2092c35112f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0610e64bb7fc38441e24d2092c35112f">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00246">246</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a29d5599fcf31b58fb9e989127cd8d8e4" name="a29d5599fcf31b58fb9e989127cd8d8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d5599fcf31b58fb9e989127cd8d8e4">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00252">252</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00010">get_ranks_and_threads()</a>.</p>
+
+</div>
+</div>
+<a id="ac22b2616d17860fb9d0d851d564e9b2d" name="ac22b2616d17860fb9d0d851d564e9b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22b2616d17860fb9d0d851d564e9b2d">&#9670;&#160;</a></span>ncol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.ncol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00265">265</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="aa0f376da7945474edc0200746f93406a" name="aa0f376da7945474edc0200746f93406a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f376da7945474edc0200746f93406a">&#9670;&#160;</a></span>output_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str plot_load_distribution.output_filename = args.file + &quot;-cells-per-rank&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00281">281</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="ae1278cc93b35660e081e23a0da0c279d" name="ae1278cc93b35660e081e23a0da0c279d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1278cc93b35660e081e23a0da0c279d">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.parser = argparse.ArgumentParser(description='Peano 4 load balancing plotter')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00245">245</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="aa2f291b97b6af4a613171bbd85978141" name="aa2f291b97b6af4a613171bbd85978141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f291b97b6af4a613171bbd85978141">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00250">250</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+<a id="a5d9cfe524d203f5f6b7f7a9014c68d86" name="a5d9cfe524d203f5f6b7f7a9014c68d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9cfe524d203f5f6b7f7a9014c68d86">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">plot_load_distribution.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html#l00252">252</a> of file <a class="el" href="../../dd/d77/plot__load__distribution_8py_source.html">plot_load_distribution.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d31/namespaceplot__load__distribution.html">plot_load_distribution</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:29 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

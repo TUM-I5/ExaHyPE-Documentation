@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/d49/namespacecg-multigrid.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">cg-multigrid Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6d82cc418d420309e93217693950829d" id="r_a6d82cc418d420309e93217693950829d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d82cc418d420309e93217693950829d">parser</a> = argparse.ArgumentParser(description='Multigrid - Poisson <a class="el" href="#a96623cf29b33961902070f3707ae02a2">solver</a>')</td></tr>
+<tr class="separator:a6d82cc418d420309e93217693950829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9f742f6c511f39de0dc075f98a7ed9" id="r_aed9f742f6c511f39de0dc075f98a7ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed9f742f6c511f39de0dc075f98a7ed9">dest</a></td></tr>
+<tr class="separator:aed9f742f6c511f39de0dc075f98a7ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fde7ffc1acf9034fdaffa0db907f0e" id="r_a83fde7ffc1acf9034fdaffa0db907f0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83fde7ffc1acf9034fdaffa0db907f0e">type</a></td></tr>
+<tr class="separator:a83fde7ffc1acf9034fdaffa0db907f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694818740e0a835943227417916d22ce" id="r_a694818740e0a835943227417916d22ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a694818740e0a835943227417916d22ce">int</a></td></tr>
+<tr class="separator:a694818740e0a835943227417916d22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647e67147aea3c8952ebdc11ebffd34e" id="r_a647e67147aea3c8952ebdc11ebffd34e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647e67147aea3c8952ebdc11ebffd34e">default</a></td></tr>
+<tr class="separator:a647e67147aea3c8952ebdc11ebffd34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597d2b8a959a5c871adf01ebd629eac8" id="r_a597d2b8a959a5c871adf01ebd629eac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a597d2b8a959a5c871adf01ebd629eac8">help</a></td></tr>
+<tr class="separator:a597d2b8a959a5c871adf01ebd629eac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd14cceb0d4a061dd88b58aaeb4de529" id="r_abd14cceb0d4a061dd88b58aaeb4de529"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd14cceb0d4a061dd88b58aaeb4de529">action</a></td></tr>
+<tr class="separator:abd14cceb0d4a061dd88b58aaeb4de529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda7248efa0fbcd1213074da4b8ba612" id="r_adda7248efa0fbcd1213074da4b8ba612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adda7248efa0fbcd1213074da4b8ba612">False</a></td></tr>
+<tr class="separator:adda7248efa0fbcd1213074da4b8ba612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6eecc10eaee3bac10d1fca29b735c75" id="r_aa6eecc10eaee3bac10d1fca29b735c75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6eecc10eaee3bac10d1fca29b735c75">choices</a></td></tr>
+<tr class="separator:aa6eecc10eaee3bac10d1fca29b735c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97205c2b12529dcdfd331d0390db1b24" id="r_a97205c2b12529dcdfd331d0390db1b24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97205c2b12529dcdfd331d0390db1b24">required</a></td></tr>
+<tr class="separator:a97205c2b12529dcdfd331d0390db1b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7541b89a04c5ca5dc43e1d50f531039f" id="r_a7541b89a04c5ca5dc43e1d50f531039f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7541b89a04c5ca5dc43e1d50f531039f">True</a></td></tr>
+<tr class="separator:a7541b89a04c5ca5dc43e1d50f531039f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7accf27235c14311536e9749a6c1c5" id="r_a8f7accf27235c14311536e9749a6c1c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f7accf27235c14311536e9749a6c1c5">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a8f7accf27235c14311536e9749a6c1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b75961251a3355adf9395022afb517" id="r_a88b75961251a3355adf9395022afb517"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88b75961251a3355adf9395022afb517">project</a></td></tr>
+<tr class="separator:a88b75961251a3355adf9395022afb517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62eef74988092d4126a353906dedaf70" id="r_a62eef74988092d4126a353906dedaf70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62eef74988092d4126a353906dedaf70">correction_equation_matrices</a></td></tr>
+<tr class="separator:a62eef74988092d4126a353906dedaf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274a99743c261b2c5df6ffea41506bb4" id="r_a274a99743c261b2c5df6ffea41506bb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274a99743c261b2c5df6ffea41506bb4">finest_level_matrices</a></td></tr>
+<tr class="separator:a274a99743c261b2c5df6ffea41506bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6bb420384673bae71ebd26c0a3abcde" id="r_ab6bb420384673bae71ebd26c0a3abcde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6bb420384673bae71ebd26c0a3abcde">intergridOperators</a> = <a class="el" href="../../d3/d0b/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperatorsH_1_1IntergridOperatorsH.html">mghype.api.matrixgenerators.blockmatrix.IntergridOperatorsH</a>()</td></tr>
+<tr class="separator:ab6bb420384673bae71ebd26c0a3abcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e687b106b4e4f08af76098048879e85" id="r_a1e687b106b4e4f08af76098048879e85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e687b106b4e4f08af76098048879e85">system_matrix</a></td></tr>
+<tr class="separator:a1e687b106b4e4f08af76098048879e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c551d2071a99f1e4173a7caad04a8e" id="r_a36c551d2071a99f1e4173a7caad04a8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36c551d2071a99f1e4173a7caad04a8e">system_matrix_scaling</a></td></tr>
+<tr class="separator:a36c551d2071a99f1e4173a7caad04a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb15bcd78233f6ad7d1715c965259a96" id="r_aeb15bcd78233f6ad7d1715c965259a96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb15bcd78233f6ad7d1715c965259a96">mass_matrix</a></td></tr>
+<tr class="separator:aeb15bcd78233f6ad7d1715c965259a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca3d1cf4720f18e922bf9db86e0e0b0" id="r_a4ca3d1cf4720f18e922bf9db86e0e0b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca3d1cf4720f18e922bf9db86e0e0b0">mass_matrix_scaling</a></td></tr>
+<tr class="separator:a4ca3d1cf4720f18e922bf9db86e0e0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0564b8658d6d24e0d6e373318c4a5c0" id="r_ab0564b8658d6d24e0d6e373318c4a5c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0564b8658d6d24e0d6e373318c4a5c0">correction_matrix</a></td></tr>
+<tr class="separator:ab0564b8658d6d24e0d6e373318c4a5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb37c2530c68f5aba57ae96da4dc08d" id="r_afdb37c2530c68f5aba57ae96da4dc08d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb37c2530c68f5aba57ae96da4dc08d">correction_matrix_scaling</a></td></tr>
+<tr class="separator:afdb37c2530c68f5aba57ae96da4dc08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96623cf29b33961902070f3707ae02a2" id="r_a96623cf29b33961902070f3707ae02a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96623cf29b33961902070f3707ae02a2">solver</a></td></tr>
+<tr class="separator:a96623cf29b33961902070f3707ae02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fd6fb532102dfd6357891fb407d349" id="r_a01fd6fb532102dfd6357891fb407d349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01fd6fb532102dfd6357891fb407d349">build_mode</a> = peano4.output.CompileMode.Release</td></tr>
+<tr class="separator:a01fd6fb532102dfd6357891fb407d349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca997834777194ff99d6868cd233700" id="r_aeca997834777194ff99d6868cd233700"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca997834777194ff99d6868cd233700">cube_size</a> = 1.0</td></tr>
+<tr class="separator:aeca997834777194ff99d6868cd233700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c25057d4a848d25e6e15af6ef0b85e" id="r_ac0c25057d4a848d25e6e15af6ef0b85e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c25057d4a848d25e6e15af6ef0b85e">dimensions</a></td></tr>
+<tr class="separator:ac0c25057d4a848d25e6e15af6ef0b85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee7db185467a921a04151015a83feef" id="r_aaee7db185467a921a04151015a83feef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaee7db185467a921a04151015a83feef">offset</a></td></tr>
+<tr class="separator:aaee7db185467a921a04151015a83feef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa7f03b84c03f5f781da1974f5f9682" id="r_affa7f03b84c03f5f781da1974f5f9682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affa7f03b84c03f5f781da1974f5f9682">domain_size</a></td></tr>
+<tr class="separator:affa7f03b84c03f5f781da1974f5f9682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af710d8dc566a4a7ad0d94095e39725ba" id="r_af710d8dc566a4a7ad0d94095e39725ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af710d8dc566a4a7ad0d94095e39725ba">plot_after_each_mesh_sweep</a></td></tr>
+<tr class="separator:af710d8dc566a4a7ad0d94095e39725ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680c4886051da5e72b567083845e8743" id="r_a680c4886051da5e72b567083845e8743"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a680c4886051da5e72b567083845e8743">max_iterations</a></td></tr>
+<tr class="separator:a680c4886051da5e72b567083845e8743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faec974470ac1df481210fe59ce6624" id="r_a3faec974470ac1df481210fe59ce6624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3faec974470ac1df481210fe59ce6624">peano4_project</a> = project.generate_Peano4_project(args.verbose)</td></tr>
+<tr class="separator:a3faec974470ac1df481210fe59ce6624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abd14cceb0d4a061dd88b58aaeb4de529" name="abd14cceb0d4a061dd88b58aaeb4de529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd14cceb0d4a061dd88b58aaeb4de529">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00017">17</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a8f7accf27235c14311536e9749a6c1c5" name="a8f7accf27235c14311536e9749a6c1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7accf27235c14311536e9749a6c1c5">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00024">24</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a01fd6fb532102dfd6357891fb407d349" name="a01fd6fb532102dfd6357891fb407d349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01fd6fb532102dfd6357891fb407d349">&#9670;&#160;</a></span>build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.build_mode = peano4.output.CompileMode.Release</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00075">75</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="aa6eecc10eaee3bac10d1fca29b735c75" name="aa6eecc10eaee3bac10d1fca29b735c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6eecc10eaee3bac10d1fca29b735c75">&#9670;&#160;</a></span>choices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.choices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00023">23</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a62eef74988092d4126a353906dedaf70" name="a62eef74988092d4126a353906dedaf70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62eef74988092d4126a353906dedaf70">&#9670;&#160;</a></span>correction_equation_matrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.correction_equation_matrices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity</a>(</div>
+<div class="line"><span class="lineno">    2</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  poly_degree = 1,</div>
+<div class="line"><span class="lineno">    4</span>  unknowns_per_node = 1</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity_html"><div class="ttname"><a href="../../d7/d95/classmghype_1_1api_1_1matrixgenerators_1_1DLinearMassIdentity_1_1DLinearMassIdentity.html">mghype.api.matrixgenerators.DLinearMassIdentity.DLinearMassIdentity</a></div><div class="ttdoc">Using normalised identity matrix instead of the mass matrix.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dde/DLinearMassIdentity_8py_source.html#l00010">DLinearMassIdentity.py:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00031">31</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="ab0564b8658d6d24e0d6e373318c4a5c0" name="ab0564b8658d6d24e0d6e373318c4a5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0564b8658d6d24e0d6e373318c4a5c0">&#9670;&#160;</a></span>correction_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.correction_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00047">47</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="afdb37c2530c68f5aba57ae96da4dc08d" name="afdb37c2530c68f5aba57ae96da4dc08d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb37c2530c68f5aba57ae96da4dc08d">&#9670;&#160;</a></span>correction_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.correction_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00047">47</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="aeca997834777194ff99d6868cd233700" name="aeca997834777194ff99d6868cd233700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca997834777194ff99d6868cd233700">&#9670;&#160;</a></span>cube_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cg-multigrid.cube_size = 1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00083">83</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a647e67147aea3c8952ebdc11ebffd34e" name="a647e67147aea3c8952ebdc11ebffd34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647e67147aea3c8952ebdc11ebffd34e">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="aed9f742f6c511f39de0dc075f98a7ed9" name="aed9f742f6c511f39de0dc075f98a7ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9f742f6c511f39de0dc075f98a7ed9">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="ac0c25057d4a848d25e6e15af6ef0b85e" name="ac0c25057d4a848d25e6e15af6ef0b85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c25057d4a848d25e6e15af6ef0b85e">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00085">85</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="affa7f03b84c03f5f781da1974f5f9682" name="affa7f03b84c03f5f781da1974f5f9682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa7f03b84c03f5f781da1974f5f9682">&#9670;&#160;</a></span>domain_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.domain_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00087">87</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="adda7248efa0fbcd1213074da4b8ba612" name="adda7248efa0fbcd1213074da4b8ba612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda7248efa0fbcd1213074da4b8ba612">&#9670;&#160;</a></span>False</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.False</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00017">17</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a274a99743c261b2c5df6ffea41506bb4" name="a274a99743c261b2c5df6ffea41506bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274a99743c261b2c5df6ffea41506bb4">&#9670;&#160;</a></span>finest_level_matrices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.finest_level_matrices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html">mghype.api.matrixgenerators.DLinear</a>(</div>
+<div class="line"><span class="lineno">    2</span>  dimensions = args.dimensions,</div>
+<div class="line"><span class="lineno">    3</span>  unknowns_per_node = 1</div>
+<div class="line"><span class="lineno">    4</span>)</div>
+<div class="ttc" id="aclassmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear_html"><div class="ttname"><a href="../../d3/db4/classmghype_1_1api_1_1matrixgenerators_1_1DLinear_1_1DLinear.html">mghype.api.matrixgenerators.DLinear.DLinear</a></div><div class="ttdoc">Simple matrix generator for continuous d-linear finite elements.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d28/DLinear_8py_source.html#l00010">DLinear.py:10</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00037">37</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a597d2b8a959a5c871adf01ebd629eac8" name="a597d2b8a959a5c871adf01ebd629eac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597d2b8a959a5c871adf01ebd629eac8">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a694818740e0a835943227417916d22ce" name="a694818740e0a835943227417916d22ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694818740e0a835943227417916d22ce">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="ab6bb420384673bae71ebd26c0a3abcde" name="ab6bb420384673bae71ebd26c0a3abcde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6bb420384673bae71ebd26c0a3abcde">&#9670;&#160;</a></span>intergridOperators</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.intergridOperators = <a class="el" href="../../d3/d0b/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1IntergridOperatorsH_1_1IntergridOperatorsH.html">mghype.api.matrixgenerators.blockmatrix.IntergridOperatorsH</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00042">42</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="aeb15bcd78233f6ad7d1715c965259a96" name="aeb15bcd78233f6ad7d1715c965259a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb15bcd78233f6ad7d1715c965259a96">&#9670;&#160;</a></span>mass_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.mass_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00045">45</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a4ca3d1cf4720f18e922bf9db86e0e0b0" name="a4ca3d1cf4720f18e922bf9db86e0e0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca3d1cf4720f18e922bf9db86e0e0b0">&#9670;&#160;</a></span>mass_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.mass_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00045">45</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a680c4886051da5e72b567083845e8743" name="a680c4886051da5e72b567083845e8743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680c4886051da5e72b567083845e8743">&#9670;&#160;</a></span>max_iterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.max_iterations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00089">89</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="aaee7db185467a921a04151015a83feef" name="aaee7db185467a921a04151015a83feef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee7db185467a921a04151015a83feef">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00086">86</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a6d82cc418d420309e93217693950829d" name="a6d82cc418d420309e93217693950829d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d82cc418d420309e93217693950829d">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.parser = argparse.ArgumentParser(description='Multigrid - Poisson <a class="el" href="#a96623cf29b33961902070f3707ae02a2">solver</a>')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00015">15</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a3faec974470ac1df481210fe59ce6624" name="a3faec974470ac1df481210fe59ce6624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faec974470ac1df481210fe59ce6624">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.peano4_project = project.generate_Peano4_project(args.verbose)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00093">93</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="af710d8dc566a4a7ad0d94095e39725ba" name="af710d8dc566a4a7ad0d94095e39725ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af710d8dc566a4a7ad0d94095e39725ba">&#9670;&#160;</a></span>plot_after_each_mesh_sweep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.plot_after_each_mesh_sweep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00088">88</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a88b75961251a3355adf9395022afb517" name="a88b75961251a3355adf9395022afb517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b75961251a3355adf9395022afb517">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.api.Project( project_name = <span class="stringliteral">&quot;CollocatedMG&quot;</span>, </div>
+<div class="line"><span class="lineno">    2</span>                              namespace = [ <span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;multigrid&quot;</span>, <span class="stringliteral">&quot;matrixfree&quot;</span>, <span class="stringliteral">&quot;poisson&quot;</span> ]</div>
+<div class="line"><span class="lineno">    3</span>                                )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00026">26</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a97205c2b12529dcdfd331d0390db1b24" name="a97205c2b12529dcdfd331d0390db1b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97205c2b12529dcdfd331d0390db1b24">&#9670;&#160;</a></span>required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.required</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00023">23</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a96623cf29b33961902070f3707ae02a2" name="a96623cf29b33961902070f3707ae02a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96623cf29b33961902070f3707ae02a2">&#9670;&#160;</a></span>solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.solver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  mghype.matrixfree.solvers.api.CollocatedMG(<span class="stringliteral">&quot;CollocatedMG&quot;</span>,</div>
+<div class="line"><span class="lineno">    2</span>                                                    1,</div>
+<div class="line"><span class="lineno">    3</span>                                                    args.dimensions,</div>
+<div class="line"><span class="lineno">    4</span>                                                    args.meshsize,</div>
+<div class="line"><span class="lineno">    5</span>                                                    args.meshsize,</div>
+<div class="line"><span class="lineno">    6</span>                                                    local_assembly_matrix = system_matrix,</div>
+<div class="line"><span class="lineno">    7</span>                                                    local_assembly_matrix_scaling=system_matrix_scaling,</div>
+<div class="line"><span class="lineno">    8</span>                                                    mass_matrix = mass_matrix,</div>
+<div class="line"><span class="lineno">    9</span>                                                    mass_matrix_scaling = mass_matrix_scaling,</div>
+<div class="line"><span class="lineno">   10</span>                                                    correction_matrix = correction_matrix,</div>
+<div class="line"><span class="lineno">   11</span>                                                    correction_matrix_scaling = correction_matrix_scaling,</div>
+<div class="line"><span class="lineno">   12</span>                                                    solver_tolerance=0.01,</div>
+<div class="line"><span class="lineno">   13</span>                                                    pre_smoothing_steps =6,</div>
+<div class="line"><span class="lineno">   14</span>                                                    post_smoothing_steps=5,</div>
+<div class="line"><span class="lineno">   15</span>                                                    restriction_matrix=intergridOperators.restriction(),</div>
+<div class="line"><span class="lineno">   16</span>                                                    prolongation_matrix=intergridOperators.prolongation(),</div>
+<div class="line"><span class="lineno">   17</span>                                                    descend_order=0,</div>
+<div class="line"><span class="lineno">   18</span>                                                    coarsest_level=args.coarsest_level</div>
+<div class="line"><span class="lineno">   19</span>                                                    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00049">49</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a1e687b106b4e4f08af76098048879e85" name="a1e687b106b4e4f08af76098048879e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e687b106b4e4f08af76098048879e85">&#9670;&#160;</a></span>system_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.system_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00044">44</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a36c551d2071a99f1e4173a7caad04a8e" name="a36c551d2071a99f1e4173a7caad04a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c551d2071a99f1e4173a7caad04a8e">&#9670;&#160;</a></span>system_matrix_scaling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.system_matrix_scaling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00044">44</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a7541b89a04c5ca5dc43e1d50f531039f" name="a7541b89a04c5ca5dc43e1d50f531039f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7541b89a04c5ca5dc43e1d50f531039f">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00023">23</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+<a id="a83fde7ffc1acf9034fdaffa0db907f0e" name="a83fde7ffc1acf9034fdaffa0db907f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fde7ffc1acf9034fdaffa0db907f0e">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cg-multigrid.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html#l00016">16</a> of file <a class="el" href="../../d4/df1/cg-multigrid_8py_source.html">cg-multigrid.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/d49/namespacecg-multigrid.html">cg-multigrid</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:22 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

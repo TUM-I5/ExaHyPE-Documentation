@@ -1,0 +1,4 @@
+var cellbased_2ScalarJacobiWithRediscretisation_8py =
+[
+    [ "peano4.toolbox.multigrid.cellbased.ScalarJacobiWithRediscretisation.ScalarJacobiWithRediscretisation", "d6/d71/classpeano4_1_1toolbox_1_1multigrid_1_1cellbased_1_1ScalarJacobiWithRediscretisation_1_1ScalarJacobiWithRediscretisation.html", "d6/d71/classpeano4_1_1toolbox_1_1multigrid_1_1cellbased_1_1ScalarJacobiWithRediscretisation_1_1ScalarJacobiWithRediscretisation" ]
+];

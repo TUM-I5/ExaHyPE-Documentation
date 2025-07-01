@@ -1,0 +1,26 @@
+var classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService =
+[
+    [ "SemaphoreMapEntry", "db/d58/structtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService_1_1SemaphoreMapEntry.html", "db/d58/structtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService_1_1SemaphoreMapEntry" ],
+    [ "BooleanSemaphoreService", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a6c9c23b6ec580366f33284b7034de9a3", null ],
+    [ "BooleanSemaphoreService", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a0909ef156d7963d8ce90a32c533ea632", null ],
+    [ "~BooleanSemaphoreService", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a216d50e1f6e7401a8256d0f88476317a", null ],
+    [ "acquireLock", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a32676170b0da1af283006f8c8cf2d551", null ],
+    [ "addMapEntryLazily", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#aa9d8ca16c2632d96e149e61658eb8368", null ],
+    [ "getInstance", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#aa08f433220dab5c644b671f56a4c3065", null ],
+    [ "getNumberOfLockedSemaphores", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#ae3d5385a4b73d091277415b86c54a8a9", null ],
+    [ "init", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#ac54181e9b03ca3b40174210890fc39c5", null ],
+    [ "lockSemaphoreOnGlobalMaster", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a8b8627bfb7f00d1698daff9b82821789", null ],
+    [ "receiveDanglingMessages", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a34493a69cae791ea0657cb8c3fd19e25", null ],
+    [ "releaseLock", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a6bc81e3c7af86cb926e3fe9baff1f325", null ],
+    [ "serveLockRequests", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a994fdcc03d323c8dbb49f86af382e0ff", null ],
+    [ "shutdown", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#ae28e35e6d6d869b04c6d2f7442246607", null ],
+    [ "toString", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a2b30c806d1891eed51e1aaff6600e26c", null ],
+    [ "tryLockSemaphoreOnGlobalMaster", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a3730b560211868d473f63dd92dea9f6e", null ],
+    [ "unlockSemaphoreOnGlobalMaster", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#afb5e7a748e6ab07601ab702aa82e7fc3", null ],
+    [ "_map", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#abfe55b5021e315a702e3f08466a11fbd", null ],
+    [ "_mapAccessSemaphore", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a20fa9ebeb78b4de02350b0f28ed46f01", null ],
+    [ "_pendingLockRequests", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a6809c38bf67e8e9b713ff871abc170f0", null ],
+    [ "_reserverationRequestsSemaphore", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a416daac8377da69e7f0d0a796271bec4", null ],
+    [ "_semaphoreTag", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a1bfa70202b54116a6591bb17feaa72fc", null ],
+    [ "_singleton", "d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a932c342affb119cdf5ec00db2c1b3023", null ]
+];

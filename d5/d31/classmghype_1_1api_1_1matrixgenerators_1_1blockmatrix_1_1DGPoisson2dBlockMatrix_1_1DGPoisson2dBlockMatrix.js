@@ -1,0 +1,25 @@
+var classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix =
+[
+    [ "__init__", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a05cc457cf2b643acfb35816f95628a5a", null ],
+    [ "_assemble_A_CC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a878c066468d33d7e7712c1d2d68a7c4c", null ],
+    [ "_assemble_A_CF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a2c618ffcf13101017a86c4e28f2a2c9c", null ],
+    [ "_assemble_A_FC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#ad59230aea8ea3903d41b6314f79a9061", null ],
+    [ "_assemble_A_FF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a874f605094ac1c4767d828b65d2e5108", null ],
+    [ "_A_CC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a92b05ee0f97a817d67234df2f199d2eb", null ],
+    [ "_A_CF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#afb25b325a74ff79283db4b72ba5acc90", null ],
+    [ "_A_FC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a549853858cdaab6df844fe43b37cba5a", null ],
+    [ "_A_FF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#afd5f3b1f94ffda2ce9ded623f73ad1d4", null ],
+    [ "_coupling_CC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a22a4b47e04575fa6e173d3aab09c8a72", null ],
+    [ "_coupling_CF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a4c1b2cf328cc63723ecb41131e42720f", null ],
+    [ "_coupling_FC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#ad9c3045b77273ddbba98c9e3eddd0ae2", null ],
+    [ "_coupling_FF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a503f2a0e19a21c09fe079c15e46c9725", null ],
+    [ "_ent_types_CF_FC", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a5e25a99d77a54f52151629180723bff8", null ],
+    [ "_ent_types_FF", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a4008ac0810ba3a5a244f3ab84cd70d2e", null ],
+    [ "_fe_C", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a993256025dce8f5acaa9b88e93a7c588", null ],
+    [ "_fe_F", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a3f50d7a8a5ba9aa52aecc6bfca368dbd", null ],
+    [ "_fs_labels_C", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a57ceb87c97bbc11af90f9fd49f0f9f61", null ],
+    [ "_fs_labels_F", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a82f024b55a929c098420526a38d3712d", null ],
+    [ "_L_C", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a305b037da6062bb5350b4947871f1f2b", null ],
+    [ "_L_F", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#a41d1cf3c8bfae37c9f0995ccff3e8a48", null ],
+    [ "basis", "d5/d31/classmghype_1_1api_1_1matrixgenerators_1_1blockmatrix_1_1DGPoisson2dBlockMatrix_1_1DGPoisson2dBlockMatrix.html#ad717cd88c54794e10ee14b23393c7504", null ]
+];

@@ -1,0 +1,4 @@
+var rkdg_2actionsets_2AdaptivityCriterion_8py =
+[
+    [ "exahype2.solvers.rkdg.actionsets.AdaptivityCriterion.AdaptivityCriterion", "de/d44/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1AdaptivityCriterion_1_1AdaptivityCriterion.html", "de/d44/classexahype2_1_1solvers_1_1rkdg_1_1actionsets_1_1AdaptivityCriterion_1_1AdaptivityCriterion" ]
+];

@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d20/classDomainDecomposition.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">DomainDecomposition&lt; Geo &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DomainDecomposition&lt; Geo &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d4f/classDomainDecomposition__coll__graph.png" border="0" usemap="#aDomainDecomposition_3_01Geo_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aDomainDecomposition_3_01Geo_01_4_coll__map" id="aDomainDecomposition_3_01Geo_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,123,176,163"/>
+<area shape="rect" href="../../da/d9c/classDomainDecomposition_1_1Grid.html" title=" " alt="" coords="21,5,192,45"/>
+<area shape="poly" title=" " alt="" coords="104,59,103,70,96,123,90,122,97,69,99,58"/>
+<area shape="rect" href="../../dd/d5c/classLinkedGrid.html" title=" " alt="" coords="200,123,352,163"/>
+<area shape="poly" title=" " alt="" coords="125,56,141,78,160,97,204,120,202,125,157,101,137,81,121,59"/>
+<area shape="poly" title=" " alt="" coords="256,113,240,91,220,71,175,48,178,43,223,67,244,87,261,109"/>
+<area shape="rect" href="../../da/deb/classNumVec.html" title=" " alt="" coords="217,13,391,38"/>
+<area shape="poly" title=" " alt="" coords="301,52,283,123,278,122,295,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7ca97331012fc65a4e980ec227825fa5" id="r_a7ca97331012fc65a4e980ec227825fa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca97331012fc65a4e980ec227825fa5">DomainDecomposition</a> (<a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="#afc508039f962670f7847b2fc4cd52f87">range</a>, <a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> <a class="el" href="#a7703d405d86582c285d75a6134925da1">localRankId</a>, <a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="#ad9243206ae7b07eae5728a54ef69b057">rankCount</a>, <a class="el" href="../../d7/d15/structGeometry.html#a7399e909256333f91069351b7bd6e735">Geo::P</a> <a class="el" href="#ad7761ba9803a7ab2e52a478fcd22d5b0">haloThickness</a>)</td></tr>
+<tr class="separator:a7ca97331012fc65a4e980ec227825fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1846c07b60323a88c41063a8f5eaad60" id="r_a1846c07b60323a88c41063a8f5eaad60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1846c07b60323a88c41063a8f5eaad60">getLocalArea</a> ()</td></tr>
+<tr class="separator:a1846c07b60323a88c41063a8f5eaad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b25512ed2d51375481fe922bea29f3" id="r_a23b25512ed2d51375481fe922bea29f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23b25512ed2d51375481fe922bea29f3">getLocalHaloArea</a> ()</td></tr>
+<tr class="separator:a23b25512ed2d51375481fe922bea29f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41f8642c00a317f692c415fa055d198" id="r_ac41f8642c00a317f692c415fa055d198"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac41f8642c00a317f692c415fa055d198">getNeighbourRankIds</a> ()</td></tr>
+<tr class="separator:ac41f8642c00a317f692c415fa055d198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef463b4c5472c13a0790bcf9df0f23e6" id="r_aef463b4c5472c13a0790bcf9df0f23e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef463b4c5472c13a0790bcf9df0f23e6">getLocalHaloForNeighbour</a> (<a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> neighbourRankId)</td></tr>
+<tr class="separator:aef463b4c5472c13a0790bcf9df0f23e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0985b3c48ef41f96c9a1020afa6c1f" id="r_ada0985b3c48ef41f96c9a1020afa6c1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada0985b3c48ef41f96c9a1020afa6c1f">getRemoteHaloForNeighbour</a> (<a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> neighbourRankId)</td></tr>
+<tr class="separator:ada0985b3c48ef41f96c9a1020afa6c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a5217872b778854b6d7b85a4b28c6deeb" id="r_a5217872b778854b6d7b85a4b28c6deeb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5217872b778854b6d7b85a4b28c6deeb">LeafsIter</a> = <a class="el" href="../../d0/d67/classLeafsIterator.html">LeafsIterator</a>&lt;<a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a>&gt;</td></tr>
+<tr class="separator:a5217872b778854b6d7b85a4b28c6deeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770a786e89e76cebb8bd59ca2f2697fb" id="r_a770a786e89e76cebb8bd59ca2f2697fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770a786e89e76cebb8bd59ca2f2697fb">InsideRegionIter</a> = <a class="el" href="../../d9/db2/classInsideRegionLeafsIterator.html">InsideRegionLeafsIterator</a>&lt;<a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a>&gt;</td></tr>
+<tr class="separator:a770a786e89e76cebb8bd59ca2f2697fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e4d0a7b353c165a65bd84befcdcfe8" id="r_ab7e4d0a7b353c165a65bd84befcdcfe8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e4d0a7b353c165a65bd84befcdcfe8">Morton</a> = mortonnd::MortonNDBmi&lt;Geo::D::N, <a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a>&gt;</td></tr>
+<tr class="separator:ab7e4d0a7b353c165a65bd84befcdcfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a750c97769ef213802f703aef4814aff7" id="r_a750c97769ef213802f703aef4814aff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750c97769ef213802f703aef4814aff7">getLeafRankId</a> (<a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a> *leaf)</td></tr>
+<tr class="separator:a750c97769ef213802f703aef4814aff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fa4406138e1c4d57622e66e5262acd" id="r_af9fa4406138e1c4d57622e66e5262acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9fa4406138e1c4d57622e66e5262acd">getLocalAreaForRankId</a> (<a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> rankId)</td></tr>
+<tr class="separator:af9fa4406138e1c4d57622e66e5262acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afc508039f962670f7847b2fc4cd52f87" id="r_afc508039f962670f7847b2fc4cd52f87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc508039f962670f7847b2fc4cd52f87">range</a></td></tr>
+<tr class="separator:afc508039f962670f7847b2fc4cd52f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7703d405d86582c285d75a6134925da1" id="r_a7703d405d86582c285d75a6134925da1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7703d405d86582c285d75a6134925da1">localRankId</a></td></tr>
+<tr class="separator:a7703d405d86582c285d75a6134925da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9243206ae7b07eae5728a54ef69b057" id="r_ad9243206ae7b07eae5728a54ef69b057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9243206ae7b07eae5728a54ef69b057">rankCount</a></td></tr>
+<tr class="separator:ad9243206ae7b07eae5728a54ef69b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7761ba9803a7ab2e52a478fcd22d5b0" id="r_ad7761ba9803a7ab2e52a478fcd22d5b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d15/structGeometry.html#a7399e909256333f91069351b7bd6e735">Geo::P</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7761ba9803a7ab2e52a478fcd22d5b0">haloThickness</a></td></tr>
+<tr class="separator:ad7761ba9803a7ab2e52a478fcd22d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e06d2be8f59ab1c3c7ca5c23ef88d98" id="r_a6e06d2be8f59ab1c3c7ca5c23ef88d98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e06d2be8f59ab1c3c7ca5c23ef88d98">grid</a></td></tr>
+<tr class="separator:a6e06d2be8f59ab1c3c7ca5c23ef88d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a>&gt;<br />
+class DomainDecomposition&lt; Geo &gt;</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00013">13</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a770a786e89e76cebb8bd59ca2f2697fb" name="a770a786e89e76cebb8bd59ca2f2697fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770a786e89e76cebb8bd59ca2f2697fb">&#9670;&#160;</a></span>InsideRegionIter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::InsideRegionIter = <a class="el" href="../../d9/db2/classInsideRegionLeafsIterator.html">InsideRegionLeafsIterator</a>&lt;<a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00025">25</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<a id="a5217872b778854b6d7b85a4b28c6deeb" name="a5217872b778854b6d7b85a4b28c6deeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5217872b778854b6d7b85a4b28c6deeb">&#9670;&#160;</a></span>LeafsIter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::LeafsIter = <a class="el" href="../../d0/d67/classLeafsIterator.html">LeafsIterator</a>&lt;<a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00024">24</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<a id="ab7e4d0a7b353c165a65bd84befcdcfe8" name="ab7e4d0a7b353c165a65bd84befcdcfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e4d0a7b353c165a65bd84befcdcfe8">&#9670;&#160;</a></span>Morton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::Morton = mortonnd::MortonNDBmi&lt;Geo::D::N, <a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7ca97331012fc65a4e980ec227825fa5" name="a7ca97331012fc65a4e980ec227825fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca97331012fc65a4e980ec227825fa5">&#9670;&#160;</a></span>DomainDecomposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;<a class="el" href="../../de/d20/classDomainDecomposition.html">::DomainDecomposition</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a></td>          <td class="paramname"><span class="paramname"><em>range</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a></td>          <td class="paramname"><span class="paramname"><em>localRankId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a></td>          <td class="paramname"><span class="paramname"><em>rankCount</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d15/structGeometry.html#a7399e909256333f91069351b7bd6e735">Geo::P</a></td>          <td class="paramname"><span class="paramname"><em>haloThickness</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00054">54</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00063">LinkedGrid&lt; Geo, 2, Grid &gt;::getMaxChildren()</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00014">DomainDecomposition&lt; Geo &gt;::range</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00016">DomainDecomposition&lt; Geo &gt;::rankCount</a>, and <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00076">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;::split()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a7ca97331012fc65a4e980ec227825fa5_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a7ca97331012fc65a4e980ec227825fa5_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a7ca97331012fc65a4e980ec227825fa5_cgraph" id="ade/d20/classDomainDecomposition_a7ca97331012fc65a4e980ec227825fa5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,184,75"/>
+<area shape="rect" href="../../dd/d5c/classLinkedGrid.html#ae3e0399d6584b06e03cb915ab7f647b1" title=" " alt="" coords="232,5,411,45"/>
+<area shape="poly" title=" " alt="" coords="184,40,218,36,219,41,185,46"/>
+<area shape="rect" href="../../dd/d5c/classLinkedGrid.html#afea0f45bdf27b61debe066f263573ca5" title=" " alt="" coords="258,70,385,95"/>
+<area shape="poly" title=" " alt="" coords="185,63,245,71,244,76,184,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a750c97769ef213802f703aef4814aff7" name="a750c97769ef213802f703aef4814aff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750c97769ef213802f703aef4814aff7">&#9670;&#160;</a></span>getLeafRankId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getLeafRankId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a> *</td>          <td class="paramname"><span class="paramname"><em>leaf</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00031">31</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00053">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;::idx</a>, and <a class="el" href="../../d4/dc8/linked__grid_8h_source.html#l00049">LinkedGrid&lt; _Geo, SPLIT_FACTOR, Derived &gt;::subtrees</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00038">DomainDecomposition&lt; Geo &gt;::getLocalAreaForRankId()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00082">DomainDecomposition&lt; Geo &gt;::getNeighbourRankIds()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a750c97769ef213802f703aef4814aff7_icgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a750c97769ef213802f703aef4814aff7_icgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a750c97769ef213802f703aef4814aff7_icgraph" id="ade/d20/classDomainDecomposition_a750c97769ef213802f703aef4814aff7_icgraph">
+<area shape="rect" title=" " alt="" coords="969,131,1140,171"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="741,73,921,113"/>
+<area shape="poly" title=" " alt="" coords="962,130,909,116,910,111,964,125"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ac41f8642c00a317f692c415fa055d198" title=" " alt="" coords="29,101,200,141"/>
+<area shape="poly" title=" " alt="" coords="956,160,821,167,650,171,461,168,272,156,198,144,199,139,272,151,461,163,650,165,821,161,956,155"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="523,44,693,84"/>
+<area shape="poly" title=" " alt="" coords="727,82,693,78,694,72,728,77"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ada0985b3c48ef41f96c9a1020afa6c1f" title=" " alt="" coords="5,9,224,49"/>
+<area shape="poly" title=" " alt="" coords="782,69,740,50,693,35,632,23,569,15,443,8,324,11,224,18,224,13,324,6,443,3,569,10,632,18,694,29,741,45,784,64"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#aef463b4c5472c13a0790bcf9df0f23e6" title=" " alt="" coords="272,101,475,141"/>
+<area shape="poly" title=" " alt="" coords="728,102,475,118,475,112,728,97"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a23b25512ed2d51375481fe922bea29f3" title=" " alt="" coords="288,37,459,77"/>
+<area shape="poly" title=" " alt="" coords="508,64,459,62,459,57,509,58"/>
+<area shape="poly" title=" " alt="" coords="513,90,456,104,455,99,511,85"/>
+<area shape="poly" title=" " alt="" coords="279,83,197,104,195,99,278,78"/>
+<area shape="poly" title=" " alt="" coords="274,49,224,44,225,38,275,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1846c07b60323a88c41063a8f5eaad60" name="a1846c07b60323a88c41063a8f5eaad60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1846c07b60323a88c41063a8f5eaad60">&#9670;&#160;</a></span>getLocalArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getLocalArea </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00038">DomainDecomposition&lt; Geo &gt;::getLocalAreaForRankId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00075">DomainDecomposition&lt; Geo &gt;::getLocalHaloArea()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00099">DomainDecomposition&lt; Geo &gt;::getLocalHaloForNeighbour()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_cgraph" id="ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="224,5,404,45"/>
+<area shape="poly" title=" " alt="" coords="176,23,210,23,210,28,176,28"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="452,5,623,45"/>
+<area shape="poly" title=" " alt="" coords="404,23,438,23,438,28,404,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_icgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_icgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_icgraph" id="ade/d20/classDomainDecomposition_a1846c07b60323a88c41063a8f5eaad60_icgraph">
+<area shape="rect" title=" " alt="" coords="523,69,693,109"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a23b25512ed2d51375481fe922bea29f3" title=" " alt="" coords="288,37,459,77"/>
+<area shape="poly" title=" " alt="" coords="508,78,459,72,459,66,509,73"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#aef463b4c5472c13a0790bcf9df0f23e6" title=" " alt="" coords="272,101,475,141"/>
+<area shape="poly" title=" " alt="" coords="509,105,475,110,474,105,508,100"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ac41f8642c00a317f692c415fa055d198" title=" " alt="" coords="29,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="274,48,200,39,201,33,275,42"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ada0985b3c48ef41f96c9a1020afa6c1f" title=" " alt="" coords="5,69,224,109"/>
+<area shape="poly" title=" " alt="" coords="275,72,225,78,224,73,274,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9fa4406138e1c4d57622e66e5262acd" name="af9fa4406138e1c4d57622e66e5262acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9fa4406138e1c4d57622e66e5262acd">&#9670;&#160;</a></span>getLocalAreaForRankId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getLocalAreaForRankId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a></td>          <td class="paramname"><span class="paramname"><em>rankId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00038">38</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00031">DomainDecomposition&lt; Geo &gt;::getLeafRankId()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00070">DomainDecomposition&lt; Geo &gt;::getLocalArea()</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00099">DomainDecomposition&lt; Geo &gt;::getLocalHaloForNeighbour()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00109">DomainDecomposition&lt; Geo &gt;::getRemoteHaloForNeighbour()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_cgraph" id="ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="233,5,404,45"/>
+<area shape="poly" title=" " alt="" coords="186,23,220,23,220,28,186,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_icgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_icgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_icgraph" id="ade/d20/classDomainDecomposition_af9fa4406138e1c4d57622e66e5262acd_icgraph">
+<area shape="rect" title=" " alt="" coords="741,73,921,113"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="523,16,693,56"/>
+<area shape="poly" title=" " alt="" coords="739,72,686,59,687,53,740,67"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ada0985b3c48ef41f96c9a1020afa6c1f" title=" " alt="" coords="5,97,224,137"/>
+<area shape="poly" title=" " alt="" coords="728,106,475,124,373,126,272,124,224,123,224,118,272,119,373,120,475,119,727,101"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#aef463b4c5472c13a0790bcf9df0f23e6" title=" " alt="" coords="272,69,475,109"/>
+<area shape="poly" title=" " alt="" coords="727,95,475,93,475,88,727,90"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a23b25512ed2d51375481fe922bea29f3" title=" " alt="" coords="288,5,459,45"/>
+<area shape="poly" title=" " alt="" coords="508,34,459,32,459,27,509,29"/>
+<area shape="poly" title=" " alt="" coords="510,61,462,72,461,67,509,56"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ac41f8642c00a317f692c415fa055d198" title=" " alt="" coords="29,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="274,28,200,28,200,23,274,23"/>
+<area shape="poly" title=" " alt="" coords="295,52,273,60,167,100,165,95,271,55,294,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a23b25512ed2d51375481fe922bea29f3" name="a23b25512ed2d51375481fe922bea29f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b25512ed2d51375481fe922bea29f3">&#9670;&#160;</a></span>getLocalHaloArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getLocalHaloArea </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00075">75</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00070">DomainDecomposition&lt; Geo &gt;::getLocalArea()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00082">DomainDecomposition&lt; Geo &gt;::getNeighbourRankIds()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00109">DomainDecomposition&lt; Geo &gt;::getRemoteHaloForNeighbour()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_cgraph" id="ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="224,5,395,45"/>
+<area shape="poly" title=" " alt="" coords="176,23,210,23,210,28,176,28"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="443,5,623,45"/>
+<area shape="poly" title=" " alt="" coords="395,23,429,23,429,28,395,28"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="671,5,841,45"/>
+<area shape="poly" title=" " alt="" coords="623,23,657,23,657,28,623,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_icgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_icgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_icgraph" id="ade/d20/classDomainDecomposition_a23b25512ed2d51375481fe922bea29f3_icgraph">
+<area shape="rect" title=" " alt="" coords="272,37,443,77"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ac41f8642c00a317f692c415fa055d198" title=" " alt="" coords="29,5,200,45"/>
+<area shape="poly" title=" " alt="" coords="258,47,200,39,200,34,259,42"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#ada0985b3c48ef41f96c9a1020afa6c1f" title=" " alt="" coords="5,69,224,109"/>
+<area shape="poly" title=" " alt="" coords="259,73,224,78,224,72,258,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef463b4c5472c13a0790bcf9df0f23e6" name="aef463b4c5472c13a0790bcf9df0f23e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef463b4c5472c13a0790bcf9df0f23e6">&#9670;&#160;</a></span>getLocalHaloForNeighbour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getLocalHaloForNeighbour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a></td>          <td class="paramname"><span class="paramname"><em>neighbourRankId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00099">99</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00070">DomainDecomposition&lt; Geo &gt;::getLocalArea()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00038">DomainDecomposition&lt; Geo &gt;::getLocalAreaForRankId()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_aef463b4c5472c13a0790bcf9df0f23e6_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_aef463b4c5472c13a0790bcf9df0f23e6_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_aef463b4c5472c13a0790bcf9df0f23e6_cgraph" id="ade/d20/classDomainDecomposition_aef463b4c5472c13a0790bcf9df0f23e6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,208,75"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="256,5,427,45"/>
+<area shape="poly" title=" " alt="" coords="208,39,242,35,243,40,208,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="475,35,655,75"/>
+<area shape="poly" title=" " alt="" coords="208,54,256,55,427,55,461,54,461,60,427,60,256,60,208,59"/>
+<area shape="poly" title=" " alt="" coords="427,34,461,38,461,44,426,39"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="703,35,873,75"/>
+<area shape="poly" title=" " alt="" coords="655,52,689,52,689,57,655,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac41f8642c00a317f692c415fa055d198" name="ac41f8642c00a317f692c415fa055d198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f8642c00a317f692c415fa055d198">&#9670;&#160;</a></span>getNeighbourRankIds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a> &gt; <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getNeighbourRankIds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00082">82</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00031">DomainDecomposition&lt; Geo &gt;::getLeafRankId()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00075">DomainDecomposition&lt; Geo &gt;::getLocalHaloArea()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_ac41f8642c00a317f692c415fa055d198_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_ac41f8642c00a317f692c415fa055d198_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_ac41f8642c00a317f692c415fa055d198_cgraph" id="ade/d20/classDomainDecomposition_ac41f8642c00a317f692c415fa055d198_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="889,5,1060,45"/>
+<area shape="poly" title=" " alt="" coords="176,20,224,19,533,16,841,19,876,19,876,25,841,24,533,21,224,24,176,25"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a23b25512ed2d51375481fe922bea29f3" title=" " alt="" coords="224,33,395,73"/>
+<area shape="poly" title=" " alt="" coords="176,34,211,38,210,43,176,39"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="443,33,613,73"/>
+<area shape="poly" title=" " alt="" coords="395,51,429,51,429,56,395,56"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="661,33,841,73"/>
+<area shape="poly" title=" " alt="" coords="613,51,648,51,648,56,613,56"/>
+<area shape="poly" title=" " alt="" coords="841,39,876,35,876,40,842,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ada0985b3c48ef41f96c9a1020afa6c1f" name="ada0985b3c48ef41f96c9a1020afa6c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0985b3c48ef41f96c9a1020afa6c1f">&#9670;&#160;</a></span>getRemoteHaloForNeighbour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::getRemoteHaloForNeighbour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a66e1d499241ccae9a18a20a1f4f0590d">u64</a></td>          <td class="paramname"><span class="paramname"><em>neighbourRankId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00109">109</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00038">DomainDecomposition&lt; Geo &gt;::getLocalAreaForRankId()</a>, and <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00075">DomainDecomposition&lt; Geo &gt;::getLocalHaloArea()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d20/classDomainDecomposition_ada0985b3c48ef41f96c9a1020afa6c1f_cgraph.png" border="0" usemap="#ade/d20/classDomainDecomposition_ada0985b3c48ef41f96c9a1020afa6c1f_cgraph" alt=""/></div>
+<map name="ade/d20/classDomainDecomposition_ada0985b3c48ef41f96c9a1020afa6c1f_cgraph" id="ade/d20/classDomainDecomposition_ada0985b3c48ef41f96c9a1020afa6c1f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,224,45"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#af9fa4406138e1c4d57622e66e5262acd" title=" " alt="" coords="709,5,889,45"/>
+<area shape="poly" title=" " alt="" coords="224,20,272,19,661,19,696,19,696,25,661,24,272,24,224,25"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a23b25512ed2d51375481fe922bea29f3" title=" " alt="" coords="272,33,443,73"/>
+<area shape="poly" title=" " alt="" coords="224,35,259,39,258,45,224,41"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a750c97769ef213802f703aef4814aff7" title=" " alt="" coords="937,5,1108,45"/>
+<area shape="poly" title=" " alt="" coords="890,23,924,23,924,28,890,28"/>
+<area shape="rect" href="../../de/d20/classDomainDecomposition.html#a1846c07b60323a88c41063a8f5eaad60" title=" " alt="" coords="491,33,661,73"/>
+<area shape="poly" title=" " alt="" coords="443,51,477,51,477,56,443,56"/>
+<area shape="poly" title=" " alt="" coords="661,40,695,36,696,41,662,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a6e06d2be8f59ab1c3c7ca5c23ef88d98" name="a6e06d2be8f59ab1c3c7ca5c23ef88d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e06d2be8f59ab1c3c7ca5c23ef88d98">&#9670;&#160;</a></span>grid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9c/classDomainDecomposition_1_1Grid.html">Grid</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::grid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00029">29</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<a id="ad7761ba9803a7ab2e52a478fcd22d5b0" name="ad7761ba9803a7ab2e52a478fcd22d5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7761ba9803a7ab2e52a478fcd22d5b0">&#9670;&#160;</a></span>haloThickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a7399e909256333f91069351b7bd6e735">Geo::P</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::haloThickness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00017">17</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<a id="a7703d405d86582c285d75a6134925da1" name="a7703d405d86582c285d75a6134925da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7703d405d86582c285d75a6134925da1">&#9670;&#160;</a></span>localRankId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::localRankId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00015">15</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+</div>
+</div>
+<a id="afc508039f962670f7847b2fc4cd52f87" name="afc508039f962670f7847b2fc4cd52f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc508039f962670f7847b2fc4cd52f87">&#9670;&#160;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d15/structGeometry.html#a274c3159448568c98e9d0e67b1550526">Geo::Region</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::range</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00014">14</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00054">DomainDecomposition&lt; Geo &gt;::DomainDecomposition()</a>.</p>
+
+</div>
+</div>
+<a id="ad9243206ae7b07eae5728a54ef69b057" name="ad9243206ae7b07eae5728a54ef69b057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9243206ae7b07eae5728a54ef69b057">&#9670;&#160;</a></span>rankCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a>&lt; <a class="el" href="../../d4/d76/benchmarks_2other_2noh2d_2main_8cpp.html#a70d723baf55cf505c09b0d16f79061ef">Geo</a> &gt;::rankCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00016">16</a> of file <a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d84/decomposition_8h_source.html#l00054">DomainDecomposition&lt; Geo &gt;::DomainDecomposition()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>benchmarks/other/noh2d-common/spacetree/mpi/<a class="el" href="../../d4/d84/decomposition_8h_source.html">decomposition.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/d20/classDomainDecomposition.html">DomainDecomposition</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:09 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

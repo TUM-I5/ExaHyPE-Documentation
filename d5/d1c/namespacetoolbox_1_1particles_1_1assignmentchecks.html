@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">toolbox::particles::assignmentchecks Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Correctness checks of particle-mesh assignment.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:da/d11/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1internal" id="r_da/d11/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d11/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1internal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/dd0/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1tests" id="r_df/dd0/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1tests"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd0/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1tests.html">tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a79d15ac429dcffbf02e36da837db5240" id="r_a79d15ac429dcffbf02e36da837db5240"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d15ac429dcffbf02e36da837db5240">ParticlePosition</a> = <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt;</td></tr>
+<tr class="separator:a79d15ac429dcffbf02e36da837db5240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1d226db28a9bf033c15fefa8a66dedb4" id="r_a1d226db28a9bf033c15fefa8a66dedb4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d226db28a9bf033c15fefa8a66dedb4">sweepHistory</a> ()</td></tr>
+<tr class="memdesc:a1d226db28a9bf033c15fefa8a66dedb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the history of stored sweeps.  <br /></td></tr>
+<tr class="separator:a1d226db28a9bf033c15fefa8a66dedb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1fcc172c6cf601141bdc14b3e65dad" id="r_afe1fcc172c6cf601141bdc14b3e65dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe1fcc172c6cf601141bdc14b3e65dad">startMeshSweep</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;meshSweepName)</td></tr>
+<tr class="memdesc:afe1fcc172c6cf601141bdc14b3e65dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform API that this is the end of a grid run-throuch.  <br /></td></tr>
+<tr class="separator:afe1fcc172c6cf601141bdc14b3e65dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf63ab00643ede87b06f3f03c5072cd9" id="r_acf63ab00643ede87b06f3f03c5072cd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf63ab00643ede87b06f3f03c5072cd9">eraseParticle</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> isLocal, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace)</td></tr>
+<tr class="memdesc:acf63ab00643ede87b06f3f03c5072cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log that a particle is erased.  <br /></td></tr>
+<tr class="separator:acf63ab00643ede87b06f3f03c5072cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf58bf00ad73d7ee7abf4b581a002833" id="r_acf58bf00ad73d7ee7abf4b581a002833"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf58bf00ad73d7ee7abf4b581a002833">moveParticle</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;oldParticleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;newParticleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace)</td></tr>
+<tr class="memdesc:acf58bf00ad73d7ee7abf4b581a002833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the movement of a particle.  <br /></td></tr>
+<tr class="separator:acf58bf00ad73d7ee7abf4b581a002833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c87f6e5c2d2fccf672e8a07530e81d" id="r_a08c87f6e5c2d2fccf672e8a07530e81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08c87f6e5c2d2fccf672e8a07530e81d">assignParticleToVertex</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> isLocal, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;prevVertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;prevVertexH, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> particleIsNew=false, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> reassignmentOnSameTreeDepthAllowed=false)</td></tr>
+<tr class="memdesc:a08c87f6e5c2d2fccf672e8a07530e81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a particle to a vertex.  <br /></td></tr>
+<tr class="separator:a08c87f6e5c2d2fccf672e8a07530e81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24036685131503aa7bf548bd5843dba2" id="r_a24036685131503aa7bf548bd5843dba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24036685131503aa7bf548bd5843dba2">detachParticleFromVertex</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> isLocal, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace)</td></tr>
+<tr class="memdesc:a24036685131503aa7bf548bd5843dba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove particle from vertex.  <br /></td></tr>
+<tr class="separator:a24036685131503aa7bf548bd5843dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599b2554a6a4d2c9037bc590ca05d59c" id="r_a599b2554a6a4d2c9037bc590ca05d59c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a599b2554a6a4d2c9037bc590ca05d59c">assignParticleToSieveSet</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> isLocal, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace)</td></tr>
+<tr class="memdesc:a599b2554a6a4d2c9037bc590ca05d59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a particle to a sieve set.  <br /></td></tr>
+<tr class="separator:a599b2554a6a4d2c9037bc590ca05d59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e736dc6c9943e2a4f4908b08e3fe268" id="r_a6e736dc6c9943e2a4f4908b08e3fe268"><td class="memTemplParams" colspan="2">template&lt;typename Particle &gt; </td></tr>
+<tr class="memitem:a6e736dc6c9943e2a4f4908b08e3fe268"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6e736dc6c9943e2a4f4908b08e3fe268">pruneTypeName</a> ()</td></tr>
+<tr class="memdesc:a6e736dc6c9943e2a4f4908b08e3fe268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out particle name.  <br /></td></tr>
+<tr class="separator:a6e736dc6c9943e2a4f4908b08e3fe268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad2ee5c2d58637c34d53b918f40b97f" id="r_a2ad2ee5c2d58637c34d53b918f40b97f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad2ee5c2d58637c34d53b918f40b97f">eliminateExistingParticles</a> ()</td></tr>
+<tr class="memdesc:a2ad2ee5c2d58637c34d53b918f40b97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eliminate existing particles, so only those that are "forgotten" remain.  <br /></td></tr>
+<tr class="separator:a2ad2ee5c2d58637c34d53b918f40b97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1247de3811acd7df2eb3b483f4561fd" id="r_ab1247de3811acd7df2eb3b483f4561fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1247de3811acd7df2eb3b483f4561fd">ensureDatabaseIsEmpty</a> ()</td></tr>
+<tr class="memdesc:ab1247de3811acd7df2eb3b483f4561fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that database is empty.  <br /></td></tr>
+<tr class="separator:ab1247de3811acd7df2eb3b483f4561fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712ba092af7f50ac91a4fde4549c514a" id="r_a712ba092af7f50ac91a4fde4549c514a"><td class="memTemplParams" colspan="2">template&lt;typename ParticleContainer &gt; </td></tr>
+<tr class="memitem:a712ba092af7f50ac91a4fde4549c514a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a79d15ac429dcffbf02e36da837db5240">ParticlePosition</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a712ba092af7f50ac91a4fde4549c514a">recordParticlePositions</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> ParticleContainer &amp;container)</td></tr>
+<tr class="memdesc:a712ba092af7f50ac91a4fde4549c514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current particle positions in a vector.  <br /></td></tr>
+<tr class="separator:a712ba092af7f50ac91a4fde4549c514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6a95548dc372fa2f112ee192ae121f" id="r_aed6a95548dc372fa2f112ee192ae121f"><td class="memTemplParams" colspan="2">template&lt;typename ParticleContainer &gt; </td></tr>
+<tr class="memitem:aed6a95548dc372fa2f112ee192ae121f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aed6a95548dc372fa2f112ee192ae121f">traceParticleMovements</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> ParticleContainer &amp;container, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::vector&lt; <a class="el" href="#a79d15ac429dcffbf02e36da837db5240">ParticlePosition</a> &gt; &amp;recordedPositions, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetreeId)</td></tr>
+<tr class="memdesc:aed6a95548dc372fa2f112ee192ae121f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace the particle movements.  <br /></td></tr>
+<tr class="separator:aed6a95548dc372fa2f112ee192ae121f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71e39d0e291d1131189533a4636f84f" id="r_af71e39d0e291d1131189533a4636f84f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71e39d0e291d1131189533a4636f84f">getUnitTests</a> ()</td></tr>
+<tr class="memdesc:af71e39d0e291d1131189533a4636f84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Please destroy after usage.  <br /></td></tr>
+<tr class="separator:af71e39d0e291d1131189533a4636f84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Correctness checks of particle-mesh assignment. </p>
+<p>This API is inspired by SWIFT's <a class="el" href="../../d2/d72/namespaceswift2_1_1dependencychecks.html">swift2::dependencychecks</a> as introduced by Mladen: We keep some history of particle-mesh associations, trace new mesh assignments and validate them against the recorded history. All the tracing degenerates to empty routines if we work in release mode, so there should not be any overhead.</p>
+<p>Most toolbox routines do automatically report against this API. However, to make the checks work, you have to report particle movements manually.</p>
+<p>Furthermore, you might want to invoke <a class="el" href="#afe1fcc172c6cf601141bdc14b3e65dad" title="Inform API that this is the end of a grid run-throuch.">toolbox::particles::assignmentchecks::startMeshSweep()</a> prior to your traversals to ensure that you get a nice break-down of all mesh transitions.</p>
+<h2><a class="anchor" id="autotoc_md273"></a>
+Enable assignment checks</h2>
+<p>By default, the assignment checks are enabled as soon as PeanoDebug is set to a value greater than 0. However, you can explicitly disable it by adding</p>
+<p>-DnoAssignmentChecks</p>
+<p>to your compile flags. This is important as assignment checks are very expensive. The checks also might yield invalid errors once you run them over multiple ranks, i.e with -DParallel. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a79d15ac429dcffbf02e36da837db5240" name="a79d15ac429dcffbf02e36da837db5240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d15ac429dcffbf02e36da837db5240">&#9670;&#160;</a></span>ParticlePosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a79d15ac429dcffbf02e36da837db5240">toolbox::particles::assignmentchecks::ParticlePosition</a> = <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/df9/TracingAPI_8h_source.html#l00332">332</a> of file <a class="el" href="../../de/df9/TracingAPI_8h_source.html">TracingAPI.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a599b2554a6a4d2c9037bc590ca05d59c" name="a599b2554a6a4d2c9037bc590ca05d59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599b2554a6a4d2c9037bc590ca05d59c">&#9670;&#160;</a></span>assignParticleToSieveSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::assignParticleToSieveSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>isLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign a particle to a sieve set. </p>
+<p>To make this routine valid, the particle may not be assigned to a vertex anymore, i.e. <a class="el" href="#a24036685131503aa7bf548bd5843dba2" title="Remove particle from vertex.">detachParticleFromVertex()</a> has to be called before. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08c87f6e5c2d2fccf672e8a07530e81d" name="a08c87f6e5c2d2fccf672e8a07530e81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c87f6e5c2d2fccf672e8a07530e81d">&#9670;&#160;</a></span>assignParticleToVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::assignParticleToVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>isLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>prevVertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>prevVertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>particleIsNew</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>reassignmentOnSameTreeDepthAllowed</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign a particle to a vertex. </p>
+<p>Take the particle, perform some consistency checks, and then add the particle event to our history database. The consistency checks differ for local from virtual particles.</p>
+<h2><a class="anchor" id="autotoc_md274"></a>
+Consistency checks</h2>
+<h3><a class="anchor" id="autotoc_md275"></a>
+Consistency checks for local particles</h3>
+<ul>
+<li>A new particle might have been inserted into the domain for the very first time. In this case, the particle has to be "free", i.e. it may not have been assigned to any other vertex yet. The search should reduce a NotFound, or find that in a previous sweep it had been a particle that has been erased.</li>
+<li>The particle might have been dropped from a coarser level. See corresponding discussion for virtual particles below including some sketches.</li>
+<li>The particle might have been lifted. Lifting can only occur for local particles, as it is a result of a move and we may only move local particles. If the assignment is due to a lift, this local particle has been assigned to a finer mesh resolution before.</li>
+<li>If we lift a particle into the global sieve set (as the particle tunnels or there's a horizontal cut through the spacetree, i.e. the coarser cell is held by another rank), we will sieve the particle into the local domain in the next step. In this case, the previous particle's state could be local or virtual: If the particle has moved and therefore ended up in the sieve set, we will not have updated its parallel flag yet. Therefore, it might have changed.</li>
+<li>A particle might change from remote to local. This can only happen in UpdateParallelState after a merge, which first detaches a particle and then re-adds it with the local flag set.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md276"></a>
+Consistency check for virtual particles</h3>
+<ul>
+<li>The particle comes in through the boundary as part of the boundary exchange. In this case, the particle has to be "free", i.e. it may not be assigned to any other vertex yet. The particle has to be new (NotFound in database), or virtual in a previous sweep as well and having been erased.</li>
+<li>If it is an update of the halo copy, we would expect the corresponding merge() to replace this copy. A replacement manifests in an event sequence of detach-&gt;erase-&gt;assign, so we still get a NotFound or Erase throughout the assign.</li>
+<li>A virtual particle might also be subject of a mesh drop: If we lift a particle, exchange it along the boundary, we have to drop it on both sides again. We update its state <em><b>after</b></em> we have assigned it to a vertex, but we also set its state in the merge, so here the state has to be virtual.</li>
+<li>A local particle might have changed from local to virtual as it had moved. In this case, the update should detach the particle before it adds it again.</li>
+<li>We might drop due to a global sieve. In this case, the previous particle's state could be local or virtual: If the particle has moved and therefore ended up in the sieve set, we will not have updated its parallel flag yet. Therefore, it might have changed.</li>
+</ul>
+<p>In the scenario below, we illustrate the last scenario by means of an interface between two ranks. It is denoted below as grey partition (one left rank) and a blueish partition (on the right rank). They have kind of a halo layer of width one, which is a logical construct, i.e. not maintained manually.</p>
+<div class="image">
+<img src="../../scenario00_particle-through-domain-wall.png" alt=""/>
+</div>
+<p>Study the central setup: In step N, yellow moves, while red will be deleted after the traversal, as each step moving particles has to update states as well (UpdateParallelState action set). Yellow now might be lifted to the next level. So far, its state is local on the grey rank, no matter if it stays within this subdomain or not. We exchange the data after step N.</p>
+<p>In step N+1, either rank sets the state to local or virtual. This happens either in touchVertexFirstTime() in the UpdateParallelState action set, or it happens straight in merge(). No matter what, it happens on the coarser level before we even touch the fine mesh level. When we drop it, the particle has the correct parallel state.</p>
+<p>Another special situation arises from a setup, where the particle of interest is located exactly along the subdomain boundary. In this case, we move both copies, as the particle is considered to be local on both ranks. Let one rank (tree 0) subsequently lift the particle, as it has moved quite a bit. The other rank (tree 1) therefore also has to lift yet cannot do so, as the next coarser mesh level is actually owned by tree 0. It adds its particle to the sieve set. After the movement, the particle is on the coarser level on tree 0 and in the sieve set of tree 1.</p>
+<p>This sieve set is now exchanged between the trees. Tree 1 seems to be kind of simple: The particle will be taken from the sieve set, inserted into the domain (given that it hasn't totally left this tree) and will then either be set to local or virtual. However, we will also get a copy of this particle from tree 0 through the boundary. This copy will then be sieved. We end up with two copies: One from the global sieve set and one from the boundary.</p>
+<p>Tree 0's behaviour exhibits the same behaviour: We will drop the particle which we have temporarily lifted to the next coarser level. After we have dropped it, we will also insert the copy from the global sieve set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prevVertexX</td><td>vertex coordinates of previous assiciation event. Needed to find particle in database after a detach event. If particle is new, it can be junk. </td></tr>
+    <tr><td class="paramname">prevVertexH</td><td>same as prevVertexX, but for vertex size. </td></tr>
+    <tr><td class="paramname">particleIsNew</td><td>If we know that a particle is new, there's no need to search through the database. </td></tr>
+    <tr><td class="paramname">reassignmentOnSameTreeDepthAllowed</td><td>If true, assume our particle sorting/bookkeeping algorithm allows for a particle to be reassigned from one vertex to another vertex on the same depth in the tree directly (due to its movement). Otherwise, expect the particle to be sorted either via sieves or a sequence of lifts and drops. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00535">535</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/dfd/particles_8cpph_source.html#l00093">toolbox::particles::insertParticleIntoCell()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_a08c87f6e5c2d2fccf672e8a07530e81d_icgraph.png" border="0" usemap="#ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_a08c87f6e5c2d2fccf672e8a07530e81d_icgraph" alt=""/></div>
+<map name="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_a08c87f6e5c2d2fccf672e8a07530e81d_icgraph" id="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_a08c87f6e5c2d2fccf672e8a07530e81d_icgraph">
+<area shape="rect" title="Assign a particle to a vertex." alt="" coords="439,5,607,60"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#a593ad6871d8a624f665e22cb5cfc0ea8" title="Insert particle into cell." alt="" coords="225,13,391,53"/>
+<area shape="poly" title=" " alt="" coords="425,35,391,35,391,30,425,30"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#aac52ee0c1974b7572d5207688f371946" title="Insert particle into a cell." alt="" coords="5,13,177,53"/>
+<area shape="poly" title=" " alt="" coords="211,35,178,35,178,30,211,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24036685131503aa7bf548bd5843dba2" name="a24036685131503aa7bf548bd5843dba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24036685131503aa7bf548bd5843dba2">&#9670;&#160;</a></span>detachParticleFromVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::detachParticleFromVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>isLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove particle from vertex. </p>
+<p>To make this API call valid, the particle has to be assigned to a vertex beforehand. So there has to be a <a class="el" href="#a08c87f6e5c2d2fccf672e8a07530e81d" title="Assign a particle to a vertex.">assignParticleToVertex()</a> before this one. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00550">550</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ad2ee5c2d58637c34d53b918f40b97f" name="a2ad2ee5c2d58637c34d53b918f40b97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad2ee5c2d58637c34d53b918f40b97f">&#9670;&#160;</a></span>eliminateExistingParticles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::eliminateExistingParticles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Eliminate existing particles, so only those that are "forgotten" remain. </p>
+<p>This routine runs through the particles for which we have recorded events. If the last event</p>
+<ul>
+<li>affects a remote particle;</li>
+<li>is a move;</li>
+<li>is an assignment to vertex,</li>
+</ul>
+<p>we know that it cannot eliminate existing particles. So we remote their trajectories via removeTrajectory(). If the last snapshot is empty, we remove it completely.</p>
+<p>Once this routine has terminated, we get the stuff in the database for particles that seem to have been left over. We also get a lot of historic data, but if we plot the database and study solely the last snapshot, we typically get a good idea of which particles got lost. </p>
+
+</div>
+</div>
+<a id="ab1247de3811acd7df2eb3b483f4561fd" name="ab1247de3811acd7df2eb3b483f4561fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1247de3811acd7df2eb3b483f4561fd">&#9670;&#160;</a></span>ensureDatabaseIsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::ensureDatabaseIsEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ensure that database is empty. </p>
+<p>This one is usually called after <a class="el" href="#a2ad2ee5c2d58637c34d53b918f40b97f" title="Eliminate existing particles, so only those that are &quot;forgotten&quot; remain.">eliminateExistingParticles()</a> and will leave the user only with particles which have "magically" disappeared.</p>
+<p>This routine uses exit(-1) if no assertions are enabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00583">583</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf63ab00643ede87b06f3f03c5072cd9" name="acf63ab00643ede87b06f3f03c5072cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf63ab00643ede87b06f3f03c5072cd9">&#9670;&#160;</a></span>eraseParticle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::eraseParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>isLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log that a particle is erased. </p>
+<p>This should solely happen for virtual particles, i.e. halo particles. Before this function is called, the corresponding particle has to be removed from its associated vertex. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00524">524</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af71e39d0e291d1131189533a4636f84f" name="af71e39d0e291d1131189533a4636f84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71e39d0e291d1131189533a4636f84f">&#9670;&#160;</a></span>getUnitTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8e/classtarch_1_1tests_1_1TestCase.html">tarch::tests::TestCase</a> * toolbox::particles::assignmentchecks::getUnitTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Please destroy after usage. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d41/toolbox_2particles_2assignmentchecks_2UnitTests_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d9/d41/toolbox_2particles_2assignmentchecks_2UnitTests_8cpp_source.html">UnitTests.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d7a/TreeTestCaseCollection_8cpp_source.html#l00126">tarch::tests::TreeTestCaseCollection::addTestCase()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d0/d12/src_2unittests_2main_8cpp_source.html#l00047">runTests()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_cgraph.png" border="0" usemap="#ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_cgraph" alt=""/></div>
+<map name="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_cgraph" id="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_cgraph">
+<area shape="rect" title="Please destroy after usage." alt="" coords="5,5,164,60"/>
+<area shape="rect" href="../../d7/da0/classtarch_1_1tests_1_1TreeTestCaseCollection.html#a221ed543b82f7c82d46b5368cf99b040" title="Adds a new test case." alt="" coords="212,13,400,53"/>
+<area shape="poly" title=" " alt="" coords="164,30,199,30,199,35,164,35"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_icgraph.png" border="0" usemap="#ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_icgraph" alt=""/></div>
+<map name="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_icgraph" id="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_af71e39d0e291d1131189533a4636f84f_icgraph">
+<area shape="rect" title="Please destroy after usage." alt="" coords="129,5,288,60"/>
+<area shape="rect" href="../../d0/d12/src_2unittests_2main_8cpp.html#a2dcdccc8a8ededb7804d00ba921edb73" title=" " alt="" coords="5,20,81,45"/>
+<area shape="poly" title=" " alt="" coords="115,35,81,35,81,30,115,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf58bf00ad73d7ee7abf4b581a002833" name="acf58bf00ad73d7ee7abf4b581a002833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf58bf00ad73d7ee7abf4b581a002833">&#9670;&#160;</a></span>moveParticle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::moveParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>oldParticleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>newParticleX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record the movement of a particle. </p>
+<p>We insert a new entry which memorises the particle movements. However, something we come across very often is that particles, once assigned to a vertex, very often stay assigned to the same vertex for a long time (=many sweeps) and only experiences small movements. Rather than tracing every single move event individually, the database will mark consecutive move events using a special event type, Event::Type::ConsecutiveMoveEvent. It will also keep track the original position of the particle, before the first move event of that sequence has occurred, as well as the current particle position.</p>
+<p>In earlier versions, we tested for a previous event existing on any tree in the database. This lead to concurrency issues. Sometimes (on rare occasions) when a particle is being lifted or dropped in its local tree, these changes won't have made it into the database for trees where the particle is virtual as the trees will race over write access to the database. In these scenarios the checks will fail because they find that the particle hasn't been associated to the same vertex. Since we now keep track of a particle history for each tree it finds itself on, these checks are deprecated. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00572">572</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d61/FixedBoundary_8cpph_source.html#l00005">swift2::boundaryconditions::applyFixedBoundaryCondition()</a>, and <a class="el" href="../../dd/d87/TracingAPI_8cpph_source.html#l00031">traceParticleMovements()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_acf58bf00ad73d7ee7abf4b581a002833_icgraph.png" border="0" usemap="#ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_acf58bf00ad73d7ee7abf4b581a002833_icgraph" alt=""/></div>
+<map name="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_acf58bf00ad73d7ee7abf4b581a002833_icgraph" id="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_acf58bf00ad73d7ee7abf4b581a002833_icgraph">
+<area shape="rect" title="Record the movement of a particle." alt="" coords="277,34,436,89"/>
+<area shape="rect" href="../../dc/d90/namespaceswift2_1_1boundaryconditions.html#ad76ab9a9cf3cbde18a7b358839db4adf" title="Apply fixed boundary conditions to particle." alt="" coords="5,5,229,45"/>
+<area shape="poly" title=" " alt="" coords="263,50,229,45,230,40,264,45"/>
+<area shape="rect" href="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html#aed6a95548dc372fa2f112ee192ae121f" title="Trace the particle movements." alt="" coords="27,70,207,125"/>
+<area shape="poly" title=" " alt="" coords="264,78,208,86,207,81,263,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e736dc6c9943e2a4f4908b08e3fe268" name="a6e736dc6c9943e2a4f4908b08e3fe268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e736dc6c9943e2a4f4908b08e3fe268">&#9670;&#160;</a></span>pruneTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Particle &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::particles::assignmentchecks::pruneTypeName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find out particle name. </p>
+<p>In some places, it is convenient to construct the particle name from the type. However, some compilers only give you something similar to</p>
+<div class="fragment"><div class="line">N10benchmarks6swift23noh10globaldata9HydroPartE</div>
+</div><!-- fragment --><p>which is really not what you want. This routine tries to reconstruct a meaningful result. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/df9/TracingAPI_8h_source.html#l00289">289</a> of file <a class="el" href="../../de/df9/TracingAPI_8h_source.html">TracingAPI.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01019">assertion2</a>.</p>
+
+</div>
+</div>
+<a id="a712ba092af7f50ac91a4fde4549c514a" name="a712ba092af7f50ac91a4fde4549c514a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712ba092af7f50ac91a4fde4549c514a">&#9670;&#160;</a></span>recordParticlePositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParticleContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="#a79d15ac429dcffbf02e36da837db5240">ParticlePosition</a> &gt; toolbox::particles::assignmentchecks::recordParticlePositions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> ParticleContainer &amp;</td>          <td class="paramname"><span class="paramname"><em>container</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record the current particle positions in a vector. </p>
+
+</div>
+</div>
+<a id="afe1fcc172c6cf601141bdc14b3e65dad" name="afe1fcc172c6cf601141bdc14b3e65dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1fcc172c6cf601141bdc14b3e65dad">&#9670;&#160;</a></span>startMeshSweep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::startMeshSweep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>meshSweepName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inform API that this is the end of a grid run-throuch. </p>
+<p>Delegates to the corresponding method in the database. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00520">520</a> of file <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html">TracingAPI.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d226db28a9bf033c15fefa8a66dedb4" name="a1d226db28a9bf033c15fefa8a66dedb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d226db28a9bf033c15fefa8a66dedb4">&#9670;&#160;</a></span>sweepHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::particles::assignmentchecks::sweepHistory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the history of stored sweeps. </p>
+
+</div>
+</div>
+<a id="aed6a95548dc372fa2f112ee192ae121f" name="aed6a95548dc372fa2f112ee192ae121f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6a95548dc372fa2f112ee192ae121f">&#9670;&#160;</a></span>traceParticleMovements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParticleContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> toolbox::particles::assignmentchecks::traceParticleMovements </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> ParticleContainer &amp;</td>          <td class="paramname"><span class="paramname"><em>container</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::vector&lt; <a class="el" href="#a79d15ac429dcffbf02e36da837db5240">ParticlePosition</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>recordedPositions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetreeId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trace the particle movements. </p>
+<p>This routine runs through the particles in container and invokes <a class="el" href="#acf58bf00ad73d7ee7abf4b581a002833" title="Record the movement of a particle.">moveParticle()</a> for each and every particle which has moved. That is, we assume that recordedPositions has been obtained through <a class="el" href="#a712ba092af7f50ac91a4fde4549c514a" title="Record the current particle positions in a vector.">recordParticlePositions()</a> before, and both recordedPositions and container hold the same particles in the same order (even though they might have moved in-between).</p>
+<p>We only record particles that have moved, but actually the comparison here is only an optimisation, as the moveParticle itself will once again check that the particle has actually changed its position.</p>
+<p>We skip the checks for virtual particles. Virtual particles may end up here during a lift operation: They have been moved on a lower level and are now in the process of being lifted. In these cases, the checks we have set up fail, as the particle being lifted is not assigned to the correct vertex any more. Skipping these checks is fine because these virtual particles have already been moved while they've been Local, and the appropriate event has been noted and checked beforehand. Other virtual particles, i.e. virtual particles that have been virtual even before the move operation, should never have been part of the assignedParticles list that is being looped over. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/d87/TracingAPI_8cpph_source.html#l00031">31</a> of file <a class="el" href="../../dd/d87/TracingAPI_8cpph_source.html">TracingAPI.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01034">assertionEquals</a>, and <a class="el" href="../../d8/d3f/TracingAPI_8cpp_source.html#l00572">moveParticle()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_aed6a95548dc372fa2f112ee192ae121f_cgraph.png" border="0" usemap="#ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_aed6a95548dc372fa2f112ee192ae121f_cgraph" alt=""/></div>
+<map name="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_aed6a95548dc372fa2f112ee192ae121f_cgraph" id="ad5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks_aed6a95548dc372fa2f112ee192ae121f_cgraph">
+<area shape="rect" title="Trace the particle movements." alt="" coords="5,5,185,60"/>
+<area shape="rect" href="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html#acf58bf00ad73d7ee7abf4b581a002833" title="Record the movement of a particle." alt="" coords="233,5,392,60"/>
+<area shape="poly" title=" " alt="" coords="186,30,220,30,220,35,186,35"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dd9/namespacetoolbox.html">toolbox</a></li><li class="navelem"><a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html">particles</a></li><li class="navelem"><a class="el" href="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html">assignmentchecks</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:09 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+var classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep =
+[
+    [ "__init__", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a0f357407589838697b2e09363772d4f9", null ],
+    [ "add_entries_to_text_replacement_dictionary", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a69787900d0a17219a97fec5253b5fe79", null ],
+    [ "set_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a26060ab2f5f5ca1106dd88907b6efddb", null ],
+    [ "user_action_set_includes", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#af7e557a575517f75528706e07673289e", null ],
+    [ "_abstract_solver_user_declarations", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#aaf30ffc885d6c483fe6fea7acf876da4", null ],
+    [ "_abstract_solver_user_definitions", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a45ce925ae153bb1a1661a947f44fba08", null ],
+    [ "_auxiliary_variables_indices", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#afc12112611b1a5c9dd4500bb5a2bfbc6", null ],
+    [ "_compute_eigenvalue", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a52a5e34d9e59156fd21519c372545dfe", null ],
+    [ "_compute_kernel_call", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a7f84740d67e1567f19ed123139bd9e24", null ],
+    [ "_compute_new_time_step_size", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#ad1f100b45ae701bdeafa81753065f4d4", null ],
+    [ "_compute_time_step_size", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#aaf0ecb33d26c9e2e1845e3ee4b6bb590", null ],
+    [ "_constructor_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a90d69e03a44ae7c0abec9536d4fbeefc", null ],
+    [ "_finish_time_step_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#ad51a758e7b798c09347791e3718868dd", null ],
+    [ "_flux_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#af25f4c096ed279f3230d73875c758ae9", null ],
+    [ "_KO_Sigma", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a1c7550d18a0f9463fea574dc65c7d2e4", null ],
+    [ "_ncp_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#ab2eb73d68259c6353fec8af35ce0b500", null ],
+    [ "_primary_variables_indices", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a5affa7266fd63005a01883982b5d8912", null ],
+    [ "_print_time_step_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a16254a55097875e2b6aa7123a2f221fd", null ],
+    [ "_reconstruction_kernel_call", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a21393ceaedac09a78dccd81bcd4a6673", null ],
+    [ "_reconstruction_stages", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a263a6ebb382b5946ac95d413d7d11ad8", null ],
+    [ "_solver_user_declarations", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a4a648e7a2bd12a20db9ac62428e01a29", null ],
+    [ "_solver_user_definitions", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#ac2f344895a38589ad28298603c70c4a1", null ],
+    [ "_source_term_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#ac6a2bf751f41beb30c13054b499d1c13", null ],
+    [ "_start_time_step_implementation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#a39abd381f2daa3c3c489f929549c4180", null ],
+    [ "_time_step_relaxation", "d2/dec/classexahype2_1_1solvers_1_1rkfd_1_1fd4_1_1GlobalAdaptiveTimeStep_1_1GlobalAdaptiveTimeStep.html#af6a2616562906cc2a8af4b0dc66747a5", null ]
+];

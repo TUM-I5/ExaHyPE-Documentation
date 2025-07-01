@@ -1,0 +1,944 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/ddf/structRegion.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">Region&lt; dim, fp, topBoundaryInclusive &gt; Struct Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae31ce41358ea24c15dcf128f56786f38" id="r_ae31ce41358ea24c15dcf128f56786f38"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae31ce41358ea24c15dcf128f56786f38">D</a> = dim</td></tr>
+<tr class="separator:ae31ce41358ea24c15dcf128f56786f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37b3f85b2ddf8a748db3c85fe158acb" id="r_aa37b3f85b2ddf8a748db3c85fe158acb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37b3f85b2ddf8a748db3c85fe158acb">P</a> = fp</td></tr>
+<tr class="separator:aa37b3f85b2ddf8a748db3c85fe158acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1911cd19e11b316e56fed4fdaf4cbf91" id="r_a1911cd19e11b316e56fed4fdaf4cbf91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> = <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a>&lt;<a class="el" href="#ae31ce41358ea24c15dcf128f56786f38">D</a>, <a class="el" href="#aa37b3f85b2ddf8a748db3c85fe158acb">P</a>&gt;</td></tr>
+<tr class="separator:a1911cd19e11b316e56fed4fdaf4cbf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acd8039053351e44d56e1a3d559d0f079" id="r_acd8039053351e44d56e1a3d559d0f079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd8039053351e44d56e1a3d559d0f079">operator==</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:acd8039053351e44d56e1a3d559d0f079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6557b873fbe87809f0ee84900b618de" id="r_ab6557b873fbe87809f0ee84900b618de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6557b873fbe87809f0ee84900b618de">operator!=</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ab6557b873fbe87809f0ee84900b618de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791be48d04fddef61767b9c90e816238" id="r_a791be48d04fddef61767b9c90e816238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa37b3f85b2ddf8a748db3c85fe158acb">P</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a791be48d04fddef61767b9c90e816238">size</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a791be48d04fddef61767b9c90e816238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623cc0ce02f3ba8562e25adb5c8f6abc" id="r_a623cc0ce02f3ba8562e25adb5c8f6abc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623cc0ce02f3ba8562e25adb5c8f6abc">contains</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;p) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a623cc0ce02f3ba8562e25adb5c8f6abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09043a2dad4c64cffad0d1cbdd3c87ba" id="r_a09043a2dad4c64cffad0d1cbdd3c87ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09043a2dad4c64cffad0d1cbdd3c87ba">containsEx</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;p) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a09043a2dad4c64cffad0d1cbdd3c87ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab455137a084214345279132ca0cdbc" id="r_a5ab455137a084214345279132ca0cdbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/deb/classNumVec.html">NumVec</a>&lt; <a class="el" href="../../df/def/type_8h.html#aec4a1429cc91fb7ff41599b263c348cc">i32</a>, dim::N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab455137a084214345279132ca0cdbc">containsAxis</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;p) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a5ab455137a084214345279132ca0cdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393d5f6c1c0174da316d4f585a4c80ca" id="r_a393d5f6c1c0174da316d4f585a4c80ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393d5f6c1c0174da316d4f585a4c80ca">overlaps</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a393d5f6c1c0174da316d4f585a4c80ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c6e737dd657f46f40a6360a5c570e2" id="r_ad0c6e737dd657f46f40a6360a5c570e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c6e737dd657f46f40a6360a5c570e2">contains</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ad0c6e737dd657f46f40a6360a5c570e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6f7a9bd4995e92f13e00b88d48f6cb" id="r_aad6f7a9bd4995e92f13e00b88d48f6cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6f7a9bd4995e92f13e00b88d48f6cb">sharesBoundary</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:aad6f7a9bd4995e92f13e00b88d48f6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351c6e048027ed432a72fbbb3c815d70" id="r_a351c6e048027ed432a72fbbb3c815d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddf/structRegion.html">Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a351c6e048027ed432a72fbbb3c815d70">intersection</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;<a class="el" href="../../d0/de2/hydro__iact_8h.html#a9275d161581a75241fbf34397c38c58e">r</a>) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a351c6e048027ed432a72fbbb3c815d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3a450015e9f4f342e10c5c0b6fc3b8" id="r_a6e3a450015e9f4f342e10c5c0b6fc3b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e3a450015e9f4f342e10c5c0b6fc3b8">centre</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a6e3a450015e9f4f342e10c5c0b6fc3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0727e6c406c4b35a0fc3a2c8bc3d8d5b" id="r_a0727e6c406c4b35a0fc3a2c8bc3d8d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0727e6c406c4b35a0fc3a2c8bc3d8d5b">split</a> (<a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> n, <a class="el" href="../../d2/ddf/structRegion.html">Region</a> *regions) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a0727e6c406c4b35a0fc3a2c8bc3d8d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f30cbce9aaf5322ec387aea5e05b4ba" id="r_a9f30cbce9aaf5322ec387aea5e05b4ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f30cbce9aaf5322ec387aea5e05b4ba">splitIdx</a> (<a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> n, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;p) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a9f30cbce9aaf5322ec387aea5e05b4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a42050619125af5578455219179adf141" id="r_a42050619125af5578455219179adf141"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42050619125af5578455219179adf141">fromInclusiveBounds</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;<a class="el" href="#a05eb1d8454d7508e35502c47b2c43b1e">low</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;<a class="el" href="#a925e4eb63f68ffdef57d12d54cdd3694">high</a>)</td></tr>
+<tr class="separator:a42050619125af5578455219179adf141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a05eb1d8454d7508e35502c47b2c43b1e" id="r_a05eb1d8454d7508e35502c47b2c43b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05eb1d8454d7508e35502c47b2c43b1e">low</a></td></tr>
+<tr class="separator:a05eb1d8454d7508e35502c47b2c43b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925e4eb63f68ffdef57d12d54cdd3694" id="r_a925e4eb63f68ffdef57d12d54cdd3694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a925e4eb63f68ffdef57d12d54cdd3694">high</a></td></tr>
+<tr class="separator:a925e4eb63f68ffdef57d12d54cdd3694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad284f044e291322d73ee1aace060213e" id="r_ad284f044e291322d73ee1aace060213e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad284f044e291322d73ee1aace060213e">_betweenIn</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp min, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp val, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp max) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ad284f044e291322d73ee1aace060213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9887348ae6169070c07032224d288235" id="r_a9887348ae6169070c07032224d288235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9887348ae6169070c07032224d288235">_betweenEx</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp min, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp val, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp max) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a9887348ae6169070c07032224d288235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91dbb7ad5aca70637696029cae3c057" id="r_ae91dbb7ad5aca70637696029cae3c057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91dbb7ad5aca70637696029cae3c057">between</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp min, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp val, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp max) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:ae91dbb7ad5aca70637696029cae3c057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0f9966ad2f6331656c0595258a1a7994" id="r_a0f9966ad2f6331656c0595258a1a7994"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f9966ad2f6331656c0595258a1a7994">operator&lt;&lt;</a> (std::ostream &amp;stream, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a> &amp;value)</td></tr>
+<tr class="separator:a0f9966ad2f6331656c0595258a1a7994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt;<br />
+struct Region&lt; dim, fp, topBoundaryInclusive &gt;</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00037">37</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae31ce41358ea24c15dcf128f56786f38" name="ae31ce41358ea24c15dcf128f56786f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31ce41358ea24c15dcf128f56786f38">&#9670;&#160;</a></span>D</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::D = dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+</div>
+</div>
+<a id="aa37b3f85b2ddf8a748db3c85fe158acb" name="aa37b3f85b2ddf8a748db3c85fe158acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37b3f85b2ddf8a748db3c85fe158acb">&#9670;&#160;</a></span>P</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::P = fp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00054">54</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+</div>
+</div>
+<a id="a1911cd19e11b316e56fed4fdaf4cbf91" name="a1911cd19e11b316e56fed4fdaf4cbf91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1911cd19e11b316e56fed4fdaf4cbf91">&#9670;&#160;</a></span>Point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;<a class="el" href="../../dc/d4f/classPoint.html">::Point</a> = <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a>&lt;<a class="el" href="#ae31ce41358ea24c15dcf128f56786f38">D</a>, <a class="el" href="#aa37b3f85b2ddf8a748db3c85fe158acb">P</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00056">56</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9887348ae6169070c07032224d288235" name="a9887348ae6169070c07032224d288235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9887348ae6169070c07032224d288235">&#9670;&#160;</a></span>_betweenEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::_betweenEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>val</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00043">43</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">Region&lt; dim, fp, topBoundaryInclusive &gt;::between()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a9887348ae6169070c07032224d288235_icgraph.png" border="0" usemap="#ad2/ddf/structRegion_a9887348ae6169070c07032224d288235_icgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a9887348ae6169070c07032224d288235_icgraph" id="ad2/ddf/structRegion_a9887348ae6169070c07032224d288235_icgraph">
+<area shape="rect" title=" " alt="" coords="391,55,545,80"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ae91dbb7ad5aca70637696029cae3c057" title=" " alt="" coords="212,55,343,80"/>
+<area shape="poly" title=" " alt="" coords="376,70,343,70,343,65,376,65"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a623cc0ce02f3ba8562e25adb5c8f6abc" title=" " alt="" coords="19,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="213,54,135,33,136,28,215,49"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad0c6e737dd657f46f40a6360a5c570e2" title=" " alt="" coords="19,55,150,80"/>
+<area shape="poly" title=" " alt="" coords="198,70,150,70,150,65,198,65"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a5ab455137a084214345279132ca0cdbc" title=" " alt="" coords="5,104,164,129"/>
+<area shape="poly" title=" " alt="" coords="215,86,136,106,135,101,213,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad284f044e291322d73ee1aace060213e" name="ad284f044e291322d73ee1aace060213e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad284f044e291322d73ee1aace060213e">&#9670;&#160;</a></span>_betweenIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::_betweenIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>val</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00039">39</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">Region&lt; dim, fp, topBoundaryInclusive &gt;::between()</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00097">Region&lt; dim, fp, topBoundaryInclusive &gt;::containsEx()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_ad284f044e291322d73ee1aace060213e_icgraph.png" border="0" usemap="#ad2/ddf/structRegion_ad284f044e291322d73ee1aace060213e_icgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_ad284f044e291322d73ee1aace060213e_icgraph" id="ad2/ddf/structRegion_ad284f044e291322d73ee1aace060213e_icgraph">
+<area shape="rect" title=" " alt="" coords="407,80,557,105"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ae91dbb7ad5aca70637696029cae3c057" title=" " alt="" coords="220,55,351,80"/>
+<area shape="poly" title=" " alt="" coords="393,84,351,78,351,73,393,79"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a09043a2dad4c64cffad0d1cbdd3c87ba" title=" " alt="" coords="212,104,359,129"/>
+<area shape="poly" title=" " alt="" coords="393,106,359,110,358,105,393,101"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a623cc0ce02f3ba8562e25adb5c8f6abc" title=" " alt="" coords="19,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="219,54,137,33,138,28,220,49"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad0c6e737dd657f46f40a6360a5c570e2" title=" " alt="" coords="19,55,150,80"/>
+<area shape="poly" title=" " alt="" coords="206,70,150,70,150,65,206,65"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a5ab455137a084214345279132ca0cdbc" title=" " alt="" coords="5,104,164,129"/>
+<area shape="poly" title=" " alt="" coords="220,86,138,107,137,101,219,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae91dbb7ad5aca70637696029cae3c057" name="ae91dbb7ad5aca70637696029cae3c057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91dbb7ad5aca70637696029cae3c057">&#9670;&#160;</a></span>between()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::between </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>val</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> fp</td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00043">Region&lt; dim, fp, topBoundaryInclusive &gt;::_betweenEx()</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00039">Region&lt; dim, fp, topBoundaryInclusive &gt;::_betweenIn()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d67/geometry_8h_source.html#l00089">Region&lt; dim, fp, topBoundaryInclusive &gt;::contains()</a>, <a class="el" href="../../d4/d67/geometry_8h_source.html#l00124">Region&lt; dim, fp, topBoundaryInclusive &gt;::contains()</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00105">Region&lt; dim, fp, topBoundaryInclusive &gt;::containsAxis()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_cgraph" id="ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,136,56"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a9887348ae6169070c07032224d288235" title=" " alt="" coords="184,5,339,31"/>
+<area shape="poly" title=" " alt="" coords="136,32,170,27,171,33,137,37"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad284f044e291322d73ee1aace060213e" title=" " alt="" coords="186,55,337,80"/>
+<area shape="poly" title=" " alt="" coords="137,49,173,53,172,59,136,54"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_icgraph.png" border="0" usemap="#ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_icgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_icgraph" id="ad2/ddf/structRegion_ae91dbb7ad5aca70637696029cae3c057_icgraph">
+<area shape="rect" title=" " alt="" coords="212,55,343,80"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a623cc0ce02f3ba8562e25adb5c8f6abc" title=" " alt="" coords="19,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="213,54,135,33,136,28,215,49"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad0c6e737dd657f46f40a6360a5c570e2" title=" " alt="" coords="19,55,150,80"/>
+<area shape="poly" title=" " alt="" coords="198,70,150,70,150,65,198,65"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a5ab455137a084214345279132ca0cdbc" title=" " alt="" coords="5,104,164,129"/>
+<area shape="poly" title=" " alt="" coords="215,86,136,106,135,101,213,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e3a450015e9f4f342e10c5c0b6fc3b8" name="a6e3a450015e9f4f342e10c5c0b6fc3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3a450015e9f4f342e10c5c0b6fc3b8">&#9670;&#160;</a></span>centre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::centre </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00180">180</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+</div>
+</div>
+<a id="a623cc0ce02f3ba8562e25adb5c8f6abc" name="a623cc0ce02f3ba8562e25adb5c8f6abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623cc0ce02f3ba8562e25adb5c8f6abc">&#9670;&#160;</a></span>contains() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00089">89</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">Region&lt; dim, fp, topBoundaryInclusive &gt;::between()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a623cc0ce02f3ba8562e25adb5c8f6abc_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_a623cc0ce02f3ba8562e25adb5c8f6abc_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a623cc0ce02f3ba8562e25adb5c8f6abc_cgraph" id="ad2/ddf/structRegion_a623cc0ce02f3ba8562e25adb5c8f6abc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,136,56"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ae91dbb7ad5aca70637696029cae3c057" title=" " alt="" coords="184,31,315,56"/>
+<area shape="poly" title=" " alt="" coords="136,41,170,41,170,46,136,46"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a9887348ae6169070c07032224d288235" title=" " alt="" coords="363,5,517,31"/>
+<area shape="poly" title=" " alt="" coords="314,32,349,27,349,33,315,37"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad284f044e291322d73ee1aace060213e" title=" " alt="" coords="365,55,515,80"/>
+<area shape="poly" title=" " alt="" coords="315,49,351,53,350,59,315,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0c6e737dd657f46f40a6360a5c570e2" name="ad0c6e737dd657f46f40a6360a5c570e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c6e737dd657f46f40a6360a5c570e2">&#9670;&#160;</a></span>contains() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00124">124</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">Region&lt; dim, fp, topBoundaryInclusive &gt;::between()</a>, and <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_ad0c6e737dd657f46f40a6360a5c570e2_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_ad0c6e737dd657f46f40a6360a5c570e2_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_ad0c6e737dd657f46f40a6360a5c570e2_cgraph" id="ad2/ddf/structRegion_ad0c6e737dd657f46f40a6360a5c570e2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,136,56"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ae91dbb7ad5aca70637696029cae3c057" title=" " alt="" coords="184,31,315,56"/>
+<area shape="poly" title=" " alt="" coords="136,41,170,41,170,46,136,46"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a9887348ae6169070c07032224d288235" title=" " alt="" coords="363,5,517,31"/>
+<area shape="poly" title=" " alt="" coords="314,32,349,27,349,33,315,37"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad284f044e291322d73ee1aace060213e" title=" " alt="" coords="365,55,515,80"/>
+<area shape="poly" title=" " alt="" coords="315,49,351,53,350,59,315,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ab455137a084214345279132ca0cdbc" name="a5ab455137a084214345279132ca0cdbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab455137a084214345279132ca0cdbc">&#9670;&#160;</a></span>containsAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/deb/classNumVec.html">NumVec</a>&lt; <a class="el" href="../../df/def/type_8h.html#aec4a1429cc91fb7ff41599b263c348cc">i32</a>, dim::N &gt; <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::containsAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00105">105</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00047">Region&lt; dim, fp, topBoundaryInclusive &gt;::between()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a5ab455137a084214345279132ca0cdbc_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_a5ab455137a084214345279132ca0cdbc_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a5ab455137a084214345279132ca0cdbc_cgraph" id="ad2/ddf/structRegion_a5ab455137a084214345279132ca0cdbc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,164,56"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ae91dbb7ad5aca70637696029cae3c057" title=" " alt="" coords="212,31,343,56"/>
+<area shape="poly" title=" " alt="" coords="164,41,198,41,198,46,164,46"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#a9887348ae6169070c07032224d288235" title=" " alt="" coords="391,5,545,31"/>
+<area shape="poly" title=" " alt="" coords="342,32,377,27,377,33,343,37"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad284f044e291322d73ee1aace060213e" title=" " alt="" coords="393,55,543,80"/>
+<area shape="poly" title=" " alt="" coords="343,49,379,53,378,59,343,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09043a2dad4c64cffad0d1cbdd3c87ba" name="a09043a2dad4c64cffad0d1cbdd3c87ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09043a2dad4c64cffad0d1cbdd3c87ba">&#9670;&#160;</a></span>containsEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::containsEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00097">97</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00039">Region&lt; dim, fp, topBoundaryInclusive &gt;::_betweenIn()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a09043a2dad4c64cffad0d1cbdd3c87ba_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_a09043a2dad4c64cffad0d1cbdd3c87ba_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a09043a2dad4c64cffad0d1cbdd3c87ba_cgraph" id="ad2/ddf/structRegion_a09043a2dad4c64cffad0d1cbdd3c87ba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,152,31"/>
+<area shape="rect" href="../../d2/ddf/structRegion.html#ad284f044e291322d73ee1aace060213e" title=" " alt="" coords="200,5,351,31"/>
+<area shape="poly" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42050619125af5578455219179adf141" name="a42050619125af5578455219179adf141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42050619125af5578455219179adf141">&#9670;&#160;</a></span>fromInclusiveBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d2/ddf/structRegion.html">Region</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::fromInclusiveBounds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>low</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>high</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00059">Region&lt; dim, fp, topBoundaryInclusive &gt;::high</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00058">Region&lt; dim, fp, topBoundaryInclusive &gt;::low</a>.</p>
+
+</div>
+</div>
+<a id="a351c6e048027ed432a72fbbb3c815d70" name="a351c6e048027ed432a72fbbb3c815d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351c6e048027ed432a72fbbb3c815d70">&#9670;&#160;</a></span>intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddf/structRegion.html">Region</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::intersection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00162">162</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+
+</div>
+</div>
+<a id="ab6557b873fbe87809f0ee84900b618de" name="ab6557b873fbe87809f0ee84900b618de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6557b873fbe87809f0ee84900b618de">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00073">73</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+
+</div>
+</div>
+<a id="acd8039053351e44d56e1a3d559d0f079" name="acd8039053351e44d56e1a3d559d0f079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8039053351e44d56e1a3d559d0f079">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00069">69</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+
+</div>
+</div>
+<a id="a393d5f6c1c0174da316d4f585a4c80ca" name="a393d5f6c1c0174da316d4f585a4c80ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393d5f6c1c0174da316d4f585a4c80ca">&#9670;&#160;</a></span>overlaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::overlaps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00116">116</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+
+</div>
+</div>
+<a id="aad6f7a9bd4995e92f13e00b88d48f6cb" name="aad6f7a9bd4995e92f13e00b88d48f6cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6f7a9bd4995e92f13e00b88d48f6cb">&#9670;&#160;</a></span>sharesBoundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::sharesBoundary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00144">144</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/de2/hydro__iact_8h_source.html#l00068">r</a>.</p>
+
+</div>
+</div>
+<a id="a791be48d04fddef61767b9c90e816238" name="a791be48d04fddef61767b9c90e816238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791be48d04fddef61767b9c90e816238">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa37b3f85b2ddf8a748db3c85fe158acb">P</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00077">77</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00058">Region&lt; dim, fp, topBoundaryInclusive &gt;::low</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00077">Region&lt; dim, fp, topBoundaryInclusive &gt;::size()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/dec/visualisation_2input_2Patch_8py_source.html#l00038">peano4.visualisation.input.Patch.Patch::__repr__()</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00077">Region&lt; dim, fp, topBoundaryInclusive &gt;::size()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_cgraph.png" border="0" usemap="#ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_cgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_cgraph" id="ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,107,55"/>
+<area shape="poly" title=" " alt="" coords="38,30,34,21,36,12,44,5,56,3,70,6,77,15,73,18,67,11,56,8,46,10,41,14,40,20,43,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_icgraph.png" border="0" usemap="#ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_icgraph" alt=""/></div>
+<map name="ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_icgraph" id="ad2/ddf/structRegion_a791be48d04fddef61767b9c90e816238_icgraph">
+<area shape="rect" title=" " alt="" coords="252,29,353,55"/>
+<area shape="poly" title=" " alt="" coords="338,19,328,11,303,8,282,10,271,15,268,20,274,28,270,31,263,21,267,11,280,5,303,3,330,6,341,15"/>
+<area shape="rect" href="../../d6/dc5/classpeano4_1_1visualisation_1_1input_1_1Patch_1_1Patch.html#aea86eb2c8b96861b65ac9192a9f24972" title=" " alt="" coords="5,22,204,62"/>
+<area shape="poly" title=" " alt="" coords="238,45,204,45,204,39,238,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0727e6c406c4b35a0fc3a2c8bc3d8d5b" name="a0727e6c406c4b35a0fc3a2c8bc3d8d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0727e6c406c4b35a0fc3a2c8bc3d8d5b">&#9670;&#160;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::split </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a></td>          <td class="paramname"><span class="paramname"><em>n</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; *</td>          <td class="paramname"><span class="paramname"><em>regions</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00184">184</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d4/d67/geometry_8h_source.html#l00058">Region&lt; dim, fp, topBoundaryInclusive &gt;::low</a>.</p>
+
+</div>
+</div>
+<a id="a9f30cbce9aaf5322ec387aea5e05b4ba" name="a9f30cbce9aaf5322ec387aea5e05b4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f30cbce9aaf5322ec387aea5e05b4ba">&#9670;&#160;</a></span>splitIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::splitIdx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/def/type_8h.html#a65cf28726f89e62ccf2f1354bc2716df">u32</a></td>          <td class="paramname"><span class="paramname"><em>n</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00205">205</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/da7/assert_8h_source.html#l00014">assert</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00058">Region&lt; dim, fp, topBoundaryInclusive &gt;::low</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a0f9966ad2f6331656c0595258a1a7994" name="a0f9966ad2f6331656c0595258a1a7994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9966ad2f6331656c0595258a1a7994">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00231">231</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a925e4eb63f68ffdef57d12d54cdd3694" name="a925e4eb63f68ffdef57d12d54cdd3694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925e4eb63f68ffdef57d12d54cdd3694">&#9670;&#160;</a></span>high</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::high</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d67/geometry_8h_source.html#l00061">Region&lt; dim, fp, topBoundaryInclusive &gt;::fromInclusiveBounds()</a>.</p>
+
+</div>
+</div>
+<a id="a05eb1d8454d7508e35502c47b2c43b1e" name="a05eb1d8454d7508e35502c47b2c43b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05eb1d8454d7508e35502c47b2c43b1e">&#9670;&#160;</a></span>low</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../dd/d6d/conceptDimensionality.html">Dimensionality</a> dim, <a class="el" href="../../d1/dff/conceptPrecision.html">Precision</a> fp, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> topBoundaryInclusive = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1911cd19e11b316e56fed4fdaf4cbf91">Point</a> <a class="el" href="../../d2/ddf/structRegion.html">Region</a>&lt; dim, fp, topBoundaryInclusive &gt;::low</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d67/geometry_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d67/geometry_8h_source.html#l00061">Region&lt; dim, fp, topBoundaryInclusive &gt;::fromInclusiveBounds()</a>, <a class="el" href="../../d4/d67/geometry_8h_source.html#l00077">Region&lt; dim, fp, topBoundaryInclusive &gt;::size()</a>, <a class="el" href="../../d4/d67/geometry_8h_source.html#l00184">Region&lt; dim, fp, topBoundaryInclusive &gt;::split()</a>, and <a class="el" href="../../d4/d67/geometry_8h_source.html#l00205">Region&lt; dim, fp, topBoundaryInclusive &gt;::splitIdx()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>benchmarks/other/noh2d-common/spacetree/geometry/<a class="el" href="../../d4/d67/geometry_8h_source.html">geometry.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/ddf/structRegion.html">Region</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:29:12 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/d79/classtarch_1_1logging_1_1Log.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tarch::logging::Log Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Device.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::logging::Log:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/da3/classtarch_1_1logging_1_1Log__coll__graph.png" border="0" usemap="#atarch_1_1logging_1_1Log_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1logging_1_1Log_coll__map" id="atarch_1_1logging_1_1Log_coll__map">
+<area shape="rect" title="Log Device." alt="" coords="5,183,148,208"/>
+<area shape="rect" title=" " alt="" coords="33,95,120,120"/>
+<area shape="poly" title=" " alt="" coords="79,134,79,182,74,182,74,134"/>
+<area shape="rect" title=" " alt="" coords="7,5,146,45"/>
+<area shape="poly" title=" " alt="" coords="79,59,79,94,74,94,74,59"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7ecfa8ed058ec579a675c4f87a6790ef" id="r_a7ecfa8ed058ec579a675c4f87a6790ef"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; std::string(<a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td></tr>
+<tr class="memdesc:a7ecfa8ed058ec579a675c4f87a6790ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">We could make the logMacroMessage passed into a log statement a string.  <br /></td></tr>
+<tr class="separator:a7ecfa8ed058ec579a675c4f87a6790ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6cfc9caf2a3e80fbd3823e768a714350" id="r_a6cfc9caf2a3e80fbd3823e768a714350"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cfc9caf2a3e80fbd3823e768a714350">Log</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;className)</td></tr>
+<tr class="memdesc:a6cfc9caf2a3e80fbd3823e768a714350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a6cfc9caf2a3e80fbd3823e768a714350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049adaeb6e780fc4fe656a29d6dc8460" id="r_a049adaeb6e780fc4fe656a29d6dc8460"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a049adaeb6e780fc4fe656a29d6dc8460">~Log</a> ()</td></tr>
+<tr class="memdesc:a049adaeb6e780fc4fe656a29d6dc8460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a049adaeb6e780fc4fe656a29d6dc8460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6ef0e37151f85f2ba51c5a39844064" id="r_a3f6ef0e37151f85f2ba51c5a39844064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6ef0e37151f85f2ba51c5a39844064">debug</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a3f6ef0e37151f85f2ba51c5a39844064"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Debug Information.  <br /></td></tr>
+<tr class="separator:a3f6ef0e37151f85f2ba51c5a39844064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec261c464482e9221605d73cab432b1" id="r_a8ec261c464482e9221605d73cab432b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ec261c464482e9221605d73cab432b1">info</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage)</td></tr>
+<tr class="memdesc:a8ec261c464482e9221605d73cab432b1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Information.  <br /></td></tr>
+<tr class="separator:a8ec261c464482e9221605d73cab432b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac615127b2580d1e0a648c69fff13c2ad" id="r_ac615127b2580d1e0a648c69fff13c2ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac615127b2580d1e0a648c69fff13c2ad">warning</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage)</td></tr>
+<tr class="memdesc:ac615127b2580d1e0a648c69fff13c2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> a Warning.  <br /></td></tr>
+<tr class="separator:ac615127b2580d1e0a648c69fff13c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1681686f236bc3d7f77d54cbd9f0e5" id="r_a3d1681686f236bc3d7f77d54cbd9f0e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d1681686f236bc3d7f77d54cbd9f0e5">error</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage)</td></tr>
+<tr class="memdesc:a3d1681686f236bc3d7f77d54cbd9f0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> an Error.  <br /></td></tr>
+<tr class="separator:a3d1681686f236bc3d7f77d54cbd9f0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16174e95cbb316c834dd2c98acaad819" id="r_a16174e95cbb316c834dd2c98acaad819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16174e95cbb316c834dd2c98acaad819">traceIn</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage)</td></tr>
+<tr class="separator:a16174e95cbb316c834dd2c98acaad819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5f765bede80dfff802cc5868c8d048" id="r_adb5f765bede80dfff802cc5868c8d048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb5f765bede80dfff802cc5868c8d048">traceOut</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage)</td></tr>
+<tr class="separator:adb5f765bede80dfff802cc5868c8d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d937a91576c4614cff794da77f69f3" id="r_ae6d937a91576c4614cff794da77f69f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d937a91576c4614cff794da77f69f3">indent</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> indent, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;trace, <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a> logMacroMessage) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:ae6d937a91576c4614cff794da77f69f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indent the Subsequent Messages.  <br /></td></tr>
+<tr class="separator:ae6d937a91576c4614cff794da77f69f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271c33bef3c0ca3875f977ff4adaf6a9" id="r_a271c33bef3c0ca3875f977ff4adaf6a9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a271c33bef3c0ca3875f977ff4adaf6a9">getTraceInformation</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;methodName) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a271c33bef3c0ca3875f977ff4adaf6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1f39f41fe2c1b54aceab7faa2a0d840d" id="r_a1f39f41fe2c1b54aceab7faa2a0d840d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f39f41fe2c1b54aceab7faa2a0d840d">getMachineInformation</a> ()</td></tr>
+<tr class="memdesc:a1f39f41fe2c1b54aceab7faa2a0d840d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes information about the computer the output is written from.  <br /></td></tr>
+<tr class="separator:a1f39f41fe2c1b54aceab7faa2a0d840d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae515c3196f9edc0142a3cf9e215ececa" id="r_ae515c3196f9edc0142a3cf9e215ececa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae515c3196f9edc0142a3cf9e215ececa">exception</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::bad_alloc &amp;exception, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;file, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> lineNumber)</td></tr>
+<tr class="memdesc:ae515c3196f9edc0142a3cf9e215ececa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs and exception and stops the application.  <br /></td></tr>
+<tr class="separator:ae515c3196f9edc0142a3cf9e215ececa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd9106a88922be939cb44879599d999" id="r_abbd9106a88922be939cb44879599d999"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbd9106a88922be939cb44879599d999">flushBeforeAssertion</a> ()</td></tr>
+<tr class="separator:abbd9106a88922be939cb44879599d999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a1a9c3110243d200934c790afdb1f684b" id="r_a1a9c3110243d200934c790afdb1f684b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html">CommandLineLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a9c3110243d200934c790afdb1f684b">UseLogService</a></td></tr>
+<tr class="separator:a1a9c3110243d200934c790afdb1f684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a28985d6a1efd2aa6a81e25e7fab616a1" id="r_a28985d6a1efd2aa6a81e25e7fab616a1"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28985d6a1efd2aa6a81e25e7fab616a1">getTimeStamp</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a28985d6a1efd2aa6a81e25e7fab616a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time stamp in nanoseconds.  <br /></td></tr>
+<tr class="separator:a28985d6a1efd2aa6a81e25e7fab616a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acd4621cd70fd800320a08f1458437bba" id="r_acd4621cd70fd800320a08f1458437bba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4621cd70fd800320a08f1458437bba">_className</a></td></tr>
+<tr class="memdesc:acd4621cd70fd800320a08f1458437bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the class that is using the interface.  <br /></td></tr>
+<tr class="separator:acd4621cd70fd800320a08f1458437bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a0be0d799a78fa131d3e0d8b40433816e" id="r_a0be0d799a78fa131d3e0d8b40433816e"><td class="memItemLeft" align="right" valign="top">static std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0be0d799a78fa131d3e0d8b40433816e">_startupTime</a> { std::chrono::system_clock::now() }</td></tr>
+<tr class="memdesc:a0be0d799a78fa131d3e0d8b40433816e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the machine name.  <br /></td></tr>
+<tr class="separator:a0be0d799a78fa131d3e0d8b40433816e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Device. </p>
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> is the class all logging classes should use. To use the logging API they have to create an instance by their own. It is suggested to hold this instance static for the constructor of the <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> class has to be given the class name of the logging class. The <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> class itself is stateless. The log requests on this instance are processed here and forwarded to the assigned logger (an internal attribute).</p>
+<p>Which concrete implementation has to be used for logging is switched using a compiler attribute. Since the logging is used extremely often, this is better than dynamic binding.</p>
+<p>There are five different log levels, the user may write any output:</p>
+<ul>
+<li>error: Here only errors have to be written to. Error logMacroMessages may never be oppressed.</li>
+<li>warning:</li>
+<li>debug: Debug information that is switched off normally. Only available if you use Debug</li>
+<li>info: Statistical information, copyright and similar information. Should be used rather seldom.</li>
+</ul>
+<h1><a class="anchor" id="Runtime"></a>
+Runtime</h1>
+<p>The underlying log device (like the CommandlineLogger) has to offer synchronized output methods. Thus, calls to logging methods in multithreaded environments mark synchronization points of your programme and will change timing behaviour!</p>
+<h1><a class="anchor" id="Log"></a>
+output format</h1>
+<p>You can switch the log output format by setting -DUseLogService=xxx. At the moment, I support two different formats for xxx:</p>
+<ul>
+<li><a class="el" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html" title="Command Line Logger.">CommandLineLogger</a> This is the default.</li>
+<li><a class="el" href="../../db/d5e/classtarch_1_1logging_1_1ChromeTraceFileLogger.html" title="Chrome Trace File Logger.">ChromeTraceFileLogger</a> For the Chrome tracing API.</li>
+</ul>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00516">516</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7ecfa8ed058ec579a675c4f87a6790ef" name="a7ecfa8ed058ec579a675c4f87a6790ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ecfa8ed058ec579a675c4f87a6790ef">&#9670;&#160;</a></span>Message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt; std::string(<a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>) &gt; <a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">tarch::logging::Log::Message</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>We could make the logMacroMessage passed into a log statement a string. </p>
+<p>However, many codes write rather complicated strings and therefore spend a lot of time to construct the logMacroMessage. This is fine in release mode, e.g., where the number of strings is small. It is problematic in trace mode or debug, where we have a lot of strings, and most of them won't be used, as we filter them out later anyway.</p>
+<p>Therefore, I switch to lazy evaluation: a logMacroMessage string is constructed if and only if the logMacroMessage will be written. The construction is realised through a (lambda) function modelled via Message. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00577">577</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+
+</div>
+</div>
+<a id="a1a9c3110243d200934c790afdb1f684b" name="a1a9c3110243d200934c790afdb1f684b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9c3110243d200934c790afdb1f684b">&#9670;&#160;</a></span>UseLogService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../df/d72/classtarch_1_1logging_1_1CommandLineLogger.html">CommandLineLogger</a> <a class="el" href="#a1a9c3110243d200934c790afdb1f684b">tarch::logging::Log::UseLogService</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00519">519</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6cfc9caf2a3e80fbd3823e768a714350" name="a6cfc9caf2a3e80fbd3823e768a714350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cfc9caf2a3e80fbd3823e768a714350">&#9670;&#160;</a></span>Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::logging::Log::Log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">className</td><td>Name of the class that is using the logging component. Please specify both class name and namespace using the format namespace::classname </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a049adaeb6e780fc4fe656a29d6dc8460" name="a049adaeb6e780fc4fe656a29d6dc8460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049adaeb6e780fc4fe656a29d6dc8460">&#9670;&#160;</a></span>~Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::logging::Log::~Log </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f6ef0e37151f85f2ba51c5a39844064" name="a3f6ef0e37151f85f2ba51c5a39844064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6ef0e37151f85f2ba51c5a39844064">&#9670;&#160;</a></span>debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::debug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Debug Information. </p>
+<p>Remark: Please do not use this operation directly, but use the macros above instead.</p>
+<p>The method has to be given the method name. Often it is useful to pass the whole method signature, that means e.g. if the method info itself would log, the method invocation would look like this: </p><pre>
+  info("info(std::string,std::string)", "just an example text");
+</pre><p> So you are able to identify methods in your log although you use overloading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">methodName</td><td>method name </td></tr>
+    <tr><td class="paramname">logMacroMessage</td><td>log logMacroMessage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00600">600</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d1681686f236bc3d7f77d54cbd9f0e5" name="a3d1681686f236bc3d7f77d54cbd9f0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1681686f236bc3d7f77d54cbd9f0e5">&#9670;&#160;</a></span>error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::error </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> an Error. </p>
+<p>The method has to be given the method name. Often it is useful to pass the whole method signature, that means e.g. if the method info itself would log, the method invocation would look like this: </p><pre>
+  info("info(std::string,std::string)", "just an example text");
+</pre><p> So you are able to identify methods in your log although you use overloading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">methodName</td><td>method name </td></tr>
+    <tr><td class="paramname">logMacroMessage</td><td>log logMacroMessage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, and <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/classtarch_1_1logging_1_1Log_a3d1681686f236bc3d7f77d54cbd9f0e5_cgraph.png" border="0" usemap="#ada/d79/classtarch_1_1logging_1_1Log_a3d1681686f236bc3d7f77d54cbd9f0e5_cgraph" alt=""/></div>
+<map name="ada/d79/classtarch_1_1logging_1_1Log_a3d1681686f236bc3d7f77d54cbd9f0e5_cgraph" id="ada/d79/classtarch_1_1logging_1_1Log_a3d1681686f236bc3d7f77d54cbd9f0e5_cgraph">
+<area shape="rect" title="Log an Error." alt="" coords="5,27,148,67"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="196,5,409,31"/>
+<area shape="poly" title=" " alt="" coords="148,35,191,30,191,35,148,41"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="221,55,384,95"/>
+<area shape="poly" title=" " alt="" coords="148,53,208,61,207,66,148,59"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae515c3196f9edc0142a3cf9e215ececa" name="ae515c3196f9edc0142a3cf9e215ececa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae515c3196f9edc0142a3cf9e215ececa">&#9670;&#160;</a></span>exception()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::exception </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::bad_alloc &amp;</td>          <td class="paramname"><span class="paramname"><em>exception</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>lineNumber</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs and exception and stops the application. </p>
+<p>I recommend to use the corresponding macro instead. </p>
+
+</div>
+</div>
+<a id="abbd9106a88922be939cb44879599d999" name="abbd9106a88922be939cb44879599d999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd9106a88922be939cb44879599d999">&#9670;&#160;</a></span>flushBeforeAssertion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::flushBeforeAssertion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1f39f41fe2c1b54aceab7faa2a0d840d" name="a1f39f41fe2c1b54aceab7faa2a0d840d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f39f41fe2c1b54aceab7faa2a0d840d">&#9670;&#160;</a></span>getMachineInformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::logging::Log::getMachineInformation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes information about the computer the output is written from. </p>
+<p>The information string contains the operation system name, the computer name and the cpu name. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, and <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00519">tarch::mpi::Rank::getRank()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/classtarch_1_1logging_1_1Log_a1f39f41fe2c1b54aceab7faa2a0d840d_cgraph.png" border="0" usemap="#ada/d79/classtarch_1_1logging_1_1Log_a1f39f41fe2c1b54aceab7faa2a0d840d_cgraph" alt=""/></div>
+<map name="ada/d79/classtarch_1_1logging_1_1Log_a1f39f41fe2c1b54aceab7faa2a0d840d_cgraph" id="ada/d79/classtarch_1_1logging_1_1Log_a1f39f41fe2c1b54aceab7faa2a0d840d_cgraph">
+<area shape="rect" title="Writes information about the computer the output is written from." alt="" coords="5,23,188,63"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="236,5,449,31"/>
+<area shape="poly" title=" " alt="" coords="188,31,222,28,223,33,189,37"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="247,55,438,80"/>
+<area shape="poly" title=" " alt="" coords="189,50,234,54,234,59,188,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a28985d6a1efd2aa6a81e25e7fab616a1" name="a28985d6a1efd2aa6a81e25e7fab616a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28985d6a1efd2aa6a81e25e7fab616a1">&#9670;&#160;</a></span>getTimeStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::logging::Log::getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time stamp in nanoseconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01018">assertion1</a>.</p>
+
+</div>
+</div>
+<a id="a271c33bef3c0ca3875f977ff4adaf6a9" name="a271c33bef3c0ca3875f977ff4adaf6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271c33bef3c0ca3875f977ff4adaf6a9">&#9670;&#160;</a></span>getTraceInformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::logging::Log::getTraceInformation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6d937a91576c4614cff794da77f69f3" name="ae6d937a91576c4614cff794da77f69f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d937a91576c4614cff794da77f69f3">&#9670;&#160;</a></span>indent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::indent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>indent</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>trace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indent the Subsequent Messages. </p>
+<p>Depending on indent the operation increments or decrements the indent. The call is forwarded to the logging device. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ec261c464482e9221605d73cab432b1" name="a8ec261c464482e9221605d73cab432b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec261c464482e9221605d73cab432b1">&#9670;&#160;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> Information. </p>
+<p>The method has to be given the method name. Often it is useful to pass the whole method signature, that means e.g. if the method info itself would log, the method invocation would look like this: </p><pre>
+  info("info(std::string,std::string)", "just an example text");
+</pre><p> So you are able to identify methods in your log although you use overloading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">methodName</td><td>method name </td></tr>
+    <tr><td class="paramname">logMacroMessage</td><td>log logMacroMessage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00109">tarch::logging::LogFilter::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, and <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/classtarch_1_1logging_1_1Log_a8ec261c464482e9221605d73cab432b1_cgraph.png" border="0" usemap="#ada/d79/classtarch_1_1logging_1_1Log_a8ec261c464482e9221605d73cab432b1_cgraph" alt=""/></div>
+<map name="ada/d79/classtarch_1_1logging_1_1Log_a8ec261c464482e9221605d73cab432b1_cgraph" id="ada/d79/classtarch_1_1logging_1_1Log_a8ec261c464482e9221605d73cab432b1_cgraph">
+<area shape="rect" title="Log Information." alt="" coords="5,63,148,103"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="215,5,390,45"/>
+<area shape="poly" title=" " alt="" coords="147,62,209,46,211,51,149,67"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="196,70,409,95"/>
+<area shape="poly" title=" " alt="" coords="148,80,183,80,183,85,148,85"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="221,120,384,160"/>
+<area shape="poly" title=" " alt="" coords="149,98,211,114,209,119,147,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a16174e95cbb316c834dd2c98acaad819" name="a16174e95cbb316c834dd2c98acaad819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16174e95cbb316c834dd2c98acaad819">&#9670;&#160;</a></span>traceIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::traceIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb5f765bede80dfff802cc5868c8d048" name="adb5f765bede80dfff802cc5868c8d048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5f765bede80dfff802cc5868c8d048">&#9670;&#160;</a></span>traceOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::traceOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac615127b2580d1e0a648c69fff13c2ad" name="ac615127b2580d1e0a648c69fff13c2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac615127b2580d1e0a648c69fff13c2ad">&#9670;&#160;</a></span>warning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::logging::Log::warning </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>methodName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ecfa8ed058ec579a675c4f87a6790ef">Message</a></td>          <td class="paramname"><span class="paramname"><em>logMacroMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device.">Log</a> a Warning. </p>
+<p>The method has to be given the method name. Often it is useful to pass the whole method signature, that means e.g. if the method info itself would log, the method invocation would look like this: </p><pre>
+  info("info(std::string,std::string)", "just an example text");
+</pre><p> So you are able to identify methods in your log although you use overloading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">methodName</td><td>method name </td></tr>
+    <tr><td class="paramname">logMacroMessage</td><td>log logMacroMessage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d88/Log_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/d31/LogFilter_8cpp_source.html#l00109">tarch::logging::LogFilter::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, and <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/classtarch_1_1logging_1_1Log_ac615127b2580d1e0a648c69fff13c2ad_cgraph.png" border="0" usemap="#ada/d79/classtarch_1_1logging_1_1Log_ac615127b2580d1e0a648c69fff13c2ad_cgraph" alt=""/></div>
+<map name="ada/d79/classtarch_1_1logging_1_1Log_ac615127b2580d1e0a648c69fff13c2ad_cgraph" id="ada/d79/classtarch_1_1logging_1_1Log_ac615127b2580d1e0a648c69fff13c2ad_cgraph">
+<area shape="rect" title="Log a Warning." alt="" coords="5,63,148,103"/>
+<area shape="rect" href="../../d7/d3a/classtarch_1_1logging_1_1LogFilter.html#ae70e7bea503522c87e6cb0c3a2332949" title=" " alt="" coords="215,5,390,45"/>
+<area shape="poly" title=" " alt="" coords="147,62,209,46,211,51,149,67"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="196,70,409,95"/>
+<area shape="poly" title=" " alt="" coords="148,80,183,80,183,85,148,85"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="221,120,384,160"/>
+<area shape="poly" title=" " alt="" coords="149,98,211,114,209,119,147,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="acd4621cd70fd800320a08f1458437bba" name="acd4621cd70fd800320a08f1458437bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4621cd70fd800320a08f1458437bba">&#9670;&#160;</a></span>_className</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tarch::logging::Log::_className</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Name of the class that is using the interface. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00530">530</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+
+</div>
+</div>
+<a id="a0be0d799a78fa131d3e0d8b40433816e" name="a0be0d799a78fa131d3e0d8b40433816e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be0d799a78fa131d3e0d8b40433816e">&#9670;&#160;</a></span>_startupTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::system_clock::time_point tarch::logging::Log::_startupTime { std::chrono::system_clock::now() }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For the machine name. </p>
+<p>If it doesn't work, switch it off in the file <a class="el" href="../../da/d5d/CompilerSpecificSettings_8h.html">CompilerSpecificSettings.h</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d45/Log_8h_source.html#l00045">45</a> of file <a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/logging/<a class="el" href="../../d1/d45/Log_8h_source.html">Log.h</a></li>
+<li>src/tarch/logging/<a class="el" href="../../d4/d88/Log_8cpp_source.html">Log.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../d5/d43/namespacetarch_1_1logging.html">logging</a></li><li class="navelem"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">Log</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:51 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

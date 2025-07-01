@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">toolbox::particles::SieveParticles&lt; T &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Utility class for global sorting for all flavours of particle sets.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for toolbox::particles::SieveParticles&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d9c/classtoolbox_1_1particles_1_1SieveParticles__coll__graph.png" border="0" usemap="#atoolbox_1_1particles_1_1SieveParticles_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="atoolbox_1_1particles_1_1SieveParticles_3_01T_01_4_coll__map" id="atoolbox_1_1particles_1_1SieveParticles_3_01T_01_4_coll__map">
+<area shape="rect" title="Utility class for global sorting for all flavours of particle sets." alt="" coords="187,315,345,355"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="5,190,148,215"/>
+<area shape="poly" title=" " alt="" coords="106,221,240,312,237,316,103,225"/>
+<area shape="rect" title=" " alt="" coords="33,95,120,120"/>
+<area shape="poly" title=" " alt="" coords="79,134,79,190,74,190,74,134"/>
+<area shape="rect" title=" " alt="" coords="7,5,146,45"/>
+<area shape="poly" title=" " alt="" coords="79,59,79,94,74,94,74,59"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html" title=" " alt="" coords="173,183,359,223"/>
+<area shape="poly" title=" " alt="" coords="269,236,269,315,263,315,263,236"/>
+<area shape="rect" title=" " alt="" coords="451,190,569,215"/>
+<area shape="poly" title=" " alt="" coords="511,230,503,262,494,279,482,293,459,305,426,315,346,328,345,323,425,310,457,300,479,289,490,276,498,260,506,228"/>
+<area shape="rect" title=" " alt="" coords="491,95,529,120"/>
+<area shape="poly" title=" " alt="" coords="513,134,513,190,507,190,507,134"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac7dd8104403ee9f09aed676b6d847719" id="r_ac7dd8104403ee9f09aed676b6d847719"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7dd8104403ee9f09aed676b6d847719">DoFType</a></td></tr>
+<tr class="separator:ac7dd8104403ee9f09aed676b6d847719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11702173eb63f140ca4e40b1aaf2cfba" id="r_a11702173eb63f140ca4e40b1aaf2cfba"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; T * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a></td></tr>
+<tr class="separator:a11702173eb63f140ca4e40b1aaf2cfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d2bd25dab9decc44969e6903ef4e786" id="r_a4d2bd25dab9decc44969e6903ef4e786"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2bd25dab9decc44969e6903ef4e786">SieveParticles</a> ()=default</td></tr>
+<tr class="separator:a4d2bd25dab9decc44969e6903ef4e786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371542bb3fd6ad86b13a0615f1e30734" id="r_a371542bb3fd6ad86b13a0615f1e30734"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a371542bb3fd6ad86b13a0615f1e30734">~SieveParticles</a> ()</td></tr>
+<tr class="memdesc:a371542bb3fd6ad86b13a0615f1e30734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:a371542bb3fd6ad86b13a0615f1e30734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0d4191f1498506163ec911a5479c0a" id="r_aca0d4191f1498506163ec911a5479c0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0d4191f1498506163ec911a5479c0a">deleteParticles</a> ()</td></tr>
+<tr class="memdesc:aca0d4191f1498506163ec911a5479c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deep clear.  <br /></td></tr>
+<tr class="separator:aca0d4191f1498506163ec911a5479c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51b9ce783fc808dae46cd4939abca90" id="r_ae51b9ce783fc808dae46cd4939abca90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51b9ce783fc808dae46cd4939abca90">exchangeSieveListsGlobally</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; domainOffset, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; domainSize, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::bitset&lt; Dimensions &gt; <a class="el" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp.html#a57ebc38ae51b6d4b0e7e1dc43442f318">periodicBC</a>)</td></tr>
+<tr class="memdesc:ae51b9ce783fc808dae46cd4939abca90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the global sieve data consistent.  <br /></td></tr>
+<tr class="separator:ae51b9ce783fc808dae46cd4939abca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea98a85cfa949e9540b88162584667a" id="r_a6ea98a85cfa949e9540b88162584667a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea98a85cfa949e9540b88162584667a">addParticleThatCanNotBeLiftedWithinItsTree</a> (T *)</td></tr>
+<tr class="memdesc:a6ea98a85cfa949e9540b88162584667a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a particle to the list of particles which cannot be lifted.  <br /></td></tr>
+<tr class="separator:a6ea98a85cfa949e9540b88162584667a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246ae201c7398d64b2239772b744fa03" id="r_a246ae201c7398d64b2239772b744fa03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">SieveParticles</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a246ae201c7398d64b2239772b744fa03">cloneParticlesToBeSieved</a> ()</td></tr>
+<tr class="memdesc:a246ae201c7398d64b2239772b744fa03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone object, but let it contain only the delivering part, i.e.  <br /></td></tr>
+<tr class="separator:a246ae201c7398d64b2239772b744fa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c379ee6f8b7f1e88e26650a864d1a4" id="r_a61c379ee6f8b7f1e88e26650a864d1a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61c379ee6f8b7f1e88e26650a864d1a4">getParticlesToBeSievedIntoVertex</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html">peano4::datamanagement::VertexMarker</a> &amp;marker, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> removeReturnedParticlesFromSet, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> onlyReturnParticlesThatWillBeLocal, <a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> lockSemaphore)</td></tr>
+<tr class="memdesc:a61c379ee6f8b7f1e88e26650a864d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get particles that are to be sieved into one vertex.  <br /></td></tr>
+<tr class="separator:a61c379ee6f8b7f1e88e26650a864d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e2034cced48a16c1a5eea417bb136b" id="r_ae5e2034cced48a16c1a5eea417bb136b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5e2034cced48a16c1a5eea417bb136b">hasParticlesToBeSievedIntoVertices</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:ae5e2034cced48a16c1a5eea417bb136b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fine out how many particles still to sieve.  <br /></td></tr>
+<tr class="separator:ae5e2034cced48a16c1a5eea417bb136b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a534a4ac7c2091f65ee9a97ce4c0b0" id="r_a71a534a4ac7c2091f65ee9a97ce4c0b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a534a4ac7c2091f65ee9a97ce4c0b0">getNumberOfParticlesThatHaveBeSievedIntoVertices</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:a71a534a4ac7c2091f65ee9a97ce4c0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#ae5e2034cced48a16c1a5eea417bb136b" title="Fine out how many particles still to sieve.">hasParticlesToBeSievedIntoVertices()</a> is equivalent to checking if this routine returns something greater than 0.  <br /></td></tr>
+<tr class="separator:a71a534a4ac7c2091f65ee9a97ce4c0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff5c993761ecdb99df640b2894fceca" id="r_a0ff5c993761ecdb99df640b2894fceca"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ff5c993761ecdb99df640b2894fceca">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a0ff5c993761ecdb99df640b2894fceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:abfcf5ae2ed9a37843d1541b22dc7eb56" id="r_abfcf5ae2ed9a37843d1541b22dc7eb56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfcf5ae2ed9a37843d1541b22dc7eb56">deleteParticles</a> (<a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a> &amp;list)</td></tr>
+<tr class="separator:abfcf5ae2ed9a37843d1541b22dc7eb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8fee9be358e1095c0c03130822b7b4fc" id="r_a8fee9be358e1095c0c03130822b7b4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fee9be358e1095c0c03130822b7b4fc">_particlesThatCanNotBeLiftedWithinTheirTree</a></td></tr>
+<tr class="separator:a8fee9be358e1095c0c03130822b7b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8457099fc132a9dfc1e36a8e9d787f" id="r_afa8457099fc132a9dfc1e36a8e9d787f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa8457099fc132a9dfc1e36a8e9d787f">_particlesThatHaveToBeSieved</a></td></tr>
+<tr class="memdesc:afa8457099fc132a9dfc1e36a8e9d787f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particles that should be sieved.  <br /></td></tr>
+<tr class="separator:afa8457099fc132a9dfc1e36a8e9d787f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af73813db999fda55067732c5f178c5b9" id="r_af73813db999fda55067732c5f178c5b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af73813db999fda55067732c5f178c5b9">_log</a></td></tr>
+<tr class="separator:af73813db999fda55067732c5f178c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9fa50f8176dd7c4fad98e686ae677b" id="r_aee9fa50f8176dd7c4fad98e686ae677b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee9fa50f8176dd7c4fad98e686ae677b">_SieveReductionTag</a></td></tr>
+<tr class="memdesc:aee9fa50f8176dd7c4fad98e686ae677b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduction tag.  <br /></td></tr>
+<tr class="separator:aee9fa50f8176dd7c4fad98e686ae677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866f139e5e9ad8e3f3b9d28ecbc5054a" id="r_a866f139e5e9ad8e3f3b9d28ecbc5054a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866f139e5e9ad8e3f3b9d28ecbc5054a">_particlesThatCanNotBeLiftedWithinTheirTreeSemaphore</a></td></tr>
+<tr class="memdesc:a866f139e5e9ad8e3f3b9d28ecbc5054a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphores.  <br /></td></tr>
+<tr class="separator:a866f139e5e9ad8e3f3b9d28ecbc5054a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c7315f2359251b9175536d04316d9f" id="r_a20c7315f2359251b9175536d04316d9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c7315f2359251b9175536d04316d9f">_particlesToBeSievedSemaphore</a></td></tr>
+<tr class="separator:a20c7315f2359251b9175536d04316d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class toolbox::particles::SieveParticles&lt; T &gt;</div><p>Utility class for global sorting for all flavours of particle sets. </p>
+<p>Particle sets and different sorting strategies all differ in the way they actually manage their particles and how they are assigned to the mesh vertices. Notably, they all differ in the way when and how they sort globally. Some sorting strategies such as peano4.toolbox.particles.UpdateParticleGridAssociation_LiftDrop try to realise as much sorting as possible locally by shifting particles between levels and only resort to a global sieve set when particles are very fast, while other strategies such as peano4.toolbox.particles.UpdateParticleGridAssociation_BucketSort generally throw all particles that need to be resorted into the global sieve set and then take it from there.</p>
+<h2><a class="anchor" id="autotoc_md293"></a>
+Relationship to various sorting approaches</h2>
+<p>So sieving means that particles are removed from the global mesh and thrown into a sieve set represented by an instance of <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html" title="Utility class for global sorting for all flavours of particle sets.">SieveParticles</a>. After one mesh traversal, this sieve set is fully populated. After that, the individual subdomains run through their mesh and pick the particles from the global sieve set as they fit. They realise a bucket sort. Again, there are two different ways how to bucket sort:</p>
+<ul>
+<li>Some strategies work with one global sieve set, and remove the particles from this one as they bucket sort into the domain</li>
+<li>Other strategies clone the sieve set per thread and pick out only those particles which are relevant.</li>
+</ul>
+<p>No matter which strategy you follow, all of them work against the same signature and all of them share the same statistics. These features are provided by this class: The class is used by <a class="el" href="../../d5/ddd/classtoolbox_1_1particles_1_1ParticleSet.html" title="Abstract base class for all flavours of particle sets.">toolbox.particles.ParticleSet</a> which usually holds one class instance (static attribute) of this class to collect all sieve information. To drop particles from the global sieve set into the respective domains, mesh sweeps either use <a class="el" href="#a61c379ee6f8b7f1e88e26650a864d1a4" title="Get particles that are to be sieved into one vertex.">getParticlesToBeSievedIntoVertex()</a> directly or they create a copy of this sieve set through <a class="el" href="#a246ae201c7398d64b2239772b744fa03" title="Clone object, but let it contain only the delivering part, i.e.">cloneParticlesToBeSieved()</a> and then hand out particles from this deep copy.</p>
+<p>There are few key routines that you should study should you try to use this class:</p>
+<ol type="1">
+<li><a class="el" href="#a6ea98a85cfa949e9540b88162584667a" title="Add a particle to the list of particles which cannot be lifted.">addParticleThatCanNotBeLiftedWithinItsTree()</a>. The name is actually not that good, as the class really doesn't care why you decide to add a particle to the sieve set. It simply adds it to the set.</li>
+<li><a class="el" href="#ae51b9ce783fc808dae46cd4939abca90" title="Get all the global sieve data consistent.">exchangeSieveListsGlobally()</a>. Exchange all the particles between MPI ranks, so everybody sees all particles, and also roll them over: particles that have been added to the sieve set are form hereon in the list that have to be sieved (bucket sorted), while the list of sieve particles is cleared such that you can add further new particles to it.</li>
+<li><a class="el" href="#a61c379ee6f8b7f1e88e26650a864d1a4" title="Get particles that are to be sieved into one vertex.">getParticlesToBeSievedIntoVertex()</a> picks those particles from the list of particles that have to be deployed/bucket sorted that fit to one particular vertex.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md294"></a>
+Periodic boundary conditions</h2>
+<p>If particles move around a lot such that the underlying sorting algorithm decides that it would prefer a global sorting step, it adds these particles to the sieve set. If these particles did fly through the domain boundary and now are outside, noone will bucket sort (sieve) them and they will eventually be deleted after the next mesh sweep.</p>
+<p>If particles did cross a periodic boundary, they should reenter the domain again: They might, for example, be lifted into the sieve set on the far left and of the domain but should be sorted into the far right one in return. To faciliate this, you have to run through all particles within the sieve set once and apply the periodic boundary conditions to them. This can be done either before <a class="el" href="#ae51b9ce783fc808dae46cd4939abca90" title="Get all the global sieve data consistent.">exchangeSieveListsGlobally()</a> for the rank-local set of _particlesThatCanNotBeLiftedWithinTheirTree, or is has to be done after the exchange on _particlesThatHaveToBeSieved. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00095">95</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac7dd8104403ee9f09aed676b6d847719" name="ac7dd8104403ee9f09aed676b6d847719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7dd8104403ee9f09aed676b6d847719">&#9670;&#160;</a></span>DoFType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::DoFType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00097">97</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<a id="a11702173eb63f140ca4e40b1aaf2cfba" name="a11702173eb63f140ca4e40b1aaf2cfba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11702173eb63f140ca4e40b1aaf2cfba">&#9670;&#160;</a></span>ParticleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;T*&gt; <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::ParticleList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00099">99</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4d2bd25dab9decc44969e6903ef4e786" name="a4d2bd25dab9decc44969e6903ef4e786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2bd25dab9decc44969e6903ef4e786">&#9670;&#160;</a></span>SieveParticles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::SieveParticles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a371542bb3fd6ad86b13a0615f1e30734" name="a371542bb3fd6ad86b13a0615f1e30734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a371542bb3fd6ad86b13a0615f1e30734">&#9670;&#160;</a></span>~SieveParticles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::~<a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">SieveParticles</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>The sieve set works with shallow copies, i.e. we assign particles from the mesh and the ownership then goes over into the sieve set. However, when we sort particles into the mesh, each mesh traversal creates its own copy of the particles. The routine <a class="el" href="#a246ae201c7398d64b2239772b744fa03" title="Clone object, but let it contain only the delivering part, i.e.">cloneParticlesToBeSieved()</a> creates a deep copy.</p>
+<p>As we might hand around this deep copy, and as the copy constructor also creates shallow copies, the destructor does not(!) free the memory. You have to do this manually via a call to <a class="el" href="#aca0d4191f1498506163ec911a5479c0a" title="Deep clear.">deleteParticles()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00027">27</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6ea98a85cfa949e9540b88162584667a" name="a6ea98a85cfa949e9540b88162584667a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea98a85cfa949e9540b88162584667a">&#9670;&#160;</a></span>addParticleThatCanNotBeLiftedWithinItsTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::addParticleThatCanNotBeLiftedWithinItsTree </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a particle to the list of particles which cannot be lifted. </p>
+<p>You hand over the pointer to the sieve list. That is, nothing is copied, but the responsibility for this object, from now on, resides with the sieve list. It will eventually delete the particle. Therefore you should not maintain any pointer to the particle anymore once you hand it over to the sieve list.</p>
+<p>The routine is thread-safe. The object does not keep any kind of statistics. You have to maintain stats on your own if you need them. However, it only uses the lock, i.e. is thread-safe for originatingTree==GlobalSort. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00190">190</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>.</p>
+
+</div>
+</div>
+<a id="a246ae201c7398d64b2239772b744fa03" name="a246ae201c7398d64b2239772b744fa03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246ae201c7398d64b2239772b744fa03">&#9670;&#160;</a></span>cloneParticlesToBeSieved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt; <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::cloneParticlesToBeSieved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clone object, but let it contain only the delivering part, i.e. </p>
+<p>those particles that have to be sieved. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00176">176</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00328">toolbox::particles::SieveParticles&lt; T &gt;::_particlesThatHaveToBeSieved</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00154">toolbox::particles::SieveParticles&lt; T &gt;::toString()</a>, and <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles_a246ae201c7398d64b2239772b744fa03_cgraph.png" border="0" usemap="#add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a246ae201c7398d64b2239772b744fa03_cgraph" alt=""/></div>
+<map name="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a246ae201c7398d64b2239772b744fa03_cgraph" id="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a246ae201c7398d64b2239772b744fa03_cgraph">
+<area shape="rect" title="Clone object, but let it contain only the delivering part, i.e." alt="" coords="5,27,224,82"/>
+<area shape="rect" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html#a0ff5c993761ecdb99df640b2894fceca" title=" " alt="" coords="272,5,452,45"/>
+<area shape="poly" title=" " alt="" coords="224,39,258,35,259,40,224,44"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="325,70,399,95"/>
+<area shape="poly" title=" " alt="" coords="224,64,312,74,312,80,224,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca0d4191f1498506163ec911a5479c0a" name="aca0d4191f1498506163ec911a5479c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0d4191f1498506163ec911a5479c0a">&#9670;&#160;</a></span>deleteParticles() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::deleteParticles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deep clear. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00166">166</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+</div>
+</div>
+<a id="abfcf5ae2ed9a37843d1541b22dc7eb56" name="abfcf5ae2ed9a37843d1541b22dc7eb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcf5ae2ed9a37843d1541b22dc7eb56">&#9670;&#160;</a></span>deleteParticles() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::deleteParticles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>list</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00032">32</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+</div>
+</div>
+<a id="ae51b9ce783fc808dae46cd4939abca90" name="ae51b9ce783fc808dae46cd4939abca90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51b9ce783fc808dae46cd4939abca90">&#9670;&#160;</a></span>exchangeSieveListsGlobally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::exchangeSieveListsGlobally </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>domainOffset</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>domainSize</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::bitset&lt; Dimensions &gt;</td>          <td class="paramname"><span class="paramname"><em>periodicBC</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the global sieve data consistent. </p>
+<p>Has to be called after the traversal has finished on each rank by the main, i.e. do not call it within the action sets. You may not call this routine more than once per rank per traversal. The core purpose of this routine is to get the global sieve data all consistent: If a tree cannot resort its local particles, and, hence, cannot even synchronise with its neighbours as particles moved too fast, it dumps the particle into the global sieve list. After the traversal, all ranks (and eventually trees) should see the same global sieve list and start to sieve particles into their respective domain.</p>
+<h2><a class="anchor" id="autotoc_md295"></a>
+Algorithmic steps</h2>
+<ul>
+<li>Delete all the sieve particles which have not been sieved. We note that only particles within the domain are taken from the sieve set and inserted into the mesh. For particles close to domain boundaries, we create copies and insert these copies. The preimage consequently has to be deleted at one point, i.e. here in this routine.</li>
+<li>Inform all other ranks about my number of local particles that I could not sort on the local rank.</li>
+<li>Per other rank:<ul>
+<li>Find out how many particles will be received from this partner.</li>
+<li>Send out my own copy of particles with an unblocking send.</li>
+<li>Receive the guys from the neighbour. We can append these received data directly to our local data. We will use these local buffers to send out stuff to other neighbours, but as we append, we will only send out the first few particles which really stem from the local node.</li>
+<li>Wrap up the unblocking send via a wait. It is important that we allow the rank to handle other (unexpected) message while we wait for the particle exchange to terminate. This is possible, as we use a tag of its own for the global particle exchange. Without a wait for unexpected messages, it could for example be that another rank requires a tree booking due to load balancing, and we cannot serve the tree request in our rank, as we are already stuck in the global particle exchange.</li>
+</ul>
+</li>
+<li>We roll over the globally lifted particles into the sieve set for the next mesh traversal.</li>
+<li>Remove duplicates from the sieve list. The sieve list might contain redundant particles for those guys which ended up exactly on the boundary between two trees. Such guys are considered to be local in multiple subdomains and hence might also end up redundantly within the sieve list.</li>
+<li>Clear the container _particlesThatCanNotBeLiftedWithinTheirTree which will be used in the future to gather the newly sieved particles. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00041">41</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d22/particles_8cpp_source.html#l00042">toolbox::particles::applyPeriodicBoundaryConditions()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00531">tarch::mpi::Rank::getCommunicator()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00032">tarch::services::ServiceRepository::getInstance()</a>, <a class="el" href="../../df/df3/Rank_8h_source.html#l00425">tarch::mpi::Rank::getNumberOfRanks()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00519">tarch::mpi::Rank::getRank()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00028">tarch::mpi::IntegerMessage::getValue()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../dd/dbf/benchmarks_2peano4_2grid_2main_8cpp_source.html#l00019">periodicBC</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00269">tarch::mpi::IntegerMessage::receiveAndPollDanglingMessages()</a>, <a class="el" href="../../de/d77/ServiceRepository_8cpp_source.html#l00079">tarch::services::ServiceRepository::receiveDanglingMessages()</a>, <a class="el" href="../../d6/dd3/IntegerMessage_8cpp_source.html#l00252">tarch::mpi::IntegerMessage::sendAndPollDanglingMessages()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00197">tarch::mpi::Rank::setDeadlockTimeOutTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00192">tarch::mpi::Rank::setDeadlockWarningTimeStamp()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00123">tarch::mpi::Rank::triggerDeadlockTimeOut()</a>, and <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00147">tarch::mpi::Rank::writeTimeOutWarning()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles_ae51b9ce783fc808dae46cd4939abca90_cgraph.png" border="0" usemap="#add/d6b/classtoolbox_1_1particles_1_1SieveParticles_ae51b9ce783fc808dae46cd4939abca90_cgraph" alt=""/></div>
+<map name="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_ae51b9ce783fc808dae46cd4939abca90_cgraph" id="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_ae51b9ce783fc808dae46cd4939abca90_cgraph">
+<area shape="rect" title="Get all the global sieve data consistent." alt="" coords="5,380,197,435"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#ac05d5ff6147e2048c3ca9e3df656280c" title="Applies the periodic boundary condition on particle coordinates x." alt="" coords="248,34,497,74"/>
+<area shape="poly" title=" " alt="" coords="104,379,117,318,142,238,161,196,183,155,211,117,244,84,249,79,253,84,247,88,215,120,188,158,166,198,147,240,122,319,109,380"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="245,99,500,124"/>
+<area shape="poly" title=" " alt="" coords="107,379,123,328,151,263,190,197,215,167,244,141,268,127,271,131,247,145,219,171,195,200,155,266,128,330,112,381"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="577,116,790,141"/>
+<area shape="poly" title=" " alt="" coords="114,378,134,342,163,299,200,257,244,221,281,200,321,182,404,155,487,139,563,130,563,135,488,144,406,160,323,187,284,205,247,226,204,261,168,303,139,345,118,381"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="596,294,771,334"/>
+<area shape="poly" title=" " alt="" coords="123,378,174,328,208,304,244,286,282,275,314,269,370,269,428,277,500,286,583,295,582,300,500,291,427,283,370,274,314,274,283,280,246,291,210,309,178,332,127,382"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a2edb0017914edf9df4b6a0bfbf3a2890" title=" " alt="" coords="267,631,478,671"/>
+<area shape="poly" title=" " alt="" coords="117,433,137,473,165,521,202,569,247,611,269,623,266,628,244,615,198,573,161,524,132,476,112,436"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="277,696,468,721"/>
+<area shape="poly" title=" " alt="" coords="111,434,126,488,153,555,171,590,192,624,218,655,247,681,266,692,263,697,244,685,214,658,188,627,166,593,148,557,121,489,106,436"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a69937a8c69cf8d2044f35f07dcf7ab9e" title=" " alt="" coords="273,746,473,786"/>
+<area shape="poly" title=" " alt="" coords="109,434,122,496,147,577,165,619,187,661,215,699,247,732,261,742,258,746,244,736,211,702,183,664,160,622,142,579,117,498,104,435"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a8bf8f550d0be2be3ab40dbe7434c7310" title=" " alt="" coords="247,301,498,341"/>
+<area shape="poly" title=" " alt="" coords="182,377,245,357,291,342,293,347,246,362,184,382"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="548,230,819,270"/>
+<area shape="poly" title=" " alt="" coords="118,378,139,348,168,314,204,283,244,258,282,244,322,234,403,222,482,221,555,226,555,231,482,226,403,228,323,239,284,249,246,263,207,287,172,318,143,351,122,381"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="574,358,793,398"/>
+<area shape="poly" title=" " alt="" coords="198,400,560,382,560,387,198,405"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="574,614,793,654"/>
+<area shape="poly" title=" " alt="" coords="131,433,182,478,214,500,247,520,325,553,407,580,487,600,561,615,560,620,486,605,405,585,323,558,244,524,211,505,179,482,128,437"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="593,486,773,526"/>
+<area shape="poly" title=" " alt="" coords="142,433,191,461,246,483,332,502,421,511,505,513,580,512,580,517,505,519,420,516,331,507,245,489,188,466,140,437"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="582,422,785,462"/>
+<area shape="poly" title=" " alt="" coords="155,432,199,451,246,465,330,475,415,476,496,471,569,462,570,467,497,476,415,482,329,481,245,470,197,456,153,437"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a755764fe3944f0889da65f186ba0020d" title=" " alt="" coords="256,415,489,455"/>
+<area shape="poly" title=" " alt="" coords="198,415,243,419,242,425,197,420"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ac6589b2a6a88998920a591807cb5dc31" title=" " alt="" coords="618,55,749,80"/>
+<area shape="poly" title=" " alt="" coords="498,57,604,61,604,67,497,62"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ab3cd3664dd66aa6062b2e3feab03171e" title=" " alt="" coords="617,5,749,31"/>
+<area shape="poly" title=" " alt="" coords="497,37,604,24,604,30,498,42"/>
+<area shape="poly" title=" " alt="" coords="387,299,413,266,450,225,495,185,547,152,566,143,568,148,549,156,499,189,454,229,417,269,391,302"/>
+<area shape="poly" title=" " alt="" coords="498,315,582,313,583,319,498,321"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#a9432e498ccba78dd6a5d832329b53f3c" title=" " alt="" coords="583,166,783,206"/>
+<area shape="poly" title=" " alt="" coords="401,298,466,257,547,216,569,207,571,212,549,220,468,261,404,303"/>
+<area shape="poly" title=" " alt="" coords="461,298,580,271,582,276,462,303"/>
+<area shape="poly" title=" " alt="" coords="482,338,562,353,561,358,481,343"/>
+<area shape="poly" title=" " alt="" coords="423,339,465,365,485,382,502,402,517,430,523,456,522,507,521,530,523,554,532,577,550,600,563,611,560,615,546,604,527,579,518,555,516,531,517,506,518,457,512,431,498,405,481,386,462,369,420,343"/>
+<area shape="poly" title=" " alt="" coords="414,338,458,366,502,401,517,421,525,439,533,456,550,472,581,488,579,493,546,476,529,459,520,442,512,424,498,405,455,370,411,343"/>
+<area shape="poly" title=" " alt="" coords="409,339,473,374,549,408,573,416,572,421,547,412,470,378,406,343"/>
+<area shape="rect" href="../../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html#aed01fe13fe4c18031154be6ad8f96c70" title=" " alt="" coords="867,230,1064,270"/>
+<area shape="poly" title=" " alt="" coords="819,247,853,247,853,253,819,253"/>
+<area shape="poly" title=" " alt="" coords="420,413,462,387,481,370,498,351,512,324,518,299,516,249,515,225,517,200,527,176,546,152,562,140,565,144,550,156,531,179,523,202,520,225,522,249,523,299,517,326,502,354,485,374,465,391,423,417"/>
+<area shape="poly" title=" " alt="" coords="406,413,470,378,547,344,582,332,583,337,549,348,473,382,409,417"/>
+<area shape="poly" title=" " alt="" coords="411,413,455,386,498,351,512,332,520,314,529,297,546,280,556,274,559,278,550,284,533,300,525,317,517,335,502,355,458,390,414,418"/>
+<area shape="poly" title=" " alt="" coords="481,413,561,398,562,403,482,418"/>
+<area shape="poly" title=" " alt="" coords="391,454,455,526,499,566,549,600,563,607,561,611,547,604,496,570,451,530,387,458"/>
+<area shape="poly" title=" " alt="" coords="462,453,582,480,580,485,461,458"/>
+<area shape="poly" title=" " alt="" coords="490,435,568,437,568,442,490,441"/>
+<area shape="rect" href="../../dd/dce/structtarch_1_1mpi_1_1IntegerMessage.html#ade441c64dbcff27b529ddc1607f9788a" title="In DaStGen (the first version), I had a non&#45;static version of the send as well as the receive." alt="" coords="583,550,783,590"/>
+<area shape="poly" title=" " alt="" coords="404,453,468,495,549,536,571,544,569,549,547,540,466,499,401,458"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71a534a4ac7c2091f65ee9a97ce4c0b0" name="a71a534a4ac7c2091f65ee9a97ce4c0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a534a4ac7c2091f65ee9a97ce4c0b0">&#9670;&#160;</a></span>getNumberOfParticlesThatHaveBeSievedIntoVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::getNumberOfParticlesThatHaveBeSievedIntoVertices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="#ae5e2034cced48a16c1a5eea417bb136b" title="Fine out how many particles still to sieve.">hasParticlesToBeSievedIntoVertices()</a> is equivalent to checking if this routine returns something greater than 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00197">197</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+</div>
+</div>
+<a id="a61c379ee6f8b7f1e88e26650a864d1a4" name="a61c379ee6f8b7f1e88e26650a864d1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c379ee6f8b7f1e88e26650a864d1a4">&#9670;&#160;</a></span>getParticlesToBeSievedIntoVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;<a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">::ParticleList</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::getParticlesToBeSievedIntoVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../dd/dc6/structpeano4_1_1datamanagement_1_1VertexMarker.html">peano4::datamanagement::VertexMarker</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>marker</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>removeReturnedParticlesFromSet</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>onlyReturnParticlesThatWillBeLocal</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a></td>          <td class="paramname"><span class="paramname"><em>lockSemaphore</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get particles that are to be sieved into one vertex. </p>
+<p>Takes the current particle set and finds those particles which can be sieved into current vertex. The operation alters the object state of particleList, as it returns the particles that are to be sieved and removes them from the current set.</p>
+<p>In line with <a class="el" href="../../d1/d2d/namespacepeano4_1_1toolbox_1_1particles_1_1Particle.html">peano4.toolbox.particles.Particle</a>, we do not alter the parallel state. That's the job of whoever calls this routine. Most action sets (notably our sorting action sets) will invoke the boundary merger and this merger will then take care of the parallel flag.</p>
+<p>All the particles in the result set are assigned the correct mesh size h of the corresponding mesh into which we sieve it. So this attribute is changed.</p>
+<h2><a class="anchor" id="autotoc_md296"></a>
+Thread safety</h2>
+<p>This routine is not static, i.e. we assume it works on a thread-local list of particles. This thread-local list is typically constructed as deep copy of the global sieve list. getSievedParticlesForNextGridTraversal() provides these deep copy semantics. Since we work with a copy of the global particles per thread, there's no need to add semaphores. We are inherently thread-safe. However, we have to delete all left-over particles which have not been sieved by a local thread. As the list had been a deep copy, we'd otherwise create a memory leak.</p>
+<dl class="section see"><dt>See also</dt><dd>getSievedParticlesForNextGridTraversal() <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> the deep copy and the roll-over of <a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html">particles</a> that cannot be lifted into <a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html">particles</a> that have to be sieved. </dd>
+<dd>
+<a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html#a87df833da9d9721541a2828f40b09162" title="A particle is to be sieved into a vertex if.">toolbox::particles::sieveParticle()</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> the sieve logic. </dd>
+<dd>
+<a class="el" href="#aca0d4191f1498506163ec911a5479c0a" title="Deep clear.">deleteParticles()</a> <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a10aa502896b834c0d9eaeb3e8c8ab187">for</a> the deletion of deep copies.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originatingTree</td><td>Number of tree (positive integer) or GlobalSort. It indicates where the particles should come from, i.e. are they form a specific tree or some particles that we have to sort globally.</td></tr>
+    <tr><td class="paramname">removeReturnedParticlesFromSet</td><td>If this field is set, we remove the particles from the underlying set before we return them. That is, the underlying set on which we call <a class="el" href="#a61c379ee6f8b7f1e88e26650a864d1a4" title="Get particles that are to be sieved into one vertex.">getParticlesToBeSievedIntoVertex()</a> shrinks monotonously. If you set it to false, the particles will reside within the set (for this mesh traversal). Therefore, you should not use the returned particles directly but rather create copies. There is no code at the moment that does not remove the vertex from the set, as we otherwise might sieve the same particle multiple times into the mesh (as the association which particle belongs to which vertex is not absolutely unique). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00209">209</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d45/Log_8h_source.html#l00050">logDebug</a>, <a class="el" href="../../dc/d22/particles_8cpp_source.html#l00006">toolbox::particles::particleAssignedToVertexWillBeLocal()</a>, and <a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html#a87df833da9d9721541a2828f40b09162">toolbox::particles::sieveParticle()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles_a61c379ee6f8b7f1e88e26650a864d1a4_cgraph.png" border="0" usemap="#add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a61c379ee6f8b7f1e88e26650a864d1a4_cgraph" alt=""/></div>
+<map name="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a61c379ee6f8b7f1e88e26650a864d1a4_cgraph" id="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a61c379ee6f8b7f1e88e26650a864d1a4_cgraph">
+<area shape="rect" title="Get particles that are to be sieved into one vertex." alt="" coords="5,91,211,146"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#a9a5760759e013b208463c1ab5cadb0f1" title=" " alt="" coords="259,55,453,110"/>
+<area shape="poly" title=" " alt="" coords="211,101,245,96,245,101,211,106"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#a87df833da9d9721541a2828f40b09162" title="A particle is to be sieved into a vertex if." alt="" coords="289,135,423,175"/>
+<area shape="poly" title=" " alt="" coords="211,131,276,140,275,146,211,136"/>
+<area shape="rect" href="../../d0/d29/namespacetoolbox_1_1particles.html#accfeb35fd8694d1efddaf60c6795acd0" title="Find out which adjacent cell will hold a particle." alt="" coords="501,63,739,103"/>
+<area shape="poly" title=" " alt="" coords="454,80,488,80,488,85,454,85"/>
+<area shape="rect" href="../../dc/d59/structpeano4_1_1datamanagement_1_1CellMarker.html#aa95cd9a5ed79cb4935a878de1fa90fed" title="Is x contained within cell identified by marker object." alt="" coords="799,5,993,45"/>
+<area shape="poly" title=" " alt="" coords="716,60,785,46,786,51,717,65"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="840,70,952,95"/>
+<area shape="poly" title=" " alt="" coords="739,80,827,80,827,85,739,85"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18" title=" " alt="" coords="787,119,1005,145"/>
+<area shape="poly" title=" " alt="" coords="733,100,811,114,810,120,732,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae5e2034cced48a16c1a5eea417bb136b" name="ae5e2034cced48a16c1a5eea417bb136b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e2034cced48a16c1a5eea417bb136b">&#9670;&#160;</a></span>hasParticlesToBeSievedIntoVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::hasParticlesToBeSievedIntoVertices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fine out how many particles still to sieve. </p>
+<p>If you ask how many particles we have to sieve, you will receive the ones that have not been sieved so far. Therefore, this routine can not be used for any statistics after a grid sweep to find out how many sieves have been done. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00203">203</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+</div>
+</div>
+<a id="a0ff5c993761ecdb99df640b2894fceca" name="a0ff5c993761ecdb99df640b2894fceca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff5c993761ecdb99df640b2894fceca">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Overview of set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00154">154</a> of file <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00176">toolbox::particles::SieveParticles&lt; T &gt;::cloneParticlesToBeSieved()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles_a0ff5c993761ecdb99df640b2894fceca_icgraph.png" border="0" usemap="#add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a0ff5c993761ecdb99df640b2894fceca_icgraph" alt=""/></div>
+<map name="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a0ff5c993761ecdb99df640b2894fceca_icgraph" id="add/d6b/classtoolbox_1_1particles_1_1SieveParticles_a0ff5c993761ecdb99df640b2894fceca_icgraph">
+<area shape="rect" title=" " alt="" coords="272,13,452,53"/>
+<area shape="rect" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html#a246ae201c7398d64b2239772b744fa03" title="Clone object, but let it contain only the delivering part, i.e." alt="" coords="5,5,224,60"/>
+<area shape="poly" title=" " alt="" coords="258,35,224,35,224,30,258,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="af73813db999fda55067732c5f178c5b9" name="af73813db999fda55067732c5f178c5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73813db999fda55067732c5f178c5b9">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00281">281</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<a id="a8fee9be358e1095c0c03130822b7b4fc" name="a8fee9be358e1095c0c03130822b7b4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fee9be358e1095c0c03130822b7b4fc">&#9670;&#160;</a></span>_particlesThatCanNotBeLiftedWithinTheirTree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_particlesThatCanNotBeLiftedWithinTheirTree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00315">315</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<a id="a866f139e5e9ad8e3f3b9d28ecbc5054a" name="a866f139e5e9ad8e3f3b9d28ecbc5054a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866f139e5e9ad8e3f3b9d28ecbc5054a">&#9670;&#160;</a></span>_particlesThatCanNotBeLiftedWithinTheirTreeSemaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_particlesThatCanNotBeLiftedWithinTheirTreeSemaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Semaphores. </p>
+<p>This is for the assembly of the set of particles which require global (sieve) data exchange. When we later on sieve the particles into their target vertices, we need another semaphore of its own.</p>
+<p>In the present case, the semaphores don't have to be static, as we assume that <a class="el" href="../../d5/ddd/classtoolbox_1_1particles_1_1ParticleSet.html" title="Abstract base class for all flavours of particle sets.">ParticleSet</a> uses this class as a static class. That is, we implicitly have a static attribute. In return, if someone creates a deep clone of the present particle set through <a class="el" href="#a246ae201c7398d64b2239772b744fa03" title="Clone object, but let it contain only the delivering part, i.e.">cloneParticlesToBeSieved()</a>, we explicitly don't want the semaphores to lock all other particle sets.</p>
+<p>Problems arise once we translate these considerations 1:1 into code, as semaphores cannot be copied. That is, we cannot omit the static keyword. To take the synchronisation remark into account (some routines can work with thread-local copies), we therefore have to make the semaphores static and "just" not lock them if we work with thread-local copies. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00312">312</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<a id="afa8457099fc132a9dfc1e36a8e9d787f" name="afa8457099fc132a9dfc1e36a8e9d787f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8457099fc132a9dfc1e36a8e9d787f">&#9670;&#160;</a></span>_particlesThatHaveToBeSieved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a11702173eb63f140ca4e40b1aaf2cfba">ParticleList</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_particlesThatHaveToBeSieved</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Particles that should be sieved. </p>
+<p>This is a set of particles which should be sieved in the next traversal. However, nobody takes particles directly from this list. Instead, tasks will work with their own clones of this list.</p>
+<dl class="section see"><dt>See also</dt><dd>getSievedParticlesForNextGridTraversal()</dd></dl>
+<p>The list is populated by finishedTraversal(). </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00328">328</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html#l00176">toolbox::particles::SieveParticles&lt; T &gt;::cloneParticlesToBeSieved()</a>.</p>
+
+</div>
+</div>
+<a id="a20c7315f2359251b9175536d04316d9f" name="a20c7315f2359251b9175536d04316d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c7315f2359251b9175536d04316d9f">&#9670;&#160;</a></span>_particlesToBeSievedSemaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_particlesToBeSievedSemaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00313">313</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<a id="aee9fa50f8176dd7c4fad98e686ae677b" name="aee9fa50f8176dd7c4fad98e686ae677b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9fa50f8176dd7c4fad98e686ae677b">&#9670;&#160;</a></span>_SieveReductionTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">toolbox::particles::SieveParticles</a>&lt; T &gt;::_SieveReductionTag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_function" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ab501a52fc09ea23bb061edbbfbcc89aa">tarch::mpi::Rank::reserveFreeTag</a>(</div>
+<div class="line">  <span class="stringliteral">&quot;toolbox::particles::&quot;</span></div>
+<div class="line">  <span class="stringliteral">&quot;SieveParticles&lt;T&gt;::_&quot;</span></div>
+<div class="line">  <span class="stringliteral">&quot;SieveReductionTag&quot;</span></div>
+<div class="line">)</div>
+<div class="ttc" id="aclasstarch_1_1mpi_1_1Rank_html_ab501a52fc09ea23bb061edbbfbcc89aa"><div class="ttname"><a href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#ab501a52fc09ea23bb061edbbfbcc89aa">tarch::mpi::Rank::reserveFreeTag</a></div><div class="ttdeci">static int reserveFreeTag(const std::string &amp;fullQualifiedMessageName, int numberOfTags=1)</div><div class="ttdoc">Return a Free Tag.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dcd/Rank_8cpp_source.html#l00038">Rank.cpp:38</a></div></div>
+</div><!-- fragment -->
+<p>Reduction tag. </p>
+<p>We one of these per subclass, i.e. I cannot move it to the superclass </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/dec/SieveParticles_8h_source.html#l00290">290</a> of file <a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/toolbox/particles/<a class="el" href="../../da/dec/SieveParticles_8h_source.html">SieveParticles.h</a></li>
+<li>src/toolbox/particles/<a class="el" href="../../df/dbc/SieveParticles_8cpph_source.html">SieveParticles.cpph</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dd9/namespacetoolbox.html">toolbox</a></li><li class="navelem"><a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html">particles</a></li><li class="navelem"><a class="el" href="../../dd/d6b/classtoolbox_1_1particles_1_1SieveParticles.html">SieveParticles</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:08 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

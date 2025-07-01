@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">tbb::dynamic_task_graph_spawned_node Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Spawned node.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tbb::dynamic_task_graph_spawned_node:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dfa/classtbb_1_1dynamic__task__graph__spawned__node__coll__graph.png" border="0" usemap="#atbb_1_1dynamic__task__graph__spawned__node_coll__map" alt="Collaboration graph"/></div>
+<map name="atbb_1_1dynamic__task__graph__spawned__node_coll__map" id="atbb_1_1dynamic__task__graph__spawned__node_coll__map">
+<area shape="rect" title="Spawned node." alt="" coords="5,105,192,145"/>
+<area shape="rect" title=" " alt="" coords="263,17,483,57"/>
+<area shape="poly" title=" " alt="" coords="160,97,215,77,291,54,293,59,217,82,162,102"/>
+<area shape="rect" title=" " alt="" coords="290,199,455,253"/>
+<area shape="poly" title=" " alt="" coords="149,149,217,181,291,204,289,209,215,186,146,154"/>
+<area shape="rect" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html" title="Very simple dynamic task graph interface." alt="" coords="975,64,1161,89"/>
+<area shape="poly" title=" " alt="" coords="961,85,192,123,192,117,961,79"/>
+<area shape="rect" title=" " alt="" coords="616,5,813,60"/>
+<area shape="poly" title=" " alt="" coords="828,44,975,62,974,68,827,49"/>
+<area shape="poly" title=" " alt="" coords="496,33,615,31,616,36,496,38"/>
+<area shape="rect" title=" " alt="" coords="615,156,815,211"/>
+<area shape="poly" title=" " alt="" coords="601,175,192,136,193,131,601,170"/>
+<area shape="poly" title=" " alt="" coords="469,211,614,193,615,198,470,217"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a77f854047b20f94329785f7a485335b7" id="r_a77f854047b20f94329785f7a485335b7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77f854047b20f94329785f7a485335b7">State</a> { <a class="el" href="#a77f854047b20f94329785f7a485335b7a5c835c22429f25992b4371691ecde1a4">Submitted</a>
+, <a class="el" href="#a77f854047b20f94329785f7a485335b7ac7359eeaca4b19723132339a8deade87">Spawned</a>
+, <a class="el" href="#a77f854047b20f94329785f7a485335b7aae94f80b3ce82062a5dd7815daa04f9d">Complete</a>
+ }</td></tr>
+<tr class="separator:a77f854047b20f94329785f7a485335b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5811eb0b011cff97c4570e8a53809b93" id="r_a5811eb0b011cff97c4570e8a53809b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5811eb0b011cff97c4570e8a53809b93">dynamic_task_graph_spawned_node</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d5/d6e/classtbb_1_1dynamic__task__graph__node.html">dynamic_task_graph_node</a> &amp;task_specification, <a class="el" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html">dynamic_task_graph</a> &amp;task_graph)</td></tr>
+<tr class="memdesc:a5811eb0b011cff97c4570e8a53809b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new task node in the graph.  <br /></td></tr>
+<tr class="separator:a5811eb0b011cff97c4570e8a53809b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3397ff9677f5378c72922233125c638e" id="r_a3397ff9677f5378c72922233125c638e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3397ff9677f5378c72922233125c638e">dynamic_task_graph_spawned_node</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a3397ff9677f5378c72922233125c638e"><td class="mdescLeft">&#160;</td><td class="mdescRight">You cannot copy a spawned node.  <br /></td></tr>
+<tr class="separator:a3397ff9677f5378c72922233125c638e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c86b3bd8e2481dc781e2f4f7e77541" id="r_a06c86b3bd8e2481dc781e2f4f7e77541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c86b3bd8e2481dc781e2f4f7e77541">incoming_task_has_terminated</a> ()</td></tr>
+<tr class="memdesc:a06c86b3bd8e2481dc781e2f4f7e77541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the incoming task counter and run if now ready.  <br /></td></tr>
+<tr class="separator:a06c86b3bd8e2481dc781e2f4f7e77541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752f46f2c45524b44325e6acb92c0088" id="r_a752f46f2c45524b44325e6acb92c0088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a752f46f2c45524b44325e6acb92c0088">add_incoming_task_dependency</a> ()</td></tr>
+<tr class="separator:a752f46f2c45524b44325e6acb92c0088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1078ab56a90076c9d4ab857256c69d4" id="r_af1078ab56a90076c9d4ab857256c69d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1078ab56a90076c9d4ab857256c69d4">run</a> ()</td></tr>
+<tr class="memdesc:af1078ab56a90076c9d4ab857256c69d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the task.  <br /></td></tr>
+<tr class="separator:af1078ab56a90076c9d4ab857256c69d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1023df5a6c3249fd5886f07d8633696" id="r_aa1023df5a6c3249fd5886f07d8633696"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1023df5a6c3249fd5886f07d8633696">to_string</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="memdesc:aa1023df5a6c3249fd5886f07d8633696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper routine, which likely will not be there in TBB counterpart.  <br /></td></tr>
+<tr class="separator:aa1023df5a6c3249fd5886f07d8633696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a354f4627828921725b33650902294" id="r_a78a354f4627828921725b33650902294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78a354f4627828921725b33650902294">add_successor</a> (std::shared_ptr&lt; <a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a> &gt; successor)</td></tr>
+<tr class="separator:a78a354f4627828921725b33650902294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f60a65135645b224a984693f792f18d" id="r_a9f60a65135645b224a984693f792f18d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f60a65135645b224a984693f792f18d">has_terminated</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a9f60a65135645b224a984693f792f18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7e74a8ff3acd3e9839c7a8fff9a0e9f3" id="r_a7e74a8ff3acd3e9839c7a8fff9a0e9f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a77f854047b20f94329785f7a485335b7">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e74a8ff3acd3e9839c7a8fff9a0e9f3">_state</a></td></tr>
+<tr class="separator:a7e74a8ff3acd3e9839c7a8fff9a0e9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6721cf7c1c3471812c90ac5f837bd2" id="r_adb6721cf7c1c3471812c90ac5f837bd2"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb6721cf7c1c3471812c90ac5f837bd2">_functor</a></td></tr>
+<tr class="separator:adb6721cf7c1c3471812c90ac5f837bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d11cd91608eac0003f9d9537f77a1c6" id="r_a0d11cd91608eac0003f9d9537f77a1c6"><td class="memItemLeft" align="right" valign="top">tbb::spin_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d11cd91608eac0003f9d9537f77a1c6">_dependencies_semaphore</a></td></tr>
+<tr class="memdesc:a0d11cd91608eac0003f9d9537f77a1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore over all the dependencies.  <br /></td></tr>
+<tr class="separator:a0d11cd91608eac0003f9d9537f77a1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c99e2da8255edcd81b27f1bf3c62089" id="r_a0c99e2da8255edcd81b27f1bf3c62089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html">dynamic_task_graph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c99e2da8255edcd81b27f1bf3c62089">_task_graph</a></td></tr>
+<tr class="separator:a0c99e2da8255edcd81b27f1bf3c62089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d7ecadac6c022764f1600569c4a51b" id="r_ac4d7ecadac6c022764f1600569c4a51b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d7ecadac6c022764f1600569c4a51b">_number_of_in_dependencies</a></td></tr>
+<tr class="separator:ac4d7ecadac6c022764f1600569c4a51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd3ee48a191f02b8c99268f4232a135" id="r_addd3ee48a191f02b8c99268f4232a135"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addd3ee48a191f02b8c99268f4232a135">_out_dependency</a></td></tr>
+<tr class="separator:addd3ee48a191f02b8c99268f4232a135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Spawned node. </p>
+<p>This class is only used internally within the task graph lib and not to be used directly by users. Users create instances of <a class="el" href="../../d5/d6e/classtbb_1_1dynamic__task__graph__node.html" title="Represents one node in task graph.">dynamic_task_graph_node</a>. Once they put this node into a task_graph instance, it is tied to a new instance of spawned_task_graph_node.</p>
+<h2><a class="anchor" id="autotoc_md245"></a>
+Memory/heap management</h2>
+<p>As long as a task graph is alive, users might use it to introduce new task dependencies. So we have to ensure that the memory location is absolutely unique. Notably, we may not encounter a situation where a user submits a task A, this task is processed immediately, then creates a task B and a task C which depends on A (but not B). So B may never ever end up at the same memory location as A.</p>
+<p>To avoid this, we work exclusively with smart pointers referencing spawned nodes. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00046">46</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a77f854047b20f94329785f7a485335b7" name="a77f854047b20f94329785f7a485335b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f854047b20f94329785f7a485335b7">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a77f854047b20f94329785f7a485335b7">tbb::dynamic_task_graph_spawned_node::State</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a77f854047b20f94329785f7a485335b7a5c835c22429f25992b4371691ecde1a4" name="a77f854047b20f94329785f7a485335b7a5c835c22429f25992b4371691ecde1a4"></a>Submitted&#160;</td><td class="fielddoc"><p>Task is submitted but not yet running. </p>
+<p>Initial state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a77f854047b20f94329785f7a485335b7ac7359eeaca4b19723132339a8deade87" name="a77f854047b20f94329785f7a485335b7ac7359eeaca4b19723132339a8deade87"></a>Spawned&#160;</td><td class="fielddoc"><p>Task is now running. </p>
+<p>The function <a class="el" href="#af1078ab56a90076c9d4ab857256c69d4" title="Run the task.">tbb::dynamic_task_graph_spawned_node::run()</a> toggles a task from Submitted into Spawned just before it hands the task over to the underlying task arena. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a77f854047b20f94329785f7a485335b7aae94f80b3ce82062a5dd7815daa04f9d" name="a77f854047b20f94329785f7a485335b7aae94f80b3ce82062a5dd7815daa04f9d"></a>Complete&#160;</td><td class="fielddoc"><p>Once a task has terminated, it toggles to complete. </p>
+<p>This allows a wait, for example, to continue. However, it does not mean yet that we have also notified successors. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00048">48</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5811eb0b011cff97c4570e8a53809b93" name="a5811eb0b011cff97c4570e8a53809b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5811eb0b011cff97c4570e8a53809b93">&#9670;&#160;</a></span>dynamic_task_graph_spawned_node() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tbb::dynamic_task_graph_spawned_node::dynamic_task_graph_spawned_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d5/d6e/classtbb_1_1dynamic__task__graph__node.html">dynamic_task_graph_node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>task_specification</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html">dynamic_task_graph</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>task_graph</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new task node in the graph. </p>
+<p>Creating a new task node means that we have to "invert" the edges in the underlying graph: An instance of task_specification knows which task are incoming. For the actual task graph, we need the outgoing tasks.</p>
+<p>The default spawned task has one incoming dependency, i.e. is not ready. You have to manually decrease the counter after construction once all dependencies are in place. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d50/dynamic__task__graph__utils_8h_source.html#l00039">__TBB_TRACE_TASK_CREATE</a>.</p>
+
+</div>
+</div>
+<a id="a3397ff9677f5378c72922233125c638e" name="a3397ff9677f5378c72922233125c638e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3397ff9677f5378c72922233125c638e">&#9670;&#160;</a></span>dynamic_task_graph_spawned_node() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tbb::dynamic_task_graph_spawned_node::dynamic_task_graph_spawned_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a> &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>You cannot copy a spawned node. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a752f46f2c45524b44325e6acb92c0088" name="a752f46f2c45524b44325e6acb92c0088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752f46f2c45524b44325e6acb92c0088">&#9670;&#160;</a></span>add_incoming_task_dependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tbb::dynamic_task_graph_spawned_node::add_incoming_task_dependency </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/da4/dynamic__task__graph_8cpp_source.html#l00015">tbb::dynamic_task_graph::put()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a752f46f2c45524b44325e6acb92c0088_icgraph.png" border="0" usemap="#ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a752f46f2c45524b44325e6acb92c0088_icgraph" alt=""/></div>
+<map name="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a752f46f2c45524b44325e6acb92c0088_icgraph" id="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a752f46f2c45524b44325e6acb92c0088_icgraph">
+<area shape="rect" title=" " alt="" coords="268,5,493,60"/>
+<area shape="rect" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html#a4842929167080f2f400be84c4e561736" title="Put a new node into the task graph." alt="" coords="5,20,220,45"/>
+<area shape="poly" title=" " alt="" coords="255,35,220,35,220,30,255,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78a354f4627828921725b33650902294" name="a78a354f4627828921725b33650902294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a354f4627828921725b33650902294">&#9670;&#160;</a></span>add_successor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tbb::dynamic_task_graph_spawned_node::add_successor </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>successor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>has successfully added this node. If it returns false, then the task represented by this object has already terminated and we hence could not add anything anymore. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>.</p>
+
+</div>
+</div>
+<a id="a9f60a65135645b224a984693f792f18d" name="a9f60a65135645b224a984693f792f18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f60a65135645b224a984693f792f18d">&#9670;&#160;</a></span>has_terminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> tbb::dynamic_task_graph_spawned_node::has_terminated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/da4/dynamic__task__graph_8cpp_source.html#l00066">tbb::dynamic_task_graph::wait()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a9f60a65135645b224a984693f792f18d_icgraph.png" border="0" usemap="#ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a9f60a65135645b224a984693f792f18d_icgraph" alt=""/></div>
+<map name="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a9f60a65135645b224a984693f792f18d_icgraph" id="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a9f60a65135645b224a984693f792f18d_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,476,45"/>
+<area shape="rect" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html#a0f68e0e8a1d5309ded6ae61f571e599d" title="Wait for one specific node." alt="" coords="5,5,192,45"/>
+<area shape="poly" title=" " alt="" coords="226,28,192,28,192,23,226,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06c86b3bd8e2481dc781e2f4f7e77541" name="a06c86b3bd8e2481dc781e2f4f7e77541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c86b3bd8e2481dc781e2f4f7e77541">&#9670;&#160;</a></span>incoming_task_has_terminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tbb::dynamic_task_graph_spawned_node::incoming_task_has_terminated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decrement the incoming task counter and run if now ready. </p>
+<p>We first decrement the incoming task counter. This part has to be protected with a semaphore, so no two threads can decrement the task at the same time. While we decrement the task, we can check if it is ready.</p>
+<p>If a task is ready, we can actually <a class="el" href="#af1078ab56a90076c9d4ab857256c69d4" title="Run the task.">run()</a> it. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/da4/dynamic__task__graph_8cpp_source.html#l00015">tbb::dynamic_task_graph::put()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a06c86b3bd8e2481dc781e2f4f7e77541_icgraph.png" border="0" usemap="#ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a06c86b3bd8e2481dc781e2f4f7e77541_icgraph" alt=""/></div>
+<map name="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a06c86b3bd8e2481dc781e2f4f7e77541_icgraph" id="ad2/d99/classtbb_1_1dynamic__task__graph__spawned__node_a06c86b3bd8e2481dc781e2f4f7e77541_icgraph">
+<area shape="rect" title="Decrement the incoming task counter and run if now ready." alt="" coords="268,5,463,60"/>
+<area shape="rect" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html#a4842929167080f2f400be84c4e561736" title="Put a new node into the task graph." alt="" coords="5,20,220,45"/>
+<area shape="poly" title=" " alt="" coords="254,35,220,35,220,30,254,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1078ab56a90076c9d4ab857256c69d4" name="af1078ab56a90076c9d4ab857256c69d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1078ab56a90076c9d4ab857256c69d4">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tbb::dynamic_task_graph_spawned_node::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run the task. </p>
+<p>This is the actual routine which hands the task over to TBB's runtime. The system is allowed to invoke it if and only if the task is ready, i.e. has no pending incoming dependencies anymore.</p>
+<h2><a class="anchor" id="autotoc_md246"></a>
+Algorithm steps</h2>
+<ol type="1">
+<li>Invoke the functor, i.e. do the actual task calculations. Note that other tasks still might add further outgoing dependencies at this point.</li>
+<li>Create our own smart pointer to the underlying instance of dynamic_tsak_graph_spawned_node. We will remove it from the list of spawned tasks next, which means it could be destroyed at this point. We still have to tidy it up however, so better to hold our own smart pointer.</li>
+</ol>
+<ol type="1">
+<li>Remove the task from the set of spawned tasks. Noone should use this task after that anymore.</li>
+<li>Lock the task, as we now will change things. In theory, this should not be necessary, but someone might still hold a pointer to this task and try to alter it while we sort out the outgoing dependencies and ramp up the task.</li>
+<li>Inform all outgoing tasks that we are done.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md247"></a>
+Implementation</h2>
+<p>We work with catch by reference here, as we know that all the task's fields are still alive while we execute the task.</p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000026">Todo</a></b></dt><dd>Write something about lazy deletion </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d7/d50/dynamic__task__graph__utils_8h_source.html#l00042">__TBB_TRACE_TASK_COMPLETE</a>, <a class="el" href="../../d7/d50/dynamic__task__graph__utils_8h_source.html#l00041">__TBB_TRACE_TASK_RUN</a>, and <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>.</p>
+
+</div>
+</div>
+<a id="aa1023df5a6c3249fd5886f07d8633696" name="aa1023df5a6c3249fd5886f07d8633696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1023df5a6c3249fd5886f07d8633696">&#9670;&#160;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string tbb::dynamic_task_graph_spawned_node::to_string </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper routine, which likely will not be there in TBB counterpart. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d30/DiscontinuousGalerkinDiscretisationPointWiseRiemannSolver_8Abstract_8template_8h_source.html#l00066">_state</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a0d11cd91608eac0003f9d9537f77a1c6" name="a0d11cd91608eac0003f9d9537f77a1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d11cd91608eac0003f9d9537f77a1c6">&#9670;&#160;</a></span>_dependencies_semaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tbb::spin_mutex tbb::dynamic_task_graph_spawned_node::_dependencies_semaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Semaphore over all the dependencies. </p>
+<p>These are held in a container and hence need a proper mutex. All other states are realised as atomics to minimise locking. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00165">165</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<a id="adb6721cf7c1c3471812c90ac5f837bd2" name="adb6721cf7c1c3471812c90ac5f837bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6721cf7c1c3471812c90ac5f837bd2">&#9670;&#160;</a></span>_functor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;<a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>()&gt; tbb::dynamic_task_graph_spawned_node::_functor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00158">158</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d54/Calculator_8py_source.html#l00038">peano4.visualisation.filters.Calculator.Calculator::render()</a>.</p>
+
+</div>
+</div>
+<a id="ac4d7ecadac6c022764f1600569c4a51b" name="ac4d7ecadac6c022764f1600569c4a51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d7ecadac6c022764f1600569c4a51b">&#9670;&#160;</a></span>_number_of_in_dependencies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tbb::dynamic_task_graph_spawned_node::_number_of_in_dependencies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00167">167</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<a id="addd3ee48a191f02b8c99268f4232a135" name="addd3ee48a191f02b8c99268f4232a135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd3ee48a191f02b8c99268f4232a135">&#9670;&#160;</a></span>_out_dependency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt;<a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a>&gt; &gt; tbb::dynamic_task_graph_spawned_node::_out_dependency</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00168">168</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<a id="a7e74a8ff3acd3e9839c7a8fff9a0e9f3" name="a7e74a8ff3acd3e9839c7a8fff9a0e9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e74a8ff3acd3e9839c7a8fff9a0e9f3">&#9670;&#160;</a></span>_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a77f854047b20f94329785f7a485335b7">State</a> tbb::dynamic_task_graph_spawned_node::_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00157">157</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<a id="a0c99e2da8255edcd81b27f1bf3c62089" name="a0c99e2da8255edcd81b27f1bf3c62089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c99e2da8255edcd81b27f1bf3c62089">&#9670;&#160;</a></span>_task_graph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d18/classtbb_1_1dynamic__task__graph.html">dynamic_task_graph</a>&amp; tbb::dynamic_task_graph_spawned_node::_task_graph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html#l00166">166</a> of file <a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tbb/<a class="el" href="../../d8/d2f/dynamic__task__graph__spawned__node_8h_source.html">dynamic_task_graph_spawned_node.h</a></li>
+<li>src/tbb/<a class="el" href="../../d5/ded/dynamic__task__graph__spawned__node_8cpp_source.html">dynamic_task_graph_spawned_node.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d30/namespacetbb.html">tbb</a></li><li class="navelem"><a class="el" href="../../d2/d99/classtbb_1_1dynamic__task__graph__spawned__node.html">dynamic_task_graph_spawned_node</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:00 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

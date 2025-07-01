@@ -1,0 +1,6 @@
+var namespaceexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix =
+[
+    [ "GaussLegendreBasis", "d7/daf/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLegendreBasis.html", "d7/daf/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLegendreBasis" ],
+    [ "GaussLobattoBasisWithLumpedDiagonalBasis", "dc/d9f/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLobattoBasisWithLumpedDiagonalBasis.html", "dc/d9f/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1GaussLobattoBasisWithLumpedDiagonalBasis" ],
+    [ "LagrangeBasisWithDiagonalMassMatrix", "da/d10/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1LagrangeBasisWithDiagonalMassMatrix.html", "da/d10/classexahype2_1_1solvers_1_1LagrangeBasisWithDiagonalMassMatrix_1_1LagrangeBasisWithDiagonalMassMatrix" ]
+];

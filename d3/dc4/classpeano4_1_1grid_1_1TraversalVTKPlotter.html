@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">peano4::grid::TraversalVTKPlotter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Observer which pipes the automaton transitions into a VTK file.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for peano4::grid::TraversalVTKPlotter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d31/classpeano4_1_1grid_1_1TraversalVTKPlotter__inherit__graph.png" border="0" usemap="#apeano4_1_1grid_1_1TraversalVTKPlotter_inherit__map" alt="Inheritance graph"/></div>
+<map name="apeano4_1_1grid_1_1TraversalVTKPlotter_inherit__map" id="apeano4_1_1grid_1_1TraversalVTKPlotter_inherit__map">
+<area shape="rect" title="Observer which pipes the automaton transitions into a VTK file." alt="" coords="5,79,244,104"/>
+<area shape="rect" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html" title=" " alt="" coords="10,5,239,31"/>
+<area shape="poly" title=" " alt="" coords="127,44,127,79,122,79,122,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for peano4::grid::TraversalVTKPlotter:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/dcf/classpeano4_1_1grid_1_1TraversalVTKPlotter__coll__graph.png" border="0" usemap="#apeano4_1_1grid_1_1TraversalVTKPlotter_coll__map" alt="Collaboration graph"/></div>
+<map name="apeano4_1_1grid_1_1TraversalVTKPlotter_coll__map" id="apeano4_1_1grid_1_1TraversalVTKPlotter_coll__map">
+<area shape="rect" title="Observer which pipes the automaton transitions into a VTK file." alt="" coords="1327,213,1565,239"/>
+<area shape="rect" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html" title=" " alt="" coords="925,5,1154,31"/>
+<area shape="poly" title=" " alt="" coords="1168,12,1238,22,1272,33,1304,48,1330,65,1353,85,1393,132,1423,177,1441,212,1436,214,1418,180,1389,135,1350,89,1327,69,1301,52,1270,38,1236,28,1168,17"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="456,191,599,216"/>
+<area shape="poly" title=" " alt="" coords="613,202,917,207,1303,217,1327,218,1326,223,1303,222,917,212,613,207"/>
+<area shape="rect" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html" title="VTU Writer." alt="" coords="926,472,1153,527"/>
+<area shape="poly" title=" " alt="" coords="572,219,644,250,684,266,721,277,785,293,814,303,843,317,872,339,902,370,914,393,914,416,915,437,926,458,941,470,937,474,922,461,910,438,909,416,908,395,898,373,869,343,840,322,812,308,783,298,719,282,683,271,642,255,570,224"/>
+<area shape="rect" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html" title="Boolean semaphore across MPI ranks." alt="" coords="928,123,1151,148"/>
+<area shape="poly" title=" " alt="" coords="612,189,943,145,943,151,613,195"/>
+<area shape="rect" title=" " alt="" coords="193,191,280,216"/>
+<area shape="poly" title=" " alt="" coords="261,179,325,132,367,109,411,91,453,86,521,83,714,85,941,94,1155,107,1230,109,1263,113,1304,125,1343,144,1379,167,1433,211,1429,215,1376,172,1340,148,1302,130,1262,118,1230,114,1155,113,941,100,714,90,521,88,453,91,413,97,369,114,328,136,264,184"/>
+<area shape="poly" title=" " alt="" coords="294,201,456,201,456,206,294,206"/>
+<area shape="poly" title=" " alt="" coords="259,225,323,291,366,327,413,357,454,374,509,391,644,425,793,455,926,479,925,484,792,460,643,430,507,396,452,379,411,362,363,331,319,295,255,229"/>
+<area shape="rect" title=" " alt="" coords="5,183,144,223"/>
+<area shape="poly" title=" " alt="" coords="157,201,193,201,193,206,157,206"/>
+<area shape="poly" title=" " alt="" coords="1166,469,1236,443,1270,426,1301,407,1348,365,1387,316,1417,271,1436,237,1441,240,1421,274,1391,320,1352,368,1304,411,1272,431,1238,448,1167,474"/>
+<area shape="rect" href="../../df/d9a/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter.html" title=" " alt="" coords="412,472,643,527"/>
+<area shape="poly" title=" " alt="" coords="657,497,926,497,926,502,657,502"/>
+<area shape="rect" href="../../d5/de3/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexWriter.html" title="This is the vertex writer you have to create to plot the vertices." alt="" coords="924,236,1155,291"/>
+<area shape="poly" title=" " alt="" coords="1168,249,1326,234,1327,240,1168,254"/>
+<area shape="rect" href="../../d0/dc7/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellWriter.html" title="Writes the cell." alt="" coords="924,315,1155,369"/>
+<area shape="poly" title=" " alt="" coords="1159,309,1302,269,1405,236,1407,241,1303,274,1161,314"/>
+<area shape="rect" href="../../df/dab/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellDataWriter.html" title="A writer for data on elements." alt="" coords="924,393,1155,448"/>
+<area shape="poly" title=" " alt="" coords="1167,390,1235,368,1301,338,1341,314,1377,286,1430,237,1434,241,1380,290,1344,318,1304,343,1237,373,1168,395"/>
+<area shape="poly" title=" " alt="" coords="1165,142,1234,151,1303,166,1367,188,1420,211,1418,216,1365,193,1302,171,1233,157,1164,147"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html" title=" " alt="" coords="434,106,621,146"/>
+<area shape="poly" title=" " alt="" coords="634,125,928,131,928,136,634,131"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4abdd358bf37062ab830576274fd7b98" id="r_a4abdd358bf37062ab830576274fd7b98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4abdd358bf37062ab830576274fd7b98">TraversalVTKPlotter</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;filename, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId=-1)</td></tr>
+<tr class="memdesc:a4abdd358bf37062ab830576274fd7b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">You have to invoke startNewSnapshot() if you wanna have a pvd file immediately after you've created this observer in the main code.  <br /></td></tr>
+<tr class="separator:a4abdd358bf37062ab830576274fd7b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f5ebc36d62d436d96585faa256ebab" id="r_a19f5ebc36d62d436d96585faa256ebab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19f5ebc36d62d436d96585faa256ebab">~TraversalVTKPlotter</a> ()</td></tr>
+<tr class="separator:a19f5ebc36d62d436d96585faa256ebab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ca1bb137aba7f02544de7856e56554" id="r_ae1ca1bb137aba7f02544de7856e56554"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1ca1bb137aba7f02544de7856e56554">beginTraversal</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;h) override</td></tr>
+<tr class="memdesc:ae1ca1bb137aba7f02544de7856e56554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin the traversal.  <br /></td></tr>
+<tr class="separator:ae1ca1bb137aba7f02544de7856e56554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1feaf873809ea604340eb8c39bf4f9" id="r_a9c1feaf873809ea604340eb8c39bf4f9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1feaf873809ea604340eb8c39bf4f9">endTraversal</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;x, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;h) override</td></tr>
+<tr class="separator:a9c1feaf873809ea604340eb8c39bf4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cb78656a54a3214c3a5a776aef5678" id="r_a22cb78656a54a3214c3a5a776aef5678"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22cb78656a54a3214c3a5a776aef5678">loadCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="separator:a22cb78656a54a3214c3a5a776aef5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3c919cec186d16c8b1f2bc56efeadd" id="r_aeb3c919cec186d16c8b1f2bc56efeadd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3c919cec186d16c8b1f2bc56efeadd">storeCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="separator:aeb3c919cec186d16c8b1f2bc56efeadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4df759cea87b9a12ace49a39abb616" id="r_aee4df759cea87b9a12ace49a39abb616"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee4df759cea87b9a12ace49a39abb616">enterCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="memdesc:aee4df759cea87b9a12ace49a39abb616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event is invoked per cell.  <br /></td></tr>
+<tr class="separator:aee4df759cea87b9a12ace49a39abb616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dfae4bbf84eaa19bcefe46f09a9e32" id="r_ac3dfae4bbf84eaa19bcefe46f09a9e32"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3dfae4bbf84eaa19bcefe46f09a9e32">leaveCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event) override</td></tr>
+<tr class="separator:ac3dfae4bbf84eaa19bcefe46f09a9e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79500b9339c8936f4a6db9a4c55b774f" id="r_a79500b9339c8936f4a6db9a4c55b774f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">TraversalObserver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79500b9339c8936f4a6db9a4c55b774f">clone</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> spacetreeId) override</td></tr>
+<tr class="separator:a79500b9339c8936f4a6db9a4c55b774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c967099bc7af32c7d66a6e7a104e4ac" id="r_a3c967099bc7af32c7d66a6e7a104e4ac"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html">GridControlEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c967099bc7af32c7d66a6e7a104e4ac">getGridControlEvents</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> override</td></tr>
+<tr class="memdesc:a3c967099bc7af32c7d66a6e7a104e4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obviously empty for this particular observer.  <br /></td></tr>
+<tr class="separator:a3c967099bc7af32c7d66a6e7a104e4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:afdccd50631958ebe24563258452347bd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_afdccd50631958ebe24563258452347bd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#afdccd50631958ebe24563258452347bd">~TraversalObserver</a> ()=default</td></tr>
+<tr class="separator:afdccd50631958ebe24563258452347bd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_af1ed539a30fea0f0e043e6324baac25e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#af1ed539a30fea0f0e043e6324baac25e">exchangeAllVerticalDataExchangeStacks</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="memdesc:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send local data from top level of local mesh to master and receive its top-down information in return.  <br /></td></tr>
+<tr class="separator:af1ed539a30fea0f0e043e6324baac25e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a92cf83b39162a521dc7a31bf0d716c3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a92cf83b39162a521dc7a31bf0d716c3e">exchangeAllHorizontalDataExchangeStacks</a> (<a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>)</td></tr>
+<tr class="memdesc:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange all the data along the domain boundaries.  <br /></td></tr>
+<tr class="separator:a92cf83b39162a521dc7a31bf0d716c3e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad776826dc1d420d6098df3c0218878c3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad776826dc1d420d6098df3c0218878c3">exchangeAllPeriodicBoundaryDataStacks</a> ()</td></tr>
+<tr class="memdesc:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange all periodic boundary data.  <br /></td></tr>
+<tr class="separator:ad776826dc1d420d6098df3c0218878c3 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a390c773eac91fdfa5e584cfc3d616e88"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a390c773eac91fdfa5e584cfc3d616e88">streamDataFromSplittingTreeToNewTree</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="memdesc:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream data from current tree on which this routine is called to the new worker.  <br /></td></tr>
+<tr class="separator:a390c773eac91fdfa5e584cfc3d616e88 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a9acbcb70210f41f52bcfe6abfcd97 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad0a9acbcb70210f41f52bcfe6abfcd97"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad0a9acbcb70210f41f52bcfe6abfcd97">streamDataFromJoiningTreeToMasterTree</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="separator:ad0a9acbcb70210f41f52bcfe6abfcd97 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a18d8710891a9c77042af806152a8030c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a18d8710891a9c77042af806152a8030c">finishAllOutstandingSendsAndReceives</a> ()</td></tr>
+<tr class="memdesc:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap up all sends and receives, i.e.  <br /></td></tr>
+<tr class="separator:a18d8710891a9c77042af806152a8030c inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba3f60a7bd8761621cd8d1eb1df4e87 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_aeba3f60a7bd8761621cd8d1eb1df4e87"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aeba3f60a7bd8761621cd8d1eb1df4e87">sendVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:aeba3f60a7bd8761621cd8d1eb1df4e87 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34ead8d3d87bc2b9e66af14ca81731e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_ac34ead8d3d87bc2b9e66af14ca81731e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ac34ead8d3d87bc2b9e66af14ca81731e">sendFace</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:ac34ead8d3d87bc2b9e66af14ca81731e inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7c1de69db470195a9e3d5919f81d1 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_acdb7c1de69db470195a9e3d5919f81d1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#acdb7c1de69db470195a9e3d5919f81d1">sendCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:acdb7c1de69db470195a9e3d5919f81d1 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068ebd88939f01da8eeeb1342f7d4bde inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a068ebd88939f01da8eeeb1342f7d4bde"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a068ebd88939f01da8eeeb1342f7d4bde">receiveAndMergeVertex</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:a068ebd88939f01da8eeeb1342f7d4bde inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc434376120f85a8d193a654f798d32a inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_afc434376120f85a8d193a654f798d32a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#afc434376120f85a8d193a654f798d32a">receiveAndMergeFace</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:afc434376120f85a8d193a654f798d32a inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccee27b616739c84e8c642f8fc0d853 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a2ccee27b616739c84e8c642f8fc0d853"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a2ccee27b616739c84e8c642f8fc0d853">receiveAndMergeCell</a> (<a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a>, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;)</td></tr>
+<tr class="separator:a2ccee27b616739c84e8c642f8fc0d853 inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058c703908dcd8e077d363719b554acd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver" id="r_a058c703908dcd8e077d363719b554acd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a058c703908dcd8e077d363719b554acd">deleteAllStacks</a> ()</td></tr>
+<tr class="separator:a058c703908dcd8e077d363719b554acd inherit pub_methods_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afeb4077591b6c0ed229d789ce22a16aa" id="r_afeb4077591b6c0ed229d789ce22a16aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeb4077591b6c0ed229d789ce22a16aa">plotCell</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;event)</td></tr>
+<tr class="memdesc:afeb4077591b6c0ed229d789ce22a16aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the actual plotting, i.e.  <br /></td></tr>
+<tr class="separator:afeb4077591b6c0ed229d789ce22a16aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a14ff590d4e3fb71e7baa02f332b44e16" id="r_a14ff590d4e3fb71e7baa02f332b44e16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14ff590d4e3fb71e7baa02f332b44e16">_filename</a></td></tr>
+<tr class="separator:a14ff590d4e3fb71e7baa02f332b44e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34445ae498ce3f8b67b2d43034a4043" id="r_af34445ae498ce3f8b67b2d43034a4043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af34445ae498ce3f8b67b2d43034a4043">_spacetreeId</a></td></tr>
+<tr class="separator:af34445ae498ce3f8b67b2d43034a4043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a067d3b074a83561f90e85af59f8827a8" id="r_a067d3b074a83561f90e85af59f8827a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a067d3b074a83561f90e85af59f8827a8">_log</a></td></tr>
+<tr class="separator:a067d3b074a83561f90e85af59f8827a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab97918f881a16c4cff694492d651d0b4" id="r_ab97918f881a16c4cff694492d651d0b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab97918f881a16c4cff694492d651d0b4">_writer</a></td></tr>
+<tr class="separator:ab97918f881a16c4cff694492d651d0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ae0e9837d80214a697810b7974d5c2" id="r_ad5ae0e9837d80214a697810b7974d5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/de3/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5ae0e9837d80214a697810b7974d5c2">_vertexWriter</a></td></tr>
+<tr class="separator:ad5ae0e9837d80214a697810b7974d5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05c902672290a7dd74f0496a83371a0" id="r_ad05c902672290a7dd74f0496a83371a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc7/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05c902672290a7dd74f0496a83371a0">_cellWriter</a></td></tr>
+<tr class="separator:ad05c902672290a7dd74f0496a83371a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba17e0593dd44bee1959e813a866503" id="r_a5ba17e0593dd44bee1959e813a866503"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dab/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellDataWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellDataWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ba17e0593dd44bee1959e813a866503">_spacetreeIdWriter</a></td></tr>
+<tr class="separator:a5ba17e0593dd44bee1959e813a866503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c542da793b22bd225cf5cae1d0ea67" id="r_a70c542da793b22bd225cf5cae1d0ea67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dab/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellDataWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellDataWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70c542da793b22bd225cf5cae1d0ea67">_coreWriter</a></td></tr>
+<tr class="separator:a70c542da793b22bd225cf5cae1d0ea67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ab134861114793d8fee46f47f415588a0" id="r_ab134861114793d8fee46f47f415588a0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">tarch::mpi::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab134861114793d8fee46f47f415588a0">_sempahore</a></td></tr>
+<tr class="separator:ab134861114793d8fee46f47f415588a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:a3504d372e0af2124da7c2309c63fab96 inherit pub_types_classpeano4_1_1grid_1_1TraversalObserver" id="r_a3504d372e0af2124da7c2309c63fab96"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">SendReceiveContext</a> { <br />
+&#160;&#160;<a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96aead618ceb8f010c2bd28be9447cc9173">BoundaryExchange</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96abc650b4cdb2246879c50526333303e24">MultiscaleExchange</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96abe4c9bf8c911fc19b6217e7f681b2a7f">ForkDomain</a>
+, <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96a3ddd71ec8308bf153c78216d833fc02d">JoinDomain</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96afe417302dbcb1217571bd36fb4724c8e">PeriodicBoundaryDataSwap</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a3504d372e0af2124da7c2309c63fab96"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are three different scenarios when we merge data:  <a href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a3504d372e0af2124da7c2309c63fab96">More...</a><br /></td></tr>
+<tr class="separator:a3504d372e0af2124da7c2309c63fab96 inherit pub_types_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a></td></tr>
+<tr class="memitem:ad55dc7a05075a65bd3434358887b09a8 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_ad55dc7a05075a65bd3434358887b09a8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ad55dc7a05075a65bd3434358887b09a8">NoRebalancing</a> = -1</td></tr>
+<tr class="separator:ad55dc7a05075a65bd3434358887b09a8 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_abbe411399480e4585f40a167e7af23f9"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#abbe411399480e4585f40a167e7af23f9">NoData</a> = -1</td></tr>
+<tr class="memdesc:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can this grid entity hold data.  <br /></td></tr>
+<tr class="separator:abbe411399480e4585f40a167e7af23f9 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_a75878b2597bf510936775f7b948992e1"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a75878b2597bf510936775f7b948992e1">CreateOrDestroyPersistentGridEntity</a> = -2</td></tr>
+<tr class="memdesc:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implies that the data will then be local or had been local.  <br /></td></tr>
+<tr class="separator:a75878b2597bf510936775f7b948992e1 inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver" id="r_a622c4b63aca2883db584c4e641dd06db"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a622c4b63aca2883db584c4e641dd06db">CreateOrDestroyHangingGridEntity</a> = -3</td></tr>
+<tr class="memdesc:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implies that the data will then be local or had been local.  <br /></td></tr>
+<tr class="separator:a622c4b63aca2883db584c4e641dd06db inherit pub_static_attribs_classpeano4_1_1grid_1_1TraversalObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Observer which pipes the automaton transitions into a VTK file. </p>
+<p>While we use the up-to-date vtk format, the observer plots the whole thing as a discontinuous unstructured mesh. It is not particular sophisticated.</p>
+<p>The plotter can write whole time series. For this, you have to invoke startNewSnapshot() prior to each plot. It is the latter which also ensures that parallel plots in an MPI environment do work.</p>
+<h2>Parallel plotting </h2>
+<p>Each tree dumps its own vtk file. That is, each thread and each rank in theory might write its file parallel to the other guys. VTK/VTU offers us to define a metafile (pvtu) which collocates various dumps. As we create one observer per thread through <a class="el" href="#a79500b9339c8936f4a6db9a4c55b774f">clone()</a>, every thread on every rank has its instance and pipes its data. getFilename() ensures that no file is overwritten. It combines the tree number with a counter, and _counter, which is static, is incremented through endTraversalOnRank() which I expect the user to call once after each traversal.</p>
+<h2>Known bugs </h2>
+<p>As the MPI domain decomposition creates fake observers for the master of a local rank when it is created, we'll have multiple entries for forking ranks in the meta file. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00048">48</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4abdd358bf37062ab830576274fd7b98" name="a4abdd358bf37062ab830576274fd7b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abdd358bf37062ab830576274fd7b98">&#9670;&#160;</a></span>TraversalVTKPlotter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4::grid::TraversalVTKPlotter::TraversalVTKPlotter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId</em><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>You have to invoke startNewSnapshot() if you wanna have a pvd file immediately after you've created this observer in the main code. </p>
+<p>If this guy is ran on the global master, </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a19f5ebc36d62d436d96585faa256ebab" name="a19f5ebc36d62d436d96585faa256ebab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f5ebc36d62d436d96585faa256ebab">&#9670;&#160;</a></span>~TraversalVTKPlotter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">peano4::grid::TraversalVTKPlotter::~TraversalVTKPlotter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae1ca1bb137aba7f02544de7856e56554" name="ae1ca1bb137aba7f02544de7856e56554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ca1bb137aba7f02544de7856e56554">&#9670;&#160;</a></span>beginTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::beginTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Begin the traversal. </p>
+<p>This routine is called per spacetree instance, i.e. per subtree (thread) per rank. Within the usual implementation, everything will reside on the call stack anyway. If the routine is called on tree no 0, this operation has to establish the master data of the global root tree, i.e. ensure that the data of level -1 is technically there for the subsequent enterCell event, though this data is ill-defined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td><a class="el" href="../../d8/d73/classRoot.html">Root</a> cell coordinates </td></tr>
+    <tr><td class="paramname">h</td><td><a class="el" href="../../d8/d73/classRoot.html">Root</a> cell size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a9fcef74ba5e3d47f26bd9c3999118334">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00525">tarch::mpi::Rank::getInstance()</a>, <a class="el" href="../../d5/dcd/Rank_8cpp_source.html#l00519">tarch::mpi::Rank::getRank()</a>, and <a class="el" href="../../dc/d2f/classtarch_1_1plotter_1_1PVDTimeSeriesWriter.html#a181485ec4c1935832b379f1f8941ceeea6ab6105391b43cbe34370954a270976c">tarch::plotter::PVDTimeSeriesWriter::NoIndexFile</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_ae1ca1bb137aba7f02544de7856e56554_cgraph.png" border="0" usemap="#ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_ae1ca1bb137aba7f02544de7856e56554_cgraph" alt=""/></div>
+<map name="ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_ae1ca1bb137aba7f02544de7856e56554_cgraph" id="ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_ae1ca1bb137aba7f02544de7856e56554_cgraph">
+<area shape="rect" title="Begin the traversal." alt="" coords="5,23,244,63"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="292,5,505,31"/>
+<area shape="poly" title=" " alt="" coords="244,30,278,26,279,32,244,35"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a82f75ffb3e66104757a5a335751bdc29" title="Return rank of this node." alt="" coords="303,55,494,80"/>
+<area shape="poly" title=" " alt="" coords="244,51,290,55,289,60,244,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a79500b9339c8936f4a6db9a4c55b774f" name="a79500b9339c8936f4a6db9a4c55b774f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79500b9339c8936f4a6db9a4c55b774f">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html">peano4::grid::TraversalObserver</a> * peano4::grid::TraversalVTKPlotter::clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>spacetreeId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment"> I use the clone to create one observer object per traversal thread. So
+ between different spacetrees of one spacetree set, there can be no race
+ condition. Yet, the clone() itself could be called in parallel.
+
+ \section  Global per-sweep actions
+
+ If you want to implement an operation once per sweep in a parallel
+ environment, then you can exploit the fact that the spacetree set also
+ creates an observer for the global master thread, i.e. tree no 0. So if
+ you add a statement alike
+
+ &lt;pre&gt;
+</pre><p> if (peano4::parallel::Node::isGlobalMaster(spacetreeId)) { ... } </p>
+<p>then you can be sure that the branch body is executed only once globally per grid sweep.</p>
+<p>The counterpart of the clone operation is the destructor. </p>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a856511702ac2d89d35efb761b1c3a7f6">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9c1feaf873809ea604340eb8c39bf4f9" name="a9c1feaf873809ea604340eb8c39bf4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1feaf873809ea604340eb8c39bf4f9">&#9670;&#160;</a></span>endTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::endTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ae1ca1bb137aba7f02544de7856e56554" title="Begin the traversal.">beginTraversal()</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aba891cd6821aa9bf44f1e57368b4c937">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>.</p>
+
+</div>
+</div>
+<a id="aee4df759cea87b9a12ace49a39abb616" name="aee4df759cea87b9a12ace49a39abb616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4df759cea87b9a12ace49a39abb616">&#9670;&#160;</a></span>enterCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::enterCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event is invoked per cell. </p>
+<p>It is however not called for the root cell, i.e. for the cell with level 0 that does not have a parent. </p>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aef95cd14ab811b37c9e55a5242c9c767">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c967099bc7af32c7d66a6e7a104e4ac" name="a3c967099bc7af32c7d66a6e7a104e4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c967099bc7af32c7d66a6e7a104e4ac">&#9670;&#160;</a></span>getGridControlEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../dd/de7/structpeano4_1_1grid_1_1GridControlEvent.html">peano4::grid::GridControlEvent</a> &gt; peano4::grid::TraversalVTKPlotter::getGridControlEvents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obviously empty for this particular observer. </p>
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#ae19b0152e0b128548250d87f67c1f98f">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac3dfae4bbf84eaa19bcefe46f09a9e32" name="ac3dfae4bbf84eaa19bcefe46f09a9e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3dfae4bbf84eaa19bcefe46f09a9e32">&#9670;&#160;</a></span>leaveCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::leaveCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#aee995e0120deb92bfc37ae236090f0b8">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a22cb78656a54a3214c3a5a776aef5678" name="a22cb78656a54a3214c3a5a776aef5678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cb78656a54a3214c3a5a776aef5678">&#9670;&#160;</a></span>loadCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::loadCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a7f4beead04cb5f57db46231b1a920aee">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afeb4077591b6c0ed229d789ce22a16aa" name="afeb4077591b6c0ed229d789ce22a16aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb4077591b6c0ed229d789ce22a16aa">&#9670;&#160;</a></span>plotCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::plotCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does the actual plotting, i.e. </p>
+<p>all checks/decision making is already done before </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01017">assertion</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00086">dfor2</a>, <a class="el" href="../../db/d9e/Loop_8h_source.html#l00117">enddforx</a>, <a class="el" href="../../dd/d5b/GridTraversalEvent_8h_source.html#l00060">peano4::grid::GridTraversalEvent::getH()</a>, <a class="el" href="../../d6/d27/Core_8cpp_source.html#l00056">tarch::multicore::Core::getInstance()</a>, <a class="el" href="../../dd/d5b/GridTraversalEvent_8h_source.html#l00055">peano4::grid::GridTraversalEvent::getX()</a>, <a class="el" href="../../d1/d45/Log_8h_source.html#l00464">logError</a>, <a class="el" href="../../d0/deb/Scalar_8cpp_source.html#l00008">tarch::la::max()</a>, <a class="el" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18">tarch::la::multiplyComponents()</a>, and <a class="el" href="../../d9/df1/Globals_8h_source.html#l00021">TwoPowerD</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_afeb4077591b6c0ed229d789ce22a16aa_cgraph.png" border="0" usemap="#ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_afeb4077591b6c0ed229d789ce22a16aa_cgraph" alt=""/></div>
+<map name="ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_afeb4077591b6c0ed229d789ce22a16aa_cgraph" id="ad3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter_afeb4077591b6c0ed229d789ce22a16aa_cgraph">
+<area shape="rect" title="Does the actual plotting, i.e." alt="" coords="5,133,244,173"/>
+<area shape="rect" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html#a7b09d4035c01b7b2253f41f0377b21b0" title=" " alt="" coords="303,5,500,45"/>
+<area shape="poly" title=" " alt="" coords="155,131,216,93,291,55,310,48,312,52,293,60,219,98,157,135"/>
+<area shape="rect" href="../../dd/d55/classtarch_1_1multicore_1_1Core.html#a63d1b190fb9981c5f7d72f247bc4bd22" title=" " alt="" coords="320,69,483,109"/>
+<area shape="poly" title=" " alt="" coords="211,131,306,109,307,114,213,136"/>
+<area shape="rect" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html#ada98a086744acb90ec6ea84aa13c351a" title=" " alt="" coords="303,133,500,173"/>
+<area shape="poly" title=" " alt="" coords="244,151,289,151,289,156,244,156"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#a9ab5aa4e4252e6d78ba62df6a711c47a" title="I need the maximum of three values all the time, to I decided to write a function for this." alt="" coords="345,198,457,223"/>
+<area shape="poly" title=" " alt="" coords="222,171,332,194,331,199,221,176"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#adca36f9134d5ca53daa05b82d9a1ce18" title=" " alt="" coords="292,247,511,273"/>
+<area shape="poly" title=" " alt="" coords="162,171,223,202,293,232,322,241,321,246,291,237,220,207,160,176"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeb3c919cec186d16c8b1f2bc56efeadd" name="aeb3c919cec186d16c8b1f2bc56efeadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3c919cec186d16c8b1f2bc56efeadd">&#9670;&#160;</a></span>storeCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> peano4::grid::TraversalVTKPlotter::storeCell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/d7c/structpeano4_1_1grid_1_1GridTraversalEvent.html">GridTraversalEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/dc1/classpeano4_1_1grid_1_1TraversalObserver.html#a9e4d78821027b19dad6331da8e666940">peano4::grid::TraversalObserver</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad05c902672290a7dd74f0496a83371a0" name="ad05c902672290a7dd74f0496a83371a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05c902672290a7dd74f0496a83371a0">&#9670;&#160;</a></span>_cellWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dc7/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellWriter</a>* peano4::grid::TraversalVTKPlotter::_cellWriter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00065">65</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a70c542da793b22bd225cf5cae1d0ea67" name="a70c542da793b22bd225cf5cae1d0ea67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c542da793b22bd225cf5cae1d0ea67">&#9670;&#160;</a></span>_coreWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dab/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellDataWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellDataWriter</a>* peano4::grid::TraversalVTKPlotter::_coreWriter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00067">67</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a14ff590d4e3fb71e7baa02f332b44e16" name="a14ff590d4e3fb71e7baa02f332b44e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ff590d4e3fb71e7baa02f332b44e16">&#9670;&#160;</a></span>_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string peano4::grid::TraversalVTKPlotter::_filename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00052">52</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d45/InsertParticlesFromFile_8py_source.html#l00119">exahype2.tracer.InsertParticlesFromFile.InsertParticlesFromFile::get_constructor_body()</a>, and <a class="el" href="../../d9/d5b/InsertParticlesFromHDF5File_8py_source.html#l00288">swift2.input.InsertParticlesFromHDF5File.InsertParticlesFromHDF5File::get_constructor_body()</a>.</p>
+
+</div>
+</div>
+<a id="a067d3b074a83561f90e85af59f8827a8" name="a067d3b074a83561f90e85af59f8827a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067d3b074a83561f90e85af59f8827a8">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> peano4::grid::TraversalVTKPlotter::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00050">50</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab134861114793d8fee46f47f415588a0" name="ab134861114793d8fee46f47f415588a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab134861114793d8fee46f47f415588a0">&#9670;&#160;</a></span>_sempahore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">tarch::mpi::BooleanSemaphore</a> peano4::grid::TraversalVTKPlotter::_sempahore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00069">69</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="af34445ae498ce3f8b67b2d43034a4043" name="af34445ae498ce3f8b67b2d43034a4043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34445ae498ce3f8b67b2d43034a4043">&#9670;&#160;</a></span>_spacetreeId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> peano4::grid::TraversalVTKPlotter::_spacetreeId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00053">53</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5ba17e0593dd44bee1959e813a866503" name="a5ba17e0593dd44bee1959e813a866503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba17e0593dd44bee1959e813a866503">&#9670;&#160;</a></span>_spacetreeIdWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dab/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1CellDataWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::CellDataWriter</a>* peano4::grid::TraversalVTKPlotter::_spacetreeIdWriter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00066">66</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad5ae0e9837d80214a697810b7974d5c2" name="ad5ae0e9837d80214a697810b7974d5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ae0e9837d80214a697810b7974d5c2">&#9670;&#160;</a></span>_vertexWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/de3/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1UnstructuredGridWriter_1_1VertexWriter.html">tarch::plotter::griddata::unstructured::UnstructuredGridWriter::VertexWriter</a>* peano4::grid::TraversalVTKPlotter::_vertexWriter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00064">64</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab97918f881a16c4cff694492d651d0b4" name="ab97918f881a16c4cff694492d651d0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97918f881a16c4cff694492d651d0b4">&#9670;&#160;</a></span>_writer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d7c/classtarch_1_1plotter_1_1griddata_1_1unstructured_1_1vtk_1_1VTUTextFileWriter.html">tarch::plotter::griddata::unstructured::vtk::VTUTextFileWriter</a>* peano4::grid::TraversalVTKPlotter::_writer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html#l00063">63</a> of file <a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/peano4/grid/<a class="el" href="../../d7/dbc/TraversalVTKPlotter_8h_source.html">TraversalVTKPlotter.h</a></li>
+<li>src/peano4/grid/<a class="el" href="../../d0/da2/TraversalVTKPlotter_8cpp_source.html">TraversalVTKPlotter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d8f/namespacepeano4.html">peano4</a></li><li class="navelem"><a class="el" href="../../d7/d7c/namespacepeano4_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="../../d3/dc4/classpeano4_1_1grid_1_1TraversalVTKPlotter.html">TraversalVTKPlotter</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:12 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

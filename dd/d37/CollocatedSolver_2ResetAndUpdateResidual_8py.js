@@ -1,0 +1,4 @@
+var CollocatedSolver_2ResetAndUpdateResidual_8py =
+[
+    [ "solvers.api.actionsets.CollocatedSolver.ResetAndUpdateResidual.ResetAndUpdateResidual", "d0/d6b/classsolvers_1_1api_1_1actionsets_1_1CollocatedSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual.html", "d0/d6b/classsolvers_1_1api_1_1actionsets_1_1CollocatedSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual" ]
+];

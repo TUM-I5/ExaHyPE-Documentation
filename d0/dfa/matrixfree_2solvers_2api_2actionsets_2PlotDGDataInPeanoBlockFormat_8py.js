@@ -1,0 +1,4 @@
+var matrixfree_2solvers_2api_2actionsets_2PlotDGDataInPeanoBlockFormat_8py =
+[
+    [ "solvers.api.actionsets.PlotDGDataInPeanoBlockFormat.PlotDGDataInPeanoBlockFormat", "d4/d48/classsolvers_1_1api_1_1actionsets_1_1PlotDGDataInPeanoBlockFormat_1_1PlotDGDataInPeanoBlockFormat.html", "d4/d48/classsolvers_1_1api_1_1actionsets_1_1PlotDGDataInPeanoBlockFormat_1_1PlotDGDataInPeanoBlockFormat" ]
+];

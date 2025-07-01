@@ -1,0 +1,4 @@
+var PatchToDoubleArrayWithSmartPointer_8py =
+[
+    [ "peano4.datamodel.PatchToDoubleArrayWithSmartPointer.PatchToDoubleArrayWithSmartPointer", "d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer.html", "d3/d8a/classpeano4_1_1datamodel_1_1PatchToDoubleArrayWithSmartPointer_1_1PatchToDoubleArrayWithSmartPointer" ]
+];

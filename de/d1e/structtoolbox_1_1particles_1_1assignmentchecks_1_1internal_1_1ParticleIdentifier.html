@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">toolbox::particles::assignmentchecks::internal::ParticleIdentifier Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>as a key to the 'database' map to keep the particles' history as the map's values.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for toolbox::particles::assignmentchecks::internal::ParticleIdentifier:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d8d/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier__coll__graph.png" border="0" usemap="#atoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_coll__map" alt="Collaboration graph"/></div>
+<map name="atoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_coll__map" id="atoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_coll__map">
+<area shape="rect" title="as a key to the &#39;database&#39; map to keep the particles&#39; history as the map&#39;s values." alt="" coords="521,55,708,110"/>
+<area shape="rect" title=" " alt="" coords="243,13,330,38"/>
+<area shape="poly" title=" " alt="" coords="345,33,522,64,521,69,344,38"/>
+<area shape="rect" title=" " alt="" coords="5,5,144,45"/>
+<area shape="poly" title=" " alt="" coords="158,23,243,23,243,28,158,28"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="201,63,372,103"/>
+<area shape="poly" title=" " alt="" coords="386,80,521,80,521,85,386,85"/>
+<area shape="rect" href="../../d7/d26/structtarch_1_1la_1_1Vector.html" title=" " alt="" coords="193,127,380,167"/>
+<area shape="poly" title=" " alt="" coords="393,123,521,98,522,103,394,129"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a28daecac6821a288d9f82484d8142921" id="r_a28daecac6821a288d9f82484d8142921"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28daecac6821a288d9f82484d8142921">toString</a> () <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a28daecac6821a288d9f82484d8142921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b174a21c5b9f7fdbb8cb0e8a1f50179" id="r_a1b174a21c5b9f7fdbb8cb0e8a1f50179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b174a21c5b9f7fdbb8cb0e8a1f50179">numericalEquals</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;rhs) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a1b174a21c5b9f7fdbb8cb0e8a1f50179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d47709ce700df8f583575088575d56" id="r_a18d47709ce700df8f583575088575d56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d47709ce700df8f583575088575d56">numericalSmaller</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;rhs) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a18d47709ce700df8f583575088575d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1399fc105ed24072b4aedbb570e15929" id="r_a1399fc105ed24072b4aedbb570e15929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1399fc105ed24072b4aedbb570e15929">operator&lt;</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;rhs) <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a></td></tr>
+<tr class="separator:a1399fc105ed24072b4aedbb570e15929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacd1a91d83b090b84e9cca0c7e636c5" id="r_abacd1a91d83b090b84e9cca0c7e636c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abacd1a91d83b090b84e9cca0c7e636c5">ParticleIdentifier</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeId__)</td></tr>
+<tr class="separator:abacd1a91d83b090b84e9cca0c7e636c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48b84a120aa120d51d6b957d58b2097" id="r_aa48b84a120aa120d51d6b957d58b2097"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48b84a120aa120d51d6b957d58b2097">ParticleIdentifier</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;particleName__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;particleX__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, long long &gt; &amp;vertexInd__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> vertexDepth__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> particleID__, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> treeID__)</td></tr>
+<tr class="separator:aa48b84a120aa120d51d6b957d58b2097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afea93927c7a65edd6bd744872bee382f" id="r_afea93927c7a65edd6bd744872bee382f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea93927c7a65edd6bd744872bee382f">getVertexInd</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH)</td></tr>
+<tr class="memdesc:afea93927c7a65edd6bd744872bee382f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an integer vertex "index" given its position and size.  <br /></td></tr>
+<tr class="separator:afea93927c7a65edd6bd744872bee382f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b506d5763c2c686fc5f2ad792ce8f28" id="r_a0b506d5763c2c686fc5f2ad792ce8f28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b506d5763c2c686fc5f2ad792ce8f28">getVertexDepth</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexX, <a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;vertexH)</td></tr>
+<tr class="memdesc:a0b506d5763c2c686fc5f2ad792ce8f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an integer vertex "depth" given its size We currently guess a domain size for a simulation and just estimate the depth given the vertex size.  <br /></td></tr>
+<tr class="separator:a0b506d5763c2c686fc5f2ad792ce8f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aee79013d368731f731acbfc1443397f3" id="r_aee79013d368731f731acbfc1443397f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee79013d368731f731acbfc1443397f3">particleName</a></td></tr>
+<tr class="separator:aee79013d368731f731acbfc1443397f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387644c52affcd20c7f26d35f8ac96a8" id="r_a387644c52affcd20c7f26d35f8ac96a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a387644c52affcd20c7f26d35f8ac96a8">particleX</a></td></tr>
+<tr class="separator:a387644c52affcd20c7f26d35f8ac96a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c980304cdf417ac2ec6d5a91b53106" id="r_a80c980304cdf417ac2ec6d5a91b53106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80c980304cdf417ac2ec6d5a91b53106">vertexInd</a></td></tr>
+<tr class="separator:a80c980304cdf417ac2ec6d5a91b53106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae705a8acbbb104f1218c60b184f76ba7" id="r_ae705a8acbbb104f1218c60b184f76ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae705a8acbbb104f1218c60b184f76ba7">vertexDepth</a></td></tr>
+<tr class="separator:ae705a8acbbb104f1218c60b184f76ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4857da1622ffab5c314a4746e7ba3f1" id="r_af4857da1622ffab5c314a4746e7ba3f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4857da1622ffab5c314a4746e7ba3f1">particleID</a></td></tr>
+<tr class="separator:af4857da1622ffab5c314a4746e7ba3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec819ed74b0d6ac1a75a591978eb448" id="r_aeec819ed74b0d6ac1a75a591978eb448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec819ed74b0d6ac1a75a591978eb448">treeID</a></td></tr>
+<tr class="separator:aeec819ed74b0d6ac1a75a591978eb448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>as a key to the 'database' map to keep the particles' history as the map's values. </p>
+<p>By default, particles' are ID'd by their unique integer ID and type name. However, in certain situations, that may not be enough. For example, if a particle is close to a periodic boundary, it will be replicated and its coordinates shifted appropriately on the other boundary. There will however exist 2 particles with the same unique integer ID and type name, which will cause issues with the assignment checks, as it will have an inappropriate history. Therefore, we also need to take into account the particles' positions to ID them.</p>
+<p>Using particle positions as floats, however, turned out to be a bad idea, even when allowing for fuzzy searches within a reasonable interval. Instead, we're using the vertex a particle is attached to as a proxy for its position. The vertices are assigned an "index" ("in the box") based on their position and size, as well as a depth to identify them uniquely.</p>
+<p>Furthermore, note that particles will be distinguished based on the spacetree they're assigned to. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00036">36</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abacd1a91d83b090b84e9cca0c7e636c5" name="abacd1a91d83b090b84e9cca0c7e636c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abacd1a91d83b090b84e9cca0c7e636c5">&#9670;&#160;</a></span>ParticleIdentifier() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">toolbox::particles::assignmentchecks::internal::ParticleIdentifier::ParticleIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeId__</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa48b84a120aa120d51d6b957d58b2097" name="aa48b84a120aa120d51d6b957d58b2097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48b84a120aa120d51d6b957d58b2097">&#9670;&#160;</a></span>ParticleIdentifier() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">toolbox::particles::assignmentchecks::internal::ParticleIdentifier::ParticleIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>particleName__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>particleX__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, long long &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexInd__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>vertexDepth__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>particleID__</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a></td>          <td class="paramname"><span class="paramname"><em>treeID__</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0b506d5763c2c686fc5f2ad792ce8f28" name="a0b506d5763c2c686fc5f2ad792ce8f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b506d5763c2c686fc5f2ad792ce8f28">&#9670;&#160;</a></span>getVertexDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::getVertexDepth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute an integer vertex "depth" given its size We currently guess a domain size for a simulation and just estimate the depth given the vertex size. </p>
+<p>The vertexX is used to raise an error if we're out of the assumed box size. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d46/Assertions_8h_source.html#l01020">assertion3</a>, and <a class="el" href="../../d8/d88/VectorOperations_8cpph_source.html#l00121">tarch::la::normMax()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a0b506d5763c2c686fc5f2ad792ce8f28_cgraph.png" border="0" usemap="#ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a0b506d5763c2c686fc5f2ad792ce8f28_cgraph" alt=""/></div>
+<map name="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a0b506d5763c2c686fc5f2ad792ce8f28_cgraph" id="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a0b506d5763c2c686fc5f2ad792ce8f28_cgraph">
+<area shape="rect" title="Compute an integer vertex &quot;depth&quot; given its size We currently guess a domain size for a simulation an..." alt="" coords="5,5,192,75"/>
+<area shape="rect" href="../../d2/d45/namespacetarch_1_1la.html#ae5fcd781d9f1a7b99d08597533673b7e" title="Computes the max&#45;norm of the vector." alt="" coords="240,27,385,53"/>
+<area shape="poly" title=" " alt="" coords="192,37,226,37,226,43,192,43"/>
+<area shape="rect" href="../../d8/dcc/namespacestd.html#abdf604272c8422a961aaedd1d68de0bd" title=" " alt="" coords="433,27,507,53"/>
+<area shape="poly" title=" " alt="" coords="385,37,420,37,420,43,385,43"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afea93927c7a65edd6bd744872bee382f" name="afea93927c7a65edd6bd744872bee382f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea93927c7a65edd6bd744872bee382f">&#9670;&#160;</a></span>getVertexInd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, long long &gt; toolbox::particles::assignmentchecks::internal::ParticleIdentifier::getVertexInd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt; Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexH</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute an integer vertex "index" given its position and size. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d37/benchmarks_2other_2noh2d-common_2swift_2kernel__hydro_8h_source.html#l00265">ind</a>.</p>
+
+</div>
+</div>
+<a id="a1b174a21c5b9f7fdbb8cb0e8a1f50179" name="a1b174a21c5b9f7fdbb8cb0e8a1f50179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b174a21c5b9f7fdbb8cb0e8a1f50179">&#9670;&#160;</a></span>numericalEquals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::numericalEquals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00160">operator!=()</a>, and <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00152">operator==()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a1b174a21c5b9f7fdbb8cb0e8a1f50179_icgraph.png" border="0" usemap="#ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a1b174a21c5b9f7fdbb8cb0e8a1f50179_icgraph" alt=""/></div>
+<map name="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a1b174a21c5b9f7fdbb8cb0e8a1f50179_icgraph" id="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a1b174a21c5b9f7fdbb8cb0e8a1f50179_icgraph">
+<area shape="rect" title=" " alt="" coords="152,9,339,78"/>
+<area shape="rect" href="../../d2/d60/ParticleIdentifier_8cpp.html#ae93f93908bbfdc1cef847561e0b492eb" title=" " alt="" coords="8,5,101,31"/>
+<area shape="poly" title=" " alt="" coords="138,32,101,27,102,21,139,26"/>
+<area shape="rect" href="../../d2/d60/ParticleIdentifier_8cpp.html#afd6f5e5f540c7ddc5e6691c936dfd6cb" title="Comparison operator." alt="" coords="5,55,104,80"/>
+<area shape="poly" title=" " alt="" coords="139,59,105,64,104,59,138,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18d47709ce700df8f583575088575d56" name="a18d47709ce700df8f583575088575d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d47709ce700df8f583575088575d56">&#9670;&#160;</a></span>numericalSmaller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::numericalSmaller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1399fc105ed24072b4aedbb570e15929" name="a1399fc105ed24072b4aedbb570e15929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1399fc105ed24072b4aedbb570e15929">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d8b/SWIFTMain_8template_8cpp.html#af6a258d8f3ee5206d682d799316314b1">bool</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28daecac6821a288d9f82484d8142921" name="a28daecac6821a288d9f82484d8142921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28daecac6821a288d9f82484d8142921">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::particles::assignmentchecks::internal::ParticleIdentifier::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/da7/RefinementControl_8cpp_source.html#l00021">toString()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00337">toolbox::particles::assignmentchecks::internal::Database::addEvent()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00216">toolbox::particles::assignmentchecks::internal::Database::lastMeshSweepSnapshot()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00266">toolbox::particles::assignmentchecks::internal::Database::particleHistory()</a>, and <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00133">toolbox::particles::assignmentchecks::internal::Database::toString()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_cgraph.png" border="0" usemap="#ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_cgraph" alt=""/></div>
+<map name="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_cgraph" id="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,192,75"/>
+<area shape="rect" href="../../d1/da7/RefinementControl_8cpp.html#a10fbfa607702e35cf41b838edab3f814" title=" " alt="" coords="240,27,313,53"/>
+<area shape="poly" title=" " alt="" coords="192,37,226,37,226,43,192,43"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_icgraph.png" border="0" usemap="#ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_icgraph" alt=""/></div>
+<map name="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_icgraph" id="ade/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier_a28daecac6821a288d9f82484d8142921_icgraph">
+<area shape="rect" title=" " alt="" coords="264,131,451,201"/>
+<area shape="rect" href="../../d2/dc9/classtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1Database.html#ac9e7ddec34685335ac4c0e3b5a1bc6bd" title="Add a new event to the database." alt="" coords="5,5,216,60"/>
+<area shape="poly" title=" " alt="" coords="297,126,215,75,188,62,190,58,217,70,300,121"/>
+<area shape="rect" href="../../d2/dc9/classtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1Database.html#a7f02058856c0f170c555483a7e223a9f" title="Returns the recorded events of the latest mesh sweep." alt="" coords="6,85,215,154"/>
+<area shape="poly" title=" " alt="" coords="250,148,215,142,216,136,251,143"/>
+<area shape="rect" href="../../d2/dc9/classtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1Database.html#a3dafc7fba09814671fd7e71681aa41d9" title="Print history of one particle." alt="" coords="11,178,210,247"/>
+<area shape="poly" title=" " alt="" coords="251,189,211,197,210,191,250,184"/>
+<area shape="rect" href="../../d2/dc9/classtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1Database.html#a783b0d8071a998cd4857e1aa76ea2cd5" title="Dump the whole database." alt="" coords="10,272,211,327"/>
+<area shape="poly" title=" " alt="" coords="300,211,217,262,190,274,188,270,215,257,297,206"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="af4857da1622ffab5c314a4746e7ba3f1" name="af4857da1622ffab5c314a4746e7ba3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4857da1622ffab5c314a4746e7ba3f1">&#9670;&#160;</a></span>particleID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::particleID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00042">42</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00337">toolbox::particles::assignmentchecks::internal::Database::addEvent()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00083">toolbox::particles::assignmentchecks::internal::Database::getParticleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00170">toolbox::particles::assignmentchecks::internal::Database::getTotalParticleEntries()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00266">toolbox::particles::assignmentchecks::internal::Database::particleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00446">toolbox::particles::assignmentchecks::internal::Database::replaceEvent()</a>, and <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<a id="aee79013d368731f731acbfc1443397f3" name="aee79013d368731f731acbfc1443397f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee79013d368731f731acbfc1443397f3">&#9670;&#160;</a></span>particleName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string toolbox::particles::assignmentchecks::internal::ParticleIdentifier::particleName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00038">38</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<a id="a387644c52affcd20c7f26d35f8ac96a8" name="a387644c52affcd20c7f26d35f8ac96a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a387644c52affcd20c7f26d35f8ac96a8">&#9670;&#160;</a></span>particleX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, <a class="el" href="../../db/d20/DiscontinuousGalerkinDiscretisation_8Abstract_8template_8cpp.html#a962c06c0fea2c76dd28c454654a79417">double</a>&gt; toolbox::particles::assignmentchecks::internal::ParticleIdentifier::particleX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00039">39</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<a id="aeec819ed74b0d6ac1a75a591978eb448" name="aeec819ed74b0d6ac1a75a591978eb448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec819ed74b0d6ac1a75a591978eb448">&#9670;&#160;</a></span>treeID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::treeID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00043">43</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00337">toolbox::particles::assignmentchecks::internal::Database::addEvent()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00083">toolbox::particles::assignmentchecks::internal::Database::getParticleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00170">toolbox::particles::assignmentchecks::internal::Database::getTotalParticleEntries()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00266">toolbox::particles::assignmentchecks::internal::Database::particleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00446">toolbox::particles::assignmentchecks::internal::Database::replaceEvent()</a>, and <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<a id="ae705a8acbbb104f1218c60b184f76ba7" name="ae705a8acbbb104f1218c60b184f76ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae705a8acbbb104f1218c60b184f76ba7">&#9670;&#160;</a></span>vertexDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> toolbox::particles::assignmentchecks::internal::ParticleIdentifier::vertexDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00041">41</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00337">toolbox::particles::assignmentchecks::internal::Database::addEvent()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00083">toolbox::particles::assignmentchecks::internal::Database::getParticleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00170">toolbox::particles::assignmentchecks::internal::Database::getTotalParticleEntries()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00266">toolbox::particles::assignmentchecks::internal::Database::particleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00446">toolbox::particles::assignmentchecks::internal::Database::replaceEvent()</a>, and <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<a id="a80c980304cdf417ac2ec6d5a91b53106" name="a80c980304cdf417ac2ec6d5a91b53106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c980304cdf417ac2ec6d5a91b53106">&#9670;&#160;</a></span>vertexInd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d26/structtarch_1_1la_1_1Vector.html">tarch::la::Vector</a>&lt;Dimensions, long long&gt; toolbox::particles::assignmentchecks::internal::ParticleIdentifier::vertexInd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html#l00040">40</a> of file <a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00337">toolbox::particles::assignmentchecks::internal::Database::addEvent()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00083">toolbox::particles::assignmentchecks::internal::Database::getParticleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00170">toolbox::particles::assignmentchecks::internal::Database::getTotalParticleEntries()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00266">toolbox::particles::assignmentchecks::internal::Database::particleHistory()</a>, <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00446">toolbox::particles::assignmentchecks::internal::Database::replaceEvent()</a>, and <a class="el" href="../../d3/d48/Database_8cpp_source.html#l00520">toolbox::particles::assignmentchecks::internal::Database::shiftIdentifierVertexInd()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/toolbox/particles/assignmentchecks/<a class="el" href="../../df/d17/ParticleIdentifier_8h_source.html">ParticleIdentifier.h</a></li>
+<li>src/toolbox/particles/assignmentchecks/<a class="el" href="../../d2/d60/ParticleIdentifier_8cpp_source.html">ParticleIdentifier.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/dd9/namespacetoolbox.html">toolbox</a></li><li class="navelem"><a class="el" href="../../d0/d29/namespacetoolbox_1_1particles.html">particles</a></li><li class="navelem"><a class="el" href="../../d5/d1c/namespacetoolbox_1_1particles_1_1assignmentchecks.html">assignmentchecks</a></li><li class="navelem"><a class="el" href="../../da/d11/namespacetoolbox_1_1particles_1_1assignmentchecks_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../de/d1e/structtoolbox_1_1particles_1_1assignmentchecks_1_1internal_1_1ParticleIdentifier.html">ParticleIdentifier</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:09 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

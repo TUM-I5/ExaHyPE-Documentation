@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['scalar_5fop_0',['SCALAR_OP',['../dd/d58/numvec_8h.html#aa27a63d7ea3ed7e94e4f51374a8d0b57',1,'numvec.h']]],
+  ['scorep_5fuser_5fregion_5fbegin_1',['SCOREP_USER_REGION_BEGIN',['../d9/d51/ExaHyPEMain_8template_8cpp.html#aab4b3ccc2b169320c1d3bf7fe19165f9',1,'ExaHyPEMain.template.cpp']]],
+  ['scorep_5fuser_5fregion_5fdefine_2',['SCOREP_USER_REGION_DEFINE',['../d9/d51/ExaHyPEMain_8template_8cpp.html#a8fff2e6053e2a36a4c3421e8114a912e',1,'ExaHyPEMain.template.cpp']]],
+  ['scorep_5fuser_5fregion_5fend_3',['SCOREP_USER_REGION_END',['../d9/d51/ExaHyPEMain_8template_8cpp.html#a36bc4808f2cbdfd75f9a05d2124698d1',1,'ExaHyPEMain.template.cpp']]],
+  ['self_5farithmetic_5fop_4',['SELF_ARITHMETIC_OP',['../d1/d92/CompressedFloat_8h.html#a12a68e9492b9a65a5825fd2fd55728b3',1,'CompressedFloat.h']]],
+  ['self_5fcomparison_5fop_5',['SELF_COMPARISON_OP',['../d1/d92/CompressedFloat_8h.html#ad1216a9080ad69c429190df30576bbb6',1,'CompressedFloat.h']]],
+  ['setassertionoutputformat_6',['setAssertionOutputFormat',['../dc/d46/Assertions_8h.html#ac01f8c0296ef26fdca319dec2d8384e8',1,'Assertions.h']]],
+  ['sevenpowerd_7',['SevenPowerD',['../d9/df1/Globals_8h.html#af84500e70940e1e0e70859e89b1337a9',1,'Globals.h']]],
+  ['sharedmemoryparallelisation_8',['SharedMemoryParallelisation',['../d5/d52/multicore_8h.html#a5e499277d6afd8f91a9288d6a1a64542',1,'multicore.h']]],
+  ['since_9',['since',['../d1/d1b/trace_8h.html#a93bd2d26454c09c218812410b25a8bdc',1,'trace.h']]],
+  ['steps_10',['STEPS',['../dd/d92/setup__big_8h.html#a1ca9f64427b2bc5b538fe2fa2501c639',1,'STEPS:&#160;setup_big.h'],['../d6/d89/setup__small_8h.html#a1ca9f64427b2bc5b538fe2fa2501c639',1,'STEPS:&#160;setup_small.h']]],
+  ['steps_5fbetween_5fdumps_11',['STEPS_BETWEEN_DUMPS',['../dd/d92/setup__big_8h.html#a3664e2b40276a818c273e02aed1538e8',1,'STEPS_BETWEEN_DUMPS:&#160;setup_big.h'],['../d6/d89/setup__small_8h.html#a3664e2b40276a818c273e02aed1538e8',1,'STEPS_BETWEEN_DUMPS:&#160;setup_small.h']]],
+  ['strcat_12',['STRCAT',['../d1/d92/CompressedFloat_8h.html#ae5b19b13d49f8c9160978c17e3227af2',1,'STRCAT:&#160;CompressedFloat.h'],['../df/def/type_8h.html#ae5b19b13d49f8c9160978c17e3227af2',1,'STRCAT:&#160;type.h']]],
+  ['strcat_5finner_13',['STRCAT_INNER',['../d1/d92/CompressedFloat_8h.html#a78872de59c6a0330a79407a0ed00bc63',1,'STRCAT_INNER:&#160;CompressedFloat.h'],['../df/def/type_8h.html#a78872de59c6a0330a79407a0ed00bc63',1,'STRCAT_INNER:&#160;type.h']]],
+  ['swap_14',['SWAP',['../da/d52/TP__Utilities_8h.html#aac9153aee4bdb92701df902e06a74eb3',1,'TP_Utilities.h']]],
+  ['swift_5falign_5finformation_15',['swift_align_information',['../d1/ddf/align_8h.html#a451f6022ea7a0714f6a0ef1a1f4a55b4',1,'align.h']]],
+  ['swift_5fassume_5fsize_16',['swift_assume_size',['../d1/ddf/align_8h.html#a353e5045131886db081134b37372904e',1,'align.h']]],
+  ['swift_5fcache_5falign_17',['SWIFT_CACHE_ALIGN',['../d1/ddf/align_8h.html#ac6ecfab9e1c09420232ebdc2dfed7787',1,'align.h']]],
+  ['swift_5fcache_5falignment_18',['SWIFT_CACHE_ALIGNMENT',['../d1/ddf/align_8h.html#ac53272fff6fad9b0cb05c271f14ffabb',1,'align.h']]],
+  ['swift_5fdeclare_5faligned_5fptr_19',['swift_declare_aligned_ptr',['../d1/ddf/align_8h.html#a66a4ada5c6f1edc32671deec03404a6d',1,'align.h']]],
+  ['swift_5fstruct_5falign_20',['SWIFT_STRUCT_ALIGN',['../d1/ddf/align_8h.html#af6c762c0fc7434cbd733aaee7a0619db',1,'align.h']]],
+  ['swift_5fstruct_5falignment_21',['SWIFT_STRUCT_ALIGNMENT',['../d1/ddf/align_8h.html#a97951a0ba0cb68998100214415146ba2',1,'align.h']]]
+];

@@ -1,0 +1,869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/d4f/namespacetest__periodic__BC-1D.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">test_periodic_BC-1D Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acab1afc5ba40181bb3d6dcbcdb946b55" id="r_acab1afc5ba40181bb3d6dcbcdb946b55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acab1afc5ba40181bb3d6dcbcdb946b55">parser</a> = argparse.ArgumentParser(description=&quot;Test periodic boundary conditions&quot;)</td></tr>
+<tr class="memdesc:acab1afc5ba40181bb3d6dcbcdb946b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse user input.  <br /></td></tr>
+<tr class="separator:acab1afc5ba40181bb3d6dcbcdb946b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821643363e9786515ae45f7dd08abf25" id="r_a821643363e9786515ae45f7dd08abf25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a821643363e9786515ae45f7dd08abf25">dest</a></td></tr>
+<tr class="separator:a821643363e9786515ae45f7dd08abf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4102de805ea12ea69e49ee0a5ce88d7e" id="r_a4102de805ea12ea69e49ee0a5ce88d7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4102de805ea12ea69e49ee0a5ce88d7e">type</a></td></tr>
+<tr class="separator:a4102de805ea12ea69e49ee0a5ce88d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5221c49c691553787ff1fff74f292bc2" id="r_a5221c49c691553787ff1fff74f292bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5221c49c691553787ff1fff74f292bc2">int</a></td></tr>
+<tr class="separator:a5221c49c691553787ff1fff74f292bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaacede4c8e1bce67489c9c41e64d813" id="r_abaacede4c8e1bce67489c9c41e64d813"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaacede4c8e1bce67489c9c41e64d813">default</a></td></tr>
+<tr class="separator:abaacede4c8e1bce67489c9c41e64d813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b40e9ace0e2ad049c90689aa37d7c75" id="r_a4b40e9ace0e2ad049c90689aa37d7c75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b40e9ace0e2ad049c90689aa37d7c75">help</a></td></tr>
+<tr class="separator:a4b40e9ace0e2ad049c90689aa37d7c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131c21562ce6ba6dbc5c9309835e2a29" id="r_a131c21562ce6ba6dbc5c9309835e2a29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a131c21562ce6ba6dbc5c9309835e2a29">action</a></td></tr>
+<tr class="separator:a131c21562ce6ba6dbc5c9309835e2a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68553a06ae677065844733c51b8eb321" id="r_a68553a06ae677065844733c51b8eb321"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68553a06ae677065844733c51b8eb321">args</a> = parser.parse_args()</td></tr>
+<tr class="separator:a68553a06ae677065844733c51b8eb321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494d1ddcff9a30cc8ffff10724ad295c" id="r_a494d1ddcff9a30cc8ffff10724ad295c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5221c49c691553787ff1fff74f292bc2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a494d1ddcff9a30cc8ffff10724ad295c">dimensions</a> = 2</td></tr>
+<tr class="memdesc:a494d1ddcff9a30cc8ffff10724ad295c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate SWIFT project.  <br /></td></tr>
+<tr class="separator:a494d1ddcff9a30cc8ffff10724ad295c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52162642e72ef57b1e127a9718a32d9a" id="r_a52162642e72ef57b1e127a9718a32d9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5221c49c691553787ff1fff74f292bc2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52162642e72ef57b1e127a9718a32d9a">hydro_dimensions</a> = 1</td></tr>
+<tr class="separator:a52162642e72ef57b1e127a9718a32d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378a49947bfaa175c4045b61b791c656" id="r_a378a49947bfaa175c4045b61b791c656"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a378a49947bfaa175c4045b61b791c656">project</a></td></tr>
+<tr class="separator:a378a49947bfaa175c4045b61b791c656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab641ef64566a9d9794ac6cbb83ae2422" id="r_ab641ef64566a9d9794ac6cbb83ae2422"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab641ef64566a9d9794ac6cbb83ae2422">particle</a></td></tr>
+<tr class="separator:ab641ef64566a9d9794ac6cbb83ae2422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066155830570eb703c58b9803d0f4e13" id="r_a066155830570eb703c58b9803d0f4e13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066155830570eb703c58b9803d0f4e13">particle_set</a> = project.add_particle_species(<a class="el" href="#ab641ef64566a9d9794ac6cbb83ae2422">particle</a>)</td></tr>
+<tr class="separator:a066155830570eb703c58b9803d0f4e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ce535cd9a81bc8cb0c253ff1457ecd" id="r_a09ce535cd9a81bc8cb0c253ff1457ecd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ce535cd9a81bc8cb0c253ff1457ecd">build_mode</a> = peano4.output.CompileMode.Debug</td></tr>
+<tr class="separator:a09ce535cd9a81bc8cb0c253ff1457ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790253e22d830717f8c87f9a01b1ac44" id="r_a790253e22d830717f8c87f9a01b1ac44"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a790253e22d830717f8c87f9a01b1ac44">offset</a> = [0, 0, 0]</td></tr>
+<tr class="separator:a790253e22d830717f8c87f9a01b1ac44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d22ca8344f08746b64771ae06406e4" id="r_a48d22ca8344f08746b64771ae06406e4"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d22ca8344f08746b64771ae06406e4">domain_size</a> = [1, 1, 1]</td></tr>
+<tr class="separator:a48d22ca8344f08746b64771ae06406e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdeacd7334b77b90c3d2e53ac0f753a3" id="r_abdeacd7334b77b90c3d2e53ac0f753a3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdeacd7334b77b90c3d2e53ac0f753a3">periodic_boundary_conditions</a> = [<a class="el" href="#ac788805fe6ca79e82dca5b202418b7ee">True</a>, False, False]</td></tr>
+<tr class="separator:abdeacd7334b77b90c3d2e53ac0f753a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a30bbba7e7890723fd30cf9d09f9a05" id="r_a1a30bbba7e7890723fd30cf9d09f9a05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a30bbba7e7890723fd30cf9d09f9a05">min_end_time</a></td></tr>
+<tr class="separator:a1a30bbba7e7890723fd30cf9d09f9a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4568402884d96fde8e5f1164b7ca3b" id="r_a5f4568402884d96fde8e5f1164b7ca3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f4568402884d96fde8e5f1164b7ca3b">max_end_time</a></td></tr>
+<tr class="separator:a5f4568402884d96fde8e5f1164b7ca3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133446bbc341057c54ce79976130b9f5" id="r_a133446bbc341057c54ce79976130b9f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a133446bbc341057c54ce79976130b9f5">first_plot_time_stamp</a></td></tr>
+<tr class="separator:a133446bbc341057c54ce79976130b9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2f1760fc013454cdfd5c97402baba" id="r_af1b2f1760fc013454cdfd5c97402baba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1b2f1760fc013454cdfd5c97402baba">time_in_between_plots</a></td></tr>
+<tr class="separator:af1b2f1760fc013454cdfd5c97402baba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b255c1c396b8f76abeef09cb78fb8fc" id="r_a0b255c1c396b8f76abeef09cb78fb8fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b255c1c396b8f76abeef09cb78fb8fc">periodic_BC</a></td></tr>
+<tr class="separator:a0b255c1c396b8f76abeef09cb78fb8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f10b5e6cb0114cada305f7c48a9b97" id="r_a00f10b5e6cb0114cada305f7c48a9b97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f10b5e6cb0114cada305f7c48a9b97">plotter_precision</a></td></tr>
+<tr class="separator:a00f10b5e6cb0114cada305f7c48a9b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bf1329fc9919adca6f086268c869dc" id="r_a90bf1329fc9919adca6f086268c869dc"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90bf1329fc9919adca6f086268c869dc">particle_force</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a90bf1329fc9919adca6f086268c869dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare the force acting on the particle.  <br /></td></tr>
+<tr class="separator:a90bf1329fc9919adca6f086268c869dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c24aeff780e5ac74ed09f829bf8103" id="r_a19c24aeff780e5ac74ed09f829bf8103"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c24aeff780e5ac74ed09f829bf8103">search_radius</a> = args.cell_size / 100.0</td></tr>
+<tr class="memdesc:a19c24aeff780e5ac74ed09f829bf8103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation snippet for the particle.  <br /></td></tr>
+<tr class="separator:a19c24aeff780e5ac74ed09f829bf8103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbd3a4890b603463fb3f987f572d25e" id="r_a7fbd3a4890b603463fb3f987f572d25e"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fbd3a4890b603463fb3f987f572d25e">initialisation_snippet</a></td></tr>
+<tr class="separator:a7fbd3a4890b603463fb3f987f572d25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4068e568de8b11115785fd4540dd27b8" id="r_a4068e568de8b11115785fd4540dd27b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4068e568de8b11115785fd4540dd27b8">coords</a> = np.array([[0.21, 0.5, 0.0], [0.81, 0.5, 0.0]])</td></tr>
+<tr class="separator:a4068e568de8b11115785fd4540dd27b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c2e8fe0485997b106ebaab045ccf33" id="r_ae6c2e8fe0485997b106ebaab045ccf33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c2e8fe0485997b106ebaab045ccf33">particle_plotter</a></td></tr>
+<tr class="memdesc:ae6c2e8fe0485997b106ebaab045ccf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the plotter.  <br /></td></tr>
+<tr class="separator:ae6c2e8fe0485997b106ebaab045ccf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bc5d6f234be3b3e9338a11225ab88d" id="r_a14bc5d6f234be3b3e9338a11225ab88d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14bc5d6f234be3b3e9338a11225ab88d">peano4_project</a> = project.generate_Peano4_project(verbose=args.verbose)</td></tr>
+<tr class="memdesc:a14bc5d6f234be3b3e9338a11225ab88d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate plain Peano 4 project.  <br /></td></tr>
+<tr class="separator:a14bc5d6f234be3b3e9338a11225ab88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053b94111a4b4ccb5d5baded253c527c" id="r_a053b94111a4b4ccb5d5baded253c527c"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a053b94111a4b4ccb5d5baded253c527c">dirs</a> = [&quot;vertexdata/&quot;, &quot;repositories/&quot;, &quot;globaldata/&quot;, &quot;observers/&quot;]</td></tr>
+<tr class="separator:a053b94111a4b4ccb5d5baded253c527c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c4b138b021500c0e0f5287a4b22f47" id="r_a90c4b138b021500c0e0f5287a4b22f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c4b138b021500c0e0f5287a4b22f47">overwrite</a></td></tr>
+<tr class="separator:a90c4b138b021500c0e0f5287a4b22f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688212a4efb15ba4ac381d4e55c684a2" id="r_a688212a4efb15ba4ac381d4e55c684a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a688212a4efb15ba4ac381d4e55c684a2">Always</a></td></tr>
+<tr class="separator:a688212a4efb15ba4ac381d4e55c684a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1869c978b210d2a5d3732248acb633dc" id="r_a1869c978b210d2a5d3732248acb633dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1869c978b210d2a5d3732248acb633dc">throw_away_data_after_generation</a></td></tr>
+<tr class="separator:a1869c978b210d2a5d3732248acb633dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a604de1e01487dac87b5988821c753" id="r_ab3a604de1e01487dac87b5988821c753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3a604de1e01487dac87b5988821c753">make_clean_first</a></td></tr>
+<tr class="separator:ab3a604de1e01487dac87b5988821c753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac788805fe6ca79e82dca5b202418b7ee" id="r_ac788805fe6ca79e82dca5b202418b7ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac788805fe6ca79e82dca5b202418b7ee">True</a></td></tr>
+<tr class="separator:ac788805fe6ca79e82dca5b202418b7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04793844f43bf31e876aafea8e969a4" id="r_ab04793844f43bf31e876aafea8e969a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab04793844f43bf31e876aafea8e969a4">number_of_parallel_builds</a></td></tr>
+<tr class="separator:ab04793844f43bf31e876aafea8e969a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb8d47400e28752860721417c60ba32" id="r_a4bb8d47400e28752860721417c60ba32"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bb8d47400e28752860721417c60ba32">output_files</a></td></tr>
+<tr class="separator:a4bb8d47400e28752860721417c60ba32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a131c21562ce6ba6dbc5c9309835e2a29" name="a131c21562ce6ba6dbc5c9309835e2a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c21562ce6ba6dbc5c9309835e2a29">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.action</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00023">23</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a688212a4efb15ba4ac381d4e55c684a2" name="a688212a4efb15ba4ac381d4e55c684a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688212a4efb15ba4ac381d4e55c684a2">&#9670;&#160;</a></span>Always</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.Always</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00270">270</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a68553a06ae677065844733c51b8eb321" name="a68553a06ae677065844733c51b8eb321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68553a06ae677065844733c51b8eb321">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.args = parser.parse_args()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00089">89</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a09ce535cd9a81bc8cb0c253ff1457ecd" name="a09ce535cd9a81bc8cb0c253ff1457ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ce535cd9a81bc8cb0c253ff1457ecd">&#9670;&#160;</a></span>build_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.build_mode = peano4.output.CompileMode.Debug</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00121">121</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a4068e568de8b11115785fd4540dd27b8" name="a4068e568de8b11115785fd4540dd27b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4068e568de8b11115785fd4540dd27b8">&#9670;&#160;</a></span>coords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.coords = np.array([[0.21, 0.5, 0.0], [0.81, 0.5, 0.0]])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00203">203</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="abaacede4c8e1bce67489c9c41e64d813" name="abaacede4c8e1bce67489c9c41e64d813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaacede4c8e1bce67489c9c41e64d813">&#9670;&#160;</a></span>default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.default</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00017">17</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a821643363e9786515ae45f7dd08abf25" name="a821643363e9786515ae45f7dd08abf25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821643363e9786515ae45f7dd08abf25">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00017">17</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a494d1ddcff9a30cc8ffff10724ad295c" name="a494d1ddcff9a30cc8ffff10724ad295c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494d1ddcff9a30cc8ffff10724ad295c">&#9670;&#160;</a></span>dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.dimensions = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate SWIFT project. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00097">97</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a053b94111a4b4ccb5d5baded253c527c" name="a053b94111a4b4ccb5d5baded253c527c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053b94111a4b4ccb5d5baded253c527c">&#9670;&#160;</a></span>dirs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list test_periodic_BC-1D.dirs = [&quot;vertexdata/&quot;, &quot;repositories/&quot;, &quot;globaldata/&quot;, &quot;observers/&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00265">265</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a48d22ca8344f08746b64771ae06406e4" name="a48d22ca8344f08746b64771ae06406e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d22ca8344f08746b64771ae06406e4">&#9670;&#160;</a></span>domain_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.domain_size = [1, 1, 1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00128">128</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a133446bbc341057c54ce79976130b9f5" name="a133446bbc341057c54ce79976130b9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133446bbc341057c54ce79976130b9f5">&#9670;&#160;</a></span>first_plot_time_stamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.first_plot_time_stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00138">138</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a4b40e9ace0e2ad049c90689aa37d7c75" name="a4b40e9ace0e2ad049c90689aa37d7c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b40e9ace0e2ad049c90689aa37d7c75">&#9670;&#160;</a></span>help</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.help</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00017">17</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a52162642e72ef57b1e127a9718a32d9a" name="a52162642e72ef57b1e127a9718a32d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52162642e72ef57b1e127a9718a32d9a">&#9670;&#160;</a></span>hydro_dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5221c49c691553787ff1fff74f292bc2">int</a> test_periodic_BC-1D.hydro_dimensions = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00098">98</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a7fbd3a4890b603463fb3f987f572d25e" name="a7fbd3a4890b603463fb3f987f572d25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbd3a4890b603463fb3f987f572d25e">&#9670;&#160;</a></span>initialisation_snippet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple test_periodic_BC-1D.initialisation_snippet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  (</div>
+<div class="line"><span class="lineno">    2</span>    </div>
+<div class="line"><span class="lineno">    3</span>    + str(search_radius)</div>
+<div class="line"><span class="lineno">    4</span>    + </div>
+<div class="line"><span class="lineno">    5</span>    + str(domain_size[0])</div>
+<div class="line"><span class="lineno">    6</span>    + </div>
+<div class="line"><span class="lineno">    7</span>    + str(offset[0])</div>
+<div class="line"><span class="lineno">    8</span>    + </div>
+<div class="line"><span class="lineno">    9</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00168">168</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a5221c49c691553787ff1fff74f292bc2" name="a5221c49c691553787ff1fff74f292bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5221c49c691553787ff1fff74f292bc2">&#9670;&#160;</a></span>int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00017">17</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="ab3a604de1e01487dac87b5988821c753" name="ab3a604de1e01487dac87b5988821c753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a604de1e01487dac87b5988821c753">&#9670;&#160;</a></span>make_clean_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.make_clean_first</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00272">272</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a5f4568402884d96fde8e5f1164b7ca3b" name="a5f4568402884d96fde8e5f1164b7ca3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4568402884d96fde8e5f1164b7ca3b">&#9670;&#160;</a></span>max_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.max_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00137">137</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a1a30bbba7e7890723fd30cf9d09f9a05" name="a1a30bbba7e7890723fd30cf9d09f9a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a30bbba7e7890723fd30cf9d09f9a05">&#9670;&#160;</a></span>min_end_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.min_end_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00136">136</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="ab04793844f43bf31e876aafea8e969a4" name="ab04793844f43bf31e876aafea8e969a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04793844f43bf31e876aafea8e969a4">&#9670;&#160;</a></span>number_of_parallel_builds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.number_of_parallel_builds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00272">272</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a790253e22d830717f8c87f9a01b1ac44" name="a790253e22d830717f8c87f9a01b1ac44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790253e22d830717f8c87f9a01b1ac44">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.offset = [0, 0, 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00127">127</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a4bb8d47400e28752860721417c60ba32" name="a4bb8d47400e28752860721417c60ba32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb8d47400e28752860721417c60ba32">&#9670;&#160;</a></span>output_files</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list test_periodic_BC-1D.output_files</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  [</div>
+<div class="line"><span class="lineno">    2</span>    f</div>
+<div class="line"><span class="lineno">    3</span>    <span class="keywordflow">for</span> f <span class="keywordflow">in</span> os.listdir(<span class="stringliteral">&quot;.&quot;</span>)</div>
+<div class="line"><span class="lineno">    4</span>    <span class="keywordflow">if</span> f.endswith(<span class="stringliteral">&quot;.peano-patch-file&quot;</span>) <span class="keywordflow">or</span> f.endswith(<span class="stringliteral">&quot;.vtu&quot;</span>) <span class="keywordflow">or</span> f.endswith(<span class="stringliteral">&quot;.pvd&quot;</span>)</div>
+<div class="line"><span class="lineno">    5</span>]</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00275">275</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a90c4b138b021500c0e0f5287a4b22f47" name="a90c4b138b021500c0e0f5287a4b22f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c4b138b021500c0e0f5287a4b22f47">&#9670;&#160;</a></span>overwrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.overwrite</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00270">270</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="acab1afc5ba40181bb3d6dcbcdb946b55" name="acab1afc5ba40181bb3d6dcbcdb946b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab1afc5ba40181bb3d6dcbcdb946b55">&#9670;&#160;</a></span>parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.parser = argparse.ArgumentParser(description=&quot;Test periodic boundary conditions&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse user input. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00015">15</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="ab641ef64566a9d9794ac6cbb83ae2422" name="ab641ef64566a9d9794ac6cbb83ae2422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab641ef64566a9d9794ac6cbb83ae2422">&#9670;&#160;</a></span>particle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.particle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d2/df7/classswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius.html">swift2.particle.LeapfrogFixedSearchRadius</a>(</div>
+<div class="line"><span class="lineno">    2</span>    name=<span class="stringliteral">&quot;GenericParticle&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    cfl_factor=0.999,</div>
+<div class="line"><span class="lineno">    4</span>    initial_time_step_size=args.timestep_size,</div>
+<div class="line"><span class="lineno">    5</span>    particles_per_cell=0,</div>
+<div class="line"><span class="lineno">    6</span>    min_h=args.cell_size,</div>
+<div class="line"><span class="lineno">    7</span>    max_h=0.3,</div>
+<div class="line"><span class="lineno">    8</span>    add_partid=(<span class="keywordflow">not</span> args.asserts),</div>
+<div class="line"><span class="lineno">    9</span>)</div>
+<div class="ttc" id="aclassswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius_html"><div class="ttname"><a href="../../d2/df7/classswift2_1_1particle_1_1LeapfrogFixedSearchRadius_1_1LeapfrogFixedSearchRadius.html">swift2.particle.LeapfrogFixedSearchRadius.LeapfrogFixedSearchRadius</a></div><div class="ttdoc">Leapfrog ODE integrator.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d75/LeapfrogFixedSearchRadius_8py_source.html#l00014">LeapfrogFixedSearchRadius.py:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00108">108</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a90bf1329fc9919adca6f086268c869dc" name="a90bf1329fc9919adca6f086268c869dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bf1329fc9919adca6f086268c869dc">&#9670;&#160;</a></span>particle_force</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str test_periodic_BC-1D.particle_force = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declare the force acting on the particle. </p>
+<p>No force. We just need the particles to drift along calmly with the same velocity they start out with. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00152">152</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="ae6c2e8fe0485997b106ebaab045ccf33" name="ae6c2e8fe0485997b106ebaab045ccf33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c2e8fe0485997b106ebaab045ccf33">&#9670;&#160;</a></span>particle_plotter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.particle_plotter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../de/d96/classpeano4_1_1toolbox_1_1particles_1_1PlotParticlesInVTKFormat_1_1PlotParticlesInVTKFormat.html">peano4.toolbox.particles.PlotParticlesInVTKFormat</a>(</div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&quot;particles&quot;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    particle_set,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&quot;globaldata::{}::getSpecies().getMinTimeStamp()&quot;</span>.format(particle.name),</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclasspeano4_1_1toolbox_1_1particles_1_1PlotParticlesInVTKFormat_1_1PlotParticlesInVTKFormat_html"><div class="ttname"><a href="../../de/d96/classpeano4_1_1toolbox_1_1particles_1_1PlotParticlesInVTKFormat_1_1PlotParticlesInVTKFormat.html">peano4.toolbox.particles.PlotParticlesInVTKFormat.PlotParticlesInVTKFormat</a></div><div class="ttdoc">For constructor's time_stamp_evaluation argument.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dad/PlotParticlesInVTKFormat_8py_source.html#l00009">PlotParticlesInVTKFormat.py:9</a></div></div>
+</div><!-- fragment -->
+<p>Set up the plotter. </p>
+<p>A plotter has to be told explicitly which data to visualisation. We visualise the velocity here as scalar attribute. To some degree, this is redundant info as we implicitly have the position of the particle and can "see" its velocity when we play through a movie. But the explicit visualisation shows how to handle attributes per particle.</p>
+<p>When we create the plotter, we have to inform it how to enumerate the individual snapshots. Obviously, we can just count through the snapshots. In this case, you have to pass the constant peano4.toolbox.particles.PlotParticlesInVTKFormat.CountTimeSteps into the field time_stamp_evaluation. You can also define your own time stamp. For this, it is useful to know that each particle definition in the Python script will yield a particle class with the same name in the subnamespace globaldata. Every particle class in return has a class attribute </p><pre class="fragment">       getSpecies()
+</pre><p> which returns an object that holds global information about this particle type. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00237">237</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a066155830570eb703c58b9803d0f4e13" name="a066155830570eb703c58b9803d0f4e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066155830570eb703c58b9803d0f4e13">&#9670;&#160;</a></span>particle_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.particle_set = project.add_particle_species(<a class="el" href="#ab641ef64566a9d9794ac6cbb83ae2422">particle</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00117">117</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a14bc5d6f234be3b3e9338a11225ab88d" name="a14bc5d6f234be3b3e9338a11225ab88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14bc5d6f234be3b3e9338a11225ab88d">&#9670;&#160;</a></span>peano4_project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.peano4_project = project.generate_Peano4_project(verbose=args.verbose)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate plain Peano 4 project. </p>
+<p>See commments above (for the force interaction kernel) why we might want to have some of the constants from the Python script within the C++ code base that's generated. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00256">256</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a0b255c1c396b8f76abeef09cb78fb8fc" name="a0b255c1c396b8f76abeef09cb78fb8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b255c1c396b8f76abeef09cb78fb8fc">&#9670;&#160;</a></span>periodic_BC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.periodic_BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00140">140</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="abdeacd7334b77b90c3d2e53ac0f753a3" name="abdeacd7334b77b90c3d2e53ac0f753a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdeacd7334b77b90c3d2e53ac0f753a3">&#9670;&#160;</a></span>periodic_boundary_conditions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list test_periodic_BC-1D.periodic_boundary_conditions = [<a class="el" href="#ac788805fe6ca79e82dca5b202418b7ee">True</a>, False, False]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00129">129</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a00f10b5e6cb0114cada305f7c48a9b97" name="a00f10b5e6cb0114cada305f7c48a9b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f10b5e6cb0114cada305f7c48a9b97">&#9670;&#160;</a></span>plotter_precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.plotter_precision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00141">141</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a378a49947bfaa175c4045b61b791c656" name="a378a49947bfaa175c4045b61b791c656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378a49947bfaa175c4045b61b791c656">&#9670;&#160;</a></span>project</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.project</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  <a class="code hl_class" href="../../d4/dd4/classswift2_1_1Project_1_1Project.html">swift2.Project</a>(</div>
+<div class="line"><span class="lineno">    2</span>    namespace=[<span class="stringliteral">&quot;tests&quot;</span>, <span class="stringliteral">&quot;swift2&quot;</span>, <span class="stringliteral">&quot;periodicBoundaryConditions1D&quot;</span>],</div>
+<div class="line"><span class="lineno">    3</span>    project_name=<span class="stringliteral">&quot;periodicBoundaryConditions1D&quot;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    executable=<span class="stringliteral">&quot;periodicBCTest1D&quot;</span>,</div>
+<div class="line"><span class="lineno">    5</span>)</div>
+<div class="ttc" id="aclassswift2_1_1Project_1_1Project_html"><div class="ttname"><a href="../../d4/dd4/classswift2_1_1Project_1_1Project.html">swift2.Project.Project</a></div><div class="ttdoc">Swift2 project.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d29/python_2swift2_2Project_8py_source.html#l00024">Project.py:24</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00101">101</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a19c24aeff780e5ac74ed09f829bf8103" name="a19c24aeff780e5ac74ed09f829bf8103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c24aeff780e5ac74ed09f829bf8103">&#9670;&#160;</a></span>search_radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float test_periodic_BC-1D.search_radius = args.cell_size / 100.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialisation snippet for the particle. </p>
+<p>If we work with only one particle, then we can simply set its velocity. However, our script works both if we only module the earth but also when we model earth and sun explicitly. In the latter case, we have to ensure that only the earth is given an initial velocity. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00167">167</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a1869c978b210d2a5d3732248acb633dc" name="a1869c978b210d2a5d3732248acb633dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1869c978b210d2a5d3732248acb633dc">&#9670;&#160;</a></span>throw_away_data_after_generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.throw_away_data_after_generation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00270">270</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="af1b2f1760fc013454cdfd5c97402baba" name="af1b2f1760fc013454cdfd5c97402baba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b2f1760fc013454cdfd5c97402baba">&#9670;&#160;</a></span>time_in_between_plots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.time_in_between_plots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00139">139</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="ac788805fe6ca79e82dca5b202418b7ee" name="ac788805fe6ca79e82dca5b202418b7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac788805fe6ca79e82dca5b202418b7ee">&#9670;&#160;</a></span>True</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.True</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00272">272</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+<a id="a4102de805ea12ea69e49ee0a5ce88d7e" name="a4102de805ea12ea69e49ee0a5ce88d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4102de805ea12ea69e49ee0a5ce88d7e">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">test_periodic_BC-1D.type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html#l00017">17</a> of file <a class="el" href="../../d5/d4e/test__periodic__BC-1D_8py_source.html">test_periodic_BC-1D.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/d4f/namespacetest__periodic__BC-1D.html">test_periodic_BC-1D</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:31:01 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

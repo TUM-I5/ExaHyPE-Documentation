@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" href="../../Peano-icon.png" type="image/x-icon" />
+<title>Peano</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<!-- https://bryce.io/gitlab-corners/ -->
+<style>.gitlab-corner-wrapper{overflow:hidden;width:100px;height:100px;position:absolute;top:0;right:0}.gitlab-corner{position:absolute;top:-16px;right:-50px;transform:rotate(45deg);background:#333;border:44px solid #333;border-bottom:none;border-top:#333 solid 16px}.gitlab-corner svg{width:60px;height:60px;margin-bottom:-4px}.cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}.gitlab-corner:hover .cls-1{animation:cycle .6s}.gitlab-corner:hover .cls-2{animation:cycleMid .6s}.gitlab-corner:hover .cls-3{animation:cycleEnd .6s}@keyframes cycle{100%,15%,60%{fill:#fc6d26}30%,75%{fill:#e24329}45%,90%{fill:#fca326}}@keyframes cycleMid{100%,15%,60%{fill:#e24329}30%,75%{fill:#fca326}45%,90%{fill:#fc6d26}}@keyframes cycleEnd{100%,15%,60%{fill:#fca326}30%,75%{fill:#fc6d26}45%,90%{fill:#e24329}}@media (max-width:500px){.gitlab-corner:hover .cls-1,.gitlab-corner:hover .cls-2,.gitlab-corner:hover .cls-3{animation:none}.gitlab-corner .cls-1{animation:cycle .6s}.gitlab-corner .cls-2{animation:cycleMid .6s}.gitlab-corner .cls-3{animation:cycleEnd .6s}}</style><div class="gitlab-corner-wrapper"><a href="https://gitlab.lrz.de/hpcsoftware/Peano" class="gitlab-corner" aria-label="View source on GitLab"><svg id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559"><g id="g44"><path id="path46" class="cls-1" d="M461.17,301.83l-18.91-58.12L404.84,128.43a6.47,6.47,0,0,0-12.27,0L355.15,243.64H230.82L193.4,128.43a6.46,6.46,0,0,0-12.26,0L143.78,243.64l-18.91,58.19a12.88,12.88,0,0,0,4.66,14.39L293,435,456.44,316.22a12.9,12.9,0,0,0,4.73-14.39"/></g><g id="g48"><path id="path50" class="cls-2" d="M293,434.91h0l62.16-191.28H230.87L293,434.91Z"/></g><g id="g56"><path id="path58" class="cls-1" d="M293,434.91,230.82,243.63h-87L293,434.91Z"/></g><g id="g64"><path id="path66" class="cls-3" d="M143.75,243.69h0l-18.91,58.12a12.88,12.88,0,0,0,4.66,14.39L293,435,143.75,243.69Z"/></g><g id="g72"><path id="path74" class="cls-2" d="M143.78,243.69h87.11L193.4,128.49a6.47,6.47,0,0,0-12.27,0l-37.35,115.2Z"/></g><g id="g76"><path id="path78" class="cls-1" d="M293,434.91l62.16-191.28H442.3L293,434.91Z"/></g><g id="g80"><path id="path82" class="cls-3" d="M442.24,243.69h0l18.91,58.12a12.85,12.85,0,0,1-4.66,14.39L293,434.91l149.2-191.22Z"/></g><g id="g84"><path id="path86" class="cls-2" d="M442.28,243.69h-87.1l37.42-115.2a6.46,6.46,0,0,1,12.26,0l37.42,115.2Z"/></g></svg></a></div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Peano-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Peano
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
+  <div class="headertitle"><div class="title">tarch::mpi::BooleanSemaphore Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Boolean semaphore across MPI ranks.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for tarch::mpi::BooleanSemaphore:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d97/classtarch_1_1mpi_1_1BooleanSemaphore__coll__graph.png" border="0" usemap="#atarch_1_1mpi_1_1BooleanSemaphore_coll__map" alt="Collaboration graph"/></div>
+<map name="atarch_1_1mpi_1_1BooleanSemaphore_coll__map" id="atarch_1_1mpi_1_1BooleanSemaphore_coll__map">
+<area shape="rect" title="Boolean semaphore across MPI ranks." alt="" coords="60,285,283,311"/>
+<area shape="rect" href="../../da/d79/classtarch_1_1logging_1_1Log.html" title="Log Device." alt="" coords="5,190,148,215"/>
+<area shape="poly" title=" " alt="" coords="100,223,161,283,158,287,96,227"/>
+<area shape="rect" title=" " alt="" coords="33,95,120,120"/>
+<area shape="poly" title=" " alt="" coords="79,134,79,190,74,190,74,134"/>
+<area shape="rect" title=" " alt="" coords="7,5,146,45"/>
+<area shape="poly" title=" " alt="" coords="79,59,79,94,74,94,74,59"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html" title=" " alt="" coords="173,183,359,223"/>
+<area shape="poly" title=" " alt="" coords="239,234,185,287,181,283,235,230"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html">BooleanSemaphoreService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afeaba143ca0c5cccf402dc2c7504cd99" id="r_afeaba143ca0c5cccf402dc2c7504cd99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeaba143ca0c5cccf402dc2c7504cd99">BooleanSemaphore</a> ()</td></tr>
+<tr class="memdesc:afeaba143ca0c5cccf402dc2c7504cd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new boolean semaphore spanning all MPI ranks.  <br /></td></tr>
+<tr class="separator:afeaba143ca0c5cccf402dc2c7504cd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3591be0b6e838d637d6e9b09727441" id="r_a2c3591be0b6e838d637d6e9b09727441"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c3591be0b6e838d637d6e9b09727441">~BooleanSemaphore</a> ()</td></tr>
+<tr class="separator:a2c3591be0b6e838d637d6e9b09727441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7a77680a861f2b661f431bf2924c5301" id="r_a7a77680a861f2b661f431bf2924c5301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a77680a861f2b661f431bf2924c5301">enterCriticalSection</a> ()</td></tr>
+<tr class="memdesc:a7a77680a861f2b661f431bf2924c5301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until I can enter the critical section.  <br /></td></tr>
+<tr class="separator:a7a77680a861f2b661f431bf2924c5301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d00459cee899b40761105954ee10e24" id="r_a3d00459cee899b40761105954ee10e24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d00459cee899b40761105954ee10e24">leaveCriticalSection</a> ()</td></tr>
+<tr class="memdesc:a3d00459cee899b40761105954ee10e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the semaphore that it is about to leave.  <br /></td></tr>
+<tr class="separator:a3d00459cee899b40761105954ee10e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1caeb6a00a46e9e4fc8904c17d55d10" id="r_ad1caeb6a00a46e9e4fc8904c17d55d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1caeb6a00a46e9e4fc8904c17d55d10">BooleanSemaphore</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ad1caeb6a00a46e9e4fc8904c17d55d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">You may not copy a semaphore.  <br /></td></tr>
+<tr class="separator:ad1caeb6a00a46e9e4fc8904c17d55d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67949ca095aeaa08f166992482bf1d4" id="r_ad67949ca095aeaa08f166992482bf1d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67949ca095aeaa08f166992482bf1d4">operator=</a> (<a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ad67949ca095aeaa08f166992482bf1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">You may not copy a semaphore.  <br /></td></tr>
+<tr class="separator:ad67949ca095aeaa08f166992482bf1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4dfbf7dc24193efc71178c9560f03cf5" id="r_a4dfbf7dc24193efc71178c9560f03cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dfbf7dc24193efc71178c9560f03cf5">_semaphoreNumber</a></td></tr>
+<tr class="separator:a4dfbf7dc24193efc71178c9560f03cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466e0c8441d29151a3bfbfb4e8a58d5c" id="r_a466e0c8441d29151a3bfbfb4e8a58d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a466e0c8441d29151a3bfbfb4e8a58d5c">_localRankLockRequestSemaphore</a></td></tr>
+<tr class="separator:a466e0c8441d29151a3bfbfb4e8a58d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a2fe764f0f352dfb7cfd4adf4c1e7ef19" id="r_a2fe764f0f352dfb7cfd4adf4c1e7ef19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fe764f0f352dfb7cfd4adf4c1e7ef19">_log</a></td></tr>
+<tr class="separator:a2fe764f0f352dfb7cfd4adf4c1e7ef19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39014968316e992e8d92f81baf2a6e21" id="r_a39014968316e992e8d92f81baf2a6e21"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39014968316e992e8d92f81baf2a6e21">_semaphoreCounter</a></td></tr>
+<tr class="separator:a39014968316e992e8d92f81baf2a6e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a10f34558e173d8de675e119f99f7243f" id="r_a10f34558e173d8de675e119f99f7243f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f34558e173d8de675e119f99f7243f">Rank</a></td></tr>
+<tr class="separator:a10f34558e173d8de675e119f99f7243f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbbd369ab3a63f5586e77b89aa873e5" id="r_afdbbd369ab3a63f5586e77b89aa873e5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdbbd369ab3a63f5586e77b89aa873e5">tarch::mpi::Lock</a></td></tr>
+<tr class="separator:afdbbd369ab3a63f5586e77b89aa873e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Boolean semaphore across MPI ranks. </p>
+<p>Only one thread on one rank gets access to a certain code region. This means that this particular semaphore represents a critical section across both threads and ranks in one go. It is inherently multithreading-safe.</p>
+<p>Each boolean semaphore constructs a unique global number which is used to identify the semaphore within the whole system. When we request a lock, we send an integer message with this number to the global master through the semaphore tag. If we we release it, we send the negative number back.</p>
+<p>As an mpi semaphore includes all ranks and all threads, it is something that is more general than a "normal" <a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a>. Therefore, the mpi semaphore hosts a multicore semaphore. As long as a thread on the local rank has blocked a critical section, we don't even have to go to the global master.</p>
+<p>However, this is not the only semaphore: On the global master, we need a second semaphore to protect the global semaphore map. This map might be changed even if we are not in a critical section.</p>
+<h2><a class="anchor" id="autotoc_md209"></a>
+Implementation</h2>
+<p>The implementation is straightforward:</p>
+<ol type="1">
+<li><a class="el" href="../../d2/d44/classtarch_1_1mpi_1_1Lock.html" title="Create a lock around a boolean semaphore region.">Lock</a> the local rank.</li>
+<li>Send the integer tied to this boolean semaphore to the global master. Wait for the go ahead message to return.</li>
+<li>The master receives the lock request in the <a class="el" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html">BooleanSemaphoreService</a>. It tries to acquire a lock. Until it is successful, it continues to call receiveDanglingMessages().</li>
+<li>Once the master is successful in getting the lock, it send an integer message back to the sender. The sender now is allowed to proceed.</li>
+<li>Once successful, the rank releases the lock, which materialises in another message to the global master. This time, we can send logically unblocking, i.e. we don't have to wait for an answer.</li>
+</ol>
+<p>Multiple request handling routines (calls of acquireLock()) can be active at the same time, i.e. reside on the global master's call stack. They will be served one by one, although implicitly in reverse order as we work with the call stack. It is important to poll receiveDanglingMessages() all the time, as we might wait for a lock to be freed, but for the lock to be freed, we have to check unexpected aka dangling messages.</p>
+<dl class="section author"><dt>Author</dt><dd>Tobias Weinzierl </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00071">71</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad1caeb6a00a46e9e4fc8904c17d55d10" name="ad1caeb6a00a46e9e4fc8904c17d55d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1caeb6a00a46e9e4fc8904c17d55d10">&#9670;&#160;</a></span>BooleanSemaphore() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::mpi::BooleanSemaphore::BooleanSemaphore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>You may not copy a semaphore. </p>
+
+</div>
+</div>
+<a id="afeaba143ca0c5cccf402dc2c7504cd99" name="afeaba143ca0c5cccf402dc2c7504cd99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeaba143ca0c5cccf402dc2c7504cd99">&#9670;&#160;</a></span>BooleanSemaphore() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::mpi::BooleanSemaphore::BooleanSemaphore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create new boolean semaphore spanning all MPI ranks. </p>
+<p>Register a new global semaphore. Please note that global semaphores have to be static, and that each rank has to have the same one and create the MPI semaphores in the same order (SPMD programming paradigm).</p>
+<p>What happens is that the constructor grabs a unique number for this MPI semaphore, and stores it in _semaphoreNumber. This number will later be used globally to identify this semaphore type. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html">BooleanSemaphore.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00313">_semaphoreCounter</a>.</p>
+
+</div>
+</div>
+<a id="a2c3591be0b6e838d637d6e9b09727441" name="a2c3591be0b6e838d637d6e9b09727441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3591be0b6e838d637d6e9b09727441">&#9670;&#160;</a></span>~BooleanSemaphore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarch::mpi::BooleanSemaphore::~BooleanSemaphore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html">BooleanSemaphore.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7a77680a861f2b661f431bf2924c5301" name="a7a77680a861f2b661f431bf2924c5301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a77680a861f2b661f431bf2924c5301">&#9670;&#160;</a></span>enterCriticalSection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::BooleanSemaphore::enterCriticalSection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Waits until I can enter the critical section. </p>
+<p>This operation is protected, as you should not invoke it directly. Use <a class="el" href="../../d2/d44/classtarch_1_1mpi_1_1Lock.html" title="Create a lock around a boolean semaphore region.">tarch::mpi::Lock</a> to acquire it. With such a lock object, you can be sure that the lock is released (the latest when the object is destroyed. This way, your code is a little bit more deadlock-free. You cannot forget to release an MPI semaphore. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html">BooleanSemaphore.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00320">_localRankLockRequestSemaphore</a>, <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00315">_semaphoreNumber</a>, <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00215">tarch::mpi::BooleanSemaphore::BooleanSemaphoreService::acquireLock()</a>, <a class="el" href="../../d4/d8b/multicore_2BooleanSemaphore_8cpp_source.html#l00014">tarch::multicore::BooleanSemaphore::enterCriticalSection()</a>, and <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00202">tarch::mpi::BooleanSemaphore::BooleanSemaphoreService::getInstance()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore_a7a77680a861f2b661f431bf2924c5301_cgraph.png" border="0" usemap="#ad2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore_a7a77680a861f2b661f431bf2924c5301_cgraph" alt=""/></div>
+<map name="ad2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore_a7a77680a861f2b661f431bf2924c5301_cgraph" id="ad2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore_a7a77680a861f2b661f431bf2924c5301_cgraph">
+<area shape="rect" title="Waits until I can enter the critical section." alt="" coords="5,628,228,668"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a32676170b0da1af283006f8c8cf2d551" title="Acquire the lock." alt="" coords="281,549,503,603"/>
+<area shape="poly" title=" " alt="" coords="193,625,273,604,275,609,195,631"/>
+<area shape="rect" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html#a58f2ae623a9f7d3672a05075bcd80aa0" title=" " alt="" coords="276,628,508,668"/>
+<area shape="poly" title=" " alt="" coords="228,645,262,645,262,651,228,651"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#aa08f433220dab5c644b671f56a4c3065" title="Don&#39;t use this routine." alt="" coords="281,693,503,747"/>
+<area shape="poly" title=" " alt="" coords="195,665,275,687,273,692,193,671"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a194b41337a4aa4f320877ec69a9d0f0b" title="Get the global master." alt="" coords="1442,43,1642,83"/>
+<area shape="poly" title=" " alt="" coords="408,547,472,455,519,394,576,329,640,263,712,200,790,144,874,99,944,73,1018,54,1093,42,1168,35,1310,34,1429,43,1428,49,1310,40,1168,40,1094,47,1019,59,946,78,876,104,793,148,715,204,644,267,580,333,524,398,476,458,413,550"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a61a8765012b4b650f0c35a8ece0927bd" title="This operation returns the singleton instance." alt="" coords="2026,209,2239,234"/>
+<area shape="poly" title=" " alt="" coords="397,548,415,483,446,397,492,304,521,260,554,220,653,120,698,83,744,53,793,30,848,15,911,6,985,3,1543,3,1629,9,1714,26,1797,51,1876,81,1948,113,2011,146,2102,199,2099,204,2008,150,1945,118,1874,86,1796,56,1713,31,1628,14,1543,8,985,8,911,11,849,20,795,35,747,58,702,87,657,124,558,223,525,263,496,307,451,399,420,485,402,549"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a6a3a85cf6082b5f2711cf046176cd42c" title=" " alt="" coords="604,613,779,653"/>
+<area shape="poly" title=" " alt="" coords="504,595,591,612,590,617,503,600"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a8b8627bfb7f00d1698daff9b82821789" title=" " alt="" coords="573,433,809,487"/>
+<area shape="poly" title=" " alt="" coords="454,546,555,504,595,489,597,494,557,509,456,551"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a4785132af638891e2c7aed3fb7dede8b" title=" " alt="" coords="877,505,1095,545"/>
+<area shape="poly" title=" " alt="" coords="503,564,863,533,863,538,504,569"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a34d9ac947c0789391d0dd0a255db6f65" title="Memorise global timeout." alt="" coords="877,569,1095,609"/>
+<area shape="poly" title=" " alt="" coords="504,576,863,584,863,589,503,581"/>
+<area shape="rect" href="../../d6/d75/classtarch_1_1services_1_1ServiceRepository.html#a4218d43659ffc951ee3b1c6eab7532bc" title="Answer to MPI Messages." alt="" coords="556,677,827,717"/>
+<area shape="poly" title=" " alt="" coords="486,601,510,614,525,627,534,640,543,652,557,663,571,670,568,675,555,668,539,655,530,643,521,630,506,618,483,606"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a30be6a36ef6718b50d7dec30a3192a06" title="Triggers a time out and shuts down the cluster if a timeout is violated." alt="" coords="601,741,781,781"/>
+<area shape="poly" title=" " alt="" coords="493,601,510,614,522,629,529,644,534,673,539,701,546,714,558,727,590,746,587,750,554,731,541,717,534,703,529,674,524,645,518,632,506,618,490,605"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#a3ce812fcc9b65faa8fe4c0101d43039b" title="Writes a warning if relevant." alt="" coords="590,805,793,845"/>
+<area shape="poly" title=" " alt="" coords="495,602,510,614,526,637,533,661,534,706,534,750,542,771,558,791,579,806,576,811,554,795,537,773,529,751,528,706,528,661,521,640,506,618,492,606"/>
+<area shape="poly" title=" " alt="" coords="726,430,835,347,983,244,1061,195,1135,155,1201,128,1230,120,1255,117,1543,117,1665,120,1760,130,1854,147,1974,172,2082,202,2080,207,1973,177,1853,152,1760,135,1665,126,1543,123,1255,123,1231,125,1203,133,1138,160,1064,200,986,248,838,352,729,435"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a34493a69cae791ea0657cb8c3fd19e25" title="Receive any lock&#45;related dangling messages." alt="" coords="875,339,1097,394"/>
+<area shape="poly" title=" " alt="" coords="777,430,885,396,887,401,779,435"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a3730b560211868d473f63dd92dea9f6e" title="Try to lock a semaphore." alt="" coords="1716,491,1973,546"/>
+<area shape="poly" title=" " alt="" coords="810,463,1702,509,1702,514,810,469"/>
+<area shape="poly" title=" " alt="" coords="810,484,882,500,881,505,809,489"/>
+<area shape="poly" title=" " alt="" coords="739,485,803,521,876,555,896,563,894,568,874,560,800,525,736,490"/>
+<area shape="poly" title=" " alt="" coords="1098,384,1308,417,1433,434,1563,447,1689,454,1804,455,1901,445,1940,436,1972,424,1999,408,2024,387,2066,338,2098,288,2119,246,2123,248,2102,290,2071,341,2028,391,2003,412,1975,429,1942,441,1902,451,1804,460,1689,460,1562,452,1433,439,1307,423,1097,390"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a6bc81e3c7af86cb926e3fe9baff1f325" title="Release a lock." alt="" coords="1145,209,1368,263"/>
+<area shape="poly" title=" " alt="" coords="1035,337,1144,280,1174,266,1177,271,1147,285,1037,342"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a994fdcc03d323c8dbb49f86af382e0ff" title="Serve pending lock requests." alt="" coords="1431,339,1653,394"/>
+<area shape="poly" title=" " alt="" coords="1098,364,1416,364,1416,369,1098,369"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#a2b30c806d1891eed51e1aaff6600e26c" title=" " alt="" coords="1733,259,1956,314"/>
+<area shape="poly" title=" " alt="" coords="1097,351,1145,345,1719,294,1720,299,1146,351,1098,356"/>
+<area shape="poly" title=" " alt="" coords="1301,206,1495,88,1498,92,1304,211"/>
+<area shape="poly" title=" " alt="" coords="1350,206,1416,193,1498,185,1582,181,1748,183,1901,192,2025,204,2024,210,1900,197,1748,188,1582,187,1498,191,1416,199,1351,211"/>
+<area shape="poly" title=" " alt="" coords="1318,261,1470,331,1468,336,1316,266"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#afb5e7a748e6ab07601ab702aa82e7fc3" title="Unlock semaphore on global master." alt="" coords="1416,209,1668,263"/>
+<area shape="poly" title=" " alt="" coords="1368,233,1402,233,1402,239,1368,239"/>
+<area shape="poly" title=" " alt="" coords="1653,368,1726,366,1807,359,1891,345,1972,323,2011,306,2047,284,2105,241,2109,245,2050,289,2013,311,1974,328,1892,350,1808,364,1726,371,1653,373"/>
+<area shape="rect" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html#af6c8bbf40ce79043f17b4707ccadd73b" title=" " alt="" coords="1717,390,1972,415"/>
+<area shape="poly" title=" " alt="" coords="1654,377,1724,386,1723,391,1653,383"/>
+<area shape="poly" title=" " alt="" coords="1645,337,1727,315,1728,320,1647,342"/>
+<area shape="poly" title=" " alt="" coords="1599,392,1778,483,1776,487,1596,396"/>
+<area shape="poly" title=" " alt="" coords="1941,489,1972,470,1999,445,2024,416,2067,354,2099,294,2119,246,2124,248,2103,296,2071,356,2029,419,2003,448,1975,474,1944,493"/>
+<area shape="rect" href="../../d1/d1a/classtarch_1_1mpi_1_1BooleanSemaphore_1_1BooleanSemaphoreService.html#aa9d8ca16c2632d96e149e61658eb8368" title="Add map entry." alt="" coords="2021,491,2244,546"/>
+<area shape="poly" title=" " alt="" coords="1974,516,2008,516,2008,521,1974,521"/>
+<area shape="poly" title=" " alt="" coords="1668,230,2012,222,2012,227,1668,236"/>
+<area shape="poly" title=" " alt="" coords="1669,254,1720,263,1719,268,1668,260"/>
+<area shape="rect" href="../../d4/df5/classtarch_1_1multicore_1_1RecursiveLock.html#aed01fe13fe4c18031154be6ad8f96c70" title=" " alt="" coords="887,677,1085,717"/>
+<area shape="poly" title=" " alt="" coords="827,695,874,695,874,700,827,700"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d00459cee899b40761105954ee10e24" name="a3d00459cee899b40761105954ee10e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d00459cee899b40761105954ee10e24">&#9670;&#160;</a></span>leaveCriticalSection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4d/FaceIntegral_8template_8cpp.html#a7ce6528e12d0effe4d57054974659f90">void</a> tarch::mpi::BooleanSemaphore::leaveCriticalSection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the semaphore that it is about to leave. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7a77680a861f2b661f431bf2924c5301" title="Waits until I can enter the critical section.">enterCriticalSection()</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html">BooleanSemaphore.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad67949ca095aeaa08f166992482bf1d4" name="ad67949ca095aeaa08f166992482bf1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67949ca095aeaa08f166992482bf1d4">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp; tarch::mpi::BooleanSemaphore::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a> &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>You may not copy a semaphore. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a10f34558e173d8de675e119f99f7243f" name="a10f34558e173d8de675e119f99f7243f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f34558e173d8de675e119f99f7243f">&#9670;&#160;</a></span>Rank</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d3/dfe/classtarch_1_1mpi_1_1Rank.html">Rank</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00308">308</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+</div>
+</div>
+<a id="afdbbd369ab3a63f5586e77b89aa873e5" name="afdbbd369ab3a63f5586e77b89aa873e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbbd369ab3a63f5586e77b89aa873e5">&#9670;&#160;</a></span>tarch::mpi::Lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="../../d2/d44/classtarch_1_1mpi_1_1Lock.html">tarch::mpi::Lock</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00309">309</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a466e0c8441d29151a3bfbfb4e8a58d5c" name="a466e0c8441d29151a3bfbfb4e8a58d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466e0c8441d29151a3bfbfb4e8a58d5c">&#9670;&#160;</a></span>_localRankLockRequestSemaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d3f/classtarch_1_1multicore_1_1BooleanSemaphore.html">tarch::multicore::BooleanSemaphore</a> tarch::mpi::BooleanSemaphore::_localRankLockRequestSemaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000025">Todo</a></b></dt><dd>explain why we lock locally first </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00320">320</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00015">enterCriticalSection()</a>.</p>
+
+</div>
+</div>
+<a id="a2fe764f0f352dfb7cfd4adf4c1e7ef19" name="a2fe764f0f352dfb7cfd4adf4c1e7ef19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe764f0f352dfb7cfd4adf4c1e7ef19">&#9670;&#160;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d79/classtarch_1_1logging_1_1Log.html">tarch::logging::Log</a> tarch::mpi::BooleanSemaphore::_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00311">311</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+</div>
+</div>
+<a id="a39014968316e992e8d92f81baf2a6e21" name="a39014968316e992e8d92f81baf2a6e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39014968316e992e8d92f81baf2a6e21">&#9670;&#160;</a></span>_semaphoreCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::mpi::BooleanSemaphore::_semaphoreCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00313">313</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00025">BooleanSemaphore()</a>.</p>
+
+</div>
+</div>
+<a id="a4dfbf7dc24193efc71178c9560f03cf5" name="a4dfbf7dc24193efc71178c9560f03cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfbf7dc24193efc71178c9560f03cf5">&#9670;&#160;</a></span>_semaphoreNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/df3/CustomRiemann_8template_8h.html#a92b303b76a3f942ea819498907d5e83c">const</a> <a class="el" href="../../d1/d99/Prediction_8EnclaveTask_8template_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tarch::mpi::BooleanSemaphore::_semaphoreNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html#l00315">315</a> of file <a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html#l00015">enterCriticalSection()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/tarch/mpi/<a class="el" href="../../d1/d21/mpi_2BooleanSemaphore_8h_source.html">BooleanSemaphore.h</a></li>
+<li>src/tarch/mpi/<a class="el" href="../../d1/d63/mpi_2BooleanSemaphore_8cpp_source.html">BooleanSemaphore.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d6a/namespacetarch.html">tarch</a></li><li class="navelem"><a class="el" href="../../db/d1d/namespacetarch_1_1mpi.html">mpi</a></li><li class="navelem"><a class="el" href="../../d2/ddf/classtarch_1_1mpi_1_1BooleanSemaphore.html">BooleanSemaphore</a></li>
+    <li class="footer">Generated on Tue Jul 1 2025 11:30:52 for Peano by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+var namespacesolvers_1_1api_1_1actionsets_1_1CollocatedMGSolver_1_1ResetAndUpdateResidual =
+[
+    [ "ResetAndUpdateResidual", "d1/dfd/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual.html", "d1/dfd/classsolvers_1_1api_1_1actionsets_1_1CollocatedMGSolver_1_1ResetAndUpdateResidual_1_1ResetAndUpdateResidual" ]
+];
