@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['set_20storage_0',['Particle-set storage',['../page_peano4_particles_realisation_particle_lift_flavours.html',1,'page_peano4_particles_realisation']]],
+  ['sets_1',['Particle interaction sets',['../page_peano4_particles_mesh_traversal.html',1,'page_peano4_particles']]],
+  ['sets_20and_20traversal_20events_2',['Action sets and traversal events',['../peano_action_sets.html',1,'page_peano4_home']]],
+  ['settings_3',['Vendor Software Stacks and System- and Compiler-specific Settings',['../page_compiler_specific_settings_home.html',1,'index']]],
+  ['shallow_20water_20equations_4',['Part 2 - The Shallow Water Equations',['../page_exahype2_tutorials_shallow_water.html',1,'page_exahype2_tutorials']]],
+  ['shock_20with_20a_20posteriori_20limiting_5',['Part 4 - A 2D Euler Shock with a-posteriori Limiting',['../page_exahype2_tutorials_limiting.html',1,'page_exahype2_tutorials']]],
+  ['software_20stacks_20and_20system_20and_20compiler_20specific_20settings_6',['Vendor Software Stacks and System- and Compiler-specific Settings',['../page_compiler_specific_settings_home.html',1,'index']]],
+  ['solution_20to_20exercise_201_7',['Part 2 - Solution to Exercise 1',['../page_exahype2_tutorials_shallow_water_solution.html',1,'page_exahype2_tutorials_shallow_water']]],
+  ['solution_20to_20exercise_202_8',['Part 2 - Solution to Exercise 2',['../page_exahype2_tutorials_shallow_water_solution_2.html',1,'page_exahype2_tutorials_shallow_water']]],
+  ['solver_9',['Finite Volume solver',['../documentation_exahype2_solvers_finite_volumes.html',1,'page_solvers']]],
+  ['solvers_10',['ADER-DG solvers',['../documentation_exahype2_solvers_aderdg.html',1,'page_solvers']]],
+  ['solvers_11',['Solvers',['../page_solvers.html',1,'page_exahype2_home']]],
+  ['some_20machines_12',['Reference Configurations for Some Machines',['../page_machines_home.html',1,'index']]],
+  ['sorting_20and_20mesh_20consistency_13',['Particle sorting and mesh consistency',['../page_peano4_particles_mesh_consistency.html',1,'page_peano4_particles']]],
+  ['spack_14',['Installation with Spack',['../page_installation_with_spack.html',1,'page_installation_with_environments']]],
+  ['specific_20settings_15',['Vendor Software Stacks and System- and Compiler-specific Settings',['../page_compiler_specific_settings_home.html',1,'index']]],
+  ['stacks_20and_20system_20and_20compiler_20specific_20settings_16',['Vendor Software Stacks and System- and Compiler-specific Settings',['../page_compiler_specific_settings_home.html',1,'index']]],
+  ['storage_17',['storage',['../page_peano4_particles_mesh_storage.html',1,'Multiscale particle storage'],['../page_peano4_particles_realisation_particle_lift_flavours.html',1,'Particle-set storage']]],
+  ['storage_20and_20exchange_18',['Particle storage and exchange',['../page_peano4_particles_realisation.html',1,'page_peano4_particles']]],
+  ['structured_20patch_20operations_19',['Block-structured patch operations',['../page_exahype2_blockstructured.html',1,'page_exahype2_home']]],
+  ['supermuc_20',['SuperMUC',['../page_machines_supermuc.html',1,'page_machines_home']]],
+  ['support_21',['support',['../page_exahype_gpu.html',1,'GPU support'],['../tarch_accelerator_SYCL.html',1,'SYCL support']]],
+  ['sycl_20support_22',['SYCL support',['../tarch_accelerator_SYCL.html',1,'page_tarch_home']]],
+  ['system_20and_20compiler_20specific_20settings_23',['Vendor Software Stacks and System- and Compiler-specific Settings',['../page_compiler_specific_settings_home.html',1,'index']]]
+];

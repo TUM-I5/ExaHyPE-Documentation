@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['water_20equations_0',['Water Equations',['../page_exahype2_tutorials_shallow_water.html',1,'Part 2 - The Shallow Water Equations'],['../page_exahype2_tutorials_shallow_water.html#autotoc_md15',1,'The Shallow Water Equations']]],
+  ['wave_1',['Exercise - Launch a Shear Wave',['../page_exahype2_tutorials_elastic.html#autotoc_md149',1,'']]],
+  ['wave_20equations_2',['The Elastic Wave Equations',['../page_exahype2_tutorials_elastic.html#autotoc_md141',1,'']]],
+  ['waves_20and_20a_20taste_20of_20hpc_3',['Part 5 - 3D Elastic Waves and a Taste of HPC',['../page_exahype2_tutorials_elastic.html',1,'page_exahype2_tutorials']]],
+  ['we_20need_20the_20limiter_4',['Why We Need the Limiter',['../page_exahype2_tutorials_limiting.html#autotoc_md90',1,'']]],
+  ['which_20are_20not_20a_20fit_5',['Mask out cells which are not a fit',['../page_exahype_gpu.html#autotoc_md107',1,'']]],
+  ['why_20a_20limiter_6',['Why a Limiter',['../page_exahype2_tutorials_limiting.html#autotoc_md45',1,'']]],
+  ['why_20we_20need_20the_20limiter_7',['Why We Need the Limiter',['../page_exahype2_tutorials_limiting.html#autotoc_md90',1,'']]],
+  ['wide_20application_20state_8',['Rank-wide application state',['../page_peano_domain_decomposition.html#autotoc_md213',1,'']]],
+  ['with_20a_20posteriori_20limiting_9',['Part 4 - A 2D Euler Shock with a-posteriori Limiting',['../page_exahype2_tutorials_limiting.html',1,'page_exahype2_tutorials']]],
+  ['with_20apptainer_10',['Installation with Apptainer',['../page_installation_with_apptainer.html',1,'page_installation_with_environments']]],
+  ['with_20clang_11',['OpenMP offloading with Clang',['../page_machines_ncc.html#autotoc_md171',1,'']]],
+  ['with_20docker_12',['Installation with Docker',['../page_installation_with_docker.html',1,'page_installation_with_environments']]],
+  ['with_20gpu_20support_13',['Using ExaHyPE with GPU support',['../page_exahype_gpu.html#autotoc_md60',1,'']]],
+  ['with_20gpu_20support_14',['With GPU Support',['../page_installation_with_apptainer.html#autotoc_md267',1,'With GPU Support'],['../page_installation_with_docker.html#autotoc_md278',1,'With GPU Support']]],
+  ['with_20halo_15',['Augment patch with halo',['../documentation_exahype2_solvers_finite_volumes.html#autotoc_md81',1,'']]],
+  ['with_20nvc_16',['OpenMP offloading with NVC++',['../page_machines_ncc.html#autotoc_md172',1,'']]],
+  ['with_20oneapi_17',['SYCL offloading with oneAPI',['../page_machines_ncc.html#autotoc_md174',1,'']]],
+  ['with_20port_20forwarding_20jupyterlab_18',['With Port Forwarding (JupyterLab)',['../page_installation_with_docker.html#autotoc_md279',1,'']]],
+  ['with_20spack_19',['Installation with Spack',['../page_installation_with_spack.html',1,'page_installation_with_environments']]],
+  ['without_20state_20',['Provide the additional PDE terms without state',['../page_exahype_gpu.html#autotoc_md88',1,'']]],
+  ['works_21',['How the GPU offloading works',['../page_exahype_gpu.html#autotoc_md62',1,'']]],
+  ['write_20my_20own_20tests_22',['How do I write my own tests?',['../page_continuous_integration.html#autotoc_md127',1,'']]],
+  ['writers_20and_20time_20series_23',['File writers and time series',['../tarch_plotting.html#autotoc_md254',1,'']]],
+  ['writing_20trajectories_24',['Writing trajectories',['../page_exahype_tracer.html#autotoc_md23',1,'']]]
+];

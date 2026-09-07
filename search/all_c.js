@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['g_20gpu_20partition_0',['LUMI-G GPU Partition',['../page_machines_lumi.html#autotoc_md153',1,'']]],
+  ['galerkin_1',['Galerkin',['../page_exahype2_numerics_DG.html',1,'Discontinuous Galerkin'],['../page_exahype_visualisation.html#autotoc_md135',1,'Discontinuous Galerkin']]],
+  ['generated_20data_2',['Localisation of generated data',['../page_peano_localisation.html',1,'page_peano4_home']]],
+  ['generated_20main_20routine_3',['The generated main routine',['../peano_main.html',1,'page_peano4_home']]],
+  ['generated_20records_20exhaust_20the_20thread_20stack_4',['Large generated records exhaust the thread stack',['../page_exahype_faq.html#autotoc_md0',1,'']]],
+  ['getting_20started_5',['Getting Started',['../page_installation_with_spack.html#autotoc_md271',1,'']]],
+  ['git_6',['Version Control (Git)',['../page_version_control_home.html',1,'index']]],
+  ['gitlab_20ci_7',['Gitlab CI',['../page_continuous_integration.html#autotoc_md125',1,'']]],
+  ['gnu_8',['GNU',['../page_compiler_specific_settings_home.html#autotoc_md73',1,'']]],
+  ['gpu_20offloading_20works_9',['How the GPU offloading works',['../page_exahype_gpu.html#autotoc_md62',1,'']]],
+  ['gpu_20partition_10',['LUMI-G GPU Partition',['../page_machines_lumi.html#autotoc_md153',1,'']]],
+  ['gpu_20support_11',['GPU support',['../page_exahype_gpu.html',1,'GPU support'],['../page_exahype_gpu.html#autotoc_md60',1,'Using ExaHyPE with GPU support']]],
+  ['gpu_20support_12',['GPU Support',['../page_installation_with_apptainer.html#autotoc_md267',1,'With GPU Support'],['../page_installation_with_docker.html#autotoc_md278',1,'With GPU Support']]],
+  ['gpu_20support_20programmer_20s_20view_13',['GPU support (programmer&apos;s view)',['../page_exahype_gpu.html#autotoc_md67',1,'']]],
+  ['gpus_2edox_14',['gpus.dox',['../gpus_8dox.html',1,'']]],
+  ['granularity_15',['Choosing granularity',['../page_exahype_multicore.html#autotoc_md6',1,'']]],
+  ['graph_16',['Traversal task graph',['../page_architecture_home.html#autotoc_md27',1,'']]],
+  ['grid_17',['Grid',['../page_peano_runtime_analysis.html#autotoc_md229',1,'']]],
+  ['grid_20control_20events_18',['Grid control events',['../page_peano_amr.html#autotoc_md186',1,'']]],
+  ['grid_20data_19',['Coarse-grid data',['../peano_action_sets.html#autotoc_md220',1,'']]],
+  ['grid_20interpretation_20',['Dual-grid interpretation',['../page_peano4_particles_mesh_storage.html#autotoc_md199',1,'']]],
+  ['grid_20representation_20and_20data_20pools_21',['Grid representation and data pools',['../page_architecture_home.html#autotoc_md24',1,'']]],
+  ['guide_22',['Guide',['../page_conventions_home.html#autotoc_md74',1,'C++ conventions / Style Guide'],['../page_conventions_home.html#autotoc_md42',1,'Python Conventions / Style Guide']]]
+];
